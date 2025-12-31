@@ -1,4 +1,4 @@
-# truscanner
+# truScanner
 
 **Open-Source Static Analysis for Privacy Data Flows**
 
