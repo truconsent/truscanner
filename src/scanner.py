@@ -1,7 +1,7 @@
 import os
-import re
 import asyncio
 from typing import List, Dict, Any
+from .regex_scanner import RegexScanner
 from .ai_scanner import scan_directory_ai
 
 try:
@@ -10,61 +10,28 @@ try:
 except ImportError:
     PRESIDIO_AVAILABLE = False
 
-# Define regex patterns for data elements
-DATA_ELEMENTS = [
-    {
-        "name": "Email Address",
-        "regex": r"(?i)\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z]{2,}\b",
-        "category": "Contact Info",
-        "sensitivity": "High"
-    },
-    {
-        "name": "IPv4 Address",
-        "regex": r"\b(?:\d{1,3}\.){3}\d{1,3}\b",
-        "category": "Network Info",
-        "sensitivity": "Medium"
-    },
-    {
-        "name": "Credit Card Number",
-        "regex": r"\b(?:\d{4}[- ]?){3}\d{4}\b",
-        "category": "Financial",
-        "sensitivity": "Critical"
-    },
-    {
-        "name": "Social Security Number (US)",
-        "regex": r"\b\d{3}-\d{2}-\d{4}\b",
-        "category": "Government ID",
-        "sensitivity": "Critical"
-    },
-    {
-        "name": "API Key / Token",
-        "regex": r"(?i)(api_key|apikey|secret|token)[\s=:'\"]+([A-Za-z0-9_\-]{16,})",
-        "category": "Secrets",
-        "sensitivity": "Critical"
-    }
-]
-
-def scan_file(filepath: str, analyzer: Any = None) -> List[Dict[str, Any]]:
+def scan_file(filepath: str, regex_scanner: RegexScanner = None, analyzer: Any = None) -> List[Dict[str, Any]]:
     findings = []
     try:
         with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
             content = f.read()
             
-        # 1. Regex Scanning
-        lines = content.splitlines()
-        for i, line in enumerate(lines):
-            line_number = i + 1
-            for element in DATA_ELEMENTS:
-                if re.search(element["regex"], line):
-                    findings.append({
-                        "filename": filepath,
-                        "line_number": line_number,
-                        "element_name": element["name"],
-                        "element_category": element["category"],
-                        "isSensitive": element["sensitivity"] in ["High", "Critical"],
-                        "sensitivity": element["sensitivity"],
-                        "source": "Regex"
-                    })
+        # 1. Regex Scanning using RegexScanner
+        if regex_scanner:
+            regex_findings = regex_scanner.scan_text(content, context=filepath)
+            for finding in regex_findings:
+                findings.append({
+                    "filename": filepath,
+                    "line_number": finding["line_number"],
+                    "element_name": finding["element_name"],
+                    "element_category": finding["element_category"],
+                    "isSensitive": finding["isSensitive"],
+                    "sensitivity": finding["sensitivity"],
+                    "matched_text": finding.get("matched_text", ""),
+                    "line_content": finding.get("line_content", ""),
+                    "tags": finding.get("tags", {}),
+                    "source": "Regex"
+                })
 
         # 2. Presidio Scanning
         if analyzer and PRESIDIO_AVAILABLE:
@@ -85,33 +52,43 @@ def scan_file(filepath: str, analyzer: Any = None) -> List[Dict[str, Any]]:
         pass
     return findings
 
-def scan_directory(directory: str) -> List[Dict[str, Any]]:
+def scan_directory(directory: str, use_presidio: bool = False, use_ai: bool = False) -> List[Dict[str, Any]]:
     results = []
     
-    # Initialize Presidio
+    # Initialize RegexScanner
+    regex_scanner = RegexScanner()
+    
+    # Initialize Presidio (optional)
     analyzer = None
-    if PRESIDIO_AVAILABLE:
+    if use_presidio and PRESIDIO_AVAILABLE:
         try:
+            print("Initializing Presidio NLP scanner...")
             analyzer = AnalyzerEngine()
+            print("✓ Presidio initialized")
         except Exception as e:
             print(f"Warning: Presidio initialization failed: {e}")
+    elif use_presidio and not PRESIDIO_AVAILABLE:
+        print("Warning: Presidio not available. Install with: pip install presidio-analyzer")
 
-    # 1. Local Scan (Regex + Presidio)
+    # 1. Local Scan (Regex + optional Presidio)
     for root, _, files in os.walk(directory):
         for file in files:
             # Skip hidden files
             if not file.startswith('.'):
                 filepath = os.path.join(root, file)
-                results.extend(scan_file(filepath, analyzer))
+                results.extend(scan_file(filepath, regex_scanner, analyzer))
     
-    # 2. LLM Scan (OpenAI)
-    if os.environ.get("OPENAI_API_KEY"):
+    # 2. LLM Scan (OpenAI) - optional
+    if use_ai and os.environ.get("OPENAI_API_KEY"):
         try:
+            print("Running AI scan...")
             ai_results = asyncio.run(scan_directory_ai(directory))
             for item in ai_results:
                 item["source"] = "LLM"
             results.extend(ai_results)
         except Exception as e:
             print(f"AI Scan failed: {e}")
+    elif use_ai and not os.environ.get("OPENAI_API_KEY"):
+        print("Warning: AI scan requested but OPENAI_API_KEY not set")
             
     return results
