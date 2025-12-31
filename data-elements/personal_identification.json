@@ -1,89 +1,209 @@
 {
-  "sources": [
-    {
-      "name": "Date of Birth",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)|birth[-_]{0,2}dt)))"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    },
-    {
-      "name": "First Name",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|fore[-_]?|full[-_]?)name|f[_]?name"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    },
-    {
-      "name": "Gender",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    },
-    {
-      "name": "Last Name",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)|l[_]?name"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    },
-    {
-      "name": "Age",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)^(user|person|customer|under|years|yrs|human)?(_)?(of|in)?(_)?(age)$",
-        "(?i)^(age)(_)?(of|in)?(_)?(human|years|yrs|user|person|customer)?$"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    },
-    {
-      "name": "Employee Code",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(?:.*employee|emp)[^\\s/(;)#|,=!>]{0,10}(?:no|number|code|id|nbr|num)"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    },
-    {
-      "name": "Photograph",
-      "category": "Personal Identification",
-      "isSensitive": false,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i).*(?:profile|employee|user)[^\\s/(;)#|,=!>]{0,5}(?:picture|image|pic|photo)"
-      ],
-      "tags": {
-        "law": "DPDPA"
-      }
-    }
-  ]
+    "sources": [
+        {
+            "name": "Date of Birth",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)|birth[-_]{0,2}dt)))"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "First Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|fore[-_]?|full[-_]?)name|f[_]?name"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Gender",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Last Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)|l[_]?name"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Age",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)^(user|person|customer|under|years|yrs|human)?(_)?(of|in)?(_)?(age)$",
+                "(?i)^(age)(_)?(of|in)?(_)?(human|years|yrs|user|person|customer)?$"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Employee Code",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(?:.*employee|emp)[^\\s/(;)#|,=!>]{0,10}(?:no|number|code|id|nbr|num)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Photograph",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(?:profile|employee|user)[^\\s/(;)#|,=!>]{0,5}(?:picture|image|pic|photo)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Middle Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(middle[^\\s/(;)#|,=!>]{0,5}name|m[_]?name)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Alias",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(alias|nick[^\\s/(;)#|,=!>]{0,5}name|aka|also[^\\s/(;)#|,=!>]{0,5}known[^\\s/(;)#|,=!>]{0,5}as)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Nationality",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(nationality|citizen[^\\s/(;)#|,=!>]{0,5}ship|country[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}origin)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Marital Status",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(marital[^\\s/(;)#|,=!>]{0,5}status|married|single|divorced|widowed|relationship[^\\s/(;)#|,=!>]{0,5}status)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Place of Birth",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(place[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}place|pob)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Mother's Maiden Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(mother[^\\s/(;)#|,=!>]{0,5}maiden[^\\s/(;)#|,=!>]{0,5}name|mother[^\\s/(;)#|,=!>]{0,5}name|maternal[^\\s/(;)#|,=!>]{0,5}name)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Father's Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(father[^\\s/(;)#|,=!>]{0,5}name|paternal[^\\s/(;)#|,=!>]{0,5}name)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Spouse Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(spouse[^\\s/(;)#|,=!>]{0,5}name|partner[^\\s/(;)#|,=!>]{0,5}name|husband[^\\s/(;)#|,=!>]{0,5}name|wife[^\\s/(;)#|,=!>]{0,5}name)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Emergency Contact Details",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(emergency[^\\s/(;)#|,=!>]{0,5}contact|emergency[^\\s/(;)#|,=!>]{0,5}(?:phone|number|email|person))"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Physical Appearance Description",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(physical[^\\s/(;)#|,=!>]{0,5}(?:appearance|description)|height|weight|eye[^\\s/(;)#|,=!>]{0,5}color|hair[^\\s/(;)#|,=!>]{0,5}color|complexion|build)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
 }
