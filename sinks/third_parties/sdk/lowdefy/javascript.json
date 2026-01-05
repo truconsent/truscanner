@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lowdefy",
+            "category": "Storage Sink",
+            "patterns": [
+                "@lowdefy\\/connection-sendgrid|@lowdefy\\/graphql|@lowdefy\\/graphql-federated"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lowdefy",
+                "language": "javascript",
+                "technology": "lowdefy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

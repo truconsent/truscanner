@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tapwater",
+            "category": "Storage Sink",
+            "patterns": [
+                "proto-google-common-protos"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tapwater",
+                "language": "javascript",
+                "technology": "tapwater",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

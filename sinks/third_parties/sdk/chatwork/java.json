@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chatwork",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]chatwork|com[.]vexus2[.]jenkins[.]chatwork).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chatwork",
+                "language": "java",
+                "technology": "chatwork",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

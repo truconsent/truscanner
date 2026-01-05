@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chatwork",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(chatwork|chatwork_to|omniauth-chatwork|goodbye_chatwork|capistrano-chatwork|chatwork_bridge|activeresource-chatwork|ruboty-chatwork|lita-chatwork|fluent-plugin-chatwork|capistrano-around_chatwork|chatwork_webhook_verify|danger-chatwork|ruboty-chatwork_webhook|sensu-plugins-chatwork|rundock-plugin-hook-chatwork|bo_gitcw|shutwork|chatworkify|chatwork_to_slack).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chatwork",
+                "language": "ruby",
+                "technology": "chatwork",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

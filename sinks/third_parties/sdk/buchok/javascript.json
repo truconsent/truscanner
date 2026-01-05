@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Buchok",
+            "category": "Storage Sink",
+            "patterns": [
+                "vast-xml"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Buchok",
+                "language": "javascript",
+                "technology": "buchok",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

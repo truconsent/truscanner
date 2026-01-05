@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Playlyfe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(playlyfe).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Playlyfe",
+                "language": "python",
+                "technology": "playlyfe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

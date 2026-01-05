@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Qbs (Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(github.com|gopkg.in)(/)(coocood)(/)(qbs).*(Find).*"
+            ],
+            "tags": {
+                "id": "Storages.QBSFramework.Read",
+                "language": "go",
+                "technology": "qbs",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Qbs (Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(github.com|gopkg.in)(/)(coocood)(/)(qbs).*(Save|Update|Delete).*"
+            ],
+            "tags": {
+                "id": "Storages.QBSFramework.Write",
+                "language": "go",
+                "technology": "qbs",
+                "type": "Database"
+            }
+        }
+    ]
+}

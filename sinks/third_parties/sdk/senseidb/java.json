@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Senseidb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]senseidb[.]zoie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Senseidb",
+                "language": "java",
+                "technology": "senseidb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

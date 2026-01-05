@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Monthly",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(monthlycloud|MonthlyStorage|MonthlyCloudServiceProvider).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Monthly",
+                "language": "php",
+                "technology": "monthly",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

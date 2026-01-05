@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Humblebee",
+            "category": "Storage Sink",
+            "patterns": [
+                "@humblebee\\/humblebee-backend|@humblebee\\/humblebee-serverless"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Humblebee",
+                "language": "javascript",
+                "technology": "humblebee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

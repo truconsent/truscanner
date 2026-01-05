@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adcel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(co[.]adcel[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adcel",
+                "language": "java",
+                "technology": "adcel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

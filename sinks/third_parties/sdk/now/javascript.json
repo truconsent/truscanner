@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Now Urban-bot",
+            "category": "Storage Sink",
+            "patterns": [
+                "@urban-bot\\/slack|@urban-bot\\/core|create-urban-bot|@urban-bot\\/telegram"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Now.Urban-bot",
+                "language": "javascript",
+                "technology": "now",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

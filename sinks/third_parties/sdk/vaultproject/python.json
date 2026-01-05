@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vaultproject",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow.*providers.*hashicorp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vaultproject",
+                "language": "python",
+                "technology": "vaultproject",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

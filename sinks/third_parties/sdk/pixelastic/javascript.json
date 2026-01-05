@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pixelastic",
+            "category": "Storage Sink",
+            "patterns": [
+                "norska-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixelastic",
+                "language": "javascript",
+                "technology": "pixelastic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mycroft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mycroftapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mycroft",
+                "language": "python",
+                "technology": "mycroft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

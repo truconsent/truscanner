@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Visenze",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(visearch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Visenze",
+                "language": "python",
+                "technology": "visenze",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

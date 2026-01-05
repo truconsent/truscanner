@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Buyapowa",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(integrations.*buyapowa|.*bypwclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Buyapowa",
+                "language": "python",
+                "technology": "buyapowa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

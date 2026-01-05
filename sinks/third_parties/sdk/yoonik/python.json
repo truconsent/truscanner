@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yoonik",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yk_face|yk_bit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yoonik",
+                "language": "python",
+                "technology": "yoonik",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

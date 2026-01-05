@@ -1,0 +1,115 @@
+================================================================================
+REGEX SCANNER REPORT
+================================================================================
+
+Total Findings: 12
+Time Taken: 0.04 seconds
+
+--------------------------------------------------------------------------------
+
+📄 File: test.py
+   Found 12 data element(s)
+
+   🟡 Line 5: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched: RECIPIENT = "deepakraja.ra@cobuildx.ai"  # replace with your email
+      Context: RECIPIENT = "deepakraja.ra@cobuildx.ai"  # replace with your email
+      Tags: law: DPDPA
+
+   🟡 Line 6: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched: SUBJECT = "Amazon SES Test Email
+      Context: SUBJECT = "Amazon SES Test Email"
+      Tags: law: DPDPA
+
+   🟡 Line 8: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched: This is a test email
+      Context: This is a test email sent using Amazon SES from updates.truconsent.io.
+      Tags: law: DPDPA
+
+   🟡 Line 18: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched:   <p>This is a test email
+      Context: <p>This is a test email sent using <b>Amazon SES</b>.</p>
+      Tags: law: DPDPA
+
+   🟡 Line 24: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched: def send_test_email
+      Context: def send_test_email():
+      Tags: law: DPDPA
+
+   🟡 Line 27: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched:         response = client.send_email
+      Context: response = client.send_email(
+      Tags: law: DPDPA
+
+   🟡 Line 49: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched:         print("Email
+      Context: print("Email sent successfully!")
+      Tags: law: DPDPA
+
+   🟡 Line 52: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched:         print("Error sending email
+      Context: print("Error sending email:")
+      Tags: law: DPDPA
+
+   🟡 Line 55: Email Address
+      Category: Contact Information
+      Sensitivity: medium
+      Matched:     send_test_email
+      Context: send_test_email()
+      Tags: law: DPDPA
+
+   🟡 Line 27: Comments
+      Category: Content Consumption & Media Data
+      Sensitivity: medium
+      Matched: response =
+      Context: response = client.send_email(
+      Tags: law: DPDPA
+
+   🟢 Line 19: Industry Type
+      Category: Employment & Professional Data
+      Sensitivity: low
+      Matched: Domain:
+      Context: <p><b>Domain:</b> updates.truconsent.io</p>
+      Tags: law: DPDPA
+
+   🟡 Line 53: Error Logs
+      Category: Communication & Behavioral Data
+      Sensitivity: medium
+      Matched: Error"]["Message
+      Context: print(e.response["Error"]["Message"])
+      Tags: law: DPDPA
+
+--------------------------------------------------------------------------------
+
+📊 SUMMARY BY CATEGORY
+
+   Contact Information: 9 (1 distinctive elements)
+      - Email Address: 9
+   Content Consumption & Media Data: 1 (1 distinctive elements)
+      - Comments: 1
+   Employment & Professional Data: 1 (1 distinctive elements)
+      - Industry Type: 1
+   Communication & Behavioral Data: 1 (1 distinctive elements)
+      - Error Logs: 1
+
+🔒 SUMMARY BY SENSITIVITY
+
+   Low: 1
+   Medium: 11
+
+================================================================================

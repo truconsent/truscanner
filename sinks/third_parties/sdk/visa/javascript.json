@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Visa",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cybersource\\/flex-sdk-web"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Visa",
+                "language": "javascript",
+                "technology": "visa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

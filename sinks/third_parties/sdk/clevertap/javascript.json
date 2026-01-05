@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Clevertap",
+            "category": "Storage Sink",
+            "patterns": [
+                "clevertap-react|react-native-clevertap-inbox|clevertap|clevertap-react-native|clevertap-cordova|leads-clevertap|@segment\\/analytics.js-integration-clevertap|flaviocopes-clevertap-cordova|clevertap-web-sdk|sda-clevertap|@ionic-native\\/clevertap"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clevertap",
+                "language": "javascript",
+                "technology": "clevertap",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Clevertap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?clevertap([.]event[.]push)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Clevertap",
+                "language": "javascript",
+                "technology": "clevertap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

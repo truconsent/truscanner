@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Keep",
+            "category": "Storage Sink",
+            "patterns": [
+                "@keepsolutions\\/scimgateway"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Keep",
+                "language": "javascript",
+                "technology": "keep",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

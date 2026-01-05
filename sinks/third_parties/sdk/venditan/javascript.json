@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Venditan",
+            "category": "Storage Sink",
+            "patterns": [
+                "@venditan\\/address-lookup"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Venditan",
+                "language": "javascript",
+                "technology": "venditan",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

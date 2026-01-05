@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Superannotate",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(superannotate).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Superannotate",
+                "language": "python",
+                "technology": "superannotate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Journy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(journyio-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Journy",
+                "language": "python",
+                "technology": "journy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

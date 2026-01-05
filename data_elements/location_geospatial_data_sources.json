@@ -1,0 +1,175 @@
+{
+    "sources": [
+        {
+            "name": "Live GPS Location",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\b(live|real[-_]?time)[^\\s]{0,5}(gps|location|tracking)\\b",
+                "\\b-?\\d{1,2}\\.\\d+,\\s*-?\\d{1,3}\\.\\d+\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Home Address",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(home|residential)[^\\s]{0,5}(address|location)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Work Address",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(work|office)[^\\s]{0,5}(address|location)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Delivery Address",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(delivery|shipping)[^\\s]{0,5}(address|location)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Location",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(location|area|address)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Travel History",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(travel|location)[^\\s]{0,5}(history|timeline|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Check-in Locations",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(check[-_]?in|visited)[^\\s]{0,5}(location|place)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "WiFi Connections",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(wifi|wi[-_]?fi)[^\\s]{0,5}(ssid|network|connection)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Bluetooth Connections",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bbluetooth[^\\s]{0,5}(device|connection|pairing)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "IP-Based Geolocation",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bip[^\\s]{0,5}(geo|geolocation|location)\\b",
+                "\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Preferred Service Areas",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpreferred[^\\s]{0,5}service[^\\s]{0,5}(area|location)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Location Preferences",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blocation[^\\s]{0,5}(preference|setting|choice)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Route Information",
+            "category": "Location & Geospatial Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(route|path|journey)[^\\s]{0,5}(info|data|details)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Precise Location",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(gps[^\\s/(;)#|,=!>]{0,3}(?:location|position|trace)|user[^\\s/(;)#|,=!>]{0,5}location|latitude|longitude|geo[^\\s/(;)#|,=!>]{0,5}coordinates)\\b",
+                "(?i)\\b(lat|lon|latlng|latlon)\\b(?![^\\s/(;)#|,=!>]*?(?:platform|standalone|clone|float|long|distance|translation|relative|calculate|update))"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

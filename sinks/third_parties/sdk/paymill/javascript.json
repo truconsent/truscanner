@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paymill",
+            "category": "Storage Sink",
+            "patterns": [
+                "paymill-wrapper"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paymill",
+                "language": "javascript",
+                "technology": "paymill",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

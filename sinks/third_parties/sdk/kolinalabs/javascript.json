@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kolinalabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "vindi-node-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kolinalabs",
+                "language": "javascript",
+                "technology": "kolinalabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

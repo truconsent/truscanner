@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Baidu",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]baidu[.]aip|com[.]baidubce).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Baidu",
+                "language": "java",
+                "technology": "baidu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

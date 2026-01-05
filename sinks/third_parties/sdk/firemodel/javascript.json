@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Firemodel Vuex",
+            "category": "Storage Sink",
+            "patterns": [
+                "vuex-plugin-firemodel"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Firemodel.Vuex",
+                "language": "javascript",
+                "technology": "firemodel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

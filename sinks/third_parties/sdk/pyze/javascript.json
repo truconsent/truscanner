@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pyze",
+            "category": "Storage Sink",
+            "patterns": [
+                "pyze-sdk-react-native"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pyze",
+                "language": "javascript",
+                "technology": "pyze",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

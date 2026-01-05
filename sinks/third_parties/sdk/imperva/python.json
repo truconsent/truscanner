@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Imperva",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(imperva_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Imperva",
+                "language": "python",
+                "technology": "imperva",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

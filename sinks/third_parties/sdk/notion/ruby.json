@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Notion",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(notion|notion_orbit|notion_rb|notion-ruby-client|omniauth-notion|notion-sdk-ruby|notion_ruby|notion_client|notion_api|jekyll-notion).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Notion",
+                "language": "ruby",
+                "technology": "notion",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

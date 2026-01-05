@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rememberthemilk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(RtmAPI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rememberthemilk",
+                "language": "python",
+                "technology": "rememberthemilk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

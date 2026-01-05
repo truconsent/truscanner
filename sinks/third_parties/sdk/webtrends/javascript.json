@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webtrends",
+            "category": "Storage Sink",
+            "patterns": [
+                "webtrends"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webtrends",
+                "language": "javascript",
+                "technology": "webtrends",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

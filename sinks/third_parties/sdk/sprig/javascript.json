@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sprig",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?sprig[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Sprig",
+                "language": "javascript",
+                "technology": "sprig",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

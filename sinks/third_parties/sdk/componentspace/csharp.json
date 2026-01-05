@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "ComponentSpace",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Component[.]Saml).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.ComponentSpace",
+                "language": "csharp",
+                "technology": "componentspace",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

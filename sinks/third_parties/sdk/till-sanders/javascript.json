@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Till-sanders",
+            "category": "Storage Sink",
+            "patterns": [
+                "@finanzritter\\/nativescript-share-file"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Till-sanders",
+                "language": "javascript",
+                "technology": "till-sanders",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

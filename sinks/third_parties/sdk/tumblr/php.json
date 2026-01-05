@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tumblr",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tumblr).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tumblr",
+                "language": "php",
+                "technology": "tumblr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

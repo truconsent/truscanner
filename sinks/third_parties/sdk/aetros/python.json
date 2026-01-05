@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aetros",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aetros).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aetros",
+                "language": "python",
+                "technology": "aetros",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

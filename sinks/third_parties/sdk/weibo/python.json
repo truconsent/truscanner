@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Weibo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(weibo|pyweibo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Weibo",
+                "language": "python",
+                "technology": "weibo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alibaba",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(acm-sdk-python|tablestore|ACMClient[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alibaba",
+                "language": "python",
+                "technology": "alibaba",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

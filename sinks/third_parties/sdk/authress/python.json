@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Authress",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(authress_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Authress",
+                "language": "python",
+                "technology": "authress",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

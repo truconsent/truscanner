@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webex",
+            "category": "Storage Sink",
+            "patterns": [
+                "webex"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webex",
+                "language": "javascript",
+                "technology": "webex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

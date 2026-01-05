@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gitlab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(xanzy)(/)(go-gitlab).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gitlab",
+                "language": "go",
+                "technology": "gitlab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

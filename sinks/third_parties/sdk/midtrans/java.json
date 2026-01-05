@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Midtrans",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]midtrans).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Midtrans",
+                "language": "java",
+                "technology": "midtrans",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

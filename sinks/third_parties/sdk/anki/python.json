@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Anki",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(anki_vector).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Anki",
+                "language": "python",
+                "technology": "anki",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

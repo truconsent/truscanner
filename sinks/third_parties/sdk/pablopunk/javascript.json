@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pablopunk",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-geolookup"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pablopunk",
+                "language": "javascript",
+                "technology": "pablopunk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

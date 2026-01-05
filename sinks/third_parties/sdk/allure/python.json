@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Allure",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(allure).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Allure",
+                "language": "python",
+                "technology": "allure",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

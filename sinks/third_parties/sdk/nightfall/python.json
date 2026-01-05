@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nightfall",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(nightfall).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nightfall",
+                "language": "python",
+                "technology": "nightfall",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

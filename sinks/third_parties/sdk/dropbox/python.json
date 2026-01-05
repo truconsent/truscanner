@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dropbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dropbox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dropbox",
+                "language": "python",
+                "technology": "dropbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

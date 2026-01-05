@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dynotx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(hera[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dynotx",
+                "language": "python",
+                "technology": "dynotx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

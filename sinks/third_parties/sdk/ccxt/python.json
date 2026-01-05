@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ccxt",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ccxt).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ccxt",
+                "language": "python",
+                "technology": "ccxt",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

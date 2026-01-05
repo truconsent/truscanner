@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Silamoney",
+            "category": "Storage Sink",
+            "patterns": [
+                "sila-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Silamoney",
+                "language": "javascript",
+                "technology": "silamoney",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

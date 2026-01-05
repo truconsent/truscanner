@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twilio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Twilio).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twilio",
+                "language": "csharp",
+                "technology": "twilio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

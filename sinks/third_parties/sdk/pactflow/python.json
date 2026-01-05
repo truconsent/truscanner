@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pactflow",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pact).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pactflow",
+                "language": "python",
+                "technology": "pactflow",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

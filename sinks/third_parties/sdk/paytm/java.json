@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paytm",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]paytm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paytm",
+                "language": "java",
+                "technology": "paytm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

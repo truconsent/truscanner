@@ -1,0 +1,69 @@
+{
+    "sources": [
+        {
+            "name": "Hashicorp Nomad",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hashicorp[.]nomad).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp.Nomad",
+                "language": "java",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Hashicorp Terraform",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hashicorp[.]terraform).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp.Terraform",
+                "language": "java",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Hashicorp Vault",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hashicorp[.]vault).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp.Vault",
+                "language": "java",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Hashicorp Consul",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hashicorp[.]consul).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp.Consul",
+                "language": "java",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Hashicorp Packer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hashicorp[.]packer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp.Packer",
+                "language": "java",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

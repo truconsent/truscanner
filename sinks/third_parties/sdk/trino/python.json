@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trino",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow.*providers.*trino).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trino",
+                "language": "python",
+                "technology": "trino",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

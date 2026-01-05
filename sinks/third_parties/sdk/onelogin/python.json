@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onelogin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(onelogin).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onelogin",
+                "language": "python",
+                "technology": "onelogin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

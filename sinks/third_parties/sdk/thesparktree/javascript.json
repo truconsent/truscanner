@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thesparktree",
+            "category": "Storage Sink",
+            "patterns": [
+                "filefog"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thesparktree",
+                "language": "javascript",
+                "technology": "thesparktree",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

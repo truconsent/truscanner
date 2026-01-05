@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Amazon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]amazon[.]alexa|com[.]amazon[.]android|software[.]amazon[.]ion|software[.]amazon[.]jsii|software[.]amazon[.]konstruk|software[.]amazon[.]smithy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazon",
+                "language": "java",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazon Aws",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]amazonaws[.]secretsmanager|software[.]amazon[.]awssdk|software[.]amazon[.]awscdk|software[.]amazon[.]awsconstructs).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazon.Aws",
+                "language": "java",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

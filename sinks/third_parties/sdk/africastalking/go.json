@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Africastalking",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(kingzbauer)(/)(africastalking-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Africastalking",
+                "language": "go",
+                "technology": "africastalking",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

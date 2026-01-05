@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Risepay",
+            "category": "Storage Sink",
+            "patterns": [
+                "risepay"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Risepay",
+                "language": "javascript",
+                "technology": "risepay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

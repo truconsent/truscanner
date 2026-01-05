@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vendure",
+            "category": "Storage Sink",
+            "patterns": [
+                "@vendure\\/core"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vendure",
+                "language": "javascript",
+                "technology": "vendure",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

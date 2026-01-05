@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Komola",
+            "category": "Storage Sink",
+            "patterns": [
+                "paymill-node"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Komola",
+                "language": "javascript",
+                "technology": "komola",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

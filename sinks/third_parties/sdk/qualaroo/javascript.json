@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Qualaroo",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-qualaroo-mobile-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qualaroo",
+                "language": "javascript",
+                "technology": "qualaroo",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Qualaroo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_kiq([.]push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Qualaroo",
+                "language": "javascript",
+                "technology": "qualaroo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

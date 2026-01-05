@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snapchat",
+            "category": "Storage Sink",
+            "patterns": [
+                ".*(snaptr)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Snapchat",
+                "language": "javascript",
+                "technology": "snapchat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

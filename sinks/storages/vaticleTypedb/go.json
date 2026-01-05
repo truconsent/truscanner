@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vaticle TypeDB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/vaticle/tcd-go-client).*(Query)"
+            ],
+            "tags": {
+                "id": "Storages.VaticleTypeDB.ReadAndWrite",
+                "language": "go",
+                "technology": "vaticleTypedb",
+                "type": "Database"
+            }
+        }
+    ]
+}

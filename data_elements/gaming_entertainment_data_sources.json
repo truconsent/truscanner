@@ -1,0 +1,124 @@
+{
+    "sources": [
+        {
+            "name": "Game Progress",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(game|play)[^\\s]{0,5}(progress|level|stage|completion)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Achievement History",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(achievement|trophy|badge)[^\\s]{0,5}(history|record|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "In-game Purchases",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(in[- ]game|virtual|digital)[^\\s]{0,5}(purchase|transaction|buy)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Virtual Currency",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(virtual|in[- ]game)[^\\s]{0,5}(currency|coins|credits)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Gaming Preferences",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(gaming|player)[^\\s]{0,5}(preference|choice|settings)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Multiplayer Interactions",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(multiplayer|team|co[- ]op)[^\\s]{0,5}(interaction|chat|communication)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Leaderboard Rankings",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(leaderboard|ranking|placement)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Time Spent Gaming",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(time|duration|hours)[^\\w]{1,5}(gaming|play|session)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Gaming Device Information",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(gaming|console|pc|device)[^\\s]{0,5}(info|specs|model)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Virtual Items Owned",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(virtual|digital)[^\\s]{0,5}(item|asset|inventory)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

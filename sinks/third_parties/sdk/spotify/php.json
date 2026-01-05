@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Spotify",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(spotify).*",
+                "(?i).*(spotifywebapi|SpotifyExtendSocialite).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Spotify",
+                "language": "php",
+                "technology": "spotify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

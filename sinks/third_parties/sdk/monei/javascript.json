@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Monei",
+            "category": "Storage Sink",
+            "patterns": [
+                "@monei-js\\/node-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Monei",
+                "language": "javascript",
+                "technology": "monei",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

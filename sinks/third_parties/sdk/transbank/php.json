@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Transbank Publico",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(transbank).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Transbank.Publico",
+                "language": "php",
+                "technology": "transbank",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

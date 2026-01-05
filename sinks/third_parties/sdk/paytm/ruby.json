@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paytm",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(paytm|paytm-merchant|paytmseller|paytmspree).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paytm",
+                "language": "ruby",
+                "technology": "paytm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

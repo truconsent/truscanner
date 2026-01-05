@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Duplex",
+            "category": "Storage Sink",
+            "patterns": [
+                "@duplexsi\\/multer-storage-google-cloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Duplex",
+                "language": "javascript",
+                "technology": "duplex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

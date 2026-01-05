@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ke-works",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pykechain).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ke-works",
+                "language": "python",
+                "technology": "ke-works",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Callr",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(callr.api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Callr",
+                "language": "php",
+                "technology": "callr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

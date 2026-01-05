@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lugodev",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(qvapay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lugodev",
+                "language": "python",
+                "technology": "lugodev",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pymetrics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pymetrics_assessment_api_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pymetrics",
+                "language": "python",
+                "technology": "pymetrics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

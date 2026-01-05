@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trevorewen",
+            "category": "Storage Sink",
+            "patterns": [
+                "paya"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trevorewen",
+                "language": "javascript",
+                "technology": "trevorewen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

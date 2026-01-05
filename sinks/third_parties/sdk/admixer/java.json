@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Admixer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(net[.]admixer[.]sdk[.]mediation|net[.]admixer[.]sdk[.]unity|net[.]admixer[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Admixer",
+                "language": "java",
+                "technology": "admixer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

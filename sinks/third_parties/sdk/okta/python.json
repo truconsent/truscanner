@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Okta",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(okta|django_okta).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Okta",
+                "language": "python",
+                "technology": "okta",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

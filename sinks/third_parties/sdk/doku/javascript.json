@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Doku",
+            "category": "Storage Sink",
+            "patterns": [
+                "doku-api|@iwandede\\/ads|doku_library"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Doku",
+                "language": "javascript",
+                "technology": "doku",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

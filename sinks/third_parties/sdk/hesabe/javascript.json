@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hesabe",
+            "category": "Storage Sink",
+            "patterns": [
+                "hesabe-crypt"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hesabe",
+                "language": "javascript",
+                "technology": "hesabe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

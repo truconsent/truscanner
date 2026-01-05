@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vertica",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vertica|airflow.*providers.*vertica).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vertica",
+                "language": "python",
+                "technology": "vertica",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ymammar",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-cloud-storage-uri-parser"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ymammar",
+                "language": "javascript",
+                "technology": "ymammar",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

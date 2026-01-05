@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Exponea",
+            "category": "Storage Sink",
+            "patterns": [
+                "capacitor-plugin-exponea|react-native-exponea-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Exponea",
+                "language": "javascript",
+                "technology": "exponea",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

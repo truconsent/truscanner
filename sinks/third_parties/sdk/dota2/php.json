@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dota2",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(dota2).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dota2",
+                "language": "php",
+                "technology": "dota2",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Odwyer",
+            "category": "Storage Sink",
+            "patterns": [
+                "sheet2api-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Odwyer",
+                "language": "javascript",
+                "technology": "odwyer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

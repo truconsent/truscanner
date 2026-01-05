@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Algolia",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*algoliaclient.*",
+                "algoliasearch|@algolia\\/requester-browser-xhr|@algolia\\/requester-common|@algolia\\/transporter"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Algolia",
+                "language": "javascript",
+                "technology": "algolia",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stellar",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(stellar).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stellar",
+                "language": "python",
+                "technology": "stellar",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

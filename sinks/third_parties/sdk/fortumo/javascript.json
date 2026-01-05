@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fortumo",
+            "category": "Storage Sink",
+            "patterns": [
+                "fortumo"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fortumo",
+                "language": "javascript",
+                "technology": "fortumo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

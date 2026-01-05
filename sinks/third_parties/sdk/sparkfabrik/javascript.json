@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sparkfabrik",
+            "category": "Storage Sink",
+            "patterns": [
+                "@sparkfabrik\\/capacitor-plugin-idfa|@sparkfabrik\\/react-native-idfa-aaid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sparkfabrik",
+                "language": "javascript",
+                "technology": "sparkfabrik",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

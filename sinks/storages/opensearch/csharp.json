@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Opensearch(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(OpenSearch[.]Client).*(get|serarch|msearch|scroll|count|explain|termVectors|mget).*"
+            ],
+            "tags": {
+                "id": "Storages.Opensearch.Read",
+                "language": "csharp",
+                "technology": "opensearch",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Opensearch(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Opensearch[.]Client).*(index|update|delete|bulk|reindex).*"
+            ],
+            "tags": {
+                "id": "Storages.Opensearch.Write",
+                "language": "csharp",
+                "technology": "opensearch",
+                "type": "Database"
+            }
+        }
+    ]
+}

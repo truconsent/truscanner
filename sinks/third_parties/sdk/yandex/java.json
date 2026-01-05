@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yandex",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]yandex[.]android|com[.]yandex[.]cloud|com[.]yandex[.]java).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yandex",
+                "language": "java",
+                "technology": "yandex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

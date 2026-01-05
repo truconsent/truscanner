@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mreda",
+            "category": "Storage Sink",
+            "patterns": [
+                "android-gcm"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mreda",
+                "language": "javascript",
+                "technology": "mreda",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

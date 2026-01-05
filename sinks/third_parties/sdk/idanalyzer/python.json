@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Idanalyzer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(idanalyzer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Idanalyzer",
+                "language": "python",
+                "technology": "idanalyzer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

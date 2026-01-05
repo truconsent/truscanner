@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Lossless",
+            "category": "Storage Sink",
+            "patterns": [
+                "gogle"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lossless",
+                "language": "javascript",
+                "technology": "lossless",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Lossless",
+            "category": "Storage Sink",
+            "patterns": [
+                "gtagmanager"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lossless",
+                "language": "javascript",
+                "technology": "lossless",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cresven",
+            "category": "Storage Sink",
+            "patterns": [
+                "cybersource-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cresven",
+                "language": "javascript",
+                "technology": "cresven",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

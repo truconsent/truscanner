@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Databricks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(databricks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Databricks",
+                "language": "ruby",
+                "technology": "databricks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

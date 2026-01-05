@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pinterest",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pinterest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pinterest",
+                "language": "php",
+                "technology": "pinterest",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

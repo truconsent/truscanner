@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mangopay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mangopaysdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mangopay",
+                "language": "python",
+                "technology": "mangopay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

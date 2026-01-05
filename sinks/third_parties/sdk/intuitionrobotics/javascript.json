@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Intuitionrobotics",
+            "category": "Storage Sink",
+            "patterns": [
+                "@intuitionrobotics\\/jira"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Intuitionrobotics",
+                "language": "javascript",
+                "technology": "intuitionrobotics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

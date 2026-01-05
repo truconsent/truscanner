@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vonage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(nexmo.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vonage",
+                "language": "php",
+                "technology": "vonage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

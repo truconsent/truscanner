@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ringcentral",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(ringcentral.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ringcentral",
+                "language": "php",
+                "technology": "ringcentral",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

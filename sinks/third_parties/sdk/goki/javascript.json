@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Goki",
+            "category": "Storage Sink",
+            "patterns": [
+                "@gokiteam\\/pubsub"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Goki",
+                "language": "javascript",
+                "technology": "goki",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bytedance",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bytedance[.]sdk|com[.]bytedance[.]ttgame).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bytedance",
+                "language": "java",
+                "technology": "bytedance",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

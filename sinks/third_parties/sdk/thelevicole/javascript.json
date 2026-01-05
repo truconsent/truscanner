@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thelevicole",
+            "category": "Storage Sink",
+            "patterns": [
+                "@thelevicole\\/youtube-to-html5-loader"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thelevicole",
+                "language": "javascript",
+                "technology": "thelevicole",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

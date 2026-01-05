@@ -1,0 +1,43 @@
+{
+    "sources": [
+        {
+            "name": "My",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]my[.]target).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.My",
+                "language": "java",
+                "technology": "my",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "My Target",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]my[.]target[.]mediation).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.My.Target",
+                "language": "java",
+                "technology": "my",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "My Tracker",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]my[.]tracker[.]plugins|com[.]my[.]tracker).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.My.Tracker",
+                "language": "java",
+                "technology": "my",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

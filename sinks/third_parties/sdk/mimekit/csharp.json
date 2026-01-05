@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mimekit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(MailKit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mimekit",
+                "language": "csharp",
+                "technology": "mimekit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

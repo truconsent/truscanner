@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Azure Cosmos DB(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/Azure/azure-sdk-for-go/sdk/data/cosmos).*(ReadItem|QueryItems)"
+            ],
+            "tags": {
+                "id": "Storages.AzureCosmosDb.Read",
+                "language": "go",
+                "technology": "cosmosdb",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Azure Cosmos DB(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/Azure/azure-sdk-for-go/sdk/data/cosmos).*(UpsertItem|DeleteItem)"
+            ],
+            "tags": {
+                "id": "Storages.AzureCosmosDb.Write",
+                "language": "go",
+                "technology": "cosmosdb",
+                "type": "Database"
+            }
+        }
+    ]
+}

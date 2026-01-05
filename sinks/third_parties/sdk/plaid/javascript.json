@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Plaid",
+            "category": "Storage Sink",
+            "patterns": [
+                "plaid|plaid-threads|react-plaid-link"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Plaid",
+                "language": "javascript",
+                "technology": "plaid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

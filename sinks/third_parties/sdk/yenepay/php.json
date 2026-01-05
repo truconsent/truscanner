@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yenepay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yenepay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yenepay",
+                "language": "php",
+                "technology": "yenepay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

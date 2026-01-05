@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Openapitools",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(openapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Openapitools",
+                "language": "python",
+                "technology": "openapitools",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Godaddy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(GoDaddyDomainsClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Godaddy",
+                "language": "php",
+                "technology": "godaddy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

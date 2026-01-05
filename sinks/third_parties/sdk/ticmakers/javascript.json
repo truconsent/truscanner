@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ticmakers",
+            "category": "Storage Sink",
+            "patterns": [
+                "@ticmakers-react-native\\/login"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ticmakers",
+                "language": "javascript",
+                "technology": "ticmakers",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

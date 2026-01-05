@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Restify",
+            "category": "Storage Sink",
+            "patterns": [
+                "restify"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Restify",
+                "language": "javascript",
+                "technology": "restify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

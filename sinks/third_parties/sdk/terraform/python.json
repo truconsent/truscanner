@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Terraform Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(terrasnek).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Terraform",
+                "language": "python",
+                "technology": "terraform",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

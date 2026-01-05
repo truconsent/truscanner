@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "PostPay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(postpay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.PostPay",
+                "language": "php",
+                "technology": "postpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

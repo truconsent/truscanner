@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mangoler",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-power-translator"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mangoler",
+                "language": "javascript",
+                "technology": "mangoler",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

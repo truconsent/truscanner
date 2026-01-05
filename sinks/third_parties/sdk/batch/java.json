@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Batch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]batch[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Batch",
+                "language": "java",
+                "technology": "batch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

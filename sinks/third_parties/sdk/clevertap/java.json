@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clevertap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]clevertap[.]android|com[.]clevertap[.]apns|com[.]clevertap).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clevertap",
+                "language": "java",
+                "technology": "clevertap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

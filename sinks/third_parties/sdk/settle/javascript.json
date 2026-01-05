@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Settle",
+            "category": "Storage Sink",
+            "patterns": [
+                "settle-sdk-node"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Settle",
+                "language": "javascript",
+                "technology": "settle",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tiangolo Fastapi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sse_starlette).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tiangolo.Fastapi",
+                "language": "python",
+                "technology": "tiangolo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

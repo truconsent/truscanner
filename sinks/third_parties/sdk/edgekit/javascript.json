@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Edgekit",
+            "category": "Storage Sink",
+            "patterns": [
+                "@airgrid\\/edgekit"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Edgekit",
+                "language": "javascript",
+                "technology": "edgekit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

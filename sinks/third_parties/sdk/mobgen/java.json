@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mobgen",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mobgen[.]halo[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mobgen",
+                "language": "java",
+                "technology": "mobgen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

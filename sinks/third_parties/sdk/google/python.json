@@ -1,0 +1,1675 @@
+{
+    "sources": [
+        {
+            "name": "Google Maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(googlemaps|google_maps).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Maps",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Drive",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pydrive|google_images_download).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Drive",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Duo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(duo_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Duo",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Spreadsheets",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gspread_dataframe|pygsheets|gspread).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Spreadsheets",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Firebase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(firebase).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Firebase",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Play Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(integrations.*google_play|google_play_scraper|playstore_search_results_scraper|playstore|playkit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Play",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Admob",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.ads|googleads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Admob",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.analytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Analytics",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wiser.*gcloud.*storage).*",
+                "(?i)(django_gcloud_storage).*",
+                "(?i)(cs_storage).*",
+                "(?i)(googleappenginecloudstorageclient).*",
+                "(?i)(google.*cloud.*[.]storage|gcloud.*(rest|aio).*[.]storage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Storage",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Firestore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wiser.*gcloud.*firestore).*",
+                "(?i)(google.*cloud.*[.]firestore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Firestore",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Datastore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gapic_google_cloud_datastore_v1).*",
+                "(?i)(google-cloud-datastore|googledatastore|DatastoreAdminClient).*",
+                "(?i)(google.*cloud.*[.]datastore|gcloud.*(rest|aio).*[.]datastore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Datastore",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google BigQuery",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*[.]bigquery).*",
+                "(?i)(pybigquery|gcloud.*(rest|aio).*[.]bigquery).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.BigQuery",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Pub/Sub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*[.]pubsub).*",
+                "(?i)(gax_google_pubsub_v1).*",
+                "(?i)(grpc_google_pubsub_v1).*",
+                "(?i)(gcloud.*(rest|aio).*[.]pubsub).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Pubsub",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Auth",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*auth|gcreds).*",
+                "(?i)(google.*cloud.*[.]auth).*",
+                "(?i)(gcloud.*(rest|aio).*[.]auth).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Auth",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Translation",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*[.]translate_v2).*",
+                "(?i)(googletrans|google_trans_new|bdtranslate).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Translation",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Key Management Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*[.]kms|gcloud.*(rest|aio).*[.]kms).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.KeyManagementService",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gmusicapi|pyfcm|caliban|ndb|fcm|anom|binderhub|gcdu|apprentice).*",
+                "(?i)(googleapiclient).*",
+                "(?i)(gapic_google_cloud_speech_v1beta1).*",
+                "(?i)(gapic_google_cloud_language_v1).*",
+                "(?i)(gapic_google_cloud_vision_v1).*",
+                "(?i)(googleapis_common_protos).*",
+                "(?i)(google_crc32c).*",
+                "(?i)(pytesseract).*",
+                "(?i)(google_api_core|googleapi).*",
+                "(?i)(google_resumable_media).*",
+                "(?i)(cloudml_hypertune).*",
+                "(?i)((gax|grpc)_google_logging_v2).*",
+                "(?i)(google_gax).*",
+                "(?i)(google_apitools).*",
+                "(?i)(google_nest_sdm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*[.]core).*",
+                "(?i)(googleclouddebugger|gTTS).*",
+                "(?i)(grpc_gcp|google_pasta|gcloud).*",
+                "(?i)(apache_airflow_providers_google).*",
+                "(?i)(asyncio_gcloud_ml_engine|gcloudc[.]db).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Messaging",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*cloudmessaging|google.*cloud.*gcm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.CloudMessaging",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google DoubleClick",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*doubleclick).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.DoubleClick",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Fit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*fitness).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Fit",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Location Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*location).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Location",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Pay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google_pay_token_decryption).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Pay",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Spanner",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*spanner).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Spanner",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Dataflow",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dataflow).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Dataflow",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud SQL",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*sql).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.SQL",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Data Loss Prevention",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*privacy[.]dlp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DLP",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Memorystore For Memcache",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*memcache).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.MemorystoreForMemcache",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Memorystore For Redis",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*redis).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.MemorystoreForRedis",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Vision",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*vision).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Vision",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Speech-to-Text",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*speech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.SpeechToText",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Text-to-Speech",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*texttospeech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.TextToSpeech",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Natural Language",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*language).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.NaturalLanguage",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud AutoML",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*automl).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AutoML",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Workflows",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*workflows).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Workflows",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud WebSecurityScanner",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*websecurityscanner).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.WebSecurityScanner",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud WebRisk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*webrisk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.WebRisk",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Virtual Private Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*vpcaccess).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.VirtualPrivateCloud",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Video Stitcher",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*video[.]stitcher).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.VideoStitcher",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Video Intelligence",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*videointelligence).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.VideoIntelligence",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Vertex AI Workbench",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*notebooks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.VertexAIWorkbench",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Transcoder API",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*video[.]transcoder).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.TranscoderAPI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Service Usage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*serviceusage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ServiceUsage",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Service Management API",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*servicemanagement).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ServiceManagementAPI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Service Directory",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*servicedirectory).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ServiceDirectory",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Service Control API",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*servicecontrol).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ServiceControlAPI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Service Catalog",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*privatecatalog).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ServiceCatalog",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Security Command Center",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*securitycenter).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.SecurityCommandCenter",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Secret Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*secretmanager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.SecretManager",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Retail API",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*retail).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.RetailAPI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Resource Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*resourcemanager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ResourceManager",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Recommender",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*recommender).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Recommender",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Recommendations AI",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*recommendationengine).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.RecommendationsAI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud ReCAPTCHA Enterprise",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*recaptchaenterprise).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ReCAPTCHAEnterprise",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Public Certificate Authority",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*security[.]publicca).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.PublicCertificateAuthority",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Private Certificate Authority",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*security[.]privateca).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.PrivateCertificateAuthority",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud GRPC",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*grpc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.GRPC",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Phishing Protection",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*phishingprotection).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.PhishingProtection",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Organization Policy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*orgpolicy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.OrganizationPolicy",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Network Security",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*networksecurity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.NetworkSecurity",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Network Management",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*networkmanagement).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.NetworkManagement",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Network Connectivity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*networkconnectivity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.NetworkConnectivity",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Migrate to Virtual Machines",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*vmmigration).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.MigrateToVirtualMachines",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Media Translation",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*mediatranslation).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.MediaTranslation",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Managed Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*managedidentities).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ManagedService",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Live Stream",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*video[.]livestream).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.LiveStream",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Kubernetes Engine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*container).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.KubernetesEngine",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud IoT",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*iot).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.IoT",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud VMware Engine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*vmwareengine).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.VMwareEngine",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Deploy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*deploy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Deploy",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud GKE",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*gke).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.GKE",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Game Servers",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*gaming).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.GameServers",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Eventarc",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*eventarc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Eventarc",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Error Reporting",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*devtools[.]clouderrorreporting).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ErrorReporting",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Enterprise Knowledge Graph",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*enterpriseknowledgegraph).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.EnterpriseKnowledgeGraph",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Document AI Warehouse",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*contentwarehouse).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DocumentAIWarehouse",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Document AI",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*documentai).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DocumentAI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Discovery Engine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*discoveryengine).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DiscoveryEngine",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Dialogflow",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dialogflow).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Dialogflow",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Datastream",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*datastream).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Datastream",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Dataplex",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dataplex).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Dataplex",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Dataform",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dataform).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Dataform",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Contact Center AI Insights",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*contactcenterinsights).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ContactCenterAIInsights",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Compute Engine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*compute).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ComputeEngine",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Trace",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*trace).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Trace",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud TPU",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*tpu).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.TPU",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Tasks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*tasks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Tasks",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Talent Solution",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*talent).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.TalentSolution",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Shell",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*shell).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Shell",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Scheduler",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*scheduler).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Scheduler",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Run",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*run).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Run",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Profiler",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*devtools[.]cloudprofiler).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Profiler",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud OS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*os).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.OS",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Optimization AI",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*optimization).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.OptimizationAI",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Monitoring",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*monitoring).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Monitoring",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Life Sciences",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*lifesciences).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.LifeSciences",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud IDS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*ids).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.IDS",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Functions",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*functions).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Functions",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Domains",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*domains).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Domains",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud DNS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dns).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DNS",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Database Migration Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*clouddms).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DatabaseMigrationService",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Data Fusion",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*datafusion).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DataFusion",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Composer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*orchestration[.]airflow[.]service).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Composer",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Build",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*devtools[.]cloudbuild).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Build",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Billing",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*billing).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Billing",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Asset Inventory",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*asset).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AssetInventory",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Channel Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*channel).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ChannelServices",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Certificate Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*certificatemanager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.CertificateManager",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Binary Authorization",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*binaryauthorization).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.BinaryAuthorization",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Batch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*batch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Batch",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Bare Metal Solution",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*baremetalsolution).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.BareMetalSolution",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Assured Workloads",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*assuredworkloads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AssuredWorkloads",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Artifact Registry",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*devtools[.]artifactregistry).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ArtifactRegistry",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud App Engine Admin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*appengine|googleappenginepipeline).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AppEngineAdmin",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Apigee Connect",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*apigeeconnect).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.ApigeeConnect",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud API Gateway",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*apigateway).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.APIGateway",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud AI Platform",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*aiplatform).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AIPlatform",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Access Context Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*identity[.]accesscontextmanager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AccessContextManager",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Access Approval",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*accessapproval).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AccessApproval",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud IAM",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*iam).*",
+                "(?i)(grpc_google_iam_v1).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.IAM",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Dataproc",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dataproc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Dataproc",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Data Catalog",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*datacatalog).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.DataCatalog",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Dataprep",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*dataprep).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Dataprep",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Datalab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*datalab).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Datalab",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Endpoints",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*endpoints).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Endpoints",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Machine Learning Engine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.*cloud.*mlengine).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.MachineLearningEngine",
+                "language": "python",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jawbone",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(upapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jawbone",
+                "language": "python",
+                "technology": "jawbone",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

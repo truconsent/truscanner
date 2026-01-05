@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gocardless",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(GoCardless).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gocardless",
+                "language": "csharp",
+                "technology": "gocardless",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Acrcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "acrcloud|soundcloud-track-recognizer|audio-recognizer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Acrcloud",
+                "language": "javascript",
+                "technology": "acrcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

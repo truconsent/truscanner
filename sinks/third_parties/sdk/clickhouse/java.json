@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clickhouse",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ru[.]yandex[.]clickhouse).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clickhouse",
+                "language": "java",
+                "technology": "clickhouse",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

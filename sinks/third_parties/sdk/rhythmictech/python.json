@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rhythmictech",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(openfec_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rhythmictech",
+                "language": "python",
+                "technology": "rhythmictech",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

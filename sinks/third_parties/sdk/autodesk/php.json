@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Autodesk Forge",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(laravel.forge).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Autodesk.Forge",
+                "language": "php",
+                "technology": "autodesk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

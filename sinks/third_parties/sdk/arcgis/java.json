@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Arcgis",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]esri[.]arcgis[.]android|com[.]esri[.]arcgis|com[.]esri[.]arcgisruntime).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Arcgis",
+                "language": "java",
+                "technology": "arcgis",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

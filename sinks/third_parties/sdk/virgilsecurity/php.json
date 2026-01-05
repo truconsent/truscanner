@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Virgilsecurity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(virgilsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Virgilsecurity",
+                "language": "php",
+                "technology": "virgilsecurity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

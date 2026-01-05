@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snyk",
+            "category": "Storage Sink",
+            "patterns": [
+                "@snyk\\/protect"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Snyk",
+                "language": "javascript",
+                "technology": "snyk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

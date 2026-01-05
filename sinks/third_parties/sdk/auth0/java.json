@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Auth0",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(auth0-clojure|auth0-ring|com[.]auth0[.]android[.]gradle-credentials|com[.]auth0[.]android|com[.]auth0[.]gradle|gradle[.]plugin[.]com[.]auth0[.]android|gradle[.]plugin[.]com[.]auth0[.]gradle|org[.]webjars[.]bowergithub[.]auth0|org[.]wso2[.]km[.]ext[.]auth0).*",
+                "(?i)(com[.]auth0[.](?!jwt\b|jwt[.]|utils?\b|utils?[.]|helpers?\b|helpers?[.]|common\b|common[.]|core\b|core[.]).+)"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Auth0",
+                "language": "java",
+                "technology": "auth0",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

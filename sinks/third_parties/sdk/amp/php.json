@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(ampproject|ampoptimizersubscriber).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amp",
+                "language": "php",
+                "technology": "amp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Graviti",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tensorbay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Graviti",
+                "language": "python",
+                "technology": "graviti",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

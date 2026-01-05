@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nowcerts",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(nowcerts).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nowcerts",
+                "language": "php",
+                "technology": "nowcerts",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ovhcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ovh.api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ovhcloud",
+                "language": "php",
+                "technology": "ovhcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

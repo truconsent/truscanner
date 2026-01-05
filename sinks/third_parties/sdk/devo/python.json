@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Devo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(devo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Devo",
+                "language": "python",
+                "technology": "devo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

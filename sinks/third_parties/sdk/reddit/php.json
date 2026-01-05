@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Reddit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(reddit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Reddit",
+                "language": "php",
+                "technology": "reddit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

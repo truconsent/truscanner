@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitrix24",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bitrix24).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitrix24",
+                "language": "php",
+                "technology": "bitrix24",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

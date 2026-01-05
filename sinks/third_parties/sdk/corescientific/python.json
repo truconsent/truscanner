@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Corescientific Plexus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow.*providers.*plexus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Corescientific.Plexus",
+                "language": "python",
+                "technology": "corescientific",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

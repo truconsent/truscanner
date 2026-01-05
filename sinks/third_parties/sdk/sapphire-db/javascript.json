@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sapphire-db",
+            "category": "Storage Sink",
+            "patterns": [
+                "sapphiredb|ng-sapphiredb"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sapphire-db",
+                "language": "javascript",
+                "technology": "sapphire-db",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

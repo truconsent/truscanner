@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ubilabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-geosuggest|batch-geocoder|react-geosuggest-mui|google-maps-api-stream|react-geosuggest-sw|@stowklabs\\/react-geosuggest"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ubilabs",
+                "language": "javascript",
+                "technology": "ubilabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

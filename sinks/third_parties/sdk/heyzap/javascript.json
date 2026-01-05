@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Heyzap",
+            "category": "Storage Sink",
+            "patterns": [
+                "heyzap-cordova"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Heyzap",
+                "language": "javascript",
+                "technology": "heyzap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

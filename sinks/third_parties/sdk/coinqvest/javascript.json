@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinqvest",
+            "category": "Storage Sink",
+            "patterns": [
+                "coinqvest-merchant-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinqvest",
+                "language": "javascript",
+                "technology": "coinqvest",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Purchasely",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-purchasely|@purchasely\\/cordova-plugin-purchasely"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Purchasely",
+                "language": "javascript",
+                "technology": "purchasely",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

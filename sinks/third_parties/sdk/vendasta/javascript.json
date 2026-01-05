@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vendasta",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bjohnson-va\\/ng-cast"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vendasta",
+                "language": "javascript",
+                "technology": "vendasta",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

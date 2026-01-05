@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Groupdocs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(groupdocs_conversion_cloud|groupdocs_viewer_cloud|groupdocs_signature_cloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Groupdocs",
+                "language": "python",
+                "technology": "groupdocs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

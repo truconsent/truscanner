@@ -1,0 +1,43 @@
+{
+    "sources": [
+        {
+            "name": "PostgreSQL DB (Initialize)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pg_connect|pg_connect_poll|pg_connection).*"
+            ],
+            "tags": {
+                "id": "Storages.PostgreSQL.Initialize",
+                "language": "php",
+                "technology": "postgres",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "PostgreSQL DB (Read and Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pg_query|pg_fetch|pg_field|pg_lo|pg_affected_rows|pg_num|pg_result|pg_set|pg_delete).*"
+            ],
+            "tags": {
+                "id": "Storages.PostgreSQL.ReadAndWrite",
+                "language": "php",
+                "technology": "postgres",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "PostgreSQL DB (Clear resources)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pg_free_result|pg_close|pg_cancel_query)"
+            ],
+            "tags": {
+                "id": "Storages.PostgreSQL.ClearResources",
+                "language": "php",
+                "technology": "postgres",
+                "type": "Database"
+            }
+        }
+    ]
+}

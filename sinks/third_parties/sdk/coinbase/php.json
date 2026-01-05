@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinbase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(coinbase).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinbase",
+                "language": "php",
+                "technology": "coinbase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

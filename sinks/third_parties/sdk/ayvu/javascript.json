@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ayvu",
+            "category": "Storage Sink",
+            "patterns": [
+                "mokylib"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ayvu",
+                "language": "javascript",
+                "technology": "ayvu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

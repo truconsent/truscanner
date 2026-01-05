@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pollen-robotics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(reachy_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pollen-robotics",
+                "language": "python",
+                "technology": "pollen-robotics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

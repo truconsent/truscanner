@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Andreasnorman",
+            "category": "Storage Sink",
+            "patterns": [
+                "simplegmaps-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Andreasnorman",
+                "language": "javascript",
+                "technology": "andreasnorman",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

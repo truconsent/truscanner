@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fatfi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aquarium).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fatfi",
+                "language": "python",
+                "technology": "fatfi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blackducksoftware",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]blackducksoftware[.]protex[.]sdkclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blackducksoftware",
+                "language": "java",
+                "technology": "blackducksoftware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

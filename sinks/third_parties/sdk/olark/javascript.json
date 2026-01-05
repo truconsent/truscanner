@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Olark",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?olark[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Olark",
+                "language": "javascript",
+                "technology": "olark",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

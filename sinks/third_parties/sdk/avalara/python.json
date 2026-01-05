@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Avalara",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(avalara).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Avalara",
+                "language": "python",
+                "technology": "avalara",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Culqi",
+            "category": "Storage Sink",
+            "patterns": [
+                "culqi2|culqi2-node|culqi-node|culqi|ng-culqi"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Culqi",
+                "language": "javascript",
+                "technology": "culqi",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Culqi Docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "vue-culqi-checkout"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Culqi.Docs",
+                "language": "javascript",
+                "technology": "culqi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

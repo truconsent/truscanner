@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twilio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]twilio.*(sdk|http|rest|base|security|twiml|Twilio|connect|disconnect|release|initialize|getState|createDevice).*)|(com[.]authy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twilio",
+                "language": "java",
+                "technology": "twilio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

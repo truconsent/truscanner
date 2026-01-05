@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dashborg",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dashborg).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dashborg",
+                "language": "python",
+                "technology": "dashborg",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

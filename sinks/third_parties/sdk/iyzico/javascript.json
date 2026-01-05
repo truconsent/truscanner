@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Iyzico",
+            "category": "Storage Sink",
+            "patterns": [
+                "iyzipay"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Iyzico",
+                "language": "javascript",
+                "technology": "iyzico",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

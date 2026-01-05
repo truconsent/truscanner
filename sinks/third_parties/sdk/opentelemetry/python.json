@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opentelemetry",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(opentelemetry).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opentelemetry",
+                "language": "python",
+                "technology": "opentelemetry",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

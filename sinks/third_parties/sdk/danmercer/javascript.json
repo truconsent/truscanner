@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Danmercer",
+            "category": "Storage Sink",
+            "patterns": [
+                "gdrive-simple"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Danmercer",
+                "language": "javascript",
+                "technology": "danmercer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

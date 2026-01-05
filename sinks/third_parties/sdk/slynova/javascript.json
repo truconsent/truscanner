@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Slynova",
+            "category": "Storage Sink",
+            "patterns": [
+                "@slynova\\/flydrive-gcs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Slynova",
+                "language": "javascript",
+                "technology": "slynova",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

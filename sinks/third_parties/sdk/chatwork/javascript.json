@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chatwork",
+            "category": "Storage Sink",
+            "patterns": [
+                "hubot-chatwork|nodejs-chatwork|post-chatwork-message|simple-cw-node|gatsby-source-chatwork-messages|chatwork-api-wrap|n8n-nodes-chatwork|chatwork-utils|chatwork-api|avengers-chatwork"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chatwork",
+                "language": "javascript",
+                "technology": "chatwork",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

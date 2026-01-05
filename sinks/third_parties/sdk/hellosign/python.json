@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hellosign",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(hellosign_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hellosign",
+                "language": "python",
+                "technology": "hellosign",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

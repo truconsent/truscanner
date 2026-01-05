@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vermeyen",
+            "category": "Storage Sink",
+            "patterns": [
+                "codezero-mapify"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vermeyen",
+                "language": "javascript",
+                "technology": "vermeyen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

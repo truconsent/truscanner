@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twitter",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(twitter|db2twitter|tapioca_twitter|tap_twitter|tweepy|twython|TwitterAPI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twitter",
+                "language": "python",
+                "technology": "twitter",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

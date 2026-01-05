@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cryptoapis",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cryptoapis).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cryptoapis",
+                "language": "python",
+                "technology": "cryptoapis",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gitlab",
+            "category": "Storage Sink",
+            "patterns": [
+                "netlify-cms-backend-gitlab|@devx\\/plugin-gitlab-backend"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gitlab",
+                "language": "javascript",
+                "technology": "gitlab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

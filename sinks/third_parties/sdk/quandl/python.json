@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quandl",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(quandl).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Quandl",
+                "language": "python",
+                "technology": "quandl",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

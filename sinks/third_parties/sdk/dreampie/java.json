@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dreampie",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cn[.]dreampie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dreampie",
+                "language": "java",
+                "technology": "dreampie",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

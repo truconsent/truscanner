@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Resthooks",
+            "category": "Storage Sink",
+            "patterns": [
+                "@rest-hooks\\/core|@rest-hooks\\/graphql|rest-hooks"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Resthooks",
+                "language": "javascript",
+                "technology": "resthooks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

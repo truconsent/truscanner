@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinpayments",
+            "category": "Storage Sink",
+            "patterns": [
+                "coin-payments-lib"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinpayments",
+                "language": "javascript",
+                "technology": "coinpayments",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

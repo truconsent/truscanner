@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cleartrip",
+            "category": "Storage Sink",
+            "patterns": [
+                "pwa-lib"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cleartrip",
+                "language": "javascript",
+                "technology": "cleartrip",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

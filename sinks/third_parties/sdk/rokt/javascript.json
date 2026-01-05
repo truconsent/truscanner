@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Rokt",
+            "category": "Storage Sink",
+            "patterns": [
+                ".*(RoktAds|Rokt.createLauncher)",
+                ".*launcher.selectPlacements"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rokt",
+                "language": "javascript",
+                "technology": "rokt",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

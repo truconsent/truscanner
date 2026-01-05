@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Netflix",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(netflix|.*NetflixAPI|netflix_roulette|pyflix2).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netflix",
+                "language": "python",
+                "technology": "netflix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

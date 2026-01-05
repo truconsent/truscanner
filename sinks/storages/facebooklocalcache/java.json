@@ -1,0 +1,32 @@
+{
+    "sources": [
+        {
+            "name": "Facebook Android Local Cache",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com.facebook.Session.saveTokenToCache)(.*)"
+            ],
+            "tags": {
+                "id": "Storages.Facebook.LocalCache",
+                "language": "java",
+                "technology": "facebooklocalcache",
+                "law": "GDPR",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Facebook Android Cookie",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com.facebook.AuthorizationClient$WebViewAuthHandler.saveCookieToken)(.*)"
+            ],
+            "tags": {
+                "id": "Storages.Facebook.SaveCookie",
+                "language": "java",
+                "technology": "facebooklocalcache",
+                "law": "GDPR",
+                "type": "Database"
+            }
+        }
+    ]
+}

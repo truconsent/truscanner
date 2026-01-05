@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Databricks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dbx|.*databricks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Databricks",
+                "language": "python",
+                "technology": "databricks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

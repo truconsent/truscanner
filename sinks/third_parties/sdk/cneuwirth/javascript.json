@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cneuwirth Dev",
+            "category": "Storage Sink",
+            "patterns": [
+                "@christophern\\/populartimesjs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cneuwirth.Dev",
+                "language": "javascript",
+                "technology": "cneuwirth",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "sources": [
+        {
+            "name": "Educational Qualifications",
+            "category": "Educational & Academic Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(educational|academic|degree)[^\\s]{0,5}(qualification|credential|certificate)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Institution Names",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(institution|college|university|school)[^\\s]{0,5}name\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Graduation Years",
+            "category": "Educational & Academic Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(graduation|passout|completion)[^\\s]{0,5}(year|date)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Academic Performance",
+            "category": "Educational & Academic Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(academic|educational)[^\\s]{0,5}(performance|score|grade|gpa)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Courses Completed",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(course|module|class)[^\\s]{0,5}completed\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Certifications",
+            "category": "Educational & Academic Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(certification|credential|certificate)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Skills Assessment",
+            "category": "Educational & Academic Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(skill|competency)[^\\s]{0,5}(assessment|evaluation|test)\\b",
+                "(?i)(?:technical|speaking|programming|soft)[^\\s/(;)#|,=!>]{0,10}skills"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Training Records",
+            "category": "Educational & Academic Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(training|workshop|program)[^\\s]{0,5}(record|history|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Learning Progress",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(learning|education)[^\\s]{0,5}(progress|status)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Continuing Education",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bcontinuing[^\\s]{0,5}education\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Professional Development",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bprofessional[^\\s]{0,5}development\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Educational History",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)educational[^\\s/(;)#|,=!>]{0,10}history|(?:master|bachelor)[^\\s/(;)#|,=!>]{0,10}degree|attended[^\\s/(;)#|,=!>]{0,10}(?:universities|university|school|college)|(?:universities|university|school|college)[^\\s/(;)#|,=!>]{0,10}attended"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Academic Transcripts",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)academic[^\\s/(;)#|,=!>]{0,10}transcripts|(?:diploma|bachelor|[^\\s/(;)#|,=!>]{0,10}degree|masters[^\\s/(;)#|,=!>]{0,10}degree|pg|degree)[^\\s/(;)#|,=!>]{0,10}certificate"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

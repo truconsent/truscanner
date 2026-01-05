@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailerlite",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(mailerliteapi|mailerlite).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailerlite",
+                "language": "php",
+                "technology": "mailerlite",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

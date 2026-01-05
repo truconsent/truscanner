@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jadeframework",
+            "category": "Storage Sink",
+            "patterns": [
+                "@jade-framework\\/jade"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jadeframework",
+                "language": "javascript",
+                "technology": "jadeframework",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

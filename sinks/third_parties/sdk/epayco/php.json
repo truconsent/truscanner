@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Epayco",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Epayco.Epayco).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Epayco",
+                "language": "php",
+                "technology": "epayco",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Leadpages",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gcloud_requests).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Leadpages",
+                "language": "python",
+                "technology": "leadpages",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

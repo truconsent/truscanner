@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blueconic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]blueconic).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blueconic",
+                "language": "java",
+                "technology": "blueconic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

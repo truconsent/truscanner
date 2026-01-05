@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lambdalog",
+            "category": "Storage Sink",
+            "patterns": [
+                "lambda-log"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lambdalog",
+                "language": "javascript",
+                "technology": "lambdalog",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snapcraft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(snapcraft).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Snapcraft",
+                "language": "python",
+                "technology": "snapcraft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nextbillion",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ai[.]nextbillion).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nextbillion",
+                "language": "java",
+                "technology": "nextbillion",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Solana",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(solana).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Solana",
+                "language": "php",
+                "technology": "solana",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

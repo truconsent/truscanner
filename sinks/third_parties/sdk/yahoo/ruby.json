@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yahoo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yahoo-finance|yahoo_weatherman).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yahoo",
+                "language": "ruby",
+                "technology": "yahoo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

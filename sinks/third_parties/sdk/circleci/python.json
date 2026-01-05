@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Circleci",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(circleci).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Circleci",
+                "language": "python",
+                "technology": "circleci",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gopay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(gopayinline.client|gopayinline.api|gopay.service|gopay.form).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gopay",
+                "language": "php",
+                "technology": "gopay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

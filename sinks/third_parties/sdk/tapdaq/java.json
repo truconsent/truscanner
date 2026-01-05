@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tapdaq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tapdaq).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tapdaq",
+                "language": "java",
+                "technology": "tapdaq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

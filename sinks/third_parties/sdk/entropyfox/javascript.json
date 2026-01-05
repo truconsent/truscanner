@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Entropyfox",
+            "category": "Storage Sink",
+            "patterns": [
+                "strapi-upload-google"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Entropyfox",
+                "language": "javascript",
+                "technology": "entropyfox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

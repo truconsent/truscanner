@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chiship",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cn[.]chiship[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chiship",
+                "language": "java",
+                "technology": "chiship",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jwplayer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]jwplayer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jwplayer",
+                "language": "java",
+                "technology": "jwplayer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

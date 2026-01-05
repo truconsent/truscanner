@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Uploadcare",
+            "category": "Storage Sink",
+            "patterns": [
+                "uploadcare-widget|uploadcare-widget-tab-effects"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Uploadcare",
+                "language": "javascript",
+                "technology": "uploadcare",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

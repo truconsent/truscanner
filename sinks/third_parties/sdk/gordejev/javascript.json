@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gordejev",
+            "category": "Storage Sink",
+            "patterns": [
+                "2co"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gordejev",
+                "language": "javascript",
+                "technology": "gordejev",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

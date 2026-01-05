@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Verizon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]verizon[.]ads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Verizon",
+                "language": "java",
+                "technology": "verizon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

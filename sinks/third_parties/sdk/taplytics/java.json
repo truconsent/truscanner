@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Taplytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]taplytics[.]analytics[.]android[.]integrations).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Taplytics",
+                "language": "java",
+                "technology": "taplytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

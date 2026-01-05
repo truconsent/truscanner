@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ringpartner",
+            "category": "Storage Sink",
+            "patterns": [
+                "bunyan-buddy"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ringpartner",
+                "language": "javascript",
+                "technology": "ringpartner",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

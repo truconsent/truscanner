@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Auth0",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(auth0-community|pulumi|auth0-lab)(/)(go-auth0|pulumi-auth0/sdk/v2/go/auth0|fga-go-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Auth0",
+                "language": "go",
+                "technology": "auth0",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

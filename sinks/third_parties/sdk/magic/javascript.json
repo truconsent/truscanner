@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Magic",
+            "category": "Storage Sink",
+            "patterns": [
+                "magic-sdk|@magic-sdk\\/admin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Magic",
+                "language": "javascript",
+                "technology": "magic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

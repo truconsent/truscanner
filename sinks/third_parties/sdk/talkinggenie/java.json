@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Talkinggenie",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]talkinggenie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Talkinggenie",
+                "language": "java",
+                "technology": "talkinggenie",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bridgecrew",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(checkov).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bridgecrew",
+                "language": "python",
+                "technology": "bridgecrew",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

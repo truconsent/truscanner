@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sylabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow.*providers.*singularity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sylabs",
+                "language": "python",
+                "technology": "sylabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

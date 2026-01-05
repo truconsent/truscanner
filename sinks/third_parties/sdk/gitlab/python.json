@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gitlab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gitlab).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gitlab",
+                "language": "python",
+                "technology": "gitlab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

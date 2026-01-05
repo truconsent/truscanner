@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fanap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pod.product.service|pod.virtual.account.service|pod.billing.service|pod.social.service|pod.base.service|pod.sso.service|pod.user.operation.service|pod.dealing.service|pod.common.service|pod.neshan.service).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fanap",
+                "language": "php",
+                "technology": "fanap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

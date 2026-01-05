@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mindee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mindee).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mindee",
+                "language": "python",
+                "technology": "mindee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

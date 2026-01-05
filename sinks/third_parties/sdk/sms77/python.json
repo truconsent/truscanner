@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sms77",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sms77api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sms77",
+                "language": "python",
+                "technology": "sms77",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

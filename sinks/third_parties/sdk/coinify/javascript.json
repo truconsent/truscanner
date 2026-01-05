@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinify",
+            "category": "Storage Sink",
+            "patterns": [
+                "safecharge-psp"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinify",
+                "language": "javascript",
+                "technology": "coinify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

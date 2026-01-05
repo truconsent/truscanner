@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alipay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(alipay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alipay",
+                "language": "python",
+                "technology": "alipay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nodegame",
+            "category": "Storage Sink",
+            "patterns": [
+                "nodegame-mturk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nodegame",
+                "language": "javascript",
+                "technology": "nodegame",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Activecollab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(activecollab.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Activecollab",
+                "language": "php",
+                "technology": "activecollab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

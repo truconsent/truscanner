@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Moengage",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-moengage-custom|react-native-moengage|moengage|react-native-moengage-inbox|react-native-moengage-geofence|react-moengage|@segment\\/analytics.js-integration-moengage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Moengage",
+                "language": "javascript",
+                "technology": "moengage",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Moengage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?moeClient([.](add_user_attribute|add_unique_user_id|track_event))?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Moengage",
+                "language": "javascript",
+                "technology": "moengage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

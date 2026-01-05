@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rongcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(rongcloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rongcloud",
+                "language": "php",
+                "technology": "rongcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

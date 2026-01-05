@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clearcode",
+            "category": "Storage Sink",
+            "patterns": [
+                "@clearcodehq\\/openrtb"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clearcode",
+                "language": "javascript",
+                "technology": "clearcode",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

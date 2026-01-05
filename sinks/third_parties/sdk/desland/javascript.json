@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Desland",
+            "category": "Storage Sink",
+            "patterns": [
+                "@guillaumedeslandes\\/vue2-geocoder"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Desland",
+                "language": "javascript",
+                "technology": "desland",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

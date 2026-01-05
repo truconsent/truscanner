@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xero",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Calcinai.OAuth2.Client.Provider.Xero|LangleyFoxall.XeroLaravel.XeroApp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xero",
+                "language": "php",
+                "technology": "xero",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kidoz",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(net[.]kidoz[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kidoz",
+                "language": "java",
+                "technology": "kidoz",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

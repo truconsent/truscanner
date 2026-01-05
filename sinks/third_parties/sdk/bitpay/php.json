@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bitpaysdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitpay",
+                "language": "php",
+                "technology": "bitpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

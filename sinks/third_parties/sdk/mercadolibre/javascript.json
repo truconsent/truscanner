@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mercadolibre",
+            "category": "Storage Sink",
+            "patterns": [
+                "@trowdev\\/mercadopago"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mercadolibre",
+                "language": "javascript",
+                "technology": "mercadolibre",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

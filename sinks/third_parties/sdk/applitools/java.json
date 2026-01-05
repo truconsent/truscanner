@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Applitools",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]applitools).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Applitools",
+                "language": "java",
+                "technology": "applitools",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

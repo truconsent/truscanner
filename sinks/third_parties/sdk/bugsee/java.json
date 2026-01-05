@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bugsee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bugsee).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bugsee",
+                "language": "java",
+                "technology": "bugsee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

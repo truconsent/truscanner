@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hakkiri",
+            "category": "Storage Sink",
+            "patterns": [
+                "hakkiri-jira-connector"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hakkiri",
+                "language": "javascript",
+                "technology": "hakkiri",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

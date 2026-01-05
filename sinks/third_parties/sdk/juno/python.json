@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Juno",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(junopy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Juno",
+                "language": "python",
+                "technology": "juno",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

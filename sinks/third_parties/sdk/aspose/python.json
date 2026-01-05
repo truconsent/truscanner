@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aspose",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(asposetaskscloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aspose",
+                "language": "python",
+                "technology": "aspose",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

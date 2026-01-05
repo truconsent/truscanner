@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dedupe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dedupe).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dedupe",
+                "language": "python",
+                "technology": "dedupe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

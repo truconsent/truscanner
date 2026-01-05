@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coresender",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(coresender).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coresender",
+                "language": "python",
+                "technology": "coresender",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tune",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tune[.]reporting|com[.]tune[.]sdk|com[.]tune).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tune",
+                "language": "java",
+                "technology": "tune",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nitro",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-plugin-cookiebot"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nitro",
+                "language": "javascript",
+                "technology": "nitro",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Housecanary",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(housecanary).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Housecanary",
+                "language": "python",
+                "technology": "housecanary",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

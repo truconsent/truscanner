@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Herdhound",
+            "category": "Storage Sink",
+            "patterns": [
+                "daimyo"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Herdhound",
+                "language": "javascript",
+                "technology": "herdhound",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

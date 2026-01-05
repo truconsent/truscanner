@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cawfree",
+            "category": "Storage Sink",
+            "patterns": [
+                "express-payment-request"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cawfree",
+                "language": "javascript",
+                "technology": "cawfree",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kamon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]kamon).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kamon",
+                "language": "java",
+                "technology": "kamon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

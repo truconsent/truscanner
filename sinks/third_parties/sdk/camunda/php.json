@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Camunda",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(camunda[.]|CamundaApiServiceProvider|CamundaApi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Camunda",
+                "language": "php",
+                "technology": "camunda",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

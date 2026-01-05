@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Curioswitch",
+            "category": "Storage Sink",
+            "patterns": [
+                "@curiostack\\/cloudbuild-github"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Curioswitch",
+                "language": "javascript",
+                "technology": "curioswitch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

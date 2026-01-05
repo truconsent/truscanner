@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Extrabacon",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-oauth-jwt"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Extrabacon",
+                "language": "javascript",
+                "technology": "extrabacon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

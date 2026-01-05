@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pinelab",
+            "category": "Storage Sink",
+            "patterns": [
+                "vendure-plugin-google-cloud-tasks"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pinelab",
+                "language": "javascript",
+                "technology": "pinelab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

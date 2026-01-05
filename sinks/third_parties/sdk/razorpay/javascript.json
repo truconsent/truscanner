@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Razorpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "razorpay-typescript|react-native-customui|react-native-razorpay-expokit|razorpay|react-razorpay|razorpay-rv|not-payouts-razorpayx|react-native-razorpay|razorpay-checkout|react-native-private"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Razorpay",
+                "language": "javascript",
+                "technology": "razorpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

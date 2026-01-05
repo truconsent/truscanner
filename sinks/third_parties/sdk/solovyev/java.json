@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Solovyev",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]solovyev[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Solovyev",
+                "language": "java",
+                "technology": "solovyev",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

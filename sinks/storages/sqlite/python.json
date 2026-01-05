@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "SQLite",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(sqlite.*(execute|executemany|executescript|write|read|commit|rollback|close|connect|cursor|fetchone|fetchmany|fetchall|create_aggregate))"
+            ],
+            "tags": {
+                "id": "Storages.Android.SQLite.ReadAndWrite",
+                "language": "python",
+                "technology": "sqlite",
+                "type": "Database"
+            }
+        }
+    ]
+}

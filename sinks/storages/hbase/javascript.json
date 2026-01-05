@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apache HBase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?:hbase|btsc|byter|thunderclap|ryba|yildiz|neso-job-common|io-hbase|okey-hbase-thrift2|phoenix-client|winston-hbase|bigtable-erd-generator|@xa-neso/job-common|node-red-contrib-hadoopmqttbridge|@tg1518/hbase|crawler-hbase|thrift-hbase-client|ripple-hbase-client|node-hbase|@alicloud/hbase20190101|hequelize|phoenix-proxy|node-thrift[.]{0,1}-hbase|@clouddb/hbase-core|object-hbase-mapping).*"
+            ],
+            "tags": {
+                "id": "Storages.ApacheHBase.ReadAndWrite",
+                "language": "javascript",
+                "technology": "hbase",
+                "type": "Database"
+            }
+        }
+    ]
+}

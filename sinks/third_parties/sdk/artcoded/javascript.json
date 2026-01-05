@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Artcoded",
+            "category": "Storage Sink",
+            "patterns": [
+                "@artcoded\\/job-queue-plugin|@artcoded\\/gcp-asset-server-plugin|@artcoded\\/plugin-google-cloud-tasks|@artcoded\\/next-pulumi"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Artcoded",
+                "language": "javascript",
+                "technology": "artcoded",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

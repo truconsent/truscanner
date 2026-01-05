@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Segment",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Analytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment",
+                "language": "csharp",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

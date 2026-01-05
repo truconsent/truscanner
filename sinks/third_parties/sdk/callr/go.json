@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Callr",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(THECALLR)(/)(sdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Callr",
+                "language": "go",
+                "technology": "callr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

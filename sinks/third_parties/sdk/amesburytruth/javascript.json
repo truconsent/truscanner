@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amesburytruth",
+            "category": "Storage Sink",
+            "patterns": [
+                "database-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amesburytruth",
+                "language": "javascript",
+                "technology": "amesburytruth",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Medium",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(omniauth-medium|medium_api|medium-scrapper|medium|medium-sdk-ruby|medium_sdk|mediumite).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Medium",
+                "language": "ruby",
+                "technology": "medium",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

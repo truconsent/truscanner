@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ns1",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ns1|nsone).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ns1",
+                "language": "python",
+                "technology": "ns1",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

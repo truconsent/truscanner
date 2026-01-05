@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wechat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(wechat|LaravelWeChat|EasyWeChat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wechat",
+                "language": "php",
+                "technology": "wechat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

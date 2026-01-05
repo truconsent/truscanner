@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Docusign",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(docusign_esign).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Docusign",
+                "language": "python",
+                "technology": "docusign",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

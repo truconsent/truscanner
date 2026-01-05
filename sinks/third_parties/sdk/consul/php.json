@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Consul",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(consul.services|phpconsulapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Consul",
+                "language": "php",
+                "technology": "consul",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

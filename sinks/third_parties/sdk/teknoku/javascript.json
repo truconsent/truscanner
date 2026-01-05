@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Teknoku",
+            "category": "Storage Sink",
+            "patterns": [
+                "amp-adsenginejs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Teknoku",
+                "language": "javascript",
+                "technology": "teknoku",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

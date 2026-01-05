@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unboundid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]unboundid[.]product[.]scim).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unboundid",
+                "language": "java",
+                "technology": "unboundid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

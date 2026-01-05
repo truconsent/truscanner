@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Styleci",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(styleci.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Styleci",
+                "language": "php",
+                "technology": "styleci",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

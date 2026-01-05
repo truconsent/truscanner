@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ikoabo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@ikoabo\\/auth"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ikoabo",
+                "language": "javascript",
+                "technology": "ikoabo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

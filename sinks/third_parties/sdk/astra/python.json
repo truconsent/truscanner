@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Astra",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(astra).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Astra",
+                "language": "python",
+                "technology": "astra",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

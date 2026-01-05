@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Srgobi Canvacard",
+            "category": "Storage Sink",
+            "patterns": [
+                "canvacard"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Srgobi.Canvacard",
+                "language": "javascript",
+                "technology": "srgobi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

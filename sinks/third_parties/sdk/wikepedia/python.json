@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wikepedia",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wikipediaapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wikepedia",
+                "language": "python",
+                "technology": "wikepedia",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

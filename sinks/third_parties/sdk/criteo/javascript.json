@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Criteo",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-criteo-api|criteo-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Criteo",
+                "language": "javascript",
+                "technology": "criteo",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Criteo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?criteo_q([.]push)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Criteo",
+                "language": "javascript",
+                "technology": "criteo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

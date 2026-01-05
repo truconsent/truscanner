@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zalo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(me[.]zalo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zalo",
+                "language": "java",
+                "technology": "zalo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

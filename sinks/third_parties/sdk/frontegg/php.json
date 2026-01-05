@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Frontegg",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(frontegg).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Frontegg",
+                "language": "php",
+                "technology": "frontegg",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sudo Ngrx-entity-relationship",
+            "category": "Storage Sink",
+            "patterns": [
+                "ngrx-entity-relationship"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sudo.Ngrx-entity-relationship",
+                "language": "javascript",
+                "technology": "sudo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alteryx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(SnakePlane).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alteryx",
+                "language": "python",
+                "technology": "alteryx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

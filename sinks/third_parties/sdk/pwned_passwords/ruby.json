@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pwned Passwords",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pwned).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.PwnedPasswords",
+                "language": "ruby",
+                "technology": "pwned_passwords",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

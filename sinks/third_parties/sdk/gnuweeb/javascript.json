@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gnuweeb",
+            "category": "Storage Sink",
+            "patterns": [
+                "bing-search-result-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gnuweeb",
+                "language": "javascript",
+                "technology": "gnuweeb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

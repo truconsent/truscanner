@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Axeptio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?(__axcb|__axeptioSDK)([.](push|on))?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Axeptio",
+                "language": "javascript",
+                "technology": "axeptio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

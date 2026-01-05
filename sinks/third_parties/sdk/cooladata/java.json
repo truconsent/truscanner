@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cooladata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]cooladata[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cooladata",
+                "language": "java",
+                "technology": "cooladata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Realm",
+            "category": "Storage Sink",
+            "patterns": [
+                "realm"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Realm",
+                "language": "javascript",
+                "technology": "realm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

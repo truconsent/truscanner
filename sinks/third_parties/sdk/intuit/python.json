@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Intuit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(intuit-oauth).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Intuit",
+                "language": "python",
+                "technology": "intuit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

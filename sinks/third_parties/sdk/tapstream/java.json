@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tapstream",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tapstream[.]sdk|com[.]tapstream).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tapstream",
+                "language": "java",
+                "technology": "tapstream",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

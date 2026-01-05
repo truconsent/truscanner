@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rasa",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(rasa).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rasa",
+                "language": "python",
+                "technology": "rasa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

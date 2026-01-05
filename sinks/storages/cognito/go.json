@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Amazon Cognito(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/aws/aws-sdk-go/service/cognitoidentityprovider).*(GetItem)"
+            ],
+            "tags": {
+                "id": "Storages.AmazonCognito.Read",
+                "language": "go",
+                "technology": "cognito",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon Cognito(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/aws/aws-sdk-go/service/cognitoidentityprovider).*(PutItem|UpdateItem|DeleteItem)"
+            ],
+            "tags": {
+                "id": "Storages.AmazonCognito.Write",
+                "language": "go",
+                "technology": "cognito",
+                "type": "Database"
+            }
+        }
+    ]
+}

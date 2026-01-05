@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudsky",
+            "category": "Storage Sink",
+            "patterns": [
+                "cordova-plugin-eghl"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudsky",
+                "language": "javascript",
+                "technology": "cloudsky",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudflare",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(cloudflare).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudflare",
+                "language": "php",
+                "technology": "cloudflare",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

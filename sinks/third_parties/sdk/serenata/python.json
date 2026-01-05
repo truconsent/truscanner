@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Serenata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(serenata_toolbox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Serenata",
+                "language": "python",
+                "technology": "serenata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

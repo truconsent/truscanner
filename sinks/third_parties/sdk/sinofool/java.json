@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sinofool",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(net[.]sinofool).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sinofool",
+                "language": "java",
+                "technology": "sinofool",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

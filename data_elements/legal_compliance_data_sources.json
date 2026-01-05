@@ -1,0 +1,232 @@
+{
+    "sources": [
+        {
+            "name": "KYC (Know Your Customer) Documentation",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(kyc|know your customer)[^\\s]{0,5}(document|record|info|details)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "AML (Anti-Money Laundering) Records",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(aml|anti[- ]money laundering)[^\\s]{0,5}(record|report|info)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Sanctions Screening Results",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(sanction|watchlist)[^\\s]{0,5}(screening|check|result)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Risk Assessment Reports",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\brisk[^\\s]{0,5}(assessment|report|analysis)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Compliance Status",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bcompliance[^\\s]{0,5}(status|state|level)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Regulatory Filings",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(regulatory|legal)[^\\s]{0,5}(filing|submission|document)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Audit Trails",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\baudit[^\\s]{0,5}(trail|log|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Consent Records",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(consent|approval)[^\\s]{0,5}(record|document|log)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Data Processing Agreements",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(data processing agreement|dpa|contract)[^\\s]{0,5}(record|document|copy)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Terms of Service Acceptance",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(terms of service|tos|agreement)[^\\s]{0,5}(acceptance|consent|acknowledgment)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Criminal Records History",
+            "category": "Legal & Compliance Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(?:criminal|crime)[^\\s/(;)#|,=!>]{0,10}(?:background|record|history|activity)"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Reference Checks",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(?:reference|verification)[^\\s/(;)#|,=!>]{0,10}check"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Employment History",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*employment[^\\s/(;)#|,=!>]{0,10}(?:history|verification|check)"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Compensation History",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(?:past|previous|latest)[^\\s/(;)#|,=!>]{0,10}(salary|compensation|ctc)|salary[^\\s/(;)#|,=!>]{0,10}history"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Credit History",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*loan[^\\s/(;)#|,=!>]{0,10}history|credit[^\\s/(;)#|,=!>]{0,10}(?:score|record|slip|report|history|rate|worth|rank)|financial[^\\s/(;)#|,=!>]{0,10}condition|loan[^\\s/(;)#|,=!>]{0,10}taken"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Workplace Video Recordings",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*((?:video|screen)[^\\s/(;)#|,=!>]{0,10}recording).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Website Filtering",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*((?:website|domain)[^\\s/(;)#|,=!>]{0,3}blocked|(?:whitelisted|blacklisted)[^\\s/(;)#|,=!>]{0,3}site).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Building Information System Access",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(access[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}number|access[^\\s/(;)#|,=!>]{0,10}card|employee[^\\s/(;)#|,=!>]{0,10}check[^\\s/(;)#|,=!>]{0,10}(?:out|in)|punch[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}time|punch[^\\s/(;)#|,=!>]{0,10}card).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Application Usage",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(app[^\\s/(;)#|,=!>]{0,3}(usage|stats|statistics)).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

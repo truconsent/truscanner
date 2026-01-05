@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Treeline",
+            "category": "Storage Sink",
+            "patterns": [
+                "machinepack-twitter"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Treeline",
+                "language": "javascript",
+                "technology": "treeline",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

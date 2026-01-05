@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blocktrail",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(blocktrail).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blocktrail",
+                "language": "python",
+                "technology": "blocktrail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

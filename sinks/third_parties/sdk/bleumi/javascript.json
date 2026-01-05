@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bleumi",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bleumi\\/pay-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bleumi",
+                "language": "javascript",
+                "technology": "bleumi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

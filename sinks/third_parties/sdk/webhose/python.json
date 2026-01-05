@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webhose",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(webhoseio).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webhose",
+                "language": "python",
+                "technology": "webhose",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

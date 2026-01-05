@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thundra",
+            "category": "Storage Sink",
+            "patterns": [
+                "serverless-plugin-thundra"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thundra",
+                "language": "javascript",
+                "technology": "thundra",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

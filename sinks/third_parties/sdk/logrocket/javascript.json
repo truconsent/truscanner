@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Logrocket",
+            "category": "Storage Sink",
+            "patterns": [
+                "logrocket"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Logrocket",
+                "language": "javascript",
+                "technology": "logrocket",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

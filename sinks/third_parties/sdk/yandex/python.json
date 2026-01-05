@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yandex Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yandexcloud|airflow.*providers.*yandex).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yandex.Cloud",
+                "language": "python",
+                "technology": "yandex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

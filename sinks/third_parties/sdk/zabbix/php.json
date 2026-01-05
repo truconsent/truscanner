@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zabbix",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(zabbixapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zabbix",
+                "language": "php",
+                "technology": "zabbix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

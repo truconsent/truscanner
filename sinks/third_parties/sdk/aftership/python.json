@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aftership",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aftership).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aftership",
+                "language": "python",
+                "technology": "aftership",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

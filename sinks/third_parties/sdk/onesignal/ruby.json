@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onesignal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(onesignal|onesignal-ruby|devise-onesignal|onesignal-ruby-rails6|notification-pusher-onesignal|one_signal|onsignal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onesignal",
+                "language": "ruby",
+                "technology": "onesignal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

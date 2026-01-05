@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wkb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]wkb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wkb",
+                "language": "java",
+                "technology": "wkb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

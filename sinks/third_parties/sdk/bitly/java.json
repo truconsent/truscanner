@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitly",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(clojure-bitly|com[.]bitly|com[.]opsmatters[.]bitly|com[.]rosaloves[.]bitlyj).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitly",
+                "language": "java",
+                "technology": "bitly",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gavel",
+            "category": "Storage Sink",
+            "patterns": [
+                "@gavelapis\\/loopback-connector-google-cloud-datastore"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gavel",
+                "language": "javascript",
+                "technology": "gavel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

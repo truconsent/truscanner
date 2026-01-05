@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Avalara",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Avalara[.]AvaTax).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Avalara",
+                "language": "csharp",
+                "technology": "avalara",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

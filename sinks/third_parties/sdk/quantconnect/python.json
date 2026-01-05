@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quantconnect",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(lean).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Quantconnect",
+                "language": "python",
+                "technology": "quantconnect",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

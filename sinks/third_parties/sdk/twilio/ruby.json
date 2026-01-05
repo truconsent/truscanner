@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twilio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(twilio).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twilio",
+                "language": "ruby",
+                "technology": "twilio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

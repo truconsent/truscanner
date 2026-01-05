@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Optimizely",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]optimizely[.]ab).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Optimizely",
+                "language": "java",
+                "technology": "optimizely",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "What3words",
+            "category": "Storage Sink",
+            "patterns": [
+                "geo.what3words"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.What3words",
+                "language": "javascript",
+                "technology": "what3words",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mercadopago",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mercadopago).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mercadopago",
+                "language": "java",
+                "technology": "mercadopago",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

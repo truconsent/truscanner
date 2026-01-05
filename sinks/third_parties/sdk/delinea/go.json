@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Delinea",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(centrify)(/)(cloud-golang-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Delinea",
+                "language": "go",
+                "technology": "delinea",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

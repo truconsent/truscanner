@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paycom",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(uz[.]paycom).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paycom",
+                "language": "java",
+                "technology": "paycom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

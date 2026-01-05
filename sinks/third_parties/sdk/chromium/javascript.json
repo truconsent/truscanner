@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chromium",
+            "category": "Storage Sink",
+            "patterns": [
+                "cordova-plugin-google-payments"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chromium",
+                "language": "javascript",
+                "technology": "chromium",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

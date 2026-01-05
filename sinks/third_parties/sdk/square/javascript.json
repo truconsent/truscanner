@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Square",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-plugin-square-payment-form"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Square",
+                "language": "javascript",
+                "technology": "square",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

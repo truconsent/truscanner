@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getfilecloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(filecloud[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getfilecloud",
+                "language": "php",
+                "technology": "getfilecloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

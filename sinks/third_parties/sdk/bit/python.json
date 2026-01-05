@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ccat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bit",
+                "language": "python",
+                "technology": "bit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

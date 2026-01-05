@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Transifex",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(transifex).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Transifex",
+                "language": "python",
+                "technology": "transifex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

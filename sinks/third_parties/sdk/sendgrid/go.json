@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendgrid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gopkg.in|github.com)(/)(sendgrid)(/)(sendgrid-go|smtpapi-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendgrid",
+                "language": "go",
+                "technology": "sendgrid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

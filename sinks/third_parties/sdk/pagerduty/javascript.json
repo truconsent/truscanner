@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pagerduty",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-pagerduty"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pagerduty",
+                "language": "javascript",
+                "technology": "pagerduty",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

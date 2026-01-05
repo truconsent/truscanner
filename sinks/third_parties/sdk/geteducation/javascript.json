@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Geteducation",
+            "category": "Storage Sink",
+            "patterns": [
+                "meteor-google-cloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Geteducation",
+                "language": "javascript",
+                "technology": "geteducation",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

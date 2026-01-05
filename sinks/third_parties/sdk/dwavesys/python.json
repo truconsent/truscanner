@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dwavesys",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dwave_system).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dwavesys",
+                "language": "python",
+                "technology": "dwavesys",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

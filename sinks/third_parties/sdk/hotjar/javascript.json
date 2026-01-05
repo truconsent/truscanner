@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hotjar",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?hj[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Hotjar",
+                "language": "javascript",
+                "technology": "hotjar",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

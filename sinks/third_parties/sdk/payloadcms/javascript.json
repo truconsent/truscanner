@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payloadcms",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(payload).*(init).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payloadcms",
+                "language": "javascript",
+                "technology": "payloadcms",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

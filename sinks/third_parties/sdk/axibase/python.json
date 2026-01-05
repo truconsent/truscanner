@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Axibase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(atsd_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Axibase",
+                "language": "python",
+                "technology": "axibase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

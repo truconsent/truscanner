@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Att",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]att[.]ajsc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Att",
+                "language": "java",
+                "technology": "att",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Akismet",
+            "category": "Storage Sink",
+            "patterns": [
+                "akismet-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Akismet",
+                "language": "javascript",
+                "technology": "akismet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

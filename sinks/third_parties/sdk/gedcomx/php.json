@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gedcomx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(phpgedcom.parser).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gedcomx",
+                "language": "php",
+                "technology": "gedcomx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

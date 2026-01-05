@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Leancloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cn[.]leancloud[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Leancloud",
+                "language": "java",
+                "technology": "leancloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Java Database Interface(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)((org[.]jdbi[.]v3[.]core[.].*)[.](createUpdate|bind)).*"
+            ],
+            "tags": {
+                "id": "Storages.JDBI.Jdbi.Write",
+                "language": "java",
+                "technology": "jdbi",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Java Database Interface(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)((org[.]jdbi[.]v3[.]core[.].*)[.]createQuery).*"
+            ],
+            "tags": {
+                "id": "Storages.JDBI.Jdbi.Read",
+                "language": "java",
+                "technology": "jdbi",
+                "type": "Database"
+            }
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "sources": [
+        {
+            "name": "MySQL",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(MySqlOperator).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.Operator.MySQL",
+                "language": "python",
+                "technology": "airflow",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Postgres",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(PostgresOperator).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.Operator.Postgres",
+                "language": "python",
+                "technology": "airflow",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Oracle",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(OracleOperator|JdbcOperator).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.Operator.Oracle",
+                "language": "python",
+                "technology": "airflow",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Apache Hive",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(HiveOperator).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.Operator.Apache.Hive",
+                "language": "python",
+                "technology": "airflow",
+                "type": "Database"
+            }
+        }
+    ]
+}

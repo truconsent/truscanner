@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dnspython",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dnspython3).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dnspython",
+                "language": "python",
+                "technology": "dnspython",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

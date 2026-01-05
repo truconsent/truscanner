@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stormpath",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]stormpath[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stormpath",
+                "language": "java",
+                "technology": "stormpath",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

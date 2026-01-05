@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Capslock",
+            "category": "Storage Sink",
+            "patterns": [
+                "samsara-queue"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Capslock",
+                "language": "javascript",
+                "technology": "capslock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Amazon Timestream(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/aws/aws-sdk-go/service/timestreamquery).*(QueryInput)"
+            ],
+            "tags": {
+                "id": "Storages.AmazonTimestream.Read",
+                "language": "go",
+                "technology": "timestream",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon Timestream(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/aws/aws-sdk-go/service/timestreamwrite).*(WriteRecordsInput)"
+            ],
+            "tags": {
+                "id": "Storages.AmazonTimestream.Write",
+                "language": "go",
+                "technology": "timestream",
+                "type": "Database"
+            }
+        }
+    ]
+}

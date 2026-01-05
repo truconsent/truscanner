@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gnes",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gnes).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gnes",
+                "language": "python",
+                "technology": "gnes",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

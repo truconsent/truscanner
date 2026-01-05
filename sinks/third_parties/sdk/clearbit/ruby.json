@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clearbit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)clearbit.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clearbit",
+                "language": "ruby",
+                "technology": "clearbit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

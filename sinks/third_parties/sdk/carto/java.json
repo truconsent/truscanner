@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Carto",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]carto[.]analyticstoolbox|com[.]carto).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Carto",
+                "language": "java",
+                "technology": "carto",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Codetogether",
+            "category": "Storage Sink",
+            "patterns": [
+                "pino-gcp-logger|google-apis-authenticator"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Codetogether",
+                "language": "javascript",
+                "technology": "codetogether",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twitter",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(contextgg)(/)(go-sdk\\/autha/providers/twitter).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twitter",
+                "language": "go",
+                "technology": "twitter",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Karhoo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@karhoo\\/demand-bloc-payment"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Karhoo",
+                "language": "javascript",
+                "technology": "karhoo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

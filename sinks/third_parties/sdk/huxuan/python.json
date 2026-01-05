@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Huxuan",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wxpusher).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Huxuan",
+                "language": "python",
+                "technology": "huxuan",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

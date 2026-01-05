@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Temporal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]temporal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Temporal",
+                "language": "java",
+                "technology": "temporal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

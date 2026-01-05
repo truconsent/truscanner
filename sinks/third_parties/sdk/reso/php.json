@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Reso",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*reso.(reso|request).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Reso",
+                "language": "php",
+                "technology": "reso",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

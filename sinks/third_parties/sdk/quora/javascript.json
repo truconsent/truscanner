@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quora",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?qp[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Quora",
+                "language": "javascript",
+                "technology": "quora",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

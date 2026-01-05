@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vuejs Apollo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@vue\\/apollo-composable|@vue\\/apollo-util|@vue\\/apollo-option|@vue\\/apollo-ssr"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vuejs.Apollo",
+                "language": "javascript",
+                "technology": "vuejs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

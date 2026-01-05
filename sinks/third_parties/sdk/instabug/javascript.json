@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instabug",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-instabug|instabug-reactnative|instabug-reactnative-custombuild|react-native-instabug-sdk|instabug-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instabug",
+                "language": "javascript",
+                "technology": "instabug",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

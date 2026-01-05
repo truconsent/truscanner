@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stripe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(stripe)(/)(stripe-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stripe",
+                "language": "go",
+                "technology": "stripe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

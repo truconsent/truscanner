@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Visionmobile",
+            "category": "Storage Sink",
+            "patterns": [
+                "bigquery-model"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Visionmobile",
+                "language": "javascript",
+                "technology": "visionmobile",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

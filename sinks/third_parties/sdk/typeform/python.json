@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Typeform",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(typeform).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Typeform",
+                "language": "python",
+                "technology": "typeform",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

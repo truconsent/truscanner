@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Memetix",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]memetix).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Memetix",
+                "language": "java",
+                "technology": "memetix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

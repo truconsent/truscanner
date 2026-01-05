@@ -1,0 +1,20 @@
+{
+    "sources": [
+        {
+            "name": "Datadoghq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]datadoghq|com[.]datadog[.]api[.]client|com[.]bazaarvoice[.]lassie.*DataDog|org[.]coursera[.]metrics[.]datadog).*",
+                "(?i)(com[.]timgroup[.]statsd|com[.]github[.]arnabk[.]statsd|org[.]honton[.]chas[.]dogstatd).*",
+                "(?i)(datadog[.]opentracing|datadog[.]trace[.]api|org[.]honton[.]chas[.]datadog[.]apm).*",
+                "(?i)(datadog[.]telemetry).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Datadoghq",
+                "language": "java",
+                "technology": "datadoghq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rober",
+            "category": "Storage Sink",
+            "patterns": [
+                "@recursyve\\/storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rober",
+                "language": "javascript",
+                "technology": "rober",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

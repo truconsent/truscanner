@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Boyunjian",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]boyunjian[.]flashdb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Boyunjian",
+                "language": "java",
+                "technology": "boyunjian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

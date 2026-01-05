@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hubspot",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(hubspot).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hubspot",
+                "language": "python",
+                "technology": "hubspot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

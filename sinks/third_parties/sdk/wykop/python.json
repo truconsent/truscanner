@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wykop",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wykop).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wykop",
+                "language": "python",
+                "technology": "wykop",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

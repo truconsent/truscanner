@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jiguang",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(jpush|jmessage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jiguang",
+                "language": "python",
+                "technology": "jiguang",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

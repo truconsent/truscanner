@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailwizz",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(mailwizz).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailwizz",
+                "language": "php",
+                "technology": "mailwizz",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

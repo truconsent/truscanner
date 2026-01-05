@@ -1,0 +1,172 @@
+{
+    "sources": [
+        {
+            "name": "Partner Preferences",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(partner|spouse|match)[^\\s]{0,5}(preference|choice|criteria)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Physical Attributes",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(physical|body|appearance)[^\\s]{0,5}(attribute|feature|characteristic)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Lifestyle Choices",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(lifestyle|habit|routine)[^\\s]{0,5}(choice|preference|pattern)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Religious Practices",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(religion|faith|belief)[^\\s]{0,5}(practice|ritual|custom)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Caste Information",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(caste|community)[^\\s]{0,5}(info|details|background)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Community Information",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(community|group)[^\\s]{0,5}(info|details|membership)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Family Background",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(family|parents|siblings)[^\\s]{0,5}(background|history|info)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Horoscope Data",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(horoscope|zodiac)[^\\s]{0,5}(sign|data|details)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Astrological Data",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(astrology|birth chart|natal)[^\\s]{0,5}(data|info|details)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Dietary Preferences",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(diet|food|meal)[^\\s]{0,5}(preference|choice|habit)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Smoking Habits",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(smoke|cigarette|tobacco)[^\\s]{0,5}(habit|frequency|usage)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Drinking Habits",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(alcohol|drink|beer|wine|liquor)[^\\s]{0,5}(habit|frequency|usage)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Interest in Children",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(children|kids|offspring)[^\\s]{0,5}(interest|preference|plan)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Communication History with Matches",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(communication|chat|message|conversation)[^\\s]{0,5}(match|partner)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

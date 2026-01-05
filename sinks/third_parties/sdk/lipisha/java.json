@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lipisha",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]lipisha[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lipisha",
+                "language": "java",
+                "technology": "lipisha",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

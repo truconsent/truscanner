@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Elastic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(elasticsearch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Elastic",
+                "language": "python",
+                "technology": "elastic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

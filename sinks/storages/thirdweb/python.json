@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Thirdweb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?:thirdweb).*",
+                ".*(ThirdwebSDK).*"
+            ],
+            "tags": {
+                "id": "Storages.Thirdweb",
+                "language": "python",
+                "technology": "thirdweb",
+                "type": "Database"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ticketmaster",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]ticketmaster).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ticketmaster",
+                "language": "java",
+                "technology": "ticketmaster",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

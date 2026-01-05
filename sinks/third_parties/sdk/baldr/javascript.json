@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Baldr",
+            "category": "Storage Sink",
+            "patterns": [
+                "@horus-tech\\/nodejs-datastore-cache"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Baldr",
+                "language": "javascript",
+                "technology": "baldr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unlimint",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(.sdk.v3).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unlimint",
+                "language": "php",
+                "technology": "unlimint",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

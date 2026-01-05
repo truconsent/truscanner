@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yoti",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(YotiClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yoti",
+                "language": "php",
+                "technology": "yoti",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

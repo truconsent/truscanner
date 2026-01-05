@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mollie",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(be[.]feelio[.]mollie|be[.]woutschoovaerts[.]mollie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mollie",
+                "language": "java",
+                "technology": "mollie",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

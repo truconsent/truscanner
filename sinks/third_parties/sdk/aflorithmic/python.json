@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aflorithmic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(apiaudio).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aflorithmic",
+                "language": "python",
+                "technology": "aflorithmic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

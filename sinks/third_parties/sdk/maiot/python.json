@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Maiot",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cengine).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Maiot",
+                "language": "python",
+                "technology": "maiot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

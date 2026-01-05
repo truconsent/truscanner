@@ -1,0 +1,124 @@
+{
+    "sources": [
+        {
+            "name": "Insurance Policies",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\binsurance[^\\s]{0,5}(policy|document|details|info)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Premium Payments",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bpremium[^\\s]{0,5}(payment|insurance|policy|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Claim History",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(claim|settlement)[^\\s]{0,5}(history|record|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Beneficiary Information",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(beneficiary|recipient)[^\\s]{0,5}(info|details|record)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Coverage Details",
+            "category": "Insurance & Protection Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(coverage|protection)[^\\s]{0,5}(details|info|plan)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Risk Assessment",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(risk|hazard|exposure)[^\\s]{0,5}(assessment|analysis|score)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Underwriting Information",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bunderwriting[^\\s]{0,5}(info|details|record)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Policy Modifications",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(policy|insurance)[^\\s]{0,5}(modification|update|change)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Renewal History",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(renewal|extension)[^\\s]{0,5}(history|record|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Cancellation Records",
+            "category": "Insurance & Protection Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(cancellation|termination)[^\\s]{0,5}(record|log|history)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

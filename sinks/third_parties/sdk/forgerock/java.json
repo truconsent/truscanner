@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Forgerock",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]forgerock[.]openbanking).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Forgerock",
+                "language": "java",
+                "technology": "forgerock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

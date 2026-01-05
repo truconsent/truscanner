@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailgo",
+            "category": "Storage Sink",
+            "patterns": [
+                "mailgo|gatsby-plugin-mailgo"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailgo",
+                "language": "javascript",
+                "technology": "mailgo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

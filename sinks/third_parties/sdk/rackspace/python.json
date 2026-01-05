@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rackspace",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(rackspace|pyrax).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rackspace",
+                "language": "python",
+                "technology": "rackspace",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

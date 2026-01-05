@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Reamaze",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(reamaze).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Reamaze",
+                "language": "php",
+                "technology": "reamaze",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

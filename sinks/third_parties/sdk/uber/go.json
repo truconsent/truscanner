@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Uber",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com|go.uber.org)(/)(uber-go/tally|goleak).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Uber",
+                "language": "go",
+                "technology": "uber",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

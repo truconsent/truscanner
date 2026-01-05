@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paymaya",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(paymaya).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paymaya",
+                "language": "php",
+                "technology": "paymaya",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

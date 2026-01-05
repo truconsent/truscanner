@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Polygon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(polygon)([^a-z_]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Polygon",
+                "language": "python",
+                "technology": "polygon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

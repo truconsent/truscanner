@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wowmaking",
+            "category": "Storage Sink",
+            "patterns": [
+                "@wowmaking\\/react-native-iron-source-facebook"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wowmaking",
+                "language": "javascript",
+                "technology": "wowmaking",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

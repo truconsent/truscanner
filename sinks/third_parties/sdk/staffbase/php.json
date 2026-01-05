@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Staffbase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Staffbase).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Staffbase",
+                "language": "php",
+                "technology": "staffbase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

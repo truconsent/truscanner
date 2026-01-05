@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Volleytools",
+            "category": "Storage Sink",
+            "patterns": [
+                "prefix-commit-message"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Volleytools",
+                "language": "javascript",
+                "technology": "volleytools",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

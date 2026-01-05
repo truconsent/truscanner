@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kontakt",
+            "category": "Storage Sink",
+            "patterns": [
+                "kontakt"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kontakt",
+                "language": "javascript",
+                "technology": "kontakt",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

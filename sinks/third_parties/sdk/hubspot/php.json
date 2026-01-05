@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hubspot",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(SevenShores.Hubspot|.*hubspot.client|.*hubspot.crm|.*hubspot.factory).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hubspot",
+                "language": "php",
+                "technology": "hubspot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "sources": [
+        {
+            "name": "File I/O",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)fs\\.(?:writeFile|appendFile|createWriteStream)",
+                "(?i)open\\s*\\(.*['\"](?:w|a|r\\+)['\"]\\)",
+                "(?i)\\.to_(?:csv|json|parquet)\\s*\\("
+            ],
+            "tags": {
+                "type": "File System"
+            }
+        }
+    ]
+}

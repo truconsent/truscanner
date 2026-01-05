@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xiaomi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sds.table.ttypes|galaxy_fds_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xiaomi",
+                "language": "python",
+                "technology": "xiaomi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

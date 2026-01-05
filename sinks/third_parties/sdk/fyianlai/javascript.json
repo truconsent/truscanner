@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fyianlai",
+            "category": "Storage Sink",
+            "patterns": [
+                "hubot-googl"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fyianlai",
+                "language": "javascript",
+                "technology": "fyianlai",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

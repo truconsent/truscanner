@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Upcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(upcloud.apiclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Upcloud",
+                "language": "php",
+                "technology": "upcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

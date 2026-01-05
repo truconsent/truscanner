@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Surgehq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(surge).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Surgehq",
+                "language": "python",
+                "technology": "surgehq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

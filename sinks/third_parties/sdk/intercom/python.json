@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Intercom",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(django_intercom|aa_intercom|intercom|tap_intercom).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Intercom",
+                "language": "python",
+                "technology": "intercom",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Intercom",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(intercom).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Intercom",
+                "language": "python",
+                "technology": "intercom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

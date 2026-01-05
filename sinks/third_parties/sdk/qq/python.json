@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mirai).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qq",
+                "language": "python",
+                "technology": "qq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

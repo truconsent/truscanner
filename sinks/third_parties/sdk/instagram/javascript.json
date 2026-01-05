@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instagram",
+            "category": "Storage Sink",
+            "patterns": [
+                "instagram-screen-scrape"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instagram",
+                "language": "javascript",
+                "technology": "instagram",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

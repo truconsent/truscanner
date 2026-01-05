@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hyperledger",
+            "category": "Storage Sink",
+            "patterns": [
+                "hfc"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hyperledger",
+                "language": "javascript",
+                "technology": "hyperledger",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

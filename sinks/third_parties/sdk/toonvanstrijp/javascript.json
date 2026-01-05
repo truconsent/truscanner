@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Toonvanstrijp",
+            "category": "Storage Sink",
+            "patterns": [
+                "tikkie-checkout"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Toonvanstrijp",
+                "language": "javascript",
+                "technology": "toonvanstrijp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

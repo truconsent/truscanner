@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tatilsepeti",
+            "category": "Storage Sink",
+            "patterns": [
+                "acil-emails"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tatilsepeti",
+                "language": "javascript",
+                "technology": "tatilsepeti",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

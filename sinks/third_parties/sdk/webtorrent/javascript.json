@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webtorrent",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(webtorrent|bittorrent-dht|create-torrent|bittorrent-tracker).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webtorrent",
+                "language": "javascript",
+                "technology": "webtorrent",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

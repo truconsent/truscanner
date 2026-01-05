@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chatblocks",
+            "category": "Storage Sink",
+            "patterns": [
+                "chatblocks"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chatblocks",
+                "language": "javascript",
+                "technology": "chatblocks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

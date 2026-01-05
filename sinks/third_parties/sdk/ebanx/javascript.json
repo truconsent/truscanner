@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ebanx",
+            "category": "Storage Sink",
+            "patterns": [
+                "ebanx"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ebanx",
+                "language": "javascript",
+                "technology": "ebanx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

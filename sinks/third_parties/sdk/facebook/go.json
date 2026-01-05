@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Facebook",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(madebyais|muhfaris|bnjjj)(/)(facebook-go-sdk|gomessenger).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Facebook",
+                "language": "go",
+                "technology": "facebook",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

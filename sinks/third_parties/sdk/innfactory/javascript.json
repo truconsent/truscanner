@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Innfactory",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-api-ai|react-native-dialogflow"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Innfactory",
+                "language": "javascript",
+                "technology": "innfactory",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

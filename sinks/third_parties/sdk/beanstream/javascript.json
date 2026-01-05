@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Beanstream",
+            "category": "Storage Sink",
+            "patterns": [
+                "beanstream-node|beanstream-node-forked"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Beanstream",
+                "language": "javascript",
+                "technology": "beanstream",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

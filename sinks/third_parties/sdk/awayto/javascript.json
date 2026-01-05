@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Awayto",
+            "category": "Storage Sink",
+            "patterns": [
+                "@keybittech\\/awayto"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Awayto",
+                "language": "javascript",
+                "technology": "awayto",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Seldon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(seldon).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Seldon",
+                "language": "python",
+                "technology": "seldon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

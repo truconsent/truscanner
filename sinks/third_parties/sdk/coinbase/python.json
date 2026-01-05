@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinbase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(coinbase|cbpro).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinbase",
+                "language": "python",
+                "technology": "coinbase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chec",
+            "category": "Storage Sink",
+            "patterns": [
+                "@chec\\/integration-configuration-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chec",
+                "language": "javascript",
+                "technology": "chec",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

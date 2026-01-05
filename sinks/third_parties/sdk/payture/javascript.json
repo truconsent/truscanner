@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payture",
+            "category": "Storage Sink",
+            "patterns": [
+                "payture-official|payture"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payture",
+                "language": "javascript",
+                "technology": "payture",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

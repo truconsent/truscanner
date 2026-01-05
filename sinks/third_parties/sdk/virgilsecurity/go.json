@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Virgilsecurity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com|gopkg.in)(/)(VirgilSecurity|tochka)(/)(virgil-sdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Virgilsecurity",
+                "language": "go",
+                "technology": "virgilsecurity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

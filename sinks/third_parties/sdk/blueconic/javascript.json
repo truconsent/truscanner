@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blueconic",
+            "category": "Storage Sink",
+            "patterns": [
+                "@blueconic\\/blueconic-react-native"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blueconic",
+                "language": "javascript",
+                "technology": "blueconic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

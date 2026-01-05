@@ -1,0 +1,172 @@
+{
+    "sources": [
+        {
+            "name": "Campaign Interaction History",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(campaign|promotion|ad)[^\\w]{1,5}(interaction|history|engagement)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Email Open Rates",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bemail[^\\w]{1,5}(open|view|read)[^\\w]{1,5}(rate|percentage)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Click-through Rates",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(click[- ]through|ctr)[^\\s]{0,5}(rate|percentage)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Conversion Metrics",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(conversion|goal|action)[^\\s]{0,5}(metric|rate|ratio)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "A/B Testing Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\ba/b[- ]?test[^\\s]{0,5}(data|results|metrics)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Segmentation Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(segment|group|cohort)[^\\s]{0,5}(data|analysis|info)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Lead Scoring",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(lead|prospect)[^\\s]{0,5}(score|rating|value)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Attribution Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(attribution|channel|source)[^\\s]{0,5}(data|metrics|info)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Customer Lifetime Value",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bcustomer[^\\s]{0,5}(lifetime|value|clv)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Churn Prediction Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(churn|attrition)[^\\s]{0,5}(prediction|model|score)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Marketing Channel Performance",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(marketing|channel|platform)[^\\s]{0,5}(performance|metrics|results)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Click Stream",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(click(stream|track|log)|track{0,2}click|number[^\\s/(;)#|,=!>]{0,10}of[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)|count[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)).*|trackInteractions|trackFrustrations"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Search History (Marketing)",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(search[^\\s/(;)#|,=!>]{0,12}history|saved[^\\s/(;)#|,=!>]{0,12}search|past[^\\s/(;)#|,=!>]{0,12}searches).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Product Interactions",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(buttons[-_]{0,1}clicked|pages[-_]{0,1}viewed|event[-_]{0,1}(streaming|monitoring|analysis|tracking)[-_]{0,1}data).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Creace",
+            "category": "Storage Sink",
+            "patterns": [
+                "@nativestudios\\/creace-bugsnag"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Creace",
+                "language": "javascript",
+                "technology": "creace",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

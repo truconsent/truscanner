@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Socialall",
+            "category": "Storage Sink",
+            "patterns": [
+                "socialall"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Socialall",
+                "language": "javascript",
+                "technology": "socialall",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

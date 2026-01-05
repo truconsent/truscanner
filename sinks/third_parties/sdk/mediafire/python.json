@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mediafire",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mediafire).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mediafire",
+                "language": "python",
+                "technology": "mediafire",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

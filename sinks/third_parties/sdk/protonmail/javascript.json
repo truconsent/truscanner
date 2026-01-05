@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Protonmail",
+            "category": "Storage Sink",
+            "patterns": [
+                "gcloud-logger|protractor-zephyr-reporter|protractor-xray-reporter|gwt-api-exporter"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Protonmail",
+                "language": "javascript",
+                "technology": "protonmail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

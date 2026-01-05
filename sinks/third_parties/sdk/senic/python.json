@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Senic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(nuimo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Senic",
+                "language": "python",
+                "technology": "senic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

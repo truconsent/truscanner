@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Capsureit",
+            "category": "Storage Sink",
+            "patterns": [
+                "@capsureit\\/uppy-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Capsureit",
+                "language": "javascript",
+                "technology": "capsureit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

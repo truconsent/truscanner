@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hanko",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]hanko).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hanko",
+                "language": "java",
+                "technology": "hanko",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

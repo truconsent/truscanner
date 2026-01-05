@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Indev",
+            "category": "Storage Sink",
+            "patterns": [
+                "js-marker-clusterer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Indev",
+                "language": "javascript",
+                "technology": "indev",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

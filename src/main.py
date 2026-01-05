@@ -1,5 +1,6 @@
 import click
 import json
+import time
 from .scanner import scan_directory
 from .regex_scanner import RegexScanner
 
@@ -13,7 +14,8 @@ def main():
 @click.option('--with-ai', is_flag=True, help='Enable AI/LLM scanner (requires OPENAI_API_KEY)')
 @click.option('--format', type=click.Choice(['json', 'report']), default='report', help='Output format')
 @click.option('--output', '-o', type=click.Path(), help='Save report to file')
-def scan(directory, with_presidio, with_ai, format, output):
+@click.option('--stored-only', is_flag=True, help='Only report data elements that flow into a storage sink')
+def scan(directory, with_presidio, with_ai, format, output, stored_only):
     """Scan a directory for privacy-related data elements.
     
     By default, uses fast regex-based scanning with patterns from JSON files.
@@ -24,10 +26,13 @@ def scan(directory, with_presidio, with_ai, format, output):
     # Default: Use regex scanner (fast, no downloads)
     if not with_presidio and not with_ai:
         scanner = RegexScanner()
+        
+        start_time = time.time()
         results = scanner.scan_directory(directory)
+        duration = time.time() - start_time
         
         if format == 'report':
-            report = scanner.generate_report(results)
+            report = scanner.generate_report(results, duration=duration, stored_only=stored_only)
             click.echo(report)
             
             # Auto-save report to file

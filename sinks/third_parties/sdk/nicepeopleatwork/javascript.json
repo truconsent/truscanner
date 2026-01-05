@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nicepeopleatwork",
+            "category": "Storage Sink",
+            "patterns": [
+                "youbora-adapter-smartadserver"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nicepeopleatwork",
+                "language": "javascript",
+                "technology": "nicepeopleatwork",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

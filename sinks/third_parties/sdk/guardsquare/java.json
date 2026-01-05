@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Guardsquare",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]guardsquare).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Guardsquare",
+                "language": "java",
+                "technology": "guardsquare",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

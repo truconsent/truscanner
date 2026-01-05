@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cognite",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cognite).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cognite",
+                "language": "python",
+                "technology": "cognite",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

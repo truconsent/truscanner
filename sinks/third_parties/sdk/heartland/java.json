@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Heartland",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]heartlandpaymentsystems|com[.]global[.]api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Heartland",
+                "language": "java",
+                "technology": "heartland",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

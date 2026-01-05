@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Colbyfayock",
+            "category": "Storage Sink",
+            "patterns": [
+                "netlify-plugin-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Colbyfayock",
+                "language": "javascript",
+                "technology": "colbyfayock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

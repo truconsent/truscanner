@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudant",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cloudant\\/cloudant|cloudant"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudant",
+                "language": "javascript",
+                "technology": "cloudant",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

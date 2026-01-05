@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Belvo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(belvo[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Belvo",
+                "language": "python",
+                "technology": "belvo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

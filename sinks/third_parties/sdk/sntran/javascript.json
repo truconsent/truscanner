@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sntran",
+            "category": "Storage Sink",
+            "patterns": [
+                "@brandextract\\/tinymce-plugin-map"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sntran",
+                "language": "javascript",
+                "technology": "sntran",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

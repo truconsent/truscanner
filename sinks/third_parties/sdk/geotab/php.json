@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Geotab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(geotab.api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Geotab",
+                "language": "php",
+                "technology": "geotab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

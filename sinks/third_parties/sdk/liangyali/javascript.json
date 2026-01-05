@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Liangyali",
+            "category": "Storage Sink",
+            "patterns": [
+                "passport-wechat|li-wechat|@zhennann\\/passport-wechat|passport-wechat-x"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Liangyali",
+                "language": "javascript",
+                "technology": "liangyali",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Galiboo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(galiboo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Galiboo",
+                "language": "python",
+                "technology": "galiboo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

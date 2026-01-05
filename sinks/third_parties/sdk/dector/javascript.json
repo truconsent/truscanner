@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dector",
+            "category": "Storage Sink",
+            "patterns": [
+                "sharing-sidebar"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dector",
+                "language": "javascript",
+                "technology": "dector",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

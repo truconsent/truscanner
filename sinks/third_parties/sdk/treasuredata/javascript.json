@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Treasuredata",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-red-contrib-td|okanjo-app-td"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Treasuredata",
+                "language": "javascript",
+                "technology": "treasuredata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ge",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(predix).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ge",
+                "language": "python",
+                "technology": "ge",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

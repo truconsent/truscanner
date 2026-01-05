@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Refiner",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_refiner[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Refiner",
+                "language": "javascript",
+                "technology": "refiner",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

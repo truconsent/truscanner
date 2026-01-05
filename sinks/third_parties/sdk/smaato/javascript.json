@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smaato",
+            "category": "Storage Sink",
+            "patterns": [
+                "cordova-plugin-smaato|chadori-mobile-ironsource-smaato"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smaato",
+                "language": "javascript",
+                "technology": "smaato",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Joycrit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]joycrit[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Joycrit",
+                "language": "java",
+                "technology": "joycrit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

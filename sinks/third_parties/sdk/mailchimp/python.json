@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailchimp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mailchimp3).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailchimp",
+                "language": "python",
+                "technology": "mailchimp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

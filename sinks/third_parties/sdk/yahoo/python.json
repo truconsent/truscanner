@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yahoo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yfinance|yahoo_finance|yahoo_finance_pynterface).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yahoo",
+                "language": "python",
+                "technology": "yahoo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

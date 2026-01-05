@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Localytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]localytics[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Localytics",
+                "language": "java",
+                "technology": "localytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

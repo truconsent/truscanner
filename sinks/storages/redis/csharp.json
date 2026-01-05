@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Redis DB(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(stackExchange[.]redis).*[.](StringGet)"
+            ],
+            "tags": {
+                "id": "Storages.Redis.Read",
+                "language": "csharp",
+                "technology": "redis",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Redis DB(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(stackExchange[.]redis).*[.](Set|HSet|Del)"
+            ],
+            "tags": {
+                "id": "Storages.Redis.Write",
+                "language": "csharp",
+                "technology": "redis",
+                "type": "Database"
+            }
+        }
+    ]
+}

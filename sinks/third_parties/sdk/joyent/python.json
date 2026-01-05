@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Joyent",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(manta).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Joyent",
+                "language": "python",
+                "technology": "joyent",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

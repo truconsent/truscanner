@@ -1,0 +1,43 @@
+{
+    "sources": [
+        {
+            "name": "Apache Couch DB(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(?:couchdb).*(?:find|get|get.{0,1}attachment|list|put.{0,1}attachment).*"
+            ],
+            "tags": {
+                "id": "Storages.ApacheCouchDb.Read",
+                "language": "python",
+                "technology": "couchdb",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Apache Couch DB(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(?:couchdb).*(?:create|put.{0,1}attachment|delete|update).*"
+            ],
+            "tags": {
+                "id": "Storages.ApacheCouchDb.Write",
+                "language": "python",
+                "technology": "couchdb",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Apache Couch DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(?:couchdb).*(?:query|save).*"
+            ],
+            "tags": {
+                "id": "Storages.ApacheCouchDb.ReadAndWrite",
+                "language": "python",
+                "technology": "couchdb",
+                "type": "Database"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Prebid",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-ads|react-prebid-adunit|react-gpt-for-prebid|prebid.js|pubfood|mk9-prebid|prebid-packager"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Prebid",
+                "language": "javascript",
+                "technology": "prebid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

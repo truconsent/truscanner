@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Keepa",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(keepa).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Keepa",
+                "language": "python",
+                "technology": "keepa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

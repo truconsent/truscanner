@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aniddan",
+            "category": "Storage Sink",
+            "patterns": [
+                "winston-cloud-logging"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aniddan",
+                "language": "javascript",
+                "technology": "aniddan",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudevents",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(cloudevents)(/)(sdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudevents",
+                "language": "go",
+                "technology": "cloudevents",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

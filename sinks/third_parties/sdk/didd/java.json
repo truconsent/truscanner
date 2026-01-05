@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Didd",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]didd[.]dev).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Didd",
+                "language": "java",
+                "technology": "didd",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

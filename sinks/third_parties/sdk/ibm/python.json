@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Ibm",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ibm_watson|ibm_cos|ibm_cloud_sdk_core|ibmcloud_python_sdk|lithops).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ibm",
+                "language": "python",
+                "technology": "ibm",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Ibm Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloudant|airflow.*providers.*cloudant).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ibm.Cloud",
+                "language": "python",
+                "technology": "ibm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

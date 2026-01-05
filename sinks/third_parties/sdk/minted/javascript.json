@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Minted",
+            "category": "Storage Sink",
+            "patterns": [
+                "loopback-connector-gcloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Minted",
+                "language": "javascript",
+                "technology": "minted",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

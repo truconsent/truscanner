@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Healthmatch",
+            "category": "Storage Sink",
+            "patterns": [
+                "@healthmatch\\/jira-prepare-commit-msg"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Healthmatch",
+                "language": "javascript",
+                "technology": "healthmatch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Voxeet",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]voxeet[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Voxeet",
+                "language": "java",
+                "technology": "voxeet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Herow",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-connecthings"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Herow",
+                "language": "javascript",
+                "technology": "herow",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

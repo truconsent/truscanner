@@ -1,0 +1,160 @@
+{
+    "sources": [
+        {
+            "name": "Atlassian Bitbucket Server",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]bitbucket[.]server).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.BitbucketServer",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Jira Plugins",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]jira[.]plugins).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.JiraPlugins",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Jira REST",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]jira[.]rest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.JiraREST",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian RM",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]rm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.RM",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Confluence",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]confluence).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Confluence",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Crowd",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]crowd).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Crowd",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Trello",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]trello).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Trello",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Bamboo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]bamboo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Bamboo",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Fisheye",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]fisheye).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Fisheye",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Crucible",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]crucible).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Crucible",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Access",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]access).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Access",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Atlassian Opsgenie",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]atlassian[.]opsgenie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian.Opsgenie",
+                "language": "java",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

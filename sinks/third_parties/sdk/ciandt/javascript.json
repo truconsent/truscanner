@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ciandt",
+            "category": "Storage Sink",
+            "patterns": [
+                "@abbott-platform\\/botkit-storage-datastore"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ciandt",
+                "language": "javascript",
+                "technology": "ciandt",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

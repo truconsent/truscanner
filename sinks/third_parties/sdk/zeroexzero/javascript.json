@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zeroexzero",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-geolookup-v2"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zeroexzero",
+                "language": "javascript",
+                "technology": "zeroexzero",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

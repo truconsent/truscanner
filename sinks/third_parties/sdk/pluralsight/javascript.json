@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pluralsight",
+            "category": "Storage Sink",
+            "patterns": [
+                "@pluralsight\\/gcp-pubsub-lite|gsweet"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pluralsight",
+                "language": "javascript",
+                "technology": "pluralsight",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Buzzvil",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]buzzvil[.]buzzscreen).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Buzzvil",
+                "language": "java",
+                "technology": "buzzvil",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

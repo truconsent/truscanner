@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apiary",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(frenet.apifactory).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apiary",
+                "language": "php",
+                "technology": "apiary",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

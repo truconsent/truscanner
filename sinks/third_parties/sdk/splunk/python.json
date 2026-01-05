@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Splunk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(splunk_sdk|splunklib|splunk_opentelemetry|hass_splunk|splunk_toolbox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Splunk",
+                "language": "python",
+                "technology": "splunk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Umeng",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(shfc|kkkbird|huangfuhui|uhhc)(/)(umeng-openapi-sdk|umeng-push).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Umeng",
+                "language": "go",
+                "technology": "umeng",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

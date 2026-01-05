@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pubnub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pubnub).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pubnub",
+                "language": "python",
+                "technology": "pubnub",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vwo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vwo.vwo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vwo",
+                "language": "php",
+                "technology": "vwo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

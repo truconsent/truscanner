@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Madskills",
+            "category": "Storage Sink",
+            "patterns": [
+                "fullstack-serverless"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Madskills",
+                "language": "javascript",
+                "technology": "madskills",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

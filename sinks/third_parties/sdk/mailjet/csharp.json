@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailjet",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Mjml[.]Net).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailjet",
+                "language": "csharp",
+                "technology": "mailjet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hpe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hpe[.]adm[.]nga[.]sdk|com[.]hpe[.]adm[.]octane[.]ciplugins).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hpe",
+                "language": "java",
+                "technology": "hpe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

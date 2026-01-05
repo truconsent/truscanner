@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Obrisk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(paywx).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Obrisk",
+                "language": "python",
+                "technology": "obrisk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

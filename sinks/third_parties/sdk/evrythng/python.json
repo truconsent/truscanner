@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Evrythng",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(evrythng).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Evrythng",
+                "language": "python",
+                "technology": "evrythng",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

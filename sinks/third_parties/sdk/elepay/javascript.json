@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Elepay",
+            "category": "Storage Sink",
+            "patterns": [
+                "elepay-react-native"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Elepay",
+                "language": "javascript",
+                "technology": "elepay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

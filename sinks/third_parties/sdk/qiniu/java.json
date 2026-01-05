@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qiniu",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]qiniu).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qiniu",
+                "language": "java",
+                "technology": "qiniu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

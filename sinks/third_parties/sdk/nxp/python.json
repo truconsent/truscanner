@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nxp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(spsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nxp",
+                "language": "python",
+                "technology": "nxp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

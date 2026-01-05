@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ksyun",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]ksyun).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ksyun",
+                "language": "java",
+                "technology": "ksyun",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

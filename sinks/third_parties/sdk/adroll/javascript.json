@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adroll",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?(__adroll)([.](record_adroll_email|record_user))?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adroll",
+                "language": "javascript",
+                "technology": "adroll",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

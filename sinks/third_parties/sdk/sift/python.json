@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sift",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sift).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sift",
+                "language": "python",
+                "technology": "sift",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

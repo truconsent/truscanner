@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Orcasinc",
+            "category": "Storage Sink",
+            "patterns": [
+                "cordova-plugin-pushplugin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Orcasinc",
+                "language": "javascript",
+                "technology": "orcasinc",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

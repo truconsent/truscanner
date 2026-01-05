@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snowflake",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*snowflake.*"
+            ],
+            "tags": {
+                "id": "Storages.Snowflake",
+                "language": "javascript",
+                "technology": "snowflake",
+                "type": "Database"
+            }
+        }
+    ]
+}

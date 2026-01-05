@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Army",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mil[.]army[.]missioncommand).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Army",
+                "language": "java",
+                "technology": "army",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

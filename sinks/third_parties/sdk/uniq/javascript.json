@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Uniq",
+            "category": "Storage Sink",
+            "patterns": [
+                "lrm-google"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Uniq",
+                "language": "javascript",
+                "technology": "uniq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

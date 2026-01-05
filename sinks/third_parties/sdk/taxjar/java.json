@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Taxjar",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com.taxjar.*)"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Taxjar",
+                "language": "java",
+                "technology": "taxjar",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

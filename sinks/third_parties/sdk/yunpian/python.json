@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yunpian",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yunpian_python_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yunpian",
+                "language": "python",
+                "technology": "yunpian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

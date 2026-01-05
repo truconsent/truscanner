@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Neo4j Graph Database(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:org.neo4j|GraphDatabase.driver|GraphDatabaseFactory).*(equals|text|withText|withParameters|withUpdatedParameters|column|database|impersonatedUser|metrics|get|run|has|find|withName|next|).*"
+            ],
+            "tags": {
+                "id": "Storages.Neo4jGraphDatabase.Read",
+                "language": "java",
+                "technology": "neo4j",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Neo4j Graph Database(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:GraphDatabase.driver|GraphDatabaseFactory).*(basic|kerberos|custom|bearer|writeTransaction|run|execute|beginTransaction|beginTx|delete|commit|create|set|).*"
+            ],
+            "tags": {
+                "id": "Storages.Neo4jGraphDatabase.Write",
+                "language": "java",
+                "technology": "neo4j",
+                "type": "Database"
+            }
+        }
+    ]
+}

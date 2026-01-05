@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dnsdb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dnsdb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dnsdb",
+                "language": "python",
+                "technology": "dnsdb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smarter",
+            "category": "Storage Sink",
+            "patterns": [
+                "treegrid-component-hci"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smarter",
+                "language": "javascript",
+                "technology": "smarter",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

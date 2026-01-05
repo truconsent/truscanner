@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lacework",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(laceworksdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lacework",
+                "language": "python",
+                "technology": "lacework",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

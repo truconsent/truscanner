@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Razorpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(razorpay.api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Razorpay",
+                "language": "php",
+                "technology": "razorpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

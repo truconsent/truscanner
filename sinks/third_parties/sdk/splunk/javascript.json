@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Splunk Mint",
+            "category": "Storage Sink",
+            "patterns": [
+                "com.splunk.mint"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Splunk.Mint",
+                "language": "javascript",
+                "technology": "splunk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

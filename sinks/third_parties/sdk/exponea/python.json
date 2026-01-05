@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Exponea",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(exponea_python_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Exponea",
+                "language": "python",
+                "technology": "exponea",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

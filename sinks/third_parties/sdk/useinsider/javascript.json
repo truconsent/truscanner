@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Useinsider",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-insider|insider-command-tree"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Useinsider",
+                "language": "javascript",
+                "technology": "useinsider",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

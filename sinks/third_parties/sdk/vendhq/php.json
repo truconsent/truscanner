@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vendhq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(vend.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vendhq",
+                "language": "php",
+                "technology": "vendhq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

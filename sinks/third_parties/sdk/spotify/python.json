@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Spotify",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(spotify|helga_spotify|aiohttp_spotify|rofi_spotify|pycri_spotify|tekore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Spotify",
+                "language": "python",
+                "technology": "spotify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

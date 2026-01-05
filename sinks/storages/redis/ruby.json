@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Redis DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)redis.*"
+            ],
+            "tags": {
+                "id": "Storages.Redis.ReadAndWrite",
+                "language": "ruby",
+                "technology": "redis",
+                "type": "Database"
+            }
+        }
+    ]
+}

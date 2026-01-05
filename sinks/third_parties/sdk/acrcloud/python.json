@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Acrcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(acrcloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Acrcloud",
+                "language": "python",
+                "technology": "acrcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

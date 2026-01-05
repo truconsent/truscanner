@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Geofirestore Core",
+            "category": "Storage Sink",
+            "patterns": [
+                "geofirestore-core"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Geofirestore.Core",
+                "language": "javascript",
+                "technology": "geofirestore",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Geofirestore",
+            "category": "Storage Sink",
+            "patterns": [
+                "geofirestore"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Geofirestore",
+                "language": "javascript",
+                "technology": "geofirestore",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Otto",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Otto.Market).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Otto",
+                "language": "php",
+                "technology": "otto",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

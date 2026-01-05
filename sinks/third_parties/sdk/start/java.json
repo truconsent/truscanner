@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Start",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]startapp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Start",
+                "language": "java",
+                "technology": "start",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

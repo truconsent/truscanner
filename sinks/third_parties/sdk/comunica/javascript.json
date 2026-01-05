@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Comunica",
+            "category": "Storage Sink",
+            "patterns": [
+                "@comunica\\/actor-sparql-parse-graphql"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Comunica",
+                "language": "javascript",
+                "technology": "comunica",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

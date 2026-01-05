@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Exadel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(compreface).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Exadel",
+                "language": "python",
+                "technology": "exadel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

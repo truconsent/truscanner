@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stripe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]stripe|org[.]stripe).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stripe",
+                "language": "java",
+                "technology": "stripe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

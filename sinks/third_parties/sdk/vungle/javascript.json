@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vungle",
+            "category": "Storage Sink",
+            "patterns": [
+                "chadori-mobile-ironsource-vungle|@wowmaking\\/react-native-iron-source-vungle|mobi.appcoins.ios-vungle-publisher-adv|heyzap-cordova-vungle"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vungle",
+                "language": "javascript",
+                "technology": "vungle",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

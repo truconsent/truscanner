@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Locuslabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "atriusmaps-node-sdk|locusmaps-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Locuslabs",
+                "language": "javascript",
+                "technology": "locuslabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

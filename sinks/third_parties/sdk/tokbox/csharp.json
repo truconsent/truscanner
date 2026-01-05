@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tokbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(OpenTok).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tokbox",
+                "language": "csharp",
+                "technology": "tokbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

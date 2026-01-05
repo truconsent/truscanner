@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Amazon Timestream(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:TimestreamQueryAsyncClient|TimestreamQueryAsyncClientBuilder|TimestreamQueryBaseClientBuilder|TimestreamQueryClient|TimestreamQueryClientBuilder|com[.]amazonaws[.]services[.]timestreamquery).*"
+            ],
+            "tags": {
+                "id": "Storages.AmazonTimestream.Read",
+                "language": "java",
+                "technology": "timestream",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon Timestream(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:TimestreamWriteAsyncClient|TimestreamWriteAsyncClientBuilder|TimestreamWriteBaseClientBuilder|TimestreamWriteClient|TimestreamWriteClientBuilder|com[.]amazonaws[.]services[.]timestreamwrite).*"
+            ],
+            "tags": {
+                "id": "Storages.AmazonTimestream.Write",
+                "language": "java",
+                "technology": "timestream",
+                "type": "Database"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fitbit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(fitbit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fitbit",
+                "language": "php",
+                "technology": "fitbit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

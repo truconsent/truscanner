@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Busability",
+            "category": "Storage Sink",
+            "patterns": [
+                "@busability\\/vue2-gmap-custom-marker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Busability",
+                "language": "javascript",
+                "technology": "busability",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

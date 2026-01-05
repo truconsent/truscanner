@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tridnguyen",
+            "category": "Storage Sink",
+            "patterns": [
+                "dwupload"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tridnguyen",
+                "language": "javascript",
+                "technology": "tridnguyen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

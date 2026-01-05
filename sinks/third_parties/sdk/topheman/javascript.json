@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Topheman Labs",
+            "category": "Storage Sink",
+            "patterns": [
+                "twitter-stream-channels"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Topheman.Labs",
+                "language": "javascript",
+                "technology": "topheman",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

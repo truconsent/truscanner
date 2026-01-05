@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Schibsted",
+            "category": "Storage Sink",
+            "patterns": [
+                "@adv-ui\\/boros-tcf|@adv-ui\\/boros-tcf-stub|@schibstedspain\\/adit-webads|@schibstedspain\\/boros-cmp|@schibstedspain\\/openads|cz-crm|@schibsted\\/sourcepoint|@schibstedspain\\/sui-studio|lbc-prettier|@s-ui\\/cz|@schibstedspain\\/commit-release-manager"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Schibsted",
+                "language": "javascript",
+                "technology": "schibsted",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

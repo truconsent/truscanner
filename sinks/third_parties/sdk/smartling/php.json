@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smartling",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Smartling).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smartling",
+                "language": "php",
+                "technology": "smartling",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

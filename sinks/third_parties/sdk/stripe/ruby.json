@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stripe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(spree_account_recurring|stripe_saas|phcdevworks_accounts_stripe|stripe|workarea-stripe|stripe_invoice|cash_out|trado_stripe_module|stripe_clerk|koduc_stripe|pay|killbill-stripe|piggybak_stripe|solidus_stripe|catarse_stripe).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stripe",
+                "language": "ruby",
+                "technology": "stripe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

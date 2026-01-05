@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Infobip",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)infobip.*(SmsAdvancedTextualRequest|SmsDestination|SmsTextualMessage|SmsApi|SmsPreviewRequest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Infobip",
+                "language": "php",
+                "technology": "infobip",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

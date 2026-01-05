@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Okta",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]okta[.]authn[.]sdk|com[.]okta[.]sdk|src[.]gen[.]java[.]main[.]org[.]openapitools[.]client|org[.]openapitools[.]client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Okta",
+                "language": "java",
+                "technology": "okta",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

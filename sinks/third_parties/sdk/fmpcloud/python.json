@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fmpcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(fmpsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fmpcloud",
+                "language": "python",
+                "technology": "fmpcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

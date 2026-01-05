@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paytm",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(PaytmWallet).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paytm",
+                "language": "php",
+                "technology": "paytm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

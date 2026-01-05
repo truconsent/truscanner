@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alaska",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(hyp3_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alaska",
+                "language": "python",
+                "technology": "alaska",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

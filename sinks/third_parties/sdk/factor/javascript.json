@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Factor",
+            "category": "Storage Sink",
+            "patterns": [
+                "@factor\\/plugin-storage-google-cloud|@factor\\/plugin-subscriptions|@factor\\/plugin-bugsnag|@factor\\/plugin-google-tag-manager"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Factor",
+                "language": "javascript",
+                "technology": "factor",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

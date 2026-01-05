@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quant",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(network[.]quant).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Quant",
+                "language": "java",
+                "technology": "quant",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

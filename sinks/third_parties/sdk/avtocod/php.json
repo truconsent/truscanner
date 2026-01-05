@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Avtocod",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(avtocod.b2bapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Avtocod",
+                "language": "php",
+                "technology": "avtocod",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

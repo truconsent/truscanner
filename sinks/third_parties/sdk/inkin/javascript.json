@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Inkin",
+            "category": "Storage Sink",
+            "patterns": [
+                "@ng-web-apis\\/payment-request"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Inkin",
+                "language": "javascript",
+                "technology": "inkin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

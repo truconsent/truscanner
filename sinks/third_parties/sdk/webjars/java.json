@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webjars",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]webjars[.]npm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webjars",
+                "language": "java",
+                "technology": "webjars",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

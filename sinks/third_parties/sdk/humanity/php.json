@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "TCP Software",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(humanity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.TCPSoftware",
+                "language": "php",
+                "technology": "humanity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

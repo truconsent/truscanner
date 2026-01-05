@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paga",
+            "category": "Storage Sink",
+            "patterns": [
+                "paga-collect|paga-business"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paga",
+                "language": "javascript",
+                "technology": "paga",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

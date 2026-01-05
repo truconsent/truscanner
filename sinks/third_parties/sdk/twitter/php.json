@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twitter",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(twitterapiexchange|twitteroauth|twitterads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twitter",
+                "language": "php",
+                "technology": "twitter",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

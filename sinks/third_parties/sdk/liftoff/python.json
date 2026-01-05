@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Liftoff",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(liftoff).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Liftoff",
+                "language": "python",
+                "technology": "liftoff",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

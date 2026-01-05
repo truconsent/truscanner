@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cymon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cymon).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cymon",
+                "language": "python",
+                "technology": "cymon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Comscore",
+            "category": "Storage Sink",
+            "patterns": [
+                "@segment\\/analytics.js-integration-comscore|react-native-comscore"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Comscore",
+                "language": "javascript",
+                "technology": "comscore",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Comscore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_comscore([.]push)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Comscore",
+                "language": "javascript",
+                "technology": "comscore",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

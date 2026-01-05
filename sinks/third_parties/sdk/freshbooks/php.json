@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Freshbooks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(freshbooks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Freshbooks",
+                "language": "php",
+                "technology": "freshbooks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

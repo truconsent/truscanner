@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Iexcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(iexfinance).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Iexcloud",
+                "language": "python",
+                "technology": "iexcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

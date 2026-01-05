@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Finos",
+            "category": "Storage Sink",
+            "patterns": [
+                "@finos\\/fdc3"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Finos",
+                "language": "javascript",
+                "technology": "finos",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

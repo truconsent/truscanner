@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clever",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-admin-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clever",
+                "language": "javascript",
+                "technology": "clever",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

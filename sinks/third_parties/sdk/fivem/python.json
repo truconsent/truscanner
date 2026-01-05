@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fivem",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(fivem.*(server|player)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fivem",
+                "language": "python",
+                "technology": "fivem",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

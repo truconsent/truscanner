@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Agiliumtrade",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(metaapi_cloud_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Agiliumtrade",
+                "language": "python",
+                "technology": "agiliumtrade",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ontraport",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(ontraport).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ontraport",
+                "language": "php",
+                "technology": "ontraport",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

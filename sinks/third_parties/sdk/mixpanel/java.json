@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mixpanel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mixpanel[.]android|com[.]mixpanel).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mixpanel",
+                "language": "java",
+                "technology": "mixpanel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Researchspace",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(rspace_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Researchspace",
+                "language": "python",
+                "technology": "researchspace",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

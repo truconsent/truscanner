@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onetask",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(onetask).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onetask",
+                "language": "python",
+                "technology": "onetask",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

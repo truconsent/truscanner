@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fomo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(fomo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fomo",
+                "language": "python",
+                "technology": "fomo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

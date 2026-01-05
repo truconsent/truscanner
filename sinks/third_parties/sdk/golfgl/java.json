@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Golfgl",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(de[.]golfgl[.]gdxgameanalytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Golfgl",
+                "language": "java",
+                "technology": "golfgl",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

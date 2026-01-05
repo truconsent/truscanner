@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Themike",
+            "category": "Storage Sink",
+            "patterns": [
+                "@starbase\\/starfire"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Themike",
+                "language": "javascript",
+                "technology": "themike",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

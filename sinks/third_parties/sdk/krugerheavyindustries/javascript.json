@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Krugerheavyindustries",
+            "category": "Storage Sink",
+            "patterns": [
+                "pinjs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Krugerheavyindustries",
+                "language": "javascript",
+                "technology": "krugerheavyindustries",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gurock",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(testrail_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gurock",
+                "language": "python",
+                "technology": "gurock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

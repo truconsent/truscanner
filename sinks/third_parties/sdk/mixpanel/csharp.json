@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mixpanel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mixpanel-csharp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mixpanel",
+                "language": "csharp",
+                "technology": "mixpanel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

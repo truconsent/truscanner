@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nicedoc",
+            "category": "Storage Sink",
+            "patterns": [
+                "metascraper-instagram|metascraper-telegram|lambda-prune|untracked"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nicedoc",
+                "language": "javascript",
+                "technology": "nicedoc",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

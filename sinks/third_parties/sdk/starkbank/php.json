@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Starkbank",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(starkbank).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Starkbank",
+                "language": "php",
+                "technology": "starkbank",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

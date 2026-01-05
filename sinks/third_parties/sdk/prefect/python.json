@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Prefect",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(prefect).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Prefect",
+                "language": "python",
+                "technology": "prefect",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

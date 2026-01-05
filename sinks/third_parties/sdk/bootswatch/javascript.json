@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bootswatch",
+            "category": "Storage Sink",
+            "patterns": [
+                "bootswatch"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bootswatch",
+                "language": "javascript",
+                "technology": "bootswatch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

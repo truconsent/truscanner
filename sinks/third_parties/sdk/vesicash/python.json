@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vesicash",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vesicashapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vesicash",
+                "language": "python",
+                "technology": "vesicash",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

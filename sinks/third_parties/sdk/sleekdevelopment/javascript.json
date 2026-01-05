@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sleekdevelopment",
+            "category": "Storage Sink",
+            "patterns": [
+                "ng-payment-request-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sleekdevelopment",
+                "language": "javascript",
+                "technology": "sleekdevelopment",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

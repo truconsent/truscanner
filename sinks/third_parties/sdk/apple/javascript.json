@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apple",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-apple-receipt-verify|app-store-validator"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apple",
+                "language": "javascript",
+                "technology": "apple",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

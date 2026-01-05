@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Textrazor",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(textrazor).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Textrazor",
+                "language": "python",
+                "technology": "textrazor",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

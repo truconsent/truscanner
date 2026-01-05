@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudreach",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sceptre).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudreach",
+                "language": "python",
+                "technology": "cloudreach",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

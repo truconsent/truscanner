@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sailthru",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sailthru|sailthru_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sailthru",
+                "language": "python",
+                "technology": "sailthru",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Statuspage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(statuspage.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Statuspage",
+                "language": "php",
+                "technology": "statuspage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

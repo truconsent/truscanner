@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vonage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vonage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vonage",
+                "language": "python",
+                "technology": "vonage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

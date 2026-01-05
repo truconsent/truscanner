@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kingsoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(kscore.*session).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kingsoft",
+                "language": "python",
+                "technology": "kingsoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

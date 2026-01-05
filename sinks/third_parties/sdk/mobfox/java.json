@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mobfox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bingzer[.]android[.]ads[.]networks[.]mobfox|com[.]github[.]mobfox|com[.]mobfox[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mobfox",
+                "language": "java",
+                "technology": "mobfox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

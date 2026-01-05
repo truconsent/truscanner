@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dintero",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dintero).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dintero",
+                "language": "python",
+                "technology": "dintero",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

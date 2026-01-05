@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gocharting",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(wcharczuk)(/)(go-chart).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gocharting",
+                "language": "go",
+                "technology": "gocharting",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

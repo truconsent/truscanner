@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stackpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(stackpay.payments).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stackpay",
+                "language": "php",
+                "technology": "stackpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

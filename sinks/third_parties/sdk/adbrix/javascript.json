@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adbrix",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-adbrix-remaster-preview|react-native-adbrix-remaster"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adbrix",
+                "language": "javascript",
+                "technology": "adbrix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

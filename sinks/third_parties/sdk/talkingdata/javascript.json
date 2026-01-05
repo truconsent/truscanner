@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Talkingdata",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-talkingdata2|@cross2d\\/react-native-talkingdata"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Talkingdata",
+                "language": "javascript",
+                "technology": "talkingdata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

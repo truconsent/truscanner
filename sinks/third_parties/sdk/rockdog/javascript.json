@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rockdog",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-source-google-storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rockdog",
+                "language": "javascript",
+                "technology": "rockdog",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

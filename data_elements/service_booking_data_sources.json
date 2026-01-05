@@ -1,0 +1,148 @@
+{
+    "sources": [
+        {
+            "name": "Service History",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(history|log|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Booking Details",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(booking|reservation)[^\\s]{0,5}(details|info|data)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Provider Information",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(provider|vendor|partner)[^\\s]{0,5}(info|details)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Completion Status",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(completion|status|fulfilled)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Ratings",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(rating|score|stars)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Reviews",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(review|feedback|comment)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Cancellation History",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(cancel|cancellation)[^\\s]{0,5}(history|log|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Rescheduling Patterns",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(reschedule|rebook)[^\\s]{0,5}(pattern|behavior|frequency)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Preferences",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}(preference|choice|option)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Frequency of Service Usage",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(frequency|usage)[^\\s]{0,5}(service|booking)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Location History",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bservice[^\\s]{0,5}location[^\\s]{0,5}(history|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Payment for Services",
+            "category": "Service & Booking Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(payment|transaction)[^\\s]{0,5}(service|booking)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

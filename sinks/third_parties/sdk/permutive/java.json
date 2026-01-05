@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Permutive",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]permutive[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Permutive",
+                "language": "java",
+                "technology": "permutive",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Remarkablemark",
+            "category": "Storage Sink",
+            "patterns": [
+                "youtube-iframe-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Remarkablemark",
+                "language": "javascript",
+                "technology": "remarkablemark",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

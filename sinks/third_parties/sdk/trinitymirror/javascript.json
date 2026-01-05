@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trinitymirror",
+            "category": "Storage Sink",
+            "patterns": [
+                "random-circles"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trinitymirror",
+                "language": "javascript",
+                "technology": "trinitymirror",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

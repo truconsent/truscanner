@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vesicash",
+            "category": "Storage Sink",
+            "patterns": [
+                "vesicash-nodejs-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vesicash",
+                "language": "javascript",
+                "technology": "vesicash",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rgcholdings",
+            "category": "Storage Sink",
+            "patterns": [
+                "gcp-fx-utils"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rgcholdings",
+                "language": "javascript",
+                "technology": "rgcholdings",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

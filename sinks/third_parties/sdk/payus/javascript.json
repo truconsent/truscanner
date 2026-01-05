@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payus",
+            "category": "Storage Sink",
+            "patterns": [
+                "@payus\\/payus-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payus",
+                "language": "javascript",
+                "technology": "payus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

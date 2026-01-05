@@ -1,0 +1,16 @@
+{
+    "sources": [
+        {
+            "name": "Prisma ORM",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)\\bprisma\\b",
+                "(?i)db\\.\\w+\\.(?:create|update|delete|upsert|deleteMany|updateMany)"
+            ],
+            "tags": {
+                "type": "Database",
+                "technology": "prisma"
+            }
+        }
+    ]
+}

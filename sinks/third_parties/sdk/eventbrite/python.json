@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Eventbrite",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(eventbrite).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Eventbrite",
+                "language": "python",
+                "technology": "eventbrite",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

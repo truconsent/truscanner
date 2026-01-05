@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Brooklyn",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]brooklyn[.]networking).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Brooklyn",
+                "language": "java",
+                "technology": "brooklyn",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Backupfire",
+            "category": "Storage Sink",
+            "patterns": [
+                "@backupfire\\/firebase"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Backupfire",
+                "language": "javascript",
+                "technology": "backupfire",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

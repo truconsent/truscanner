@@ -1,0 +1,56 @@
+{
+    "sources": [
+        {
+            "name": "Web Angularfire-wrappers-demo",
+            "category": "Storage Sink",
+            "patterns": [
+                "angularfire-storage-wrapper"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Web.Angularfire-wrappers-demo",
+                "language": "javascript",
+                "technology": "web",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Web Bs-angular-g-maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bespunky\\/angular-google-maps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Web.Bs-angular-g-maps",
+                "language": "javascript",
+                "technology": "web",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Web Smile-track",
+            "category": "Storage Sink",
+            "patterns": [
+                "smile-track"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Web.Smile-track",
+                "language": "javascript",
+                "technology": "web",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Web",
+            "category": "Storage Sink",
+            "patterns": [
+                "@spurreiter\\/geocoder"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Web",
+                "language": "javascript",
+                "technology": "web",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

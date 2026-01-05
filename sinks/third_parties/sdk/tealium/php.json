@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tealium",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*)?(tealium_add_data|utag.{0,2}track)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tealium",
+                "language": "php",
+                "technology": "tealium",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

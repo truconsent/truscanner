@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rakutenadvertising",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]rakutenadvertising).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rakutenadvertising",
+                "language": "java",
+                "technology": "rakutenadvertising",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

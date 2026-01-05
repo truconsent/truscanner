@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Codingoncatnip",
+            "category": "Storage Sink",
+            "patterns": [
+                "gcp-object-storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Codingoncatnip",
+                "language": "javascript",
+                "technology": "codingoncatnip",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

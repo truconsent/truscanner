@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Telnyx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(telnyx).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Telnyx",
+                "language": "python",
+                "technology": "telnyx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

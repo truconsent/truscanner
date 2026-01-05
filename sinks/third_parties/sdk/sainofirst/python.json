@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sainofirst",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sainofirst).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sainofirst",
+                "language": "python",
+                "technology": "sainofirst",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

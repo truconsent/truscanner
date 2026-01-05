@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Csas",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cz[.]csas).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Csas",
+                "language": "java",
+                "technology": "csas",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

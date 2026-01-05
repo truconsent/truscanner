@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mendeley",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mendeley).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mendeley",
+                "language": "python",
+                "technology": "mendeley",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

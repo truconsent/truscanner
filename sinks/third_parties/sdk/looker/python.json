@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Looker",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(looker_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Looker",
+                "language": "python",
+                "technology": "looker",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

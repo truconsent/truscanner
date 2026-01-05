@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fluidware",
+            "category": "Storage Sink",
+            "patterns": [
+                "nr-dash"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fluidware",
+                "language": "javascript",
+                "technology": "fluidware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

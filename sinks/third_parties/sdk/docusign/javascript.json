@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Docusign",
+            "category": "Storage Sink",
+            "patterns": [
+                "@clausehq\\/flows-step-sendgridemail"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Docusign",
+                "language": "javascript",
+                "technology": "docusign",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

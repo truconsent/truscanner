@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apptimize",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]apptimize[.]segment).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apptimize",
+                "language": "java",
+                "technology": "apptimize",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

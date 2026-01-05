@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Backand",
+            "category": "Storage Sink",
+            "patterns": [
+                "fnhub"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Backand",
+                "language": "javascript",
+                "technology": "backand",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

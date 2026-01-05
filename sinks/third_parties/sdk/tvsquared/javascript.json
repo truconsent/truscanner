@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "TVSquared",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_tvq([.]push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.TVSquared",
+                "language": "javascript",
+                "technology": "tvsquared",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

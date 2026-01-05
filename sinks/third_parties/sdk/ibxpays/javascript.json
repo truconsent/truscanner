@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ibxpays",
+            "category": "Storage Sink",
+            "patterns": [
+                "payroc-ibx-gateway"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ibxpays",
+                "language": "javascript",
+                "technology": "ibxpays",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

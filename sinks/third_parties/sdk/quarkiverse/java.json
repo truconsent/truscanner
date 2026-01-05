@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quarkiverse",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]quarkiverse[.]operatorsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Quarkiverse",
+                "language": "java",
+                "technology": "quarkiverse",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

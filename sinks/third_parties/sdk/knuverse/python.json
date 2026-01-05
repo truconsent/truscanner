@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Knuverse",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(knuverse).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Knuverse",
+                "language": "python",
+                "technology": "knuverse",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

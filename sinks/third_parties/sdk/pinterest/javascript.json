@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pinterest",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?pintrk[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.PinterestPixel",
+                "language": "javascript",
+                "technology": "pinterest",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

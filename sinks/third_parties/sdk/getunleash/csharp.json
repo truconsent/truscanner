@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getunleash",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Unleash[.]Client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getunleash",
+                "language": "csharp",
+                "technology": "getunleash",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

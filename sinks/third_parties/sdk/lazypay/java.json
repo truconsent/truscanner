@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lazypay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]citruspay[.]lazypay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lazypay",
+                "language": "java",
+                "technology": "lazypay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

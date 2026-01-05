@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Netflix",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(netflix|netflix_roulette|omniauth-netflix|rares-netflix|whats-on-netflix|netflix4r|kubrick|jekflix|ruby_robot).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netflix",
+                "language": "ruby",
+                "technology": "netflix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

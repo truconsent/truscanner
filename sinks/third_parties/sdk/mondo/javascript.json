@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mondo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@dotrun\\/gae-js-storage|@dotrun\\/gae-js-tasks"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mondo",
+                "language": "javascript",
+                "technology": "mondo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

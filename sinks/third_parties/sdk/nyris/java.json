@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nyris",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]nyris).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nyris",
+                "language": "java",
+                "technology": "nyris",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

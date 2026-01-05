@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webappsolutions",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-plugin-performance-metrics"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webappsolutions",
+                "language": "javascript",
+                "technology": "webappsolutions",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

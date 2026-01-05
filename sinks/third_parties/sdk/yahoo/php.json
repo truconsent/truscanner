@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yahoo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(YahooYQLQuery|YahooOAuthApplication).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yahoo",
+                "language": "php",
+                "technology": "yahoo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Signrequest",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(signrequest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Signrequest",
+                "language": "php",
+                "technology": "signrequest",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Acumatica",
+            "category": "Storage Sink",
+            "patterns": [
+                "acumsrc"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Acumatica",
+                "language": "javascript",
+                "technology": "acumatica",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cormea",
+            "category": "Storage Sink",
+            "patterns": [
+                "express-standard"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cormea",
+                "language": "javascript",
+                "technology": "cormea",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

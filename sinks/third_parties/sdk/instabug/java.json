@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instabug",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]instabug[.]library).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instabug",
+                "language": "java",
+                "technology": "instabug",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

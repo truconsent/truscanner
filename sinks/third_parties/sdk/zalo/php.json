@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zalo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(zalo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zalo",
+                "language": "php",
+                "technology": "zalo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

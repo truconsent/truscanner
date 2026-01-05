@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Agones",
+            "category": "Storage Sink",
+            "patterns": [
+                "@google-cloud\\/agones-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Agones",
+                "language": "javascript",
+                "technology": "agones",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

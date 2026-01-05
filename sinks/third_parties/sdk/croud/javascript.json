@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Croud",
+            "category": "Storage Sink",
+            "patterns": [
+                "analytics-gtag"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Croud",
+                "language": "javascript",
+                "technology": "croud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

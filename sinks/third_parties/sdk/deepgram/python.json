@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Deepgram",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(deepgram).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Deepgram",
+                "language": "python",
+                "technology": "deepgram",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vroom",
+            "category": "Storage Sink",
+            "patterns": [
+                "@vroomlabs\\/gsdk-deploy|@tdalabs\\/gsdk-deploy|@tdalabs\\/keystore-helper"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vroom",
+                "language": "javascript",
+                "technology": "vroom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

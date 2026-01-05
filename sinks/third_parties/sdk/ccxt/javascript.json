@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ccxt",
+            "category": "Storage Sink",
+            "patterns": [
+                "ccxt|ccxt-okex-garik|@ango-ya\\/ccxt|sdfgsgsdg|guyo13-ccxt|ccxt-mxc|@mareksokol\\/ccxt|kamiswiss-ccxt|ccxt-external-mb|@madnai\\/ccxt"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ccxt",
+                "language": "javascript",
+                "technology": "ccxt",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

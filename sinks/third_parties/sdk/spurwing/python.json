@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Spurwing",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(spurwing).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Spurwing",
+                "language": "python",
+                "technology": "spurwing",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

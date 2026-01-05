@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appy",
+            "category": "Storage Sink",
+            "patterns": [
+                "acebase-server|acebase"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appy",
+                "language": "javascript",
+                "technology": "appy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

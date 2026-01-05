@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wavo",
+            "category": "Storage Sink",
+            "patterns": [
+                "kissmetrics"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wavo",
+                "language": "javascript",
+                "technology": "wavo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

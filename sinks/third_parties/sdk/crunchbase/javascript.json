@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Crunchbase",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-revmob"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Crunchbase",
+                "language": "javascript",
+                "technology": "crunchbase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

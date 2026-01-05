@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sheetdb",
+            "category": "Storage Sink",
+            "patterns": [
+                "sheetdb-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sheetdb",
+                "language": "javascript",
+                "technology": "sheetdb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

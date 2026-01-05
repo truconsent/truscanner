@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tutorbook",
+            "category": "Storage Sink",
+            "patterns": [
+                "@tutorbook\\/emails|@tutorbook\\/next-firebase|@tutorbook\\/firebase"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tutorbook",
+                "language": "javascript",
+                "technology": "tutorbook",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

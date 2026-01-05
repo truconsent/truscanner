@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aspose",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(aspose.pdf).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aspose",
+                "language": "php",
+                "technology": "aspose",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

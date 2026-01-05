@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cocreate",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cocreate\\/facebook"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cocreate",
+                "language": "javascript",
+                "technology": "cocreate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amplitude",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(amplitude|integrations.*amplitude|.*(amplitudelogger|amplitudeclient|amplitudereportfileprocessor)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amplitude",
+                "language": "python",
+                "technology": "amplitude",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

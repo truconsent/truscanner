@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chadorivirtual",
+            "category": "Storage Sink",
+            "patterns": [
+                "chadori-mobile-cloud-save"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chadorivirtual",
+                "language": "javascript",
+                "technology": "chadorivirtual",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appnexus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]appnexus[.]grafana-client|com[.]appnexus[.]oas[.]mobilesdk|com[.]appnexus[.]opensdk[.]csr|com[.]appnexus[.]opensdk[.]mediatedviews|com[.]appnexus[.]opensdk|com[.]appnexus[.]pricecheck).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appnexus",
+                "language": "java",
+                "technology": "appnexus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

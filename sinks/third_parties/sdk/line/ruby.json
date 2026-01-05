@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Line",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(line-bot-api|line-bot|lotify|clova-speech|lbd_sdk|pihole|line_liff).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Line",
+                "language": "ruby",
+                "technology": "line",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instana",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(instana).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instana",
+                "language": "python",
+                "technology": "instana",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

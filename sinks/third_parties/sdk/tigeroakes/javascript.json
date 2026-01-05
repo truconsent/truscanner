@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tigeroakes",
+            "category": "Storage Sink",
+            "patterns": [
+                "spherical-geometry-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tigeroakes",
+                "language": "javascript",
+                "technology": "tigeroakes",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

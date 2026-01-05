@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Biomapas",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(b-twilio-sdk-layer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Biomapas",
+                "language": "python",
+                "technology": "biomapas",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

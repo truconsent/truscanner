@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Heartex",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(htx[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Heartex",
+                "language": "python",
+                "technology": "heartex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

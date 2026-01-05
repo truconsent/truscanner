@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webda",
+            "category": "Storage Sink",
+            "patterns": [
+                "@webda\\/core|webda"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webda",
+                "language": "javascript",
+                "technology": "webda",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

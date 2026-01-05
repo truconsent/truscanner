@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Datacrunch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(datacrunch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Datacrunch",
+                "language": "python",
+                "technology": "datacrunch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

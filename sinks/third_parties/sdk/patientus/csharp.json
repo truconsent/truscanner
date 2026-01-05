@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Patientus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Patientus[.]OVS[.]SDK).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Patientus",
+                "language": "csharp",
+                "technology": "patientus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

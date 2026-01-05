@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Notion",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(notion).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Notion",
+                "language": "python",
+                "technology": "notion",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

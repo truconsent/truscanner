@@ -1,0 +1,162 @@
+{
+    "sources": [
+        {
+            "name": "API Usage Logs",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bapi[^\\s]{0,5}(usage|log|activity|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Database Queries",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(database|sql|query)[^\\s]{0,5}(log|record|execution)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "System Performance Metrics",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(system|server|performance)[^\\s]{0,5}(metric|measurement|monitoring)\\b",
+                "(?i).*((?:performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)|(cpu|memory|disk)[^\\s/(;)#|,=!>]{0,5}(usage|freq|available|used)).*"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Error Codes",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(error|fault|exception)[^\\s]{0,5}(code|number|id)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Debug Information",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(debug|trace)[^\\s]{0,5}(info|information|data)\\b",
+                "(?i)\\blog[^\\s]{0,5}(info|information|data)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Cache Data",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(cache|temporary)[^\\s]{0,5}(data|record|storage)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Backup Information",
+            "category": "Technical & System Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(backup|restore|snapshot)[^\\s]{0,5}(info|data|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Security Logs",
+            "category": "Technical & System Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(security|access|audit)[^\\s]{0,5}(log|record|event)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Access Logs",
+            "category": "Technical & System Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(access|login|session)[^\\s]{0,5}(log|record|history)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Integration Data with Third-party Services",
+            "category": "Technical & System Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(integration|third[- ]party|external)[^\\s]{0,5}(data|info|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Crash Data",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Browsing History (Technical)",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)browsing[^\\s/(;)#|,=!>]*history|website[^\\s/(;)#|,=!>]*visited|web[^\\s/(;)#|,=!>]*pages[^\\s/(;)#|,=!>]*visited"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Browsing Duration",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration))"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

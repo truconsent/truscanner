@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Botpress",
+            "category": "Storage Sink",
+            "patterns": [
+                "botpress"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Botpress",
+                "language": "javascript",
+                "technology": "botpress",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

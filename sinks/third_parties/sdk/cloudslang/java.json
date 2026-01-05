@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudslang",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]cloudslang[.]content).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudslang",
+                "language": "java",
+                "technology": "cloudslang",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

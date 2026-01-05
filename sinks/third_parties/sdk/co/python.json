@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Co Sdk-gaming",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(irsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Sdk-gaming",
+                "language": "python",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Quantanalytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(quantstats).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Quantanalytics",
+                "language": "python",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

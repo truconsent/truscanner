@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Videoindexer",
+            "category": "Storage Sink",
+            "patterns": [
+                "@azure\\/video-analyzer-for-media-widgets"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Videoindexer",
+                "language": "javascript",
+                "technology": "videoindexer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Iofog",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(iofog).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Iofog",
+                "language": "python",
+                "technology": "iofog",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

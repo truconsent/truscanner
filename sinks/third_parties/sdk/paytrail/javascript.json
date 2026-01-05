@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paytrail",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-paytrail|paytrail|paytrail-lib|paytrailv"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paytrail",
+                "language": "javascript",
+                "technology": "paytrail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

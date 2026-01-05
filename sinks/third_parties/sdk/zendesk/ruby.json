@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zendesk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(zendesk_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zendesk",
+                "language": "ruby",
+                "technology": "zendesk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

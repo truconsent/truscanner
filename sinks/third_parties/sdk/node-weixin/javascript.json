@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Node-weixin",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-weixin-events"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Node-weixin",
+                "language": "javascript",
+                "technology": "node-weixin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

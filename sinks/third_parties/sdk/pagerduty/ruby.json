@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pagerduty",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pagerduty).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pagerduty",
+                "language": "ruby",
+                "technology": "pagerduty",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rngr",
+            "category": "Storage Sink",
+            "patterns": [
+                "@directus\\/drive-gcs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rngr",
+                "language": "javascript",
+                "technology": "rngr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

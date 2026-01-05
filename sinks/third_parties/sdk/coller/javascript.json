@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coller",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-cloud-json-environment-credential"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coller",
+                "language": "javascript",
+                "technology": "coller",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

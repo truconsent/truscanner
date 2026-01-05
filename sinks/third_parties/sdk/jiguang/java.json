@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jiguang",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cn[.]jiguang[.]sdk|cn[.]jiguang).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jiguang",
+                "language": "java",
+                "technology": "jiguang",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

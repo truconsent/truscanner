@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitbean Git",
+            "category": "Storage Sink",
+            "patterns": [
+                "jwplayer-managment-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitbean.Git",
+                "language": "javascript",
+                "technology": "bitbean",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

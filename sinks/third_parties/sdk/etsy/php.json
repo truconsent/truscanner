@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Etsy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(etsy.etsyclient|etsy.etsyapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Etsy",
+                "language": "php",
+                "technology": "etsy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

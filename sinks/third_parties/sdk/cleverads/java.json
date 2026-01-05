@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cleverads",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]cleveradssolutions).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cleverads",
+                "language": "java",
+                "technology": "cleverads",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

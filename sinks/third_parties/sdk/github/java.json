@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Github",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]kohsuke[.]github).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github",
+                "language": "java",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

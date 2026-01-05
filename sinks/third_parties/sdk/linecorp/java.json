@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Linecorp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]linecorp[.](bot(?![.]jackson)|centraldogma[.]client)([.].+)?$)"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Linecorp",
+                "language": "java",
+                "technology": "linecorp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

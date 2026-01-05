@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Allo-media",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(uhlive).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Allo-media",
+                "language": "python",
+                "technology": "allo-media",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sijmusic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(bitrix24).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sijmusic",
+                "language": "python",
+                "technology": "sijmusic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

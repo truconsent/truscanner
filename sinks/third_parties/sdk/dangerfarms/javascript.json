@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dangerfarms",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-batch|@dangerfarms\\/react-native-batch"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dangerfarms",
+                "language": "javascript",
+                "technology": "dangerfarms",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ont",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ontology).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ont",
+                "language": "python",
+                "technology": "ont",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

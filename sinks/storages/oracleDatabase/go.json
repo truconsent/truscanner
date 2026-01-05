@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Oracle Database",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/sijms/go-ora).*(Exec|Query)"
+            ],
+            "tags": {
+                "id": "Storages.OracleDatabase.ReadAndWrite",
+                "language": "go",
+                "technology": "oracleDatabase",
+                "type": "Database"
+            }
+        }
+    ]
+}

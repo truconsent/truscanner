@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Epplussoftware",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(EPPlus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Epplussoftware",
+                "language": "csharp",
+                "technology": "epplussoftware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

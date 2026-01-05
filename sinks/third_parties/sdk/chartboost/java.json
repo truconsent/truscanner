@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chartboost",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]chartboost[.]sdk|com[.]chartboost).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chartboost",
+                "language": "java",
+                "technology": "chartboost",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

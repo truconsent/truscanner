@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adbuddiz",
+            "category": "Storage Sink",
+            "patterns": [
+                "com.purplebrain.adbuddiz.sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adbuddiz",
+                "language": "javascript",
+                "technology": "adbuddiz",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

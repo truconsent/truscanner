@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alibabacloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow[.]providers[.]alibaba[.]cloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alibabacloud",
+                "language": "python",
+                "technology": "alibabacloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

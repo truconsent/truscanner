@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pixalate",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]pixalate[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixalate",
+                "language": "java",
+                "technology": "pixalate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

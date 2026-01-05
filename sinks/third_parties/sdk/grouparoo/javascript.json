@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Grouparoo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@grouparoo\\/sendgrid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Grouparoo",
+                "language": "javascript",
+                "technology": "grouparoo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

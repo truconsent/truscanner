@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Enhance",
+            "category": "Storage Sink",
+            "patterns": [
+                "enhance-visitors|json-stringify|vue2-scrollbar|angular2-image-zoom|@use\\/it|loggerplus|hubot-enhance|react-native-smart-timer-enhance|jsenhance|batch-replace|lipo|@sagacious\\/fs-wrapper|enhance-req-res|@use\\/core|fetch-response-enhancer|node-oauth-error|super-array|enhance-generator|angular-nd-image-zoom|@kne\\/antd-enhance"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Enhance",
+                "language": "javascript",
+                "technology": "enhance",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

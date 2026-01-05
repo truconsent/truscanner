@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Workos",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(workos).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Workos",
+                "language": "php",
+                "technology": "workos",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Beyonk",
+            "category": "Storage Sink",
+            "patterns": [
+                "@beyonk\\/svelte-googlemaps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Beyonk",
+                "language": "javascript",
+                "technology": "beyonk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

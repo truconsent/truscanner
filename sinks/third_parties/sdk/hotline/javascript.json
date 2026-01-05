@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hotline",
+            "category": "Storage Sink",
+            "patterns": [
+                "hotline"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hotline",
+                "language": "javascript",
+                "technology": "hotline",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Admost",
+            "category": "Storage Sink",
+            "patterns": [
+                "@up-inside\\/react-native-admost"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Admost",
+                "language": "javascript",
+                "technology": "admost",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

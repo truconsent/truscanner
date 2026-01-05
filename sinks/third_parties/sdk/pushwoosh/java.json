@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pushwoosh",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]pushwoosh[.]java7|com[.]pushwoosh).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pushwoosh",
+                "language": "java",
+                "technology": "pushwoosh",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

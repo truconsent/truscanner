@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Codeswholesale",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(codeswholesale).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Codeswholesale",
+                "language": "php",
+                "technology": "codeswholesale",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

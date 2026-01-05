@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pointblankdev",
+            "category": "Storage Sink",
+            "patterns": [
+                "@pointblankdev\\/react-cloudinary-upload"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pointblankdev",
+                "language": "javascript",
+                "technology": "pointblankdev",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

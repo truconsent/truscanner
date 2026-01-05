@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Citruspay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]citruspay[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Citruspay",
+                "language": "java",
+                "technology": "citruspay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

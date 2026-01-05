@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Palmer",
+            "category": "Storage Sink",
+            "patterns": [
+                "stockscraper"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Palmer",
+                "language": "javascript",
+                "technology": "palmer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

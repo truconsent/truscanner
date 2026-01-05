@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rocket",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(rocketchat_API|rocketchat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rocket",
+                "language": "python",
+                "technology": "rocket",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

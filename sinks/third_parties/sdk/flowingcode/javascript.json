@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Flowingcode",
+            "category": "Storage Sink",
+            "patterns": [
+                "@flowingcode\\/google-map"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flowingcode",
+                "language": "javascript",
+                "technology": "flowingcode",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

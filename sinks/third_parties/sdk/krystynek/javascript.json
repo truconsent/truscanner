@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Krystynek",
+            "category": "Storage Sink",
+            "patterns": [
+                "@pixelygroup\\/commit-checker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Krystynek",
+                "language": "javascript",
+                "technology": "krystynek",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

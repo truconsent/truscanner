@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Protonmail",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pyovpn_as).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Protonmail",
+                "language": "python",
+                "technology": "protonmail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getwhym",
+            "category": "Storage Sink",
+            "patterns": [
+                "sand-gcloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getwhym",
+                "language": "javascript",
+                "technology": "getwhym",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Flatfish",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-cloud-functions-typescript"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flatfish",
+                "language": "javascript",
+                "technology": "flatfish",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

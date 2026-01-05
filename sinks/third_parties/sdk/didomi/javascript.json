@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Didomi",
+            "category": "Storage Sink",
+            "patterns": [
+                "@didomi\\/react"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Didomi",
+                "language": "javascript",
+                "technology": "didomi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

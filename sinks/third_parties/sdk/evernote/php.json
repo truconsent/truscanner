@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Evernote",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(evernote).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Evernote",
+                "language": "php",
+                "technology": "evernote",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

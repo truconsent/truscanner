@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Winniehell",
+            "category": "Storage Sink",
+            "patterns": [
+                "express-calendar"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Winniehell",
+                "language": "javascript",
+                "technology": "winniehell",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

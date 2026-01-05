@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gregbrimble",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cloudflare\\/util-adwords"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gregbrimble",
+                "language": "javascript",
+                "technology": "gregbrimble",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

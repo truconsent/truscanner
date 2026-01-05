@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Salesforce",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]github[.]salesforce-marketingcloud|com[.]salesforce[.]argus|com[.]salesforce[.]cantor|com[.]salesforce[.]formula|com[.]salesforce[.]marketingcloud|com[.]salesforce[.]mobilesdk|com[.]salesforce[.]nimbus|com[.]salesforce[.]transmogrifai).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Salesforce",
+                "language": "java",
+                "technology": "salesforce",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rdlabo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@nativescript-community\\/ui-share-file"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rdlabo",
+                "language": "javascript",
+                "technology": "rdlabo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

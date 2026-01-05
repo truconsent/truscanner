@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chetanshenoy",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-geosuggest-plus"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chetanshenoy",
+                "language": "javascript",
+                "technology": "chetanshenoy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

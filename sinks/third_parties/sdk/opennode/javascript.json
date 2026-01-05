@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opennode Developers",
+            "category": "Storage Sink",
+            "patterns": [
+                "opennode"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opennode.Developers",
+                "language": "javascript",
+                "technology": "opennode",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

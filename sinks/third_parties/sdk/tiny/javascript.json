@@ -1,0 +1,56 @@
+{
+    "sources": [
+        {
+            "name": "TinyCloud ImageProxy",
+            "category": "Storage Sink",
+            "patterns": [
+                "imageproxy[.]tiny[.]cloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.TinyCloud.ImageProxy",
+                "language": "javascript",
+                "technology": "tiny",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "TinyCloud HyperLinking",
+            "category": "Storage Sink",
+            "patterns": [
+                "hyperlinking[.]tiny[.]cloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.TinyCloud.Hyperlinking",
+                "language": "javascript",
+                "technology": "tiny",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "TinyCloud Catalog",
+            "category": "Storage Sink",
+            "patterns": [
+                "catalog[.]tiny[.]cloud"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.TinyCloud.Catalog",
+                "language": "javascript",
+                "technology": "tiny",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "TinyCloud Signup",
+            "category": "Storage Sink",
+            "patterns": [
+                "tiny.cloud\\/auth\\/signup"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.TinyCloud.Signup",
+                "language": "javascript",
+                "technology": "tiny",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

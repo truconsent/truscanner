@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lindawerner",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-plugin-cookiehub-banner"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lindawerner",
+                "language": "javascript",
+                "technology": "lindawerner",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qubole",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(qds_sdk.*qubole|airflow.*providers.*qubole).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qubole",
+                "language": "python",
+                "technology": "qubole",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

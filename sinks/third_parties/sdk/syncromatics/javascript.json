@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Syncromatics",
+            "category": "Storage Sink",
+            "patterns": [
+                "@syncromatics\\/react-google-maps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Syncromatics",
+                "language": "javascript",
+                "technology": "syncromatics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

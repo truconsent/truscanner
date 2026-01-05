@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mobidevelop",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mobidevelop[.]robovm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mobidevelop",
+                "language": "java",
+                "technology": "mobidevelop",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

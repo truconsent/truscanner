@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adlibr",
+            "category": "Storage Sink",
+            "patterns": [
+                "@malvineous\\/opl"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adlibr",
+                "language": "javascript",
+                "technology": "adlibr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

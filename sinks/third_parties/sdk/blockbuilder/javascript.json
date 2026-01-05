@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blockbuilder",
+            "category": "Storage Sink",
+            "patterns": [
+                "slack-block-builder"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blockbuilder",
+                "language": "javascript",
+                "technology": "blockbuilder",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

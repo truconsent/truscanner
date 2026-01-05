@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Customerio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)customerio.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Customerio",
+                "language": "ruby",
+                "technology": "customerio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

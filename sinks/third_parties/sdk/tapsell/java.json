@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tapsell",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ir[.]tapsell[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tapsell",
+                "language": "java",
+                "technology": "tapsell",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

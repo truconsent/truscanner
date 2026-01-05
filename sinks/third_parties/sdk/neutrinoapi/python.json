@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Neutrinoapi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(neutrino_api|.*NeutrinoApiClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Neutrinoapi",
+                "language": "python",
+                "technology": "neutrinoapi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

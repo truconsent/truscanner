@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Anvil",
+            "category": "Storage Sink",
+            "patterns": [
+                "anvil-connect|@nrn\\/anvil-connect"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Anvil",
+                "language": "javascript",
+                "technology": "anvil",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getdbt",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dbt|dbt_snowflake|dbt_core|dbt_redshift|dbt_bigquery|dbt_postgres).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getdbt",
+                "language": "python",
+                "technology": "getdbt",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

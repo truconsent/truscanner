@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Eucalyptus",
+            "category": "Storage Sink",
+            "patterns": [
+                "@eucalyptusvc\\/sendgrid|@eucalyptusvc\\/fatzebra"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Eucalyptus",
+                "language": "javascript",
+                "technology": "eucalyptus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

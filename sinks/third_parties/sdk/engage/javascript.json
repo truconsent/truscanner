@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Engage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?Engage([.]track)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Engage",
+                "language": "javascript",
+                "technology": "engage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

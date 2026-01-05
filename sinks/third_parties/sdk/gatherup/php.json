@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gatherup",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(gatherup).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gatherup",
+                "language": "php",
+                "technology": "gatherup",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Oracle Database",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*jdbc:oracle:.*|.*oracle[.]jdbc[.]pool[.]OracleDataSource.*(?:executeQuery|execute).*"
+            ],
+            "tags": {
+                "id": "Storages.OracleDatabase.ReadAndWrite",
+                "language": "java",
+                "technology": "oracleDatabase",
+                "type": "Database"
+            }
+        }
+    ]
+}

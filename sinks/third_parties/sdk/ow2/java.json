@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ow2",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]ow2[.]proactive|org[.]ow2[.]sirocco[.]vmm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ow2",
+                "language": "java",
+                "technology": "ow2",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

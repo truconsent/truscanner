@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Koodous",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(koodous).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Koodous",
+                "language": "python",
+                "technology": "koodous",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

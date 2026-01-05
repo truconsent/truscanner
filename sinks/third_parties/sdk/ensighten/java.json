@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ensighten",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]ensighten[.]android|com[.]ensighten[.]plugin[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ensighten",
+                "language": "java",
+                "technology": "ensighten",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

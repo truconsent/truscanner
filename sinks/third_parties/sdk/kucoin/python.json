@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kucoin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(kucoin.*(client|ws_client)|kucoin_futures).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kucoin",
+                "language": "python",
+                "technology": "kucoin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

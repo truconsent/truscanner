@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cleverlance",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cleverlance-enterprise-solutions\\/strapi-plugin-cloudinary-field|strapi-plugin-cloudinary-field"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cleverlance",
+                "language": "javascript",
+                "technology": "cleverlance",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

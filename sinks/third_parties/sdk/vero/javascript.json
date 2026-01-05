@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vero",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_veroq([.]push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Vero",
+                "language": "javascript",
+                "technology": "vero",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

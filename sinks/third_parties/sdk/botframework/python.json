@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Botframework",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(botbuilder.*(core|ai)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Botframework",
+                "language": "python",
+                "technology": "botframework",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

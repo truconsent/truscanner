@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vikadata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vika).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vikadata",
+                "language": "python",
+                "technology": "vikadata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

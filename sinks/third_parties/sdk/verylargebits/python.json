@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Verylargebits",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(verylargebits).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Verylargebits",
+                "language": "python",
+                "technology": "verylargebits",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

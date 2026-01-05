@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Riviello",
+            "category": "Storage Sink",
+            "patterns": [
+                "@johnriv\\/google-map|@johnriv\\/google-apis"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Riviello",
+                "language": "javascript",
+                "technology": "riviello",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

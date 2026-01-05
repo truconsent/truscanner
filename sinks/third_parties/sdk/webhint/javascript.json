@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Webhint",
+            "category": "Storage Sink",
+            "patterns": [
+                "@hint\\/hint-image-optimization-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Webhint",
+                "language": "javascript",
+                "technology": "webhint",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

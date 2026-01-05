@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lambdaflow",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bjmrq\\/lambda-flow"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lambdaflow",
+                "language": "javascript",
+                "technology": "lambdaflow",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

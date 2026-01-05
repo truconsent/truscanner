@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Criteo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(criteo.api.marketingsolutions|criteo.marketing.api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Criteo",
+                "language": "php",
+                "technology": "criteo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ebay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ebaysdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ebay",
+                "language": "python",
+                "technology": "ebay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

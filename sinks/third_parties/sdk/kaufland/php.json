@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kaufland",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Hitmeister.Component.Api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kaufland",
+                "language": "php",
+                "technology": "kaufland",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Envoyer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(envoyer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Envoyer",
+                "language": "php",
+                "technology": "envoyer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

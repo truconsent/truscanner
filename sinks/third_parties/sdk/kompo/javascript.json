@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kompo",
+            "category": "Storage Sink",
+            "patterns": [
+                "kompo-googlemaps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kompo",
+                "language": "javascript",
+                "technology": "kompo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

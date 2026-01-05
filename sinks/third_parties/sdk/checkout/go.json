@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Checkout",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(checkout)(/)(checkout-sdk-go/payments).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Checkout",
+                "language": "go",
+                "technology": "checkout",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

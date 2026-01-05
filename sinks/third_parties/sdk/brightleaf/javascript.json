@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Brightleaf",
+            "category": "Storage Sink",
+            "patterns": [
+                "@brightleaf\\/react-hooks"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Brightleaf",
+                "language": "javascript",
+                "technology": "brightleaf",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

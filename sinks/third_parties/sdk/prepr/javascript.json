@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Prepr",
+            "category": "Storage Sink",
+            "patterns": [
+                "@preprio\\/nodejs-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Prepr",
+                "language": "javascript",
+                "technology": "prepr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

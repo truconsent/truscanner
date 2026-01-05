@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cronofy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Cronofy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cronofy",
+                "language": "csharp",
+                "technology": "cronofy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

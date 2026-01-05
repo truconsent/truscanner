@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pumapay",
+            "category": "Storage Sink",
+            "patterns": [
+                "@pumapay\\/merchant_sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pumapay",
+                "language": "javascript",
+                "technology": "pumapay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

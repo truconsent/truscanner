@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mapbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mapbox-(sdk|rails|gl-rails)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mapbox",
+                "language": "ruby",
+                "technology": "mapbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

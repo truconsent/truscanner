@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Travetto",
+            "category": "Storage Sink",
+            "patterns": [
+                "@travetto\\/rest-aws-lambda"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Travetto",
+                "language": "javascript",
+                "technology": "travetto",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

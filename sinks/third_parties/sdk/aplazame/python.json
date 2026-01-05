@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aplazame",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aplazame_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aplazame",
+                "language": "python",
+                "technology": "aplazame",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

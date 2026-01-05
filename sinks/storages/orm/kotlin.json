@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "ORMLite (Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]j256[.]ormlite).*(queryForFirst|queryForId|queryForAll|countOf|queryBuilder)"
+            ],
+            "tags": {
+                "id": "Storages.ORM.ORMLite.Read",
+                "language": "kotlin",
+                "technology": "orm",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "ORMLite (Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]j256[.]ormlite).*(create|update|createOrUpdate|delete|deleteById|deleteBuilder)"
+            ],
+            "tags": {
+                "id": "Storages.ORM.ORMLite.Write",
+                "language": "kotlin",
+                "technology": "orm",
+                "type": "Database"
+            }
+        }
+    ]
+}

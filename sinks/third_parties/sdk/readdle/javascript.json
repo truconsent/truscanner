@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Readdle",
+            "category": "Storage Sink",
+            "patterns": [
+                "@readdle\\/google-auth-library"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Readdle",
+                "language": "javascript",
+                "technology": "readdle",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

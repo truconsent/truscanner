@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Enfonica",
+            "category": "Storage Sink",
+            "patterns": [
+                "@enfonica\\/voice|@enfonica\\/messaging|@enfonica\\/numbering"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Enfonica",
+                "language": "javascript",
+                "technology": "enfonica",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

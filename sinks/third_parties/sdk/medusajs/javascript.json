@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Medusajs",
+            "category": "Storage Sink",
+            "patterns": [
+                "medusa-telemetry|@medusajs\\/medusa"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Medusajs",
+                "language": "javascript",
+                "technology": "medusajs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

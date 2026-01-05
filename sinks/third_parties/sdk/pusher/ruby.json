@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pusher",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pusher).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pusher",
+                "language": "ruby",
+                "technology": "pusher",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

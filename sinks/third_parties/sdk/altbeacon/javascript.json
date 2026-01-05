@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Altbeacon",
+            "category": "Storage Sink",
+            "patterns": [
+                "beacon-tool"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Altbeacon",
+                "language": "javascript",
+                "technology": "altbeacon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

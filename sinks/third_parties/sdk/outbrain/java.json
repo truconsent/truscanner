@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Outbrain",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]outbrain[.]outbrain|com[.]outbrain[.]sdk[.]pub|com[.]outbrain[.]swinfra).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Outbrain",
+                "language": "java",
+                "technology": "outbrain",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

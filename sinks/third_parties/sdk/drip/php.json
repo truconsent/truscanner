@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Drip",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(drip[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Drip",
+                "language": "php",
+                "technology": "drip",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

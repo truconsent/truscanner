@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Omnipayments",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(omnipay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Omnipayments",
+                "language": "php",
+                "technology": "omnipayments",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

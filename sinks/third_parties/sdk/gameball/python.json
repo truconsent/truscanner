@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gameball",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gameball).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gameball",
+                "language": "python",
+                "technology": "gameball",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

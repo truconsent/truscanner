@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Datelist",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(datelist).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Datelist",
+                "language": "python",
+                "technology": "datelist",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

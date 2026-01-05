@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appboy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]appboy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appboy",
+                "language": "java",
+                "technology": "appboy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

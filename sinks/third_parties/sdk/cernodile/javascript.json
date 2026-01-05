@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cernodile",
+            "category": "Storage Sink",
+            "patterns": [
+                "relevant-google"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cernodile",
+                "language": "javascript",
+                "technology": "cernodile",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

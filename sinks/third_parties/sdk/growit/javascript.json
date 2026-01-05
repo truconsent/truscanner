@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Growit",
+            "category": "Storage Sink",
+            "patterns": [
+                "generator-gcloud|@growit-io\\/google-cloud-platform-types"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Growit",
+                "language": "javascript",
+                "technology": "growit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

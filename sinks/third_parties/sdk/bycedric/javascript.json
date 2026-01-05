@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bycedric",
+            "category": "Storage Sink",
+            "patterns": [
+                "@use-expo\\/web-browser"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bycedric",
+                "language": "javascript",
+                "technology": "bycedric",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

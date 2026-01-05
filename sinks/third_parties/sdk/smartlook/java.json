@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smartlook",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]smartlook).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smartlook",
+                "language": "java",
+                "technology": "smartlook",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

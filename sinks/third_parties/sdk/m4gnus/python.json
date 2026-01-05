@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "M4gnus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(djitellopy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.M4gnus",
+                "language": "python",
+                "technology": "m4gnus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

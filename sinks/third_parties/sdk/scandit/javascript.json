@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Scandit",
+            "category": "Storage Sink",
+            "patterns": [
+                "scandit-react-native-datacapture-core|scandit-react-native-datacapture-barcode|scandit-react-native|scandit-react-native-datacapture-parser|scandit-react-native-datacapture-id|scandit-react-native-datacapture-text|vue-scandit|scandit-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Scandit",
+                "language": "javascript",
+                "technology": "scandit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

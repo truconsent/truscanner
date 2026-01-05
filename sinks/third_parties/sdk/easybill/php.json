@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Easybill",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(easybill).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Easybill",
+                "language": "php",
+                "technology": "easybill",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

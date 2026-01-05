@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opensensemap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(opensensemap_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opensensemap",
+                "language": "python",
+                "technology": "opensensemap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

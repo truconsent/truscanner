@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendgrid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(clj-sendgrid|com[.]flozano[.]sendgrid|com[.]sendgrid[.]labs|com[.]sendgrid).*(?<!getbody|getStatusCode):.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendgrid",
+                "language": "java",
+                "technology": "sendgrid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

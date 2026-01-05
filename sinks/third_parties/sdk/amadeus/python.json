@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amadeus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(amadeus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amadeus",
+                "language": "python",
+                "technology": "amadeus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

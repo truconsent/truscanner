@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pobox",
+            "category": "Storage Sink",
+            "patterns": [
+                "@pheasantplucker\\/gc-pubsub|@pheasantplucker\\/gc-datastore|@pheasantplucker\\/gc-cloudstorage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pobox",
+                "language": "javascript",
+                "technology": "pobox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

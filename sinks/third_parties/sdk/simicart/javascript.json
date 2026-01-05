@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Simicart",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-payfort-sdk|react-native-valabji-paytabs-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Simicart",
+                "language": "javascript",
+                "technology": "simicart",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Redhat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(linchpin).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Redhat",
+                "language": "python",
+                "technology": "redhat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

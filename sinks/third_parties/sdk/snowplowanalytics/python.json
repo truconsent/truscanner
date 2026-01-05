@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snowplowanalytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(minimal_snowplow_tracker|snowplow_tracker).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Snowplowanalytics",
+                "language": "python",
+                "technology": "snowplowanalytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Okta",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(chrismalek)(/)(oktasdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Okta",
+                "language": "go",
+                "technology": "okta",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Watermark",
+            "category": "Storage Sink",
+            "patterns": [
+                "@watermarkchurch\\/google-maps-react"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Watermark",
+                "language": "javascript",
+                "technology": "watermark",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

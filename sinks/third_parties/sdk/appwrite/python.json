@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appwrite",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(appwrite).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appwrite",
+                "language": "python",
+                "technology": "appwrite",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

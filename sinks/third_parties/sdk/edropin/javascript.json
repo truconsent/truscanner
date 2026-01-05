@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Edropin",
+            "category": "Storage Sink",
+            "patterns": [
+                "@edropin\\/permission-manager"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Edropin",
+                "language": "javascript",
+                "technology": "edropin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

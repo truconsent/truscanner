@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Postmen",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(postmen).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Postmen",
+                "language": "python",
+                "technology": "postmen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

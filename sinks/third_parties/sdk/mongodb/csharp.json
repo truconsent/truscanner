@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mongodb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(MongoDB[.]Driver[.]Core[.]Extensions[.]OpenTelemetry|MongoDB[.]Bson|MongoDb[.]Bson[.]NodaTime|MongoDB[.]Driver[.]GridFS|MongoDB[.]Driver[.]Core|MongoDB[.]Driver[.]Core[.]Extensions[.]DiagnosticSources).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mongodb",
+                "language": "csharp",
+                "technology": "mongodb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

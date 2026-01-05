@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gajus",
+            "category": "Storage Sink",
+            "patterns": [
+                "aci"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gajus",
+                "language": "javascript",
+                "technology": "gajus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

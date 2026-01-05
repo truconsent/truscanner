@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Birdleaf",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(fullcontact-python).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Birdleaf",
+                "language": "python",
+                "technology": "birdleaf",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

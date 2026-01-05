@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Impesa",
+            "category": "Storage Sink",
+            "patterns": [
+                "loopback-connector-gdatastore"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Impesa",
+                "language": "javascript",
+                "technology": "impesa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

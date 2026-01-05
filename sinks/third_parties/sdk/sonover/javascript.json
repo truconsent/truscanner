@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sonover",
+            "category": "Storage Sink",
+            "patterns": [
+                "spice_mail_sendgrid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sonover",
+                "language": "javascript",
+                "technology": "sonover",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

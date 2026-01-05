@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Luno",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(luno_python).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Luno",
+                "language": "python",
+                "technology": "luno",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

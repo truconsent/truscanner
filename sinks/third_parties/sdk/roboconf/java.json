@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Roboconf",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(net[.]roboconf).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Roboconf",
+                "language": "java",
+                "technology": "roboconf",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

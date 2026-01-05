@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Predicthq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(predicthq).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Predicthq",
+                "language": "python",
+                "technology": "predicthq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

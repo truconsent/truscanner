@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Umeng",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Hedeqiang.umeng|moyi.umeng).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Umeng",
+                "language": "php",
+                "technology": "umeng",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

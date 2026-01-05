@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onehilltech",
+            "category": "Storage Sink",
+            "patterns": [
+                "@onehilltech\\/blueprint-firebase-messaging|@onehilltech\\/blueprint-cloud-messaging"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onehilltech",
+                "language": "javascript",
+                "technology": "onehilltech",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

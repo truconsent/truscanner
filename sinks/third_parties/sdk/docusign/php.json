@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Docusign",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*docusign.*(click|admin|esign|rooms|monitor).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Docusign",
+                "language": "php",
+                "technology": "docusign",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Flockcover",
+            "category": "Storage Sink",
+            "patterns": [
+                "@flockcover\\/gatsby-plugin-branch-web-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flockcover",
+                "language": "javascript",
+                "technology": "flockcover",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

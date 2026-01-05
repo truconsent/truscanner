@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qubit",
+            "category": "Storage Sink",
+            "patterns": [
+                "gcs-browser-upload"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qubit",
+                "language": "javascript",
+                "technology": "qubit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "IndexedDB(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(idb).*(deletedb|transaction|createObjectStore|put|delete|clear|add)"
+            ],
+            "tags": {
+                "id": "Storages.IndexedDB.Write",
+                "language": "javascript",
+                "technology": "indexedDB",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "IndexedDB(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(idb).*(opendb|unwrap|wrap|get|getall)"
+            ],
+            "tags": {
+                "id": "Storages.IndexedDB.Read",
+                "language": "javascript",
+                "technology": "indexedDB",
+                "type": "Database"
+            }
+        }
+    ]
+}

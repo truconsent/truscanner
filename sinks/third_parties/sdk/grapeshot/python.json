@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Grapeshot",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(grapeshot_signal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Grapeshot",
+                "language": "python",
+                "technology": "grapeshot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

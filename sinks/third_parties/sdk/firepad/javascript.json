@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Firepad",
+            "category": "Storage Sink",
+            "patterns": [
+                "@sagarjain0907\\/firepad|@hackerrank\\/firepad|firepad|@mironal\\/firepad"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Firepad",
+                "language": "javascript",
+                "technology": "firepad",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

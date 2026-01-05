@@ -1,0 +1,199 @@
+{
+    "sources": [
+        {
+            "name": "Segment Analytics Android",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]android|io[.]segment[.]analytics[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Android",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Java",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]java).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Java",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment API",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.API",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Internal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]internal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Internal",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Integrations",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]integrations).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Integrations",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]Analytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Analytics",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Cartographer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]Cartographer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Cartographer",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Crypto",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]Crypto).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Crypto",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics GetDeviceIdTask",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]GetDeviceIdTask).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.GetDeviceIdTask",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Options",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]Options).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Options",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Properties",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]Properties).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Properties",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics QueueFile",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]QueueFile).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.QueueFile",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics Traits",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]Traits).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.Traits",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics ValueMap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]ValueMap).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.ValueMap",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Segment Analytics WebhookIntegration",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]segment[.]analytics[.]WebhookIntegration).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment.WebhookIntegration",
+                "language": "java",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

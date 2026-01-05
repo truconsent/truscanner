@@ -1,0 +1,43 @@
+{
+    "sources": [
+        {
+            "name": "Elasticsearch(Initialize)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:langchain.*vectorstores.*.ElasticsearchStore).*"
+            ],
+            "tags": {
+                "id": "Storages.Elasticsearch.Initialize",
+                "language": "python",
+                "technology": "elasticsearch",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Elasticsearch(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)elasticsearch.*(?:search|scan|get)"
+            ],
+            "tags": {
+                "id": "Storages.Elasticsearch.Read",
+                "language": "python",
+                "technology": "elasticsearch",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Elasticsearch(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)elasticsearch.*(?:update|delete|put)"
+            ],
+            "tags": {
+                "id": "Storages.Elasticsearch.Write",
+                "language": "python",
+                "technology": "elasticsearch",
+                "type": "Database"
+            }
+        }
+    ]
+}

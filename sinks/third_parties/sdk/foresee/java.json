@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Foresee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]foresee[.]platform|com[.]foresee[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Foresee",
+                "language": "java",
+                "technology": "foresee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

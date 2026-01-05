@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zendrive",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-zendrive"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zendrive",
+                "language": "javascript",
+                "technology": "zendrive",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

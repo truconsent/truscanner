@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Geoffreydumoutier",
+            "category": "Storage Sink",
+            "patterns": [
+                "maphero"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Geoffreydumoutier",
+                "language": "javascript",
+                "technology": "geoffreydumoutier",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

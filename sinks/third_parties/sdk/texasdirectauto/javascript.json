@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Texasdirectauto",
+            "category": "Storage Sink",
+            "patterns": [
+                "nodejs-helpers"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Texasdirectauto",
+                "language": "javascript",
+                "technology": "texasdirectauto",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendrill",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(sendrill).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendrill",
+                "language": "php",
+                "technology": "sendrill",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

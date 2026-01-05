@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mizar",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mizar).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mizar",
+                "language": "python",
+                "technology": "mizar",
+                "type": "Third Party"
+            }
+        }
+    ]
+}
