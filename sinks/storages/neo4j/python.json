@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Neo4j Graph Database",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(neo4j.*graphdatabase.*execute.*|py2neo.*graph.*append.*|neomodel.*config.*)"
+            ],
+            "tags": {
+                "id": "Storages.Neo4jGraphDatabase.ReadAndWrite",
+                "language": "python",
+                "technology": "neo4j",
+                "type": "Database"
+            }
+        }
+    ]
+}

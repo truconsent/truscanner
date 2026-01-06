@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bugsnag",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bugsnag).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bugsnag",
+                "language": "go",
+                "technology": "bugsnag",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

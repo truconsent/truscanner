@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Devmanny",
+            "category": "Storage Sink",
+            "patterns": [
+                "address-components"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Devmanny",
+                "language": "javascript",
+                "technology": "devmanny",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

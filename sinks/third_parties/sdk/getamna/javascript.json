@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getamna",
+            "category": "Storage Sink",
+            "patterns": [
+                "integrations-lib"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getamna",
+                "language": "javascript",
+                "technology": "getamna",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

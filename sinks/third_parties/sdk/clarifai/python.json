@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clarifai",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(clarifai).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clarifai",
+                "language": "python",
+                "technology": "clarifai",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

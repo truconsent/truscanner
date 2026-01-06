@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wikkeling",
+            "category": "Storage Sink",
+            "patterns": [
+                "magik-commit"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wikkeling",
+                "language": "javascript",
+                "technology": "wikkeling",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

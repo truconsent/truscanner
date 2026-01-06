@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trolley",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(paymentrails).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trolley",
+                "language": "php",
+                "technology": "trolley",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

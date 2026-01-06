@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cucumber",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]cucumber).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cucumber",
+                "language": "java",
+                "technology": "cucumber",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

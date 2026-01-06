@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thirdbridge",
+            "category": "Storage Sink",
+            "patterns": [
+                "@mapleinside\\/rend-google-app-engine"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thirdbridge",
+                "language": "javascript",
+                "technology": "thirdbridge",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

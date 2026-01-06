@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gyanblog",
+            "category": "Storage Sink",
+            "patterns": [
+                "youtube-api-es6"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gyanblog",
+                "language": "javascript",
+                "technology": "gyanblog",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

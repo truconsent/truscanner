@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Timekit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(timekit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Timekit",
+                "language": "php",
+                "technology": "timekit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

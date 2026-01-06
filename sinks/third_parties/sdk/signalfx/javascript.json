@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Signalfx",
+            "category": "Storage Sink",
+            "patterns": [
+                "signalfx-tracing"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Signalfx",
+                "language": "javascript",
+                "technology": "signalfx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

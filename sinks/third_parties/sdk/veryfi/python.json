@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Veryfi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(veryfi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Veryfi",
+                "language": "python",
+                "technology": "veryfi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

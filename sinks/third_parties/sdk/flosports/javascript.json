@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Flosports",
+            "category": "Storage Sink",
+            "patterns": [
+                "@flosportsinc\\/ng-ima"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flosports",
+                "language": "javascript",
+                "technology": "flosports",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

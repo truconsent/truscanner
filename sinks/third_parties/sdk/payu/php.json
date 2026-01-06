@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payu",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(payu|.*payumoney).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payu",
+                "language": "php",
+                "technology": "payu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

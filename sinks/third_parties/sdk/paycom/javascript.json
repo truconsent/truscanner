@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paycom",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bekhruzmm\\/merchant-api|baum-credomatic"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paycom",
+                "language": "javascript",
+                "technology": "paycom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

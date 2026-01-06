@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hubspot",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_hsq([.]push)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Hubspot",
+                "language": "javascript",
+                "technology": "hubspot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Innomobile",
+            "category": "Storage Sink",
+            "patterns": [
+                "@innomobile\\/nestjs-nodemailer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Innomobile",
+                "language": "javascript",
+                "technology": "innomobile",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apollo-angular",
+            "category": "Storage Sink",
+            "patterns": [
+                "apollo-angular"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apollo-angular",
+                "language": "javascript",
+                "technology": "apollo-angular",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

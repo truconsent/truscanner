@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Piemag",
+            "category": "Storage Sink",
+            "patterns": [
+                "transcribe-stt"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Piemag",
+                "language": "javascript",
+                "technology": "piemag",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

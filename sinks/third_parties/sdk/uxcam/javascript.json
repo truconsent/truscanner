@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Uxcam",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-ux-cam|cordova-uxcam|nativescript-uxcam|@guivieiras\\/capacitor-app-analytic|@guivieiras\\/capacitor-app-analytics"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Uxcam",
+                "language": "javascript",
+                "technology": "uxcam",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Messagebird",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]messagebird).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Messagebird",
+                "language": "java",
+                "technology": "messagebird",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thinkam",
+            "category": "Storage Sink",
+            "patterns": [
+                "@thinkam.net\\/ng-cast"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thinkam",
+                "language": "javascript",
+                "technology": "thinkam",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

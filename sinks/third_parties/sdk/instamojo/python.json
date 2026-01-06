@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instamojo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(instamojo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instamojo",
+                "language": "python",
+                "technology": "instamojo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

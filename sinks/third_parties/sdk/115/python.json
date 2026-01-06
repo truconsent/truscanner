@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "115",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(115wangpan).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.115",
+                "language": "python",
+                "technology": "115",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

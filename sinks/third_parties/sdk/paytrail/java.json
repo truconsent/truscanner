@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paytrail",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(fi[.]foyt[.]paytrail|fi[.]metatavu[.]paytrail).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paytrail",
+                "language": "java",
+                "technology": "paytrail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

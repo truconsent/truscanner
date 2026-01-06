@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mbientlab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(metawear).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mbientlab",
+                "language": "python",
+                "technology": "mbientlab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Orka",
+            "category": "Storage Sink",
+            "patterns": [
+                "@broadstone\\/google-cloud-file-service"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Orka",
+                "language": "javascript",
+                "technology": "orka",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

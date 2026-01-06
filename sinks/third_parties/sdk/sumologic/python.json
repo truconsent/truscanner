@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sumologic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sumologic).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sumologic",
+                "language": "python",
+                "technology": "sumologic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

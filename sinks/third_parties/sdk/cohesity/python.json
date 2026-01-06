@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cohesity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(CohesityClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cohesity",
+                "language": "python",
+                "technology": "cohesity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

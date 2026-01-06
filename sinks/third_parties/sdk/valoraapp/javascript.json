@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Valoraapp",
+            "category": "Storage Sink",
+            "patterns": [
+                "@valora\\/secrets-loader"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Valoraapp",
+                "language": "javascript",
+                "technology": "valoraapp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

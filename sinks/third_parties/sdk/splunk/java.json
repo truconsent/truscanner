@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Splunk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]splunk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Splunk",
+                "language": "java",
+                "technology": "splunk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

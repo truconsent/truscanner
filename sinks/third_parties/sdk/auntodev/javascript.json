@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Auntodev",
+            "category": "Storage Sink",
+            "patterns": [
+                "@auntodev\\/safe-browsing"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Auntodev",
+                "language": "javascript",
+                "technology": "auntodev",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

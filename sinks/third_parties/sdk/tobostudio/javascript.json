@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tobostudio",
+            "category": "Storage Sink",
+            "patterns": [
+                "tobostudio.cordova-plugin-inapppurchase-tobo"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tobostudio",
+                "language": "javascript",
+                "technology": "tobostudio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

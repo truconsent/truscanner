@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xplenty",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(xplenty).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xplenty",
+                "language": "python",
+                "technology": "xplenty",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

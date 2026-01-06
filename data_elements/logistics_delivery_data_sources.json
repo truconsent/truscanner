@@ -1,0 +1,148 @@
+{
+    "sources": [
+        {
+            "name": "Shipping Address",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(shipping|delivery)[^\\s]{0,5}(address|location|destination)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Delivery Preferences",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(delivery|shipment)[^\\s]{0,5}(preference|option|choice)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Delivery Instructions",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(delivery|shipment)[^\\s]{0,5}(instruction|note|guideline)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Tracking Information",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(tracking|shipment)[^\\s]{0,5}(info|number|details)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Delivery History",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(delivery|shipment)[^\\s]{0,5}(history|record|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Failed Delivery Attempts",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(failed|unsuccessful)[^\\s]{0,5}(delivery|shipment|attempt)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Delivery Feedback",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(delivery|shipment)[^\\s]{0,5}(feedback|review|rating)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Packaging Preferences",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(packaging|package)[^\\s]{0,5}(preference|option|style)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Delivery Time Slots",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(delivery|shipment)[^\\s]{0,5}(time|slot|window)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Special Handling Instructions",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(special|fragile|urgent)[^\\s]{0,5}(handling|instruction|note)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Vehicle Registration",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*((?:vehicle|truck|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}|(?:car)[-_.]{0,3}registration[^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Vehicle License Plate",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i).*(license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Icon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(iconsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Icon",
+                "language": "python",
+                "technology": "icon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

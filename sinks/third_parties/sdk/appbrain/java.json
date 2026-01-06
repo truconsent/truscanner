@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appbrain",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]appbrain).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appbrain",
+                "language": "java",
+                "technology": "appbrain",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

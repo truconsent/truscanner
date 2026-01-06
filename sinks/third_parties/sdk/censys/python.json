@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Censys",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(censys|census).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Censys",
+                "language": "python",
+                "technology": "censys",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

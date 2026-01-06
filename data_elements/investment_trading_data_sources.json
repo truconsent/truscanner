@@ -1,0 +1,148 @@
+{
+    "sources": [
+        {
+            "name": "Portfolio Holdings",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(portfolio|investment)[^\\s]{0,5}(holding|asset|position)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Trading History",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(trading|transaction)[^\\s]{0,5}(history|record|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Investment Preferences",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(investment|portfolio)[^\\s]{0,5}(preference|choice|option)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Risk Tolerance",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(risk|volatility|exposure)[^\\s]{0,5}(tolerance|appetite|level)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Market Research",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(market|financial|stock)[^\\s]{0,5}(research|analysis|study)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Financial Goals",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(financial|investment)[^\\s]{0,5}(goal|objective|target)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Asset Allocation",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(asset|portfolio)[^\\s]{0,5}(allocation|distribution|mix)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Dividend History",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(dividend|payout)[^\\s]{0,5}(history|record|log)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Capital Gains",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcapital[^\\s]{0,5}(gain|profit|appreciation)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Capital Losses",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcapital[^\\s]{0,5}(loss|depreciation|deficit)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Broker Information",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(broker|dealer|trading)[^\\s]{0,5}(info|details|contact)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Investment Advisor Details",
+            "category": "Investment & Trading Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(investment|financial|advisor)[^\\s]{0,5}(info|details|contact)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

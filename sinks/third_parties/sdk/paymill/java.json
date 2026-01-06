@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paymill",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]paymill[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paymill",
+                "language": "java",
+                "technology": "paymill",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

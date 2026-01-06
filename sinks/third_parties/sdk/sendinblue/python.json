@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendinblue",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sib_api_v3_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendinblue",
+                "language": "python",
+                "technology": "sendinblue",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

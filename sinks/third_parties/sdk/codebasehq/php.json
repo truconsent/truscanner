@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Codebasehq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(codebasehq).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Codebasehq",
+                "language": "php",
+                "technology": "codebasehq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Discogs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(discogs_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Discogs",
+                "language": "python",
+                "technology": "discogs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

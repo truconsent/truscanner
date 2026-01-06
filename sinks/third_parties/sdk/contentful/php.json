@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Contentful",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(contentful).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Contentful",
+                "language": "php",
+                "technology": "contentful",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

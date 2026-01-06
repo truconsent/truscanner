@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Axix Tweets",
+            "category": "Storage Sink",
+            "patterns": [
+                "tweets.ts"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Axix.Tweets",
+                "language": "javascript",
+                "technology": "axix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

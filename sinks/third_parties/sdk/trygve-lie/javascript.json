@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trygve-lie",
+            "category": "Storage Sink",
+            "patterns": [
+                "@eik\\/sink-gcs|@asset-pipe\\/sink-gcs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trygve-lie",
+                "language": "javascript",
+                "technology": "trygve-lie",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

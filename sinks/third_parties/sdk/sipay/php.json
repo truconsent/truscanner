@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sipay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sipay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sipay",
+                "language": "php",
+                "technology": "sipay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Monalabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mona_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Monalabs",
+                "language": "python",
+                "technology": "monalabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

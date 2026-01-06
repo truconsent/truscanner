@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Verdaccio",
+            "category": "Storage Sink",
+            "patterns": [
+                "verdaccio-google-cloud|verdaccio-aws-s3-storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Verdaccio",
+                "language": "javascript",
+                "technology": "verdaccio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

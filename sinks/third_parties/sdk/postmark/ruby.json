@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Postmark",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(postmark-rails).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Postmark",
+                "language": "ruby",
+                "technology": "postmark",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

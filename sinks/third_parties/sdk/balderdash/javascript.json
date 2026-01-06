@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Balderdash",
+            "category": "Storage Sink",
+            "patterns": [
+                "machinepack-facebook"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Balderdash",
+                "language": "javascript",
+                "technology": "balderdash",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

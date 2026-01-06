@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Here",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(here_map_widget|here_geopandas_adapter|here_oauth).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Here",
+                "language": "python",
+                "technology": "here",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

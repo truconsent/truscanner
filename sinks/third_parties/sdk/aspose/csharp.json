@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aspose",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Aspose[.]HTML|Aspose[.]PDF|Aspose[.]Words).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aspose",
+                "language": "csharp",
+                "technology": "aspose",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

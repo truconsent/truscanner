@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chilicode",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-gcp"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chilicode",
+                "language": "javascript",
+                "technology": "chilicode",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

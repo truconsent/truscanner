@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zoom",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(zoom_slack|zoom|zoom_rb|omniauth-zoom|zoom_launcher|zoom_markazuna|workarea-hover_zoom|jquery-zoom-rails|zoom_us|zoom_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zoom",
+                "language": "ruby",
+                "technology": "zoom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sirumobile",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(siru.api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sirumobile",
+                "language": "php",
+                "technology": "sirumobile",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

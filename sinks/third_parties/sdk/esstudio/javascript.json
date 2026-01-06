@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Esstudio",
+            "category": "Storage Sink",
+            "patterns": [
+                "ecbfx"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Esstudio",
+                "language": "javascript",
+                "technology": "esstudio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

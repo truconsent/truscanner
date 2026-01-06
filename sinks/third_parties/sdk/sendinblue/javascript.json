@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "SendInBlue",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?sendinblue([.](page|track|identify))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.SendInBlue",
+                "language": "javascript",
+                "technology": "sendinblue",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

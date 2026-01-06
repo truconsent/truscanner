@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Khipu",
+            "category": "Storage Sink",
+            "patterns": [
+                "khipu-payment-intent-creator"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Khipu",
+                "language": "javascript",
+                "technology": "khipu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

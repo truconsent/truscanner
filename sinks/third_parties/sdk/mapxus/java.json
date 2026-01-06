@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mapxus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mapxus[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mapxus",
+                "language": "java",
+                "technology": "mapxus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

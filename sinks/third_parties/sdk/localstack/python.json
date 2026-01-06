@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Localstack",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(localstack).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Localstack",
+                "language": "python",
+                "technology": "localstack",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Agora",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(agorasdk|agoratoken).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Agora",
+                "language": "php",
+                "technology": "agora",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

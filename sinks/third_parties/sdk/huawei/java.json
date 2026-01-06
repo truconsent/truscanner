@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Huawei Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]huaweicloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Huawei.Cloud",
+                "language": "java",
+                "technology": "huawei",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Huawei",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]huawei[.]agconnect|com[.]huawei[.]hms|com[.]huawei[.]scenekit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Huawei",
+                "language": "java",
+                "technology": "huawei",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

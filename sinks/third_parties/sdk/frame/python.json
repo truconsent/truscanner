@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Frame",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(frameioclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Frame",
+                "language": "python",
+                "technology": "frame",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Courier",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(trycourier).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Courier",
+                "language": "python",
+                "technology": "courier",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

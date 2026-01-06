@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bigossp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bigossp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bigossp",
+                "language": "java",
+                "technology": "bigossp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gameanalytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "gameanalytics|ga-javascript-sdk|gameanalytics-node-sdk|cordova-plugin-gameanalytics|nativescript-gameanalytics"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gameanalytics",
+                "language": "javascript",
+                "technology": "gameanalytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

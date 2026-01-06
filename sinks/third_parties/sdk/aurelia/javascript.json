@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aurelia",
+            "category": "Storage Sink",
+            "patterns": [
+                "aurelia-simple-auth0"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aurelia",
+                "language": "javascript",
+                "technology": "aurelia",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

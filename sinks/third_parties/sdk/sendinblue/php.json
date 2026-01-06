@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendinblue",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(sendinblue).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendinblue",
+                "language": "php",
+                "technology": "sendinblue",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

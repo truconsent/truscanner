@@ -1,0 +1,498 @@
+{
+    "sources": [
+        {
+            "name": "Microsoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(WindowsAzure|MicrosoftAzure).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(azure.storage.blob|azure.storage.queue|azure.storage.table).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Storage",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Event Hubs",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.event.hubs.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.EventHubs",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Cognitive Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.ai.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CognitiveServices",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure App Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.appservice.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.AppService",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Key Vault",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.keyvault.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.KeyVault",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure IoT Hub",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.iothub.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.IoTHub",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Service Bus",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.service-bus.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ServiceBus",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Event Grid",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.eventgrid.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.EventGrid",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Machine Learning",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.ml.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.MachineLearning",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure DevOps",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.devops.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DevOps",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Functions",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.functions.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Functions",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Container Instances",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.container.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ContainerInstances",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Stream Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.stream.analytics.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.StreamAnalytics",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Lake Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.storage.file.datalake.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataLakeStorage",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Explorer",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.data.explorer.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataExplorer",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Share",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.data.share.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataShare",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Factory",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.data.factory.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataFactory",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Catalog",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.data.catalog.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataCatalog",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Lake Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.data.lake.analytics.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataLakeAnalytics",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Video Indexer",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.video.indexer.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.VideoIndexer",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Personalizer",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.ai.personalizer.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Personalizer",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Speech Translation",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.ai.translation.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.SpeechTranslation",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Metrics",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.ai.metrics.advisor.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Metrics",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Ink Recognizer",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.ai.inkrecognizer.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.InkRecognizer",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Video Analyzer",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.video.analyzer.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.VideoAnalyzer",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Container Registry",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.container.registry.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ContainerRegistry",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.maps.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Maps",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure IoT Central",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.iot.central.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.IoTCentral",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Databricks",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.databricks.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Databricks",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure HPC Cache",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.hpc.cache.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.HPCCache",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure CommunicationServices",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.communication.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CommunicationServices",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Sphere",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.sphere.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Sphere",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Quantum",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.quantum.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Quantum",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Bot",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.bot.service.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Bot",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Sentinel",
+            "category": "Storage Sink",
+            "patterns": [
+                "azure.sentinel.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Sentinel",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Powerbi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)azure.powerbi.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Powerbi",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Graph",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)Microsoft\\\\Graph.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Graph",
+                "language": "php",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

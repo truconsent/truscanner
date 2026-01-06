@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Plaid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(plaid).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Plaid",
+                "language": "python",
+                "technology": "plaid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Postfinance",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(postfinancecheckout).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Postfinance",
+                "language": "php",
+                "technology": "postfinance",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ecoplant",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-red-contrib-gcp-error-reporting"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ecoplant",
+                "language": "javascript",
+                "technology": "ecoplant",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

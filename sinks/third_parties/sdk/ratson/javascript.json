@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ratson",
+            "category": "Storage Sink",
+            "patterns": [
+                "cordova-plugin-billing"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ratson",
+                "language": "javascript",
+                "technology": "ratson",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

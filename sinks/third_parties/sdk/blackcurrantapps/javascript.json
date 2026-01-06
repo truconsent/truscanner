@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blackcurrantapps",
+            "category": "Storage Sink",
+            "patterns": [
+                "ngx-place-picker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blackcurrantapps",
+                "language": "javascript",
+                "technology": "blackcurrantapps",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

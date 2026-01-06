@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unimi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(it[.]unimi[.]di).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unimi",
+                "language": "java",
+                "technology": "unimi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

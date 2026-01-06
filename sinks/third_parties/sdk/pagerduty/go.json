@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pagerduty",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/PagerDuty/go-pagerduty).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pagerduty",
+                "language": "go",
+                "technology": "pagerduty",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

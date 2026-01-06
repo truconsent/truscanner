@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Doku",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]doku).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Doku",
+                "language": "java",
+                "technology": "doku",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Futunn",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(futu)[^a-z].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Futunn",
+                "language": "python",
+                "technology": "futunn",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

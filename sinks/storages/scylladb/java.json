@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "ScyllaDB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*com[.]scylladb[.]java-driver.*"
+            ],
+            "tags": {
+                "id": "Storages.ScyllaDB.ReadAndWrite",
+                "language": "java",
+                "technology": "scylladb",
+                "type": "Database"
+            }
+        }
+    ]
+}

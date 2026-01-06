@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Booster",
+            "category": "Storage Sink",
+            "patterns": [
+                "@boostercloud\\/rocket-storage-aws-infrastructure|@boostercloud\\/rocket-batch-file-process-aws-infrastructure|@boostercloud\\/rocket-auth-aws-infrastructure"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Booster",
+                "language": "javascript",
+                "technology": "booster",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

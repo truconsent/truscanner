@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sonarcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(SonarAnalyzer[.]CSharp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sonarcloud",
+                "language": "csharp",
+                "technology": "sonarcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

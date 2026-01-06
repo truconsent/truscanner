@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Idfy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(idfy_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Idfy",
+                "language": "python",
+                "technology": "idfy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

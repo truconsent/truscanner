@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Forestry",
+            "category": "Storage Sink",
+            "patterns": [
+                "next-tinacms-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Forestry",
+                "language": "javascript",
+                "technology": "forestry",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

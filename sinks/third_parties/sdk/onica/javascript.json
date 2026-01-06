@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onica Docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@sailplane\\/lambda-utils|@sailplane\\/state-storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onica.Docs",
+                "language": "javascript",
+                "technology": "onica",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

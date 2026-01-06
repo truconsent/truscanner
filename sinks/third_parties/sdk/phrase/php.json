@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Phrase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Phrase.Api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Phrase",
+                "language": "php",
+                "technology": "phrase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

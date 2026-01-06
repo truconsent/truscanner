@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clever-app",
+            "category": "Storage Sink",
+            "patterns": [
+                "@clever-app\\/nestjs-google-cloud-storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clever-app",
+                "language": "javascript",
+                "technology": "clever-app",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

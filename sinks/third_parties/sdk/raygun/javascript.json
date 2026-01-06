@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Raygun",
+            "category": "Storage Sink",
+            "patterns": [
+                "raygun-apm"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Raygun",
+                "language": "javascript",
+                "technology": "raygun",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Raygun",
+            "category": "Storage Sink",
+            "patterns": [
+                "raygun4reactnative|raygun|raygun4js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Raygun",
+                "language": "javascript",
+                "technology": "raygun",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

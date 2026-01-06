@@ -1,0 +1,32 @@
+{
+    "sources": [
+        {
+            "name": "Entity Framework DB Connector",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(IRepository|DBSet).*(Add|AddOrUpdate|AddRange|Remove|RemoveRange)(Async)?.*",
+                "(?i)(Microsoft.EntityFrameworkCore).*(Add|AddOrUpdate|AddRange|Remove|RemoveRange)(Async)?.*"
+            ],
+            "tags": {
+                "id": "Storages.EntityFrameworkCore.Write",
+                "language": "csharp",
+                "technology": "EntityFrameworkCore",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Entity Framework DB Connector",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(IRepository|DBSet).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*",
+                "(?i)(Microsoft.EntityFrameworkCore).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*"
+            ],
+            "tags": {
+                "id": "Storages.EntityFrameworkCore.Read",
+                "language": "csharp",
+                "technology": "EntityFrameworkCore",
+                "type": "Database"
+            }
+        }
+    ]
+}

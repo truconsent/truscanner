@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Openx",
+            "category": "Storage Sink",
+            "patterns": [
+                "express-ads|opendao-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Openx",
+                "language": "javascript",
+                "technology": "openx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

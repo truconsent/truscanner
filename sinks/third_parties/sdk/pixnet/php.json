@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pixnet",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(PixAPI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixnet",
+                "language": "php",
+                "technology": "pixnet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

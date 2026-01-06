@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Posthog",
+            "category": "Storage Sink",
+            "patterns": [
+                "posthog-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Posthog",
+                "language": "javascript",
+                "technology": "posthog",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Posthog",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?posthog([.](group|capture|identify|register|register_once|unregister))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Posthog",
+                "language": "javascript",
+                "technology": "posthog",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

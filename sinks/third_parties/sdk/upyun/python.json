@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Upyun",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(upyun).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Upyun",
+                "language": "python",
+                "technology": "upyun",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

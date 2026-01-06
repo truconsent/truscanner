@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Grossman",
+            "category": "Storage Sink",
+            "patterns": [
+                "@notifire\\/sendgrid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Grossman",
+                "language": "javascript",
+                "technology": "grossman",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nector",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(joinnector).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nector",
+                "language": "python",
+                "technology": "nector",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

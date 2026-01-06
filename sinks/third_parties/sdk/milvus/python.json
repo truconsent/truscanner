@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Milvus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pymilvus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Milvus",
+                "language": "python",
+                "technology": "milvus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

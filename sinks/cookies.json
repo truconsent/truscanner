@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cookies",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)document\\.cookie\\s*=",
+                "(?i)cookies\\(\\)\\.set",
+                "(?i)cookies\\.set\\s*\\(",
+                "(?i)set-cookie"
+            ],
+            "tags": {
+                "type": "Cookie Storage"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coffeekraken",
+            "category": "Storage Sink",
+            "patterns": [
+                "coffeekraken-s-google-map-component-base"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coffeekraken",
+                "language": "javascript",
+                "technology": "coffeekraken",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

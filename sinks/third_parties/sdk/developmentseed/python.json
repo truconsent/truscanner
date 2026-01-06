@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Developmentseed",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(rio_cogeo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Developmentseed",
+                "language": "python",
+                "technology": "developmentseed",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

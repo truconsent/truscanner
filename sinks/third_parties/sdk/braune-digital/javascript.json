@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Braune-digital",
+            "category": "Storage Sink",
+            "patterns": [
+                "nativescript-share-file"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Braune-digital",
+                "language": "javascript",
+                "technology": "braune-digital",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

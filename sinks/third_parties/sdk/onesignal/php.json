@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onesignal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(onesignal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onesignal",
+                "language": "php",
+                "technology": "onesignal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

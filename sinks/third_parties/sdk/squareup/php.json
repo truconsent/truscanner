@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Squareup",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(square).*",
+                "(?i).*(squareclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Squareup",
+                "language": "php",
+                "technology": "squareup",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

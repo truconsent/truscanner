@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Seven",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Sms77.Api.Client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Seven",
+                "language": "csharp",
+                "technology": "seven",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chuxingpay Code",
+            "category": "Storage Sink",
+            "patterns": [
+                "fx-tenpay"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chuxingpay.Code",
+                "language": "javascript",
+                "technology": "chuxingpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

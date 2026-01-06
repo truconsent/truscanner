@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Atlassian",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/andygrunwald/go-jira).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atlassian",
+                "language": "go",
+                "technology": "atlassian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

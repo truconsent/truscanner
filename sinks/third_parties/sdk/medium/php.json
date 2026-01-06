@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Medium",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(mediumsdk.medium|LaravelMediumSdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Medium",
+                "language": "php",
+                "technology": "medium",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

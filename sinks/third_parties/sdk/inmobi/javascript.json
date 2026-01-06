@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Inmobi",
+            "category": "Storage Sink",
+            "patterns": [
+                "chadori-mobile-ironsource-inmobi|@wowmaking\\/react-native-iron-source-inmobi|cocoon-plugin-ads-ios-inmobi"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Inmobi",
+                "language": "javascript",
+                "technology": "inmobi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

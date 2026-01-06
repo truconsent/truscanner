@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wetransfer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wetransfer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wetransfer",
+                "language": "python",
+                "technology": "wetransfer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

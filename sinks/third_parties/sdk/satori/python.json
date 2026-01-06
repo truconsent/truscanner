@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Satori",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(satori).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Satori",
+                "language": "python",
+                "technology": "satori",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

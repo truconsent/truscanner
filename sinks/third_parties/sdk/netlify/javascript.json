@@ -1,0 +1,186 @@
+{
+    "sources": [
+        {
+            "name": "Netlify Bright-tech",
+            "category": "Storage Sink",
+            "patterns": [
+                "tele-bot-api|googleapis-node"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Bright-tech",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Desolid",
+            "category": "Storage Sink",
+            "patterns": [
+                "desolid-admin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Desolid",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Elfin",
+            "category": "Storage Sink",
+            "patterns": [
+                "@11in\\/cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Elfin",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Gatsby-transformer-cloudinary",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-transformer-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Gatsby-transformer-cloudinary",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify",
+            "category": "Storage Sink",
+            "patterns": [
+                "netlify-plugin-cache|netlify-identity-widget|netlify-cms-core|netlify-plugin-onboarding|netlify-cms-lib-widgets|netlify-cms-widget-file|netlify-cms-lib-auth|netlify-cms-app"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Njmyers",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-youtube-component|@njmyers\\/react-you-tube"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Njmyers",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Nuxtfire",
+            "category": "Storage Sink",
+            "patterns": [
+                "nuxt-fire"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Nuxtfire",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify React-address-autocomplete",
+            "category": "Storage Sink",
+            "patterns": [
+                "@alduncanson\\/react-address-autocomplete"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.React-address-autocomplete",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify React-google-maps-api-docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@react-google-maps\\/api|@byrekt\\/react-google-maps-api|@capaj\\/react-google-maps-api|@capaj\\/react-google-maps-marker-clusterer|@react-google-maps\\/infobox|@react-google-maps\\/marker-clusterer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.React-google-maps-api-docs",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify React-google-maps-api-docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@slorber\\/react-google-maps|react-google-maps-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.React-google-maps-api-docs",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Sgts",
+            "category": "Storage Sink",
+            "patterns": [
+                "simple-graphql-to-typescript"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Sgts",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Storybook-addon-headless",
+            "category": "Storage Sink",
+            "patterns": [
+                "storybook-addon-headless"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Storybook-addon-headless",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Vue-intercom",
+            "category": "Storage Sink",
+            "patterns": [
+                "@mathieustan\\/vue-intercom"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Vue-intercom",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Netlify Vue3paystack",
+            "category": "Storage Sink",
+            "patterns": [
+                "vue3-paystack"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Netlify.Vue3paystack",
+                "language": "javascript",
+                "technology": "netlify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

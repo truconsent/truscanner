@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Braze",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]braze[.]).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Braze",
+                "language": "kotlin",
+                "technology": "braze",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

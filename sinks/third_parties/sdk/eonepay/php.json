@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Eonepay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(eonepay.payments).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Eonepay",
+                "language": "php",
+                "technology": "eonepay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

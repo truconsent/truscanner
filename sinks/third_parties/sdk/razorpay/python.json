@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Razorpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(razorpay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Razorpay",
+                "language": "python",
+                "technology": "razorpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

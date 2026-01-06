@@ -1,0 +1,184 @@
+{
+    "sources": [
+        {
+            "name": "Viewing History",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(view|watch)[^\\s]{0,5}(history|log|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Listening History",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(listen|audio|music)[^\\s]{0,5}(history|log|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Content Ratings",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(content|media)[^\\s]{0,5}(rating|score|stars)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Content Reviews",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(content|media)[^\\s]{0,5}(review|feedback|comment)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Watchlist",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bwatch[^\\s]{0,5}(list|queue)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Playlist",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bplay[^\\s]{0,5}(list|queue|collection)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Favorite Genres",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(favorite|preferred)[^\\s]{0,5}(genre|category|type)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Content Completion Rate",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(completion|finish)[^\\s]{0,5}(rate|percentage|status)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Skip Patterns",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(skip|seek)[^\\s]{0,5}(pattern|behavior|rate)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Download History",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bdownload[^\\s]{0,5}(history|log|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Sharing Behavior",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(share|forward)[^\\s]{0,5}(behavior|activity|pattern)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Content Creation Data",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcontent[^\\s]{0,5}(create|upload|publish|author)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Live Stream Participation",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\blive[^\\s]{0,5}(stream|broadcast)[^\\s]{0,5}(participation|join)?\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Comments",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(comment|reply|response)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Interactions",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(interaction|engagement|reaction|like|share)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

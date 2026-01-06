@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Dapper (Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Dapper).*(Execute|Insert|Update|Delete)(Async)?.*"
+            ],
+            "tags": {
+                "id": "Storages.ORM.Dapper.Write",
+                "language": "csharp",
+                "technology": "orm",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Dapper (Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Dapper).*(Query|QuerySingle|QueryFirst|QueryMultiple)(Async)?.*"
+            ],
+            "tags": {
+                "id": "Storage.ORM.Dapper.Read",
+                "language": "csharp",
+                "technology": "orm",
+                "type": "Database"
+            }
+        }
+    ]
+}

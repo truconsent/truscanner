@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Code9haiti",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(moncashify).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Code9haiti",
+                "language": "python",
+                "technology": "code9haiti",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

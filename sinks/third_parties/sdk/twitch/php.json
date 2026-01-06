@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twitch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(twitchapi|twitchsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twitch",
+                "language": "php",
+                "technology": "twitch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

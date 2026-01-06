@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Emsc",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Emsearch.Api.ApiClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Emsc",
+                "language": "php",
+                "technology": "emsc",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

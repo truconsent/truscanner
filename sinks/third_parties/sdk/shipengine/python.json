@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Shipengine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(shipengine).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Shipengine",
+                "language": "python",
+                "technology": "shipengine",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

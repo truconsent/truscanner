@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qingcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(qingstor.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qingcloud",
+                "language": "php",
+                "technology": "qingcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

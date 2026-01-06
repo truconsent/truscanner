@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alooma",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(alooma).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alooma",
+                "language": "python",
+                "technology": "alooma",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

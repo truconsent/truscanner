@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Huobi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(huobi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Huobi",
+                "language": "python",
+                "technology": "huobi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

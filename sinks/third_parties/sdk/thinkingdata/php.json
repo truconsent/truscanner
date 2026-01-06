@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thinkingdata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(ThinkingDataAnalytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thinkingdata",
+                "language": "php",
+                "technology": "thinkingdata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

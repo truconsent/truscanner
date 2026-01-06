@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Integritypays",
+            "category": "Storage Sink",
+            "patterns": [
+                "itransact-node"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Integritypays",
+                "language": "javascript",
+                "technology": "integritypays",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

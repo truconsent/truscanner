@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Weaviate DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:langchain.*vectorstores.*.Weaviate).*"
+            ],
+            "tags": {
+                "id": "Storages.Weaviate.Initialize",
+                "language": "python",
+                "technology": "weaviate",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Weaviate VectorDB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(weaviate).*"
+            ],
+            "tags": {
+                "id": "Storages.Weaviate.ReadAndWrite",
+                "language": "python",
+                "technology": "weaviate",
+                "type": "Database"
+            }
+        }
+    ]
+}

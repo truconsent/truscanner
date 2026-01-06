@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Exasol",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow.*providers.*exasol).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Exasol",
+                "language": "python",
+                "technology": "exasol",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

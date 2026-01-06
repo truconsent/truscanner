@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Oracle Database",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*((oracledb|cx_oracle).*cursor.*execute.*)"
+            ],
+            "tags": {
+                "id": "Storages.OracleDatabase.ReadAndWrite",
+                "language": "python",
+                "technology": "oracleDatabase",
+                "type": "Database"
+            }
+        }
+    ]
+}

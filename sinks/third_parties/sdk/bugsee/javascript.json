@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bugsee",
+            "category": "Storage Sink",
+            "patterns": [
+                "com.bugsee.cordova-plugin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bugsee",
+                "language": "javascript",
+                "technology": "bugsee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

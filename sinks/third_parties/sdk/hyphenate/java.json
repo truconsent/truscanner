@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hyphenate",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hyphenate).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hyphenate",
+                "language": "java",
+                "technology": "hyphenate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

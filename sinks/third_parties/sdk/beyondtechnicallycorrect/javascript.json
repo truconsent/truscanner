@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Beyondtechnicallycorrect",
+            "category": "Storage Sink",
+            "patterns": [
+                "cordova-plugin-publish"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Beyondtechnicallycorrect",
+                "language": "javascript",
+                "technology": "beyondtechnicallycorrect",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

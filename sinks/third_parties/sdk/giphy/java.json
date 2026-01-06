@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Giphy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]giphy[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Giphy",
+                "language": "java",
+                "technology": "giphy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

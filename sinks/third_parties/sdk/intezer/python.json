@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Intezer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(intezer_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Intezer",
+                "language": "python",
+                "technology": "intezer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Livechat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?LiveChatWidget([.]call)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Livechat",
+                "language": "javascript",
+                "technology": "livechat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

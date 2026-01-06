@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Monzo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(monzo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Monzo",
+                "language": "python",
+                "technology": "monzo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

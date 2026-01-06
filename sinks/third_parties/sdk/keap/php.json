@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Keap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Infusionsoft_OAuth2|Infusionsoft_DataService|Infusionsoft_App).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Keap",
+                "language": "php",
+                "technology": "keap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

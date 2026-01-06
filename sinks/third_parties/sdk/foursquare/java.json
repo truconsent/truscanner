@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Foursquare",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]foursquare).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Foursquare",
+                "language": "java",
+                "technology": "foursquare",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

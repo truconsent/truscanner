@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Chartbeat",
+            "category": "Storage Sink",
+            "patterns": [
+                "angulartics-chartbeat|react-native-chartbeat-cs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chartbeat",
+                "language": "javascript",
+                "technology": "chartbeat",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Chartbeat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?cbq([.]push)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Chartbeat",
+                "language": "javascript",
+                "technology": "chartbeat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

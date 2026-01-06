@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Injectiveprotocol",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pyinjective).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Injectiveprotocol",
+                "language": "python",
+                "technology": "injectiveprotocol",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

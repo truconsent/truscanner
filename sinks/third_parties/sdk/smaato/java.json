@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smaato",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]applovin[.]mediation[.]sdks[.]smaato|com[.]daisy[.]smaato|com[.]smaato[.]switchgear).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smaato",
+                "language": "java",
+                "technology": "smaato",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

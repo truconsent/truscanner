@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Predicsis",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(predicsis).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Predicsis",
+                "language": "python",
+                "technology": "predicsis",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

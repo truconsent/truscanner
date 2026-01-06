@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unify",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(id[.]unify[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unify",
+                "language": "java",
+                "technology": "unify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

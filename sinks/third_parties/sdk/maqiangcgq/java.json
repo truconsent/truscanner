@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Maqiangcgq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]maqiangcgq).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Maqiangcgq",
+                "language": "java",
+                "technology": "maqiangcgq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

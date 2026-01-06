@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Calistyletechnologies",
+            "category": "Storage Sink",
+            "patterns": [
+                "@fabrix\\/spool-generics|@fabrix\\/fabrix"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Calistyletechnologies",
+                "language": "javascript",
+                "technology": "calistyletechnologies",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

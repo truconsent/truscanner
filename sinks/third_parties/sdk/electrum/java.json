@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Electrum",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]electrum).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Electrum",
+                "language": "java",
+                "technology": "electrum",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

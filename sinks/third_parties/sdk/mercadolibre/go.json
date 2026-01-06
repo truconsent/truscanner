@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mercadolibre",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(tiaguinho|mercadolibre)(/)(mercadolibre-go-sdk|golang-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mercadolibre",
+                "language": "go",
+                "technology": "mercadolibre",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

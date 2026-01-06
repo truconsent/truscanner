@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "ArangoDB(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/arangodb/go-driver).*(Query|Execute)"
+            ],
+            "tags": {
+                "id": "Storages.ArangoDB.ReadAndWrite",
+                "language": "go",
+                "technology": "arangodb",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "ArangoDB(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/arangodb/go-driver).*(CreateDocument|UpdateDocument|RemoveDocument)"
+            ],
+            "tags": {
+                "id": "Storages.ArangoDB.Write",
+                "language": "go",
+                "technology": "arangodb",
+                "type": "Database"
+            }
+        }
+    ]
+}

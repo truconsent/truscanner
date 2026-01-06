@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rovers",
+            "category": "Storage Sink",
+            "patterns": [
+                "@mcma\\/google-cloud-storage|@mcma\\/google-cloud-pubsub-worker-invoker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rovers",
+                "language": "javascript",
+                "technology": "rovers",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

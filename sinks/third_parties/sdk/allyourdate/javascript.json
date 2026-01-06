@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Allyourdate",
+            "category": "Storage Sink",
+            "patterns": [
+                "moncash"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Allyourdate",
+                "language": "javascript",
+                "technology": "allyourdate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

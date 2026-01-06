@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Algosec",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(algosec).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Algosec",
+                "language": "python",
+                "technology": "algosec",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

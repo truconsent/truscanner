@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Skplanet",
+            "category": "Storage Sink",
+            "patterns": [
+                "tadicl-p2|listr.js|tad-dashboard-satellite"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Skplanet",
+                "language": "javascript",
+                "technology": "skplanet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

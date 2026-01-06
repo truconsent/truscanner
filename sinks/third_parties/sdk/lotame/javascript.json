@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lotame",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-lotame"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lotame",
+                "language": "javascript",
+                "technology": "lotame",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Atomist",
+            "category": "Storage Sink",
+            "patterns": [
+                "@atomist\\/sdm-function-gcp|@atomist\\/sdm-pack-jira"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atomist",
+                "language": "javascript",
+                "technology": "atomist",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

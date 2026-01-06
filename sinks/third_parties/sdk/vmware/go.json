@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vmware",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(vmware|clumio-code|laidbackware)(/)(vsphere-automation-sdk-go|alb-sdk|photon-controller-go-sdk|vra-sdk-go/pkg/client|clumio-go-sdk/controllers|vmware-download-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vmware",
+                "language": "go",
+                "technology": "vmware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

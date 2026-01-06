@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Carnival",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-sailthru-mobile|react-native-carnival"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Carnival",
+                "language": "javascript",
+                "technology": "carnival",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

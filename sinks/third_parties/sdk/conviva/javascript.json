@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Conviva",
+            "category": "Storage Sink",
+            "patterns": [
+                "@convivainc\\/conviva-js-videojs|@convivainc\\/conviva-js-chromecast-caf|@convivainc\\/conviva-js-html5|@convivainc\\/conviva-js-imasdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Conviva",
+                "language": "javascript",
+                "technology": "conviva",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

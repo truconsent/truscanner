@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kommunicate",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-kommunicate-chat"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kommunicate",
+                "language": "javascript",
+                "technology": "kommunicate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

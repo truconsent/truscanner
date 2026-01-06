@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Newrelic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(NewRelic[.]Agent[.]Api|NewRelic[.]OpenTelemetry).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Newrelic",
+                "language": "csharp",
+                "technology": "newrelic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

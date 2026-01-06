@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Neo4j Graph Database(ReadAndWrite)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/neo4j/neo4j-go-driver).*(ExecuteQuery)"
+            ],
+            "tags": {
+                "id": "Storages.Neo4jGraphDatabase.ReadAndWrite",
+                "language": "go",
+                "technology": "neo4j",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Neo4j Graph Database(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/neo4j/neo4j-go-driver).*(ExecuteRead)"
+            ],
+            "tags": {
+                "id": "Storages.Neo4jGraphDatabase.Read",
+                "language": "go",
+                "technology": "neo4j",
+                "type": "Database"
+            }
+        }
+    ]
+}

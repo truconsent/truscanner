@@ -91,7 +91,7 @@
             "isSensitive": false,
             "sensitivity": "low",
             "patterns": [
-                "(?i).*(middle[^\\s/(;)#|,=!>]{0,5}name|m[_]?name)"
+                "(?i)\\b(middle[^\\s/(;)#|,=!>]{0,5}name|m[_]?name)\\b"
             ],
             "tags": {
                 "law": "DPDPA"
@@ -103,7 +103,7 @@
             "isSensitive": false,
             "sensitivity": "low",
             "patterns": [
-                "(?i).*(alias|nick[^\\s/(;)#|,=!>]{0,5}name|aka|also[^\\s/(;)#|,=!>]{0,5}known[^\\s/(;)#|,=!>]{0,5}as)"
+                "(?i)(?<!\")\\b(alias|nick[^\\s/(;)#|,=!>]{0,5}name|aka|also[^\\s/(;)#|,=!>]{0,5}known[^\\s/(;)#|,=!>]{0,5}as)\\b"
             ],
             "tags": {
                 "law": "DPDPA"
@@ -115,7 +115,8 @@
             "isSensitive": false,
             "sensitivity": "low",
             "patterns": [
-                "(?i).*(nationality|citizen[^\\s/(;)#|,=!>]{0,5}ship|country[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}origin)"
+                "(?i).*(nationality|citizen[^\\s/(;)#|,=!>]{0,5}ship|country[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}origin)",
+                "(?i).*(nationality|nationalities)"
             ],
             "tags": {
                 "law": "DPDPA"
@@ -127,7 +128,8 @@
             "isSensitive": false,
             "sensitivity": "low",
             "patterns": [
-                "(?i).*(marital[^\\s/(;)#|,=!>]{0,5}status|married|single|divorced|widowed|relationship[^\\s/(;)#|,=!>]{0,5}status)"
+                "(?i)(?<!\\.)\\b(marital[^\\s/(;)#|,=!>]{0,5}status|married|single|divorced|widowed|relationship[^\\s/(;)#|,=!>]{0,5}status)\\b(?!\\()",
+                "(?i).*(marital|married|relationship[^\\s/(;)#|,=!>]{0,2}status).*"
             ],
             "tags": {
                 "law": "DPDPA"
@@ -151,7 +153,8 @@
             "isSensitive": false,
             "sensitivity": "medium",
             "patterns": [
-                "(?i).*(mother[^\\s/(;)#|,=!>]{0,5}maiden[^\\s/(;)#|,=!>]{0,5}name|mother[^\\s/(;)#|,=!>]{0,5}name|maternal[^\\s/(;)#|,=!>]{0,5}name)"
+                "(?i).*(mother[^\\s/(;)#|,=!>]{0,5}maiden[^\\s/(;)#|,=!>]{0,5}name|mother[^\\s/(;)#|,=!>]{0,5}name|maternal[^\\s/(;)#|,=!>]{0,5}name)",
+                "(?i).*(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,8}name|name[^\\s/(;)#|,=!>]{0,8}(?:guardian|mother|father).*"
             ],
             "tags": {
                 "law": "DPDPA"
@@ -175,7 +178,8 @@
             "isSensitive": false,
             "sensitivity": "low",
             "patterns": [
-                "(?i).*(spouse[^\\s/(;)#|,=!>]{0,5}name|partner[^\\s/(;)#|,=!>]{0,5}name|husband[^\\s/(;)#|,=!>]{0,5}name|wife[^\\s/(;)#|,=!>]{0,5}name)"
+                "(?i).*(spouse[^\\s/(;)#|,=!>]{0,5}name|partner[^\\s/(;)#|,=!>]{0,5}name|husband[^\\s/(;)#|,=!>]{0,5}name|wife[^\\s/(;)#|,=!>]{0,5}name)",
+                "(?i).*(?:fiance|spouse|husband|wife)[^\\s/(;)#|,=!>]{0,8}name.*"
             ],
             "tags": {
                 "law": "DPDPA"
@@ -199,10 +203,71 @@
             "isSensitive": false,
             "sensitivity": "medium",
             "patterns": [
-                "(?i).*(physical[^\\s/(;)#|,=!>]{0,5}(?:appearance|description)|height|weight|eye[^\\s/(;)#|,=!>]{0,5}color|hair[^\\s/(;)#|,=!>]{0,5}color|complexion|build)"
+                "(?i)(?<!height:)(?<!weight:)(?<!Build\\sa\\s)(?<!//\\s)\\b(physical[^\\s/(;)#|,=!>]{0,5}(?:appearance|description)|height|weight|eye[^\\s/(;)#|,=!>]{0,5}color|hair[^\\s/(;)#|,=!>]{0,5}color|complexion|build)\\b(?!:\\s*?[0-9])",
+                "(?i)body[^\\s/(;)#|,=!>]{0,5}mass[^\\s/(;)#|,=!>]{0,5}index|body[^\\s/(;)#|,=!>]{0,5}weight|weight[^\\s/(;)#|,=!>]{0,5}(?:kg|kgs|pound|pounds)|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}weight"
             ],
             "tags": {
                 "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Racial or Ethnic Origin",
+            "category": "Personal Identification",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*((?:racial|ethnic)[^\\s/(;)#|,=!>]{0,5}(?:origin|group)|ethnicity)"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Religion or Religious Beliefs",
+            "category": "Personal Identification",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(religion|religious[^\\s/(;)#|,=!>]{0,5}(group|community|practices|belief|beleifs))"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Sexual Orientation",
+            "category": "Personal Identification",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(sexual[^\\s/(;)#|,=!>]{0,5}(orientation|nature|preference|inclination))"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Signature",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(?:person|customer|user|buyer|seller|publisher|CEO|CFO)[^\\s/(;)#|,=!>]{0,5}signature"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Dependent Name",
+            "category": "Personal Identification",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i).*(?:dependant|dependent|daughter|children|wife|husband|fiance|grand[^\\s/(;)#|,=!>]{0,8}mother|grand[^\\s/(;)#|,=!>]{0,8}father)[^\\s/(;)#|,=!>]{0,8}name.*"
+            ],
+            "tags": {
+                "law": "GDPR"
             }
         }
     ]

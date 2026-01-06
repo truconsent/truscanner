@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gasienica",
+            "category": "Storage Sink",
+            "patterns": [
+                "facebook-graph"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gasienica",
+                "language": "javascript",
+                "technology": "gasienica",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

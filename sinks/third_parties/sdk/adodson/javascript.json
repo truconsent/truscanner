@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adodson",
+            "category": "Storage Sink",
+            "patterns": [
+                "hellojs|crowdarchitects-hellojs|hellojs_v2|hellojs-xiaotian"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adodson",
+                "language": "javascript",
+                "technology": "adodson",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

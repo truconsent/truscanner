@@ -1,0 +1,138 @@
+{
+    "sources": [
+        {
+            "name": "Family Information",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(family|household|relative)[^\\s]{0,5}(info|details|data)\\b(?:\\s*[:=])",
+                "(?i).*(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,10}(?:contact|number|nbr|phone|mobile|landline|email|address|addr).*"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Relationship Status",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(relationship|marital|dating)[^\\s]{0,5}status\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Children Information",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(child|children|kids|dependent)[^\\s]{0,5}(info|details)\\b(?:\\s*[:=])",
+                "(?i).*(?:dependant|dependent|daughter|children|wife|fiance|grand[^\\s/(;)#|,=!>]{0,10}mother|grand[^\\s/(;)#|,=!>]{0,10}father|family)[^\\s/(;)#|,=!>]{0,5}(?:contact|number|nbr|phone|mobile|landline|email|address|addr).*"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Social Connections",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bsocial[^\\s]{0,5}(connection|network|graph)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Friend Lists",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bfriend[^\\s]{0,5}(list|connections)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Professional Network",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(professional|career)[^\\s]{0,5}(network|connections)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Community Participation",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(community|group|forum)[^\\s]{0,5}(participation|involvement)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Social Media Activity",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bsocial[^\\s]{0,5}media[^\\s]{0,5}(activity|usage|behavior)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Shared Content",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(shared|posted)[^\\s]{0,5}(content|media|data)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Group Memberships",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bgroup[^\\s]{0,5}(membership|affiliation)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Social Influence Score",
+            "category": "Social & Relationship Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bsocial[^\\s]{0,5}(influence|impact)[^\\s]{0,5}(score|rating|metric)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Novadax",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(novadax).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Novadax",
+                "language": "python",
+                "technology": "novadax",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

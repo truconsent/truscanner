@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Shadoware Gogs",
+            "category": "Storage Sink",
+            "patterns": [
+                "serverless-s3-emptier"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Shadoware.Gogs",
+                "language": "javascript",
+                "technology": "shadoware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

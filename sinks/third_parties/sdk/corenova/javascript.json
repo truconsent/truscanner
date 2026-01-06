@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Corenova",
+            "category": "Storage Sink",
+            "patterns": [
+                "kos"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Corenova",
+                "language": "javascript",
+                "technology": "corenova",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

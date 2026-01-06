@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Prebid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]freestar[.]org[.]prebid|org[.]prebid).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Prebid",
+                "language": "java",
+                "technology": "prebid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

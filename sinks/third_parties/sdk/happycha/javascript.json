@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Happycha",
+            "category": "Storage Sink",
+            "patterns": [
+                "happychain"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Happycha",
+                "language": "javascript",
+                "technology": "happycha",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Onesignal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(peelz|KodepandaID)(/)(onesignal-go-sdk|go-onesignal-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Onesignal",
+                "language": "go",
+                "technology": "onesignal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

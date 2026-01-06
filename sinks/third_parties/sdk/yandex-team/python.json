@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yandex-team",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ydb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yandex-team",
+                "language": "python",
+                "technology": "yandex-team",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

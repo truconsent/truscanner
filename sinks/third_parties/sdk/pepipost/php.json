@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pepipost",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(PepipostLib).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pepipost",
+                "language": "php",
+                "technology": "pepipost",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Personio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Gamez.Personio.Api.HttpApiClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Personio",
+                "language": "php",
+                "technology": "personio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

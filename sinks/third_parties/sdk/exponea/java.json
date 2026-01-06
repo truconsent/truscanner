@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Exponea",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]exponea[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Exponea",
+                "language": "java",
+                "technology": "exponea",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

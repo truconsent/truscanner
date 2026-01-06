@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ouraring",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(oura).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ouraring",
+                "language": "python",
+                "technology": "ouraring",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

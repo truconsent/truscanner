@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adzerk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(adzerk_decision_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adzerk",
+                "language": "python",
+                "technology": "adzerk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

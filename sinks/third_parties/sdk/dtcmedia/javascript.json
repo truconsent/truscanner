@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dtcmedia",
+            "category": "Storage Sink",
+            "patterns": [
+                "@dtcmedia\\/dtcmedia-maps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dtcmedia",
+                "language": "javascript",
+                "technology": "dtcmedia",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

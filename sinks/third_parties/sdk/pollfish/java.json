@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pollfish",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]pollfish[.]mediation|com[.]pollfish).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pollfish",
+                "language": "java",
+                "technology": "pollfish",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

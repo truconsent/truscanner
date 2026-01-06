@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Plentymarkets",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(plentymarkets).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Plentymarkets",
+                "language": "php",
+                "technology": "plentymarkets",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

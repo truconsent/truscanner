@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Post Affiliate Pro",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?PostAffTracker([.](track|writeCookieToLink|writeCampaignToCustomField|writeAffiliateToCustomField|writeCookieToCustomField))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.PostAffiliatePro",
+                "language": "javascript",
+                "technology": "postaffiliatepro",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "RockerBox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?RB([.]track)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.RockerBox",
+                "language": "javascript",
+                "technology": "rockerbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Achingbrain",
+            "category": "Storage Sink",
+            "patterns": [
+                "mongoose-crate-gcs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Achingbrain",
+                "language": "javascript",
+                "technology": "achingbrain",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

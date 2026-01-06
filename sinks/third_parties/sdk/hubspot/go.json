@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hubspot",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(getwagz)(/)(hubspot-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hubspot",
+                "language": "go",
+                "technology": "hubspot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

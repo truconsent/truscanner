@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Min",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(minio)(/)(mc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Min",
+                "language": "go",
+                "technology": "minio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

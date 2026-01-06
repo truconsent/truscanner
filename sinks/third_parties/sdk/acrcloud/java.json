@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Acrcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]acrcloud[.]sdks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Acrcloud",
+                "language": "java",
+                "technology": "acrcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

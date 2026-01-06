@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Split",
+            "category": "Storage Sink",
+            "patterns": [
+                "@flopflip\\/splitio-adapter"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Split",
+                "language": "javascript",
+                "technology": "split",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

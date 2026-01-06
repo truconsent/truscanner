@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dailymotion",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dailymotion).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dailymotion",
+                "language": "python",
+                "technology": "dailymotion",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

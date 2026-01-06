@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rollout",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(rox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rollout",
+                "language": "python",
+                "technology": "rollout",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

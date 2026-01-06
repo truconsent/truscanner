@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Consul",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]ecwid[.]consul).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Consul",
+                "language": "java",
+                "technology": "consul",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

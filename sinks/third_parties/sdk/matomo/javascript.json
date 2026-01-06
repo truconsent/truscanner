@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Matomo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_paq([.]push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Matomo",
+                "language": "javascript",
+                "technology": "matomo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

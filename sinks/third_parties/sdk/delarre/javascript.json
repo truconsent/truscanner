@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Delarre",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-sheets"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Delarre",
+                "language": "javascript",
+                "technology": "delarre",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

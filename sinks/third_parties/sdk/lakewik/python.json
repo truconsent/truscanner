@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lakewik",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(storj).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lakewik",
+                "language": "python",
+                "technology": "lakewik",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

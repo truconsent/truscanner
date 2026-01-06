@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudcustodian",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(c7n).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudcustodian",
+                "language": "python",
+                "technology": "cloudcustodian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

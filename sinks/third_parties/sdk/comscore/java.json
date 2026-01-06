@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Comscore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]comscore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Comscore",
+                "language": "java",
+                "technology": "comscore",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

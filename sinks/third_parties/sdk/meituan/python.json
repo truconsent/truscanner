@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Meituan",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mosclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Meituan",
+                "language": "python",
+                "technology": "meituan",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

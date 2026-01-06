@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Volunteerworld",
+            "category": "Storage Sink",
+            "patterns": [
+                "@vowo\\/google-map|@vowo\\/google-apis"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Volunteerworld",
+                "language": "javascript",
+                "technology": "volunteerworld",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

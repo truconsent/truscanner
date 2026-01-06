@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xtuple",
+            "category": "Storage Sink",
+            "patterns": [
+                "googleapis-plus|gapitoken-generic"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xtuple",
+                "language": "javascript",
+                "technology": "xtuple",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

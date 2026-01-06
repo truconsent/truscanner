@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lyra",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(lyra.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lyra",
+                "language": "php",
+                "technology": "lyra",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

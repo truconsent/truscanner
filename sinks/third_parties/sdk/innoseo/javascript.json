@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Innoseo",
+            "category": "Storage Sink",
+            "patterns": [
+                "authorize-net|virtualmerchant|nmi"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Innoseo",
+                "language": "javascript",
+                "technology": "innoseo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

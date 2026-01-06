@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pizzalord",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(club[.]pizzalord).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pizzalord",
+                "language": "java",
+                "technology": "pizzalord",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinuma",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(coinuma_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinuma",
+                "language": "python",
+                "technology": "coinuma",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

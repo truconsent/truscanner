@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Braintreepayments",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Braintree).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Braintreepayments",
+                "language": "csharp",
+                "technology": "braintreepayments",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

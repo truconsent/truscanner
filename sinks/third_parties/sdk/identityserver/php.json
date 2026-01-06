@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Identityserver",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(is.sdk.servicefactory).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Identityserver",
+                "language": "php",
+                "technology": "identityserver",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

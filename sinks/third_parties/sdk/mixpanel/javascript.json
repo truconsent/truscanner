@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Mixpanel",
+            "category": "Storage Sink",
+            "patterns": [
+                "mixpanel|@analytics\\/mixpanel"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mixpanel",
+                "language": "javascript",
+                "technology": "mixpanel",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Mixpanel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?mixpanel([.](get_group|track|track_forms|track_links|people[.](track_change|increment|set)))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Mixpanel",
+                "language": "javascript",
+                "technology": "mixpanel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

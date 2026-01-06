@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Courier",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(sameday|courierclient|samedayclient|courier).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Courier",
+                "language": "php",
+                "technology": "courier",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

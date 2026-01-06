@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fillr",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]fillr).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fillr",
+                "language": "java",
+                "technology": "fillr",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

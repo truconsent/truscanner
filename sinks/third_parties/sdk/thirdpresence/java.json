@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thirdpresence",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]thirdpresence[.]adsdk[.]mediation[.]admob).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thirdpresence",
+                "language": "java",
+                "technology": "thirdpresence",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

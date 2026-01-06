@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amobee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]amobee).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amobee",
+                "language": "java",
+                "technology": "amobee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

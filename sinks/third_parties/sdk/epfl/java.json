@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Epfl",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ch[.]epfl[.]bluebrain[.]nexus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Epfl",
+                "language": "java",
+                "technology": "epfl",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

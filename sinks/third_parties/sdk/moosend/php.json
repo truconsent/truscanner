@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Moosend",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(Swagger.Client.Api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Moosend",
+                "language": "php",
+                "technology": "moosend",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

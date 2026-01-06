@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudcarbonfootprint",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cloud-carbon-footprint\\/gcp"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudcarbonfootprint",
+                "language": "javascript",
+                "technology": "cloudcarbonfootprint",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

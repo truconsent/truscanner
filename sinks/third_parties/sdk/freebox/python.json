@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Freebox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(freebox_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Freebox",
+                "language": "python",
+                "technology": "freebox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

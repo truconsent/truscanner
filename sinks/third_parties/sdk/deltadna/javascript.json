@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Deltadna",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-deltadna"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Deltadna",
+                "language": "javascript",
+                "technology": "deltadna",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

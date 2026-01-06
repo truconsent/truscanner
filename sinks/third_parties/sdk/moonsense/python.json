@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Moonsense",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(moonsense).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Moonsense",
+                "language": "python",
+                "technology": "moonsense",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

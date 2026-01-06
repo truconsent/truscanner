@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mulesoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloudhub|ts_dataweave).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mulesoft",
+                "language": "python",
+                "technology": "mulesoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

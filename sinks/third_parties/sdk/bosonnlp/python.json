@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bosonnlp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(bosonnlp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bosonnlp",
+                "language": "python",
+                "technology": "bosonnlp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

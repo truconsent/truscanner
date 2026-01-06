@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quantcast",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-plugin-quantcast-tag|@segment\\/analytics.js-integration-quantcast"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Quantcast",
+                "language": "javascript",
+                "technology": "quantcast",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Renjin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]renjin[.]cran).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Renjin",
+                "language": "java",
+                "technology": "renjin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

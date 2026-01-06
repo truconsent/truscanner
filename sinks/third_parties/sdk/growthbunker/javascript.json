@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Growthbunker",
+            "category": "Storage Sink",
+            "patterns": [
+                "@growthbunker\\/vuesocial"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Growthbunker",
+                "language": "javascript",
+                "technology": "growthbunker",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

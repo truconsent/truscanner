@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudinary",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]apa512[.]cloudinary|com[.]cloudinary).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudinary",
+                "language": "java",
+                "technology": "cloudinary",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

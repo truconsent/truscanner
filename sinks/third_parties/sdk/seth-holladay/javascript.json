@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Seth-holladay",
+            "category": "Storage Sink",
+            "patterns": [
+                "delivr"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Seth-holladay",
+                "language": "javascript",
+                "technology": "seth-holladay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

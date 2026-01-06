@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Me",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(seer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Me",
+                "language": "python",
+                "technology": "me",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

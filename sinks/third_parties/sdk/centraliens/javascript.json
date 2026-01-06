@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Centraliens",
+            "category": "Storage Sink",
+            "patterns": [
+                "@foal\\/social"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Centraliens",
+                "language": "javascript",
+                "technology": "centraliens",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

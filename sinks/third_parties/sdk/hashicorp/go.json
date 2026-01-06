@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hashicorp Consul",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(hashicorp)(/)(consul|terraform-plugin-sdk|vault).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp.consul",
+                "language": "go",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

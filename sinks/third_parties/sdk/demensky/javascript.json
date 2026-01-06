@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Demensky",
+            "category": "Storage Sink",
+            "patterns": [
+                "nggm"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Demensky",
+                "language": "javascript",
+                "technology": "demensky",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

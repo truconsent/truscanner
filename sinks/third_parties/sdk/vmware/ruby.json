@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vmware",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vmware_web_service).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vmware",
+                "language": "ruby",
+                "technology": "vmware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Inlocomedia",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]inlocomedia[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Inlocomedia",
+                "language": "java",
+                "technology": "inlocomedia",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

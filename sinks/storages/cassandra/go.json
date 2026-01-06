@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apache Cassandra",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/gocql/gocql).*(Query)"
+            ],
+            "tags": {
+                "id": "Storages.ApacheCassandra.ReadAndWrite",
+                "language": "go",
+                "technology": "cassandra",
+                "type": "Database"
+            }
+        }
+    ]
+}

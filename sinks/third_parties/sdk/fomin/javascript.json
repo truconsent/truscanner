@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fomin",
+            "category": "Storage Sink",
+            "patterns": [
+                "@sfomin\\/tinkoff-payment-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fomin",
+                "language": "javascript",
+                "technology": "fomin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

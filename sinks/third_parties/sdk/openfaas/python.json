@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Openfaas",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(openfaas).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Openfaas",
+                "language": "python",
+                "technology": "openfaas",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

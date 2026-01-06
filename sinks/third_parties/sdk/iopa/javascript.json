@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Iopa",
+            "category": "Storage Sink",
+            "patterns": [
+                "iopa-bot|iopa-bot-console"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Iopa",
+                "language": "javascript",
+                "technology": "iopa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

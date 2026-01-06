@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudinary",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(cloudinary).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudinary",
+                "language": "php",
+                "technology": "cloudinary",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

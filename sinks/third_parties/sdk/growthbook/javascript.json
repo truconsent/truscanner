@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Growthbook",
+            "category": "Storage Sink",
+            "patterns": [
+                "@growthbook\\/growthbook"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Growthbook",
+                "language": "javascript",
+                "technology": "growthbook",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fulfil",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gcloud_odm|gcloud_datastore_odm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fulfil",
+                "language": "python",
+                "technology": "fulfil",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

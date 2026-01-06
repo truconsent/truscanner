@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lengstorf",
+            "category": "Storage Sink",
+            "patterns": [
+                "@jlengstorf\\/get-share-image"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lengstorf",
+                "language": "javascript",
+                "technology": "lengstorf",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

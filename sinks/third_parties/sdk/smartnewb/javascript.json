@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smartnewb",
+            "category": "Storage Sink",
+            "patterns": [
+                "@smartnewbs\\/gcp-k8s"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smartnewb",
+                "language": "javascript",
+                "technology": "smartnewb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

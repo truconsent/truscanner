@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mintegral",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]applovin[.]mediation[.]sdks[.]mintegral|com[.]mintegral[.]allen|com[.]mintegral[.]androidSDK|com[.]mintegral[.]msdk[.]thrid|com[.]mintegral[.]msdk|com[.]mintegral[.]sdk|com[.]mintegral[.]sdkchecker|com[.]mintegral[.]thrid[.]adapter).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mintegral",
+                "language": "java",
+                "technology": "mintegral",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

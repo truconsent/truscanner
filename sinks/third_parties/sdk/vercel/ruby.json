@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vercel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(vercellus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vercel",
+                "language": "ruby",
+                "technology": "vercel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

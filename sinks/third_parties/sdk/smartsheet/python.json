@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smartsheet",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(smartsheet).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smartsheet",
+                "language": "python",
+                "technology": "smartsheet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

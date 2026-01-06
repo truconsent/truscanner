@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stansassets Api",
+            "category": "Storage Sink",
+            "patterns": [
+                "com.stansassets.facebook"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stansassets.Api",
+                "language": "javascript",
+                "technology": "stansassets",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

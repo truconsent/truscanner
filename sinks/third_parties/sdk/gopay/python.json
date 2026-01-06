@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gopay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gopay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gopay",
+                "language": "python",
+                "technology": "gopay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

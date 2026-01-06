@@ -1,0 +1,195 @@
+{
+    "sources": [
+        {
+            "name": "Email Address",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
+                "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Phone Number",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(?<!lucide-react)\\b(?:phone|tel|mobile|contact|cell)\\b(?:[^\\w]{1,5})?(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{6,10}\\b",
+                "\\b(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{10,12}\\b",
+                "(?i)(?<!Smartphone)\\b(phone|mobile|cellphone)\\b",
+                "(?i)(?<!lucide-react)\\b((phone|mobile|cellphone|contact)[^\\s/(;)#|,=!>]{0,2}(?:detail|details)|(?:mobile|phone|cellphone|contact)[^\\s/(;)#|,=!>]{0,10}(?:number|nbr|num|no)|(?:primary|secondary)[^\\s/(;)#|,=!>]{0,10}(phone|landline|telephone))\\b",
+                "(?i)\\b(home|office|work|mobile)[^\\s/(;)#|,=!>]{0,2}phone\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Alternate Phone Numbers",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(alt|alternate|secondary)[^\\s]{0,5}(phone|mobile|contact)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Residential Address - Street",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\b(?:pin|zip|postal|metro)[-_\\[<'. ]{0,2}code\\b",
+                "(?i)\\b(?:delivery|pickup)[^\\s/(;)#|,=!>]{0,10}(?:location|position)\\b",
+                "(?i)\\bhouse[^\\s/(;)#|,=!>]{0,2}(?:number|no)\\b",
+                "(?i)\\baddress[-_.]{0,2}line\\b",
+                "(?i)\\baddress[-_.]{0,2}line[-_.]\\d\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Residential Address - City",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcity\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Residential Address - State",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(address|shipping|billing|home|residential|location|user)[^\\w]{1,5}state\\b(?:\\s*[:=])",
+                "(?i)\\bstate\\b(?:\\s*[:=])\\s*['\"]\\b(andhra pradesh|arunachal pradesh|assam|bihar|chhattisgarh|goa|gujarat|haryana|himachal pradesh|jharkhand|karnataka|kerala|madhya pradesh|maharashtra|manipur|meghalaya|mizoram|nagaland|odisha|punjab|rajasthan|sikkim|tamil nadu|telangana|tripura|uttar pradesh|uttarakhand|west bengal)\\b['\"]"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Residential Address - Zip Code",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "\\b\\d{5}(-\\d{4})?\\b",
+                "\\b\\d{6}\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Residential Address - Country",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcountry\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Permanent Address",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(permanent)[^\\s]{0,5}address"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Office Address",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(office|work|corporate)[^\\s]{0,5}address"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Social Media Handles",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(?<![\\w/-])@\\w{3,}\\b(?!/)",
+                "(?i)\\b(social[^\\s]{0,5}media|instagram|facebook)\\b",
+                "(?i)\\btwitter\\b(?![^\\s/(;)#|,=!>]*?(?:card|site|image|bot))",
+                "(?i)\\b(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]{0,10}(?:account|profile)\\b",
+                "(?i)\\b(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]{0,10}(?:likes|comments|shares)\\b",
+                "(?i)\\breddit[^\\s/(;)#|,=!>]{0,10}(?:upvote|downvote)\\b",
+                "(?i)\\bpinterest[^\\s/(;)#|,=!>]{0,5}pin\\b",
+                "(?i)\\btwitter[^\\s/(;)#|,=!>]{0,5}tweet\\b",
+                "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,10}account\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "LinkedIn Profile",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)linkedin\\.com/(in|pub)/[A-Za-z0-9_-]+"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Emergency Contact Information",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(emergency[^\\s]{0,5}contact|ice[_-]?contact)",
+                "(?i)emergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}(?:number|no|nbr|phone|mobile|mob|landline|email|details|detail|relation)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Preferred Communication Method",
+            "category": "Contact Information",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(preferred)[^\\s]{0,5}(communication|contact)[^\\s]{0,5}(method|mode)"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

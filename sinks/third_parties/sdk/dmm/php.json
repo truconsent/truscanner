@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dmm",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(dmm.dmm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dmm",
+                "language": "php",
+                "technology": "dmm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

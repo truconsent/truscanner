@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apptentive",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]apptentive).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apptentive",
+                "language": "java",
+                "technology": "apptentive",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

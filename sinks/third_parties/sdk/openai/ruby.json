@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "OpenAI",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(openai|ruby-openai).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.OpenAI",
+                "language": "ruby",
+                "technology": "openai",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

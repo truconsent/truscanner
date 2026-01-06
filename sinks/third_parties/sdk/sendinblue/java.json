@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendinblue",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]sendinblue).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendinblue",
+                "language": "java",
+                "technology": "sendinblue",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

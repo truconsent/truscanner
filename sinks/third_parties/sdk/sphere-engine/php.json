@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sphere-engine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(SphereEngine.Api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sphere-engine",
+                "language": "php",
+                "technology": "sphere-engine",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

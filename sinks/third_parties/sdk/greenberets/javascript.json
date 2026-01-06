@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Greenberets",
+            "category": "Storage Sink",
+            "patterns": [
+                "@ohoareau\\/lambda-api-payment"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Greenberets",
+                "language": "javascript",
+                "technology": "greenberets",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,273 @@
+{
+    "sources": [
+        {
+            "name": "Medical Records",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\bmedical[^\\s]{0,5}(record|file|report|chart)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Medical History",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\bmedical[^\\s]{0,5}(history|background)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Health Insurance Details",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bhealth[^\\s]{0,5}(insurance|policy|cover)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Genetic Data",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\bgenetic[^\\s]{0,5}(data|info|test)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "DNA Information",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\b(dna|deoxyribonucleic)[^\\s]{0,5}(data|profile|test)\\b",
+                "(?i)dna(?!me)[^\\s/(;)#|,=!>]{0,10}(?:subsequence|scan|print|sequence)|prote[^\\s/(;)#|,=!>]{0,10}insequence"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Mental Health Information",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\bmental[^\\s]{0,5}(health|condition|illness)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Heart Rate Data",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bheart[^\\s]{0,5}(rate|bpm|pulse)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Sleep Data",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bsleep[^\\s]{0,5}(data|pattern|cycle|tracking)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Step Count",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bstep[^\\s]{0,5}(count|tracking|steps)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Chronic Conditions",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\bchronic[^\\s]{0,5}(condition|disease|illness)\\b",
+                "(?i).*(health[^\\s/(;)#|,=!>]{0,10}record|medical[^\\s/(;)#|,=!>]{0,10}condition|(?:user|person|customer|employee)[^\\s/(;)#|,=!>]{0,10}health|illness[^\\s/(;)#|,=!>]{0,10}(?:record|name|data|type|date))"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Medication History",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\b(medication|medicine|drug)[^\\s]{0,5}(history|list|usage)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Vaccination Records",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(vaccination|immunization)[^\\s]{0,5}(record|status|certificate)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Disability Information",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "critical",
+            "patterns": [
+                "(?i)\\bdisability\\b(?:[^\\w]{0,5}(info|status|details))?",
+                "(?i)\\bdisabled[^\\w]{1,5}(info|status|details)\\b",
+                "(?i)\\bhandicap\\b(?:[^\\w]{0,5}(info|status|details))?",
+                "(?i).*(locomotor[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!]*illness|cerebral[^\\s/(;)#|,=!>]*palsy|hearing[^\\s/(;)#|,=!>]*impairment|muscular[^\\s/(;)#|,=!>]*dystrophy|multiple[^\\s/(;)#|,=!>]*sclerosis|hiv[^\\s/(;)#|,=!>]*aids|physical[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*disability|alzheimer|thalassemia|hemophilia|autism|cancer|dwarfism|blindness|handicapped|wheelchair|diabetic|dyslexia|epilepsy|schizophrenia|depression|physical[^\\s/(;)#|,=!>]disorder).*"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Life Insurance Medical Tests",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\blife[^\\s]{0,5}insurance[^\\s]{0,5}(medical|test|exam)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Iris Recognition",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)iris[^\\s/(;)#|,=!>]*(?:recognition|feature|scan)"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Facial Recognition",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(?:facial)[^\\s/(;)#|,=!>]{0,3}(?:recognition|hair|happy|angry|agree|talk|crazy|talk[^\\s/(;)#|,=!>]{0,3}angry|sad|neutral|shock|rolleye|think|shake|asleep|drunk|serious|landmark|mark|detection)"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Voice Recognition",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(voice|speech)[^\\s/(;)#|,=!>]{0,5}(?:recognition|recog)"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Handwriting Recognition",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)handwriting[^\\s/(;)#|,=!>]*recognition|handwritten[^\\s/(;)#|,=!>]*text[^\\s/(;)#|,=!>]*recognition"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Gait",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(?:abnormal|hemiplegic|diplegic|neuropathic|myopathic|choreiform|ataxic|parkinsonian|sensory)[^\\s/(;)#|,=!>]{0,3}gait|(?:forefoot|midfoot|rarefoot|heel|fore[^\\s/(;)#|,=!>]{0,3}foot|mid[^\\s/(;)#|,=!>]{0,3}foot|rare[^\\s/(;)#|,=!>]{0,3}foot)[^\\s/(;)#|,=!>]{0,3}strike|(?:foot|hip)[^\\s/(;)#|,=!>]{0,3}angle|foot[^\\s/(;)#|,=!>]{0,2}progression[^\\s/(;)#|,=!>]{0,3}angle|stride[^\\s/(;)#|,=!>]{0,3}(?:length|width|duration)|(?:lateral|forward)[^\\s/(;)#|,=!>]{0,3}stride"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Maternity Leave Details",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(maternity[^\\s/(;)#|,=!>]{0,10}leave).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Paternity Leave Details",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(paternity[^\\s/(;)#|,=!>]{0,10}leave).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        },
+        {
+            "name": "Medical Certificates",
+            "category": "Health & Biometric Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i).*(blood[^\\s/(;)#|,=!>]{0,10}report|medical[^\\s/(;)#|,=!>]{0,10}(?:report|test)|medical[^\\s/(;)#|,=!>]{0,10}certificate|blood[^\\s/(;)#|,=!>]{0,10}group).*"
+            ],
+            "tags": {
+                "law": "GDPR"
+            }
+        }
+    ]
+}

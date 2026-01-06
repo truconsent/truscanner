@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pexels",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pexels.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pexels",
+                "language": "php",
+                "technology": "pexels",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

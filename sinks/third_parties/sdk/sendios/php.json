@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendios",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(sendios).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendios",
+                "language": "php",
+                "technology": "sendios",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

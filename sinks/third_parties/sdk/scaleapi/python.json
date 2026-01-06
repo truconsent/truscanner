@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Scaleapi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(scaleapi|scale_nucleus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Scaleapi",
+                "language": "python",
+                "technology": "scaleapi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

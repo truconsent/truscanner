@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Catappult",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]catappult).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Catappult",
+                "language": "java",
+                "technology": "catappult",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

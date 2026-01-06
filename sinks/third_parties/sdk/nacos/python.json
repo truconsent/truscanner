@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nacos",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(nacos|KcangNacos).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nacos",
+                "language": "python",
+                "technology": "nacos",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

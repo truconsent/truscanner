@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ekito",
+            "category": "Storage Sink",
+            "patterns": [
+                "ng2-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ekito",
+                "language": "javascript",
+                "technology": "ekito",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

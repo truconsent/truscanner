@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Shopify",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(cloudevents)(/)(sdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Shopify",
+                "language": "go",
+                "technology": "shopify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

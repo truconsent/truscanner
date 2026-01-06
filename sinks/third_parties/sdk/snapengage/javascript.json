@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "SnapEngage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?snapengage([.](setUserEmail|setUserName))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.SnapEngage",
+                "language": "javascript",
+                "technology": "snapengage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

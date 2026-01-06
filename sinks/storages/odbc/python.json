@@ -1,0 +1,19 @@
+{
+    "sources": [
+        {
+            "name": "ODBC DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pyodbc.*connect).*",
+                "(?i).*(pyodbc.*(cursor|fetch)).*",
+                "(?i).*(pyodbc.*execute).*"
+            ],
+            "tags": {
+                "id": "Storages.ODBC.ReadAndWrite",
+                "language": "python",
+                "technology": "odbc",
+                "type": "Database"
+            }
+        }
+    ]
+}

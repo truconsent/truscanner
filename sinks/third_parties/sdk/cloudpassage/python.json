@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudpassage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloudpassage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudpassage",
+                "language": "python",
+                "technology": "cloudpassage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

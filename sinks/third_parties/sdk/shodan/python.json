@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Shodan",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(shodan).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Shodan",
+                "language": "python",
+                "technology": "shodan",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

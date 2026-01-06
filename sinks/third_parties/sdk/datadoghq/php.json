@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Datadoghq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(LaravelDatadogHelper|DogStatsd).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Datadoghq",
+                "language": "php",
+                "technology": "datadoghq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

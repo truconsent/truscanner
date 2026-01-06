@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Enzoic",
+            "category": "Storage Sink",
+            "patterns": [
+                "enzoic"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Enzoic",
+                "language": "javascript",
+                "technology": "enzoic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

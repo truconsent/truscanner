@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Launchpad",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(launchpadlib).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Launchpad",
+                "language": "python",
+                "technology": "launchpad",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

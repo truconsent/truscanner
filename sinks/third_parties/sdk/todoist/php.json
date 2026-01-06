@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Todoist",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(todoistclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Todoist",
+                "language": "php",
+                "technology": "todoist",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

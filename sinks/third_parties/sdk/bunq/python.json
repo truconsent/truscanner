@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bunq",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(bunq_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bunq",
+                "language": "python",
+                "technology": "bunq",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ontry",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]ontry[.]quangcao).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ontry",
+                "language": "java",
+                "technology": "ontry",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

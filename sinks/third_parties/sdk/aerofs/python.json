@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aerofs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aerofs).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aerofs",
+                "language": "python",
+                "technology": "aerofs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

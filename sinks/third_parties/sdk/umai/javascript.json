@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Umai",
+            "category": "Storage Sink",
+            "patterns": [
+                "umai-payment-receiver"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Umai",
+                "language": "javascript",
+                "technology": "umai",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

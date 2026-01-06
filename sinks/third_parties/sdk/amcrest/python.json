@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amcrest",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(amcrest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amcrest",
+                "language": "python",
+                "technology": "amcrest",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

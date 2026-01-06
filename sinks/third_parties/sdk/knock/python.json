@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Knock",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(knockapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Knock",
+                "language": "python",
+                "technology": "knock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

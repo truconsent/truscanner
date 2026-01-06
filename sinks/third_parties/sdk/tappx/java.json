@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tappx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tappx[.]sdk[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tappx",
+                "language": "java",
+                "technology": "tappx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

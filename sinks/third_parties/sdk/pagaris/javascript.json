@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pagaris",
+            "category": "Storage Sink",
+            "patterns": [
+                "pagaris"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pagaris",
+                "language": "javascript",
+                "technology": "pagaris",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

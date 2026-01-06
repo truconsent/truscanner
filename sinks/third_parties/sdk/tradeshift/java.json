@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tradeshift",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tradeshift[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tradeshift",
+                "language": "java",
+                "technology": "tradeshift",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

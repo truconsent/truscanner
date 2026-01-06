@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Workday",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(workday).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Workday",
+                "language": "python",
+                "technology": "workday",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Orizone",
+            "category": "Storage Sink",
+            "patterns": [
+                "@orizone.io\\/vue-googleapis-install"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Orizone",
+                "language": "javascript",
+                "technology": "orizone",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

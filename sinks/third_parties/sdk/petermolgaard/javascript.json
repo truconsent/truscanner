@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Petermolgaard",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-news"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Petermolgaard",
+                "language": "javascript",
+                "technology": "petermolgaard",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

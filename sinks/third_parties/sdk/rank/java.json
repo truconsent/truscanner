@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rank",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]rank[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rank",
+                "language": "java",
+                "technology": "rank",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

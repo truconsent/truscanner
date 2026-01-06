@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Willm",
+            "category": "Storage Sink",
+            "patterns": [
+                "fifteenai"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Willm",
+                "language": "javascript",
+                "technology": "willm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

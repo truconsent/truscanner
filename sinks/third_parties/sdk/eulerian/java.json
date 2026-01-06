@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Eulerian",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]eulerian[.]android[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Eulerian",
+                "language": "java",
+                "technology": "eulerian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendbird",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]sendbird[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendbird",
+                "language": "java",
+                "technology": "sendbird",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

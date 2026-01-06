@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Conviva",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]conviva[.]sdk|com[.]conviva).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Conviva",
+                "language": "java",
+                "technology": "conviva",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

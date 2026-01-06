@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Campbell",
+            "category": "Storage Sink",
+            "patterns": [
+                "@raygun-nickj\\/mmap-io"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Campbell",
+                "language": "javascript",
+                "technology": "campbell",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

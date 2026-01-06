@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(qase.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qase",
+                "language": "php",
+                "technology": "qase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

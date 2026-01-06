@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Oso",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(oso-cloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Oso",
+                "language": "ruby",
+                "technology": "osocloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

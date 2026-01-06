@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aftership",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(jackharley7|aftership)(/)(aftership-sdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aftership",
+                "language": "go",
+                "technology": "aftership",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

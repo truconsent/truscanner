@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Box",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]box[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Box",
+                "language": "java",
+                "technology": "box",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Oracle",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(oci|cx_Oracle).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Oracle",
+                "language": "python",
+                "technology": "oracle",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

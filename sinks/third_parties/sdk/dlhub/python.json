@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dlhub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dlhub_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dlhub",
+                "language": "python",
+                "technology": "dlhub",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

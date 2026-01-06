@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Npgsql",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Npgsql).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Npgsql",
+                "language": "csharp",
+                "technology": "npgsql",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

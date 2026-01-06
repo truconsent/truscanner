@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Crowdin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(crowdin_api|CrowdinClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Crowdin",
+                "language": "python",
+                "technology": "crowdin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

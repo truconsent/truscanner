@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unzer Docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@unzer\\/nodejs-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unzer.Docs",
+                "language": "javascript",
+                "technology": "unzer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

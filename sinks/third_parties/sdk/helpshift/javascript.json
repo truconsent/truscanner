@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Helpshift",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-hs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Helpshift",
+                "language": "javascript",
+                "technology": "helpshift",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "sources": [
+        {
+            "name": "Vercel Benzene",
+            "category": "Storage Sink",
+            "patterns": [
+                "@benzene\\/http|@benzene\\/core"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vercel.Benzene",
+                "language": "javascript",
+                "technology": "vercel",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Vercel Davincipaints",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-davinci-editor"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vercel.Davincipaints",
+                "language": "javascript",
+                "technology": "vercel",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Vercel Msw-sb",
+            "category": "Storage Sink",
+            "patterns": [
+                "msw-storybook-addon"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vercel.Msw-sb",
+                "language": "javascript",
+                "technology": "vercel",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Vercel Nestjs-telegraf",
+            "category": "Storage Sink",
+            "patterns": [
+                "nestjs-telegraf"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vercel.Nestjs-telegraf",
+                "language": "javascript",
+                "technology": "vercel",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Vercel",
+            "category": "Storage Sink",
+            "patterns": [
+                "@plainheart\\/google-translate-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vercel",
+                "language": "javascript",
+                "technology": "vercel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

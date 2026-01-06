@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amplitude",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(amplitude-api|amplitude-rb|fluent-plugin-amplitude).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amplitude",
+                "language": "ruby",
+                "technology": "amplitude",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Github",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(gogs|shurcooL)(/)(git-module|github).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github",
+                "language": "go",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

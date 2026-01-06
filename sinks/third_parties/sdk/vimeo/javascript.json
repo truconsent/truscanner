@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vimeo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@vimeo\\/player"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vimeo",
+                "language": "javascript",
+                "technology": "vimeo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fitbit",
+            "category": "Storage Sink",
+            "patterns": [
+                "passport-fitbit-oauth2"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fitbit",
+                "language": "javascript",
+                "technology": "fitbit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

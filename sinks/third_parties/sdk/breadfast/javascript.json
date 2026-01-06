@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Breadfast",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-paymob-accept"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Breadfast",
+                "language": "javascript",
+                "technology": "breadfast",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Worldline",
+            "category": "Storage Sink",
+            "patterns": [
+                "@worldline\\/sips-payment-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Worldline",
+                "language": "javascript",
+                "technology": "worldline",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

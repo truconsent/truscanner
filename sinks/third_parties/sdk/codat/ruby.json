@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Codat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(codat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Codat",
+                "language": "ruby",
+                "technology": "codat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Plugg",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pluggto).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Plugg",
+                "language": "php",
+                "technology": "plugg",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

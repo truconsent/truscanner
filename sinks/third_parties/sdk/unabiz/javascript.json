@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unabiz",
+            "category": "Storage Sink",
+            "patterns": [
+                "sigfox-iot-cloud|sigfox-gcloud|sigfox-gcloud-ubidots"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unabiz",
+                "language": "javascript",
+                "technology": "unabiz",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

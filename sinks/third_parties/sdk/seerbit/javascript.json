@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Seerbit",
+            "category": "Storage Sink",
+            "patterns": [
+                "seerbit-angular"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Seerbit",
+                "language": "javascript",
+                "technology": "seerbit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

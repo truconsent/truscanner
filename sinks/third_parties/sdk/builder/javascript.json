@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Builder",
+            "category": "Storage Sink",
+            "patterns": [
+                "@builder.io\\/plugin-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Builder",
+                "language": "javascript",
+                "technology": "builder",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

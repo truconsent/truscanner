@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Myparcel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(myparcelnl.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Myparcel",
+                "language": "php",
+                "technology": "myparcel",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

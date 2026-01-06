@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chetbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-maps-polyutil"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chetbox",
+                "language": "javascript",
+                "technology": "chetbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

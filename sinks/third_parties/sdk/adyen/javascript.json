@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adyen",
+            "category": "Storage Sink",
+            "patterns": [
+                "@adyen\\/api-library"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adyen",
+                "language": "javascript",
+                "technology": "adyen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

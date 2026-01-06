@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Automat-it",
+            "category": "Storage Sink",
+            "patterns": [
+                "strapi-email-nodemailer-fork"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Automat-it",
+                "language": "javascript",
+                "technology": "automat-it",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mapbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mapbox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mapbox",
+                "language": "python",
+                "technology": "mapbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

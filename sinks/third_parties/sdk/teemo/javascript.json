@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Teemo",
+            "category": "Storage Sink",
+            "patterns": [
+                "teemojs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Teemo",
+                "language": "javascript",
+                "technology": "teemo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

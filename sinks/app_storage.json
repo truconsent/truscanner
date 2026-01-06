@@ -1,0 +1,16 @@
+{
+    "sources": [
+        {
+            "name": "App Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)AsyncStorage\\.(?:setItem|multiSet)",
+                "(?i)SharedPreference",
+                "(?i)NSUserDefaults"
+            ],
+            "tags": {
+                "type": "Mobile Storage"
+            }
+        }
+    ]
+}

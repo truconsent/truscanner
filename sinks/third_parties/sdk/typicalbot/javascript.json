@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Typicalbot",
+            "category": "Storage Sink",
+            "patterns": [
+                "simple-youtube-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Typicalbot",
+                "language": "javascript",
+                "technology": "typicalbot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

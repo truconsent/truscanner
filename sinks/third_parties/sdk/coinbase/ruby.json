@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinbase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(coinbase|coinbase-exchange|omniauth-coinbase|coinbase_commerce|coinbase_exchange|coinbase-pro|better-coinbase|spree_coinbase|mxvp-coinbase|coinbase-ruby|spree_coinbase_bitcoin_payment|coinbasepro-api|cbx|orderbook|rtcbx|rcbp|gdax).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinbase",
+                "language": "ruby",
+                "technology": "coinbase",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

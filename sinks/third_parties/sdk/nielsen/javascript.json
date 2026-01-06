@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nielsen Global",
+            "category": "Storage Sink",
+            "patterns": [
+                "@segment\\/analytics.js-integration-nielsen-dcr|@segment\\/analytics.js-integration-nielsen-dtvr"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nielsen.Global",
+                "language": "javascript",
+                "technology": "nielsen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

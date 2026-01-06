@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bmuller Gql-loader",
+            "category": "Storage Sink",
+            "patterns": [
+                "@mando75\\/typeorm-graphql-loader|@ythub\\/typeorm-graphql-loader"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bmuller.Gql-loader",
+                "language": "javascript",
+                "technology": "bmuller",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

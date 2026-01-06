@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Angular-maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "flatx-agm-map|@agm\\/core|@agm\\/js-marker-clusterer|@agm\\/snazzy-info-window|@agm\\/markerclusterer|@agm\\/drawing|agm-core|agm-spiderfier|forked-agm-map|@arin-pang-agm\\/snazzy-info-window|agm-spiderfier1|movebe-agm|@ajqua\\/core|@pedroviniv\\/agm-core|ngx-agm|@agme\\/core|@bkoury\\/agm-core|@ruisebastiao\\/core|angular-google-maps-marker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Angular-maps",
+                "language": "javascript",
+                "technology": "angular-maps",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

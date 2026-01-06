@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Amazon AWS Kinesis(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/aws/aws-sdk-go/service/kinesis).*(GetRecords)"
+            ],
+            "tags": {
+                "id": "Storages.AmazonKinesis.Read",
+                "language": "go",
+                "technology": "kinesis",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon AWS Kinesis(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/aws/aws-sdk-go/service/kinesis).*(PutRecords)"
+            ],
+            "tags": {
+                "id": "Storages.AmazonKinesis.Write",
+                "language": "go",
+                "technology": "kinesis",
+                "type": "Database"
+            }
+        }
+    ]
+}

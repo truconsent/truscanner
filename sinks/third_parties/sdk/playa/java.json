@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Playa",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ru[.]playa[.]keycloak).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Playa",
+                "language": "java",
+                "technology": "playa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

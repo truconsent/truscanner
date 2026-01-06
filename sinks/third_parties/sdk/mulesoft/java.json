@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mulesoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mulesoft[.]cloudhub|com[.]mulesoft[.]connectivity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mulesoft",
+                "language": "java",
+                "technology": "mulesoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

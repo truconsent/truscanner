@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cumul",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cumulio).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cumul",
+                "language": "python",
+                "technology": "cumul",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

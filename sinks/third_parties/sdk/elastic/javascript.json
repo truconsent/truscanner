@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Elastic",
+            "category": "Storage Sink",
+            "patterns": [
+                "@elastic\\/elasticsearch|elastic-apm-node"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Elastic",
+                "language": "javascript",
+                "technology": "elastic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

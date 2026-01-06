@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mediamath",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(terminalone).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mediamath",
+                "language": "python",
+                "technology": "mediamath",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

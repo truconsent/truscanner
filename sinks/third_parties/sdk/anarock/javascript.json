@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Anarock",
+            "category": "Storage Sink",
+            "patterns": [
+                "@anarock\\/react-native-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Anarock",
+                "language": "javascript",
+                "technology": "anarock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

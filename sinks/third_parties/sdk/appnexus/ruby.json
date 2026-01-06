@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appnexus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(appnexusapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appnexus",
+                "language": "ruby",
+                "technology": "appnexus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

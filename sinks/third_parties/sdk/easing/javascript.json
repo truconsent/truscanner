@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Easing",
+            "category": "Storage Sink",
+            "patterns": [
+                "alipayment"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Easing",
+                "language": "javascript",
+                "technology": "easing",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Riantono",
+            "category": "Storage Sink",
+            "patterns": [
+                "gpsoauthnode"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Riantono",
+                "language": "javascript",
+                "technology": "riantono",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

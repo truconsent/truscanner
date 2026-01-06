@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smashrun",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(smashrun).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smashrun",
+                "language": "python",
+                "technology": "smashrun",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailgun",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mailgun|bogardo.mailgun).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailgun",
+                "language": "php",
+                "technology": "mailgun",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

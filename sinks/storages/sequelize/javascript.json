@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sequelize ORM",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)\\bsequelize\\b",
+                "(?i)\\.findAll\\s*\\(",
+                "(?i)\\.create\\s*\\("
+            ],
+            "tags": {
+                "type": "Database",
+                "technology": "sequelize"
+            }
+        }
+    ]
+}

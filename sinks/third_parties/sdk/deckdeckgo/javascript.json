@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Deckdeckgo",
+            "category": "Storage Sink",
+            "patterns": [
+                "@deckdeckgo\\/social"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Deckdeckgo",
+                "language": "javascript",
+                "technology": "deckdeckgo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

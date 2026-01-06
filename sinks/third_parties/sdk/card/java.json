@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Card",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]card).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Card",
+                "language": "java",
+                "technology": "card",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

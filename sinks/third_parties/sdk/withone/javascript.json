@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Withone",
+            "category": "Storage Sink",
+            "patterns": [
+                "@12stonechurch\\/omnihive-worker-cloudinary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Withone",
+                "language": "javascript",
+                "technology": "withone",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

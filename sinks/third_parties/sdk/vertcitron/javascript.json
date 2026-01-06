@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vertcitron",
+            "category": "Storage Sink",
+            "patterns": [
+                "vue-google-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vertcitron",
+                "language": "javascript",
+                "technology": "vertcitron",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

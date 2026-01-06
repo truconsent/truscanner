@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Meijl",
+            "category": "Storage Sink",
+            "patterns": [
+                "git-ticket"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Meijl",
+                "language": "javascript",
+                "technology": "meijl",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

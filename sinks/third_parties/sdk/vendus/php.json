@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vendus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(vendus.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vendus",
+                "language": "php",
+                "technology": "vendus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

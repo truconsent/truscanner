@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Uber",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]uber[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Uber",
+                "language": "java",
+                "technology": "uber",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

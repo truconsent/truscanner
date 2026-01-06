@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Augustolemble",
+            "category": "Storage Sink",
+            "patterns": [
+                "btc-payments"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Augustolemble",
+                "language": "javascript",
+                "technology": "augustolemble",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

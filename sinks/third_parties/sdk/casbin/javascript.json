@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Casbin",
+            "category": "Storage Sink",
+            "patterns": [
+                "@casbin\\/pubsub-watcher"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Casbin",
+                "language": "javascript",
+                "technology": "casbin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

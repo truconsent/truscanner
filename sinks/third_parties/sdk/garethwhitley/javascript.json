@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Garethwhitley",
+            "category": "Storage Sink",
+            "patterns": [
+                "w3wconverter"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Garethwhitley",
+                "language": "javascript",
+                "technology": "garethwhitley",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

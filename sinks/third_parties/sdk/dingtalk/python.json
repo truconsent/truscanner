@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dingtalk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dingtalk|DingRobotPy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dingtalk",
+                "language": "python",
+                "technology": "dingtalk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

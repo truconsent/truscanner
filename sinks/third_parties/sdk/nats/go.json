@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nats",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(nats-io)(/)(nats.go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nats",
+                "language": "go",
+                "technology": "nats",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

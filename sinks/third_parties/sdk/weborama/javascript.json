@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Weborama",
+            "category": "Storage Sink",
+            "patterns": [
+                "weborama-semantic-ui|weborama-ui-react|generator-richmedia"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Weborama",
+                "language": "javascript",
+                "technology": "weborama",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

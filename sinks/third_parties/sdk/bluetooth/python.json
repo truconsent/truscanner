@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bluetooth",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(gatt).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bluetooth",
+                "language": "python",
+                "technology": "bluetooth",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

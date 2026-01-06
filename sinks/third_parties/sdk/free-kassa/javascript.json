@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Free-kassa",
+            "category": "Storage Sink",
+            "patterns": [
+                "free-kassa-api|interkassa-node|free-kassa"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Free-kassa",
+                "language": "javascript",
+                "technology": "free-kassa",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

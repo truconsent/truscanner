@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Intercom",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]intercom|intercom-clj|io[.]intercom[.]android|io[.]intercom[.]module|io[.]intercom).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Intercom",
+                "language": "java",
+                "technology": "intercom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Freshdesk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(freshdesk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Freshdesk",
+                "language": "php",
+                "technology": "freshdesk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

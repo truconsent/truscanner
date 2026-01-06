@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Druid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pydruid).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Druid",
+                "language": "python",
+                "technology": "druid",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

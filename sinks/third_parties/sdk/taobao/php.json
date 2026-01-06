@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Taobao",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(taobao|topclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Taobao",
+                "language": "php",
+                "technology": "taobao",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

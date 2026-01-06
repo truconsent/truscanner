@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trupay",
+            "category": "Storage Sink",
+            "patterns": [
+                "trupay"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trupay",
+                "language": "javascript",
+                "technology": "trupay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

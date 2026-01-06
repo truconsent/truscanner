@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Shopify",
+            "category": "Storage Sink",
+            "patterns": [
+                "shopify-buy"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Shopify",
+                "language": "javascript",
+                "technology": "shopify",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Shopify",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-source-shopify"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Shopify",
+                "language": "javascript",
+                "technology": "shopify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

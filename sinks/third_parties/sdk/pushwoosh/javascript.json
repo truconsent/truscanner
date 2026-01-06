@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pushwoosh",
+            "category": "Storage Sink",
+            "patterns": [
+                "web-push-notifications|@deriv\\/web-push-notifications|ramano-pkg|pushwoosh-geozones-cordova-plugin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pushwoosh",
+                "language": "javascript",
+                "technology": "pushwoosh",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

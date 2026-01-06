@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mbejda",
+            "category": "Storage Sink",
+            "patterns": [
+                "firedeploy"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mbejda",
+                "language": "javascript",
+                "technology": "mbejda",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Liferay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]liferay[.]mobile|com[.]liferay[.]portal|com[.]liferay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Liferay",
+                "language": "java",
+                "technology": "liferay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Gorm (Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(github.com)(/)(go-gorm|jinzhu)(/)(gorm).*(Find).*"
+            ],
+            "tags": {
+                "id": "Storages.GormFramework.Read",
+                "language": "go",
+                "technology": "gorm",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Gorm (Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(github.com)(/)(go-gorm|jinzhu)(/)(gorm).*(Create|Update|Delete|Save).*"
+            ],
+            "tags": {
+                "id": "Storages.GormFramework.Write",
+                "language": "go",
+                "technology": "gorm",
+                "type": "Database"
+            }
+        }
+    ]
+}

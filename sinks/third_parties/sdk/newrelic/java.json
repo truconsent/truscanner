@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Newrelic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]newrelic[.]agent[.]android|com[.]newrelic[.]agent[.]java|com[.]newrelic[.]experts|com[.]newrelic[.]logging|com[.]newrelic[.]telemetry|com[.]newrelic|com[.]ocadotechnology[.]newrelicalertsconfigurator).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Newrelic",
+                "language": "java",
+                "technology": "newrelic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

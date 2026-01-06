@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Schibsted",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]schibsted[.]account|com[.]schibsted[.]jofogas[.]jfgtestlibrary|com[.]schibsted[.]security|com[.]schibsted[.]spain|com[.]schibsted[.]spt[.]data|schibsted[.]gradle-init|io[.]schibsted[.]scrooge-gradle-plugin|io[.]schibsted).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Schibsted",
+                "language": "java",
+                "technology": "schibsted",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

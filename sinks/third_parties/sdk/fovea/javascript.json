@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fovea",
+            "category": "Storage Sink",
+            "patterns": [
+                "cc.fovea.cordova.purchase|cordova-plugin-purchase|com.peerio.cordova.plugin.purchase"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fovea",
+                "language": "javascript",
+                "technology": "fovea",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

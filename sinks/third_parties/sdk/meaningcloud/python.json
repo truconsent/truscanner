@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Meaningcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(meaningcloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Meaningcloud",
+                "language": "python",
+                "technology": "meaningcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

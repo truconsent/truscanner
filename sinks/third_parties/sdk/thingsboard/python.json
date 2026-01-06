@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Thingsboard",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tb_device_mqtt).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Thingsboard",
+                "language": "python",
+                "technology": "thingsboard",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

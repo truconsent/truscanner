@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Judo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(app[.]judo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Judo",
+                "language": "java",
+                "technology": "judo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

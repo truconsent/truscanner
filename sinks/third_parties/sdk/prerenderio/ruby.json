@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Prerender.io",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(prerender_rails(_embedded)?|prerendercloud|prerender_chrome).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Prerender",
+                "language": "ruby",
+                "technology": "prerenderio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

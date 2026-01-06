@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Manywho",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]manywho[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Manywho",
+                "language": "java",
+                "technology": "manywho",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

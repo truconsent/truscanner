@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitandblack",
+            "category": "Storage Sink",
+            "patterns": [
+                "bitandblack-matomo-tracking|bitandblack-matomo-optout"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitandblack",
+                "language": "javascript",
+                "technology": "bitandblack",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

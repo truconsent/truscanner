@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cantara",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(no[.]cantara[.]messi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cantara",
+                "language": "java",
+                "technology": "cantara",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

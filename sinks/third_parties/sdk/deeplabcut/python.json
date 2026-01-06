@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Deeplabcut",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(deeplabcut).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Deeplabcut",
+                "language": "python",
+                "technology": "deeplabcut",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

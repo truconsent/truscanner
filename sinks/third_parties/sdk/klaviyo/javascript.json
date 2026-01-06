@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Klaviyo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_learnq([.]push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Klaviyo",
+                "language": "javascript",
+                "technology": "klaviyo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

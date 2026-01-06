@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Browseengine",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]browseengine[.]bobo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Browseengine",
+                "language": "java",
+                "technology": "browseengine",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

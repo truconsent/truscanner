@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lptracker",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(lptracker).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lptracker",
+                "language": "php",
+                "technology": "lptracker",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "TikTok",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?ttq.track[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.TikTok",
+                "language": "javascript",
+                "technology": "tiktok",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

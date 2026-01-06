@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Openai",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Betalgo[.]OpenAI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Openai",
+                "language": "csharp",
+                "technology": "openai",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

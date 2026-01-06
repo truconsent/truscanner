@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Treasuredata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tdclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Treasuredata",
+                "language": "python",
+                "technology": "treasuredata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

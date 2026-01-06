@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Iclicker",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]iclicker).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Iclicker",
+                "language": "java",
+                "technology": "iclicker",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

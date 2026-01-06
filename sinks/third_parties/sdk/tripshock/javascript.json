@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tripshock",
+            "category": "Storage Sink",
+            "patterns": [
+                "braintree-web-drop-in-ts"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tripshock",
+                "language": "javascript",
+                "technology": "tripshock",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

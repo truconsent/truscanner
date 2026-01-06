@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Senicolabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "gmusic"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Senicolabs",
+                "language": "javascript",
+                "technology": "senicolabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

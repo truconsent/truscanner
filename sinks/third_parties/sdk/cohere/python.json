@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Langchain Cohere model",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:langchain.*chat_models.*.ChatCohere).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Langchain.ChatModels.Cohere",
+                "language": "python",
+                "technology": "cohere",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Cohere",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cohere).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cohere",
+                "language": "python",
+                "technology": "cohere",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

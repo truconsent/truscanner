@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snowplowanalytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]nitayjoffe[.]thirdparty[.]com[.]snowplowanalytics|com[.]snowplowanalytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Snowplowanalytics",
+                "language": "java",
+                "technology": "snowplowanalytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

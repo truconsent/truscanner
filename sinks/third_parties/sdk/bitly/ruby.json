@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitly",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)bitly.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitly",
+                "language": "ruby",
+                "technology": "bitly",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

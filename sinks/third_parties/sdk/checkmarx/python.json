@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Checkmarx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(CheckmarxPythonSDK).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Checkmarx",
+                "language": "python",
+                "technology": "checkmarx",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

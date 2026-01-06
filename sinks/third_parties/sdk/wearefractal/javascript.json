@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wearefractal",
+            "category": "Storage Sink",
+            "patterns": [
+                "bunyan-raygun"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wearefractal",
+                "language": "javascript",
+                "technology": "wearefractal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

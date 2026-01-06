@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chriswilliams",
+            "category": "Storage Sink",
+            "patterns": [
+                "@chrismwilliams\\/gatsby-theme-cactus"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chriswilliams",
+                "language": "javascript",
+                "technology": "chriswilliams",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

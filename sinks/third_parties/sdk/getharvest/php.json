@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getharvest",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bestIt.harvest.client|jolicode.forecast.clientfactory).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getharvest",
+                "language": "php",
+                "technology": "getharvest",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

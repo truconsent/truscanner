@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "VWO",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?vwo([.](event|push|visitor))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.VWO",
+                "language": "javascript",
+                "technology": "vwo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

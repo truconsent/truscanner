@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sendbee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sendbee_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sendbee",
+                "language": "python",
+                "technology": "sendbee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

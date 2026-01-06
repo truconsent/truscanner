@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blockpool",
+            "category": "Storage Sink",
+            "patterns": [
+                "@blockpool-io\\/core-error-tracker-raygun"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blockpool",
+                "language": "javascript",
+                "technology": "blockpool",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

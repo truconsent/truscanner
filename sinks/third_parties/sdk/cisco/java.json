@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cisco",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]ciscospark|com[.]cisco[.]cuic|com[.]cloupia).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cisco",
+                "language": "java",
+                "technology": "cisco",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Liqpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(liqpay)(/)(go-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Liqpay",
+                "language": "go",
+                "technology": "liqpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

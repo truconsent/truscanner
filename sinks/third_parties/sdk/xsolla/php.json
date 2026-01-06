@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xsolla",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(xsolla.SDK|xsollaclient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xsolla",
+                "language": "php",
+                "technology": "xsolla",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

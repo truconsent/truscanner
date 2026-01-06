@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unleash",
+            "category": "Storage Sink",
+            "patterns": [
+                ".*unleash-server.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unleash",
+                "language": "javascript",
+                "technology": "unleash",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

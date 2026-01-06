@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Salesforce",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(salesforce|sforce|salesforce_pandas|salesforce_bulk_python|FuelSDK|salesforce_batch|salesforce_reporting|cloudwright_salesforce|simple_salesforce|salesforce_basic|boardex_salesforce|fondat_salesforce|salesforce_bulkipy|airflow.*providers.*salesforce).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Salesforce",
+                "language": "python",
+                "technology": "salesforce",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

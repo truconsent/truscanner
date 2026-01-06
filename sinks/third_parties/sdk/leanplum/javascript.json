@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Leanplum",
+            "category": "Storage Sink",
+            "patterns": [
+                "leanplum-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Leanplum",
+                "language": "javascript",
+                "technology": "leanplum",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Buddy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(buddy[.]buddy|buddy[.]buddyOauth).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Buddy",
+                "language": "php",
+                "technology": "buddy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

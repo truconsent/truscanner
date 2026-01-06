@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Twilio",
+            "category": "Storage Sink",
+            "patterns": [
+                "@sendgrid\\/design-primitives|twilio"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Twilio",
+                "language": "javascript",
+                "technology": "twilio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

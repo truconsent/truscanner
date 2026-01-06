@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Swissuplabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@swissup\\/pwa-easy-banner"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Swissuplabs",
+                "language": "javascript",
+                "technology": "swissuplabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

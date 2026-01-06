@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "CloudEvents",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloudevents).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.CloudEvents",
+                "language": "python",
+                "technology": "cloudevents",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

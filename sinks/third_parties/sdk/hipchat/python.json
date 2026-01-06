@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hipchat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(hypchat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hipchat",
+                "language": "python",
+                "technology": "hipchat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

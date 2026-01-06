@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mysql",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(MySql[.]Data).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mysql",
+                "language": "csharp",
+                "technology": "mysql",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

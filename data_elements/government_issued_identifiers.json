@@ -1,0 +1,153 @@
+{
+  "sources": [
+    {
+      "name": "Aadhaar Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)(aadhaar|aadhar)[^\\d]{0,5}\\d{4}[^\\d]{0,5}\\d{4}[^\\d]{0,5}\\d{4}"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "PAN (Permanent Account Number)",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)\\b(?!ABCDE1234F)[A-Z]{5}[0-9]{4}[A-Z]{1}\\b"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "SSN (Social Security Number)",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "\\b\\d{3}-\\d{2}-\\d{4}\\b",
+        "\\b\\d{9}\\b",
+        "(?i)\\b(social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no|id)|.*_ssn|ssn)\\b(?![^\\s/(;)#|,=!>]*?className)"
+      ],
+      "tags": {
+        "law": "CCPA, DPDPA"
+      }
+    },
+    {
+      "name": "Passport Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)(passport)[^\\w]{0,5}[A-Z0-9]{6,9}",
+        "(?i)(.*passport[^\\s/(;)#|,=!>]{0,10}(?:no|number|id|expiry|validity|country))"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "Driver's License Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)(?<![a-zA-Z])(driver[^\\s]{0,5}license|dl)[^A-Z0-9]{0,5}[A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|0-9-]{5,20}(?!\\()",
+        "(?i).*((?:driving|driver)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)[^\\s/(;)#|,=!>]{0,5}(?:no|number|id)|(?:driving|driver)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence))"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "Voter ID Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)(voter[^\\s]{0,5}id|election[^\\s]{0,5}card)[^A-Z0-9]{0,5}[A-Z0-9]{6,15}"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "Tax Identification Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)\\b(tax[^\\s]{0,5}id|tin)\\b[^\\d]{0,5}\\d{6,15}",
+        "(?i)\\b(tax[^\\s/(;)#|,=!>]{0,3}payer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|tin|(i|a|p)tin)\\b"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "GST Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "high",
+      "patterns": [
+        "\\b\\d{2}[A-Z]{5}\\d{4}[A-Z]{1}[A-Z\\d]{1}Z[A-Z\\d]{1}\\b"
+      ],
+      "tags": {
+        "law": "GST, DPDPA"
+      }
+    },
+    {
+      "name": "Business Registration Number",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "medium",
+      "patterns": [
+        "(?i)(business|company)[^\\s]{0,5}(reg|registration)[^A-Z0-9]{0,5}[A-Z0-9-]{5,20}"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "Professional License Numbers",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": true,
+      "sensitivity": "medium",
+      "patterns": [
+        "(?i)(professional|medical|law|engineer)[^\\s]{0,5}license[^A-Z0-9]{0,5}[A-Z0-9-]{5,20}"
+      ],
+      "tags": {
+        "law": "DPDPA"
+      }
+    },
+    {
+      "name": "Employer Identification Number (EIN)",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": false,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)\\b(employer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|ein)\\b"
+      ],
+      "tags": {
+        "law": "GDPR"
+      }
+    },
+    {
+      "name": "Personal Public Service Number (PPSN)",
+      "category": "Government-Issued Identifiers",
+      "isSensitive": false,
+      "sensitivity": "high",
+      "patterns": [
+        "(?i)\\b(personal[^\\s/(;)#|,=!>]{0,3}(public)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|pps[-_]?(?:nbr|no|number))\\b"
+      ],
+      "tags": {
+        "law": "GDPR"
+      }
+    }
+  ]
+}

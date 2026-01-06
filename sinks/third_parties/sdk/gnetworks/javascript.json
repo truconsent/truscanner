@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gnetworks",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-speech-from-buffer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gnetworks",
+                "language": "javascript",
+                "technology": "gnetworks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

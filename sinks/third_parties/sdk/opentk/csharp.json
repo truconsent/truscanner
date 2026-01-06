@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opentk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(OpenTK).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opentk",
+                "language": "csharp",
+                "technology": "opentk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

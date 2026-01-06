@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Spotinst",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(spotinst).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Spotinst",
+                "language": "python",
+                "technology": "spotinst",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Groundline",
+            "category": "Storage Sink",
+            "patterns": [
+                "@groundline\\/connectors|groundline|@groundline\\/storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Groundline",
+                "language": "javascript",
+                "technology": "groundline",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

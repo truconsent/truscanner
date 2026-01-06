@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Iterative",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ly[.]iterative[.]itly).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Iterative",
+                "language": "java",
+                "technology": "iterative",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

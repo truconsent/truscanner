@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Freelancer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(freelancersdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Freelancer",
+                "language": "python",
+                "technology": "freelancer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

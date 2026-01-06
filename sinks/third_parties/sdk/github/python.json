@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Github",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github|mdx_gh_links|ghp_import|sphinxcontrib_github_alt|airflow.*providers.*github).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github",
+                "language": "python",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

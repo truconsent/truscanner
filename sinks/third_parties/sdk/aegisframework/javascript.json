@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aegisframework",
+            "category": "Storage Sink",
+            "patterns": [
+                "@aegis-framework\\/melan"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aegisframework",
+                "language": "javascript",
+                "technology": "aegisframework",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gimbal",
+            "category": "Storage Sink",
+            "patterns": [
+                "@modus\\/gimbal-plugin-axe|@modus\\/gimbal-plugin-source-map-explorer|gyroscope"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gimbal",
+                "language": "javascript",
+                "technology": "gimbal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

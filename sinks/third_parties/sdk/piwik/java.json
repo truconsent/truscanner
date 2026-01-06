@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Piwik",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]piwik[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Piwik",
+                "language": "java",
+                "technology": "piwik",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

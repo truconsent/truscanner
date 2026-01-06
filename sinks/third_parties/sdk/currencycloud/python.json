@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Currencycloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(currencycloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Currencycloud",
+                "language": "python",
+                "technology": "currencycloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

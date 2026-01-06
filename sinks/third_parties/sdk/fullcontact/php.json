@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fullcontact",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(fullcontact).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fullcontact",
+                "language": "php",
+                "technology": "fullcontact",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

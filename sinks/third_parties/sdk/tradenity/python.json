@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tradenity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tradenity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tradenity",
+                "language": "python",
+                "technology": "tradenity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

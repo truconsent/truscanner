@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paystack",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(easypaystack).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paystack",
+                "language": "python",
+                "technology": "paystack",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

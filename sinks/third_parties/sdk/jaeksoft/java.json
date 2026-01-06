@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jaeksoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]jaeksoft).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jaeksoft",
+                "language": "java",
+                "technology": "jaeksoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

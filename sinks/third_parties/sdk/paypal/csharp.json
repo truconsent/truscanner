@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paypal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(PayflowNetApi|PFPro|Paypal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paypal",
+                "language": "csharp",
+                "technology": "paypal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

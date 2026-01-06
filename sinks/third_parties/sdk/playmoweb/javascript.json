@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Playmoweb",
+            "category": "Storage Sink",
+            "patterns": [
+                "@playmoweb\\/payline-typescript-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Playmoweb",
+                "language": "javascript",
+                "technology": "playmoweb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

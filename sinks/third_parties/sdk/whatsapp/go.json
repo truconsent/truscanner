@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Whatsapp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(Rhymen)(/)(go-whatsapp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Whatsapp",
+                "language": "go",
+                "technology": "whatsapp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

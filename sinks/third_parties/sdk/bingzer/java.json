@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bingzer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bingzer[.]android[.]ads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bingzer",
+                "language": "java",
+                "technology": "bingzer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

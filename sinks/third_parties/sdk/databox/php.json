@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Databox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(databox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Databox",
+                "language": "php",
+                "technology": "databox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

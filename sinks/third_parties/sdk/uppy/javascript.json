@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Uppy",
+            "category": "Storage Sink",
+            "patterns": [
+                "@uppy\\/google-drive|@starchive-uppy\\/google-drive|@uppy\\/onedrive"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Uppy",
+                "language": "javascript",
+                "technology": "uppy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

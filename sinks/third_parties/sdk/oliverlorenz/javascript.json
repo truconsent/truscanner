@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Oliverlorenz",
+            "category": "Storage Sink",
+            "patterns": [
+                "@gluecode-it\\/google-cloud-vm-handler|@gluecode-it\\/discord-voice-channel-server-handler|@gluecode-it\\/express-everywhere"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Oliverlorenz",
+                "language": "javascript",
+                "technology": "oliverlorenz",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

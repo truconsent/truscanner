@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Superbalist",
+            "category": "Storage Sink",
+            "patterns": [
+                "@superbalist\\/js-event-pubsub"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Superbalist",
+                "language": "javascript",
+                "technology": "superbalist",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

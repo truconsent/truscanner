@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Inbrain",
+            "category": "Storage Sink",
+            "patterns": [
+                "inbrain-surveys"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Inbrain",
+                "language": "javascript",
+                "technology": "inbrain",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

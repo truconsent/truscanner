@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Konstantin",
+            "category": "Storage Sink",
+            "patterns": [
+                "gatsby-theme-portfolio-minimal"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Konstantin",
+                "language": "javascript",
+                "technology": "konstantin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

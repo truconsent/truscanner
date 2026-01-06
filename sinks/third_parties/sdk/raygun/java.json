@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Raygun",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]fatboyindustrial[.]logback-raygun|com[.]mindscapehq[.]raygun4java|com[.]raygun).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Raygun",
+                "language": "java",
+                "technology": "raygun",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Haileybot",
+            "category": "Storage Sink",
+            "patterns": [
+                "@haileybot\\/captcha-generator|captchagen-djs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Haileybot",
+                "language": "javascript",
+                "technology": "haileybot",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dropbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(dropbox|toanqng|henrikcozza|skynet-core|neevaco|herval|ncw|milanaleksic|gwatts|hushed|ga-con|intello-io)(/)(dropbox-sdk-go-unofficial|dropbox-go-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dropbox",
+                "language": "go",
+                "technology": "dropbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

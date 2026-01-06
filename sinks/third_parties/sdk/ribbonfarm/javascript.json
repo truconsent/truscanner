@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ribbonfarm",
+            "category": "Storage Sink",
+            "patterns": [
+                "ribbons.platforms.twitter.api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ribbonfarm",
+                "language": "javascript",
+                "technology": "ribbonfarm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

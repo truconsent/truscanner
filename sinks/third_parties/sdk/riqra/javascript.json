@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Riqra",
+            "category": "Storage Sink",
+            "patterns": [
+                "@riqra\\/hierarchy-parser"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Riqra",
+                "language": "javascript",
+                "technology": "riqra",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

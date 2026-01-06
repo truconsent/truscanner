@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Greg",
+            "category": "Storage Sink",
+            "patterns": [
+                "@greg-md\\/ng-facebook"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Greg",
+                "language": "javascript",
+                "technology": "greg",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

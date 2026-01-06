@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instana",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(instana)(/)(go-sensor).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instana",
+                "language": "go",
+                "technology": "instana",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

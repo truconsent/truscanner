@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Releans",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(ReleansAPILib|ReleansAPIClient).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Releans",
+                "language": "php",
+                "technology": "releans",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

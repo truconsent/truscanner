@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sockethub",
+            "category": "Storage Sink",
+            "patterns": [
+                "sockethub"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sockethub",
+                "language": "javascript",
+                "technology": "sockethub",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

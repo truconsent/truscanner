@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Postmates",
+            "category": "Storage Sink",
+            "patterns": [
+                "@postmates\\/react-geosuggest"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Postmates",
+                "language": "javascript",
+                "technology": "postmates",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

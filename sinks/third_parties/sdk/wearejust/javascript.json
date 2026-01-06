@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wearejust",
+            "category": "Storage Sink",
+            "patterns": [
+                "@wearejust\\/gmaps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wearejust",
+                "language": "javascript",
+                "technology": "wearejust",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

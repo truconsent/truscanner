@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zomato",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(zomato).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zomato",
+                "language": "python",
+                "technology": "zomato",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

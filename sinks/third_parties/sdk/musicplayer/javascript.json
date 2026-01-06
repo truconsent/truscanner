@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Musicplayer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Musicplayer",
+                "language": "javascript",
+                "technology": "musicplayer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

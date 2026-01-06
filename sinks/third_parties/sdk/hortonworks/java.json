@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hortonworks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]hortonworks[.]streamline).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hortonworks",
+                "language": "java",
+                "technology": "hortonworks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

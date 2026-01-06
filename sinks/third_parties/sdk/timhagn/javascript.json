@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Timhagn",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-google-location"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Timhagn",
+                "language": "javascript",
+                "technology": "timhagn",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

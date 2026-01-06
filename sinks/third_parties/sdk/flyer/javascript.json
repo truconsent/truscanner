@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Flyer",
+            "category": "Storage Sink",
+            "patterns": [
+                "@flyerhq\\/react-native-firebase-chat-core"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flyer",
+                "language": "javascript",
+                "technology": "flyer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

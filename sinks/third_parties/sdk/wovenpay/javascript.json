@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wovenpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "woven-pay-js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wovenpay",
+                "language": "javascript",
+                "technology": "wovenpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

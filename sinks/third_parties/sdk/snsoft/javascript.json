@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Snsoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-qqsdk-without-mta"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Snsoft",
+                "language": "javascript",
+                "technology": "snsoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

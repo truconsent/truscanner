@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Braintreepayments",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(braintree).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Braintreepayments",
+                "language": "ruby",
+                "technology": "braintreepayments",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

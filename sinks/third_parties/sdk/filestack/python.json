@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Filestack",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(filestack).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Filestack",
+                "language": "python",
+                "technology": "filestack",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

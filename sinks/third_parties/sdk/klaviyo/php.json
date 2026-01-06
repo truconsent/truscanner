@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Klaviyo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(klaviyo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Klaviyo",
+                "language": "php",
+                "technology": "klaviyo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

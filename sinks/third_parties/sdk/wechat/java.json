@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wechat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(app[.]myoss[.]wechat|cn[.]javaer[.]wechat|cn[.]sharesdk[.]wechat|com[.]dou361[.]wechat|com[.]glancebar[.]wechat|com[.]maojianwei[.]wechat|me[.]gaigeshen[.]wechat|org[.]oxerr[.]spring[.]security[.]wechat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wechat",
+                "language": "java",
+                "technology": "wechat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

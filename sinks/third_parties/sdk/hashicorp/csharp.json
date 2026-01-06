@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hashicorp",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(VaultSharp).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashicorp",
+                "language": "csharp",
+                "technology": "hashicorp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "sources": [
+        {
+            "name": "Supabase Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)\\bsupabase\\b",
+                "(?i)\\.from\\s*\\(\\s*['\"](\\w+)['\"]\\)"
+            ],
+            "tags": {
+                "type": "Database",
+                "technology": "supabase"
+            }
+        }
+    ]
+}

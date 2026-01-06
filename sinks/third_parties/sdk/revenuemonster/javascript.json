@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Revenuemonster",
+            "category": "Storage Sink",
+            "patterns": [
+                "rm-api-sdk-erider|rm-api-sdk-hypedmind|rm-api-sdk|rm-plugin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Revenuemonster",
+                "language": "javascript",
+                "technology": "revenuemonster",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

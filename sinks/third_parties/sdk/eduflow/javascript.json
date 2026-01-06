@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Eduflow",
+            "category": "Storage Sink",
+            "patterns": [
+                "@peergrade\\/react-google-picker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Eduflow",
+                "language": "javascript",
+                "technology": "eduflow",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Elasticpath",
+            "category": "Storage Sink",
+            "patterns": [
+                "@moltin\\/sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Elasticpath",
+                "language": "javascript",
+                "technology": "elasticpath",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

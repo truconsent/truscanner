@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coinranking",
+            "category": "Storage Sink",
+            "patterns": [
+                "@coinranking\\/exchanges"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coinranking",
+                "language": "javascript",
+                "technology": "coinranking",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

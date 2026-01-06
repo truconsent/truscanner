@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ozvataf",
+            "category": "Storage Sink",
+            "patterns": [
+                "bkmexpress-ext"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ozvataf",
+                "language": "javascript",
+                "technology": "ozvataf",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

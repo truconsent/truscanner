@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Searpent",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(classy_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Searpent",
+                "language": "python",
+                "technology": "searpent",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

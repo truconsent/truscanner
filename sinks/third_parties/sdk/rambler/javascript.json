@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rambler",
+            "category": "Storage Sink",
+            "patterns": [
+                "@vitalets\\/google-translate-api|@vitalets\\/google-translate-token"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rambler",
+                "language": "javascript",
+                "technology": "rambler",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

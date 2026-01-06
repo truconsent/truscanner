@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appsflyer",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-appsflyer|cordova-plugin-appsflyer|cordova-plugin-appsflyer-sdk|appsflyer|com.rocket.rocketgmappsflyer|nativescript-plugin-appsflyer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appsflyer",
+                "language": "javascript",
+                "technology": "appsflyer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

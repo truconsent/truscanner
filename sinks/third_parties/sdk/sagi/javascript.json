@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sagi",
+            "category": "Storage Sink",
+            "patterns": [
+                "@sagi.io\\/workers-pubsub|@sagi.io\\/workers-googleapis-translation|@sagi.io\\/workers-slack"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sagi",
+                "language": "javascript",
+                "technology": "sagi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

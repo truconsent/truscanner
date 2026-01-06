@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Domo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pydomo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Domo",
+                "language": "python",
+                "technology": "domo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

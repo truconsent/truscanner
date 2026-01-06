@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Drivendata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloudpathlib).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Drivendata",
+                "language": "python",
+                "technology": "drivendata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

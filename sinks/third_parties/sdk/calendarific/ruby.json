@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Calendarific",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ruby-calendarific).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Calendarific",
+                "language": "ruby",
+                "technology": "calendarific",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

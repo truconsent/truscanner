@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nodekit",
+            "category": "Storage Sink",
+            "patterns": [
+                "iopa-types|@iopa-edge\\/jsonwebtoken"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nodekit",
+                "language": "javascript",
+                "technology": "nodekit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

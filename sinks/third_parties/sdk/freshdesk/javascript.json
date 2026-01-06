@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Freshdesk",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-freshdesk|@freshworks\\/freshdesk|@personare\\/react-freshdesk-widget|wechaty-freshdesk|gatsby-plugin-freshdesk|freshdesk-nodejs|node-freshdesk-api|react-freshdesk-widget-query-string|hubot-freshdesk-ticket-notifier"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Freshdesk",
+                "language": "javascript",
+                "technology": "freshdesk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

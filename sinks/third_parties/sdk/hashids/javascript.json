@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hashids",
+            "category": "Storage Sink",
+            "patterns": [
+                "hashids"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hashids",
+                "language": "javascript",
+                "technology": "hashids",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Datavillage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(datavillage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Datavillage",
+                "language": "python",
+                "technology": "datavillage",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

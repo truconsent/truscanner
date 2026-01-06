@@ -1,0 +1,33 @@
+{
+    "sources": [
+        {
+            "name": "Langchain OpenAI model",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:langchain.*chat_models.*.ChatOpenAI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Langchain.ChatModels.OpenAI",
+                "language": "python",
+                "technology": "openai",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "OpenAI",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(openai|chronological).*",
+                "(?i)langchain[.]llms.*(openai|azureopenai|openllm).*",
+                "(?i).*(openai.ChatCompletion).*",
+                "(?i)(langchain.chat_models).*(ChatOpenAI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.OpenAI",
+                "language": "python",
+                "technology": "openai",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

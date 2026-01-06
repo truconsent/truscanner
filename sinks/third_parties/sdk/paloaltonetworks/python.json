@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paloaltonetworks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(panos).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paloaltonetworks",
+                "language": "python",
+                "technology": "paloaltonetworks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

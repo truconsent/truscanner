@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Facebook",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(facebookbusiness|facebook_ads|facebookads|adparlor-facebook|jquery-facebook|facebook_sig_validator|facebook_js|koala|fb-channel-file|devise_facebook_open_graph|open_graph|joelind-koala|cotweet_koala|palidanx-koala|tyler_koala|ongair_ruby|whatsapp|whatsapp_bot|whatzapper|gupshup_whatsapp|xip-twilio|WhatsappBot|whathor|apiwha|omnichannel).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Facebook",
+                "language": "ruby",
+                "technology": "facebook",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

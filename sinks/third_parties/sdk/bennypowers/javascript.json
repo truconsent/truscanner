@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bennypowers",
+            "category": "Storage Sink",
+            "patterns": [
+                "@power-elements\\/stripe-elements"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bennypowers",
+                "language": "javascript",
+                "technology": "bennypowers",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

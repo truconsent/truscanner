@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Esladvice",
+            "category": "Storage Sink",
+            "patterns": [
+                "ghost-v3-google-cloud-storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Esladvice",
+                "language": "javascript",
+                "technology": "esladvice",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

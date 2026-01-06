@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Airship",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]urbanairship[.]api|com[.]urbanairship[.]android|com[.]urbanairship).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Airship",
+                "language": "java",
+                "technology": "airship",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

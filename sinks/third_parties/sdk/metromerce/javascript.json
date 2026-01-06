@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Metromerce",
+            "category": "Storage Sink",
+            "patterns": [
+                "@metroid\\/mb-sendgrid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Metromerce",
+                "language": "javascript",
+                "technology": "metromerce",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

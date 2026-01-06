@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kucoin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(KuCoinApi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kucoin",
+                "language": "php",
+                "technology": "kucoin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

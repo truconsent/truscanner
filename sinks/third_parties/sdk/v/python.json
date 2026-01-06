@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "V",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pyvsystems).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.V",
+                "language": "python",
+                "technology": "v",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

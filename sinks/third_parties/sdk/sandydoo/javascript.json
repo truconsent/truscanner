@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sandydoo Ember-google-maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "ember-google-maps|ember-google-maps-markerclustererplus"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sandydoo.Ember-google-maps",
+                "language": "javascript",
+                "technology": "sandydoo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Split",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]split[.]api|io[.]split[.]client|io[.]split[.]qosrunner|io[.]split).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Split",
+                "language": "java",
+                "technology": "split",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

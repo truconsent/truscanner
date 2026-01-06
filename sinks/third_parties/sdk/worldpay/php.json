@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Worldpay Online",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(worldpay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Worldpay.Online",
+                "language": "php",
+                "technology": "worldpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Docsdk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(docsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Docsdk",
+                "language": "python",
+                "technology": "docsdk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

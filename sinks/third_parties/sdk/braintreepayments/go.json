@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Braintreepayments",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(BoltApp)(/)(braintree-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Braintreepayments",
+                "language": "go",
+                "technology": "braintreepayments",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

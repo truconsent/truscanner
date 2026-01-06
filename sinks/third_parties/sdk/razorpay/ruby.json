@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Razorpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(razorpay|spree_razorpay|razorpay_pa|solidus_razorpay|ifsc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Razorpay",
+                "language": "ruby",
+                "technology": "razorpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

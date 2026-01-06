@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Atari",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(atari-py).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Atari",
+                "language": "python",
+                "technology": "atari",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

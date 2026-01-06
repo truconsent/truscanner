@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Applovin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]applovin[.]mediation|com[.]applovin[.]quality|com[.]applovin).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Applovin",
+                "language": "java",
+                "technology": "applovin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

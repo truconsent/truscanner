@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gartic",
+            "category": "Storage Sink",
+            "patterns": [
+                "nerdologiatron"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gartic",
+                "language": "javascript",
+                "technology": "gartic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

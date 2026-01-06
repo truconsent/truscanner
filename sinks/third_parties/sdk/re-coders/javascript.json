@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Re-coders",
+            "category": "Storage Sink",
+            "patterns": [
+                "@jfkz\\/tinkoff-payment-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Re-coders",
+                "language": "javascript",
+                "technology": "re-coders",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

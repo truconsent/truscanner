@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Daonguyen",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]daonguyen[.]ads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Daonguyen",
+                "language": "java",
+                "technology": "daonguyen",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

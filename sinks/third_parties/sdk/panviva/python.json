@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Panviva",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(panviva).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Panviva",
+                "language": "python",
+                "technology": "panviva",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

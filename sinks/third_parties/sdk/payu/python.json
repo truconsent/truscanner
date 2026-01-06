@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payu",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(payu_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payu",
+                "language": "python",
+                "technology": "payu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

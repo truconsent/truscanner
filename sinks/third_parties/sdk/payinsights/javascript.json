@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payinsights",
+            "category": "Storage Sink",
+            "patterns": [
+                "pi-sdk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payinsights",
+                "language": "javascript",
+                "technology": "payinsights",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

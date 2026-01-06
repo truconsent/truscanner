@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Smsglobal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(smsglobal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Smsglobal",
+                "language": "php",
+                "technology": "smsglobal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

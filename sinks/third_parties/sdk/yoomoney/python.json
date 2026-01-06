@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yoomoney",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yookassa).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yoomoney",
+                "language": "python",
+                "technology": "yoomoney",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

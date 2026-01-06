@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Satismeter",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?satismeter[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Satismeter",
+                "language": "javascript",
+                "technology": "satismeter",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

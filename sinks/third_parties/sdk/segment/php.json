@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Segment",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Segment\\\\Segment).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Segment",
+                "language": "php",
+                "technology": "segment",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

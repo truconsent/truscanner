@@ -1,0 +1,1474 @@
+{
+    "sources": [
+        {
+            "name": "Amazonaws SQS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mypy_boto3_sqs|aws_cdk.*aws_sqs).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SQS",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Athena",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pyathena).*",
+                "(?i)(aws_cdk.*aws_athena).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Athena",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws RDS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_rds|mypy_boto3_rds).*",
+                "(?i)(aws_cdk.*aws_rds).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.RDS",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws SNS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(smsframework_amazon_sns).*",
+                "(?i)(aws_cdk.*aws_sns).*",
+                "(?i)(aws_cdk.*aws_sns_subscriptions).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SNS",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws SES",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_ses|django_amazon_ses|amazon-ses-template-editor).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SES",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws SSM",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_ssmcontacts).*",
+                "(?i)(aws_cdk.*aws_ssm).*",
+                "(?i)(aws_cdk.*aws_ssmincidents).*",
+                "(?i)(mypy_boto3_ssm|SSMParameter|AWS_Manager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SSM",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws EC2",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_ec2).*",
+                "(?i)(mypy_boto3_ec2|ec2_metadata).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.EC2",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws ECS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_ecs).*",
+                "(?i)(aws_cdk.*aws_ecs_patterns).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ECS",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Amplify",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_amplify).*",
+                "(?i)(aws_cdk.*aws_amplifyuibuilder).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Amplify",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Redshift",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_redshift).*",
+                "(?i)(.*redshift.*query)",
+                "(?i)(django_redshift_backend|target_redshift|redshift_connector|redshift_connector|mypy_boto3_redshift_data|pandas_amazon_redshift).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Redshift",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Ads",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ad_api[.]api|amazon_ad_sdk|aws_adfs|amazon_ad|amazon_advertising|tap_amazon_ads_dsp|python_amazon_advertising_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Ads",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Lambda",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_lambda_python).*",
+                "(?i)(aws-lambda|aws_lambda|aws_cdk.*aws_lambda|chalice|torchlambda|mypy_boto3_lambda|aws_lambda_powertools|awslambdaric|pylambda|opentelemetry_instrumentation_aws_lambda).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Lambda",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Dynamodb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dynamodb-encryption-sdk|dynamo3|mypy_boto3_dynamodb|dynamodump|aws_cdk.*aws_dynamodb|pynamodb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Dynamodb",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CloudWatch Logs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_cloudwatch).*",
+                "(?i)(logtron_aws|aws_monitoring|awslogs|watchtower).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CloudWatchLogs",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CloudFormation",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_cloudformation).*",
+                "(?i)(aws_cdk.*aws_cloudfront).*",
+                "(?i)(mypy_boto3_cloudformation).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CloudFormation",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws LakeFormation",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_lakeformation).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.LakeFormation",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Alexa",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ask-alexa-pykit|ask_alexa_pykit|PyForAlexa|ask-sdk|ask_sdk|sinricpro).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Alexa",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Aurora",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aurora_data_api).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Aurora",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazon AWS Kinesis",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(amazon_kclpy|amazon_kclpy_ext).*",
+                "(?i)(aws_cdk.*aws_kinesisanalytics).*",
+                "(?i)(aws_cdk.*aws_kinesis).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Kinesis",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Cognito",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cognitojwt).*",
+                "(?i)(aws_cdk.*aws_cognito).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Cognito",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazon ElasticLoadBalancing",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_elasticloadbalancing).*",
+                "(?i)(aws_cdk.*aws_elasticloadbalancingv2).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticLoadBalancing",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Elastic Kubernetes Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_eks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticKubernetesService",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazon SageMaker",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sagemaker).py.*",
+                "(?i)(aws_cdk.*aws_sagemaker).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SageMaker",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Elasticsearch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_elasticsearch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Elasticsearch",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws API Gateway",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_apigateway).*",
+                "(?i)(aws_cdk.*aws_apigatewayv2).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.APIGateway",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws HealthLake",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_healthlake).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.HealthLake",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws AppRunner",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_apprunner).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AppRunner",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws AppSync",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_appsync).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AppSync",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Elastic MapReduce",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_emr).*",
+                "(?i)(aws_cdk.*aws_emrcontainers).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticMapReduce",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws QuickSight",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_quicksight).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.QuickSight",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Forecast",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_forecast).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Forecast",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Fraud Detector",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(frauddetector).*",
+                "(?i)(aws_cdk.*aws_frauddetector).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.FraudDetector",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazon AWS Kinesis Firehose",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_kinesisfirehose).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.KinesisDataFirehose",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Pinpoint",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_pinpoint).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Pinpoint",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws AppStream",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_appstream).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AppStream",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Lookout for Vision",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_lookoutvision).*",
+                "(?i)(lookoutvision).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.LookoutForVision",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws IoT Wireless",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_iotwireless).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.IoTWireless",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Lookout Equipment",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(lookoutequipment).*",
+                "(?i)(aws_cdk.*aws_lookoutequipment).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.LookoutEquipment",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CodeArtifact",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_codeartifact).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CodeArtifact",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CodeCommit",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_codecommit).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CodeCommit",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CodePipeline",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_codepipeline).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CodePipeline",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Directory",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_directoryservice).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Directory",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CodeGuru Reviewer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_codeguruprofiler).*",
+                "(?i)(aws_cdk.*aws_codegurureviewer).*",
+                "(?i)(aws_cdk.*aws_codestar).*",
+                "(?i)(aws_cdk.*aws_codestarnotifications).*",
+                "(?i)(aws_cdk.*aws_codestarconnections).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CodeGuruReviewer",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws IoT",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_chatbot).*",
+                "(?i)(aws_cdk.*aws_iotfleethub).*",
+                "(?i)(aws_cdk.*aws_iotthingsgraph).*",
+                "(?i)(aws_cdk.*aws_iotanalytics).*",
+                "(?i)(aws_cdk.*aws_iotevents).*",
+                "(?i)(aws_cdk.*aws_iotcoredeviceadvisor).*",
+                "(?i)(aws_cdk.*aws_iotsitewise).*",
+                "(?i)(aws_cdk.*aws_greengrassv2).*",
+                "(?i)(awsiotclient|awsiotsdk|AWSIoTDeviceDefenderAgentSDK|AWSIoTPythonSDK).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.IoT",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Route53",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_route53).*",
+                "(?i)(aws_cdk.*aws_route53_targets).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Route53",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws ResilienceHub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_resiliencehub).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ResilienceHub",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Certificate Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_certificatemanager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CertificateManager",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws AppConfig",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_appconfig).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AppConfig",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws SecurityLake",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_securitylake).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SecurityLake",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Elastic Transcoder",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_elastictranscoder).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticTranscoder",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Marketplace Catalog",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_marketplacecatalog).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.MarketplaceCatalog",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws DevOps Guru",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_devopsguru).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.DevOpsGuru",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Lex Model",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(amazon_lex_bot_deploy).*",
+                "(?i)(aws_cdk.*aws_lex).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.LexModel",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CloudTrail",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_cloudtrail).*",
+                "(?i)(Datamart_AWS_CloudTrails_SDK).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SecretsManager",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Config",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_config).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Config",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Batch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_batch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Batch",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws CodeBuild",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_codebuild).*",
+                "(?i)(aws_cdk.*aws_imagebuilder).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CodeBuild",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Cost And Usage Report",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_costandusagereport).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CostAndUsageReport",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Health",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_health).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Health",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Backup",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_backup).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Backup",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Timestream",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_timestream).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Timestream",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Gamelift",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_gamelift).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Gamelift",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Workspaces",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_workspaces).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Workspaces",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Rekognition",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_rekognition).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Rekognition",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Customer Profiles",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_customerprofiles).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.CustomerProfiles",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Elastic File System",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_efs).*",
+                "(?i)(aws_cdk.*aws_elasticache).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticFileSystem",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Application Auto Scaling",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_autoscaling_hooktargets).*",
+                "(?i)(aws_cdk.*aws_autoscaling_common).*",
+                "(?i)(aws_cdk.*aws_autoscaling).*",
+                "(?i)(aws_cdk.*aws_autoscalingplans).*",
+                "(?i)(aws_cdk.*aws_applicationautoscaling).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ApplicationAutoScaling",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws StepFunctions",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_stepfunctions).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.StepFunctions",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws AmazonMQ",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_amazonmq).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AmazonMQ",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Kendra",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_kendra).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Kendra",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Neptune",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_neptune).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Neptune",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws MemoryDB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_memorydb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.MemoryDB",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Account",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]amazonaws[.]services[.]account).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Account",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws DataPipeline",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_datapipeline).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.DataPipeline",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Elastic Container Registry",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_ecr).*",
+                "(?i)(aws_cdk.*aws_ecr_assets).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticContainerRegistry",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws OpsWorks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_opsworks).*",
+                "(?i)(aws_cdk.*aws_opsworkscm).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.OpsWorks",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws ElasticBeanStalk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_elasticbeanstalk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ElasticBeanStalk",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws GlueDataBrew",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_databrew).*",
+                "(?i)(aws_cdk.*aws_glue).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.GlueDataBrew",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Lookout Metrics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_lookoutmetrics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.LookoutMetrics",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws App Flow",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_appflow).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AppFlow",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Budgets",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_budgets).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Budgets",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws XRay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_xray|aws_xray_lambda_segment_shim|types_aws_xray_sdk|xraysink|aws_xray_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.XRay",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws KMS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_kms).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.KMS",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws FSx",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_fsx).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.FSx",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws WAF",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_waf).*",
+                "(?i)(aws_cdk.*aws_wafv2).*",
+                "(?i)(aws_cdk.*aws_wafregional).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.WAF",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws IVS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_ivs).*",
+                "(?i)(aws_cdk.*aws_ivs_alpha).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.IVS",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws App Integration",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_appintegrations).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.AppIntegration",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Lightsail",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_lightsail).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Lightsail",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws IAM",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_iam).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.IAM",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazon Aws",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(boto).*",
+                "(?i)(pyqldb).py.*",
+                "(?i)(aws_cdk.*aws_qldb).*",
+                "(?i)(qldbshell).py.*",
+                "(?i)(mypy_boto3_events|opentelemetry_instrumentation_boto|amazon_selenium|amazon_mws|amazon_dash|amazon_paapi|scrape_amazon|amazon[.]ion|Python_Amazon|amazon_buddy|amazon_braket_schemas|amazon_textract_prettyprinter|mint_amazon_tagger|amazon_buy_bot|amazon_dax_client|amazon_textract_overlayer|django_amazon_translate|amazon_textract_caller|collective[.]portlet[.]amazon|amazon_affiliate_url|zs_amazon_buddy|pay_with_amazon|amazon_textract_geofinder|openlabs_amazon_mws|amazon_wishlist_pricewatch|rgmining_amazon_dataset|amazon_textract_helper|stylelens_crawl_amazon|fio_amazon_mws|tap_amazon_sp|tap_amazon_mws|python_amazon_sp_api|oblcc_amazon_inspector_v2|python_amazon_product_api|amazon_sp_api_clients|Phils_Amazon_Price_Tracker|python_amazon_unthrottled_paapi|p3_amazon_jp_tool|Amazon_Arbitrage_Master_Sheet|amazon_textract_pipeline_pagedimensions|python_amazon_mws_tools|apache_airflow_providers_amazon|django_oscar_amazon_payments|singer_tap_amazon_mws|scrapy_amazon_robot_middleware3|gc_boto|pymacaron_aws|nysa_aws|fondat_aws|aio_aws|bgu_aws|cloudfn_aws|AWS_Police|navio_aws|pulumi_aws|grapher_aws|requests_aws|JT_AWS|openapi4aws|waldur_aws|exr_aws|opentelemetry_sdk_extension_aws|amazon_braket_pennylane_plugin|amazon_connect_decryption_lib|amazon_braket_default_simulator|amazon_braket_ocean_plugin|requests_auth_aws_sigv4|amazon_braket_sdk|amazon_transcribe|amazon_pay|awscli_login|datastore[.]aws|remotecv_aws|threadlocal_aws|okta_aws|odincontrib[.]aws|riffdog_aws|spring_aws|frasco_aws|mfa_aws|thumbor_aws|orchard_aws|vulcan_aws|osbot_aws).*",
+                "(?i)(aws_crypto|aws_profile|aws_ext|aws_sync|aws_2fa|aws_amicleaner|aws_orgs|aws_checker|aws_requests_auth|aws_sam_translator|aws_credentials|aws_ssh|aws_top|aws_encrytpion|aws_bunker|aws_crpyto|aws_syndicate|aws_status|aws_mfa|aws_saving|aws_parallelcluster|aws_timely|aws_encyrption|aws_socks|aws_allowlister|aws_parsecf|aws_apimatic|aws_psycopg2|aws_vapor|aws_rotate|aws_switchrole|aws_satella|aws_keyring|aws_connector|aws_works|aws_session|aws_organized|aws_client|aws_fed|aws_login|aws_infrastructure_sdk|aws_orbit_sdk|aws_jupyter_proxy|aws_sso_cred_restore|aws_encryption|aws_sso_credential_process|aws_data_api_python_sdk|aws_hcs_cli).py.*",
+                "(?i)(awscrypto|awswrangler|spotty|arabela|madeira|imposter|assumerole|kloudy|awscli|awsxmltojson|awshelpers|httpaws|pinkboto|coto|zappa|aiobotocore|StarCluster|awsprocesscreds).py.*",
+                "(?i)(aws_cdk.*core).*",
+                "(?i)(aws_cdk.*aws_datasync).*",
+                "(?i)(aws_cdk.*aws_rum).*",
+                "(?i)(aws_cdk.*aws_synthetics).*",
+                "(?i)(aws_cdk.*aws_transfer).*",
+                "(?i)(aws_cdk.*aws_signer).*",
+                "(?i)(aws_cdk.*aws_inspector).*",
+                "(?i)(aws_cdk.*aws_wisdom).*",
+                "(?i)(aws_cdk.*aws_resourcegroups).*",
+                "(?i)(aws_cdk.*aws_robomaker).*",
+                "(?i)(aws_cdk.*aws_sdb).*",
+                "(?i)(aws_cdk.*aws_cur).*",
+                "(?i)(aws_cdk.*aws_acmpca).*",
+                "(?i)(aws_cdk.*aws_eventschemas).*",
+                "(?i)(aws_cdk.*aws_auditmanager).*",
+                "(?i)(aws_cdk.*aws_aps).*",
+                "(?i)(aws_cdk.*aws_mwaa).*",
+                "(?i)(aws_cdk.*aws_fis).*",
+                "(?i)(aws_cdk.*aws_servicecatalogappregistry).*",
+                "(?i)(aws_cdk.*aws_ram).*",
+                "(?i)(aws_cdk.*aws_pinpointemail).*",
+                "(?i)(aws_cdk.*aws_refactorspaces).*",
+                "(?i)(aws_cdk.*aws_events).*",
+                "(?i)(aws_cdk.*aws_panorama).*",
+                "(?i)(aws_cdk.*aws_msk).*",
+                "(?i)(aws_cdk.*aws_servicecatalog).*",
+                "(?i)(aws_cdk.*aws_servicediscovery).*",
+                "(?i)(aws_cdk.*aws_ce).*",
+                "(?i)(aws_cdk.*aws_appmesh).*",
+                "(?i)(aws_cdk.*aws_evidently).*",
+                "(?i)(aws_cdk.*aws_networkmanager).*",
+                "(?i)(aws_cdk.*aws_globalaccelerator).*",
+                "(?i)(aws_cdk.*aws_dlm).*",
+                "(?i)(aws_cdk.*aws_licensemanager).*",
+                "(?i)(aws_cdk.*aws_accessanalyzer).*",
+                "(?i)(aws_cdk.*aws_quickstarts).*",
+                "(?i)(aws_cdk.*aws_detective).*",
+                "(?i)(aws_cdk.*aws_location).*",
+                "(?i)(aws_cdk.*aws_applicationinsights).*",
+                "(?i)(aws_cdk.*aws_events_targets).*",
+                "(?i)(aws_cdk.*custom_resources).*",
+                "(?i)(aws_cdk.*region_info).*",
+                "(?i)(aws_cdk.*cx_api).*",
+                "(?i)(aws_cdk.*cloud_assembly_schema).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazon.Aws",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Finspace",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_finspace).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Finspace",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Firewall Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_fms).*",
+                "(?i)(aws_cdk.*aws_networkfirewall).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.FirewallManager",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Medialive",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_medialive).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Medialive",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Mediapackage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_mediapackage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Mediapackage",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Mediastore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_mediastore).*",
+                "(?i)(aws_cdk.*aws_mediaconvert).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Mediastore",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Mediaconnect",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_mediaconnect).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Mediaconnect",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Serverless Application Model",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_sam).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.ServerlessApplicationModel",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Nimble Studio",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_nimblestudio).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.NimbleStudio",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Security Hub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_securityhub).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SecurityHub",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws GuardDuty",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_guardduty).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.GuardDuty",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Single SignOn",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_sso).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.SingleSignOn",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Cloud9",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_cloud9).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Cloud9",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws Macie2",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_macie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.Macie2",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws MachineLearning",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_mlops|aws_jupyter).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.MachineLearning",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Amazonaws OpenSearch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aws_cdk.*aws_opensearchservice).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amazonaws.OpenSearch",
+                "language": "python",
+                "technology": "amazon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Travis-ci",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(travispy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Travis-ci",
+                "language": "python",
+                "technology": "travis-ci",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

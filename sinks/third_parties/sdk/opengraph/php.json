@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opengraph",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(opengraph).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opengraph",
+                "language": "php",
+                "technology": "opengraph",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

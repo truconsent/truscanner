@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Objectbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]objectbox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Objectbox",
+                "language": "java",
+                "technology": "objectbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

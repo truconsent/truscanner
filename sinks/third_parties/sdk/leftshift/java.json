@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Leftshift",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(one[.]leftshift[.]gaia-java-sdk|one[.]leftshift[.]gaia-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Leftshift",
+                "language": "java",
+                "technology": "leftshift",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

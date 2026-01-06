@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blockfrost",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(blockfrost).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blockfrost",
+                "language": "python",
+                "technology": "blockfrost",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

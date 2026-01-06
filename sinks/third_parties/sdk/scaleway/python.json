@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Scaleway",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(scaleway).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Scaleway",
+                "language": "python",
+                "technology": "scaleway",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

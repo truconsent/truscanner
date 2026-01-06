@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Baidu",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(qcompute).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Baidu",
+                "language": "python",
+                "technology": "baidu",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

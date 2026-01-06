@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Microfocus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]microfocus[.]adm[.]almoctane[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microfocus",
+                "language": "java",
+                "technology": "microfocus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

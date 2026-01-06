@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lemnisk",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_lmSMTObj([.](track|page|identify))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Lemnisk",
+                "language": "javascript",
+                "technology": "lemnisk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

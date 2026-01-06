@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Storyblok",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(storyblok).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Storyblok",
+                "language": "python",
+                "technology": "storyblok",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

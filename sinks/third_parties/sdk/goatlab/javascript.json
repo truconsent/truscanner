@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Goatlab Docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@goatlab\\/fluent"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Goatlab.Docs",
+                "language": "javascript",
+                "technology": "goatlab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

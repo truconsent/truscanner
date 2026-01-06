@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fvdm",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-geolocation"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fvdm",
+                "language": "javascript",
+                "technology": "fvdm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

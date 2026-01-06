@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Huawei",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(huaweicloudsdkcore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Huawei",
+                "language": "python",
+                "technology": "huawei",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

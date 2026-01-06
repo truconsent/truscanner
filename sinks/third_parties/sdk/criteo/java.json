@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Criteo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]criteo[.]mediation[.]google|com[.]criteo[.]mediation[.]mopub|com[.]criteo[.]publisher).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Criteo",
+                "language": "java",
+                "technology": "criteo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

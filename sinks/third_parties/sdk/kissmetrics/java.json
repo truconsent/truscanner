@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kissmetrics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]kissmetrics[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kissmetrics",
+                "language": "java",
+                "technology": "kissmetrics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

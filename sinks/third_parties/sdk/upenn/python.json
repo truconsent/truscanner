@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Upenn Wharton",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(wrds).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Upenn.Wharton",
+                "language": "python",
+                "technology": "upenn",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

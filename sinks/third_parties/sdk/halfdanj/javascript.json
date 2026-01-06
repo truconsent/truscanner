@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Halfdanj",
+            "category": "Storage Sink",
+            "patterns": [
+                "svelte-adapter-appengine"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Halfdanj",
+                "language": "javascript",
+                "technology": "halfdanj",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apolitical",
+            "category": "Storage Sink",
+            "patterns": [
+                "@apolitical\\/storage"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apolitical",
+                "language": "javascript",
+                "technology": "apolitical",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Isogeo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(isogeo-pysdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Isogeo",
+                "language": "python",
+                "technology": "isogeo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

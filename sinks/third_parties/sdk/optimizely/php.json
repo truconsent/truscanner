@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Optimizely",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(optimizely).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Optimizely",
+                "language": "php",
+                "technology": "optimizely",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

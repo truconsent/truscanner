@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Slack",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(JoliCode|ThreadMeUp|Maknz).(slack).*",
+                "(?i).*(slack.sdk|slackapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Slack",
+                "language": "php",
+                "technology": "slack",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

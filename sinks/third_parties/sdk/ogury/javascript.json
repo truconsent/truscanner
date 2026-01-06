@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ogury",
+            "category": "Storage Sink",
+            "patterns": [
+                "inject-tags"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ogury",
+                "language": "javascript",
+                "technology": "ogury",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

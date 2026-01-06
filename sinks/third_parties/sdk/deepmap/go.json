@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Deepmap",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(deepmap)(/)(oapi-codegen).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Deepmap",
+                "language": "go",
+                "technology": "deepmap",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

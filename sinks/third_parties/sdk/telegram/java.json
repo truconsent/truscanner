@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Telegram",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]telegram).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Telegram",
+                "language": "java",
+                "technology": "telegram",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

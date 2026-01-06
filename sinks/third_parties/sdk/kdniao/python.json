@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Kdniao",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(kdniao).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kdniao",
+                "language": "python",
+                "technology": "kdniao",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

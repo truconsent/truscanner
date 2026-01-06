@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yellowpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(co[.]yellowpay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yellowpay",
+                "language": "java",
+                "technology": "yellowpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

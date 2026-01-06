@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Veracode",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(veracode).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Veracode",
+                "language": "python",
+                "technology": "veracode",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

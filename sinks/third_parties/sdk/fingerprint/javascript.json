@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Fingerprint",
+            "category": "Storage Sink",
+            "patterns": [
+                "@fingerprintjs\\/fingerprintjs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Fingerprint",
+                "language": "javascript",
+                "technology": "fingerprint",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

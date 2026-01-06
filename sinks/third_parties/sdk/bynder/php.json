@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bynder",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bynder).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bynder",
+                "language": "php",
+                "technology": "bynder",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

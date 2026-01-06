@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Acenda",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(acenda.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Acenda",
+                "language": "php",
+                "technology": "acenda",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

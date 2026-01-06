@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Temporal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(temporal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Temporal",
+                "language": "php",
+                "technology": "temporal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

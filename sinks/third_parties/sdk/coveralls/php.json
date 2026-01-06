@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Coveralls",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(coveralls).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Coveralls",
+                "language": "php",
+                "technology": "coveralls",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Getarmada",
+            "category": "Storage Sink",
+            "patterns": [
+                "@draftbox-co\\/gatsby-wordpress-theme-libre"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Getarmada",
+                "language": "javascript",
+                "technology": "getarmada",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

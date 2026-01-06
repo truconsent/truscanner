@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Btsdigital",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pyAitu).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Btsdigital",
+                "language": "python",
+                "technology": "btsdigital",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lyft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]lyft).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lyft",
+                "language": "java",
+                "technology": "lyft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

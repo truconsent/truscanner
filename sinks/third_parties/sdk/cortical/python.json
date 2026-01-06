@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cortical",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(retinasdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cortical",
+                "language": "python",
+                "technology": "cortical",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

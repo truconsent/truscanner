@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bittorrent",
+            "category": "Storage Sink",
+            "patterns": [
+                "hyperdiscovery|discovery-swarm"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bittorrent",
+                "language": "javascript",
+                "technology": "bittorrent",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

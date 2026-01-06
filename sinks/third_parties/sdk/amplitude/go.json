@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amplitude",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(renatoaf|gotokatsuya)(/)(amplitude-go|amplitude-sdk-go).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amplitude",
+                "language": "go",
+                "technology": "amplitude",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

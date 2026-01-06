@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Schibsted",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(schibsted).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Schibsted",
+                "language": "php",
+                "technology": "schibsted",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

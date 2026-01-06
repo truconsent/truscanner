@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Anchorsolutions",
+            "category": "Storage Sink",
+            "patterns": [
+                "timestamp-date"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Anchorsolutions",
+                "language": "javascript",
+                "technology": "anchorsolutions",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

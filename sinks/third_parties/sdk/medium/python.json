@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Medium",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(medium|pymedium).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Medium",
+                "language": "python",
+                "technology": "medium",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

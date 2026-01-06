@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instapp Fm",
+            "category": "Storage Sink",
+            "patterns": [
+                "fusionmonitor-wxmp"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instapp.Fm",
+                "language": "javascript",
+                "technology": "instapp",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

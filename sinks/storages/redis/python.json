@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Redis DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:langchain.*vectorstores.*.Redis).*"
+            ],
+            "tags": {
+                "id": "Storages.Redis.Initialize",
+                "language": "python",
+                "technology": "redis",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Redis DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(redisdb).*"
+            ],
+            "tags": {
+                "id": "Storages.Redis.Read",
+                "language": "python",
+                "technology": "redis",
+                "type": "Database"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Satispay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(SatispayGBusiness).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Satispay",
+                "language": "php",
+                "technology": "satispay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

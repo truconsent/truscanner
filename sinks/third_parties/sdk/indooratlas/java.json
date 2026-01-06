@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Indooratlas",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]indooratlas[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Indooratlas",
+                "language": "java",
+                "technology": "indooratlas",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Walmartlabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]walmartlabs[.]concord[.]runtime[.]v2|com[.]walmartlabs[.]concord).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Walmartlabs",
+                "language": "java",
+                "technology": "walmartlabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

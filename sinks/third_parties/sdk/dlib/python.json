@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dlib",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(dlib).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dlib",
+                "language": "python",
+                "technology": "dlib",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

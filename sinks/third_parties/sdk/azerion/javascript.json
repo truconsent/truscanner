@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Azerion",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bygd\\/gd-upload-google"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Azerion",
+                "language": "javascript",
+                "technology": "azerion",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

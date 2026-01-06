@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Outscale",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(osc_sdk_python).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Outscale",
+                "language": "python",
+                "technology": "outscale",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

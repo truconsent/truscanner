@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stylefeng",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cn[.]stylefeng[.]roses).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stylefeng",
+                "language": "java",
+                "technology": "stylefeng",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

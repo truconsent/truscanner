@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Launchdarkly",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]launchdarkly).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Launchdarkly",
+                "language": "java",
+                "technology": "launchdarkly",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

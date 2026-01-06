@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xilinus",
+            "category": "Storage Sink",
+            "patterns": [
+                "typeahead-addresspicker"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xilinus",
+                "language": "javascript",
+                "technology": "xilinus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

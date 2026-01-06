@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sbcglobal",
+            "category": "Storage Sink",
+            "patterns": [
+                "google-flights-wrapper1"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sbcglobal",
+                "language": "javascript",
+                "technology": "sbcglobal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

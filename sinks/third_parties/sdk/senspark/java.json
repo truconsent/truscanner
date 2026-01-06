@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Senspark",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]senspark[.]ee).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Senspark",
+                "language": "java",
+                "technology": "senspark",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

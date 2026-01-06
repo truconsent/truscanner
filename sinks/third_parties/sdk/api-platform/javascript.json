@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Api-platform",
+            "category": "Storage Sink",
+            "patterns": [
+                "@api-platform\\/admin"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Api-platform",
+                "language": "javascript",
+                "technology": "api-platform",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

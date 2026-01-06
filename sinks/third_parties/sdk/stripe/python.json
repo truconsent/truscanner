@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stripe",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*stripe[^/]*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stripe",
+                "language": "python",
+                "technology": "stripe",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

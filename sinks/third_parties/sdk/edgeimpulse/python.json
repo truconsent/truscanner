@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Edgeimpulse",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(edge_impulse_linux).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Edgeimpulse",
+                "language": "python",
+                "technology": "edgeimpulse",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

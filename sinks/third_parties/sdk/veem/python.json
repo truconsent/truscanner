@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Veem",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(veem).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Veem",
+                "language": "python",
+                "technology": "veem",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

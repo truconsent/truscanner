@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Telesign",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(telesign).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Telesign",
+                "language": "python",
+                "technology": "telesign",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

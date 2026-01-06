@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pulumi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(pulumi)(/)(pulumi/sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pulumi",
+                "language": "go",
+                "technology": "pulumi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

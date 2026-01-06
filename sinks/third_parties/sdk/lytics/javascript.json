@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?jstag([.](send|pageView))[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Lytics",
+                "language": "javascript",
+                "technology": "lytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

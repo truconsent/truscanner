@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Plivo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(plivo).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Plivo",
+                "language": "php",
+                "technology": "plivo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

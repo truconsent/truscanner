@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zohocrm",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(zcrmsdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zohocrm",
+                "language": "python",
+                "technology": "zohocrm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

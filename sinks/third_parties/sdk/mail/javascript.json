@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mail",
+            "category": "Storage Sink",
+            "patterns": [
+                "passport-mailru|@idio\\/mailru|cloudmailapi"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mail",
+                "language": "javascript",
+                "technology": "mail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

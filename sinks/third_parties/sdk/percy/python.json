@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Percy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(percy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Percy",
+                "language": "python",
+                "technology": "percy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

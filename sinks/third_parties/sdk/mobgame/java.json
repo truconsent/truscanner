@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mobgame",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mobgame[.]ads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mobgame",
+                "language": "java",
+                "technology": "mobgame",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

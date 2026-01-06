@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Reedjones",
+            "category": "Storage Sink",
+            "patterns": [
+                "@pderas\\/vue2-geocoder"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Reedjones",
+                "language": "javascript",
+                "technology": "reedjones",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

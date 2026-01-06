@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paypal",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]paypal[.]api|com[.]paypal[.]base|com[.]paypal[.]excheckout|com[.]paypal[.]android[.]sdk|com[.]paypal[.]android|com[.]paypal[.]butterfly|com[.]paypal[.]digraph|com[.]paypal[.]mocca|com[.]paypal[.]sdk|com[.]paypal[.]springboot|com[.]paypal).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paypal",
+                "language": "java",
+                "technology": "paypal",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Qcloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]qcloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Qcloud",
+                "language": "java",
+                "technology": "qcloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

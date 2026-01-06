@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trekksoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(trekksoft).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trekksoft",
+                "language": "php",
+                "technology": "trekksoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

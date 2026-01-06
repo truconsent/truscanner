@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mediafire",
+            "category": "Storage Sink",
+            "patterns": [
+                "mediafire|mediafire-link"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mediafire",
+                "language": "javascript",
+                "technology": "mediafire",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

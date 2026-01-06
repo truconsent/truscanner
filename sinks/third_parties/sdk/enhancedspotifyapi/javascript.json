@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Enhancedspotifyapi",
+            "category": "Storage Sink",
+            "patterns": [
+                "enhanced-spotify-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Enhancedspotifyapi",
+                "language": "javascript",
+                "technology": "enhancedspotifyapi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

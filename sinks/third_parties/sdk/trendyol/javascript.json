@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trendyol",
+            "category": "Storage Sink",
+            "patterns": [
+                "@trendyol-js\\/cdn|@trendyol-js\\/safe-redirect|@trendyol\\/gateway.authorization|@trendyol\\/venus-ui-core|@trendyol\\/web-gateway-middleware|@trendyol\\/web-gateway-response|@trendyol\\/web-services|@trendyol\\/sc-ui-kit|@trendyol\\/sc-utils|@trendyol-js\\/grace|@trendyol\\/baklava|@trendyol\\/cookie-helper|@trendyol\\/web-storage-manager|@trendyol\\/web-url-helpers|@trendyol\\/web-utility"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trendyol",
+                "language": "javascript",
+                "technology": "trendyol",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

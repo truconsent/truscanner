@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Esri",
+            "category": "Storage Sink",
+            "patterns": [
+                "@koopjs\\/provider-google-sheets"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Esri",
+                "language": "javascript",
+                "technology": "esri",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

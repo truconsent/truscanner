@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailjet",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(mailjet_rest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailjet",
+                "language": "python",
+                "technology": "mailjet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

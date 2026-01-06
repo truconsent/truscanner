@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Aviatrix",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(aviatrix-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Aviatrix",
+                "language": "python",
+                "technology": "aviatrix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

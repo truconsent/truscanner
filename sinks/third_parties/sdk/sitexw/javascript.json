@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sitexw",
+            "category": "Storage Sink",
+            "patterns": [
+                "blockadblock|fuckadblock"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sitexw",
+                "language": "javascript",
+                "technology": "sitexw",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

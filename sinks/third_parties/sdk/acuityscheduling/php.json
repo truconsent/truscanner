@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Acuityscheduling",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(acuityscheduling).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Acuityscheduling",
+                "language": "php",
+                "technology": "acuityscheduling",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

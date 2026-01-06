@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apache Jenkins",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(bndr)(/)(gojenkins).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apache.Jenkins",
+                "language": "go",
+                "technology": "apache",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

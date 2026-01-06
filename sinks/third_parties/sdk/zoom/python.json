@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zoom",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(zoomconnect_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zoom",
+                "language": "python",
+                "technology": "zoom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Invoiced",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(invoiced.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Invoiced",
+                "language": "php",
+                "technology": "invoiced",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

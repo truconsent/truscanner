@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Softwareallies",
+            "category": "Storage Sink",
+            "patterns": [
+                "cap-livechat-sf"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Softwareallies",
+                "language": "javascript",
+                "technology": "softwareallies",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

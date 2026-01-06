@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yunpian",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]yunpian[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yunpian",
+                "language": "java",
+                "technology": "yunpian",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bugfender",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bugfender[.]sdk|com[.]bugfender[.]upload-mapping|com[.]bugfender).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bugfender",
+                "language": "java",
+                "technology": "bugfender",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

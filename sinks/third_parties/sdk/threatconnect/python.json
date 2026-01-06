@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Threatconnect",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(threatconnect|tcex).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Threatconnect",
+                "language": "python",
+                "technology": "threatconnect",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

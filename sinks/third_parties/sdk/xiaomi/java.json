@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Xiaomi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]xiaomi[.]infra[.]galaxy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Xiaomi",
+                "language": "java",
+                "technology": "xiaomi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

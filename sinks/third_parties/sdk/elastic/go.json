@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Elastic",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(go.elastic.co|gopkg.in|github.com)(/)(apm|olivere/elastic|go-elasticsearch|elastic/go-elasticsearch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Elastic",
+                "language": "go",
+                "technology": "elastic",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

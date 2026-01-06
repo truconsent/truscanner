@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chisnall",
+            "category": "Storage Sink",
+            "patterns": [
+                "x5-gmaps|v3-gmaps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chisnall",
+                "language": "javascript",
+                "technology": "chisnall",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Ibm Cloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "ibm-watson|ibmcloud-appid|@ibm-cloud\\/secrets-manager"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ibm.Cloud",
+                "language": "javascript",
+                "technology": "ibm",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Ibm Github",
+            "category": "Storage Sink",
+            "patterns": [
+                "pipefy-helper"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ibm.Github",
+                "language": "javascript",
+                "technology": "ibm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

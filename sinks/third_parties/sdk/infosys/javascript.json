@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Infosys",
+            "category": "Storage Sink",
+            "patterns": [
+                "jiya"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Infosys",
+                "language": "javascript",
+                "technology": "infosys",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

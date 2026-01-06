@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gmap3",
+            "category": "Storage Sink",
+            "patterns": [
+                "gmap3"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gmap3",
+                "language": "javascript",
+                "technology": "gmap3",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

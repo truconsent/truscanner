@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Casted",
+            "category": "Storage Sink",
+            "patterns": [
+                "casted-gcs-browser-upload"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Casted",
+                "language": "javascript",
+                "technology": "casted",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

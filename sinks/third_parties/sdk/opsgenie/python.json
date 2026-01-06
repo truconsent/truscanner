@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opsgenie",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(opsgenie).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opsgenie",
+                "language": "python",
+                "technology": "opsgenie",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

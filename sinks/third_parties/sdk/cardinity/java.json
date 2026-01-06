@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cardinity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]cardinity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cardinity",
+                "language": "java",
+                "technology": "cardinity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

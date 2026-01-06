@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "CustomerIO",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_cio([.](identify|track|page|))?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.CustomerIO",
+                "language": "javascript",
+                "technology": "customerio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

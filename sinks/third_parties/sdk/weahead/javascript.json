@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Weahead",
+            "category": "Storage Sink",
+            "patterns": [
+                "@bonniernews\\/gcp-push-metrics"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Weahead",
+                "language": "javascript",
+                "technology": "weahead",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

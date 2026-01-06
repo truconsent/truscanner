@@ -1,0 +1,148 @@
+{
+    "sources": [
+        {
+            "name": "Seller ID",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(seller|vendor|merchant)[^\\s]{0,5}(id|code|number)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Provider ID",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(service|provider)[^\\s]{0,5}(id|code|number)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Business Registration",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(business|company|enterprise)[^\\s]{0,5}(registration|licence|certification)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Tax Information",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(tax|gst|vat|tfn)[^\\s]{0,5}(info|details|number)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Product Catalog",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(product|item|catalog|listing)[^\\s]{0,5}(data|info|details)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Service Offerings",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(service|offering|solution)[^\\s]{0,5}(data|info|details)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Performance Metrics",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(performance|metric|score|rating)[^\\w]{1,5}(vendor|seller|service)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Customer Ratings",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(customer|client|user)[^\\s]{0,5}(rating|review|score)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Payout Information",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(payout|payment|remittance)[^\\s]{0,5}(info|details|record)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Commission Structure",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(commission|fee|charge)[^\\s]{0,5}(structure|details|scheme)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Inventory Data",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(inventory|stock|product)[^\\s]{0,5}(data|details|record)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Business Verification Documents",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(business|company)[^\\s]{0,5}(verification|certification|document)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

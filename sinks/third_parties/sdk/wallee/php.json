@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wallee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(wallee.sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wallee",
+                "language": "php",
+                "technology": "wallee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

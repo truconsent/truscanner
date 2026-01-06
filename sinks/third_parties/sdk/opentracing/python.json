@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opentracing",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(opentracing).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opentracing",
+                "language": "python",
+                "technology": "opentracing",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

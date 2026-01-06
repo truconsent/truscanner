@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Agora",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]agora[.]rtc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Agora",
+                "language": "java",
+                "technology": "agora",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

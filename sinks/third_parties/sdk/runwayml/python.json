@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Runwayml",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(runway).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Runwayml",
+                "language": "python",
+                "technology": "runwayml",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

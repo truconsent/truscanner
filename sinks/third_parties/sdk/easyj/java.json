@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Easyj",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(icu[.]easyj[.]sdk|icu[.]easyj).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Easyj",
+                "language": "java",
+                "technology": "easyj",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

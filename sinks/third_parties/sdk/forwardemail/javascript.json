@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Forwardemail",
+            "category": "Storage Sink",
+            "patterns": [
+                "forward-email"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Forwardemail",
+                "language": "javascript",
+                "technology": "forwardemail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

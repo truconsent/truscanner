@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ogury",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(co[.]ogury).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ogury",
+                "language": "java",
+                "technology": "ogury",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

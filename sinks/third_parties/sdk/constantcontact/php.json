@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Constantcontact",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(constantcontact).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Constantcontact",
+                "language": "php",
+                "technology": "constantcontact",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

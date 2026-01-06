@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Firelayer",
+            "category": "Storage Sink",
+            "patterns": [
+                "@firelayer\\/core"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Firelayer",
+                "language": "javascript",
+                "technology": "firelayer",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

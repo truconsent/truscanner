@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Phatthanan",
+            "category": "Storage Sink",
+            "patterns": [
+                "googlefonts"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Phatthanan",
+                "language": "javascript",
+                "technology": "phatthanan",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

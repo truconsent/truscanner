@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Learnosity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(learnositysdk.).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Learnosity",
+                "language": "php",
+                "technology": "learnosity",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

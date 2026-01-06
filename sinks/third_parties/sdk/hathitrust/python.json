@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hathitrust",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(htrc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hathitrust",
+                "language": "python",
+                "technology": "hathitrust",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

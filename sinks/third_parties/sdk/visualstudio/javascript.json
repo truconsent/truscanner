@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Visualstudio Admixer",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-admixer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Visualstudio.Admixer",
+                "language": "javascript",
+                "technology": "visualstudio",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Visualstudio Msazure",
+            "category": "Storage Sink",
+            "patterns": [
+                "@azure\\/media-stream-library|@azure\\/video-analyzer-player"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Visualstudio.Msazure",
+                "language": "javascript",
+                "technology": "visualstudio",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

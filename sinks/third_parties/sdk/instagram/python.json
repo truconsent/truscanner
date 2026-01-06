@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Instagram",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(InstagramAPI|instagram.client|pygram).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Instagram",
+                "language": "python",
+                "technology": "instagram",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

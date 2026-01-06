@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Redirect",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(RedirectPizza).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Redirect",
+                "language": "php",
+                "technology": "redirect",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

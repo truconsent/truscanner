@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Lotame",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]lotame).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Lotame",
+                "language": "java",
+                "technology": "lotame",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

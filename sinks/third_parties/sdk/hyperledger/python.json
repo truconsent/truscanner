@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hyperledger",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(hyperledger).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hyperledger",
+                "language": "python",
+                "technology": "hyperledger",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

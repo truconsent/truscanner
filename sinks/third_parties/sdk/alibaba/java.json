@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alibaba",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]alibaba[.]ans|com[.]alibaba[.]cloud|com[.]alibaba[.]csp|com[.]alibaba[.]edas[.]acm|com[.]alibaba[.]nls).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alibaba",
+                "language": "java",
+                "technology": "alibaba",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

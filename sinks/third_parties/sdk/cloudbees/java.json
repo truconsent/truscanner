@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudbees",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]cloudbees[.]thirdparty).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudbees",
+                "language": "java",
+                "technology": "cloudbees",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

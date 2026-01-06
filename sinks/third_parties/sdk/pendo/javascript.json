@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Pendo",
+            "category": "Storage Sink",
+            "patterns": [
+                "rn-pendo-sdk|ngx-pendo"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pendo",
+                "language": "javascript",
+                "technology": "pendo",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Pendo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?(pendo)([.]initialize|track)?[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Pendo",
+                "language": "javascript",
+                "technology": "pendo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

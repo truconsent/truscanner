@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appnexus",
+            "category": "Storage Sink",
+            "patterns": [
+                "anx-api|adnxs-api|@schibstedspain\\/ast|@segment\\/analytics.js-integration-appnexus|appnexus-node-api|appnexus-api|@schibstedspain\\/openads-appnexus-prebid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appnexus",
+                "language": "javascript",
+                "technology": "appnexus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

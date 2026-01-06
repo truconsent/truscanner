@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Meilisearch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(meilisearch).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Meilisearch",
+                "language": "python",
+                "technology": "meilisearch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

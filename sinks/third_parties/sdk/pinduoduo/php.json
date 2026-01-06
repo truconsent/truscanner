@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pinduoduo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(pinduoduo|DuoDuoKe|Pdd.Application|Pdd.ServiceProvider|PddDdkGoodsDetailRequest).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pinduoduo",
+                "language": "php",
+                "technology": "pinduoduo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

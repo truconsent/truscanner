@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blocktrail",
+            "category": "Storage Sink",
+            "patterns": [
+                "blocktrail-sdk|blocktrail-sdk-backup-generator|blocktrail-sdk-proxy"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blocktrail",
+                "language": "javascript",
+                "technology": "blocktrail",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

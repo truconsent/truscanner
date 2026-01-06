@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bazaarvoice",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(python_hmac_auth).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bazaarvoice",
+                "language": "python",
+                "technology": "bazaarvoice",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

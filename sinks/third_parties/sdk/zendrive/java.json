@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Zendrive",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]zendrive[.]sdk[.]android[.]support|com[.]zendrive[.]sdk[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Zendrive",
+                "language": "java",
+                "technology": "zendrive",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Liveintent",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(liveintent).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Liveintent",
+                "language": "php",
+                "technology": "liveintent",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

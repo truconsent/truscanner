@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Splitmedialabs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@splitmedialabs\\/pubsub-queue"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Splitmedialabs",
+                "language": "javascript",
+                "technology": "splitmedialabs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

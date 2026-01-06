@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chartboost",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-chartboost|cordova-plugin-ad-chartboost|chadori-mobile-ironsource-chartboost|@wowmaking\\/react-native-iron-source-chartboost|cocoon-plugin-ads-ios-heyzap-adcolony"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chartboost",
+                "language": "javascript",
+                "technology": "chartboost",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

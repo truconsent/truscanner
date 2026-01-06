@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yandex",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com)(/)(yandex-cloud)(/)(go-sdk|ydb-go-sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yandex",
+                "language": "go",
+                "technology": "yandex",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

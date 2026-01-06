@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Altbeacon",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]altbeacon).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Altbeacon",
+                "language": "java",
+                "technology": "altbeacon",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

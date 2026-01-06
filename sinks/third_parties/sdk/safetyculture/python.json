@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Safetyculture",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(safetypy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Safetyculture",
+                "language": "python",
+                "technology": "safetyculture",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

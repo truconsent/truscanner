@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Seafile",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(seafile).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Seafile",
+                "language": "php",
+                "technology": "seafile",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Unisender",
+            "category": "Storage Sink",
+            "patterns": [
+                "nodemailer-unione-transport"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Unisender",
+                "language": "javascript",
+                "technology": "unisender",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

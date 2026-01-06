@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Diem",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(diem).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Diem",
+                "language": "python",
+                "technology": "diem",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

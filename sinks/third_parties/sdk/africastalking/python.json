@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Africastalking",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(africastalking).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Africastalking",
+                "language": "python",
+                "technology": "africastalking",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

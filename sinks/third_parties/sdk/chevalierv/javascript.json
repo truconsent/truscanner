@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chevalierv",
+            "category": "Storage Sink",
+            "patterns": [
+                "@oneroomic\\/facecognitivelibrary"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chevalierv",
+                "language": "javascript",
+                "technology": "chevalierv",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

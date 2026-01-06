@@ -1,0 +1,214 @@
+{
+    "sources": [
+        {
+            "name": "Google",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.auth|google.client|google.service|google.apicore).*",
+                "(?i)(google.cloud|gtfs.sdk|armonia.google|apigee.client|google.ReCaptcha).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ivory.googlemap).*",
+                "(?i).*(googlemaps|GoogleMapsServiceProvider).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Maps",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Firebase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(firebase).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Firebase",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.analytics|spatie.analytics|.*googleanalytics.analytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Analytics",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud AI Platform",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.aiplatform).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.AIPlatform",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Admob",
+            "category": "Storage Sink",
+            "patterns": [
+                ".*(LaravelAdmobSsv.AdMob).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Admob",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Tag Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(googletagmanager).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.TagManager",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.storage).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Storage",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Pub/Sub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.pubsub).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Pubsub",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Datastore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.Datastore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Datastore",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Firestore",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.firestore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Firestore",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud BigQuery",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.BigQuery).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.BigQuery",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Translation",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.MediaTranslation).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Translation",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Speech-to-Text",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.Speech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.SpeechToText",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Text-to-Speech",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(google.cloud.TextToSpeech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.TextToSpeech",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Google Cloud Vision",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Google.Cloud.vision).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Google.Cloud.Vision",
+                "language": "php",
+                "technology": "google",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

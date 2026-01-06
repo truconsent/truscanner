@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tecton",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tecton).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tecton",
+                "language": "python",
+                "technology": "tecton",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

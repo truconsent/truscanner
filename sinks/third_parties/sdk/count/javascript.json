@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Count",
+            "category": "Storage Sink",
+            "patterns": [
+                "countly-sdk-react-native-bridge|countly-sdk-web|countly-sdk-nodejs|countly-sdk-web-cip|vue-countly|cordova-plugin-countly|@marcdiethelm\\/nuxtjs-countly"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Count",
+                "language": "javascript",
+                "technology": "count",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

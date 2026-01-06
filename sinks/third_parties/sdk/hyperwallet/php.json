@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hyperwallet",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(hyperwallet).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hyperwallet",
+                "language": "php",
+                "technology": "hyperwallet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

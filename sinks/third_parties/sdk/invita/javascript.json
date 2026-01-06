@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Invita",
+            "category": "Storage Sink",
+            "patterns": [
+                "@junaga\\/tts"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Invita",
+                "language": "javascript",
+                "technology": "invita",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

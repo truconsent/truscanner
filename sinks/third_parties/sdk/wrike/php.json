@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wrike",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(wrike.client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wrike",
+                "language": "php",
+                "technology": "wrike",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

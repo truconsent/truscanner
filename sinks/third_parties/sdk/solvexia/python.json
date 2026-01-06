@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Solvexia",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(solvexia_sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Solvexia",
+                "language": "python",
+                "technology": "solvexia",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

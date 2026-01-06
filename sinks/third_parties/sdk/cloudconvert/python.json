@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cloudconvert",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloudconvert).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cloudconvert",
+                "language": "python",
+                "technology": "cloudconvert",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

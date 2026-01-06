@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Itprosolutions",
+            "category": "Storage Sink",
+            "patterns": [
+                "aurelia-plugins-google-maps"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Itprosolutions",
+                "language": "javascript",
+                "technology": "itprosolutions",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

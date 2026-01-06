@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paddle Pay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(paddle_pay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paddle_Pay",
+                "language": "ruby",
+                "technology": "paddle",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

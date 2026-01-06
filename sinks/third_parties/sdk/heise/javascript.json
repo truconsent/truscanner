@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Heise",
+            "category": "Storage Sink",
+            "patterns": [
+                "@heise\\/embetty-base"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Heise",
+                "language": "javascript",
+                "technology": "heise",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

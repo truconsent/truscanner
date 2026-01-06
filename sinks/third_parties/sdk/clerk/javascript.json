@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Clerk",
+            "category": "Storage Sink",
+            "patterns": [
+                "@clerk\\/clerk-expo|@clerk\\/clerk-sdk-node"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Clerk",
+                "language": "javascript",
+                "technology": "clerk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

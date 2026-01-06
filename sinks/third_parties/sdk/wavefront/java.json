@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wavefront",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]wavefront).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wavefront",
+                "language": "java",
+                "technology": "wavefront",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sparshik",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sparshik).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sparshik",
+                "language": "python",
+                "technology": "sparshik",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

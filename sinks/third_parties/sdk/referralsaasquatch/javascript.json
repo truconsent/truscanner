@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Referralsaasquatch",
+            "category": "Storage Sink",
+            "patterns": [
+                "@samsquatch\\/raygun4js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Referralsaasquatch",
+                "language": "javascript",
+                "technology": "referralsaasquatch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

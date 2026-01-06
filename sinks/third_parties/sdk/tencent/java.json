@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tencent",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tencent[.]mm[.]opensdk|com[.]tencentcloudapi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tencent",
+                "language": "java",
+                "technology": "tencent",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

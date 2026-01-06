@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Backtrader",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(backtrader).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Backtrader",
+                "language": "python",
+                "technology": "backtrader",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

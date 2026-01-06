@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Discord",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(discord|twitchAPI).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Discord",
+                "language": "python",
+                "technology": "discord",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

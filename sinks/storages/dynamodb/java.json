@@ -1,0 +1,45 @@
+{
+    "sources": [
+        {
+            "name": "Amazon Dynamo DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(DynamoDbClient|DynamoDbResponse).*",
+                "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchE|e)xecuteStatement|executeTransaction)[:].*)))"
+            ],
+            "tags": {
+                "id": "Storages.AmazonDynamoDB.ReadAndWrite",
+                "language": "java",
+                "technology": "dynamodb",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon Dynamo DB(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync|document[.]Table)[.]((batchG|g)etItem|query|scan|transactGetItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchLoad|load|parallelScan|query|queryPage|scan|scanPage|transactionLoad)[:].*))"
+            ],
+            "tags": {
+                "id": "Storages.AmazonDynamoDB.Read",
+                "language": "java",
+                "technology": "dynamodb",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon Dynamo DB(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync|document[.]Table)[.]((batchWrite|delete|put|update)Item|transactWriteItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchWrite|delete|save|transactionWrite)[:].*))",
+                "org.apache.flink.connector.dynamodb.sink.DynamoDbSink.builder.*"
+            ],
+            "tags": {
+                "id": "Storages.AmazonDynamoDB.Write",
+                "language": "java",
+                "technology": "dynamodb",
+                "type": "Database"
+            }
+        }
+    ]
+}

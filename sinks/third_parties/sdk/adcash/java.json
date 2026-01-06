@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Adcash",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]adcash).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Adcash",
+                "language": "java",
+                "technology": "adcash",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

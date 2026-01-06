@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Hypertrack",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]hypertrack).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Hypertrack",
+                "language": "java",
+                "technology": "hypertrack",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

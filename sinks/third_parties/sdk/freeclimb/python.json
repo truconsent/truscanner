@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Freeclimb",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(freeclimb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Freeclimb",
+                "language": "python",
+                "technology": "freeclimb",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

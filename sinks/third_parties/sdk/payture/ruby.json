@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payture",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(payture-cheques).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payture",
+                "language": "ruby",
+                "technology": "payture",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

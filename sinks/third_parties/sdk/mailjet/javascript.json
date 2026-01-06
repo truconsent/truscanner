@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mailjet",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-mailjet"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mailjet",
+                "language": "javascript",
+                "technology": "mailjet",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Openback Docs",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-openback"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Openback.Docs",
+                "language": "javascript",
+                "technology": "openback",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

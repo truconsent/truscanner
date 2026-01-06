@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Amazon S3(Read)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:get|list|head|select).*"
+            ],
+            "tags": {
+                "id": "Storages.AmazonS3.Read",
+                "language": "java",
+                "technology": "amazonS3",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Amazon S3(Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:abortMultipartUpload|completeMultipartUpload|copy|create|delete|put|uploadPart).*"
+            ],
+            "tags": {
+                "id": "Storages.AmazonS3.Write",
+                "language": "java",
+                "technology": "amazonS3",
+                "type": "Database"
+            }
+        }
+    ]
+}

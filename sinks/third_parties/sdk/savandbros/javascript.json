@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Savandbros Chatminal",
+            "category": "Storage Sink",
+            "patterns": [
+                "chatminal"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Savandbros.Chatminal",
+                "language": "javascript",
+                "technology": "savandbros",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

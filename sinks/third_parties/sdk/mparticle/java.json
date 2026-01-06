@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mparticle",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mparticle|ly[.]iterative[.]mparticle).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mparticle",
+                "language": "java",
+                "technology": "mparticle",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Storify",
+            "category": "Storage Sink",
+            "patterns": [
+                "sgrid"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Storify",
+                "language": "javascript",
+                "technology": "storify",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

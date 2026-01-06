@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Modzy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(modzy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Modzy",
+                "language": "python",
+                "technology": "modzy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dezinezync",
+            "category": "Storage Sink",
+            "patterns": [
+                "razornode"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dezinezync",
+                "language": "javascript",
+                "technology": "dezinezync",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

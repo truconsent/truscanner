@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Stenciljs",
+            "category": "Storage Sink",
+            "patterns": [
+                "@stencil\\/core"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Stenciljs",
+                "language": "javascript",
+                "technology": "stenciljs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

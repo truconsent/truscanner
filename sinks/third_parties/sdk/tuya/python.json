@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tuya",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(tuya_iot|tuya_connector).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tuya",
+                "language": "python",
+                "technology": "tuya",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

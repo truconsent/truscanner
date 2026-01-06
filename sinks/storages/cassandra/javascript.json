@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apache Cassandra",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?:cassandra-|.*express-cassandra|cql-(builder|tx|client|protocol)|@sematext/logagent|bronze|cassanknex|polyclay|kairosdb|dodex-quarkus|scylla-migration|@hawkular/hawkinit|cassanova|@nano-sql/adapter-scylla|restbase-mod-table-spec|nicelogic-cassandra|dodex-akka|raksix-cassandra|wait-for-cassandra|slf4ts-cassandra-log-adapter|aedes-persistence-cassandra|cassandrom|node-cassandra-querybuilder|seguir-server|wvbotelho-cassandra-repository|promised-cassandra|cqlify|gun-cassandra|polyclay-cassandra|@skbkontur/cassandra-distributed-task-queue-ui|@skbkontur/db-viewer-ui|@casual-simulation/causal-tree-store-cassandradb|@guejs/adonisjs-cassandra|loopback-connector-cassandra-ipc|http-cache-cassandra|db-migrate-cassandra|com-github-lucasrpb-drivers-cassandra|seguir-express-middleware|db-migrate-cql|db-migrate-cassandra-versett|connect-cassandra|gopass-to-devcenter-connections|wages-ws|nestjs-cassandra|@wikimedia/kartotherian-cassandra|scyllo|generator-pywork|2lemetry|loopback-connector-cassandra-modify|yb-ycql-driver|elasticwatch|node-red-contrib-connectionmanager|aws-sigv4-auth-cassandra-plugin|@ridi/cql-builder|@ezsper/cql|mixdown-cql|@femiwiki/restbase|mrx-cassandra-driver|node-cassandra-cql|@kartotherian/cassandra|create-astradb-app|falsetto|restbase-mod-table-cassandra|@cassandrakeddis/lotide|@mediahubmx/cassandra-cache|@mediaurl/cassandra-cache|yugabyte|restbase-cassandra|osh-cassandra|@nielskrijger/cassandra|imicros-keys|@opentelemetry/instrumentation-cassandra-driver|@aws-cdk/aws-cassandra|@vertx/cassandra-client|imergo-persistence|castor-client|fs-cassandra-lib|artisan-cassandra-orm|feathers-cassandra|dakota-cassandra|sails-cassandra|cassankub).*"
+            ],
+            "tags": {
+                "id": "Storages.ApacheCassandra.ReadAndWrite",
+                "language": "javascript",
+                "technology": "cassandra",
+                "type": "Database"
+            }
+        }
+    ]
+}

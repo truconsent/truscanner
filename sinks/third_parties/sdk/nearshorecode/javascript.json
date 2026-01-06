@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Nearshorecode",
+            "category": "Storage Sink",
+            "patterns": [
+                "mt_ecommerce"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Nearshorecode",
+                "language": "javascript",
+                "technology": "nearshorecode",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

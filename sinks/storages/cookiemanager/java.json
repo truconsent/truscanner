@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "name": "Android Cookie Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(android.webkit.CookieManager.setCookie)(.*)"
+            ],
+            "tags": {
+                "id": "Storages.Android.CookieManager",
+                "language": "java",
+                "technology": "cookiemanager",
+                "law": "GDPR",
+                "type": "Database"
+            }
+        }
+    ]
+}

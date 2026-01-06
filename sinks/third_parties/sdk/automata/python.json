@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Automata",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(evasdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Automata",
+                "language": "python",
+                "technology": "automata",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

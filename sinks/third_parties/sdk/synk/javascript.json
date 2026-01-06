@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Synk",
+            "category": "Storage Sink",
+            "patterns": [
+                "snyk|backstage-plugin-snyk"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Synk",
+                "language": "javascript",
+                "technology": "synk",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

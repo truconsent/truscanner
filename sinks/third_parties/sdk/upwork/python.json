@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Upwork",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(upwork|odesk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Upwork",
+                "language": "python",
+                "technology": "upwork",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

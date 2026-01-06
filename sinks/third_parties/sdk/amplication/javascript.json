@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Amplication",
+            "category": "Storage Sink",
+            "patterns": [
+                "ra-data-graphql-amplication"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Amplication",
+                "language": "javascript",
+                "technology": "amplication",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

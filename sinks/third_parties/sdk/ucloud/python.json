@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ucloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(ucloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ucloud",
+                "language": "python",
+                "technology": "ucloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

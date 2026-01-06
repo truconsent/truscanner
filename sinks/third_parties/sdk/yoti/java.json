@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yoti",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]yoti[.]mobile[.]android[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yoti",
+                "language": "java",
+                "technology": "yoti",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

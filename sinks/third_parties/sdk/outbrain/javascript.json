@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Outbrain",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-outbrain-widget|react-tracking-outbrain|gatsby-plugin-outbrain"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Outbrain",
+                "language": "javascript",
+                "technology": "outbrain",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

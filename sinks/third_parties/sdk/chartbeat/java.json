@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chartbeat",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]chartbeat).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chartbeat",
+                "language": "java",
+                "technology": "chartbeat",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

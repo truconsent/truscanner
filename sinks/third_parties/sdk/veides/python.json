@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Veides",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(veides).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Veides",
+                "language": "python",
+                "technology": "veides",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

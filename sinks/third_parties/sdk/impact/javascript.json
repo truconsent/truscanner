@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Impact",
+            "category": "Storage Sink",
+            "patterns": [
+                ".*(ire)[(].(identify|generate|track).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Impact",
+                "language": "javascript",
+                "technology": "impact",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

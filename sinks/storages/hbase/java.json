@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apache HBase",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*org[.]apache[.]hadoop[.]hbase[.].*"
+            ],
+            "tags": {
+                "id": "Storages.ApacheHBase.ReadAndWrite",
+                "language": "java",
+                "technology": "hbase",
+                "type": "Database"
+            }
+        }
+    ]
+}

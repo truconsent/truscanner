@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wizdm",
+            "category": "Storage Sink",
+            "patterns": [
+                "@wizdm\\/stripe|@wizdm\\/paypal"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wizdm",
+                "language": "javascript",
+                "technology": "wizdm",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "ActiveCampaign",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?vgo[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.ActiveCampaign",
+                "language": "javascript",
+                "technology": "activecampaign",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

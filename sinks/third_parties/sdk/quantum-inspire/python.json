@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Quantum-inspire",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(quantuminspire).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Quantum-inspire",
+                "language": "python",
+                "technology": "quantum-inspire",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

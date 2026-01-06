@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Paubox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(paubox).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Paubox",
+                "language": "python",
+                "technology": "paubox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

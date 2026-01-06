@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Imaware",
+            "category": "Storage Sink",
+            "patterns": [
+                "@imaware\\/gcp-function"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Imaware",
+                "language": "javascript",
+                "technology": "imaware",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Payumoney",
+            "category": "Storage Sink",
+            "patterns": [
+                "payumoney|payumoney_nodejs|react-native-payumoney-getway|payumoney-pay|payumoney-shakey"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Payumoney",
+                "language": "javascript",
+                "technology": "payumoney",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bol",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bolplazaclient|bolplazasdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bol",
+                "language": "php",
+                "technology": "bol",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

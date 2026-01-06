@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Infonline",
+            "category": "Storage Sink",
+            "patterns": [
+                "vigour-infonline"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Infonline",
+                "language": "javascript",
+                "technology": "infonline",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Pertino",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(pertinosdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pertino",
+                "language": "python",
+                "technology": "pertino",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Prestodb(ReadAndWrite)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(github.com/prestodb/presto-go-client/presto).*(Query)"
+            ],
+            "tags": {
+                "id": "Storages.Prestodb.ReadAndWrite",
+                "language": "go",
+                "technology": "prestodb",
+                "type": "Database"
+            }
+        }
+    ]
+}

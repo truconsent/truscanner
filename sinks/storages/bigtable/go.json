@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Google Cloud Bigtable",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(cloud.google.com/go/bigtable).*(Apply|ReadRow)"
+            ],
+            "tags": {
+                "id": "Storages.CloudBigtable.ReadAndWrite",
+                "language": "go",
+                "technology": "bigtable",
+                "type": "Database"
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Kissmetrics",
+            "category": "Storage Sink",
+            "patterns": [
+                "@okgrow\\/auto-analytics|kissmetrics-js|kissmymetrics|kissmetrics-export|simple-node-kissmetrics|tracktics"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Kissmetrics",
+                "language": "javascript",
+                "technology": "kissmetrics",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Kissmetrics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(.*[.])?_kmq([.]push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Pixel.Kissmetrics",
+                "language": "javascript",
+                "technology": "kissmetrics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

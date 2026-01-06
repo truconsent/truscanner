@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Matomo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]matomo[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Matomo",
+                "language": "java",
+                "technology": "matomo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

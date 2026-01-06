@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Gitlab",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]gitlab4j[.]api).{0,30}Api.*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Gitlab",
+                "language": "java",
+                "technology": "gitlab",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

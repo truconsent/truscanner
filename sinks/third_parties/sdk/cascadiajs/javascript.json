@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Cascadiajs 2021",
+            "category": "Storage Sink",
+            "patterns": [
+                "@cascadiajs\\/discord-mirror"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Cascadiajs.2021",
+                "language": "javascript",
+                "technology": "cascadiajs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

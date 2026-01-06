@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Alibabacloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Aliyun[.]OSS[.]SDK[.]NetCore).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Alibabacloud",
+                "language": "csharp",
+                "technology": "alibabacloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

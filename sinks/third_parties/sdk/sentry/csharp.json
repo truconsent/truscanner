@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Sentry",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(Sentry).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Sentry",
+                "language": "csharp",
+                "technology": "sentry",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

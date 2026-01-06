@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vapulus",
+            "category": "Storage Sink",
+            "patterns": [
+                "vapulus-hashing-pkg"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vapulus",
+                "language": "javascript",
+                "technology": "vapulus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

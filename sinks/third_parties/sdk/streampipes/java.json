@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Streampipes",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(org[.]streampipes).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Streampipes",
+                "language": "java",
+                "technology": "streampipes",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

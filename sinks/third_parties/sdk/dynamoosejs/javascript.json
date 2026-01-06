@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dynamoosejs",
+            "category": "Storage Sink",
+            "patterns": [
+                "dynamoose|dynamoose-utils|dynamoose-logger"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dynamoosejs",
+                "language": "javascript",
+                "technology": "dynamoosejs",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Didomi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]didomi[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Didomi",
+                "language": "java",
+                "technology": "didomi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

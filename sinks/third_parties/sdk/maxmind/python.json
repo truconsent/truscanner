@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Maxmind",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(geolite2|geoip2).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Maxmind",
+                "language": "python",
+                "technology": "maxmind",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

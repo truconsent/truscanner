@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitgo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(bitgosdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitgo",
+                "language": "php",
+                "technology": "bitgo",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Tapjoy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]tapjoy).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Tapjoy",
+                "language": "java",
+                "technology": "tapjoy",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

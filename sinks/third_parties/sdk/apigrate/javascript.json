@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Apigrate",
+            "category": "Storage Sink",
+            "patterns": [
+                "@apigrate\\/googleapis"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Apigrate",
+                "language": "javascript",
+                "technology": "apigrate",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

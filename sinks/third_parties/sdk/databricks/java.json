@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Databricks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]databricks[.]labs|com[.]databricks|com[.]edmunds[.]databricks|com[.]github[.]databricks|databricks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Databricks",
+                "language": "java",
+                "technology": "databricks",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

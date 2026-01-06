@@ -1,0 +1,878 @@
+{
+    "sources": [
+        {
+            "name": "Microsoft",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(k4a|msal_extensions|dapr|onedrivesdk|asposecellscloud|adal|msoffcrypto_tool|office365.).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Authentication",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(msal.*(ConfidentialClientApplication|PublicClientApplication)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Authentication",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(airflow.providers.microsoft.*azure|aioazuredevops|azuresdkoplib|msrestazure).*",
+                "(?i)(azure.(core|common|kusto.data|batch|servicebus|devtools|template|loganalytics|nspkg|graphrbac)).*",
+                "(?i)(azure.mgmt.(regionmove|managementpartner|labservices|managedservices|serialconsole|automation|customproviders|redhatopenshift|automanage|commerce|azurestack|machinelearningservices|resourcemover|agfood|desktopvirtualization|agrifood|changeanalysis|confidentialledger|dataprotection|resourceconnector|resourcehealth|guestconfig|fluidrelay|connectedvmware|costmanagement|sql|subscription|servicefabric|core|managementgroups|trafficmanager|authorization|cdn|logic|resourcegraph|advisor|resource|batch|apimanagement|containerregistry|rdbms|msi|hdinsight|containerinstance|frontdoor|nspkg|security|web|redis)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Micosoft Excel",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(xlrd).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Micosoft.Excel",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure IoT-Hub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.(iothub|iot.deviceupdate)|azure.mgmt.(iothub|iot.deviceupdate)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.IoT-Hub",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Dynamics 365",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.dynamics|azure.mgmt.dynamics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Dynamics365",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Logz",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.mgmt.logz).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Logz",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Datadog",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.mgmt.datadog).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Datadog",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Securityinsight",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.securityinsight|azure.mgmt.securityinsight).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Securityinsight",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Functions",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.functions|azure.mgmt.functions).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Functions",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Android",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Android",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Application Insights",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*applicationinsights).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ApplicationInsights",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure App Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*appservice).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.AppService",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Compute",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.compute|azure.mgmt.compute).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Compute",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Container Service",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.containerservice|azure.mgmt.containerservice).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ContainerService",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure DNS",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.(dns|privatedns)|azure.mgmt.(dns|privatedns)).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DNS",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Healthcare",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.healthcareapis).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Healthcare",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Monitor",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.(monitor|synapse.monitoring)|azure.*mgmt.*monitor).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Monitor",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Network",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.network|azure.mgmt.network).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Network",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Operations Management",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*operationsmanagement).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.OperationsManagement",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Policy",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.policyinsights).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Policy",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Backup",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*recoveryservicessiterecovery).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Backup",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Resource Health",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*resourcehealth).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ResourceHealth",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Resource Manager",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*resources).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ResourceManager",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure IoT",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*sdk.iot).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.IoT",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure IoT Device Provisioning",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*sdk.iot.provisioning).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.IoTDeviceProvisioning",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Spatial Anchors",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*spatialanchors).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.SpatialAnchors",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Bing Ads",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(bingads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.BingAds",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Windows",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(windowsazure).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Windows",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Cognitive Services Speech",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.cognitiveservices.speech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CognitiveServicesSpeech",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Graph",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(microsoftgraph.*client|msal|msgraph_core).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Graph",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Event Hubs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*eventhub).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Eventhubs",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Stream Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*streamanalytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.StreamAnalytics",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Factory",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*datafactory).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataFactory",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Lake Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*datalake.*store).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataLakeStorage",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Cognitive Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*cognitiveservices|azure.*ai.cognitiveservices).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CognitiveServices",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure SQL Database",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*cosmosdb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.SQLDatabase",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Blob Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*storage.*blob).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.BlobStorage",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Key Vault",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.keyvault|azure.mgmt.keyvault).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.KeyVault",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Cosmos DB",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.cosmos|azure.cosmosdb.nspkg|azure.cosmosdb.table|azure.mgmt.cosmosdb).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CosmosDB",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Cosmos DB Table",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*data.table).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CosmosDBTable",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Search",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*search).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Search",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Machine Learning",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.ai.ml|azure.mgmt.machinelearningservices).*",
+                "(?i)(azure.*ai.metricsadvisor).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.MachineLearning",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Media Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*mediaservices).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.MediaServices",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Identity",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*identity).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Identity",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Storage",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.mgmt.storageimportexport|azure.storage.file|azure.storage.common|azure.storage.blob|azure.mgmt.storage|azure.storage.queue).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Storage",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure IoT Hub",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*sdk.iot).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.IoTHub",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Datalake",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.datalake.nspkg|azure.mgmt.datalake.nspkg).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Datalake",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Data Lake Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*datalake.analytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.DataLakeAnalytics",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Event Grid",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*eventgrid).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.EventGrid",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Personalizer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.cognitiveservices.personalizer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Personalizer",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Face",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.face).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Face",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Computer Vision",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.vision.computervision).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.ComputerVision",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Text Analytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.textanalytics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.TextAnalytics",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Communication Services",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*communication).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.CommunicationServices",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Speech",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.speech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Speech",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Language Understanding",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.language).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.LanguageUnderstanding",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Text-to-Speech",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*ai.texttospeech).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.TexttoSpeech",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Bot Framework",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*bot).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.BotFramework",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Personal Data",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*personalization).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.PersonalData",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Power BI",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*powerbi).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.PowerBI",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Dynamics 365",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*dynamics).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Dynamics365",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Power Platform",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*powerplatform).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.PowerPlatform",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Power Apps",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*powerapps).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.PowerApps",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Databricks",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.databricks|azure.mgmt.databricks).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.Databricks",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Time Series Insights",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*timeseriesinsights).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.TimeSeriesInsights",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Microsoft Azure Notification Hubs",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(azure.*notificationhubs).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Microsoft.Azure.NotificationHubs",
+                "language": "python",
+                "technology": "microsoft",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

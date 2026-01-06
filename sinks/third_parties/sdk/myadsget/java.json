@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Myadsget",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]myadsget).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Myadsget",
+                "language": "java",
+                "technology": "myadsget",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

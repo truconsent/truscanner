@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Linkedin",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]linkedin[.]zoie|com[.]echobox[.]api[.]linkedin).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Linkedin",
+                "language": "java",
+                "technology": "linkedin",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

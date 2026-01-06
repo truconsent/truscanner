@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Verve",
+            "category": "Storage Sink",
+            "patterns": [
+                "JamSwitch|generator-devling"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Verve",
+                "language": "javascript",
+                "technology": "verve",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

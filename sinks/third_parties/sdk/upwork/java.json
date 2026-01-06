@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Upwork",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]Upwork).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Upwork",
+                "language": "java",
+                "technology": "upwork",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

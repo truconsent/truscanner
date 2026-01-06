@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bgn",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]bgnmobi[.]anrtracker|com[.]bgnmobi[.]easyfeedback|com[.]bgnmobi[.]sdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bgn",
+                "language": "java",
+                "technology": "bgn",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

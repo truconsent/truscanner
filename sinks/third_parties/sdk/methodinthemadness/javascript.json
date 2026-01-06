@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Methodinthemadness",
+            "category": "Storage Sink",
+            "patterns": [
+                "@mitm\\/email"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Methodinthemadness",
+                "language": "javascript",
+                "technology": "methodinthemadness",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

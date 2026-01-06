@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Appload",
+            "category": "Storage Sink",
+            "patterns": [
+                "opentelemetry-cloud-functions"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Appload",
+                "language": "javascript",
+                "technology": "appload",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

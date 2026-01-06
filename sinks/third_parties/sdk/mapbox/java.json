@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Mapbox",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]mapbox[.]mapboxsdk|com[.]wdtinc).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Mapbox",
+                "language": "java",
+                "technology": "mapbox",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

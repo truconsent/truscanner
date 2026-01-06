@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Branch",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(io[.]branch[.]sdk[.]android).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Branch",
+                "language": "java",
+                "technology": "branch",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

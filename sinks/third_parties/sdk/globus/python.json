@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Globus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(globus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Globus",
+                "language": "python",
+                "technology": "globus",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

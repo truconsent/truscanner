@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Trustar",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(trustar).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Trustar",
+                "language": "python",
+                "technology": "trustar",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

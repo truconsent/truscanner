@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yumimobi",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]yumimobi[.]ads[.]mediation|com[.]yumimobi[.]ads[.]thirdparty|com[.]yumimobi[.]ads).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yumimobi",
+                "language": "java",
+                "technology": "yumimobi",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

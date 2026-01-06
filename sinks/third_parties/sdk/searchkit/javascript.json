@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Searchkit",
+            "category": "Storage Sink",
+            "patterns": [
+                "@searchkit\\/elastic-ui"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Searchkit",
+                "language": "javascript",
+                "technology": "searchkit",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

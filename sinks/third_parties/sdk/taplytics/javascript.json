@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Taplytics",
+            "category": "Storage Sink",
+            "patterns": [
+                "taplytics-react-native"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Taplytics",
+                "language": "javascript",
+                "technology": "taplytics",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

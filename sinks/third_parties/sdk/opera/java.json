@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Opera",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(com[.]opera).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Opera",
+                "language": "java",
+                "technology": "opera",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

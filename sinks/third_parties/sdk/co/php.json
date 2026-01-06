@@ -1,0 +1,95 @@
+{
+    "sources": [
+        {
+            "name": "Co Freee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(freee.accounting).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Freee",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Textmarketer",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(textmarketer).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Textmarketer",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Opayo",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(sagepay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Opayo",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Kaskus",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(kaskus).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Kaskus",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Payment-assist",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(paymentassist).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Payment-assist",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Fastsms",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(fastsms).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Fastsms",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Co Skyscanner",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(skyscanner).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Co.Skyscanner",
+                "language": "php",
+                "technology": "co",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

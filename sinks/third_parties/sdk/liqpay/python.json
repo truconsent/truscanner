@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Liqpay",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(liqpay).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Liqpay",
+                "language": "python",
+                "technology": "liqpay",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

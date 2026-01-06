@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Vanlatum",
+            "category": "Storage Sink",
+            "patterns": [
+                "ghost-gcs"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Vanlatum",
+                "language": "javascript",
+                "technology": "vanlatum",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

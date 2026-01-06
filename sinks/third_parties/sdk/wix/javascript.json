@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Wix",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-new-relic-logger|react-native-newrelic"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Wix",
+                "language": "javascript",
+                "technology": "wix",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

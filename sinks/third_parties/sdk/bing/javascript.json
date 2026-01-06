@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Bing",
+            "category": "Storage Sink",
+            "patterns": [
+                "@translate-tools\\/core|node-bing-api|bing.search|bing-translate-api|wonderful-bing-wallpaper|bing-spell-checker|simple-bing-geocoder|bing-translate-result|bing-image-search-api-scraper|ping_bing|hpsweb-bingmaps-distance|scorebing-api|bing-elevation|bingtranslator"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bing",
+                "language": "javascript",
+                "technology": "bing",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Bing",
+            "category": "Storage Sink",
+            "patterns": [
+                ".*(bing[a-zA-Z0-9_]{0,25}|uetq)[.](push)[(].*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Script.Bing",
+                "language": "javascript",
+                "technology": "bing",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

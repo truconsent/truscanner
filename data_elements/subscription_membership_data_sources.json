@@ -1,0 +1,148 @@
+{
+    "sources": [
+        {
+            "name": "Subscription Plans",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(subscription|plan)[^\\s]{0,5}(type|name|details)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Billing Cycle",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbilling[^\\s]{0,5}(cycle|period|frequency)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Subscription History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bsubscription[^\\s]{0,5}(history|record|timeline)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Membership Tier",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\b(membership|loyalty)[^\\s]{0,5}(tier|level|status)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Renewal Dates",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\brenewal[^\\s]{0,5}(date|time|schedule)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Cancellation History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(cancel|cancellation)[^\\s]{0,5}(history|record|request)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Free Trial Usage",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bfree[^\\s]{0,5}trial[^\\s]{0,5}(usage|period)?\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Upgrade History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bupgrade[^\\s]{0,5}(history|change|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Downgrade History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bdowngrade[^\\s]{0,5}(history|change|record)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Payment Method for Subscriptions",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bpayment[^\\s]{0,5}(method|mode|instrument)\\b(?:\\s*[:=])"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Auto-renewal Settings",
+            "category": "Subscription & Membership Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bauto[^\\s]{0,5}(renew|renewal)[^\\s]{0,5}(setting|enabled|status)?\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        },
+        {
+            "name": "Promotional Offers Used",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(promo|promotion|offer)[^\\s]{0,5}(used|applied|redeemed)\\b"
+            ],
+            "tags": {
+                "law": "DPDPA"
+            }
+        }
+    ]
+}

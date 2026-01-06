@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Rcavanaugh",
+            "category": "Storage Sink",
+            "patterns": [
+                "@ryancavanaugh\\/sendgrid|@ryancavanaugh\\/gapi.youtubeanalytics|@ryancavanaugh\\/gapi.youtube|@ryancavanaugh\\/raygun4js"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Rcavanaugh",
+                "language": "javascript",
+                "technology": "rcavanaugh",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

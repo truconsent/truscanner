@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blastream",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(blastream).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blastream",
+                "language": "php",
+                "technology": "blastream",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

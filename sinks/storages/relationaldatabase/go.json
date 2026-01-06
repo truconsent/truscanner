@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "SQL DB(ReadAndWrite)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(database/sql).*(Prepare|Query|Stmt)(Context|Row)?"
+            ],
+            "tags": {
+                "id": "Storages.SQL.ReadAndWrite",
+                "language": "go",
+                "technology": "relationaldatabase",
+                "type": "Database"
+            }
+        }
+    ]
+}

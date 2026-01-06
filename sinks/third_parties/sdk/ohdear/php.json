@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ohdear",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(OhDear.PhpSdk).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ohdear",
+                "language": "php",
+                "technology": "ohdear",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Blocknative",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(blocknative).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Blocknative",
+                "language": "python",
+                "technology": "blocknative",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Jeepney",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(jeepney).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Jeepney",
+                "language": "python",
+                "technology": "jeepney",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

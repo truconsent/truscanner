@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Flagsmith",
+            "category": "Storage Sink",
+            "patterns": [
+                "flagsmith|bullet-train-rules-engine"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flagsmith",
+                "language": "javascript",
+                "technology": "flagsmith",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Chargebee",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(chargebee).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Chargebee",
+                "language": "python",
+                "technology": "chargebee",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

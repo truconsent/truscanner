@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Bitly",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(microurl).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Bitly",
+                "language": "python",
+                "technology": "bitly",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Dhom",
+            "category": "Storage Sink",
+            "patterns": [
+                "node-red-contrib-google-oauth-calendar"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Dhom",
+                "language": "javascript",
+                "technology": "dhom",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

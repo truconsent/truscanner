@@ -1,0 +1,30 @@
+{
+    "sources": [
+        {
+            "name": "Doctrine Interface (Initialize)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:Doctrine\\\\ORM\\\\EntityManager).*(__construct)"
+            ],
+            "tags": {
+                "id": "Storages.Doctrine.Interface.Initialize",
+                "language": "php",
+                "technology": "doctrine",
+                "type": "Database"
+            }
+        },
+        {
+            "name": "Doctrine Interface (Read and Write)",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i).*(?:Doctrine\\\\ORM\\\\EntityManager).*(getConnection|getMetadataFactory|getExpressionBuilder|beginTransaction|transactional|commit|rollback|getClassMetadata|createQuery|createNamedQuery|createNativeQuery|createNamedNativeQuery|createQueryBuilder|flush|find|getReference|getPartialReference|clear|close|persist|remove|refresh|detach|merge|copy|lock|getEventManager|create|insert|delete)"
+            ],
+            "tags": {
+                "id": "Storages.Doctrine.Interface.ReadAndWrite",
+                "language": "php",
+                "technology": "doctrine",
+                "type": "Database"
+            }
+        }
+    ]
+}

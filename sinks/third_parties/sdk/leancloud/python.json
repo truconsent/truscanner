@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Leancloud",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(leancloud).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Leancloud",
+                "language": "python",
+                "technology": "leancloud",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

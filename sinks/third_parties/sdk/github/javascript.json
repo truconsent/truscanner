@@ -1,0 +1,108 @@
+{
+    "sources": [
+        {
+            "name": "Github",
+            "category": "Storage Sink",
+            "patterns": [
+                "passport-github|octokit|nodegit|remark-github|git-url-parse|github-url-from-git|react-github-btn|github-url-from-username-repo|netlify-cms-backend-github|github-webhook-handler|gitbook-plugin-mermaid|gitbook-plugin-mermaid-gb3|github-current-user|passport-github2|gitbook-plugin-page-toc|gitbook-plugin-panel|gitbook-plugin-sequence-diagrams|gitbook-plugin-theme-api|gitbook-plugin-toc"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Github Admob-plus",
+            "category": "Storage Sink",
+            "patterns": [
+                "admob-plus-cordova|gdevelop-cordova-admob-plus|@admob-plus\\/capacitor|@admob-plus\\/ionic|@admob-plus\\/react-native|cordova-admob-plus-nl"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github.Admob-plus",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Flamelink",
+            "category": "Storage Sink",
+            "patterns": [
+                "flamelink"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Flamelink",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Github Hashbite",
+            "category": "Storage Sink",
+            "patterns": [
+                "@consent-manager\\/integration-linkedin|@consent-manager\\/integration-matomo"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github.Hashbite",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Github Itsa",
+            "category": "Storage Sink",
+            "patterns": [
+                "itsa-mollie-payment-promise"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github.Itsa",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Github Log4js-node",
+            "category": "Storage Sink",
+            "patterns": [
+                "@log4js-node\\/slack|@xanthous\\/log4js-to-slack|@log4js-node\\/mailgun|@log4js-node\\/loggly"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github.Log4js-node",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Github Ng-maps",
+            "category": "Storage Sink",
+            "patterns": [
+                "@ng-maps\\/google|@ng-maps\\/shapes|@ng-maps\\/places|@ng-maps\\/marker-clusterer"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github.Ng-maps",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        },
+        {
+            "name": "Github React-native-share",
+            "category": "Storage Sink",
+            "patterns": [
+                "react-native-share"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Github.React-native-share",
+                "language": "javascript",
+                "technology": "github",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

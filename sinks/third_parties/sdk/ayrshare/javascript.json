@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Ayrshare",
+            "category": "Storage Sink",
+            "patterns": [
+                "social-post-api"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Ayrshare",
+                "language": "javascript",
+                "technology": "ayrshare",
+                "type": "Third Party"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "sources": [
+        {
+            "name": "Yubico",
+            "category": "Storage Sink",
+            "patterns": [
+                "(?i)(yubico_client).*"
+            ],
+            "tags": {
+                "id": "ThirdParties.SDK.Yubico",
+                "language": "python",
+                "technology": "yubico",
+                "type": "Third Party"
+            }
+        }
+    ]
+}
