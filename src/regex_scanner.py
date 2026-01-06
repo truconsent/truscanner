@@ -29,7 +29,7 @@ class RegexScanner:
         'tailwind.config.ts', 'tailwind.config.js', 'package.json',
         '.DS_Store', 'vite.config.ts', 'vite.config.js', 'eslint.config.js', 'tsconfig.json'
     }
-    DEFAULT_EXCLUDE_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico', '.pdf', '.zip', '.gz', '.tar', '.log', '.css'}
+    DEFAULT_EXCLUDE_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico', '.pdf', '.zip', '.gz', '.tar', '.log', '.css', '.db', '.sqlite', '.sqlite3', '.bin', '.exe', '.dll', '.so', '.dylib'}
     SENSITIVITY_EMOJI = {"low": "🟢", "medium": "🟡", "high": "🟠", "critical": "🔴"}
     
     def __init__(self, data_elements_dir: Optional[str] = None, sinks_dir: Optional[str] = None, load_immediately: bool = True):
@@ -200,22 +200,18 @@ class RegexScanner:
                 files_to_scan.append(os.path.join(root, file))
         
         all_findings = []
-        # Use ProcessPoolExecutor for true parallel scanning (avoids GIL)
-        num_workers = os.cpu_count() or 1
         
-        # We use an initializer to load patterns ONCE per worker process
-        with concurrent.futures.ProcessPoolExecutor(
-            max_workers=num_workers,
-            initializer=_worker_init,
-            initargs=(str(self.data_elements_dir), str(self.sinks_dir))
-        ) as executor:
-            future_to_file = {executor.submit(_parallel_scan_file, f): f for f in files_to_scan}
-            for future in concurrent.futures.as_completed(future_to_file):
-                try:
-                    all_findings.extend(future.result())
-                except Exception as e:
-                    file = future_to_file[future]
-                    print(f"Error processing {file}: {e}")
+        # Sequential scanning to avoid Windows multiprocessing issues
+        # For better performance on large codebases, consider using ThreadPoolExecutor
+        if not self.data_elements:
+            self._load_data_elements()
+            
+        for file_path in files_to_scan:
+            try:
+                file_findings = self.scan_file(file_path)
+                all_findings.extend(file_findings)
+            except Exception as e:
+                print(f"Error processing {file_path}: {e}")
         
         return all_findings
     

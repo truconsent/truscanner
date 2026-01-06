@@ -37,13 +37,13 @@ def scan(directory, with_presidio, with_ai, format, output, stored_only):
             
             # Auto-save report to file
             output_file = output or "scan_report.txt"
-            with open(output_file, 'w') as f:
+            with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(report)
             click.echo(f"\n✅ Report saved to: {output_file}")
         else:
             click.echo(json.dumps(results, indent=2))
             if output:
-                with open(output, 'w') as f:
+                with open(output, 'w', encoding='utf-8') as f:
                     json.dump(results, f, indent=2)
                 click.echo(f"\n✅ Results saved to: {output}")
     else:
@@ -75,13 +75,13 @@ def scan(directory, with_presidio, with_ai, format, output, stored_only):
                         click.echo(f"   ... and {len(findings) - 5} more")
                 
                 if output:
-                    with open(output, 'w') as f:
+                    with open(output, 'w', encoding='utf-8') as f:
                         json.dump(results, f, indent=2)
                     click.echo(f"\n✅ Full results saved to: {output}")
             else:
                 click.echo(json.dumps(results, indent=2))
                 if output:
-                    with open(output, 'w') as f:
+                    with open(output, 'w', encoding='utf-8') as f:
                         json.dump(results, f, indent=2)
                     click.echo(f"\n✅ Results saved to: {output}")
         else:
