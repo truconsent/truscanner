@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}(history|log|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Booking Details",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(booking|reservation)[^\\s]{0,5}(details|info|data)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Service Provider Information",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}(provider|vendor|partner)[^\\s]{0,5}(info|details)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Service Completion Status",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}(completion|status|fulfilled)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Service Ratings",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}(rating|score|stars)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Service Reviews",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}(review|feedback|comment)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Cancellation History",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(cancel|cancellation)[^\\s]{0,5}(history|log|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Rescheduling Patterns",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(reschedule|rebook)[^\\s]{0,5}(pattern|behavior|frequency)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Service Preferences",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}(preference|choice|option)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Frequency of Service Usage",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(frequency|usage)[^\\s]{0,5}(service|booking)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Service Location History",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\bservice[^\\s]{0,5}location[^\\s]{0,5}(history|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Payment for Services",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\b(payment|transaction)[^\\s]{0,5}(service|booking)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

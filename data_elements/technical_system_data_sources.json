@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\bapi[^\\s]{0,5}(usage|log|activity|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Database Queries",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(database|sql|query)[^\\s]{0,5}(log|record|execution)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "System Performance Metrics",
@@ -33,9 +29,7 @@
                 "(?i)\\b(system|server|performance)[^\\s]{0,5}(metric|measurement|monitoring)\\b",
                 "(?i).*((?:performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)|(cpu|memory|disk)[^\\s/(;)#|,=!>]{0,5}(usage|freq|available|used)).*"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Error Codes",
@@ -45,9 +39,7 @@
             "patterns": [
                 "(?i)\\b(error|fault|exception)[^\\s]{0,5}(code|number|id)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Debug Information",
@@ -58,9 +50,7 @@
                 "(?i)\\b(debug|trace)[^\\s]{0,5}(info|information|data)\\b",
                 "(?i)\\blog[^\\s]{0,5}(info|information|data)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Cache Data",
@@ -70,9 +60,7 @@
             "patterns": [
                 "(?i)\\b(cache|temporary)[^\\s]{0,5}(data|record|storage)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Backup Information",
@@ -82,9 +70,7 @@
             "patterns": [
                 "(?i)\\b(backup|restore|snapshot)[^\\s]{0,5}(info|data|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Security Logs",
@@ -94,9 +80,7 @@
             "patterns": [
                 "(?i)\\b(security|access|audit)[^\\s]{0,5}(log|record|event)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Access Logs",
@@ -106,9 +90,7 @@
             "patterns": [
                 "(?i)\\b(access|login|session)[^\\s]{0,5}(log|record|history)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Integration Data with Third-party Services",
@@ -118,9 +100,7 @@
             "patterns": [
                 "(?i)\\b(integration|third[- ]party|external)[^\\s]{0,5}(data|info|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Crash Data",
@@ -130,9 +110,7 @@
             "patterns": [
                 "(?i).*(crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)).*"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Browsing History (Technical)",
@@ -142,9 +120,7 @@
             "patterns": [
                 "(?i)browsing[^\\s/(;)#|,=!>]*history|website[^\\s/(;)#|,=!>]*visited|web[^\\s/(;)#|,=!>]*pages[^\\s/(;)#|,=!>]*visited"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Browsing Duration",
@@ -154,9 +130,7 @@
             "patterns": [
                 "(?i).*(browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration))"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

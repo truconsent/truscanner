@@ -1,114 +1,114 @@
 {
-  "sources": [
-    {
-      "name": "Language Preferences",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(language)[^\\s]{0,5}(preference|setting|selection)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Currency Settings",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(currency)[^\\s]{0,5}(setting|preference|default)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Notification Preferences",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(notification|alert|message)[^\\s]{0,5}(preference|setting|option)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Privacy Settings",
-      "category": "Preferences & Settings Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(privacy|data)[^\\s]{0,5}(setting|control|preference)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Content Filters",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(content|media|information)[^\\s]{0,5}(filter|restriction|control)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Personalization Settings",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(personalization|profile)[^\\s]{0,5}(setting|preference|customization)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Theme Preferences",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(theme|appearance|layout)[^\\s]{0,5}(preference|setting)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Accessibility Settings",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(accessibility|a11y)[^\\s]{0,5}(setting|option|preference)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Time Zone",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(time)[^\\s]{0,5}(zone|offset|setting)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Regional Settings",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "low",
-      "patterns": [
-        "(?i)(region|locale|location)[^\\s]{0,5}(setting|preference)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Communication Preferences",
-      "category": "Preferences & Settings Data",
-      "isSensitive": false,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(communication|contact|messaging)[^\\s]{0,5}(preference|setting|option)"
-      ],
-      "tags": { "law": "DPDPA" }
-    }
-  ]
+    "sources": [
+        {
+            "name": "Language Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(language)[^\\s]{0,5}(preference|setting|selection)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Currency Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(currency)[^\\s]{0,5}(setting|preference|default)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Notification Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(notification|alert|message)[^\\s]{0,5}(preference|setting|option)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Privacy Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(privacy|data)[^\\s]{0,5}(setting|control|preference)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Content Filters",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(content|media|information)[^\\s]{0,5}(filter|restriction|control)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Personalization Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(personalization|profile)[^\\s]{0,5}(setting|preference|customization)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Theme Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(theme|appearance|layout)[^\\s]{0,5}(preference|setting)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Accessibility Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(accessibility|a11y)[^\\s]{0,5}(setting|option|preference)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Time Zone",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(time)[^\\s]{0,5}(zone|offset|setting)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Regional Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)(region|locale|location)[^\\s]{0,5}(setting|preference)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Communication Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(communication|contact|messaging)[^\\s]{0,5}(preference|setting|option)"
+            ],
+            "tags": {}
+        }
+    ]
 }

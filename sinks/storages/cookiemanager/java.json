@@ -10,7 +10,6 @@
                 "id": "Storages.Android.CookieManager",
                 "language": "java",
                 "technology": "cookiemanager",
-                "law": "GDPR",
                 "type": "Database"
             }
         }

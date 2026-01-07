@@ -36,7 +36,6 @@
                 "id": "Storages.Web.Cookie.Delete",
                 "language": "javascript",
                 "technology": "cookiemanager",
-                "law": "GDPR",
                 "type": "Database"
             }
         },
@@ -76,7 +75,6 @@
                 "id": "Storages.Web.Cookie.Read",
                 "language": "javascript",
                 "technology": "cookiemanager",
-                "law": "GDPR",
                 "type": "Database"
             }
         },

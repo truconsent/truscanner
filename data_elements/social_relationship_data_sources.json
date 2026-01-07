@@ -9,9 +9,7 @@
                 "(?i)\\b(family|household|relative)[^\\s]{0,5}(info|details|data)\\b(?:\\s*[:=])",
                 "(?i).*(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,10}(?:contact|number|nbr|phone|mobile|landline|email|address|addr).*"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Relationship Status",
@@ -21,9 +19,7 @@
             "patterns": [
                 "(?i)\\b(relationship|marital|dating)[^\\s]{0,5}status\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Children Information",
@@ -34,9 +30,7 @@
                 "(?i)\\b(child|children|kids|dependent)[^\\s]{0,5}(info|details)\\b(?:\\s*[:=])",
                 "(?i).*(?:dependant|dependent|daughter|children|wife|fiance|grand[^\\s/(;)#|,=!>]{0,10}mother|grand[^\\s/(;)#|,=!>]{0,10}father|family)[^\\s/(;)#|,=!>]{0,5}(?:contact|number|nbr|phone|mobile|landline|email|address|addr).*"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Social Connections",
@@ -46,9 +40,7 @@
             "patterns": [
                 "(?i)\\bsocial[^\\s]{0,5}(connection|network|graph)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Friend Lists",
@@ -58,9 +50,7 @@
             "patterns": [
                 "(?i)\\bfriend[^\\s]{0,5}(list|connections)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Professional Network",
@@ -70,9 +60,7 @@
             "patterns": [
                 "(?i)\\b(professional|career)[^\\s]{0,5}(network|connections)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Community Participation",
@@ -82,9 +70,7 @@
             "patterns": [
                 "(?i)\\b(community|group|forum)[^\\s]{0,5}(participation|involvement)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Social Media Activity",
@@ -94,9 +80,7 @@
             "patterns": [
                 "(?i)\\bsocial[^\\s]{0,5}media[^\\s]{0,5}(activity|usage|behavior)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Shared Content",
@@ -106,9 +90,7 @@
             "patterns": [
                 "(?i)\\b(shared|posted)[^\\s]{0,5}(content|media|data)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Group Memberships",
@@ -118,9 +100,7 @@
             "patterns": [
                 "(?i)\\bgroup[^\\s]{0,5}(membership|affiliation)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Social Influence Score",
@@ -130,9 +110,7 @@
             "patterns": [
                 "(?i)\\bsocial[^\\s]{0,5}(influence|impact)[^\\s]{0,5}(score|rating|metric)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

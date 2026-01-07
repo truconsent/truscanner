@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(portfolio|investment)[^\\s]{0,5}(holding|asset|position)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Trading History",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(trading|transaction)[^\\s]{0,5}(history|record|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Investment Preferences",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(investment|portfolio)[^\\s]{0,5}(preference|choice|option)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Risk Tolerance",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(risk|volatility|exposure)[^\\s]{0,5}(tolerance|appetite|level)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Market Research",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(market|financial|stock)[^\\s]{0,5}(research|analysis|study)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Financial Goals",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(financial|investment)[^\\s]{0,5}(goal|objective|target)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Asset Allocation",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(asset|portfolio)[^\\s]{0,5}(allocation|distribution|mix)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Dividend History",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(dividend|payout)[^\\s]{0,5}(history|record|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Capital Gains",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\bcapital[^\\s]{0,5}(gain|profit|appreciation)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Capital Losses",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\bcapital[^\\s]{0,5}(loss|depreciation|deficit)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Broker Information",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\b(broker|dealer|trading)[^\\s]{0,5}(info|details|contact)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Investment Advisor Details",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\b(investment|financial|advisor)[^\\s]{0,5}(info|details|contact)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

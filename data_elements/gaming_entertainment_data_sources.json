@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(game|play)[^\\s]{0,5}(progress|level|stage|completion)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Achievement History",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(achievement|trophy|badge)[^\\s]{0,5}(history|record|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "In-game Purchases",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(in[- ]game|virtual|digital)[^\\s]{0,5}(purchase|transaction|buy)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Virtual Currency",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(virtual|in[- ]game)[^\\s]{0,5}(currency|coins|credits)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Gaming Preferences",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(gaming|player)[^\\s]{0,5}(preference|choice|settings)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Multiplayer Interactions",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(multiplayer|team|co[- ]op)[^\\s]{0,5}(interaction|chat|communication)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Leaderboard Rankings",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(leaderboard|ranking|placement)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Time Spent Gaming",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(time|duration|hours)[^\\w]{1,5}(gaming|play|session)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Gaming Device Information",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(gaming|console|pc|device)[^\\s]{0,5}(info|specs|model)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Virtual Items Owned",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(virtual|digital)[^\\s]{0,5}(item|asset|inventory)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

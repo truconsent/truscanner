@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)(?:cctv|webcam|video|camera)[^\\s/(;)#|,=!>]{0,5}(?:feed|clip|recording|footage)"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Audio Recordings",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)(?:audio|microphone|phone|call)[^\\s/(;)#|,=!>]{0,5}(?:feed|clip|recording|record)[^\\s/(;)#|,=!>]{0,2}"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "IoT or Sensor Data",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)thermocouples|thermistor|thermometer|(?:thermal|temperature|radiation|light|proximity|gyroscope|pressure|position)[^\\s/(;)#|,=!>]{0,10}(?:sensors|sensor)|(?:sensors|sensor)[^\\s/(;)#|,=!>]{0,10}(?:thermal|temperature|radiation|light|proximity|gyroscope|pressure|position)|accelerometer"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

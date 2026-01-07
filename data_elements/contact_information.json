@@ -9,9 +9,7 @@
                 "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
                 "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Phone Number",
@@ -25,9 +23,7 @@
                 "(?i)(?<!lucide-react)\\b((phone|mobile|cellphone|contact)[^\\s/(;)#|,=!>]{0,2}(?:detail|details)|(?:mobile|phone|cellphone|contact)[^\\s/(;)#|,=!>]{0,10}(?:number|nbr|num|no)|(?:primary|secondary)[^\\s/(;)#|,=!>]{0,10}(phone|landline|telephone))\\b",
                 "(?i)\\b(home|office|work|mobile)[^\\s/(;)#|,=!>]{0,2}phone\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Alternate Phone Numbers",
@@ -37,9 +33,7 @@
             "patterns": [
                 "(?i)(alt|alternate|secondary)[^\\s]{0,5}(phone|mobile|contact)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Residential Address - Street",
@@ -56,9 +50,7 @@
                 "(?i)\\baddress[-_.]{0,2}line\\b",
                 "(?i)\\baddress[-_.]{0,2}line[-_.]\\d\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Residential Address - City",
@@ -68,9 +60,7 @@
             "patterns": [
                 "(?i)\\bcity\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Residential Address - State",
@@ -81,9 +71,7 @@
                 "(?i)\\b(address|shipping|billing|home|residential|location|user)[^\\w]{1,5}state\\b(?:\\s*[:=])",
                 "(?i)\\bstate\\b(?:\\s*[:=])\\s*['\"]\\b(andhra pradesh|arunachal pradesh|assam|bihar|chhattisgarh|goa|gujarat|haryana|himachal pradesh|jharkhand|karnataka|kerala|madhya pradesh|maharashtra|manipur|meghalaya|mizoram|nagaland|odisha|punjab|rajasthan|sikkim|tamil nadu|telangana|tripura|uttar pradesh|uttarakhand|west bengal)\\b['\"]"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Residential Address - Zip Code",
@@ -94,9 +82,7 @@
                 "\\b\\d{5}(-\\d{4})?\\b",
                 "\\b\\d{6}\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Residential Address - Country",
@@ -106,9 +92,7 @@
             "patterns": [
                 "(?i)\\bcountry\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Permanent Address",
@@ -118,9 +102,7 @@
             "patterns": [
                 "(?i)(permanent)[^\\s]{0,5}address"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Office Address",
@@ -130,9 +112,7 @@
             "patterns": [
                 "(?i)(office|work|corporate)[^\\s]{0,5}address"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Social Media Handles",
@@ -150,9 +130,7 @@
                 "(?i)\\btwitter[^\\s/(;)#|,=!>]{0,5}tweet\\b",
                 "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,10}account\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "LinkedIn Profile",
@@ -162,9 +140,7 @@
             "patterns": [
                 "(?i)linkedin\\.com/(in|pub)/[A-Za-z0-9_-]+"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Emergency Contact Information",
@@ -175,9 +151,7 @@
                 "(?i)(emergency[^\\s]{0,5}contact|ice[_-]?contact)",
                 "(?i)emergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}(?:number|no|nbr|phone|mobile|mob|landline|email|details|detail|relation)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Preferred Communication Method",
@@ -187,9 +161,7 @@
             "patterns": [
                 "(?i)(preferred)[^\\s]{0,5}(communication|contact)[^\\s]{0,5}(method|mode)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

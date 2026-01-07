@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(device|phone|tablet|computer)[^\\s]{0,5}(model|brand|manufacturer|type|version)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Operating System",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(os|operating)[^\\s]{0,5}(system|version)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "App Permissions",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\bapp[^\\s]{0,5}(permission|access|rights)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Hardware Specifications",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(hardware|cpu|ram|storage)[^\\s]{0,5}(specification|details|info)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Network Information",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(network|wifi|lan|wan|connection)[^\\s]{0,5}(info|details|data)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Battery Usage",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(battery|power)[^\\s]{0,5}(usage|consumption|status)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Storage Usage",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(storage|disk|memory)[^\\s]{0,5}(usage|capacity|available)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Performance Metrics",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(performance|benchmark|cpu|gpu)[^\\s]{0,5}(metrics|stats|data)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Crash Reports",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(crash|error)[^\\s]{0,5}(report|log|details)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Error Logs",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(error|exception|fault)[^\\s]{0,5}(log|report|details)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Update History",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\b(update|patch)[^\\s]{0,5}(history|log|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Security Status",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\b(security|protection)[^\\s]{0,5}(status|state|check)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }
