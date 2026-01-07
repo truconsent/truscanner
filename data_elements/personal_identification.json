@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)|birth[-_]{0,2}dt)))"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "First Name",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|fore[-_]?|full[-_]?)name|f[_]?name"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Gender",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Last Name",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)|l[_]?name"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Age",
@@ -57,9 +49,7 @@
                 "(?i)^(user|person|customer|under|years|yrs|human)?(_)?(of|in)?(_)?(age)$",
                 "(?i)^(age)(_)?(of|in)?(_)?(human|years|yrs|user|person|customer)?$"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Employee Code",
@@ -69,9 +59,7 @@
             "patterns": [
                 "(?i)(?:.*employee|emp)[^\\s/(;)#|,=!>]{0,10}(?:no|number|code|id|nbr|num)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Photograph",
@@ -81,9 +69,7 @@
             "patterns": [
                 "(?i).*(?:profile|employee|user)[^\\s/(;)#|,=!>]{0,5}(?:picture|image|pic|photo)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Middle Name",
@@ -93,9 +79,7 @@
             "patterns": [
                 "(?i)\\b(middle[^\\s/(;)#|,=!>]{0,5}name|m[_]?name)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Alias",
@@ -105,9 +89,7 @@
             "patterns": [
                 "(?i)(?<!\")\\b(alias|nick[^\\s/(;)#|,=!>]{0,5}name|aka|also[^\\s/(;)#|,=!>]{0,5}known[^\\s/(;)#|,=!>]{0,5}as)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Nationality",
@@ -118,9 +100,7 @@
                 "(?i).*(nationality|citizen[^\\s/(;)#|,=!>]{0,5}ship|country[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}origin)",
                 "(?i).*(nationality|nationalities)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Marital Status",
@@ -131,9 +111,7 @@
                 "(?i)(?<!\\.)\\b(marital[^\\s/(;)#|,=!>]{0,5}status|married|single|divorced|widowed|relationship[^\\s/(;)#|,=!>]{0,5}status)\\b(?!\\()",
                 "(?i).*(marital|married|relationship[^\\s/(;)#|,=!>]{0,2}status).*"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Place of Birth",
@@ -143,9 +121,7 @@
             "patterns": [
                 "(?i).*(place[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}place|pob)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Mother's Maiden Name",
@@ -156,9 +132,7 @@
                 "(?i).*(mother[^\\s/(;)#|,=!>]{0,5}maiden[^\\s/(;)#|,=!>]{0,5}name|mother[^\\s/(;)#|,=!>]{0,5}name|maternal[^\\s/(;)#|,=!>]{0,5}name)",
                 "(?i).*(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,8}name|name[^\\s/(;)#|,=!>]{0,8}(?:guardian|mother|father).*"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Father's Name",
@@ -168,9 +142,7 @@
             "patterns": [
                 "(?i).*(father[^\\s/(;)#|,=!>]{0,5}name|paternal[^\\s/(;)#|,=!>]{0,5}name)"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Spouse Name",
@@ -181,9 +153,7 @@
                 "(?i).*(spouse[^\\s/(;)#|,=!>]{0,5}name|partner[^\\s/(;)#|,=!>]{0,5}name|husband[^\\s/(;)#|,=!>]{0,5}name|wife[^\\s/(;)#|,=!>]{0,5}name)",
                 "(?i).*(?:fiance|spouse|husband|wife)[^\\s/(;)#|,=!>]{0,8}name.*"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Emergency Contact Details",
@@ -193,9 +163,7 @@
             "patterns": [
                 "(?i).*(emergency[^\\s/(;)#|,=!>]{0,5}contact|emergency[^\\s/(;)#|,=!>]{0,5}(?:phone|number|email|person))"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Physical Appearance Description",
@@ -206,9 +174,7 @@
                 "(?i)(?<!height:)(?<!weight:)(?<!Build\\sa\\s)(?<!//\\s)\\b(physical[^\\s/(;)#|,=!>]{0,5}(?:appearance|description)|height|weight|eye[^\\s/(;)#|,=!>]{0,5}color|hair[^\\s/(;)#|,=!>]{0,5}color|complexion|build)\\b(?!:\\s*?[0-9])",
                 "(?i)body[^\\s/(;)#|,=!>]{0,5}mass[^\\s/(;)#|,=!>]{0,5}index|body[^\\s/(;)#|,=!>]{0,5}weight|weight[^\\s/(;)#|,=!>]{0,5}(?:kg|kgs|pound|pounds)|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}weight"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Racial or Ethnic Origin",
@@ -218,9 +184,7 @@
             "patterns": [
                 "(?i).*((?:racial|ethnic)[^\\s/(;)#|,=!>]{0,5}(?:origin|group)|ethnicity)"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Religion or Religious Beliefs",
@@ -230,9 +194,7 @@
             "patterns": [
                 "(?i).*(religion|religious[^\\s/(;)#|,=!>]{0,5}(group|community|practices|belief|beleifs))"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Sexual Orientation",
@@ -242,9 +204,7 @@
             "patterns": [
                 "(?i).*(sexual[^\\s/(;)#|,=!>]{0,5}(orientation|nature|preference|inclination))"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Signature",
@@ -254,9 +214,7 @@
             "patterns": [
                 "(?i)(?:person|customer|user|buyer|seller|publisher|CEO|CFO)[^\\s/(;)#|,=!>]{0,5}signature"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Dependent Name",
@@ -266,9 +224,7 @@
             "patterns": [
                 "(?i).*(?:dependant|dependent|daughter|children|wife|husband|fiance|grand[^\\s/(;)#|,=!>]{0,8}mother|grand[^\\s/(;)#|,=!>]{0,8}father)[^\\s/(;)#|,=!>]{0,8}name.*"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

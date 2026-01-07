@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(partner|spouse|match)[^\\s]{0,5}(preference|choice|criteria)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Physical Attributes",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(physical|body|appearance)[^\\s]{0,5}(attribute|feature|characteristic)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Lifestyle Choices",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(lifestyle|habit|routine)[^\\s]{0,5}(choice|preference|pattern)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Religious Practices",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(religion|faith|belief)[^\\s]{0,5}(practice|ritual|custom)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Caste Information",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(caste|community)[^\\s]{0,5}(info|details|background)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Community Information",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(community|group)[^\\s]{0,5}(info|details|membership)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Family Background",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(family|parents|siblings)[^\\s]{0,5}(background|history|info)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Horoscope Data",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(horoscope|zodiac)[^\\s]{0,5}(sign|data|details)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Astrological Data",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(astrology|birth chart|natal)[^\\s]{0,5}(data|info|details)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Dietary Preferences",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(diet|food|meal)[^\\s]{0,5}(preference|choice|habit)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Smoking Habits",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\b(smoke|cigarette|tobacco)[^\\s]{0,5}(habit|frequency|usage)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Drinking Habits",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\b(alcohol|drink|beer|wine|liquor)[^\\s]{0,5}(habit|frequency|usage)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Interest in Children",
@@ -152,9 +128,7 @@
             "patterns": [
                 "(?i)\\b(children|kids|offspring)[^\\s]{0,5}(interest|preference|plan)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Communication History with Matches",
@@ -164,9 +138,7 @@
             "patterns": [
                 "(?i)\\b(communication|chat|message|conversation)[^\\s]{0,5}(match|partner)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

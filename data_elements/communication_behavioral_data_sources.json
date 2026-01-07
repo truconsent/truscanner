@@ -9,9 +9,7 @@
                 "(?i)\\bcall[^\\s]{0,5}(record|log|history|detail)\\b",
                 "(?i)\\b(cdr|call[-_]?detail[-_]?record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Chat Records",
@@ -21,9 +19,7 @@
             "patterns": [
                 "(?i)\\b(chat|message|conversation)[^\\s]{0,5}(log|history|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Customer Support Interactions",
@@ -33,9 +29,7 @@
             "patterns": [
                 "(?i)\\b(customer|support)[^\\s]{0,5}(interaction|ticket|case|conversation)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Browsing History",
@@ -45,9 +39,7 @@
             "patterns": [
                 "(?i)\\b(browsing|web)[^\\s]{0,5}(history|activity|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Search History",
@@ -57,9 +49,7 @@
             "patterns": [
                 "(?i)\\bsearch[^\\s]{0,5}(history|query|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Content Preferences",
@@ -69,9 +59,7 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s]{0,5}(preference|interest|like)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Personalization Data",
@@ -81,9 +69,7 @@
             "patterns": [
                 "(?i)\\b(personalization|personalised|recommendation)[^\\s]{0,5}(data|engine|logic)?\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "App Usage Patterns",
@@ -93,9 +79,7 @@
             "patterns": [
                 "(?i)\\bapp[^\\s]{0,5}(usage|behavior|pattern|analytics)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Session Duration",
@@ -105,9 +89,7 @@
             "patterns": [
                 "(?i)\\bsession[^\\s]{0,5}(duration|time|length)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Feature Usage Statistics",
@@ -117,9 +99,7 @@
             "patterns": [
                 "(?i)\\bfeature[^\\s]{0,5}(usage|statistic|metric)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Error Logs",
@@ -130,9 +110,7 @@
                 "(?i)\\b(?<!console\\.)(?<!throw\\snew\\s)(?<!const\\s)(?<!const\\s\\{)(?<!let\\s)(?<!let\\s\\{)(?<!var\\s)(?<!var\\s\\{)(error|exception|stacktrace)\\b(?:\\s*[:=])",
                 "(?i)\\b(error|exception|stacktrace)[^\\s]{0,5}(details|message)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Feedback",
@@ -143,9 +121,7 @@
                 "(?i)\\b(feedback|suggestion)\\b",
                 "(?i)\\bcomment\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Reviews",
@@ -155,9 +131,7 @@
             "patterns": [
                 "(?i)\\b(review|rating|testimonial)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Survey Responses",
@@ -167,9 +141,7 @@
             "patterns": [
                 "(?i)\\b(survey|questionnaire)[^\\s]{0,5}(response|answer|result)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Ratings",
@@ -179,9 +151,7 @@
             "patterns": [
                 "(?i)((?:user|product|movie|show|drama|coach|buyer|seller|doctor|hospital|college|hotel|agent|author|customer|artist|photo|policyholder|insurer|claimant|average|total)[^\\s/(;)#|,=!>]{0,5}){0,1}(?:rating|ratings)"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Detailed Reviews",
@@ -191,9 +161,7 @@
             "patterns": [
                 "(?i)\\b(((?:user|movie|drama|coach|buyer|seller|doctor|hospital|college|hotel|agent|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,4}){0,1}(?:review|reviews))\\b"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Communication Content",
@@ -203,9 +171,7 @@
             "patterns": [
                 "(?i)(email[^\\s/(;)#|,=!>]{0,5}(?:content|message|msg|text))"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Support Records",
@@ -215,9 +181,7 @@
             "patterns": [
                 "(?i)support[^\\s/(;)#|,=!>]{0,10}ticket|customer[^\\s/(;)#|,=!>]{0,12}(?:complaint|support)"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Customer Sentiment (NPS/CSAT)",
@@ -227,9 +191,7 @@
             "patterns": [
                 "(?i).*(((?:nps|csat|net[^\\s/(;)#|,=!>]{0,15}promoter)([^\\s/(;)#|,=!>]{0,15}(?:score|feedback)){0,1}|customer[^\\s/(;)#|,=!>]{0,15}satisfaction)|(product[^\\s/(;)#|,=!>]{0,10}feedback|(feedback|survey)[^\\s/(;)#|,=!>]{0,5}(response|result))).*|feedback"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

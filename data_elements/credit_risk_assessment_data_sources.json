@@ -1,154 +1,154 @@
 {
-  "sources": [
-    {
-      "name": "Credit Score (CIBIL)",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(cibil)[^\\s]{0,5}(score|rating)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Credit Score (Experian)",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(experian)[^\\s]{0,5}(score|rating)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Credit Score (Equifax)",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(equifax)[^\\s]{0,5}(score|rating)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Credit History",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(credit)[^\\s]{0,5}(history|report|profile)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Default Records",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(default|delinquen(t|cy)|overdue)[^\\s]{0,5}(record|status|payment)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Bankruptcy Information",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(bankrupt(cy)?|insolvency|liquidation)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Loan Repayment History",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(loan)[^\\s]{0,5}(repayment|payment)[^\\s]{0,5}(history|record)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Credit Utilization Ratio",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(credit)[^\\s]{0,5}(utilization|usage)[^\\s]{0,5}(ratio|percentage)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Income Verification Documents",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(income)[^\\s]{0,5}(verification|proof|document)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Employment History",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(employment|job|work)[^\\s]{0,5}(history|details|record)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Asset Valuation",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(asset)[^\\s]{0,5}(valuation|value|assessment)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Collateral Information",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(collateral|security)[^\\s]{0,5}(details|information|value)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Guarantor Details",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(guarantor|co[-_]?applicant|surety)[^\\s]{0,5}(details|information)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Risk Rating",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "medium",
-      "patterns": [
-        "(?i)(risk)[^\\s]{0,5}(rating|score|level)"
-      ],
-      "tags": { "law": "DPDPA" }
-    },
-    {
-      "name": "Fraud Alerts",
-      "category": "Credit & Risk Assessment Data",
-      "isSensitive": true,
-      "sensitivity": "high",
-      "patterns": [
-        "(?i)(fraud)[^\\s]{0,5}(alert|warning|flag)"
-      ],
-      "tags": { "law": "DPDPA" }
-    }
-  ]
+    "sources": [
+        {
+            "name": "Credit Score (CIBIL)",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(cibil)[^\\s]{0,5}(score|rating)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Credit Score (Experian)",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(experian)[^\\s]{0,5}(score|rating)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Credit Score (Equifax)",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(equifax)[^\\s]{0,5}(score|rating)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Credit History",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(credit)[^\\s]{0,5}(history|report|profile)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Default Records",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(default|delinquen(t|cy)|overdue)[^\\s]{0,5}(record|status|payment)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Bankruptcy Information",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(bankrupt(cy)?|insolvency|liquidation)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Loan Repayment History",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(loan)[^\\s]{0,5}(repayment|payment)[^\\s]{0,5}(history|record)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Credit Utilization Ratio",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(credit)[^\\s]{0,5}(utilization|usage)[^\\s]{0,5}(ratio|percentage)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Income Verification Documents",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(income)[^\\s]{0,5}(verification|proof|document)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Employment History",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(employment|job|work)[^\\s]{0,5}(history|details|record)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Asset Valuation",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(asset)[^\\s]{0,5}(valuation|value|assessment)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Collateral Information",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(collateral|security)[^\\s]{0,5}(details|information|value)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Guarantor Details",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(guarantor|co[-_]?applicant|surety)[^\\s]{0,5}(details|information)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Risk Rating",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)(risk)[^\\s]{0,5}(rating|score|level)"
+            ],
+            "tags": {}
+        },
+        {
+            "name": "Fraud Alerts",
+            "category": "Credit & Risk Assessment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)(fraud)[^\\s]{0,5}(alert|warning|flag)"
+            ],
+            "tags": {}
+        }
+    ]
 }

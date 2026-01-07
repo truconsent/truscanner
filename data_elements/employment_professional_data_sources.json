@@ -9,9 +9,7 @@
                 "(?i)\\bjob[^\\s]{0,5}(title|designation|position)\\b",
                 "(?i)past[^\\s/(;)#|,=!>]{0,5}role|(?:previous|past)[^\\s/(;)#|,=!>]{0,5}job[^\\s/(;)#|,=!>]{0,5}title"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Role",
@@ -22,9 +20,7 @@
                 "(?i)\\b(role|responsibilit(y|ies))\\b(?:\\s*[:=])",
                 "(?i)(?<!async\\s)(?<!function\\s)(?<!console\\.)\\bfunction\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Employee ID",
@@ -34,9 +30,7 @@
             "patterns": [
                 "(?i)\\b(employee|emp)[^\\s]{0,5}(id|code|number)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Badge Number",
@@ -46,9 +40,7 @@
             "patterns": [
                 "(?i)\\bbadge[^\\s]{0,5}(number|id)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Work Email",
@@ -58,9 +50,7 @@
             "patterns": [
                 "\\b[A-Z0-9._%+-]+@(?:[A-Z0-9.-]+\\.)+[A-Z]{2,}\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Work Phone Number",
@@ -70,9 +60,7 @@
             "patterns": [
                 "(?i)\\b(work|office)[^\\s]{0,5}(phone|mobile|contact)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Salary",
@@ -83,9 +71,7 @@
                 "(?i)\\b(salary|ctc|remuneration)\\b",
                 "(?i)\\b(pay|wage)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Compensation",
@@ -95,9 +81,7 @@
             "patterns": [
                 "(?i)\\b(compensation|package|pay[-_]?structure)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Bonus Structure",
@@ -107,9 +91,7 @@
             "patterns": [
                 "(?i)\\b(bonus|incentive)[^\\s]{0,5}(structure|plan|scheme)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Performance Reviews",
@@ -119,9 +101,7 @@
             "patterns": [
                 "(?i)\\bperformance[^\\s]{0,5}(review|evaluation|rating)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Appraisal History",
@@ -131,9 +111,7 @@
             "patterns": [
                 "(?i)\\b(appraisal|assessment)[^\\s]{0,5}(history|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Employment Contract",
@@ -143,9 +121,7 @@
             "patterns": [
                 "(?i)\\b(employment|job)[^\\s]{0,5}(contract|agreement|offer)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Company Name",
@@ -155,9 +131,7 @@
             "patterns": [
                 "(?i)\\b(company|organization|employer)[^\\s]{0,5}name\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Industry Type",
@@ -167,9 +141,7 @@
             "patterns": [
                 "(?i)\\b(industry|sector|domain|vertical)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Years of Experience",
@@ -179,9 +151,7 @@
             "patterns": [
                 "(?i)\\byears[^\\s]{0,5}of[^\\s]{0,5}(experience|exp)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Professional Qualifications",
@@ -191,9 +161,7 @@
             "patterns": [
                 "(?i)\\bprofessional[^\\s]{0,5}(qualification|degree|education)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Certifications",
@@ -203,9 +171,7 @@
             "patterns": [
                 "(?i)\\b(certification|certificate|credential)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Previous Employment History",
@@ -216,9 +182,7 @@
                 "(?i)\\b(previous|past)[^\\s]{0,5}(employment|job|work)[^\\s]{0,5}(history|details)\\b",
                 "(?i)(?:employee|employment|employee[^\\s/(;)#|,=!>]*work)[^\\s/(;)#|,=!>]*(?:history|experience|experiences)|past[^\\s/(;)#|,=!>]*(?:experience|experiences)|previous[^\\s/(;)#|,=!>]*employers|(?:candidate|applicant)[^\\s/(;)#|,=!>]*past[^\\s/(;)#|,=!>]*company"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Total Experience",
@@ -228,9 +192,7 @@
             "patterns": [
                 "(?i)(?:applicant|candidate|job[^\\s/(;)#|,=!>]*applicant)[^\\s/(;)#|,=!>]*(?:experience|experiences)"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Reason for leaving or change of job",
@@ -240,9 +202,7 @@
             "patterns": [
                 "(?i)reason[^\\s/(;)#|,=!>]{0,5}leaving|job[^\\s/(;)#|,=!>]{0,5}change[^\\s/(;)#|,=!>]{0,5}reason|employment[^\\s/(;)#|,=!>]{0,5}change[^\\s/(;)#|,=!>]{0,5}reason"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Past Dates of Employment",
@@ -252,9 +212,7 @@
             "patterns": [
                 "(?i)job[^\\s/(;)#|,=!>]{0,5}(?:from|to)[^\\s/(;)#|,=!>]{0,5}date|employment[^\\s/(;)#|,=!>]{0,5}date|employment[^\\s/(;)#|,=!>]{0,5}date[^\\s/(;)#|,=!>]{0,5}(?:start|end)|(?:start|end)[^\\s/(;)#|,=!>]{0,5}employment[^\\s/(;)#|,=!>]{0,5}date"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Proof of Last Salary",
@@ -264,9 +222,7 @@
             "patterns": [
                 "(?i)((?:last|previous|latest)[^\\s/(;)#|,=!>]{0,5}){0,1}salary[^\\s/(;)#|,=!>]{0,5}slip"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

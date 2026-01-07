@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(view|watch)[^\\s]{0,5}(history|log|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Listening History",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(listen|audio|music)[^\\s]{0,5}(history|log|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Content Ratings",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(content|media)[^\\s]{0,5}(rating|score|stars)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Content Reviews",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(content|media)[^\\s]{0,5}(review|feedback|comment)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Watchlist",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\bwatch[^\\s]{0,5}(list|queue)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Playlist",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\bplay[^\\s]{0,5}(list|queue|collection)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Favorite Genres",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(favorite|preferred)[^\\s]{0,5}(genre|category|type)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Content Completion Rate",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(completion|finish)[^\\s]{0,5}(rate|percentage|status)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Skip Patterns",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(skip|seek)[^\\s]{0,5}(pattern|behavior|rate)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Download History",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\bdownload[^\\s]{0,5}(history|log|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Sharing Behavior",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\b(share|forward)[^\\s]{0,5}(behavior|activity|pattern)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Content Creation Data",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s]{0,5}(create|upload|publish|author)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Live Stream Participation",
@@ -152,9 +128,7 @@
             "patterns": [
                 "(?i)\\blive[^\\s]{0,5}(stream|broadcast)[^\\s]{0,5}(participation|join)?\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Comments",
@@ -164,9 +138,7 @@
             "patterns": [
                 "(?i)\\b(comment|reply|response)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Interactions",
@@ -176,9 +148,7 @@
             "patterns": [
                 "(?i)\\b(interaction|engagement|reaction|like|share)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

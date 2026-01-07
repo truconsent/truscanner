@@ -10,7 +10,6 @@
                 "id": "Storages.Facebook.LocalCache",
                 "language": "java",
                 "technology": "facebooklocalcache",
-                "law": "GDPR",
                 "type": "Database"
             }
         },
@@ -24,7 +23,6 @@
                 "id": "Storages.Facebook.SaveCookie",
                 "language": "java",
                 "technology": "facebooklocalcache",
-                "law": "GDPR",
                 "type": "Database"
             }
         }

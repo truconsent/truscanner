@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(subscription|plan)[^\\s]{0,5}(type|name|details)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Billing Cycle",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\bbilling[^\\s]{0,5}(cycle|period|frequency)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Subscription History",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\bsubscription[^\\s]{0,5}(history|record|timeline)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Membership Tier",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(membership|loyalty)[^\\s]{0,5}(tier|level|status)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Renewal Dates",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\brenewal[^\\s]{0,5}(date|time|schedule)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Cancellation History",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(cancel|cancellation)[^\\s]{0,5}(history|record|request)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Free Trial Usage",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\bfree[^\\s]{0,5}trial[^\\s]{0,5}(usage|period)?\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Upgrade History",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\bupgrade[^\\s]{0,5}(history|change|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Downgrade History",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\bdowngrade[^\\s]{0,5}(history|change|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Payment Method for Subscriptions",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\bpayment[^\\s]{0,5}(method|mode|instrument)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Auto-renewal Settings",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\bauto[^\\s]{0,5}(renew|renewal)[^\\s]{0,5}(setting|enabled|status)?\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Promotional Offers Used",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\b(promo|promotion|offer)[^\\s]{0,5}(used|applied|redeemed)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

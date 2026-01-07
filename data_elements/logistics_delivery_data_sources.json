@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(shipping|delivery)[^\\s]{0,5}(address|location|destination)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Delivery Preferences",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(delivery|shipment)[^\\s]{0,5}(preference|option|choice)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Delivery Instructions",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(delivery|shipment)[^\\s]{0,5}(instruction|note|guideline)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Tracking Information",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(tracking|shipment)[^\\s]{0,5}(info|number|details)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Delivery History",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(delivery|shipment)[^\\s]{0,5}(history|record|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Failed Delivery Attempts",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(failed|unsuccessful)[^\\s]{0,5}(delivery|shipment|attempt)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Delivery Feedback",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(delivery|shipment)[^\\s]{0,5}(feedback|review|rating)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Packaging Preferences",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(packaging|package)[^\\s]{0,5}(preference|option|style)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Delivery Time Slots",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(delivery|shipment)[^\\s]{0,5}(time|slot|window)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Special Handling Instructions",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(special|fragile|urgent)[^\\s]{0,5}(handling|instruction|note)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Vehicle Registration",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i).*((?:vehicle|truck|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}|(?:car)[-_.]{0,3}registration[^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)).*"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         },
         {
             "name": "Vehicle License Plate",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i).*(license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}).*"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

@@ -9,9 +9,7 @@
                 "(?i)\\b(purchase|order)[^\\s]{0,5}(history|record|log)\\b",
                 "(?i)purchase[^\\s/(;)#|,=!>]{0,5}(?:history|(?<!site)(?<!val)id)|past[^\\s/(;)#|,=!>]{0,5}(?:purchases|purchase)|previous[^\\s/(;)#|,=!>]{0,5}purchase"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Order Details",
@@ -22,9 +20,7 @@
                 "(?i)\\border[^\\s]{0,5}(detail|info|summary)\\b(?:\\s*[:=])",
                 "(?i).*((order|shipping|billing|invoice|total[-_]?(subscription|charge|charged))[^\\s/(;)#|,=!>]{0,5}(number|code|num|no|id|amount))"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Shopping Cart Contents",
@@ -34,9 +30,7 @@
             "patterns": [
                 "(?i)\\b(cart|basket)[^\\s]{0,5}(item|content|product)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Wishlist Items",
@@ -46,9 +40,7 @@
             "patterns": [
                 "(?i)\\bwishlist[^\\s]{0,5}(item|product)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Product Views",
@@ -58,9 +50,7 @@
             "patterns": [
                 "(?i)\\bproduct[^\\s]{0,5}(view|impression|visit)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Search Queries",
@@ -70,9 +60,7 @@
             "patterns": [
                 "(?i)\\bsearch[^\\s]{0,5}(query|term|keyword)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Brand Preferences",
@@ -82,9 +70,7 @@
             "patterns": [
                 "(?i)\\bbrand[^\\s]{0,5}(preference|interest|affinity)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Size Preferences",
@@ -94,9 +80,7 @@
             "patterns": [
                 "(?i)\\bsize[^\\s]{0,5}(preference|selection|fit)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Color Preferences",
@@ -106,9 +90,7 @@
             "patterns": [
                 "(?i)\\b(color|colour)[^\\s]{0,5}(preference|choice)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Price Sensitivity",
@@ -118,9 +100,7 @@
             "patterns": [
                 "(?i)\\bprice[^\\s]{0,5}(sensitivity|range|budget)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Discount Usage",
@@ -130,9 +110,7 @@
             "patterns": [
                 "(?i)\\bdiscount[^\\s]{0,5}(usage|applied|used)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Coupon Codes",
@@ -142,9 +120,7 @@
             "patterns": [
                 "(?i)\\b(coupon|promo)[^\\s]{0,5}(code|voucher)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Return History",
@@ -155,9 +131,7 @@
                 "(?i)\\breturn[^\\s]{0,5}(history|record|request)\\b",
                 "(?i)return[^\\s/(;)#|,=!>]{0,5}(?:history|product)|cancel[^\\s/(;)#|,=!>]{0,5}(?:order|purchase)|exchange[^\\s/(;)#|,=!>]{0,5}product"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Refund History",
@@ -167,9 +141,7 @@
             "patterns": [
                 "(?i)\\brefund[^\\s]{0,5}(history|status|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Product Reviews",
@@ -179,9 +151,7 @@
             "patterns": [
                 "(?i)\\bproduct[^\\s]{0,5}(review|feedback)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Product Ratings",
@@ -191,9 +161,7 @@
             "patterns": [
                 "(?i)\\bproduct[^\\s]{0,5}(rating|stars?)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Seller Ratings",
@@ -203,9 +171,7 @@
             "patterns": [
                 "(?i)\\b(seller|vendor)[^\\s]{0,5}(rating|score)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Offer Details",
@@ -215,9 +181,7 @@
             "patterns": [
                 "(?i).*(?:product|special)[^\\s/(;)#|,=!>]{0,5}offer|offer[^\\s/(;)#|,=!>]{0,5}(?:details|detail|applied|card|code|id|number)|coupon|cashback|product[^\\s/(;)#|,=!>]{0,5}discount|reward[^\\s/(;)#|,=!>]{0,5}(?:points|point).*"
             ],
-            "tags": {
-                "law": "GDPR"
-            }
+            "tags": {}
         }
     ]
 }

@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\binsurance[^\\s]{0,5}(policy|document|details|info)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Premium Payments",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\bpremium[^\\s]{0,5}(payment|insurance|policy|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Claim History",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(claim|settlement)[^\\s]{0,5}(history|record|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Beneficiary Information",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(beneficiary|recipient)[^\\s]{0,5}(info|details|record)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Coverage Details",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(coverage|protection)[^\\s]{0,5}(details|info|plan)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Risk Assessment",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(risk|hazard|exposure)[^\\s]{0,5}(assessment|analysis|score)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Underwriting Information",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\bunderwriting[^\\s]{0,5}(info|details|record)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Policy Modifications",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(policy|insurance)[^\\s]{0,5}(modification|update|change)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Renewal History",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(renewal|extension)[^\\s]{0,5}(history|record|log)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Cancellation Records",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(cancellation|termination)[^\\s]{0,5}(record|log|history)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }

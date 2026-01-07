@@ -8,9 +8,7 @@
             "patterns": [
                 "(?i)\\b(race|racial)[^\\s]{0,5}(origin|ethnicity|group)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Ethnic Origin",
@@ -20,9 +18,7 @@
             "patterns": [
                 "(?i)\\b(ethnic|heritage)[^\\s]{0,5}(origin|background|group)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Religious Beliefs",
@@ -32,9 +28,7 @@
             "patterns": [
                 "(?i)\\b(religion|faith|belief)[^\\s]{0,5}(practice|orientation|conviction)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Philosophical Beliefs",
@@ -44,9 +38,7 @@
             "patterns": [
                 "(?i)\\b(philosophy|belief|conviction)[^\\s]{0,5}(opinion|view|practice)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Political Opinions",
@@ -56,9 +48,7 @@
             "patterns": [
                 "(?i)\\b(political|party|affiliation)[^\\s]{0,5}(opinion|view|belief)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Sexual Orientation",
@@ -68,9 +58,7 @@
             "patterns": [
                 "(?i)\\b(sexual|orientation|gender)[^\\s]{0,5}(preference|identity|status)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Union Membership",
@@ -80,9 +68,7 @@
             "patterns": [
                 "(?i)\\b(union|association|organization)[^\\s]{0,5}(membership|member|affiliation)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Criminal History",
@@ -92,9 +78,7 @@
             "patterns": [
                 "(?i)\\b(criminal|offense|felony|misdemeanor)[^\\s]{0,5}(history|record|conviction)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Medical Conditions",
@@ -104,9 +88,7 @@
             "patterns": [
                 "(?i)\\b(medical|health|condition|illness|disease)[^\\s]{0,5}(record|info|history)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Genetic Information",
@@ -116,9 +98,7 @@
             "patterns": [
                 "(?i)\\b(genetic|dna|genome|gene)[^\\s]{0,5}(information|data|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Biometric Templates",
@@ -128,9 +108,7 @@
             "patterns": [
                 "(?i)\\b(biometric|fingerprint|iris|face|voice)[^\\s]{0,5}(template|data|record)\\b"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         },
         {
             "name": "Children's Information",
@@ -140,9 +118,7 @@
             "patterns": [
                 "(?i)\\b(child|children|minor)[^\\s]{0,5}(info|details|data|record)\\b(?:\\s*[:=])"
             ],
-            "tags": {
-                "law": "DPDPA"
-            }
+            "tags": {}
         }
     ]
 }
