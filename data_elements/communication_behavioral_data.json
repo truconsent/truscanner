@@ -3,8 +3,6 @@
         {
             "name": "Call Records",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcall[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bcall[-_\\s]{0,2}records\\b"
@@ -13,8 +11,6 @@
         {
             "name": "Chat Records",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bchat[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bchat[-_\\s]{0,2}records\\b"
@@ -23,8 +19,6 @@
         {
             "name": "Customer Support Interactions",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcustomer[^\\s/(;)#|,=!>]{0,5}support[^\\s/(;)#|,=!>]{0,5}interactions\\b",
                 "(?i)\\bcustomer[-_\\s]{0,2}support[-_\\s]{0,2}interactions\\b"
@@ -33,8 +27,6 @@
         {
             "name": "Browsing History",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bbrowsing[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bbrowsing[-_\\s]{0,2}history\\b"
@@ -43,8 +35,6 @@
         {
             "name": "Search History",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bsearch[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bsearch[-_\\s]{0,2}history\\b"
@@ -53,8 +43,6 @@
         {
             "name": "Content Preferences",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}preferences\\b"
@@ -63,8 +51,6 @@
         {
             "name": "Personalization Data",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bpersonalization[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bpersonalization[-_\\s]{0,2}data\\b"
@@ -73,8 +59,6 @@
         {
             "name": "App Usage Patterns",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bapp[^\\s/(;)#|,=!>]{0,5}usage[^\\s/(;)#|,=!>]{0,5}patterns\\b",
                 "(?i)\\bapp[-_\\s]{0,2}usage[-_\\s]{0,2}patterns\\b"
@@ -83,8 +67,6 @@
         {
             "name": "Session Duration",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bsession[^\\s/(;)#|,=!>]{0,5}duration\\b",
                 "(?i)\\bsession[-_\\s]{0,2}duration\\b"
@@ -93,8 +75,6 @@
         {
             "name": "Feature Usage Statistics",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bfeature[^\\s/(;)#|,=!>]{0,5}usage[^\\s/(;)#|,=!>]{0,5}statistics\\b",
                 "(?i)\\bfeature[-_\\s]{0,2}usage[-_\\s]{0,2}statistics\\b"
@@ -103,8 +83,6 @@
         {
             "name": "Error Logs",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\berror[^\\s/(;)#|,=!>]{0,5}logs\\b",
                 "(?i)\\berror[-_\\s]{0,2}logs\\b"
@@ -113,8 +91,6 @@
         {
             "name": "Feedback",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bfeedback\\b"
             ]
@@ -122,8 +98,6 @@
         {
             "name": "Reviews",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\breviews\\b"
             ]
@@ -131,8 +105,6 @@
         {
             "name": "Survey Responses",
             "category": "Communication & Behavioral Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bsurvey[^\\s/(;)#|,=!>]{0,5}responses\\b",
                 "(?i)\\bsurvey[-_\\s]{0,2}responses\\b"

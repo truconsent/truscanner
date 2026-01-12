@@ -23,7 +23,6 @@ class RegexScanner:
         '.DS_Store', 'vite.config.ts', 'vite.config.js', 'eslint.config.js', 'tsconfig.json'
     }
     DEFAULT_EXCLUDE_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico', '.pdf', '.zip', '.gz', '.tar', '.log', '.css', '.db', '.sqlite', '.sqlite3', '.bin', '.exe', '.dll', '.so', '.dylib'}
-    SENSITIVITY_EMOJI = {"low": "🟢", "medium": "🟡", "high": "🟠", "critical": "🔴"}
     
     def __init__(self, data_elements_dir: Optional[str] = None, load_immediately: bool = True):
         """Initialize scanner with data element patterns."""
@@ -69,8 +68,6 @@ class RegexScanner:
                     element_info = {
                         "name": source["name"],
                         "category": source["category"],
-                        "isSensitive": source.get("isSensitive", False),
-                        "sensitivity": source.get("sensitivity", "low"),
                         "patterns": compiled_patterns,
                         "keywords": list(keywords),
                         "tags": source.get("tags", {})
@@ -246,8 +243,6 @@ class RegexScanner:
                         "matched_text": match.group(0),
                         "element_name": element["name"],
                         "element_category": element["category"],
-                        "isSensitive": element["isSensitive"],
-                        "sensitivity": element["sensitivity"],
                         "tags": element.get("tags", {}),
                         "context": context,
                         "source": "Regex"
@@ -351,11 +346,9 @@ class RegexScanner:
             ])
             
             for finding in file_findings:
-                emoji = self.SENSITIVITY_EMOJI.get(finding["sensitivity"].lower(), "⚪")
                 lines.extend([
-                    f"   {emoji} Line {finding['line_number']}: {finding['element_name']}",
+                    f"   Line {finding['line_number']}: {finding['element_name']}",
                     f"      Category: {finding['element_category']}",
-                    f"      Sensitivity: {finding['sensitivity']}",
                     f"      Matched: {finding['matched_text']}",
                     f"      Context: {finding['line_content'][:100]}"
                 ])
@@ -370,11 +363,9 @@ class RegexScanner:
         
         # Summaries
         category_details = defaultdict(lambda: defaultdict(int))
-        sensitivity_counts = defaultdict(int)
         
         for f in findings:
             category_details[f["element_category"]][f["element_name"]] += 1
-            sensitivity_counts[f["sensitivity"]] += 1
         
         lines.append("\n📊 SUMMARY BY CATEGORY\n")
         for category, elements in sorted(category_details.items(), key=lambda x: sum(x[1].values()), reverse=True):
@@ -383,10 +374,6 @@ class RegexScanner:
             lines.append(f"   {category}: {total_count} ({distinct_count} distinctive elements)")
             for name, count in sorted(elements.items(), key=lambda x: x[1], reverse=True):
                 lines.append(f"      - {name}: {count}")
-        
-        lines.append("\n🔒 SUMMARY BY SENSITIVITY\n")
-        for sensitivity, count in sorted(sensitivity_counts.items()):
-            lines.append(f"   {sensitivity.capitalize()}: {count}")
 
         lines.append("\n" + "=" * 80)
         return "\n".join(lines)
@@ -483,9 +470,7 @@ def _parallel_scan_file(filepath: str) -> List[Dict[str, Any]]:
                         "matched_text": match.group(0),
                         "element_name": element["name"],
                         "element_category": element["category"],
-                        "isSensitive": element["isSensitive"],
-                        "sensitivity": element["sensitivity"],
-                        "tags": element["tags"],
+                        "tags": element.get("tags", {}),
                         "context": filepath,
                         "filename": filepath,
                         "source": "Regex"

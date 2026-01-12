@@ -3,8 +3,6 @@
         {
             "name": "Aadhaar Number (India)",
             "category": "Government-Issued Identifiers",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "\\b\\d{4}\\s?\\d{4}\\s?\\d{4}\\b",
                 "(?i)\\b(?:aadhaar|aadhar)[^\\s/(;)#|,=!>]{0,10}(?:number|no|id)\\b",
@@ -15,8 +13,6 @@
         {
             "name": "PAN (Permanent Account Number) (India)",
             "category": "Government-Issued Identifiers",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "\\b[A-Z]{5}\\d{4}[A-Z]{1}\\b",
                 "(?i)\\b(?:pan|permanent[^\\s/(;)#|,=!>]{0,5}account[^\\s/(;)#|,=!>]{0,5}(?:number|no))\\b",
@@ -27,8 +23,6 @@
         {
             "name": "SSN (Social Security Number) (US)",
             "category": "Government-Issued Identifiers",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "\\b\\d{3}-\\d{2}-\\d{4}\\b",
                 "(?i)\\b(?:ssn|social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no))\\b",
@@ -39,8 +33,6 @@
         {
             "name": "Passport Number",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "\\b[A-Z]{1,2}\\d{6,9}\\b",
                 "(?i)\\b(?:passport)[^\\s/(;)#|,=!>]{0,10}(?:number|no|id)\\b",
@@ -51,8 +43,6 @@
         {
             "name": "Driver's License Number",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bdriver[^\\s/(;)#|,=!>]{0,5}license[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bdriver[-_\\s]{0,2}license[-_\\s]{0,2}number\\b"
@@ -61,8 +51,6 @@
         {
             "name": "Voter ID Number",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bvoter[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bvoter[-_\\s]{0,2}number\\b"
@@ -71,8 +59,6 @@
         {
             "name": "Tax Identification Number",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\btax[^\\s/(;)#|,=!>]{0,5}identification[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\btax[-_\\s]{0,2}identification[-_\\s]{0,2}number\\b"
@@ -81,8 +67,6 @@
         {
             "name": "GST Number",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bgst[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bgst[-_\\s]{0,2}number\\b"
@@ -91,8 +75,6 @@
         {
             "name": "Business Registration Number",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bbusiness[^\\s/(;)#|,=!>]{0,5}registration[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bbusiness[-_\\s]{0,2}registration[-_\\s]{0,2}number\\b"
@@ -101,8 +83,6 @@
         {
             "name": "Professional License Numbers",
             "category": "Government-Issued Identifiers",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bprofessional[^\\s/(;)#|,=!>]{0,5}license[^\\s/(;)#|,=!>]{0,5}numbers\\b",
                 "(?i)\\bprofessional[-_\\s]{0,2}license[-_\\s]{0,2}numbers\\b"

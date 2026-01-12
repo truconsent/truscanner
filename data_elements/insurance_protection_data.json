@@ -3,8 +3,6 @@
         {
             "name": "Insurance Policies",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\binsurance[^\\s/(;)#|,=!>]{0,5}policies\\b",
                 "(?i)\\binsurance[-_\\s]{0,2}policies\\b"
@@ -13,8 +11,6 @@
         {
             "name": "Premium Payments",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bpremium[^\\s/(;)#|,=!>]{0,5}payments\\b",
                 "(?i)\\bpremium[-_\\s]{0,2}payments\\b"
@@ -23,8 +19,6 @@
         {
             "name": "Claim History",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bclaim[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bclaim[-_\\s]{0,2}history\\b"
@@ -33,8 +27,6 @@
         {
             "name": "Beneficiary Information",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bbeneficiary[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bbeneficiary[-_\\s]{0,2}information\\b"
@@ -43,8 +35,6 @@
         {
             "name": "Coverage Details",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcoverage[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bcoverage[-_\\s]{0,2}details\\b"
@@ -53,8 +43,6 @@
         {
             "name": "Risk Assessment",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}assessment\\b",
                 "(?i)\\brisk[-_\\s]{0,2}assessment\\b"
@@ -63,8 +51,6 @@
         {
             "name": "Underwriting Information",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bunderwriting[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bunderwriting[-_\\s]{0,2}information\\b"
@@ -73,8 +59,6 @@
         {
             "name": "Policy Modifications",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bpolicy[^\\s/(;)#|,=!>]{0,5}modifications\\b",
                 "(?i)\\bpolicy[-_\\s]{0,2}modifications\\b"
@@ -83,8 +67,6 @@
         {
             "name": "Renewal History",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\brenewal[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\brenewal[-_\\s]{0,2}history\\b"
@@ -93,8 +75,6 @@
         {
             "name": "Cancellation Records",
             "category": "Insurance & Protection Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcancellation[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bcancellation[-_\\s]{0,2}records\\b"

@@ -3,8 +3,6 @@
         {
             "name": "First Name",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bfirst[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bfirst[-_\\s]{0,2}name\\b"
@@ -13,8 +11,6 @@
         {
             "name": "Last Name",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\blast[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\blast[-_\\s]{0,2}name\\b"
@@ -23,8 +19,6 @@
         {
             "name": "Middle Name",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bmiddle[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bmiddle[-_\\s]{0,2}name\\b"
@@ -33,8 +27,6 @@
         {
             "name": "Alias",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\balias\\b"
             ]
@@ -42,8 +34,6 @@
         {
             "name": "Date of Birth",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)|birth[-_]{0,2}dt)))",
                 "(?i)\\bdate[^\\s/(;)#|,=!>]{0,5}birth\\b",
@@ -53,8 +43,6 @@
         {
             "name": "Gender",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bgender\\b"
             ]
@@ -62,8 +50,6 @@
         {
             "name": "Nationality",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bnationality\\b"
             ]
@@ -71,8 +57,6 @@
         {
             "name": "Marital Status",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bmarital[^\\s/(;)#|,=!>]{0,5}status\\b",
                 "(?i)\\bmarital[-_\\s]{0,2}status\\b"
@@ -81,8 +65,6 @@
         {
             "name": "Age",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bage\\b"
             ]
@@ -90,8 +72,6 @@
         {
             "name": "Place of Birth",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bplace[^\\s/(;)#|,=!>]{0,5}birth\\b",
                 "(?i)\\bplace[-_\\s]{0,2}birth\\b"
@@ -100,8 +80,6 @@
         {
             "name": "Mother's Maiden Name",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bmother[^\\s/(;)#|,=!>]{0,5}maiden[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bmother[-_\\s]{0,2}maiden[-_\\s]{0,2}name\\b"
@@ -110,8 +88,6 @@
         {
             "name": "Father's Name",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bfather[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bfather[-_\\s]{0,2}name\\b"
@@ -120,8 +96,6 @@
         {
             "name": "Spouse Name",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bspouse[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bspouse[-_\\s]{0,2}name\\b"
@@ -130,8 +104,6 @@
         {
             "name": "Emergency Contact Details",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bemergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bemergency[-_\\s]{0,2}contact[-_\\s]{0,2}details\\b"
@@ -140,8 +112,6 @@
         {
             "name": "Profile Pictures",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bprofile[^\\s/(;)#|,=!>]{0,5}pictures\\b",
                 "(?i)\\bprofile[-_\\s]{0,2}pictures\\b"
@@ -150,8 +120,6 @@
         {
             "name": "Physical Appearance Description",
             "category": "Personal Identifiable Information (PII)",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bphysical[^\\s/(;)#|,=!>]{0,5}appearance[^\\s/(;)#|,=!>]{0,5}description\\b",
                 "(?i)\\bphysical[-_\\s]{0,2}appearance[-_\\s]{0,2}description\\b"

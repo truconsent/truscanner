@@ -3,8 +3,6 @@
         {
             "name": "Job Title",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bjob[^\\s/(;)#|,=!>]{0,5}title\\b",
                 "(?i)\\bjob[-_\\s]{0,2}title\\b"
@@ -13,8 +11,6 @@
         {
             "name": "Role",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\brole\\b"
             ]
@@ -22,8 +18,6 @@
         {
             "name": "Employee ID",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bemployee\\b"
             ]
@@ -31,8 +25,6 @@
         {
             "name": "Badge Number",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bbadge[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bbadge[-_\\s]{0,2}number\\b"
@@ -41,8 +33,6 @@
         {
             "name": "Work Email",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
                 "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)",
@@ -53,8 +43,6 @@
         {
             "name": "Work Phone Number",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)(?<!lucide-react)\\b(?:phone|tel|mobile|contact|cell)\\b(?:[^\\w]{1,5})?(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{6,10}\\b",
                 "\\b(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{10,12}\\b",
@@ -67,8 +55,6 @@
         {
             "name": "Salary",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bsalary\\b"
             ]
@@ -76,8 +62,6 @@
         {
             "name": "Compensation",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bcompensation\\b"
             ]
@@ -85,8 +69,6 @@
         {
             "name": "Bonus Structure",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bbonus[^\\s/(;)#|,=!>]{0,5}structure\\b",
                 "(?i)\\bbonus[-_\\s]{0,2}structure\\b"
@@ -95,8 +77,6 @@
         {
             "name": "Performance Reviews",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bperformance[^\\s/(;)#|,=!>]{0,5}reviews\\b",
                 "(?i)\\bperformance[-_\\s]{0,2}reviews\\b"
@@ -105,8 +85,6 @@
         {
             "name": "Appraisal History",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bappraisal[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bappraisal[-_\\s]{0,2}history\\b"
@@ -115,8 +93,6 @@
         {
             "name": "Employment Contract",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bemployment[^\\s/(;)#|,=!>]{0,5}contract\\b",
                 "(?i)\\bemployment[-_\\s]{0,2}contract\\b"
@@ -125,8 +101,6 @@
         {
             "name": "Company Name",
             "category": "Employment & Professional Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcompany[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bcompany[-_\\s]{0,2}name\\b"
@@ -135,8 +109,6 @@
         {
             "name": "Industry Type",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bindustry[^\\s/(;)#|,=!>]{0,5}type\\b",
                 "(?i)\\bindustry[-_\\s]{0,2}type\\b"
@@ -145,8 +117,6 @@
         {
             "name": "Years of Experience",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\byears[^\\s/(;)#|,=!>]{0,5}experience\\b",
                 "(?i)\\byears[-_\\s]{0,2}experience\\b"
@@ -155,8 +125,6 @@
         {
             "name": "Professional Qualifications",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bprofessional[^\\s/(;)#|,=!>]{0,5}qualifications\\b",
                 "(?i)\\bprofessional[-_\\s]{0,2}qualifications\\b"
@@ -165,8 +133,6 @@
         {
             "name": "Certifications",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bcertifications\\b"
             ]
@@ -174,8 +140,6 @@
         {
             "name": "Previous Employment History",
             "category": "Employment & Professional Data",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bprevious[^\\s/(;)#|,=!>]{0,5}employment[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bprevious[-_\\s]{0,2}employment[-_\\s]{0,2}history\\b"

@@ -3,8 +3,6 @@
         {
             "name": "Email Address",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
                 "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)",
@@ -15,8 +13,6 @@
         {
             "name": "Phone Number",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)(?<!lucide-react)\\b(?:phone|tel|mobile|contact|cell)\\b(?:[^\\w]{1,5})?(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{6,10}\\b",
                 "\\b(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{10,12}\\b",
@@ -29,8 +25,6 @@
         {
             "name": "Alternate Phone Numbers",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)(?<!lucide-react)\\b(?:phone|tel|mobile|contact|cell)\\b(?:[^\\w]{1,5})?(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{6,10}\\b",
                 "\\b(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{2,4}\\)?[-.\\s]?)?\\d{10,12}\\b",
@@ -43,8 +37,6 @@
         {
             "name": "Residential Address - Street",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -56,8 +48,6 @@
         {
             "name": "Residential Address - City",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -69,8 +59,6 @@
         {
             "name": "Residential Address - State",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -82,8 +70,6 @@
         {
             "name": "Residential Address - Zip Code",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -95,8 +81,6 @@
         {
             "name": "Residential Address - Country",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -108,8 +92,6 @@
         {
             "name": "Permanent Address",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -121,8 +103,6 @@
         {
             "name": "Office Address",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
                 "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
@@ -134,8 +114,6 @@
         {
             "name": "Social Media Handles",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}media[^\\s/(;)#|,=!>]{0,5}handles\\b",
                 "(?i)\\bsocial[-_\\s]{0,2}media[-_\\s]{0,2}handles\\b"
@@ -144,8 +122,6 @@
         {
             "name": "LinkedIn Profile",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\blinkedin[^\\s/(;)#|,=!>]{0,5}profile\\b",
                 "(?i)\\blinkedin[-_\\s]{0,2}profile\\b"
@@ -154,8 +130,6 @@
         {
             "name": "Emergency Contact Information",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bemergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bemergency[-_\\s]{0,2}contact[-_\\s]{0,2}information\\b"
@@ -164,8 +138,6 @@
         {
             "name": "Preferred Communication Method",
             "category": "Contact Information",
-            "isSensitive": false,
-            "sensitivity": "medium",
             "patterns": [
                 "(?i)\\bpreferred[^\\s/(;)#|,=!>]{0,5}communication[^\\s/(;)#|,=!>]{0,5}method\\b",
                 "(?i)\\bpreferred[-_\\s]{0,2}communication[-_\\s]{0,2}method\\b"

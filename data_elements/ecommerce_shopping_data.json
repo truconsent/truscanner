@@ -3,8 +3,6 @@
         {
             "name": "Purchase History",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bpurchase[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bpurchase[-_\\s]{0,2}history\\b"
@@ -13,8 +11,6 @@
         {
             "name": "Order Details",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\border[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\border[-_\\s]{0,2}details\\b"
@@ -23,8 +19,6 @@
         {
             "name": "Shopping Cart Contents",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bshopping[^\\s/(;)#|,=!>]{0,5}cart[^\\s/(;)#|,=!>]{0,5}contents\\b",
                 "(?i)\\bshopping[-_\\s]{0,2}cart[-_\\s]{0,2}contents\\b"
@@ -33,8 +27,6 @@
         {
             "name": "Wishlist Items",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bwishlist[^\\s/(;)#|,=!>]{0,5}items\\b",
                 "(?i)\\bwishlist[-_\\s]{0,2}items\\b"
@@ -43,8 +35,6 @@
         {
             "name": "Product Views",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}views\\b",
                 "(?i)\\bproduct[-_\\s]{0,2}views\\b"
@@ -53,8 +43,6 @@
         {
             "name": "Search Queries",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bsearch[^\\s/(;)#|,=!>]{0,5}queries\\b",
                 "(?i)\\bsearch[-_\\s]{0,2}queries\\b"
@@ -63,8 +51,6 @@
         {
             "name": "Brand Preferences",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bbrand[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bbrand[-_\\s]{0,2}preferences\\b"
@@ -73,8 +59,6 @@
         {
             "name": "Size Preferences",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bsize[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bsize[-_\\s]{0,2}preferences\\b"
@@ -83,8 +67,6 @@
         {
             "name": "Color Preferences",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcolor[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bcolor[-_\\s]{0,2}preferences\\b"
@@ -93,8 +75,6 @@
         {
             "name": "Price Sensitivity",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bprice[^\\s/(;)#|,=!>]{0,5}sensitivity\\b",
                 "(?i)\\bprice[-_\\s]{0,2}sensitivity\\b"
@@ -103,8 +83,6 @@
         {
             "name": "Discount Usage",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bdiscount[^\\s/(;)#|,=!>]{0,5}usage\\b",
                 "(?i)\\bdiscount[-_\\s]{0,2}usage\\b"
@@ -113,8 +91,6 @@
         {
             "name": "Coupon Codes",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bcoupon[^\\s/(;)#|,=!>]{0,5}codes\\b",
                 "(?i)\\bcoupon[-_\\s]{0,2}codes\\b"
@@ -123,8 +99,6 @@
         {
             "name": "Return History",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\breturn[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\breturn[-_\\s]{0,2}history\\b"
@@ -133,8 +107,6 @@
         {
             "name": "Refund History",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\brefund[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\brefund[-_\\s]{0,2}history\\b"
@@ -143,8 +115,6 @@
         {
             "name": "Product Reviews",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}reviews\\b",
                 "(?i)\\bproduct[-_\\s]{0,2}reviews\\b"
@@ -153,8 +123,6 @@
         {
             "name": "Product Ratings",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}ratings\\b",
                 "(?i)\\bproduct[-_\\s]{0,2}ratings\\b"
@@ -163,8 +131,6 @@
         {
             "name": "Seller Ratings",
             "category": "eCommerce & Shopping Data",
-            "isSensitive": false,
-            "sensitivity": "low",
             "patterns": [
                 "(?i)\\bseller[^\\s/(;)#|,=!>]{0,5}ratings\\b",
                 "(?i)\\bseller[-_\\s]{0,2}ratings\\b"

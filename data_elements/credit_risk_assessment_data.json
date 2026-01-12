@@ -3,8 +3,6 @@
         {
             "name": "Credit Score (CIBIL)",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}score[^\\s/(;)#|,=!>]{0,5}cibil\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}score[-_\\s]{0,2}cibil\\b"
@@ -13,8 +11,6 @@
         {
             "name": "Credit Score (Experian)",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}score[^\\s/(;)#|,=!>]{0,5}experian\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}score[-_\\s]{0,2}experian\\b"
@@ -23,8 +19,6 @@
         {
             "name": "Credit Score (Equifax)",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}score[^\\s/(;)#|,=!>]{0,5}equifax\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}score[-_\\s]{0,2}equifax\\b"
@@ -33,8 +27,6 @@
         {
             "name": "Credit History",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}history\\b"
@@ -43,8 +35,6 @@
         {
             "name": "Default Records",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bdefault[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bdefault[-_\\s]{0,2}records\\b"
@@ -53,8 +43,6 @@
         {
             "name": "Bankruptcy Information",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bbankruptcy[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bbankruptcy[-_\\s]{0,2}information\\b"
@@ -63,8 +51,6 @@
         {
             "name": "Loan Repayment History",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bloan[^\\s/(;)#|,=!>]{0,5}repayment[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bloan[-_\\s]{0,2}repayment[-_\\s]{0,2}history\\b"
@@ -73,8 +59,6 @@
         {
             "name": "Credit Utilization Ratio",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}utilization[^\\s/(;)#|,=!>]{0,5}ratio\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}utilization[-_\\s]{0,2}ratio\\b"
@@ -83,8 +67,6 @@
         {
             "name": "Income Verification Documents",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bincome[^\\s/(;)#|,=!>]{0,5}verification[^\\s/(;)#|,=!>]{0,5}documents\\b",
                 "(?i)\\bincome[-_\\s]{0,2}verification[-_\\s]{0,2}documents\\b"
@@ -93,8 +75,6 @@
         {
             "name": "Employment History",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bemployment[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bemployment[-_\\s]{0,2}history\\b"
@@ -103,8 +83,6 @@
         {
             "name": "Asset Valuation",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\basset[^\\s/(;)#|,=!>]{0,5}valuation\\b",
                 "(?i)\\basset[-_\\s]{0,2}valuation\\b"
@@ -113,8 +91,6 @@
         {
             "name": "Collateral Information",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bcollateral[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bcollateral[-_\\s]{0,2}information\\b"
@@ -123,8 +99,6 @@
         {
             "name": "Guarantor Details",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bguarantor[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bguarantor[-_\\s]{0,2}details\\b"
@@ -133,8 +107,6 @@
         {
             "name": "Risk Rating",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}rating\\b",
                 "(?i)\\brisk[-_\\s]{0,2}rating\\b"
@@ -143,8 +115,6 @@
         {
             "name": "Fraud Alerts",
             "category": "Credit & Risk Assessment Data",
-            "isSensitive": true,
-            "sensitivity": "high",
             "patterns": [
                 "(?i)\\bfraud[^\\s/(;)#|,=!>]{0,5}alerts\\b",
                 "(?i)\\bfraud[-_\\s]{0,2}alerts\\b"

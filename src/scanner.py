@@ -25,8 +25,6 @@ def scan_file(filepath: str, regex_scanner: RegexScanner = None, analyzer: Any =
                     "line_number": finding["line_number"],
                     "element_name": finding["element_name"],
                     "element_category": finding["element_category"],
-                    "isSensitive": finding["isSensitive"],
-                    "sensitivity": finding["sensitivity"],
                     "matched_text": finding.get("matched_text", ""),
                     "line_content": finding.get("line_content", ""),
                     "tags": finding.get("tags", {}),
@@ -43,8 +41,6 @@ def scan_file(filepath: str, regex_scanner: RegexScanner = None, analyzer: Any =
                     "line_number": line_number,
                     "element_name": res.entity_type,
                     "element_category": "PII",
-                    "isSensitive": True,
-                    "sensitivity": "High",
                     "source": "Presidio"
                 })
     except Exception:
