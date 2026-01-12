@@ -1,0 +1,124 @@
+{
+    "sources": [
+        {
+            "name": "Portfolio Holdings",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bportfolio[^\\s/(;)#|,=!>]{0,5}holdings\\b",
+                "(?i)\\bportfolio[-_\\s]{0,2}holdings\\b"
+            ]
+        },
+        {
+            "name": "Trading History",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btrading[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\btrading[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Investment Preferences",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\binvestment[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\binvestment[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Risk Tolerance",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}tolerance\\b",
+                "(?i)\\brisk[-_\\s]{0,2}tolerance\\b"
+            ]
+        },
+        {
+            "name": "Market Research",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bmarket[^\\s/(;)#|,=!>]{0,5}research\\b",
+                "(?i)\\bmarket[-_\\s]{0,2}research\\b"
+            ]
+        },
+        {
+            "name": "Financial Goals",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfinancial[^\\s/(;)#|,=!>]{0,5}goals\\b",
+                "(?i)\\bfinancial[-_\\s]{0,2}goals\\b"
+            ]
+        },
+        {
+            "name": "Asset Allocation",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\basset[^\\s/(;)#|,=!>]{0,5}allocation\\b",
+                "(?i)\\basset[-_\\s]{0,2}allocation\\b"
+            ]
+        },
+        {
+            "name": "Dividend History",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdividend[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bdividend[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Capital Gains",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcapital[^\\s/(;)#|,=!>]{0,5}gains\\b",
+                "(?i)\\bcapital[-_\\s]{0,2}gains\\b"
+            ]
+        },
+        {
+            "name": "Capital Losses",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcapital[^\\s/(;)#|,=!>]{0,5}losses\\b",
+                "(?i)\\bcapital[-_\\s]{0,2}losses\\b"
+            ]
+        },
+        {
+            "name": "Broker Information",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbroker[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bbroker[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Investment Advisor Details",
+            "category": "Investment & Trading Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\binvestment[^\\s/(;)#|,=!>]{0,5}advisor[^\\s/(;)#|,=!>]{0,5}details\\b",
+                "(?i)\\binvestment[-_\\s]{0,2}advisor[-_\\s]{0,2}details\\b"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "sources": [
+        {
+            "name": "Live GPS Location",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\blive[^\\s/(;)#|,=!>]{0,5}gps[^\\s/(;)#|,=!>]{0,5}location\\b",
+                "(?i)\\blive[-_\\s]{0,2}gps[-_\\s]{0,2}location\\b"
+            ]
+        },
+        {
+            "name": "Home Address",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\bhome[^\\s/(;)#|,=!>]{0,5}address\\b",
+                "(?i)\\bhome[-_\\s]{0,2}address\\b"
+            ]
+        },
+        {
+            "name": "Work Address",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\bwork[^\\s/(;)#|,=!>]{0,5}address\\b",
+                "(?i)\\bwork[-_\\s]{0,2}address\\b"
+            ]
+        },
+        {
+            "name": "Delivery Address",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\bdelivery[^\\s/(;)#|,=!>]{0,5}address\\b",
+                "(?i)\\bdelivery[-_\\s]{0,2}address\\b"
+            ]
+        },
+        {
+            "name": "Service Location",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}location\\b",
+                "(?i)\\bservice[-_\\s]{0,2}location\\b"
+            ]
+        },
+        {
+            "name": "Travel History",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\btravel[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\btravel[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Check-in Locations",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bcheck[^\\s/(;)#|,=!>]{0,5}locations\\b",
+                "(?i)\\bcheck[-_\\s]{0,2}locations\\b"
+            ]
+        },
+        {
+            "name": "WiFi Connections",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bwifi[^\\s/(;)#|,=!>]{0,5}connections\\b",
+                "(?i)\\bwifi[-_\\s]{0,2}connections\\b"
+            ]
+        },
+        {
+            "name": "Bluetooth Connections",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bbluetooth[^\\s/(;)#|,=!>]{0,5}connections\\b",
+                "(?i)\\bbluetooth[-_\\s]{0,2}connections\\b"
+            ]
+        },
+        {
+            "name": "IP-Based Geolocation",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bbased[^\\s/(;)#|,=!>]{0,5}geolocation\\b",
+                "(?i)\\bbased[-_\\s]{0,2}geolocation\\b"
+            ]
+        },
+        {
+            "name": "Preferred Service Areas",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bpreferred[^\\s/(;)#|,=!>]{0,5}service[^\\s/(;)#|,=!>]{0,5}areas\\b",
+                "(?i)\\bpreferred[-_\\s]{0,2}service[-_\\s]{0,2}areas\\b"
+            ]
+        },
+        {
+            "name": "Location Preferences",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\blocation[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\blocation[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Route Information",
+            "category": "Location & Geospatial Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\broute[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\broute[-_\\s]{0,2}information\\b"
+            ]
+        }
+    ]
+}

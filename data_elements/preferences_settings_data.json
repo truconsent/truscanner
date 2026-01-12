@@ -1,0 +1,114 @@
+{
+    "sources": [
+        {
+            "name": "Language Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blanguage[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\blanguage[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Currency Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcurrency[^\\s/(;)#|,=!>]{0,5}settings\\b",
+                "(?i)\\bcurrency[-_\\s]{0,2}settings\\b"
+            ]
+        },
+        {
+            "name": "Notification Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bnotification[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bnotification[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Privacy Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bprivacy[^\\s/(;)#|,=!>]{0,5}settings\\b",
+                "(?i)\\bprivacy[-_\\s]{0,2}settings\\b"
+            ]
+        },
+        {
+            "name": "Content Filters",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}filters\\b",
+                "(?i)\\bcontent[-_\\s]{0,2}filters\\b"
+            ]
+        },
+        {
+            "name": "Personalization Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpersonalization[^\\s/(;)#|,=!>]{0,5}settings\\b",
+                "(?i)\\bpersonalization[-_\\s]{0,2}settings\\b"
+            ]
+        },
+        {
+            "name": "Theme Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btheme[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\btheme[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Accessibility Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\baccessibility[^\\s/(;)#|,=!>]{0,5}settings\\b",
+                "(?i)\\baccessibility[-_\\s]{0,2}settings\\b"
+            ]
+        },
+        {
+            "name": "Time Zone",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btime[^\\s/(;)#|,=!>]{0,5}zone\\b",
+                "(?i)\\btime[-_\\s]{0,2}zone\\b"
+            ]
+        },
+        {
+            "name": "Regional Settings",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bregional[^\\s/(;)#|,=!>]{0,5}settings\\b",
+                "(?i)\\bregional[-_\\s]{0,2}settings\\b"
+            ]
+        },
+        {
+            "name": "Communication Preferences",
+            "category": "Preferences & Settings Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcommunication[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bcommunication[-_\\s]{0,2}preferences\\b"
+            ]
+        }
+    ]
+}

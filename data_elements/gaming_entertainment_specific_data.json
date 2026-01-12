@@ -1,0 +1,104 @@
+{
+    "sources": [
+        {
+            "name": "Game Progress",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgame[^\\s/(;)#|,=!>]{0,5}progress\\b",
+                "(?i)\\bgame[-_\\s]{0,2}progress\\b"
+            ]
+        },
+        {
+            "name": "Achievement History",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bachievement[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bachievement[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "In-game Purchases",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgame[^\\s/(;)#|,=!>]{0,5}purchases\\b",
+                "(?i)\\bgame[-_\\s]{0,2}purchases\\b"
+            ]
+        },
+        {
+            "name": "Virtual Currency",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bvirtual[^\\s/(;)#|,=!>]{0,5}currency\\b",
+                "(?i)\\bvirtual[-_\\s]{0,2}currency\\b"
+            ]
+        },
+        {
+            "name": "Gaming Preferences",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgaming[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bgaming[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Multiplayer Interactions",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bmultiplayer[^\\s/(;)#|,=!>]{0,5}interactions\\b",
+                "(?i)\\bmultiplayer[-_\\s]{0,2}interactions\\b"
+            ]
+        },
+        {
+            "name": "Leaderboard Rankings",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bleaderboard[^\\s/(;)#|,=!>]{0,5}rankings\\b",
+                "(?i)\\bleaderboard[-_\\s]{0,2}rankings\\b"
+            ]
+        },
+        {
+            "name": "Time Spent Gaming",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btime[^\\s/(;)#|,=!>]{0,5}spent[^\\s/(;)#|,=!>]{0,5}gaming\\b",
+                "(?i)\\btime[-_\\s]{0,2}spent[-_\\s]{0,2}gaming\\b"
+            ]
+        },
+        {
+            "name": "Gaming Device Information",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgaming[^\\s/(;)#|,=!>]{0,5}device[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bgaming[-_\\s]{0,2}device[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Virtual Items Owned",
+            "category": "Gaming & Entertainment Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bvirtual[^\\s/(;)#|,=!>]{0,5}items[^\\s/(;)#|,=!>]{0,5}owned\\b",
+                "(?i)\\bvirtual[-_\\s]{0,2}items[-_\\s]{0,2}owned\\b"
+            ]
+        }
+    ]
+}

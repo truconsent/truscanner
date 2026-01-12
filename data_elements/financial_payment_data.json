@@ -1,0 +1,235 @@
+{
+    "sources": [
+        {
+            "name": "Bank Account Number",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bbank[^\\s/(;)#|,=!>]{0,5}account[^\\s/(;)#|,=!>]{0,5}number\\b",
+                "(?i)\\bbank[-_\\s]{0,2}account[-_\\s]{0,2}number\\b"
+            ]
+        },
+        {
+            "name": "IBAN",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\biban\\b"
+            ]
+        },
+        {
+            "name": "Routing Number",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\brouting[^\\s/(;)#|,=!>]{0,5}number\\b",
+                "(?i)\\brouting[-_\\s]{0,2}number\\b"
+            ]
+        },
+        {
+            "name": "Credit Card Number",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "\\b(?:\\d{4}[-\\s]?){3}\\d{4}\\b",
+                "(?i)\\b(?:credit|debit|card)[^\\s/(;)#|,=!>]{0,10}(?:number|no|nbr|num)\\b",
+                "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}card[^\\s/(;)#|,=!>]{0,5}number\\b",
+                "(?i)\\bcredit[-_\\s]{0,2}card[-_\\s]{0,2}number\\b"
+            ]
+        },
+        {
+            "name": "Debit Card Number",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "\\b(?:\\d{4}[-\\s]?){3}\\d{4}\\b",
+                "(?i)\\b(?:credit|debit|card)[^\\s/(;)#|,=!>]{0,10}(?:number|no|nbr|num)\\b",
+                "(?i)\\bdebit[^\\s/(;)#|,=!>]{0,5}card[^\\s/(;)#|,=!>]{0,5}number\\b",
+                "(?i)\\bdebit[-_\\s]{0,2}card[-_\\s]{0,2}number\\b"
+            ]
+        },
+        {
+            "name": "CVV",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcvv\\b"
+            ]
+        },
+        {
+            "name": "Card Expiry Date",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcard[^\\s/(;)#|,=!>]{0,5}expiry[^\\s/(;)#|,=!>]{0,5}date\\b",
+                "(?i)\\bcard[-_\\s]{0,2}expiry[-_\\s]{0,2}date\\b"
+            ]
+        },
+        {
+            "name": "UPI ID",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bupi\\b"
+            ]
+        },
+        {
+            "name": "Digital Wallet ID",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bdigital[^\\s/(;)#|,=!>]{0,5}wallet\\b",
+                "(?i)\\bdigital[-_\\s]{0,2}wallet\\b"
+            ]
+        },
+        {
+            "name": "Transaction History",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\btransaction[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\btransaction[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Account Balance",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\baccount[^\\s/(;)#|,=!>]{0,5}balance\\b",
+                "(?i)\\baccount[-_\\s]{0,2}balance\\b"
+            ]
+        },
+        {
+            "name": "Credit Limit",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}limit\\b",
+                "(?i)\\bcredit[-_\\s]{0,2}limit\\b"
+            ]
+        },
+        {
+            "name": "Available Credit",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bavailable[^\\s/(;)#|,=!>]{0,5}credit\\b",
+                "(?i)\\bavailable[-_\\s]{0,2}credit\\b"
+            ]
+        },
+        {
+            "name": "Loan Details",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bloan[^\\s/(;)#|,=!>]{0,5}details\\b",
+                "(?i)\\bloan[-_\\s]{0,2}details\\b"
+            ]
+        },
+        {
+            "name": "EMI Information",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bemi[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bemi[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Investment Portfolio",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\binvestment[^\\s/(;)#|,=!>]{0,5}portfolio\\b",
+                "(?i)\\binvestment[-_\\s]{0,2}portfolio\\b"
+            ]
+        },
+        {
+            "name": "Mutual Fund Holdings",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bmutual[^\\s/(;)#|,=!>]{0,5}fund[^\\s/(;)#|,=!>]{0,5}holdings\\b",
+                "(?i)\\bmutual[-_\\s]{0,2}fund[-_\\s]{0,2}holdings\\b"
+            ]
+        },
+        {
+            "name": "Insurance Policies",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\binsurance[^\\s/(;)#|,=!>]{0,5}policies\\b",
+                "(?i)\\binsurance[-_\\s]{0,2}policies\\b"
+            ]
+        },
+        {
+            "name": "Tax Returns",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\btax[^\\s/(;)#|,=!>]{0,5}returns\\b",
+                "(?i)\\btax[-_\\s]{0,2}returns\\b"
+            ]
+        },
+        {
+            "name": "Income Statements",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bincome[^\\s/(;)#|,=!>]{0,5}statements\\b",
+                "(?i)\\bincome[-_\\s]{0,2}statements\\b"
+            ]
+        },
+        {
+            "name": "Expense Categories",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bexpense[^\\s/(;)#|,=!>]{0,5}categories\\b",
+                "(?i)\\bexpense[-_\\s]{0,2}categories\\b"
+            ]
+        },
+        {
+            "name": "Recurring Payments",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\brecurring[^\\s/(;)#|,=!>]{0,5}payments\\b",
+                "(?i)\\brecurring[-_\\s]{0,2}payments\\b"
+            ]
+        },
+        {
+            "name": "Standing Instructions",
+            "category": "Financial & Payment Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bstanding[^\\s/(;)#|,=!>]{0,5}instructions\\b",
+                "(?i)\\bstanding[-_\\s]{0,2}instructions\\b"
+            ]
+        }
+    ]
+}

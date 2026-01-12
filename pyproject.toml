@@ -29,13 +29,12 @@ dev = [
 truscanner = "src.main:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src", "data_elements", "sinks"]
+packages = ["src", "data_elements"]
 
 [tool.hatch.build.targets.sdist]
 include = [
     "/src",
     "/data_elements",
-    "/sinks",
     "/README.md",
     "/LICENSE",
 ]

@@ -8,17 +8,11 @@
 
 Understanding data lineage is critical for privacy and security. `truScanner` automates this by:
 - **Discovering PII**: Automatically detecting personal data elements in source code.
-- **Mapping Flows**: Visualizing how data moves to databases, logs, or third parties.
 - **Reporting**: Generating audit-ready reports.
 
 ## ✨ Features
 
 - **Comprehensive Detection**: Identifies more than **110 personal data elements** (e.g., PII, financial data, device identifiers).
-- **Data Flow Mapping**: Traces data from the point of collection to specific "sinks":
-  - ☁️ **External Third Parties**
-  - 🗄️ **Databases**
-  - 📝 **Logs**
-  - 🔗 **Internal APIs**
 - **Multi-Format Reporting**: Produces actionable insights in **Markdown** and **PDF**.
 
 ## 📦 Installation

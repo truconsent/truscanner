@@ -1,0 +1,124 @@
+{
+    "sources": [
+        {
+            "name": "Subscription Plans",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsubscription[^\\s/(;)#|,=!>]{0,5}plans\\b",
+                "(?i)\\bsubscription[-_\\s]{0,2}plans\\b"
+            ]
+        },
+        {
+            "name": "Billing Cycle",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbilling[^\\s/(;)#|,=!>]{0,5}cycle\\b",
+                "(?i)\\bbilling[-_\\s]{0,2}cycle\\b"
+            ]
+        },
+        {
+            "name": "Subscription History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsubscription[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bsubscription[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Membership Tier",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bmembership[^\\s/(;)#|,=!>]{0,5}tier\\b",
+                "(?i)\\bmembership[-_\\s]{0,2}tier\\b"
+            ]
+        },
+        {
+            "name": "Renewal Dates",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\brenewal[^\\s/(;)#|,=!>]{0,5}dates\\b",
+                "(?i)\\brenewal[-_\\s]{0,2}dates\\b"
+            ]
+        },
+        {
+            "name": "Cancellation History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcancellation[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bcancellation[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Free Trial Usage",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfree[^\\s/(;)#|,=!>]{0,5}trial[^\\s/(;)#|,=!>]{0,5}usage\\b",
+                "(?i)\\bfree[-_\\s]{0,2}trial[-_\\s]{0,2}usage\\b"
+            ]
+        },
+        {
+            "name": "Upgrade History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bupgrade[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bupgrade[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Downgrade History",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdowngrade[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bdowngrade[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Payment Method for Subscriptions",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpayment[^\\s/(;)#|,=!>]{0,5}method[^\\s/(;)#|,=!>]{0,5}for[^\\s/(;)#|,=!>]{0,5}subscriptions\\b",
+                "(?i)\\bpayment[-_\\s]{0,2}method[-_\\s]{0,2}for[-_\\s]{0,2}subscriptions\\b"
+            ]
+        },
+        {
+            "name": "Auto-renewal Settings",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bauto[^\\s/(;)#|,=!>]{0,5}renewal[^\\s/(;)#|,=!>]{0,5}settings\\b",
+                "(?i)\\bauto[-_\\s]{0,2}renewal[-_\\s]{0,2}settings\\b"
+            ]
+        },
+        {
+            "name": "Promotional Offers Used",
+            "category": "Subscription & Membership Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpromotional[^\\s/(;)#|,=!>]{0,5}offers[^\\s/(;)#|,=!>]{0,5}used\\b",
+                "(?i)\\bpromotional[-_\\s]{0,2}offers[-_\\s]{0,2}used\\b"
+            ]
+        }
+    ]
+}

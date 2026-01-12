@@ -1,0 +1,107 @@
+{
+    "sources": [
+        {
+            "name": "Shipping Address",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\bshipping[^\\s/(;)#|,=!>]{0,5}address\\b",
+                "(?i)\\bshipping[-_\\s]{0,2}address\\b"
+            ]
+        },
+        {
+            "name": "Delivery Preferences",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdelivery[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bdelivery[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Delivery Instructions",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdelivery[^\\s/(;)#|,=!>]{0,5}instructions\\b",
+                "(?i)\\bdelivery[-_\\s]{0,2}instructions\\b"
+            ]
+        },
+        {
+            "name": "Tracking Information",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btracking[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\btracking[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Delivery History",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdelivery[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bdelivery[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Failed Delivery Attempts",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfailed[^\\s/(;)#|,=!>]{0,5}delivery[^\\s/(;)#|,=!>]{0,5}attempts\\b",
+                "(?i)\\bfailed[-_\\s]{0,2}delivery[-_\\s]{0,2}attempts\\b"
+            ]
+        },
+        {
+            "name": "Delivery Feedback",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdelivery[^\\s/(;)#|,=!>]{0,5}feedback\\b",
+                "(?i)\\bdelivery[-_\\s]{0,2}feedback\\b"
+            ]
+        },
+        {
+            "name": "Packaging Preferences",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpackaging[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bpackaging[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Delivery Time Slots",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdelivery[^\\s/(;)#|,=!>]{0,5}time[^\\s/(;)#|,=!>]{0,5}slots\\b",
+                "(?i)\\bdelivery[-_\\s]{0,2}time[-_\\s]{0,2}slots\\b"
+            ]
+        },
+        {
+            "name": "Special Handling Instructions",
+            "category": "Logistics & Delivery Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bspecial[^\\s/(;)#|,=!>]{0,5}handling[^\\s/(;)#|,=!>]{0,5}instructions\\b",
+                "(?i)\\bspecial[-_\\s]{0,2}handling[-_\\s]{0,2}instructions\\b"
+            ]
+        }
+    ]
+}

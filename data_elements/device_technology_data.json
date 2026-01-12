@@ -1,0 +1,134 @@
+{
+    "sources": [
+        {
+            "name": "Device Model",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdevice[^\\s/(;)#|,=!>]{0,5}model\\b",
+                "(?i)\\bdevice[-_\\s]{0,2}model\\b"
+            ]
+        },
+        {
+            "name": "Device Brand",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdevice[^\\s/(;)#|,=!>]{0,5}brand\\b",
+                "(?i)\\bdevice[-_\\s]{0,2}brand\\b"
+            ]
+        },
+        {
+            "name": "Operating System",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\boperating[^\\s/(;)#|,=!>]{0,5}system\\b",
+                "(?i)\\boperating[-_\\s]{0,2}system\\b"
+            ]
+        },
+        {
+            "name": "App Permissions",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bapp[^\\s/(;)#|,=!>]{0,5}permissions\\b",
+                "(?i)\\bapp[-_\\s]{0,2}permissions\\b"
+            ]
+        },
+        {
+            "name": "Hardware Specifications",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bhardware[^\\s/(;)#|,=!>]{0,5}specifications\\b",
+                "(?i)\\bhardware[-_\\s]{0,2}specifications\\b"
+            ]
+        },
+        {
+            "name": "Network Information",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bnetwork[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bnetwork[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Battery Usage",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbattery[^\\s/(;)#|,=!>]{0,5}usage\\b",
+                "(?i)\\bbattery[-_\\s]{0,2}usage\\b"
+            ]
+        },
+        {
+            "name": "Storage Usage",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bstorage[^\\s/(;)#|,=!>]{0,5}usage\\b",
+                "(?i)\\bstorage[-_\\s]{0,2}usage\\b"
+            ]
+        },
+        {
+            "name": "Performance Metrics",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bperformance[^\\s/(;)#|,=!>]{0,5}metrics\\b",
+                "(?i)\\bperformance[-_\\s]{0,2}metrics\\b"
+            ]
+        },
+        {
+            "name": "Crash Reports",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcrash[^\\s/(;)#|,=!>]{0,5}reports\\b",
+                "(?i)\\bcrash[-_\\s]{0,2}reports\\b"
+            ]
+        },
+        {
+            "name": "Error Logs",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\berror[^\\s/(;)#|,=!>]{0,5}logs\\b",
+                "(?i)\\berror[-_\\s]{0,2}logs\\b"
+            ]
+        },
+        {
+            "name": "Update History",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bupdate[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bupdate[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Security Status",
+            "category": "Device & Technology Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsecurity[^\\s/(;)#|,=!>]{0,5}status\\b",
+                "(?i)\\bsecurity[-_\\s]{0,2}status\\b"
+            ]
+        }
+    ]
+}

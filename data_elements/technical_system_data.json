@@ -1,0 +1,104 @@
+{
+    "sources": [
+        {
+            "name": "API Usage Logs",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bapi[^\\s/(;)#|,=!>]{0,5}usage[^\\s/(;)#|,=!>]{0,5}logs\\b",
+                "(?i)\\bapi[-_\\s]{0,2}usage[-_\\s]{0,2}logs\\b"
+            ]
+        },
+        {
+            "name": "Database Queries",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdatabase[^\\s/(;)#|,=!>]{0,5}queries\\b",
+                "(?i)\\bdatabase[-_\\s]{0,2}queries\\b"
+            ]
+        },
+        {
+            "name": "System Performance Metrics",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsystem[^\\s/(;)#|,=!>]{0,5}performance[^\\s/(;)#|,=!>]{0,5}metrics\\b",
+                "(?i)\\bsystem[-_\\s]{0,2}performance[-_\\s]{0,2}metrics\\b"
+            ]
+        },
+        {
+            "name": "Error Codes",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\berror[^\\s/(;)#|,=!>]{0,5}codes\\b",
+                "(?i)\\berror[-_\\s]{0,2}codes\\b"
+            ]
+        },
+        {
+            "name": "Debug Information",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdebug[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bdebug[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Cache Data",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcache[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\bcache[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Backup Information",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbackup[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bbackup[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Security Logs",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsecurity[^\\s/(;)#|,=!>]{0,5}logs\\b",
+                "(?i)\\bsecurity[-_\\s]{0,2}logs\\b"
+            ]
+        },
+        {
+            "name": "Access Logs",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\baccess[^\\s/(;)#|,=!>]{0,5}logs\\b",
+                "(?i)\\baccess[-_\\s]{0,2}logs\\b"
+            ]
+        },
+        {
+            "name": "Integration Data with Third-party Services",
+            "category": "Technical & System Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bintegration[^\\s/(;)#|,=!>]{0,5}data[^\\s/(;)#|,=!>]{0,5}with[^\\s/(;)#|,=!>]{0,5}third[^\\s/(;)#|,=!>]{0,5}party[^\\s/(;)#|,=!>]{0,5}services\\b",
+                "(?i)\\bintegration[-_\\s]{0,2}data[-_\\s]{0,2}with[-_\\s]{0,2}third[-_\\s]{0,2}party[-_\\s]{0,2}services\\b"
+            ]
+        }
+    ]
+}

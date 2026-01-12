@@ -1,0 +1,123 @@
+{
+    "sources": [
+        {
+            "name": "Seller ID",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bseller\\b"
+            ]
+        },
+        {
+            "name": "Service Provider ID",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}provider\\b",
+                "(?i)\\bservice[-_\\s]{0,2}provider\\b"
+            ]
+        },
+        {
+            "name": "Business Registration",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbusiness[^\\s/(;)#|,=!>]{0,5}registration\\b",
+                "(?i)\\bbusiness[-_\\s]{0,2}registration\\b"
+            ]
+        },
+        {
+            "name": "Tax Information",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btax[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\btax[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Product Catalog",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}catalog\\b",
+                "(?i)\\bproduct[-_\\s]{0,2}catalog\\b"
+            ]
+        },
+        {
+            "name": "Service Offerings",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}offerings\\b",
+                "(?i)\\bservice[-_\\s]{0,2}offerings\\b"
+            ]
+        },
+        {
+            "name": "Performance Metrics",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bperformance[^\\s/(;)#|,=!>]{0,5}metrics\\b",
+                "(?i)\\bperformance[-_\\s]{0,2}metrics\\b"
+            ]
+        },
+        {
+            "name": "Customer Ratings",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcustomer[^\\s/(;)#|,=!>]{0,5}ratings\\b",
+                "(?i)\\bcustomer[-_\\s]{0,2}ratings\\b"
+            ]
+        },
+        {
+            "name": "Payout Information",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpayout[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bpayout[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Commission Structure",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcommission[^\\s/(;)#|,=!>]{0,5}structure\\b",
+                "(?i)\\bcommission[-_\\s]{0,2}structure\\b"
+            ]
+        },
+        {
+            "name": "Inventory Data",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\binventory[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\binventory[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Business Verification Documents",
+            "category": "Vendor & Merchant Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbusiness[^\\s/(;)#|,=!>]{0,5}verification[^\\s/(;)#|,=!>]{0,5}documents\\b",
+                "(?i)\\bbusiness[-_\\s]{0,2}verification[-_\\s]{0,2}documents\\b"
+            ]
+        }
+    ]
+}

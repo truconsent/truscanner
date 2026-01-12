@@ -1,0 +1,124 @@
+{
+    "sources": [
+        {
+            "name": "Service History",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bservice[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Booking Details",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbooking[^\\s/(;)#|,=!>]{0,5}details\\b",
+                "(?i)\\bbooking[-_\\s]{0,2}details\\b"
+            ]
+        },
+        {
+            "name": "Service Provider Information",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}provider[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bservice[-_\\s]{0,2}provider[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Service Completion Status",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}completion[^\\s/(;)#|,=!>]{0,5}status\\b",
+                "(?i)\\bservice[-_\\s]{0,2}completion[-_\\s]{0,2}status\\b"
+            ]
+        },
+        {
+            "name": "Service Ratings",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}ratings\\b",
+                "(?i)\\bservice[-_\\s]{0,2}ratings\\b"
+            ]
+        },
+        {
+            "name": "Service Reviews",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}reviews\\b",
+                "(?i)\\bservice[-_\\s]{0,2}reviews\\b"
+            ]
+        },
+        {
+            "name": "Cancellation History",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcancellation[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bcancellation[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Rescheduling Patterns",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\brescheduling[^\\s/(;)#|,=!>]{0,5}patterns\\b",
+                "(?i)\\brescheduling[-_\\s]{0,2}patterns\\b"
+            ]
+        },
+        {
+            "name": "Service Preferences",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bservice[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Frequency of Service Usage",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfrequency[^\\s/(;)#|,=!>]{0,5}service[^\\s/(;)#|,=!>]{0,5}usage\\b",
+                "(?i)\\bfrequency[-_\\s]{0,2}service[-_\\s]{0,2}usage\\b"
+            ]
+        },
+        {
+            "name": "Service Location History",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}location[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bservice[-_\\s]{0,2}location[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Payment for Services",
+            "category": "Service & Booking Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpayment[^\\s/(;)#|,=!>]{0,5}for[^\\s/(;)#|,=!>]{0,5}services\\b",
+                "(?i)\\bpayment[-_\\s]{0,2}for[-_\\s]{0,2}services\\b"
+            ]
+        }
+    ]
+}

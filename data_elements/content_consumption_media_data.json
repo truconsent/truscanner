@@ -1,0 +1,150 @@
+{
+    "sources": [
+        {
+            "name": "Viewing History",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bviewing[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bviewing[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Listening History",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blistening[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\blistening[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Content Ratings",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}ratings\\b",
+                "(?i)\\bcontent[-_\\s]{0,2}ratings\\b"
+            ]
+        },
+        {
+            "name": "Content Reviews",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}reviews\\b",
+                "(?i)\\bcontent[-_\\s]{0,2}reviews\\b"
+            ]
+        },
+        {
+            "name": "Watchlist",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bwatchlist\\b"
+            ]
+        },
+        {
+            "name": "Playlist",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bplaylist\\b"
+            ]
+        },
+        {
+            "name": "Favorite Genres",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfavorite[^\\s/(;)#|,=!>]{0,5}genres\\b",
+                "(?i)\\bfavorite[-_\\s]{0,2}genres\\b"
+            ]
+        },
+        {
+            "name": "Content Completion Rate",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}completion[^\\s/(;)#|,=!>]{0,5}rate\\b",
+                "(?i)\\bcontent[-_\\s]{0,2}completion[-_\\s]{0,2}rate\\b"
+            ]
+        },
+        {
+            "name": "Skip Patterns",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bskip[^\\s/(;)#|,=!>]{0,5}patterns\\b",
+                "(?i)\\bskip[-_\\s]{0,2}patterns\\b"
+            ]
+        },
+        {
+            "name": "Download History",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdownload[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bdownload[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Sharing Behavior",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsharing[^\\s/(;)#|,=!>]{0,5}behavior\\b",
+                "(?i)\\bsharing[-_\\s]{0,2}behavior\\b"
+            ]
+        },
+        {
+            "name": "Content Creation Data",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}creation[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\bcontent[-_\\s]{0,2}creation[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Live Stream Participation",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blive[^\\s/(;)#|,=!>]{0,5}stream[^\\s/(;)#|,=!>]{0,5}participation\\b",
+                "(?i)\\blive[-_\\s]{0,2}stream[-_\\s]{0,2}participation\\b"
+            ]
+        },
+        {
+            "name": "Comments",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcomments\\b"
+            ]
+        },
+        {
+            "name": "Interactions",
+            "category": "Content Consumption & Media Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\binteractions\\b"
+            ]
+        }
+    ]
+}

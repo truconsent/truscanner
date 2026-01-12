@@ -1,0 +1,116 @@
+{
+    "sources": [
+        {
+            "name": "Campaign Interaction History",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcampaign[^\\s/(;)#|,=!>]{0,5}interaction[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bcampaign[-_\\s]{0,2}interaction[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Email Open Rates",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
+                "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)",
+                "(?i)\\bemail[^\\s/(;)#|,=!>]{0,5}open[^\\s/(;)#|,=!>]{0,5}rates\\b",
+                "(?i)\\bemail[-_\\s]{0,2}open[-_\\s]{0,2}rates\\b"
+            ]
+        },
+        {
+            "name": "Click-through Rates",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bclick[^\\s/(;)#|,=!>]{0,5}through[^\\s/(;)#|,=!>]{0,5}rates\\b",
+                "(?i)\\bclick[-_\\s]{0,2}through[-_\\s]{0,2}rates\\b"
+            ]
+        },
+        {
+            "name": "Conversion Metrics",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bconversion[^\\s/(;)#|,=!>]{0,5}metrics\\b",
+                "(?i)\\bconversion[-_\\s]{0,2}metrics\\b"
+            ]
+        },
+        {
+            "name": "A/B Testing Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btesting[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\btesting[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Segmentation Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsegmentation[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\bsegmentation[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Lead Scoring",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blead[^\\s/(;)#|,=!>]{0,5}scoring\\b",
+                "(?i)\\blead[-_\\s]{0,2}scoring\\b"
+            ]
+        },
+        {
+            "name": "Attribution Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\battribution[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\battribution[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Customer Lifetime Value",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcustomer[^\\s/(;)#|,=!>]{0,5}lifetime[^\\s/(;)#|,=!>]{0,5}value\\b",
+                "(?i)\\bcustomer[-_\\s]{0,2}lifetime[-_\\s]{0,2}value\\b"
+            ]
+        },
+        {
+            "name": "Churn Prediction Data",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bchurn[^\\s/(;)#|,=!>]{0,5}prediction[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\bchurn[-_\\s]{0,2}prediction[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Marketing Channel Performance",
+            "category": "Marketing & Analytics Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bmarketing[^\\s/(;)#|,=!>]{0,5}channel[^\\s/(;)#|,=!>]{0,5}performance\\b",
+                "(?i)\\bmarketing[-_\\s]{0,2}channel[-_\\s]{0,2}performance\\b"
+            ]
+        }
+    ]
+}

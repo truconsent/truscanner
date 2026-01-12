@@ -1,0 +1,164 @@
+{
+    "sources": [
+        {
+            "name": "IP Address",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\baddress\\b"
+            ]
+        },
+        {
+            "name": "Device ID",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdevice\\b"
+            ]
+        },
+        {
+            "name": "MAC Address",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "medium",
+            "patterns": [
+                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
+                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
+                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "(?i)\\bmac[^\\s/(;)#|,=!>]{0,5}address\\b",
+                "(?i)\\bmac[-_\\s]{0,2}address\\b"
+            ]
+        },
+        {
+            "name": "Browser Fingerprint",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bbrowser[^\\s/(;)#|,=!>]{0,5}fingerprint\\b",
+                "(?i)\\bbrowser[-_\\s]{0,2}fingerprint\\b"
+            ]
+        },
+        {
+            "name": "Cookies",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcookies\\b"
+            ]
+        },
+        {
+            "name": "Tracking Technologies",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btracking[^\\s/(;)#|,=!>]{0,5}technologies\\b",
+                "(?i)\\btracking[-_\\s]{0,2}technologies\\b"
+            ]
+        },
+        {
+            "name": "Google ID",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgoogle\\b"
+            ]
+        },
+        {
+            "name": "Apple ID",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bapple\\b"
+            ]
+        },
+        {
+            "name": "Facebook ID",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfacebook\\b"
+            ]
+        },
+        {
+            "name": "Session IDs",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsession[^\\s/(;)#|,=!>]{0,5}ids\\b",
+                "(?i)\\bsession[-_\\s]{0,2}ids\\b"
+            ]
+        },
+        {
+            "name": "API Keys",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bapi[^\\s/(;)#|,=!>]{0,5}keys\\b",
+                "(?i)\\bapi[-_\\s]{0,2}keys\\b"
+            ]
+        },
+        {
+            "name": "OAuth Tokens",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\boauth[^\\s/(;)#|,=!>]{0,5}tokens\\b",
+                "(?i)\\boauth[-_\\s]{0,2}tokens\\b"
+            ]
+        },
+        {
+            "name": "Device Model",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdevice[^\\s/(;)#|,=!>]{0,5}model\\b",
+                "(?i)\\bdevice[-_\\s]{0,2}model\\b"
+            ]
+        },
+        {
+            "name": "Operating System Version",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\boperating[^\\s/(;)#|,=!>]{0,5}system[^\\s/(;)#|,=!>]{0,5}version\\b",
+                "(?i)\\boperating[-_\\s]{0,2}system[-_\\s]{0,2}version\\b"
+            ]
+        },
+        {
+            "name": "App Version",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bapp[^\\s/(;)#|,=!>]{0,5}version\\b",
+                "(?i)\\bapp[-_\\s]{0,2}version\\b"
+            ]
+        },
+        {
+            "name": "User Agent String",
+            "category": "Digital & Online Identifiers",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\buser[^\\s/(;)#|,=!>]{0,5}agent[^\\s/(;)#|,=!>]{0,5}string\\b",
+                "(?i)\\buser[-_\\s]{0,2}agent[-_\\s]{0,2}string\\b"
+            ]
+        }
+    ]
+}

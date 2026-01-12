@@ -1,0 +1,144 @@
+{
+    "sources": [
+        {
+            "name": "Partner Preferences",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bpartner[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bpartner[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Physical Attributes",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bphysical[^\\s/(;)#|,=!>]{0,5}attributes\\b",
+                "(?i)\\bphysical[-_\\s]{0,2}attributes\\b"
+            ]
+        },
+        {
+            "name": "Lifestyle Choices",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blifestyle[^\\s/(;)#|,=!>]{0,5}choices\\b",
+                "(?i)\\blifestyle[-_\\s]{0,2}choices\\b"
+            ]
+        },
+        {
+            "name": "Religious Practices",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\breligious[^\\s/(;)#|,=!>]{0,5}practices\\b",
+                "(?i)\\breligious[-_\\s]{0,2}practices\\b"
+            ]
+        },
+        {
+            "name": "Caste Information",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcaste[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bcaste[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Community Information",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcommunity[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bcommunity[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Family Background",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfamily[^\\s/(;)#|,=!>]{0,5}background\\b",
+                "(?i)\\bfamily[-_\\s]{0,2}background\\b"
+            ]
+        },
+        {
+            "name": "Horoscope Data",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bhoroscope[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\bhoroscope[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Astrological Data",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bastrological[^\\s/(;)#|,=!>]{0,5}data\\b",
+                "(?i)\\bastrological[-_\\s]{0,2}data\\b"
+            ]
+        },
+        {
+            "name": "Dietary Preferences",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdietary[^\\s/(;)#|,=!>]{0,5}preferences\\b",
+                "(?i)\\bdietary[-_\\s]{0,2}preferences\\b"
+            ]
+        },
+        {
+            "name": "Smoking Habits",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsmoking[^\\s/(;)#|,=!>]{0,5}habits\\b",
+                "(?i)\\bsmoking[-_\\s]{0,2}habits\\b"
+            ]
+        },
+        {
+            "name": "Drinking Habits",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdrinking[^\\s/(;)#|,=!>]{0,5}habits\\b",
+                "(?i)\\bdrinking[-_\\s]{0,2}habits\\b"
+            ]
+        },
+        {
+            "name": "Interest in Children",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\binterest[^\\s/(;)#|,=!>]{0,5}children\\b",
+                "(?i)\\binterest[-_\\s]{0,2}children\\b"
+            ]
+        },
+        {
+            "name": "Communication History with Matches",
+            "category": "Matrimonial & Dating Specific Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcommunication[^\\s/(;)#|,=!>]{0,5}history[^\\s/(;)#|,=!>]{0,5}with[^\\s/(;)#|,=!>]{0,5}matches\\b",
+                "(?i)\\bcommunication[-_\\s]{0,2}history[-_\\s]{0,2}with[-_\\s]{0,2}matches\\b"
+            ]
+        }
+    ]
+}

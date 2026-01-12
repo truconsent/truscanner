@@ -14,8 +14,8 @@ def main():
 @click.option('--with-ai', is_flag=True, help='Enable AI/LLM scanner (requires OPENAI_API_KEY)')
 @click.option('--format', type=click.Choice(['json', 'report']), default='report', help='Output format')
 @click.option('--output', '-o', type=click.Path(), help='Save report to file')
-@click.option('--stored-only', is_flag=True, help='Only report data elements that flow into a storage sink')
-def scan(directory, with_presidio, with_ai, format, output, stored_only):
+@click.option('--personal-only', is_flag=True, help='Only report personal identifiable information (PII) data elements')
+def scan(directory, with_presidio, with_ai, format, output, personal_only):
     """Scan a directory for privacy-related data elements.
     
     By default, uses fast regex-based scanning with patterns from JSON files.
@@ -32,7 +32,20 @@ def scan(directory, with_presidio, with_ai, format, output, stored_only):
         duration = time.time() - start_time
         
         if format == 'report':
-            report = scanner.generate_report(results, duration=duration, stored_only=stored_only)
+            # Filter to personal details only if requested
+            if personal_only:
+                personal_categories = [
+                    'Personal Identifiable Information',
+                    'PII',
+                    'Contact Information',
+                    'Government-Issued Identifiers',
+                    'Authentication & Credentials',
+                    'Health & Biometric Data',
+                    'Sensitive Personal Data'
+                ]
+                results = [r for r in results if any(cat in r.get('element_category', '') for cat in personal_categories)]
+            
+            report = scanner.generate_report(results, duration=duration)
             click.echo(report)
             
             # Auto-save report to file

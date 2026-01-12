@@ -1,0 +1,114 @@
+{
+    "sources": [
+        {
+            "name": "Family Information",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfamily[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bfamily[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Relationship Status",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\brelationship[^\\s/(;)#|,=!>]{0,5}status\\b",
+                "(?i)\\brelationship[-_\\s]{0,2}status\\b"
+            ]
+        },
+        {
+            "name": "Children Information",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bchildren[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bchildren[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Social Connections",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}connections\\b",
+                "(?i)\\bsocial[-_\\s]{0,2}connections\\b"
+            ]
+        },
+        {
+            "name": "Friend Lists",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bfriend[^\\s/(;)#|,=!>]{0,5}lists\\b",
+                "(?i)\\bfriend[-_\\s]{0,2}lists\\b"
+            ]
+        },
+        {
+            "name": "Professional Network",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bprofessional[^\\s/(;)#|,=!>]{0,5}network\\b",
+                "(?i)\\bprofessional[-_\\s]{0,2}network\\b"
+            ]
+        },
+        {
+            "name": "Community Participation",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcommunity[^\\s/(;)#|,=!>]{0,5}participation\\b",
+                "(?i)\\bcommunity[-_\\s]{0,2}participation\\b"
+            ]
+        },
+        {
+            "name": "Social Media Activity",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}media[^\\s/(;)#|,=!>]{0,5}activity\\b",
+                "(?i)\\bsocial[-_\\s]{0,2}media[-_\\s]{0,2}activity\\b"
+            ]
+        },
+        {
+            "name": "Shared Content",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bshared[^\\s/(;)#|,=!>]{0,5}content\\b",
+                "(?i)\\bshared[-_\\s]{0,2}content\\b"
+            ]
+        },
+        {
+            "name": "Group Memberships",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgroup[^\\s/(;)#|,=!>]{0,5}memberships\\b",
+                "(?i)\\bgroup[-_\\s]{0,2}memberships\\b"
+            ]
+        },
+        {
+            "name": "Social Influence Score",
+            "category": "Social & Relationship Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}influence[^\\s/(;)#|,=!>]{0,5}score\\b",
+                "(?i)\\bsocial[-_\\s]{0,2}influence[-_\\s]{0,2}score\\b"
+            ]
+        }
+    ]
+}

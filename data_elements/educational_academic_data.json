@@ -1,0 +1,113 @@
+{
+    "sources": [
+        {
+            "name": "Educational Qualifications",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\beducational[^\\s/(;)#|,=!>]{0,5}qualifications\\b",
+                "(?i)\\beducational[-_\\s]{0,2}qualifications\\b"
+            ]
+        },
+        {
+            "name": "Institution Names",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\binstitution[^\\s/(;)#|,=!>]{0,5}names\\b",
+                "(?i)\\binstitution[-_\\s]{0,2}names\\b"
+            ]
+        },
+        {
+            "name": "Graduation Years",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bgraduation[^\\s/(;)#|,=!>]{0,5}years\\b",
+                "(?i)\\bgraduation[-_\\s]{0,2}years\\b"
+            ]
+        },
+        {
+            "name": "Academic Performance",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bacademic[^\\s/(;)#|,=!>]{0,5}performance\\b",
+                "(?i)\\bacademic[-_\\s]{0,2}performance\\b"
+            ]
+        },
+        {
+            "name": "Courses Completed",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcourses[^\\s/(;)#|,=!>]{0,5}completed\\b",
+                "(?i)\\bcourses[-_\\s]{0,2}completed\\b"
+            ]
+        },
+        {
+            "name": "Certifications",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcertifications\\b"
+            ]
+        },
+        {
+            "name": "Skills Assessment",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bskills[^\\s/(;)#|,=!>]{0,5}assessment\\b",
+                "(?i)\\bskills[-_\\s]{0,2}assessment\\b"
+            ]
+        },
+        {
+            "name": "Training Records",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\btraining[^\\s/(;)#|,=!>]{0,5}records\\b",
+                "(?i)\\btraining[-_\\s]{0,2}records\\b"
+            ]
+        },
+        {
+            "name": "Learning Progress",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\blearning[^\\s/(;)#|,=!>]{0,5}progress\\b",
+                "(?i)\\blearning[-_\\s]{0,2}progress\\b"
+            ]
+        },
+        {
+            "name": "Continuing Education",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcontinuing[^\\s/(;)#|,=!>]{0,5}education\\b",
+                "(?i)\\bcontinuing[-_\\s]{0,2}education\\b"
+            ]
+        },
+        {
+            "name": "Professional Development",
+            "category": "Educational & Academic Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bprofessional[^\\s/(;)#|,=!>]{0,5}development\\b",
+                "(?i)\\bprofessional[-_\\s]{0,2}development\\b"
+            ]
+        }
+    ]
+}

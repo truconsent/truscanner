@@ -1,0 +1,104 @@
+{
+    "sources": [
+        {
+            "name": "KYC (Know Your Customer) Documentation",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bkyc[^\\s/(;)#|,=!>]{0,5}know[^\\s/(;)#|,=!>]{0,5}your[^\\s/(;)#|,=!>]{0,5}customer[^\\s/(;)#|,=!>]{0,5}documentation\\b",
+                "(?i)\\bkyc[-_\\s]{0,2}know[-_\\s]{0,2}your[-_\\s]{0,2}customer[-_\\s]{0,2}documentation\\b"
+            ]
+        },
+        {
+            "name": "AML (Anti-Money Laundering) Records",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\baml[^\\s/(;)#|,=!>]{0,5}anti[^\\s/(;)#|,=!>]{0,5}money[^\\s/(;)#|,=!>]{0,5}laundering[^\\s/(;)#|,=!>]{0,5}records\\b",
+                "(?i)\\baml[-_\\s]{0,2}anti[-_\\s]{0,2}money[-_\\s]{0,2}laundering[-_\\s]{0,2}records\\b"
+            ]
+        },
+        {
+            "name": "Sanctions Screening Results",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bsanctions[^\\s/(;)#|,=!>]{0,5}screening[^\\s/(;)#|,=!>]{0,5}results\\b",
+                "(?i)\\bsanctions[-_\\s]{0,2}screening[-_\\s]{0,2}results\\b"
+            ]
+        },
+        {
+            "name": "Risk Assessment Reports",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}assessment[^\\s/(;)#|,=!>]{0,5}reports\\b",
+                "(?i)\\brisk[-_\\s]{0,2}assessment[-_\\s]{0,2}reports\\b"
+            ]
+        },
+        {
+            "name": "Compliance Status",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bcompliance[^\\s/(;)#|,=!>]{0,5}status\\b",
+                "(?i)\\bcompliance[-_\\s]{0,2}status\\b"
+            ]
+        },
+        {
+            "name": "Regulatory Filings",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bregulatory[^\\s/(;)#|,=!>]{0,5}filings\\b",
+                "(?i)\\bregulatory[-_\\s]{0,2}filings\\b"
+            ]
+        },
+        {
+            "name": "Audit Trails",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\baudit[^\\s/(;)#|,=!>]{0,5}trails\\b",
+                "(?i)\\baudit[-_\\s]{0,2}trails\\b"
+            ]
+        },
+        {
+            "name": "Consent Records",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bconsent[^\\s/(;)#|,=!>]{0,5}records\\b",
+                "(?i)\\bconsent[-_\\s]{0,2}records\\b"
+            ]
+        },
+        {
+            "name": "Data Processing Agreements",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bdata[^\\s/(;)#|,=!>]{0,5}processing[^\\s/(;)#|,=!>]{0,5}agreements\\b",
+                "(?i)\\bdata[-_\\s]{0,2}processing[-_\\s]{0,2}agreements\\b"
+            ]
+        },
+        {
+            "name": "Terms of Service Acceptance",
+            "category": "Legal & Compliance Data",
+            "isSensitive": false,
+            "sensitivity": "low",
+            "patterns": [
+                "(?i)\\bterms[^\\s/(;)#|,=!>]{0,5}service[^\\s/(;)#|,=!>]{0,5}acceptance\\b",
+                "(?i)\\bterms[-_\\s]{0,2}service[-_\\s]{0,2}acceptance\\b"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "sources": [
+        {
+            "name": "Racial Origin",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bracial[^\\s/(;)#|,=!>]{0,5}origin\\b",
+                "(?i)\\bracial[-_\\s]{0,2}origin\\b"
+            ]
+        },
+        {
+            "name": "Ethnic Origin",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bethnic[^\\s/(;)#|,=!>]{0,5}origin\\b",
+                "(?i)\\bethnic[-_\\s]{0,2}origin\\b"
+            ]
+        },
+        {
+            "name": "Religious Beliefs",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\breligious[^\\s/(;)#|,=!>]{0,5}beliefs\\b",
+                "(?i)\\breligious[-_\\s]{0,2}beliefs\\b"
+            ]
+        },
+        {
+            "name": "Philosophical Beliefs",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bphilosophical[^\\s/(;)#|,=!>]{0,5}beliefs\\b",
+                "(?i)\\bphilosophical[-_\\s]{0,2}beliefs\\b"
+            ]
+        },
+        {
+            "name": "Political Opinions",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bpolitical[^\\s/(;)#|,=!>]{0,5}opinions\\b",
+                "(?i)\\bpolitical[-_\\s]{0,2}opinions\\b"
+            ]
+        },
+        {
+            "name": "Sexual Orientation",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bsexual[^\\s/(;)#|,=!>]{0,5}orientation\\b",
+                "(?i)\\bsexual[-_\\s]{0,2}orientation\\b"
+            ]
+        },
+        {
+            "name": "Union Membership",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bunion[^\\s/(;)#|,=!>]{0,5}membership\\b",
+                "(?i)\\bunion[-_\\s]{0,2}membership\\b"
+            ]
+        },
+        {
+            "name": "Criminal History",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bcriminal[^\\s/(;)#|,=!>]{0,5}history\\b",
+                "(?i)\\bcriminal[-_\\s]{0,2}history\\b"
+            ]
+        },
+        {
+            "name": "Medical Conditions",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bmedical[^\\s/(;)#|,=!>]{0,5}conditions\\b",
+                "(?i)\\bmedical[-_\\s]{0,2}conditions\\b"
+            ]
+        },
+        {
+            "name": "Genetic Information",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bgenetic[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bgenetic[-_\\s]{0,2}information\\b"
+            ]
+        },
+        {
+            "name": "Biometric Templates",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bbiometric[^\\s/(;)#|,=!>]{0,5}templates\\b",
+                "(?i)\\bbiometric[-_\\s]{0,2}templates\\b"
+            ]
+        },
+        {
+            "name": "Children's Information",
+            "category": "Sensitive Personal Data",
+            "isSensitive": true,
+            "sensitivity": "high",
+            "patterns": [
+                "(?i)\\bchildren[^\\s/(;)#|,=!>]{0,5}information\\b",
+                "(?i)\\bchildren[-_\\s]{0,2}information\\b"
+            ]
+        }
+    ]
+}
