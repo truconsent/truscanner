@@ -85,16 +85,35 @@ class RegexScanner:
         matched_lower = matched_text.lower().strip()
         line_stripped = line_content.strip()
         
-        # Skip matches in comments (both // and #)
+        # Skip entire lines that are comments (start with //, #, /*, or *)
+        if line_stripped.startswith(("//", "#", "/*", "*/", "*")):
+            return True
+        
+        # Skip matches in single-line comments (both // and #)
+        # Check if the match is after a comment marker
         comment_idx = line_content.find("//")
         if comment_idx == -1:
             comment_idx = line_content.find("#")
-        if comment_idx != -1 and (match_start - line_start) > comment_idx:
-            return True
+        if comment_idx != -1:
+            match_pos = match_start - line_start
+            # If match is after comment marker, skip it
+            if match_pos > comment_idx:
+                return True
+            # If comment marker is before match and there's no code before comment, skip entire line
+            if comment_idx < match_pos and not line_content[:comment_idx].strip():
+                return True
         
-        # Skip matches in multi-line comments
-        if line_stripped.startswith(("*", "/*", "*/")):
-            return True
+        # Skip matches in multi-line comments (/* ... */)
+        # Check if we're inside a /* */ block
+        before_match = line_content[:match_start - line_start]
+        if "/*" in before_match:
+            # Find the last /* before the match
+            comment_start = before_match.rfind("/*")
+            # Check if there's a closing */ after the comment start but before match
+            comment_end = line_content.find("*/", comment_start)
+            if comment_end == -1 or comment_end > match_start - line_start:
+                # We're inside a comment block
+                return True
         
         # Skip HTML attributes and CSS values
         if any(html_attr in line_lower for html_attr in [
@@ -211,6 +230,11 @@ class RegexScanner:
                     
                     line_content = lines[line_number - 1] if line_number <= len(lines) else ""
                     line_start = line_starts[line_number - 1] if line_number > 0 else 0
+                    line_stripped = line_content.strip()
+                    
+                    # Skip entire comment lines immediately
+                    if line_stripped.startswith(("//", "#", "/*", "*/", "*")):
+                        continue
                     
                     # Check for false positives
                     if self._is_false_positive(line_content, match.group(0), start_offset, line_start):
