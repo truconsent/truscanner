@@ -199,6 +199,7 @@ class RegexScanner:
                 
                 files_to_scan.append(os.path.join(root, file))
         
+        
         all_findings = []
         # Use ProcessPoolExecutor for true parallel scanning (avoids GIL)
         num_workers = os.cpu_count() or 1
@@ -217,7 +218,8 @@ class RegexScanner:
                     file = future_to_file[future]
                     print(f"Error processing {file}: {e}")
         
-        return all_findings
+        # Return both findings and file count
+        return all_findings, len(files_to_scan)
     
     def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, stored_only: bool = False) -> str:
         """Generate formatted report from findings with storage awareness."""

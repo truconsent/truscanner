@@ -1,8 +1,14 @@
 import click
 import json
 import time
+import os
+import warnings
+
+# Suppress urllib3 NotOpenSSLWarning which is common on macOS with LibreSSL
+warnings.filterwarnings("ignore", message=".*NotOpenSSLWarning.*")
 from .scanner import scan_directory
 from .regex_scanner import RegexScanner
+from .api_client import truscannerAPI
 
 @click.group()
 def main():
@@ -23,12 +29,16 @@ def scan(directory, with_presidio, with_ai, format, output, stored_only):
     """
     click.echo(f"Scanning: {directory}...")
     
+    results = []
+    duration = 0
+    files_scanned = 0
+    
     # Default: Use regex scanner (fast, no downloads)
     if not with_presidio and not with_ai:
         scanner = RegexScanner()
         
         start_time = time.time()
-        results = scanner.scan_directory(directory)
+        results, files_scanned = scanner.scan_directory(directory)
         duration = time.time() - start_time
         
         if format == 'report':
@@ -48,7 +58,9 @@ def scan(directory, with_presidio, with_ai, format, output, stored_only):
                 click.echo(f"\n✅ Results saved to: {output}")
     else:
         # Use full scanner with optional Presidio and AI
+        start_time = time.time()
         results = scan_directory(directory, use_presidio=with_presidio, use_ai=with_ai)
+        duration = time.time() - start_time
         
         if results:
             if format == 'report':
@@ -86,6 +98,60 @@ def scan(directory, with_presidio, with_ai, format, output, stored_only):
                     click.echo(f"\n✅ Results saved to: {output}")
         else:
             click.echo("No data elements found.")
+
+    # Universal post-scan analytics prompt
+    if results and click.confirm("\n✅ Scan complete! Would you like to view analytics on the dashboard?", default=True):
+        api = truscannerAPI()
+        
+        # Always authenticate if not already authenticated
+        if not api.is_authenticated():
+            click.echo("🔐 Authentication required to upload scan data...")
+            click.echo("🔐 Starting authentication flow...")
+            click.echo("📱 Opening browser for Google sign-in...")
+            click.echo("⏳ Waiting for authentication (timeout: 5 minutes)...")
+            
+            if not api.authenticate():
+                click.echo("❌ Authentication failed or cancelled. Scan saved locally only.")
+                return
+            click.echo("✅ Authenticated successfully!")
+        
+        click.echo("📤 Uploading results to truscanner Analytics...")
+        
+        # Use directory name as project name if possible
+        project_name = os.path.basename(os.path.abspath(directory))
+        
+        # Filter to stored-only for upload (show only PII that flows to storage)
+        stored_results = [r for r in results if r.get("is_stored")]
+        
+        response = api.upload_scan(
+            project_name=project_name,
+            results=stored_results,
+            duration=duration,
+            files_scanned=files_scanned,
+            metadata={"cli_version": "0.2.0"}
+        )
+        
+        # If unauthorized, re-authenticate and retry
+        if response and response.get("error") == "unauthorized":
+            click.echo("🔐 Re-authenticating...")
+            if api.authenticate():
+                click.echo("✅ Authenticated successfully!")
+                click.echo("📤 Retrying upload...")
+                response = api.upload_scan(
+                    project_name=project_name,
+                    results=stored_results,
+                    duration=duration,
+                    files_scanned=files_scanned,
+                    metadata={"cli_version": "0.2.0"}
+                )
+            else:
+                click.echo("❌ Authentication failed. Scan saved locally only.")
+                return
+        
+        if response and "id" in response:
+            api.open_dashboard(response["id"])
+        else:
+            click.echo("❌ Failed to upload results. Please try again later.")
 
 if __name__ == "__main__":
     main()
