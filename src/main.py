@@ -120,7 +120,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
         
         # Post-scan analysis prompt
         analyze = click.prompt(
-            "\nDo you want to analyze?",
+            "\nDo you want to upload the scan report for the above purpose?",
             type=click.Choice(['Y', 'N'], case_sensitive=False),
             default='Y',
             show_default=False

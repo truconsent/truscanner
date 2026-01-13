@@ -347,6 +347,24 @@ class RegexScanner:
             lines.append(f"Time Taken: {duration:.2f} seconds")
         lines.append("")
         
+        # Summary by Category
+        category_details = defaultdict(lambda: defaultdict(int))
+        for f in findings:
+            category_details[f["element_category"]][f["element_name"]] += 1
+        
+        lines.append("Summary by Category")
+        lines.append("-" * 80)
+        for category, elements in sorted(category_details.items(), key=lambda x: sum(x[1].values()), reverse=True):
+            total_count = sum(elements.values())
+            distinct_count = len(elements)
+            lines.append(f"\n{category}")
+            lines.append(f"  Total: {total_count} ({distinct_count} distinctive elements)")
+            for name, count in sorted(elements.items(), key=lambda x: x[1], reverse=True):
+                lines.append(f"    - {name}: {count}")
+        lines.append("")
+        lines.append("-" * 80)
+        lines.append("")
+        
         # Group by file and collect unique element names
         by_file = defaultdict(lambda: {"findings": [], "elements": set()})
         for f in findings:
@@ -364,13 +382,14 @@ class RegexScanner:
         sorted_files = sorted(by_file.items())
         for idx, (filename, file_data) in enumerate(sorted_files, 1):
             total_elements = len(file_data["elements"])
-            element_names = ", ".join(sorted(file_data["elements"]))
-            # Truncate element names if too long
-            if len(element_names) > 100:
-                element_names = element_names[:97] + "..."
+            # Format elements as pills: [Element1] [Element2] [Element3]
+            element_pills = " ".join(f"[{elem}]" for elem in sorted(file_data["elements"]))
+            # Truncate element pills if too long
+            if len(element_pills) > 100:
+                element_pills = element_pills[:97] + "..."
             # Truncate filename if too long
             display_filename = filename[:47] + "..." if len(filename) > 50 else filename
-            lines.append(f"{idx:<8} {display_filename:<50} {total_elements:<25} {element_names}")
+            lines.append(f"{idx:<8} {display_filename:<50} {total_elements:<25} {element_pills}")
         
         lines.append("-" * 80)
         lines.append("")
@@ -430,6 +449,24 @@ class RegexScanner:
             lines.append(f"- **Directory Scanned:** {directory_scanned}")
         lines.append("")
         
+        # Summary by Category
+        category_details = defaultdict(lambda: defaultdict(int))
+        for f in findings:
+            category_details[f["element_category"]][f["element_name"]] += 1
+        
+        lines.append("## Summary by Category")
+        lines.append("")
+        for category, elements in sorted(category_details.items(), key=lambda x: sum(x[1].values()), reverse=True):
+            total_count = sum(elements.values())
+            distinct_count = len(elements)
+            lines.append(f"### {category}")
+            lines.append("")
+            lines.append(f"- **Total:** {total_count} ({distinct_count} distinctive elements)")
+            lines.append("")
+            for name, count in sorted(elements.items(), key=lambda x: x[1], reverse=True):
+                lines.append(f"  - {name}: {count}")
+            lines.append("")
+        
         # Group by file and collect unique element names
         by_file = defaultdict(lambda: {"findings": [], "elements": set()})
         for f in findings:
@@ -447,14 +484,15 @@ class RegexScanner:
         sorted_files = sorted(by_file.items())
         for idx, (filename, file_data) in enumerate(sorted_files, 1):
             total_elements = len(file_data["elements"])
-            element_names = ", ".join(sorted(file_data["elements"]))
-            # Truncate element names if too long for table
-            if len(element_names) > 200:
-                element_names = element_names[:197] + "..."
+            # Format elements as pills: `Element1` `Element2` `Element3`
+            element_pills = " ".join(f"`{elem}`" for elem in sorted(file_data["elements"]))
+            # Truncate element pills if too long for table
+            if len(element_pills) > 200:
+                element_pills = element_pills[:197] + "..."
             # Escape pipe characters in markdown
-            element_names = element_names.replace("|", "\\|")
+            element_pills = element_pills.replace("|", "\\|")
             filename_escaped = filename.replace("|", "\\|")
-            lines.append(f"| {idx} | `{filename_escaped}` | {total_elements} | {element_names} |")
+            lines.append(f"| {idx} | `{filename_escaped}` | {total_elements} | {element_pills} |")
         
         lines.append("")
         
