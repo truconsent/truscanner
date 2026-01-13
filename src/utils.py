@@ -49,7 +49,7 @@ def select_file_format() -> str:
 
 
 def show_progress(current: int, total: int, current_file: str):
-    """Display progress bar and file count."""
+    """Display progress bar and file count on a single line."""
     if total == 0:
         return
     
@@ -61,11 +61,15 @@ def show_progress(current: int, total: int, current_file: str):
     # Truncate filename if too long
     file_display = current_file[:50] + "..." if len(current_file) > 50 else current_file
     
-    # Clear previous line and print new progress
-    print(f'\rScanning: {current}/{total} ({percentage:.1f}%) [{bar}] {file_display}', end='', flush=True)
+    # Use ANSI escape codes to clear the line and move cursor to beginning
+    # This ensures we stay on one line
+    sys.stdout.write('\r\033[K')  # \r = return to start, \033[K = clear to end of line
+    sys.stdout.write(f'Scanning: {current}/{total} ({percentage:.1f}%) [{bar}] {file_display}')
+    sys.stdout.flush()
     
     if current == total:
-        print()  # New line when complete
+        sys.stdout.write('\n')  # New line only when complete
+        sys.stdout.flush()
 
 
 def upload_to_backend(scan_report_id: str, project_name: str, duration: float,
@@ -98,7 +102,7 @@ def upload_to_backend(scan_report_id: str, project_name: str, duration: float,
     }
     
     try:
-        print(f"\n📤 Uploading to backend: {backend_url}/api/scans/")
+        print("\nUploading ...")
         response = requests.post(
             f"{backend_url}/api/scans/",
             json=payload,

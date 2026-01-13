@@ -324,89 +324,105 @@ class RegexScanner:
     def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None) -> str:
         """Generate formatted text report from findings."""
         if not findings:
-            return "No data elements found."
+            return "Truconsent (truconsent.io)\n\nTruscanner Report\n\nNo data elements found."
         
-        header = []
+        lines = []
+        
+        # Header
+        lines.append("Truconsent (truconsent.io)")
+        lines.append("")
+        lines.append("Truscanner Report")
+        lines.append("")
+        
+        # Scan Report ID
         if report_id:
-            header.append(f"Scan Report ID: {report_id}")
+            lines.append(f"Scan Report ID: {report_id}")
+            lines.append("")
         
-        header.extend([
-            "=" * 80,
-            "TRUSCANNER REPORT",
-            "=" * 80,
-            f"\nTotal Findings: {len(findings)}"
-        ])
-        
+        # Summary
+        lines.append("Summary")
+        lines.append("-" * 80)
+        lines.append(f"Total Findings: {len(findings)}")
         if duration is not None:
-            header.append(f"Time Taken: {duration:.2f} seconds")
-            
-        header.extend([
-            "",
-            "-" * 80
-        ])
+            lines.append(f"Time Taken: {duration:.2f} seconds")
+        lines.append("")
         
-        lines = header
-        
-        # Group by file
-        by_file = defaultdict(list)
+        # Group by file and collect unique element names
+        by_file = defaultdict(lambda: {"findings": [], "elements": set()})
         for f in findings:
-            by_file[f.get("filename", "Unknown")].append(f)
+            filename = f.get("filename", "Unknown")
+            by_file[filename]["findings"].append(f)
+            by_file[filename]["elements"].add(f.get("element_name", "Unknown"))
         
-        # File details
-        for filename, file_findings in by_file.items():
-            lines.extend([
-                f"\n📄 File: {filename}",
-                f"   Found {len(file_findings)} data element(s)\n"
-            ])
+        # Create table
+        lines.append("Tables")
+        lines.append("-" * 80)
+        lines.append(f"{'S.No':<8} {'File Path':<50} {'Total No. Data Element':<25} {'Data Elements'}")
+        lines.append("-" * 80)
+        
+        # Sort files for consistent ordering
+        sorted_files = sorted(by_file.items())
+        for idx, (filename, file_data) in enumerate(sorted_files, 1):
+            total_elements = len(file_data["elements"])
+            element_names = ", ".join(sorted(file_data["elements"]))
+            # Truncate element names if too long
+            if len(element_names) > 100:
+                element_names = element_names[:97] + "..."
+            # Truncate filename if too long
+            display_filename = filename[:47] + "..." if len(filename) > 50 else filename
+            lines.append(f"{idx:<8} {display_filename:<50} {total_elements:<25} {element_names}")
+        
+        lines.append("-" * 80)
+        lines.append("")
+        
+        # Findings (detailed)
+        lines.append("Findings")
+        lines.append("-" * 80)
+        
+        for filename, file_data in sorted_files:
+            lines.append(f"\nFile: {filename}")
+            lines.append(f"Found {len(file_data['findings'])} data element(s)")
+            lines.append("")
             
-            for finding in file_findings:
+            for finding in file_data["findings"]:
                 lines.extend([
-                    f"   Line {finding['line_number']}: {finding['element_name']}",
-                    f"      Category: {finding['element_category']}",
-                    f"      Matched: {finding['matched_text']}",
-                    f"      Context: {finding['line_content'][:100]}"
+                    f"  Line {finding['line_number']}: {finding['element_name']}",
+                    f"    Category: {finding['element_category']}",
+                    f"    Matched: {finding['matched_text']}",
+                    f"    Context: {finding['line_content'][:100]}"
                 ])
                 
                 if finding.get("tags"):
                     tags = ", ".join(f"{k}: {v}" for k, v in finding["tags"].items())
-                    lines.append(f"      Tags: {tags}")
+                    lines.append(f"    Tags: {tags}")
                 
                 lines.append("")
             
             lines.append("-" * 80)
         
-        # Summaries
-        category_details = defaultdict(lambda: defaultdict(int))
-        
-        for f in findings:
-            category_details[f["element_category"]][f["element_name"]] += 1
-        
-        lines.append("\n📊 SUMMARY BY CATEGORY\n")
-        for category, elements in sorted(category_details.items(), key=lambda x: sum(x[1].values()), reverse=True):
-            total_count = sum(elements.values())
-            distinct_count = len(elements)
-            lines.append(f"   {category}: {total_count} ({distinct_count} distinctive elements)")
-            for name, count in sorted(elements.items(), key=lambda x: x[1], reverse=True):
-                lines.append(f"      - {name}: {count}")
-
-        lines.append("\n" + "=" * 80)
         return "\n".join(lines)
     
     def generate_markdown_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted markdown report from findings."""
         if not findings:
-            return "# TRUSCANNER REPORT\n\nNo data elements found."
+            return "Truconsent (truconsent.io)\n\n# Truscanner Report\n\nNo data elements found."
         
         lines = []
         
-        # Header with Report ID
-        if report_id:
-            lines.append(f"# Scan Report ID: {report_id}\n")
+        # Header
+        lines.append("Truconsent (truconsent.io)")
+        lines.append("")
+        lines.append("# Truscanner Report")
+        lines.append("")
         
-        lines.append("# TRUSCANNER REPORT\n")
+        # Scan Report ID
+        if report_id:
+            lines.append(f"**Scan Report ID:** {report_id}")
+            lines.append("")
         
         # Summary
-        lines.append("## Summary\n")
+        lines.append("## Summary")
+        lines.append("")
         lines.append(f"- **Total Findings:** {len(findings)}")
         if duration is not None:
             lines.append(f"- **Time Taken:** {duration:.2f} seconds")
@@ -414,19 +430,47 @@ class RegexScanner:
             lines.append(f"- **Directory Scanned:** {directory_scanned}")
         lines.append("")
         
-        # Group by file
-        by_file = defaultdict(list)
+        # Group by file and collect unique element names
+        by_file = defaultdict(lambda: {"findings": [], "elements": set()})
         for f in findings:
-            by_file[f.get("filename", "Unknown")].append(f)
+            filename = f.get("filename", "Unknown")
+            by_file[filename]["findings"].append(f)
+            by_file[filename]["elements"].add(f.get("element_name", "Unknown"))
         
-        # File details
-        lines.append("## Findings\n")
-        for filename, file_findings in by_file.items():
-            lines.append(f"### File: `{filename}`\n")
-            lines.append(f"**Found {len(file_findings)} data element(s)**\n")
+        # Create markdown table
+        lines.append("## Tables")
+        lines.append("")
+        lines.append("| S.No | File Path | Total No. Data Element | Data Elements |")
+        lines.append("|------|-----------|------------------------|----------------|")
+        
+        # Sort files for consistent ordering
+        sorted_files = sorted(by_file.items())
+        for idx, (filename, file_data) in enumerate(sorted_files, 1):
+            total_elements = len(file_data["elements"])
+            element_names = ", ".join(sorted(file_data["elements"]))
+            # Truncate element names if too long for table
+            if len(element_names) > 200:
+                element_names = element_names[:197] + "..."
+            # Escape pipe characters in markdown
+            element_names = element_names.replace("|", "\\|")
+            filename_escaped = filename.replace("|", "\\|")
+            lines.append(f"| {idx} | `{filename_escaped}` | {total_elements} | {element_names} |")
+        
+        lines.append("")
+        
+        # Findings (detailed)
+        lines.append("## Findings")
+        lines.append("")
+        
+        for filename, file_data in sorted_files:
+            lines.append(f"### File: `{filename}`")
+            lines.append("")
+            lines.append(f"**Found {len(file_data['findings'])} data element(s)**")
+            lines.append("")
             
-            for finding in file_findings:
-                lines.append(f"#### Line {finding['line_number']}: {finding['element_name']}\n")
+            for finding in file_data["findings"]:
+                lines.append(f"#### Line {finding['line_number']}: {finding['element_name']}")
+                lines.append("")
                 lines.append(f"- **Category:** {finding['element_category']}")
                 lines.append(f"- **Matched:** `{finding['matched_text']}`")
                 lines.append(f"- **Context:** `{finding['line_content'][:100]}`")
@@ -437,21 +481,7 @@ class RegexScanner:
                 
                 lines.append("")
             
-            lines.append("---\n")
-        
-        # Summary by Category
-        category_details = defaultdict(lambda: defaultdict(int))
-        for f in findings:
-            category_details[f["element_category"]][f["element_name"]] += 1
-        
-        lines.append("## Summary by Category\n")
-        for category, elements in sorted(category_details.items(), key=lambda x: sum(x[1].values()), reverse=True):
-            total_count = sum(elements.values())
-            distinct_count = len(elements)
-            lines.append(f"### {category}\n")
-            lines.append(f"- **Total:** {total_count} ({distinct_count} distinctive elements)\n")
-            for name, count in sorted(elements.items(), key=lambda x: x[1], reverse=True):
-                lines.append(f"  - {name}: {count}")
+            lines.append("---")
             lines.append("")
         
         return "\n".join(lines)

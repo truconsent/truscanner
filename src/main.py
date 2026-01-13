@@ -121,7 +121,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
         # Post-scan analysis prompt
         analyze = click.prompt(
             "\nDo you want to analyze?",
-            type=click.Choice(['Y', 'y', 'N', 'n', ''], case_sensitive=False),
+            type=click.Choice(['Y', 'N'], case_sensitive=False),
             default='Y',
             show_default=False
         )
@@ -150,6 +150,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
             
             if success:
                 click.echo("✅ Scan results uploaded to backend successfully!")
+                click.echo(f"Scan Report ID: {report_id}")
     else:
         # Use full scanner with optional Presidio and AI
         # Note: Presidio/AI scanner doesn't support progress callback yet
@@ -258,7 +259,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
                 )
                 
                 if success:
-                    click.echo("✅ Scan results uploaded to backend successfully!")
+                    click.echo("✅ Scan results uploaded successfully!")
         else:
             click.echo("No data elements found.")
 
