@@ -16,6 +16,27 @@ class RegexScanner:
     """Scanner that uses regex patterns from JSON files to identify privacy data elements."""
     
     DEFAULT_EXCLUDE_DIRS = {'.git', 'node_modules', '__pycache__', '.venv', 'venv', 'dist', 'build', '.next', '.cache'}
+    
+    @staticmethod
+    def _strip_directory_prefix(file_path: str, base_directory: Optional[str]) -> str:
+        """Strip the base directory prefix from a file path."""
+        if not base_directory:
+            return file_path
+        
+        # Normalize paths
+        file_path_norm = os.path.normpath(file_path)
+        base_dir_norm = os.path.normpath(base_directory)
+        
+        # Check if file path starts with base directory
+        if file_path_norm.startswith(base_dir_norm):
+            # Remove base directory prefix
+            relative = file_path_norm[len(base_dir_norm):]
+            # Ensure it starts with path separator
+            if not relative.startswith(os.sep) and not relative.startswith('/'):
+                relative = os.sep + relative
+            return relative
+        
+        return file_path
     DEFAULT_EXCLUDE_FILES = {
         'tsconfig.node.json', 'tsconfig.app.json', 'tsconfig.json', 
         'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml', 'bun.lock', 
@@ -321,7 +342,7 @@ class RegexScanner:
         
         return all_findings
     
-    def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None) -> str:
+    def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted text report from findings."""
         if not findings:
             return "Truconsent (truconsent.io)\n\nTruscanner Report\n\nNo data elements found."
@@ -387,8 +408,11 @@ class RegexScanner:
             # Truncate element pills if too long
             if len(element_pills) > 100:
                 element_pills = element_pills[:97] + "..."
+            # Strip directory prefix from filename
+            display_filename = self._strip_directory_prefix(filename, directory_scanned)
             # Truncate filename if too long
-            display_filename = filename[:47] + "..." if len(filename) > 50 else filename
+            if len(display_filename) > 50:
+                display_filename = display_filename[:47] + "..."
             lines.append(f"{idx:<8} {display_filename:<50} {total_elements:<25} {element_pills}")
         
         lines.append("-" * 80)
@@ -399,7 +423,9 @@ class RegexScanner:
         lines.append("-" * 80)
         
         for filename, file_data in sorted_files:
-            lines.append(f"\nFile: {filename}")
+            # Strip directory prefix from filename in findings section
+            display_filename = self._strip_directory_prefix(filename, directory_scanned)
+            lines.append(f"\nFile: {display_filename}")
             lines.append(f"Found {len(file_data['findings'])} data element(s)")
             lines.append("")
             
@@ -489,9 +515,11 @@ class RegexScanner:
             # Truncate element pills if too long for table
             if len(element_pills) > 200:
                 element_pills = element_pills[:197] + "..."
+            # Strip directory prefix from filename
+            display_filename = self._strip_directory_prefix(filename, directory_scanned)
             # Escape pipe characters in markdown
             element_pills = element_pills.replace("|", "\\|")
-            filename_escaped = filename.replace("|", "\\|")
+            filename_escaped = display_filename.replace("|", "\\|")
             lines.append(f"| {idx} | `{filename_escaped}` | {total_elements} | {element_pills} |")
         
         lines.append("")
@@ -501,7 +529,9 @@ class RegexScanner:
         lines.append("")
         
         for filename, file_data in sorted_files:
-            lines.append(f"### File: `{filename}`")
+            # Strip directory prefix from filename in findings section
+            display_filename = self._strip_directory_prefix(filename, directory_scanned)
+            lines.append(f"### File: `{display_filename}`")
             lines.append("")
             lines.append(f"**Found {len(file_data['findings'])} data element(s)**")
             lines.append("")

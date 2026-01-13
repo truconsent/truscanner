@@ -82,7 +82,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
             filepath = reports_subdir / filename
             
             if ft == 'txt':
-                report = scanner.generate_report(results, duration=duration, report_id=report_id)
+                report = scanner.generate_report(results, duration=duration, report_id=report_id, directory_scanned=directory)
                 with open(filepath, 'w', encoding='utf-8') as f:
                     f.write(report)
                 saved_files.append(str(filepath))
