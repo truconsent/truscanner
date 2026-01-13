@@ -1,8 +1,17 @@
 import click
 import json
 import time
+import os
+from pathlib import Path
 from .scanner import scan_directory
 from .regex_scanner import RegexScanner
+from .report_utils import (
+    generate_report_id,
+    get_reports_directory,
+    create_reports_subdirectory,
+    get_next_report_filename
+)
+from .utils import select_file_format, show_progress, upload_to_backend
 
 @click.group()
 def main():
@@ -12,8 +21,8 @@ def main():
 @click.argument('directory', type=click.Path(exists=True))
 @click.option('--with-presidio', is_flag=True, help='Enable Presidio NLP scanner (requires model download)')
 @click.option('--with-ai', is_flag=True, help='Enable AI/LLM scanner (requires OPENAI_API_KEY)')
-@click.option('--format', type=click.Choice(['json', 'report']), default='report', help='Output format')
-@click.option('--output', '-o', type=click.Path(), help='Save report to file')
+@click.option('--format', type=click.Choice(['json', 'report']), default='report', help='Output format (deprecated, use interactive prompt)')
+@click.option('--output', '-o', type=click.Path(), help='Save report to file (deprecated, reports saved to Reports/)')
 @click.option('--personal-only', is_flag=True, help='Only report personal identifiable information (PII) data elements')
 def scan(directory, with_presidio, with_ai, format, output, personal_only):
     """Scan a directory for privacy-related data elements.
@@ -21,17 +30,134 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
     By default, uses fast regex-based scanning with patterns from JSON files.
     Use --with-presidio or --with-ai to enable additional scanners.
     """
-    click.echo(f"Scanning: {directory}...")
+    # Interactive file type selection with arrow menu
+    file_type = select_file_format()
+    
+    click.echo(f"\nScanning: {directory}...")
+    
+    # Generate report ID
+    report_id = generate_report_id(directory)
     
     # Default: Use regex scanner (fast, no downloads)
     if not with_presidio and not with_ai:
         scanner = RegexScanner()
         
+        # Progress callback
+        def progress_callback(current, total, file_path):
+            show_progress(current, total, file_path)
+        
         start_time = time.time()
-        results = scanner.scan_directory(directory)
+        results = scanner.scan_directory(directory, progress_callback=progress_callback)
         duration = time.time() - start_time
         
-        if format == 'report':
+        # Filter to personal details only if requested
+        if personal_only:
+            personal_categories = [
+                'Personal Identifiable Information',
+                'PII',
+                'Contact Information',
+                'Government-Issued Identifiers',
+                'Authentication & Credentials',
+                'Health & Biometric Data',
+                'Sensitive Personal Data'
+            ]
+            results = [r for r in results if any(cat in r.get('element_category', '') for cat in personal_categories)]
+        
+        # Create Reports directory structure
+        reports_dir = get_reports_directory()
+        reports_subdir = create_reports_subdirectory(reports_dir, directory)
+        
+        # Determine which file types to generate
+        file_types_to_generate = []
+        if file_type == 'all':
+            file_types_to_generate = ['txt', 'md', 'json']
+        else:
+            file_types_to_generate = [file_type]
+        
+        saved_files = []
+        
+        # Generate and save reports
+        for ft in file_types_to_generate:
+            filename = get_next_report_filename(reports_subdir, ft)
+            filepath = reports_subdir / filename
+            
+            if ft == 'txt':
+                report = scanner.generate_report(results, duration=duration, report_id=report_id)
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(report)
+                saved_files.append(str(filepath))
+            elif ft == 'md':
+                markdown_report = scanner.generate_markdown_report(
+                    results, 
+                    duration=duration, 
+                    report_id=report_id,
+                    directory_scanned=directory
+                )
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(markdown_report)
+                saved_files.append(str(filepath))
+            elif ft == 'json':
+                json_report = scanner.generate_json_report(
+                    results,
+                    duration=duration,
+                    report_id=report_id,
+                    directory_scanned=directory
+                )
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    json.dump(json_report, f, indent=2, ensure_ascii=False)
+                saved_files.append(str(filepath))
+        
+        # Display results
+        click.echo(f"\n{'='*80}")
+        click.echo(f"Scan Report ID: {report_id}")
+        click.echo(f"{'='*80}")
+        click.echo(f"\nTotal Findings: {len(results)}")
+        if duration is not None:
+            click.echo(f"Time Taken: {duration:.2f} seconds")
+        click.echo(f"\nReports saved to:")
+        for filepath in saved_files:
+            click.echo(f"  ✅ {filepath}")
+        
+        # Post-scan analysis prompt
+        analyze = click.prompt(
+            "\nDo you want to analyze?",
+            type=click.Choice(['Y', 'y', 'N', 'n', ''], case_sensitive=False),
+            default='Y',
+            show_default=False
+        )
+        
+        if analyze.upper() == 'Y' or analyze == '':
+            # Extract project name from directory
+            project_name = os.path.basename(os.path.normpath(directory)) or "Untitled Project"
+            
+            # Count unique files scanned
+            unique_files = len(set(r.get('filename') for r in results if r.get('filename')))
+            
+            metadata = {
+                "cli_version": "0.2.0",
+                "directory_scanned": directory
+            }
+            
+            success = upload_to_backend(
+                scan_report_id=report_id,
+                project_name=project_name,
+                duration=duration,
+                total_findings=len(results),
+                scan_data=results,
+                files_scanned=unique_files,
+                metadata=metadata
+            )
+            
+            if success:
+                click.echo("✅ Scan results uploaded to backend successfully!")
+    else:
+        # Use full scanner with optional Presidio and AI
+        # Note: Presidio/AI scanner doesn't support progress callback yet
+        start_time = time.time()
+        results = scan_directory(directory, use_presidio=with_presidio, use_ai=with_ai)
+        duration = time.time() - start_time
+        
+        if results:
             # Filter to personal details only if requested
             if personal_only:
                 personal_categories = [
@@ -45,58 +171,94 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
                 ]
                 results = [r for r in results if any(cat in r.get('element_category', '') for cat in personal_categories)]
             
-            report = scanner.generate_report(results, duration=duration)
-            click.echo(report)
+            # Create Reports directory structure
+            reports_dir = get_reports_directory()
+            reports_subdir = create_reports_subdirectory(reports_dir, directory)
             
-            # Auto-save report to file
-            output_file = output or "scan_report.txt"
-            with open(output_file, 'w', encoding='utf-8') as f:
-                f.write(report)
-            click.echo(f"\n✅ Report saved to: {output_file}")
-        else:
-            click.echo(json.dumps(results, indent=2))
-            if output:
-                with open(output, 'w', encoding='utf-8') as f:
-                    json.dump(results, f, indent=2)
-                click.echo(f"\n✅ Results saved to: {output}")
-    else:
-        # Use full scanner with optional Presidio and AI
-        results = scan_directory(directory, use_presidio=with_presidio, use_ai=with_ai)
-        
-        if results:
-            if format == 'report':
-                # Generate a formatted report
-                click.echo(f"\n{'='*80}")
-                click.echo(f"SCAN RESULTS")
-                click.echo(f"{'='*80}")
-                click.echo(f"\nTotal Findings: {len(results)}\n")
-                
-                # Group by file
-                by_file = {}
-                for r in results:
-                    fname = r.get('filename', 'Unknown')
-                    if fname not in by_file:
-                        by_file[fname] = []
-                    by_file[fname].append(r)
-                
-                for fname, findings in by_file.items():
-                    click.echo(f"\n📄 {fname}")
-                    click.echo(f"   Found {len(findings)} data element(s)")
-                    for f in findings[:5]:  # Show first 5
-                        click.echo(f"   - Line {f.get('line_number', '?')}: {f.get('element_name', 'Unknown')} (Source: {f.get('source', 'Unknown')})")
-                    if len(findings) > 5:
-                        click.echo(f"   ... and {len(findings) - 5} more")
-                
-                if output:
-                    with open(output, 'w', encoding='utf-8') as f:
-                        json.dump(results, f, indent=2)
-                    click.echo(f"\n✅ Full results saved to: {output}")
+            # Determine which file types to generate
+            file_types_to_generate = []
+            if file_type == 'all':
+                file_types_to_generate = ['txt', 'md', 'json']
             else:
-                click.echo(json.dumps(results, indent=2))
-                if output:
-                    with open(output, 'w', encoding='utf-8') as f:
-                        json.dump(results, f, indent=2)
-                    click.echo(f"\n✅ Results saved to: {output}")
+                file_types_to_generate = [file_type]
+            
+            saved_files = []
+            scanner = RegexScanner()
+            
+            # Generate and save reports
+            for ft in file_types_to_generate:
+                filename = get_next_report_filename(reports_subdir, ft)
+                filepath = reports_subdir / filename
+                
+                if ft == 'txt':
+                    report = scanner.generate_report(results, duration=duration, report_id=report_id)
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(report)
+                    saved_files.append(str(filepath))
+                elif ft == 'md':
+                    markdown_report = scanner.generate_markdown_report(
+                        results, 
+                        duration=duration, 
+                        report_id=report_id,
+                        directory_scanned=directory
+                    )
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(markdown_report)
+                    saved_files.append(str(filepath))
+                elif ft == 'json':
+                    json_report = scanner.generate_json_report(
+                        results,
+                        duration=duration,
+                        report_id=report_id,
+                        directory_scanned=directory
+                    )
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        json.dump(json_report, f, indent=2, ensure_ascii=False)
+                    saved_files.append(str(filepath))
+            
+            # Display results
+            click.echo(f"\n{'='*80}")
+            click.echo(f"Scan Report ID: {report_id}")
+            click.echo(f"{'='*80}")
+            click.echo(f"\nTotal Findings: {len(results)}")
+            if duration is not None:
+                click.echo(f"Time Taken: {duration:.2f} seconds")
+            click.echo(f"\nReports saved to:")
+            for filepath in saved_files:
+                click.echo(f"  ✅ {filepath}")
+            
+            # Post-scan analysis prompt
+            analyze = click.prompt(
+                "\nDo you want to analyze?",
+                type=click.Choice(['Y', 'y', 'N', 'n', ''], case_sensitive=False),
+                default='Y',
+                show_default=False
+            )
+            
+            if analyze.upper() == 'Y' or analyze == '':
+                # Extract project name from directory
+                project_name = os.path.basename(os.path.normpath(directory)) or "Untitled Project"
+                
+                # Count unique files scanned
+                unique_files = len(set(r.get('filename') for r in results if r.get('filename')))
+                
+                metadata = {
+                    "cli_version": "0.2.0",
+                    "directory_scanned": directory
+                }
+                
+                success = upload_to_backend(
+                    scan_report_id=report_id,
+                    project_name=project_name,
+                    duration=duration,
+                    total_findings=len(results),
+                    scan_data=results,
+                    files_scanned=unique_files,
+                    metadata=metadata
+                )
+                
+                if success:
+                    click.echo("✅ Scan results uploaded to backend successfully!")
         else:
             click.echo("No data elements found.")
 
