@@ -151,6 +151,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
             if success:
                 click.echo("✅ Scan results uploaded to backend successfully!")
                 click.echo(f"Scan Report ID: {report_id}")
+                click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
     else:
         # Use full scanner with optional Presidio and AI
         # Note: Presidio/AI scanner doesn't support progress callback yet
@@ -220,6 +221,7 @@ def scan(directory, with_presidio, with_ai, format, output, personal_only):
             # Display results
             click.echo(f"\n{'='*80}")
             click.echo(f"Scan Report ID: {report_id}")
+            click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
             click.echo(f"{'='*80}")
             click.echo(f"\nTotal Findings: {len(results)}")
             if duration is not None:
