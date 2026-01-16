@@ -2,7 +2,6 @@
 import os
 import sys
 from typing import Optional, Callable, List, Dict, Any
-from dotenv import load_dotenv
 
 
 def select_file_format() -> str:
@@ -78,15 +77,8 @@ def upload_to_backend(scan_report_id: str, project_name: str, duration: float,
     """Upload scan results to backend API."""
     import requests
     
-    # Load environment variables
-    load_dotenv()
-    backend_url = os.getenv('TRUSCANNER_BACKEND_URL')
-    
-    if not backend_url:
-        print("\n⚠️  Backend URL not configured.")
-        print("   Set TRUSCANNER_BACKEND_URL in .env file to enable backend upload.")
-        print("   Example: TRUSCANNER_BACKEND_URL=http://localhost:8000")
-        return False
+    # Backend URL hardcoded
+    backend_url = "https://d987tu7rq4.execute-api.ap-south-1.amazonaws.com"
     
     # Remove trailing slash
     backend_url = backend_url.rstrip('/')

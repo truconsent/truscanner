@@ -137,20 +137,9 @@ Each scan generates a unique **Scan Report ID** (32-bit MD5 hash) that:
 
 ## 🔧 Configuration
 
-### Backend Integration (Optional)
+## 🔧 Configuration
 
-To enable backend upload, create a `.env` file in your project root or truscanner directory:
-
-```env
-TRUSCANNER_BACKEND_URL=http://localhost:8000
-```
-
-Or for production:
-```env
-TRUSCANNER_BACKEND_URL=https://api.example.com
-```
-
-When backend URL is configured and you answer "Y" to the analysis prompt, scan results will be uploaded to the backend API for storage in S3.
+The `truscanner` package is pre-configured with the live backend URL for seamless scan uploads. No additional configuration is required.
 
 ## 📁 Project Structure
 
@@ -178,9 +167,8 @@ pip install inquirer
 
 ### Backend Upload Fails
 
-- Check that `TRUSCANNER_BACKEND_URL` is set in your `.env` file
-- Verify the backend server is running
-- Check network connectivity to the backend URL
+- Verify network connectivity to the internet
+- Check if the backend server is currently under maintenance
 
 ### No Reports Generated
 

@@ -13,7 +13,8 @@ from .report_utils import (
 )
 from .utils import select_file_format, show_progress, upload_to_backend
 
-@click.group()
+@click.group(context_settings=dict(help_option_names=['-h', '--help']))
+@click.version_option(version="0.2.3", prog_name="truscanner")
 def main():
     pass
 
