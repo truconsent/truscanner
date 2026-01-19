@@ -6,6 +6,8 @@
 
 `truScanner` is a static code analysis tool designed to discover and analyze personal data elements in your source code. It helps developers and security teams identify privacy-related data flows and generate comprehensive reports.
 
+[📦 PyPI Project](https://pypi.org/project/truscanner/) • [🌐 App Dashboard](https://app.truconsent.io/)
+
 ## 🚀 Features
 
 - **Comprehensive Detection**: Identifies 300+ personal data elements (PII, financial data, device identifiers, etc.)
@@ -88,6 +90,7 @@ truscanner scan C:\Users\username\projects\my-app
 5. **Backend Upload (Optional)**:
    - After reports are saved, you'll be prompted: `Do you want to upload the scan report for the above purpose? (Y, N):`
    - Enter `Y` to upload scan results to backend API
+   - View your uploaded scans and analytics at [app.truconsent.io](https://app.truconsent.io/)
 
 ### Command Options
 
