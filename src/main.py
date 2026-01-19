@@ -3,6 +3,11 @@ import json
 import time
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 from .scanner import scan_directory
 from .regex_scanner import RegexScanner
 from .ai_scanner import AIScanner
