@@ -6,10 +6,11 @@
 
 ## 🚀 Features
 
-- **Comprehensive Detection**: Identifies 110+ personal data elements (PII, financial data, device identifiers, etc.)
+- **Comprehensive Detection**: Identifies 300+ personal data elements (PII, financial data, device identifiers, etc.)
 - **Interactive Menu**: Arrow-key navigable menu for selecting output formats
 - **Real-time Progress**: Visual progress indicator during scanning
 - **Multiple Report Formats**: Generate reports in TXT, Markdown, or JSON format
+- **AI-Powered Enhancement**: Optional integration with Ollama or OpenAI for deeper context
 - **Backend Integration**: Optional upload to backend API for centralized storage
 - **Auto-incrementing Reports**: Automatically manages report file naming to prevent overwrites
 
@@ -18,31 +19,24 @@
 ### Prerequisites
 
 - Python 3.9 or higher
-- pip or uv package manager
+- [ollama](https://ollama.com/) (optional, for local AI scanning)
 
-### Install from Source
+### Quick Install
 
-1. **Clone or navigate to the truscanner directory**:
-   ```bash
-   cd truscanner
-   ```
+Using pip:
+```bash
+pip install truscanner
+```
 
-2. **Install dependencies**:
-   
-   Using pip:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-   Or using uv:
-   ```bash
-   uv pip install -e .
-   ```
+Using uv:
+```bash
+uv pip install truscanner
+```
 
-3. **Verify installation**:
-   ```bash
-   truScanner --help
-   ```
+### Verify installation:
+```bash
+truscanner --help
+```
 
 ## 🛠️ Usage
 
@@ -51,15 +45,15 @@
 Scan a directory with the interactive menu:
 
 ```bash
-truScanner scan <directory_path>
+truscanner scan <directory_path>
 ```
 
 ### Example
 
 ```bash
-truScanner scan ./src
-truScanner scan ./my-project
-truScanner scan C:\Users\username\projects\my-app
+truscanner scan ./src
+truscanner scan ./my-project
+truscanner scan C:\Users\username\projects\my-app
 ```
 
 ### Interactive Workflow
@@ -73,46 +67,38 @@ truScanner scan C:\Users\username\projects\my-app
    - Real-time progress bar shows file count and percentage
    - Example: `Scanning: 50/200 (25%) [████████░░░░░░░░░░░░] filename.js`
 
-3. **Report Generation**:
-   - Reports are saved in `Reports/{directory_name}/` folder
+3. **AI Enhanced Scan (Optional)**:
+   - After the initial scan, you'll be prompted:
+     `Do you want to use Ollama/AI for enhanced PII detection (find what regex missed)? (Y, N):`
+   - This uses local LLMs (via Ollama) or OpenAI to find complex PII.
+   - Live scanning timer: `AI Scanning: filename.js... (5.2s taken)`
+
+4. **Report Generation**:
+   - Reports are saved in `reports/{directory_name}/` folder
    - Files are named: `truscan_report.txt`, `truscan_report.md`, `truscan_report.json`
    - Subsequent scans auto-increment: `truscan_report1.txt`, `truscan_report2.txt`, etc.
+   - AI findings are saved with `_llm` suffix.
 
-4. **Backend Upload (Optional)**:
-   - After reports are saved, you'll be prompted: `Do you want to analyze? (Y/n):`
+5. **Backend Upload (Optional)**:
+   - After reports are saved, you'll be prompted: `Do you want to upload the scan report for the above purpose? (Y, N):`
    - Enter `Y` to upload scan results to backend API
-   - Requires `TRUSCANNER_BACKEND_URL` in environment variables
 
 ### Command Options
 
 ```bash
-truScanner scan <directory> [OPTIONS]
+truscanner scan <directory> [OPTIONS]
 
 Options:
-  --with-presidio    Enable Presidio NLP scanner (requires model download)
-  --with-ai          Enable AI/LLM scanner (requires OPENAI_API_KEY)
+  --with-ai          Enable AI/LLM scanner directly
   --personal-only    Only report personal identifiable information (PII)
   --help             Show help message
-```
-
-### Examples with Options
-
-```bash
-# Scan with only PII data
-truScanner scan ./src --personal-only
-
-# Scan with Presidio NLP scanner
-truScanner scan ./src --with-presidio
-
-# Scan with AI/LLM scanner
-truScanner scan ./src --with-ai
 ```
 
 ## 📊 Report Output
 
 ### Report Location
 
-Reports are saved in: `Reports/{sanitized_directory_name}/`
+Reports are saved in: `reports/{sanitized_directory_name}/`
 
 ### Report Formats
 
@@ -137,8 +123,6 @@ Each scan generates a unique **Scan Report ID** (32-bit MD5 hash) that:
 
 ## 🔧 Configuration
 
-## 🔧 Configuration
-
 The `truscanner` package is pre-configured with the live backend URL for seamless scan uploads. No additional configuration is required.
 
 ## 📁 Project Structure
@@ -148,38 +132,17 @@ truscanner/
 ├── src/
 │   ├── main.py              # CLI entry point
 │   ├── regex_scanner.py     # Core scanning engine
+│   ├── ai_scanner.py        # AI/LLM scanning engine
 │   ├── report_utils.py      # Report utilities
-│   └── utils.py             # Interactive menu & backend integration
-├── data_elements/           # Data element definitions (JSON files)
-├── Reports/                 # Generated reports (created automatically)
-├── requirements.txt         # Python dependencies
+│   └── utils.py             # Utilities
+├── data_elements/           # Data element definitions
+├── reports/                 # Generated reports
+├── pyproject.toml           # Project configuration
 └── README.md
 ```
-
-## 🐛 Troubleshooting
-
-### Interactive Menu Not Working
-
-If the arrow-key menu doesn't appear, ensure `inquirer` is installed:
-```bash
-pip install inquirer
-```
-
-### Backend Upload Fails
-
-- Verify network connectivity to the internet
-- Check if the backend server is currently under maintenance
-
-### No Reports Generated
-
-- Ensure you have write permissions in the current directory
-- Check that the directory you're scanning contains readable files
-- Verify Python version is 3.9 or higher
-
-## 📝 License
-
-MIT License - see LICENSE file for details
 
 ## 🤝 Support
 
 For issues, questions, or contributions, please contact: hello@truconsent.io
+
+MIT License - see LICENSE file for details

@@ -345,14 +345,14 @@ class RegexScanner:
     def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted text report from findings."""
         if not findings:
-            return "Truconsent (truconsent.io)\n\nTruscanner Report\n\nNo data elements found."
+            return "truconsent (truconsent.io)\n\ntruscanner Report\n\nNo data elements found."
         
         lines = []
         
         # Header
-        lines.append("Truconsent (truconsent.io)")
+        lines.append("truconsent (truconsent.io)")
         lines.append("")
-        lines.append("Truscanner Report")
+        lines.append("truscanner Report")
         lines.append("")
         
         # Scan Report ID
@@ -431,10 +431,11 @@ class RegexScanner:
             
             for finding in file_data["findings"]:
                 lines.extend([
-                    f"  Line {finding['line_number']}: {finding['element_name']}",
-                    f"    Category: {finding['element_category']}",
-                    f"    Matched: {finding['matched_text']}",
-                    f"    Context: {finding['line_content'][:100]}"
+                    f"  Line {finding.get('line_number', 'Unknown')}: {finding.get('element_name', 'Unknown')}",
+                    f"    Category: {finding.get('element_category', 'Unknown')}",
+                    f"    Matched: {finding.get('matched_text', 'N/A')}",
+                    f"    Context: {str(finding.get('line_content', ''))[:100]}",
+                    f"    Detected By: {finding.get('source', 'Regex')}"
                 ])
                 
                 if finding.get("tags"):
@@ -450,14 +451,14 @@ class RegexScanner:
     def generate_markdown_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted markdown report from findings."""
         if not findings:
-            return "Truconsent (truconsent.io)\n\n# Truscanner Report\n\nNo data elements found."
+            return "truconsent (truconsent.io)\n\n# truscanner Report\n\nNo data elements found."
         
         lines = []
         
         # Header
-        lines.append("Truconsent (truconsent.io)")
+        lines.append("truconsent (truconsent.io)")
         lines.append("")
-        lines.append("# Truscanner Report")
+        lines.append("# truscanner Report")
         lines.append("")
         
         # Scan Report ID
@@ -537,11 +538,12 @@ class RegexScanner:
             lines.append("")
             
             for finding in file_data["findings"]:
-                lines.append(f"#### Line {finding['line_number']}: {finding['element_name']}")
+                lines.append(f"#### Line {finding.get('line_number', 'Unknown')}: {finding.get('element_name', 'Unknown')}")
                 lines.append("")
-                lines.append(f"- **Category:** {finding['element_category']}")
-                lines.append(f"- **Matched:** `{finding['matched_text']}`")
-                lines.append(f"- **Context:** `{finding['line_content'][:100]}`")
+                lines.append(f"- **Category:** {finding.get('element_category', 'Unknown')}")
+                lines.append(f"- **Matched:** `{finding.get('matched_text', 'N/A')}`")
+                lines.append(f"- **Context:** `{str(finding.get('line_content', ''))[:100]}`")
+                lines.append(f"- **Detected By:** {finding.get('source', 'Regex')}")
                 
                 if finding.get("tags"):
                     tags = ", ".join(f"{k}: {v}" for k, v in finding["tags"].items())

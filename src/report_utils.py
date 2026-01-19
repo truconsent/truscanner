@@ -33,15 +33,14 @@ def sanitize_directory_name(directory_path: str) -> str:
 
 
 def get_reports_directory(base_dir: str = ".") -> Path:
-    """Get or create Reports directory."""
-    reports_dir = Path(base_dir) / "Reports"
+    """Get or create reports directory."""
+    reports_dir = Path(base_dir) / "reports"
     reports_dir.mkdir(exist_ok=True)
     return reports_dir
 
 
-def get_next_report_filename(reports_subdir: Path, file_type: str) -> str:
+def get_next_report_filename(reports_subdir: Path, file_type: str, base_name: str = "truscan_report") -> str:
     """Get next available filename with auto-increment."""
-    base_name = "truscan_report"
     extensions = {"txt": ".txt", "md": ".md", "json": ".json"}
     
     if file_type not in extensions:

@@ -17,9 +17,7 @@ def select_file_format() -> str:
         ]
         answers = prompt(questions)
         if answers and 'format' in answers:
-            selected = answers['format']
-            # Convert "All" to "all" for consistency
-            return selected.lower() if selected.lower() == 'all' else selected.lower()
+            return answers['format'].lower()
         return 'txt'  # Default fallback
     except ImportError:
         # If inquirer is not installed, show helpful message
@@ -45,6 +43,47 @@ def select_file_format() -> str:
         choice = input("Enter choice (1-4) [1]: ").strip() or "1"
         choices_map = {"1": "txt", "2": "md", "3": "json", "4": "all"}
         return choices_map.get(choice, "txt")
+
+
+def select_ollama_model(available_models: List[str]) -> str:
+    """Interactive arrow-key menu for Ollama model selection."""
+    if not available_models:
+        return 'llama3' # Fallback default
+    
+    if len(available_models) == 1:
+        import click
+        click.echo(f"\nUsing only available local model: {available_models[0]}")
+        return available_models[0]
+
+    try:
+        from inquirer import prompt, List
+        
+        questions = [
+            List('model',
+                 message="Select Ollama model for enhanced scan:",
+                 choices=available_models,
+                 default=available_models[0])
+        ]
+        answers = prompt(questions)
+        if answers and 'model' in answers:
+            return answers['model']
+        return available_models[0]
+    except ImportError:
+        print("\nMultiple models found. Select one for enhanced scan:")
+        for i, model in enumerate(available_models, 1):
+            print(f"{i}. {model}")
+        
+        choice = input(f"Enter choice (1-{len(available_models)}) [1]: ").strip() or "1"
+        try:
+            index = int(choice) - 1
+            if 0 <= index < len(available_models):
+                return available_models[index]
+            return available_models[0]
+        except (ValueError, IndexError):
+            return available_models[0]
+    except Exception as e:
+        print(f"\n⚠️  Interactive menu unavailable: {e}")
+        return available_models[0]
 
 
 def show_progress(current: int, total: int, current_file: str):
