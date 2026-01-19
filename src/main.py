@@ -18,9 +18,10 @@ from .report_utils import (
     get_next_report_filename
 )
 from .utils import select_file_format, select_ollama_model, show_progress, upload_to_backend
+from . import __version__
 
 @click.group(context_settings=dict(help_option_names=['-h', '--help']))
-@click.version_option(version="0.2.3", prog_name="truscanner")
+@click.version_option(version=__version__, prog_name="truscanner")
 def main():
     pass
 
@@ -210,7 +211,7 @@ def scan(directory, with_ai, format, output, personal_only):
             unique_files = len(set(r.get('filename') for r in results if r.get('filename')))
             
             metadata = {
-                "cli_version": "0.2.0",
+                "cli_version": __version__,
                 "directory_scanned": directory
             }
             
@@ -322,7 +323,7 @@ def scan(directory, with_ai, format, output, personal_only):
                 unique_files = len(set(r.get('filename') for r in results if r.get('filename')))
                 
                 metadata = {
-                    "cli_version": "0.2.0",
+                    "cli_version": __version__,
                     "directory_scanned": directory
                 }
                 
