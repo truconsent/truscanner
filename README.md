@@ -14,6 +14,10 @@
 - **Backend Integration**: Optional upload to backend API for centralized storage
 - **Auto-incrementing Reports**: Automatically manages report file naming to prevent overwrites
 
+## truScanner CLI
+
+![TruScanner Terminal Demo](./truscanner-teminal-demo.gif)
+
 ## 📦 Installation
 
 ### Prerequisites
