@@ -19,11 +19,138 @@ from .report_utils import (
 )
 from .utils import select_file_format, select_ollama_model, show_progress, upload_to_backend
 from . import __version__
+from .database import DatabaseConnectorFactory
+from .database.ui import select_database_type, collect_credentials
 
 @click.group(context_settings=dict(help_option_names=['-h', '--help']))
 @click.version_option(version=__version__, prog_name="truscanner")
 def main():
     pass
+
+@main.command()
+@click.option('--test-only', is_flag=True, help='Only test the connection, do not scan')
+def db_scan(test_only):
+    """Scan a database for privacy-related data elements.
+    
+    Interactively select your database type and provide connection details.
+    """
+    # Step 1: Select database type
+    try:
+        db_type = select_database_type()
+        
+        # Step 2: Collect credentials
+        credentials = collect_credentials(db_type)
+        
+        # Step 3: Create connection
+        factory = DatabaseConnectorFactory()
+        adapter = factory.create_adapter(db_type, credentials)
+        
+        click.echo(f"\nConnecting to {db_type}...")
+        
+        # Step 4: Test connection
+        success, message = adapter.test_connection()
+        if success:
+            click.echo(f"✅ {message}")
+        else:
+            click.echo(f"❌ {message}")
+            return
+        
+        if test_only:
+            return
+            
+        # Phase 2: Schema Scanning
+        from .database.db_scanner import DatabaseSchemaScanner
+        from .database.db_report import DatabaseReportGenerator
+        from .report_utils import get_reports_directory, create_reports_subdirectory, get_next_report_filename, generate_report_id
+        from .utils import upload_to_backend
+        import time
+        import os
+        
+        click.echo("\n🔍 Scanning database schema for PII...")
+        start_time = time.time()
+        
+        scanner = DatabaseSchemaScanner()
+        findings = scanner.scan_database(adapter)
+        duration = time.time() - start_time
+        
+        # Display summary
+        click.echo(f"\nScanning complete in {duration:.2f}s")
+        click.echo(f"Total Findings: {len(findings)}")
+        
+        if findings:
+            # Generate Reports
+            reports_dir = get_reports_directory()
+            # Use database type and host as directory name
+            db_identifier = f"{db_type}_{credentials.get('database', 'unknown')}"
+            reports_subdir = create_reports_subdirectory(reports_dir, db_identifier)
+            
+            # Generate Report ID
+            report_id = generate_report_id(db_identifier)
+            
+            # Generate TXT Report
+            report_txt = DatabaseReportGenerator.generate_report(findings, duration, f"{db_type} - {credentials.get('host', 'local')}", report_id)
+            filename_txt = get_next_report_filename(reports_subdir, 'txt', base_name='db_scan_report')
+            with open(reports_subdir / filename_txt, 'w', encoding='utf-8') as f:
+                f.write(report_txt)
+            click.echo(f"  ✅ Report saved: {reports_subdir / filename_txt}")
+            
+            # Generate JSON Report
+            report_json = DatabaseReportGenerator.generate_json_report(findings, duration, f"{db_type} - {credentials.get('host', 'local')}", report_id)
+            filename_json = get_next_report_filename(reports_subdir, 'json', base_name='db_scan_report')
+            with open(reports_subdir / filename_json, 'w', encoding='utf-8') as f:
+                json.dump(report_json, f, indent=2, ensure_ascii=False)
+            click.echo(f"  ✅ JSON saved:   {reports_subdir / filename_json}")
+            
+            # Display Report ID
+            click.echo(f"\n{'='*80}")
+            click.echo(f"Scan Report ID: {report_id}")
+            click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
+            click.echo(f"{'='*80}")
+            
+            # Post-scan analysis prompt
+            analyze = click.prompt(
+                "\nDo you want to upload the scan report for the above purpose?",
+                type=click.Choice(['Y', 'N'], case_sensitive=False),
+                default='Y',
+                show_default=False
+            )
+            
+            if analyze.upper() == 'Y':
+                project_name = db_identifier
+                
+                # Count unique tables/schemas as "files"
+                unique_files = len(set((f['schema_name'], f['table_name']) for f in findings))
+                
+                metadata = {
+                    "cli_version": __version__,
+                    "database_type": db_type,
+                    "host": credentials.get('host', 'unknown')
+                }
+                
+                success = upload_to_backend(
+                    scan_report_id=report_id,
+                    project_name=project_name,
+                    duration=duration,
+                    total_findings=len(findings),
+                    scan_data=findings,
+                    files_scanned=unique_files,
+                    metadata=metadata
+                )
+                
+                if success:
+                    click.echo("✅ Scan results uploaded to backend successfully!")
+                    click.echo(f"Scan Report ID: {report_id}")
+                    click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
+        else:
+            click.echo("No PII found in schema metadata.")
+            
+        # Cleanup
+        adapter.disconnect()
+        
+    except KeyboardInterrupt:
+        click.echo("\n\nOperation cancelled by user.")
+    except Exception as e:
+        click.echo(f"\n❌ Error: {str(e)}")
 
 @main.command()
 @click.argument('directory', type=click.Path(exists=True))
