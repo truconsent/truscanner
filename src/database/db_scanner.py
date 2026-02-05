@@ -184,7 +184,7 @@ class DatabaseSchemaScanner:
         findings = []
         try:
             # Get sample data
-            rows = adapter.get_sample_data(table, limit=limit)
+            rows = adapter.get_sample_data(table, limit=limit, schema=schema)
             if not rows:
                 return []
             
@@ -303,7 +303,7 @@ class DatabaseSchemaScanner:
                     
                     # Fetch ALL rows (no limit)
                     try:
-                        rows = adapter.get_sample_data(table, limit=10000)  # High limit for all users
+                        rows = adapter.get_sample_data(table, limit=10000, schema=schema)  # High limit for all users
                     except Exception as e:
                         print(f"    Warning: Could not fetch data from {table}: {e}")
                         continue

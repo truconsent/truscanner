@@ -111,7 +111,6 @@ class DatabaseReportGenerator:
         return "\n".join(lines)
 
     @staticmethod
-    @staticmethod
     def generate_json_report(findings: List[Dict[str, Any]], duration: Optional[float] = None,
                             db_connection_info: Optional[str] = None, report_id: Optional[str] = None,
                             stats: Dict[str, int] = None,

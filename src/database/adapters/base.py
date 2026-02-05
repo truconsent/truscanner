@@ -35,7 +35,7 @@ class DatabaseAdapter(ABC):
         pass
     
     @abstractmethod
-    def get_sample_data(self, table_name: str, limit: int = 10) -> List[Dict[str, Any]]:
+    def get_sample_data(self, table_name: str, limit: int = 10, schema: Optional[str] = None) -> List[Dict[str, Any]]:
         """Get sample rows from a table for analysis."""
         pass
     

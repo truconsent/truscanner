@@ -61,7 +61,7 @@ class SQLAlchemyAdapter(DatabaseAdapter):
         inspector = inspect(self.engine)
         return inspector.get_columns(table_name, schema=schema)
     
-    def get_sample_data(self, table_name: str, limit: int = 10) -> List[Dict[str, Any]]:
+    def get_sample_data(self, table_name: str, limit: int = 10, schema: Optional[str] = None) -> List[Dict[str, Any]]:
         from sqlalchemy import text
         if not self.engine:
             self.connect()
@@ -69,7 +69,8 @@ class SQLAlchemyAdapter(DatabaseAdapter):
         with self.engine.connect() as conn:
             # Note: This is a generic SQL approach. Some DBs might need different syntax.
             # Using SQLAlchemy text() with bind params for safety where applicable.
-            result = conn.execute(text(f"SELECT * FROM {table_name} LIMIT {limit}"))
+            table_ref = f"{schema}.{table_name}" if schema else table_name
+            result = conn.execute(text(f"SELECT * FROM {table_ref} LIMIT {limit}"))
             return [dict(row._mapping) for row in result]
     
     @property

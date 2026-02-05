@@ -34,17 +34,40 @@ def db_scan(test_only):
     
     Interactively select your database type and provide connection details.
     """
-    # Step 1: Select database type
     try:
-        db_type = select_database_type()
-        
-        # Step 2: Collect credentials
-        credentials = collect_credentials(db_type)
+        # Step 1: Check for environment variable bypass
+        env_conn_str = os.getenv('POSTGRES_CONNECTION_STRING')
+        if env_conn_str:
+            click.echo("Using connection string from POSTGRES_CONNECTION_STRING environment variable.")
+            try:
+                from sqlalchemy.engine.url import make_url
+                url = make_url(env_conn_str)
+                db_type = 'PostgreSQL' # Assumes postgres based on var name/scheme
+                credentials = {
+                    'host': url.host,
+                    'port': url.port or 5432,
+                    'database': url.database,
+                    'username': url.username,
+                    'password': url.password
+                }
+            except Exception as e:
+                click.echo(f"❌ Error parsing connection string: {e}")
+                return
+        else:
+            # Step 1: Select database type
+            try:
+                db_type = select_database_type()
+                
+                # Step 2: Collect credentials
+                credentials = collect_credentials(db_type)
+            except Exception as e:
+                click.echo(f"Error during selection: {e}")
+                return
         
         # Step 3: Create connection
         factory = DatabaseConnectorFactory()
         adapter = factory.create_adapter(db_type, credentials)
-        
+            
         click.echo(f"\nConnecting to {db_type}...")
         
         # Step 4: Test connection
@@ -63,8 +86,6 @@ def db_scan(test_only):
         from .database.db_report import DatabaseReportGenerator
         from .report_utils import get_reports_directory, create_reports_subdirectory, get_next_report_filename, generate_report_id
         from .utils import upload_to_backend
-        import time
-        import os
         
         click.echo("\n🔍 Scanning database schema for PII...")
         start_time = time.time()
