@@ -70,80 +70,92 @@ def db_scan(test_only):
         start_time = time.time()
         
         scanner = DatabaseSchemaScanner()
-        findings = scanner.scan_database(adapter)
+        findings, stats, user_data_map = scanner.scan_database(adapter)
         duration = time.time() - start_time
         
         # Display summary
         click.echo(f"\nScanning complete in {duration:.2f}s")
         click.echo(f"Total Findings: {len(findings)}")
+        click.echo(f"Unique Users Mapped: {len(user_data_map)}")
         
-        if findings:
-            # Generate Reports
-            reports_dir = get_reports_directory()
-            # Use database type and host as directory name
-            db_identifier = f"{db_type}_{credentials.get('database', 'unknown')}"
-            reports_subdir = create_reports_subdirectory(reports_dir, db_identifier)
+        # Generate Reports (even if no findings, we may have user map)
+        reports_dir = get_reports_directory()
+        # Use database type and host as directory name
+        db_identifier = f"{db_type}_{credentials.get('database', 'unknown')}"
+        reports_subdir = create_reports_subdirectory(reports_dir, db_identifier)
+        
+        # Generate Report ID
+        report_id = generate_report_id(db_identifier)
+        
+        # Generate TXT Report
+        report_txt = DatabaseReportGenerator.generate_report(
+            findings, 
+            duration, 
+            f"{db_type} - {credentials.get('host', 'local')}", 
+            report_id,
+            stats=stats,
+            user_data_map=user_data_map
+        )
+        filename_txt = get_next_report_filename(reports_subdir, 'txt', base_name='db_scan_report')
+        with open(reports_subdir / filename_txt, 'w', encoding='utf-8') as f:
+            f.write(report_txt)
+        click.echo(f"  ✅ Report saved: {reports_subdir / filename_txt}")
+        
+        # Generate JSON Report
+        report_json = DatabaseReportGenerator.generate_json_report(
+            findings, 
+            duration, 
+            f"{db_type} - {credentials.get('host', 'local')}", 
+            report_id,
+            stats=stats,
+            user_data_map=user_data_map
+        )
+        filename_json = get_next_report_filename(reports_subdir, 'json', base_name='db_scan_report')
+        with open(reports_subdir / filename_json, 'w', encoding='utf-8') as f:
+            json.dump(report_json, f, indent=2, ensure_ascii=False, default=list)
+        click.echo(f"  ✅ JSON saved:   {reports_subdir / filename_json}")
+        
+        # Display Report ID
+        click.echo(f"\n{'='*80}")
+        click.echo(f"Scan Report ID: {report_id}")
+        click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
+        click.echo(f"{'='*80}")
+        
+        # Post-scan analysis prompt
+        analyze = click.prompt(
+            "\nDo you want to upload the scan report for the above purpose?",
+            type=click.Choice(['Y', 'N'], case_sensitive=False),
+            default='Y',
+            show_default=False
+        )
+        
+        if analyze.upper() == 'Y':
+            project_name = db_identifier
             
-            # Generate Report ID
-            report_id = generate_report_id(db_identifier)
+            # Count unique tables/schemas as "files"
+            unique_files = len(set((f['schema_name'], f['table_name']) for f in findings)) if findings else 0
             
-            # Generate TXT Report
-            report_txt = DatabaseReportGenerator.generate_report(findings, duration, f"{db_type} - {credentials.get('host', 'local')}", report_id)
-            filename_txt = get_next_report_filename(reports_subdir, 'txt', base_name='db_scan_report')
-            with open(reports_subdir / filename_txt, 'w', encoding='utf-8') as f:
-                f.write(report_txt)
-            click.echo(f"  ✅ Report saved: {reports_subdir / filename_txt}")
+            metadata = {
+                "cli_version": __version__,
+                "database_type": db_type,
+                "host": credentials.get('host', 'unknown')
+            }
             
-            # Generate JSON Report
-            report_json = DatabaseReportGenerator.generate_json_report(findings, duration, f"{db_type} - {credentials.get('host', 'local')}", report_id)
-            filename_json = get_next_report_filename(reports_subdir, 'json', base_name='db_scan_report')
-            with open(reports_subdir / filename_json, 'w', encoding='utf-8') as f:
-                json.dump(report_json, f, indent=2, ensure_ascii=False)
-            click.echo(f"  ✅ JSON saved:   {reports_subdir / filename_json}")
-            
-            # Display Report ID
-            click.echo(f"\n{'='*80}")
-            click.echo(f"Scan Report ID: {report_id}")
-            click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
-            click.echo(f"{'='*80}")
-            
-            # Post-scan analysis prompt
-            analyze = click.prompt(
-                "\nDo you want to upload the scan report for the above purpose?",
-                type=click.Choice(['Y', 'N'], case_sensitive=False),
-                default='Y',
-                show_default=False
+            success = upload_to_backend(
+                scan_report_id=report_id,
+                project_name=project_name,
+                duration=duration,
+                total_findings=len(findings),
+                scan_data=findings,
+                files_scanned=unique_files,
+                metadata=metadata
             )
             
-            if analyze.upper() == 'Y':
-                project_name = db_identifier
-                
-                # Count unique tables/schemas as "files"
-                unique_files = len(set((f['schema_name'], f['table_name']) for f in findings))
-                
-                metadata = {
-                    "cli_version": __version__,
-                    "database_type": db_type,
-                    "host": credentials.get('host', 'unknown')
-                }
-                
-                success = upload_to_backend(
-                    scan_report_id=report_id,
-                    project_name=project_name,
-                    duration=duration,
-                    total_findings=len(findings),
-                    scan_data=findings,
-                    files_scanned=unique_files,
-                    metadata=metadata
-                )
-                
-                if success:
-                    click.echo("✅ Scan results uploaded to backend successfully!")
-                    click.echo(f"Scan Report ID: {report_id}")
-                    click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
-        else:
-            click.echo("No PII found in schema metadata.")
-            
+            if success:
+                click.echo("✅ Scan results uploaded to backend successfully!")
+                click.echo(f"Scan Report ID: {report_id}")
+                click.echo(f"View scan report online: https://app.truconsent.io/scan/{report_id}")
+        
         # Cleanup
         adapter.disconnect()
         
