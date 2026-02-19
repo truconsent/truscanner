@@ -30,7 +30,7 @@ def scan_file(filepath: str, regex_scanner: RegexScanner = None) -> List[Dict[st
         pass
     return findings
 
-def scan_directory(directory: str, use_ai: bool = False) -> List[Dict[str, Any]]:
+def scan_directory(directory: str, use_ai: bool = False, ai_mode: str = "balanced") -> List[Dict[str, Any]]:
     results = []
     
     # Initialize RegexScanner
@@ -48,7 +48,7 @@ def scan_directory(directory: str, use_ai: bool = False) -> List[Dict[str, Any]]
     if use_ai and os.environ.get("OPENAI_API_KEY"):
         try:
             print("Running AI scan...")
-            ai_results = asyncio.run(scan_directory_ai(directory))
+            ai_results = asyncio.run(scan_directory_ai(directory, ai_mode=ai_mode))
             for item in ai_results:
                 item["source"] = "LLM"
             results.extend(ai_results)

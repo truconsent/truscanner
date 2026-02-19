@@ -99,8 +99,25 @@ truscanner scan <directory> [OPTIONS]
 
 Options:
   --with-ai          Enable AI/LLM scanner directly
+  --ai-mode          AI scan mode: fast, balanced, or full (default: balanced)
   --personal-only    Only report personal identifiable information (PII)
   --help             Show help message
+```
+
+### AI Speed vs Coverage Modes
+
+Use `--ai-mode` to control AI scan behavior:
+
+- `fast`: Small prompts, fastest runtime, may skip very large low-signal files
+- `balanced` (default): Good speed while keeping broad file coverage
+- `full`: Largest context and highest coverage, slowest runtime
+
+Examples:
+
+```bash
+truscanner scan ./src --ai-mode fast
+truscanner scan ./src --ai-mode balanced
+truscanner scan ./src --ai-mode full
 ```
 
 ## 📊 Report Output

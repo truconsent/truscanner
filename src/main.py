@@ -28,10 +28,17 @@ def main():
 @main.command()
 @click.argument('directory', type=click.Path(exists=True))
 @click.option('--with-ai', is_flag=True, help='Enable AI/LLM scanner (requires OPENAI_API_KEY)')
+@click.option(
+    '--ai-mode',
+    type=click.Choice(['fast', 'balanced', 'full'], case_sensitive=False),
+    default='balanced',
+    show_default=True,
+    help='AI scan mode: fast (speed), balanced (default), full (max coverage)',
+)
 @click.option('--format', type=click.Choice(['json', 'report']), default='report', help='Output format (deprecated, use interactive prompt)')
 @click.option('--output', '-o', type=click.Path(), help='Save report to file (deprecated, reports saved to reports/)')
 @click.option('--personal-only', is_flag=True, help='Only report personal identifiable information (PII) data elements')
-def scan(directory, with_ai, format, output, personal_only):
+def scan(directory, with_ai, ai_mode, format, output, personal_only):
     """Scan a directory for privacy-related data elements.
     
     By default, uses fast regex-based scanning with patterns from JSON files.
@@ -39,6 +46,7 @@ def scan(directory, with_ai, format, output, personal_only):
     """
     # Interactive file type selection with arrow menu
     file_type = select_file_format()
+    ai_mode = (ai_mode or "balanced").lower()
     
     click.echo(f"\nScanning: {directory}...")
     
@@ -135,13 +143,13 @@ def scan(directory, with_ai, format, output, personal_only):
         
         if enhanced_scan.upper() == 'Y':
             use_openai = bool(os.environ.get("OPENAI_API_KEY"))
-            ai_scanner = AIScanner()
+            ai_scanner = AIScanner(ai_mode=ai_mode)
             selected_model = None
             ai_results = []
             ai_duration = 0.0
             
             if use_openai:
-                click.echo("\nRunning enhanced AI scan with OpenAI...")
+                click.echo(f"\nRunning enhanced AI scan with OpenAI ({ai_mode} mode)...")
             else:
                 available_models = ai_scanner.get_available_ollama_models()
                 if not available_models:
@@ -149,7 +157,9 @@ def scan(directory, with_ai, format, output, personal_only):
                     click.echo("   Download models using: ollama pull llama3")
                 else:
                     selected_model = select_ollama_model(available_models)
-                    click.echo(f"\nRunning enhanced AI scan with Ollama model: {selected_model}...")
+                    click.echo(
+                        f"\nRunning enhanced AI scan with Ollama model: {selected_model} ({ai_mode} mode)..."
+                    )
             
             if use_openai or selected_model:
                 ai_start_time = time.time()
@@ -235,7 +245,7 @@ def scan(directory, with_ai, format, output, personal_only):
         # Use full scanner with optional AI
         # Note: AI scanner doesn't support progress callback yet
         start_time = time.time()
-        results = scan_directory(directory, use_ai=with_ai)
+        results = scan_directory(directory, use_ai=with_ai, ai_mode=ai_mode)
         duration = time.time() - start_time
         
         if results:

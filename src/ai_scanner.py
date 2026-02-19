@@ -14,8 +14,33 @@ from openai import OpenAI
 
 class AIScanner:
     """Scanner that uses LLMs (Ollama or OpenAI) to identify privacy data elements."""
-    DEFAULT_MAX_PROMPT_CHARS = 7000
-    DEFAULT_MAX_RELEVANT_LINES = 100
+    DEFAULT_AI_MODE = "balanced"
+    AI_MODE_PRESETS = {
+        "fast": {
+            "max_prompt_chars": 3500,
+            "max_relevant_lines": 45,
+            "max_model_output_tokens": 260,
+            "ollama_num_ctx": 2048,
+            "strict_large_file_multiplier": 1.5,
+            "skip_signal_less_large_files": True,
+        },
+        "balanced": {
+            "max_prompt_chars": 5000,
+            "max_relevant_lines": 70,
+            "max_model_output_tokens": 350,
+            "ollama_num_ctx": 4096,
+            "strict_large_file_multiplier": 2.0,
+            "skip_signal_less_large_files": False,
+        },
+        "full": {
+            "max_prompt_chars": 9000,
+            "max_relevant_lines": 120,
+            "max_model_output_tokens": 500,
+            "ollama_num_ctx": 8192,
+            "strict_large_file_multiplier": 3.0,
+            "skip_signal_less_large_files": False,
+        },
+    }
 
     KEYWORD_HINTS = (
         "email", "phone", "mobile", "contact", "address", "name", "dob", "birth",
@@ -30,15 +55,26 @@ class AIScanner:
         re.compile(r"\b(?:aadhaar|pan|passport|upi|ifsc|cvv)\b", re.IGNORECASE),
     )
 
-    def __init__(self, data_elements_dir: Optional[str] = None):
+    def __init__(self, data_elements_dir: Optional[str] = None, ai_mode: Optional[str] = None):
         if data_elements_dir is None:
             data_elements_dir = Path(__file__).parent.parent / "data_elements"
         self.data_elements_dir = Path(data_elements_dir)
         self.data_elements_names = self._load_data_elements_names()
         self.selected_model = "Unknown"
+        env_mode = os.environ.get("TRUSCANNER_AI_MODE", self.DEFAULT_AI_MODE)
+        requested_mode = (ai_mode or env_mode or self.DEFAULT_AI_MODE).strip().lower()
+        if requested_mode not in self.AI_MODE_PRESETS:
+            requested_mode = self.DEFAULT_AI_MODE
+        self.ai_mode = requested_mode
 
-        self.max_prompt_chars = self.DEFAULT_MAX_PROMPT_CHARS
-        self.max_relevant_lines = self.DEFAULT_MAX_RELEVANT_LINES
+        mode_settings = self.AI_MODE_PRESETS[self.ai_mode]
+        self.max_prompt_chars = int(mode_settings["max_prompt_chars"])
+        self.max_relevant_lines = int(mode_settings["max_relevant_lines"])
+        self.max_model_output_tokens = int(mode_settings["max_model_output_tokens"])
+        self.ollama_num_ctx = int(mode_settings["ollama_num_ctx"])
+        self.strict_large_file_multiplier = float(mode_settings["strict_large_file_multiplier"])
+        self.skip_signal_less_large_files = bool(mode_settings["skip_signal_less_large_files"])
+
         try:
             self.max_prompt_chars = max(
                 int(os.environ.get("TRUSCANNER_AI_MAX_PROMPT_CHARS", str(self.max_prompt_chars))),
@@ -47,9 +83,28 @@ class AIScanner:
         except ValueError:
             pass
         try:
+            self.max_model_output_tokens = max(
+                int(
+                    os.environ.get(
+                        "TRUSCANNER_AI_MAX_MODEL_OUTPUT_TOKENS",
+                        str(self.max_model_output_tokens),
+                    )
+                ),
+                120,
+            )
+        except ValueError:
+            pass
+        try:
             self.max_relevant_lines = max(
                 int(os.environ.get("TRUSCANNER_AI_MAX_RELEVANT_LINES", str(self.max_relevant_lines))),
-                50,
+                40,
+            )
+        except ValueError:
+            pass
+        try:
+            self.ollama_num_ctx = max(
+                int(os.environ.get("TRUSCANNER_AI_NUM_CTX", str(self.ollama_num_ctx))),
+                1024,
             )
         except ValueError:
             pass
@@ -69,20 +124,32 @@ class AIScanner:
         return names
 
     def _prepare_content_for_prompt(self, content: str) -> str:
-        """Shrink large files to relevant snippets for faster local inference."""
+        """Shrink large files to relevant snippets for faster local inference.
+
+        In `fast` mode, very large files without signal lines may be skipped.
+        In `balanced`/`full`, it falls back to head+tail excerpts to preserve coverage.
+        """
         if len(content) <= self.max_prompt_chars:
             return content
 
         lines = content.splitlines()
         relevant_lines: List[Tuple[int, str]] = []
         seen_line_numbers = set()
+        strict_signal_mode = len(content) > (self.max_prompt_chars * self.strict_large_file_multiplier)
 
         for idx, raw_line in enumerate(lines, 1):
             line_lower = raw_line.lower()
             has_keyword = any(keyword in line_lower for keyword in self.KEYWORD_HINTS)
             has_signal = any(pattern.search(raw_line) for pattern in self.SIMPLE_SIGNAL_PATTERNS)
 
-            if not has_keyword and not has_signal:
+            # For very large files, only keep strong signal lines to avoid slow, low-value prompts.
+            if strict_signal_mode:
+                if self.ai_mode == "fast":
+                    if not has_signal:
+                        continue
+                elif not has_keyword and not has_signal:
+                    continue
+            elif not has_keyword and not has_signal:
                 continue
 
             # Include one line of context before and after interesting lines.
@@ -112,12 +179,17 @@ class AIScanner:
                 f"{body}"
             )
 
+        # In fast mode, very large low-signal files can be skipped.
+        if strict_signal_mode and self.skip_signal_less_large_files:
+            return ""
+
         # Fallback for long files without obvious signals.
-        half = max(1000, self.max_prompt_chars // 2)
+        half = max(800, self.max_prompt_chars // 2)
         head = content[:half]
         tail = content[-half:]
         return (
-            "The source file is large. Analyze these excerpts and return only high-confidence findings.\n"
+            "The source file is large and was sampled for coverage. "
+            "Analyze these excerpts and return only high-confidence findings.\n"
             "[BEGIN FILE HEAD]\n"
             f"{head}\n"
             "[END FILE HEAD]\n"
@@ -128,7 +200,7 @@ class AIScanner:
 
     def _get_prompt(self, file_content: str, filename: str) -> str:
         """Construct the prompt for the LLM."""
-        elements_list = ", ".join(self.data_elements_names[:40])
+        elements_list = ", ".join(self.data_elements_names[:25])
 
         prompt = f"""
 Analyze the code from '{filename}' and find privacy-sensitive data handling (PII and related identifiers).
@@ -143,6 +215,8 @@ Rules:
 - "line_number" must be an integer line number from the source content.
 - If no findings exist, return: {{"findings":[]}}
 - Keep "matched_text" short and specific.
+- Ignore comments, docs, and generic keyword/enumeration lists that do not represent real data handling.
+- Prefer runtime data collection/storage/transmission paths over configuration constants.
 
 Code Content:
 {file_content}
@@ -173,6 +247,8 @@ Code Content:
 
             file_lines = content.splitlines()
             prompt_content = self._prepare_content_for_prompt(content)
+            if not prompt_content.strip():
+                return []
             prompt = self._get_prompt(prompt_content, filepath)
 
             if use_openai and os.environ.get("OPENAI_API_KEY"):
@@ -225,8 +301,8 @@ Code Content:
                         "messages": [{"role": "user", "content": prompt}],
                         "options": {
                             "temperature": 0,
-                            "num_ctx": 4096,
-                            "num_predict": 700,
+                            "num_ctx": self.ollama_num_ctx,
+                            "num_predict": self.max_model_output_tokens,
                         },
                     }
                     try:
@@ -480,9 +556,9 @@ Code Content:
         return all_findings
 
 
-async def scan_directory_ai(directory: str) -> List[Dict[str, Any]]:
+async def scan_directory_ai(directory: str, ai_mode: Optional[str] = None) -> List[Dict[str, Any]]:
     """Backward compatible wrapper for AIScanner."""
-    scanner = AIScanner()
+    scanner = AIScanner(ai_mode=ai_mode)
     use_openai = bool(os.environ.get("OPENAI_API_KEY"))
     # Note: AIScanner.scan_directory is synchronous, but the original was async.
     # We call it in a thread to keep the async interface if needed, or just run it.
