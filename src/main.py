@@ -137,6 +137,8 @@ def scan(directory, with_ai, format, output, personal_only):
             use_openai = bool(os.environ.get("OPENAI_API_KEY"))
             ai_scanner = AIScanner()
             selected_model = None
+            ai_results = []
+            ai_duration = 0.0
             
             if use_openai:
                 click.echo("\nRunning enhanced AI scan with OpenAI...")
