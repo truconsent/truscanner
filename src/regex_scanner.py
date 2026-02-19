@@ -15,7 +15,18 @@ _worker_data_elements = []
 class RegexScanner:
     """Scanner that uses regex patterns from JSON files to identify privacy data elements."""
     
-    DEFAULT_EXCLUDE_DIRS = {'.git', 'node_modules', '__pycache__', '.venv', 'venv', 'dist', 'build', '.next', '.cache'}
+    DEFAULT_EXCLUDE_DIRS = {
+        '.git',
+        'node_modules',
+        '__pycache__',
+        '.venv',
+        'venv',
+        'dist',
+        'build',
+        '.next',
+        '.cache',
+        'reports',
+    }
     
     @staticmethod
     def _strip_directory_prefix(file_path: str, base_directory: Optional[str]) -> str:
