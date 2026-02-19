@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "truscanner"
-version = "0.2.4"
+version = "0.2.6"
 description = "Open-Source Static Analysis for Privacy Data Flows"
 readme = "README.md"
 authors = [
@@ -26,17 +26,19 @@ dev = [
     "twine",
     "build",
     "hatchling",
+    "pytest>=8.0.0",
 ]
 
 [project.scripts]
 truscanner = "src.main:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src", "data_elements"]
+packages = ["src", "data_elements", "truscanner"]
 
 [tool.hatch.build.targets.sdist]
 include = [
     "/src",
+    "/truscanner",
     "/data_elements",
     "/README.md",
     "/LICENSE",

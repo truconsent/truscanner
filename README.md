@@ -64,6 +64,29 @@ truscanner scan ./my-project
 truscanner scan C:\Users\username\projects\my-app
 ```
 
+### Python API Usage
+
+Use truScanner directly from Python:
+
+```python
+import truscanner
+
+# Local path
+check = truscanner("/path/to/project")
+
+# file:// URL also works
+check = truscanner("file:///Users/username/project")
+
+# Optional explicit call style
+check = truscanner.scan("/path/to/project", with_ai=False)
+```
+
+Quick smoke check script:
+
+```bash
+uv run python scripts/check_truscanner_api.py ./src
+```
+
 ### Interactive Workflow
 
 1. **Select Output Format**: 
@@ -166,6 +189,16 @@ truscanner/
 ├── pyproject.toml           # Project configuration
 └── README.md
 ```
+
+## 📝 Change Policy
+
+For this repository, every code or behavior change must include a matching README update in the same change.
+
+This includes:
+- CLI flags, prompts, defaults, scan behavior, output format changes
+- Python API changes (`import truscanner`, return schema, parameters)
+- Dependency/runtime requirements
+- Report format/location updates
 
 ## 🤝 Support
 

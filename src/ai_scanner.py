@@ -527,24 +527,39 @@ Code Content:
             print(f"Error parsing LLM response for {filepath}: {e}")
             return []
 
-    def scan_directory(self, directory: str, use_openai: bool = False, model: Optional[str] = None) -> List[Dict[str, Any]]:
+    def scan_directory(
+        self,
+        directory: str,
+        use_openai: bool = False,
+        model: Optional[str] = None,
+        extensions: Optional[List[str]] = None
+    ) -> List[Dict[str, Any]]:
         """Scan all files in a directory using AI."""
         all_findings = []
         path = Path(directory)
 
         from .regex_scanner import RegexScanner
-        regex = RegexScanner()
-
+        exclude_dirs = RegexScanner.DEFAULT_EXCLUDE_DIRS
+        exclude_files = RegexScanner.DEFAULT_EXCLUDE_FILES
+        exclude_exts = RegexScanner.DEFAULT_EXCLUDE_EXTENSIONS
+        allowed_extensions = (
+            RegexScanner._normalize_extensions(extensions)
+            if extensions is not None
+            else RegexScanner.DEFAULT_CODE_EXTENSIONS
+        )
         files_to_scan = []
         if path.is_file():
             files_to_scan = [str(path)]
         else:
             for root, dirs, files in os.walk(path):
-                dirs[:] = [d for d in dirs if d not in regex.DEFAULT_EXCLUDE_DIRS and not d.startswith(".")]
+                dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith('.')]
                 for file in files:
-                    if file.startswith(".") or file in regex.DEFAULT_EXCLUDE_FILES:
+                    if file.startswith('.') or file in exclude_files:
                         continue
-                    if any(file.endswith(ext) for ext in regex.DEFAULT_EXCLUDE_EXTENSIONS):
+                    file_ext = Path(file).suffix.lower()
+                    if file_ext in exclude_exts:
+                        continue
+                    if file_ext not in allowed_extensions:
                         continue
                     files_to_scan.append(os.path.join(root, file))
 

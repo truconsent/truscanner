@@ -27,6 +27,16 @@ class RegexScanner:
         '.cache',
         'reports',
     }
+    DEFAULT_CODE_EXTENSIONS = {
+        '.py', '.pyi',
+        '.js', '.jsx', '.mjs', '.cjs', '.ts', '.tsx',
+        '.c', '.h', '.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx',
+        '.java', '.cs', '.go', '.rs', '.rb', '.php',
+        '.swift', '.kt', '.kts', '.scala', '.sc',
+        '.dart', '.lua', '.r', '.pl', '.pm',
+        '.sh', '.bash', '.zsh', '.ps1', '.bat', '.cmd',
+        '.sql', '.vue', '.svelte'
+    }
     
     @staticmethod
     def _strip_directory_prefix(file_path: str, base_directory: Optional[str]) -> str:
@@ -312,6 +322,7 @@ class RegexScanner:
         exclude_dirs = exclude_dirs or self.DEFAULT_EXCLUDE_DIRS
         exclude_files = self.DEFAULT_EXCLUDE_FILES
         exclude_exts = self.DEFAULT_EXCLUDE_EXTENSIONS
+        allowed_extensions = self._normalize_extensions(extensions) if extensions is not None else self.DEFAULT_CODE_EXTENSIONS
         
         files_to_scan = []
         for root, dirs, files in os.walk(path):
@@ -321,10 +332,12 @@ class RegexScanner:
                 if file.startswith('.') or file in exclude_files:
                     continue
                 
-                if any(file.endswith(ext) for ext in exclude_exts):
+                file_ext = Path(file).suffix.lower()
+
+                if file_ext in exclude_exts:
                     continue
                     
-                if extensions and not any(file.endswith(ext) for ext in extensions):
+                if file_ext not in allowed_extensions:
                     continue
                     
                 files_to_scan.append(os.path.join(root, file))
@@ -352,6 +365,21 @@ class RegexScanner:
                 print(f"\nError processing {file_path}: {e}")
         
         return all_findings
+
+    @staticmethod
+    def _normalize_extensions(extensions: List[str]) -> set:
+        """Normalize extension values to lowercase with a leading dot."""
+        normalized = set()
+        for ext in extensions:
+            if not ext:
+                continue
+            candidate = ext.strip().lower()
+            if not candidate:
+                continue
+            if not candidate.startswith('.'):
+                candidate = f'.{candidate}'
+            normalized.add(candidate)
+        return normalized
     
     def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted text report from findings."""
