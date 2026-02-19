@@ -31,6 +31,9 @@ class DummyRegexScanner:
 
 
 class DummyAIScanner:
+    def __init__(self, *args, **kwargs):
+        pass
+
     def get_available_ollama_models(self):
         return []
 
