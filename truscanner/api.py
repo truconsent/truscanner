@@ -63,6 +63,7 @@ def scan(
     target_str = str(target)
 
     scanner = RegexScanner()
+    configured_elements = len(getattr(scanner, "data_elements", []) or [])
     report_id = generate_report_id(target_str)
 
     start_time = time.time()
@@ -107,6 +108,7 @@ def scan(
     return {
         "scan_report_id": report_id,
         "directory_scanned": target_str,
+        "configured_data_elements": configured_elements,
         "total_findings": len(findings),
         "scan_duration_seconds": duration,
         "findings": findings,
@@ -116,4 +118,3 @@ def scan(
         "ai_scan_duration_seconds": ai_duration,
         "ai_findings": ai_findings,
     }
-

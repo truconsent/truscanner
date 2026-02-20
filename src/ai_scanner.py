@@ -200,7 +200,12 @@ class AIScanner:
 
     def _get_prompt(self, file_content: str, filename: str) -> str:
         """Construct the prompt for the LLM."""
-        elements_list = ", ".join(self.data_elements_names[:25])
+        # Include every configured element name so AI guidance matches the full catalog.
+        elements_list = ", ".join(
+            name.strip()
+            for name in self.data_elements_names
+            if isinstance(name, str) and name.strip()
+        ) or "All configured privacy data elements"
 
         prompt = f"""
 Analyze the code from '{filename}' and find privacy-sensitive data handling (PII and related identifiers).

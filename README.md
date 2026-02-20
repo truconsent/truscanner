@@ -11,6 +11,7 @@
 ## 🚀 Features
 
 - **Comprehensive Detection**: Identifies 300+ personal data elements (PII, financial data, device identifiers, etc.)
+- **Full Catalog Coverage**: Loads and scans against all configured data elements from `data_elements/` (not a truncated subset)
 - **Interactive Menu**: Arrow-key navigable menu for selecting output formats
 - **Real-time Progress**: Visual progress indicator during scanning
 - **Multiple Report Formats**: Generate reports in TXT, Markdown, or JSON format
@@ -79,12 +80,34 @@ check = truscanner("file:///Users/username/project")
 
 # Optional explicit call style
 check = truscanner.scan("/path/to/project", with_ai=False)
+
+# API metadata: total configured catalog size
+print(check["configured_data_elements"])
+```
+
+Minimal script style:
+
+```python
+import truscanner
+scan = truscanner("folder_path")
+```
+
+Runnable root example:
+
+```bash
+python3 simple_truscanner_usage.py ./src
 ```
 
 Quick smoke check script:
 
 ```bash
 uv run python scripts/check_truscanner_api.py ./src
+```
+
+Installed-package verification (CLI + Python API):
+
+```bash
+python3 verify_truscanner_install.py
 ```
 
 ### Interactive Workflow
@@ -96,6 +119,7 @@ uv run python scripts/check_truscanner_api.py ./src
 
 2. **Scanning Progress**:
    - Real-time progress bar shows file count and percentage
+   - Prints configured definition count at start (example: `Loaded data element definitions: 380`)
    - Example: `Scanning: 50/200 (25%) [████████░░░░░░░░░░░░] filename.js`
 
 3. **AI Enhanced Scan (Optional)**:
@@ -159,9 +183,13 @@ Reports are saved in: `reports/{sanitized_directory_name}/`
 
 Each report includes:
 - **Scan Report ID**: Unique 32-bit hash identifier
-- **Summary**: Total findings, time taken, files scanned
+- **Summary**: Configured data elements, distinct detected elements, total findings, and time taken
 - **Findings by File**: Detailed list of data elements found in each file
 - **Summary by Category**: Aggregated statistics by data category
+
+JSON reports also include:
+- `configured_data_elements`
+- `distinct_detected_elements`
 
 ### Report ID
 

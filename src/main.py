@@ -52,10 +52,21 @@ def scan(directory, with_ai, ai_mode, format, output, personal_only):
     
     # Generate report ID
     report_id = generate_report_id(directory)
+    preloaded_scanner = None
+    configured_elements = 0
+    try:
+        preloaded_scanner = RegexScanner()
+        configured_elements = len(getattr(preloaded_scanner, "data_elements", []) or [])
+    except Exception:
+        preloaded_scanner = None
+        configured_elements = 0
+
+    if configured_elements:
+        click.echo(f"Loaded data element definitions: {configured_elements}")
     
     # Default: Use regex scanner (fast, no downloads)
     if not with_ai:
-        scanner = RegexScanner()
+        scanner = preloaded_scanner if preloaded_scanner is not None else RegexScanner()
         
         # Progress callback
         def progress_callback(current, total, file_path):

@@ -383,8 +383,32 @@ class RegexScanner:
     
     def generate_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted text report from findings."""
+        if not self.data_elements:
+            self._load_data_elements()
+        configured_elements = len(self.data_elements)
+        distinct_detected_elements = len(
+            {
+                finding.get("element_name")
+                for finding in findings
+                if finding.get("element_name")
+            }
+        )
+
         if not findings:
-            return "truconsent (truconsent.io)\n\ntruscanner Report\n\nNo data elements found."
+            lines = [
+                "truconsent (truconsent.io)",
+                "",
+                "truscanner Report",
+                "",
+                "Summary",
+                "-" * 80,
+                f"Configured Data Elements: {configured_elements}",
+                "Distinct Detected Elements: 0",
+                "Total Findings: 0",
+                "",
+                "No data elements found.",
+            ]
+            return "\n".join(lines)
         
         lines = []
         
@@ -402,6 +426,8 @@ class RegexScanner:
         # Summary
         lines.append("Summary")
         lines.append("-" * 80)
+        lines.append(f"Configured Data Elements: {configured_elements}")
+        lines.append(f"Distinct Detected Elements: {distinct_detected_elements}")
         lines.append(f"Total Findings: {len(findings)}")
         if duration is not None:
             lines.append(f"Time Taken: {duration:.2f} seconds")
@@ -489,8 +515,32 @@ class RegexScanner:
     
     def generate_markdown_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> str:
         """Generate formatted markdown report from findings."""
+        if not self.data_elements:
+            self._load_data_elements()
+        configured_elements = len(self.data_elements)
+        distinct_detected_elements = len(
+            {
+                finding.get("element_name")
+                for finding in findings
+                if finding.get("element_name")
+            }
+        )
+
         if not findings:
-            return "truconsent (truconsent.io)\n\n# truscanner Report\n\nNo data elements found."
+            lines = [
+                "truconsent (truconsent.io)",
+                "",
+                "# truscanner Report",
+                "",
+                "## Summary",
+                "",
+                f"- **Configured Data Elements:** {configured_elements}",
+                "- **Distinct Detected Elements:** 0",
+                "- **Total Findings:** 0",
+                "",
+                "No data elements found.",
+            ]
+            return "\n".join(lines)
         
         lines = []
         
@@ -508,6 +558,8 @@ class RegexScanner:
         # Summary
         lines.append("## Summary")
         lines.append("")
+        lines.append(f"- **Configured Data Elements:** {configured_elements}")
+        lines.append(f"- **Distinct Detected Elements:** {distinct_detected_elements}")
         lines.append(f"- **Total Findings:** {len(findings)}")
         if duration is not None:
             lines.append(f"- **Time Taken:** {duration:.2f} seconds")
@@ -598,11 +650,24 @@ class RegexScanner:
     def generate_json_report(self, findings: List[Dict[str, Any]], duration: Optional[float] = None, report_id: Optional[str] = None, directory_scanned: Optional[str] = None) -> Dict[str, Any]:
         """Generate JSON report with metadata."""
         from datetime import datetime
+
+        if not self.data_elements:
+            self._load_data_elements()
+        configured_elements = len(self.data_elements)
+        distinct_detected_elements = len(
+            {
+                finding.get("element_name")
+                for finding in findings
+                if finding.get("element_name")
+            }
+        )
         
         report = {
             "scan_report_id": report_id or "",
             "timestamp": datetime.now().isoformat(),
             "directory_scanned": directory_scanned or "",
+            "configured_data_elements": configured_elements,
+            "distinct_detected_elements": distinct_detected_elements,
             "total_findings": len(findings),
             "scan_duration_seconds": duration,
             "findings": findings
