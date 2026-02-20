@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "truscanner"
-version = "0.2.6"
+version = "0.2.7"
 description = "Open-Source Static Analysis for Privacy Data Flows"
 readme = "README.md"
 authors = [
