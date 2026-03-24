@@ -1,17 +1,19 @@
 import os
-import asyncio
 from pathlib import Path
-from typing import List, Dict, Any
-from .regex_scanner import RegexScanner
-from .ai_scanner import scan_directory_ai
+from typing import Callable, Dict, Any, List, Optional
 
-def scan_file(filepath: str, regex_scanner: RegexScanner = None) -> List[Dict[str, Any]]:
+from .ai_scanner import AIScanner
+from .regex_scanner import RegexScanner
+from .utils import has_bedrock_credentials, has_openai_credentials, normalize_ai_provider
+
+
+def scan_file(filepath: str, regex_scanner: Optional[RegexScanner] = None) -> List[Dict[str, Any]]:
+    """Backward-compatible regex scan for a single file."""
     findings = []
     try:
         with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
             content = f.read()
-            
-        # Regex Scanning using RegexScanner
+
         if regex_scanner:
             regex_findings = regex_scanner.scan_text(content, context=filepath)
             for finding in regex_findings:
@@ -27,45 +29,130 @@ def scan_file(filepath: str, regex_scanner: RegexScanner = None) -> List[Dict[st
                 })
 
     except Exception:
-        # Skip files that cannot be read
+        # Skip files that cannot be read.
         pass
     return findings
 
-def scan_directory(directory: str, use_ai: bool = False, ai_mode: str = "balanced") -> List[Dict[str, Any]]:
+
+def run_regex_scan(
+    directory: str,
+    *,
+    extensions: Optional[List[str]] = None,
+    progress_callback: Optional[Callable[[int, int, str], None]] = None,
+    regex_scanner: Optional[RegexScanner] = None,
+) -> List[Dict[str, Any]]:
+    """Run the regex/static scan only."""
+    scanner = regex_scanner or RegexScanner()
+    if hasattr(scanner, "scan_directory"):
+        return scanner.scan_directory(
+            directory,
+            extensions=extensions,
+            progress_callback=progress_callback,
+        )
+
+    exclude_dirs = getattr(scanner, "DEFAULT_EXCLUDE_DIRS", RegexScanner.DEFAULT_EXCLUDE_DIRS)
+    exclude_files = getattr(scanner, "DEFAULT_EXCLUDE_FILES", RegexScanner.DEFAULT_EXCLUDE_FILES)
+    exclude_exts = getattr(scanner, "DEFAULT_EXCLUDE_EXTENSIONS", RegexScanner.DEFAULT_EXCLUDE_EXTENSIONS)
+    default_extensions = getattr(scanner, "DEFAULT_CODE_EXTENSIONS", RegexScanner.DEFAULT_CODE_EXTENSIONS)
+    if extensions is None:
+        allowed_extensions = default_extensions
+    elif hasattr(scanner, "_normalize_extensions"):
+        allowed_extensions = scanner._normalize_extensions(extensions)
+    else:
+        allowed_extensions = {
+            ext.lower() if str(ext).startswith(".") else f".{str(ext).lower()}"
+            for ext in extensions
+        }
+
+    files_to_scan = []
+    path = Path(directory)
+    if path.is_file():
+        files_to_scan = [str(path)]
+    else:
+        for root, dirs, files in os.walk(directory):
+            dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith('.')]
+            for file in files:
+                if file.startswith('.') or file in exclude_files:
+                    continue
+                file_ext = Path(file).suffix.lower()
+                if file_ext in exclude_exts:
+                    continue
+                if file_ext not in allowed_extensions:
+                    continue
+                files_to_scan.append(os.path.join(root, file))
+
     results = []
-    
-    # Initialize RegexScanner
-    regex_scanner = RegexScanner()
-    exclude_dirs = regex_scanner.DEFAULT_EXCLUDE_DIRS
-    exclude_files = regex_scanner.DEFAULT_EXCLUDE_FILES
-    exclude_exts = regex_scanner.DEFAULT_EXCLUDE_EXTENSIONS
-    allowed_extensions = regex_scanner.DEFAULT_CODE_EXTENSIONS
-    
-    # 1. Local Scan (Regex)
-    for root, dirs, files in os.walk(directory):
-        dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith('.')]
-        for file in files:
-            if file.startswith('.') or file in exclude_files:
-                continue
-            file_ext = Path(file).suffix.lower()
-            if file_ext in exclude_exts:
-                continue
-            if file_ext not in allowed_extensions:
-                continue
-            filepath = os.path.join(root, file)
-            results.extend(scan_file(filepath, regex_scanner))
-    
-    # 2. LLM Scan (OpenAI) - optional
-    if use_ai and os.environ.get("OPENAI_API_KEY"):
-        try:
-            print("Running AI scan...")
-            ai_results = asyncio.run(scan_directory_ai(directory, ai_mode=ai_mode))
-            for item in ai_results:
-                item["source"] = "LLM"
-            results.extend(ai_results)
-        except Exception as e:
-            print(f"AI Scan failed: {e}")
-    elif use_ai and not os.environ.get("OPENAI_API_KEY"):
-        print("Warning: AI scan requested but OPENAI_API_KEY not set")
-            
+    total = len(files_to_scan)
+    for index, filepath in enumerate(files_to_scan, 1):
+        if progress_callback:
+            progress_callback(index, total, filepath)
+        results.extend(scan_file(filepath, regex_scanner=scanner))
+    return results
+
+
+def run_ai_scan(
+    directory: str,
+    *,
+    ai_provider: Optional[str] = None,
+    ai_mode: str = "balanced",
+    model: Optional[str] = None,
+    extensions: Optional[List[str]] = None,
+    use_openai: bool = False,
+) -> List[Dict[str, Any]]:
+    """Run the AI scan only with the selected provider."""
+    provider = normalize_ai_provider(ai_provider)
+    scanner = AIScanner(ai_mode=ai_mode)
+
+    if provider == "openai":
+        if not has_openai_credentials():
+            print("Warning: OpenAI scan requested but OPENAI_KEY is not set")
+            return []
+    elif provider == "bedrock":
+        if not has_bedrock_credentials():
+            print(
+                "Warning: AWS Bedrock scan requested but "
+                "TRUSCANNER_ACCESS_KEY_ID, TRUSCANNER_SECRET_ACCESS_KEY, or TRUSCANNER_REGION "
+                "are not fully configured"
+            )
+            return []
+    else:
+        if model is None:
+            available_models = scanner.get_available_ollama_models()
+            if not available_models:
+                print("Warning: Ollama scan requested but no Ollama models are available")
+                return []
+            model = available_models[0]
+
+    return scanner.scan_directory(
+        directory,
+        provider=provider,
+        use_openai=use_openai or provider == "openai",
+        model=model,
+        extensions=extensions,
+    )
+
+
+def scan_directory(
+    directory: str,
+    use_ai: bool = False,
+    ai_mode: str = "balanced",
+    ai_provider: Optional[str] = None,
+    model: Optional[str] = None,
+    extensions: Optional[List[str]] = None,
+) -> List[Dict[str, Any]]:
+    """Backward-compatible combined scan wrapper."""
+    results = run_regex_scan(directory, extensions=extensions)
+
+    if use_ai:
+        results.extend(
+            run_ai_scan(
+                directory,
+                ai_provider=ai_provider,
+                ai_mode=ai_mode,
+                model=model,
+                extensions=extensions,
+                use_openai=ai_provider is None and has_openai_credentials(),
+            )
+        )
+
     return results

@@ -15,7 +15,8 @@
 - **Interactive Menu**: Arrow-key navigable menu for selecting output formats
 - **Real-time Progress**: Visual progress indicator during scanning
 - **Multiple Report Formats**: Generate reports in TXT, Markdown, or JSON format
-- **AI-Powered Enhancement**: Optional integration with Ollama or OpenAI for deeper context
+- **Separate Regex and AI Scans**: Regex/static scanning and AI-enhanced scanning now run as distinct paths
+- **AI-Powered Enhancement**: Optional integration with Ollama, OpenAI, or AWS Bedrock for deeper context
 - **Backend Integration**: Optional upload to backend API for centralized storage
 - **Auto-incrementing Reports**: Automatically manages report file naming to prevent overwrites
 
@@ -29,6 +30,7 @@
 
 - Python 3.9 or higher
 - [ollama](https://ollama.com/) (optional, for local AI scanning)
+- OpenAI or AWS Bedrock credentials if you want a hosted AI provider
 
 ### Quick Install
 
@@ -81,6 +83,17 @@ check = truscanner("file:///Users/username/project")
 # Optional explicit call style
 check = truscanner.scan("/path/to/project", with_ai=False)
 
+# Run regex and AI scans separately
+regex_only = truscanner.scan_regex("/path/to/project")
+ai_only = truscanner.scan_ai("/path/to/project", ai_provider="bedrock")
+
+# Run both scans together
+full_check = truscanner.scan(
+    "/path/to/project",
+    with_ai=True,
+    ai_provider="openai",
+)
+
 # API metadata: total configured catalog size
 print(check["configured_data_elements"])
 ```
@@ -104,12 +117,6 @@ Quick smoke check script:
 uv run python scripts/check_truscanner_api.py ./src
 ```
 
-Installed-package verification (CLI + Python API):
-
-```bash
-python3 verify_truscanner_install.py
-```
-
 ### Interactive Workflow
 
 1. **Select Output Format**: 
@@ -123,9 +130,10 @@ python3 verify_truscanner_install.py
    - Example: `Scanning: 50/200 (25%) [████████░░░░░░░░░░░░] filename.js`
 
 3. **AI Enhanced Scan (Optional)**:
-   - After the initial scan, you'll be prompted:
-     `Do you want to use Ollama/AI for enhanced PII detection (find what regex missed)? (Y, N):`
-   - This uses local LLMs (via Ollama) or OpenAI to find complex PII.
+   - After the regex scan, you'll get a dropdown for the AI-only scan provider:
+     `Skip AI scan`, `Ollama`, `OpenAI`, or `AWS Bedrock`
+   - This AI pass is separate from the regex scan and is used to find context that regex may miss.
+   - If `Ollama` is selected, you can choose the local model from a second dropdown.
    - Live scanning timer: `AI Scanning: filename.js... (5.2s taken)`
 
 4. **Report Generation**:
@@ -145,10 +153,19 @@ python3 verify_truscanner_install.py
 truscanner scan <directory> [OPTIONS]
 
 Options:
-  --with-ai          Enable AI/LLM scanner directly
+  --with-ai          Enable the separate AI scan after the regex scan
+  --ai-provider      AI provider: ollama, openai, or bedrock
   --ai-mode          AI scan mode: fast, balanced, or full (default: balanced)
   --personal-only    Only report personal identifiable information (PII)
   --help             Show help message
+```
+
+Examples:
+
+```bash
+truscanner scan ./src --with-ai --ai-provider openai
+truscanner scan ./src --with-ai --ai-provider bedrock
+truscanner scan ./src --with-ai --ai-provider ollama
 ```
 
 ### AI Speed vs Coverage Modes
@@ -200,7 +217,51 @@ Each scan generates a unique **Scan Report ID** (32-bit MD5 hash) that:
 
 ## 🔧 Configuration
 
-The `truscanner` package is pre-configured with the live backend URL for seamless scan uploads. No additional configuration is required.
+The `truscanner` package is pre-configured with the live backend URL for seamless scan uploads.
+
+### AI Provider Credentials
+
+`truScanner` loads environment variables from `.env` and from your exported shell environment.
+
+Start by copying the sample file in the repo root:
+
+```bash
+cp .env.example .env
+```
+
+OpenAI:
+
+```env
+OPENAI_KEY=your-openai-key
+```
+
+Shell export:
+
+```bash
+export OPENAI_KEY=your-openai-key
+```
+
+AWS Bedrock:
+
+```env
+TRUSCANNER_ACCESS_KEY_ID=your-access-key
+TRUSCANNER_SECRET_ACCESS_KEY=your-secret-key
+TRUSCANNER_REGION=us-east-1
+TRUSCANNER_MODEL_ID=anthropic.claude-3-haiku-20240307-v1:0
+```
+
+Shell export:
+
+```bash
+export TRUSCANNER_ACCESS_KEY_ID=your-access-key
+export TRUSCANNER_SECRET_ACCESS_KEY=your-secret-key
+export TRUSCANNER_REGION=us-east-1
+export TRUSCANNER_MODEL_ID=anthropic.claude-3-haiku-20240307-v1:0
+```
+
+Notes:
+- If you do not set `TRUSCANNER_MODEL_ID`, `truScanner` defaults to `anthropic.claude-3-haiku-20240307-v1:0`.
+- Legacy environment variable names such as `TRUSCANNER_OPENAI_KEY`, `OPENAI_API_KEY`, and `AWS_*` are still accepted as fallback.
 
 ## 📁 Project Structure
 

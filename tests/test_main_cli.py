@@ -3,7 +3,11 @@ from pathlib import Path
 
 from click.testing import CliRunner
 
+
 class DummyRegexScanner:
+    def __init__(self, *args, **kwargs):
+        self.data_elements = [{"name": "Email Address"}]
+
     def scan_directory(self, directory, progress_callback=None, **kwargs):
         file_path = str(Path(directory) / "app.py")
         if progress_callback:
@@ -37,11 +41,8 @@ class DummyAIScanner:
     def get_available_ollama_models(self):
         return []
 
-    def scan_directory(self, directory, use_openai=False, model=None):
-        raise AssertionError("AI scan should not run when no model is available")
 
-
-def test_scan_cli_handles_missing_ai_models_without_crashing(tmp_path, monkeypatch):
+def test_scan_cli_handles_missing_ollama_models_without_crashing(tmp_path, monkeypatch):
     main_module = importlib.reload(importlib.import_module("src.main"))
 
     project_dir = tmp_path / "project"
@@ -49,18 +50,24 @@ def test_scan_cli_handles_missing_ai_models_without_crashing(tmp_path, monkeypat
     (project_dir / "app.py").write_text("print('hello')\n", encoding="utf-8")
     monkeypatch.chdir(tmp_path)
 
-    prompts = iter(["Y", "N"])
-
     monkeypatch.setattr(main_module, "select_file_format", lambda: "txt")
-    monkeypatch.setattr(main_module.click, "prompt", lambda *args, **kwargs: next(prompts))
+    monkeypatch.setattr(main_module, "select_ai_provider", lambda default_provider=None: "ollama")
+    monkeypatch.setattr(main_module.click, "prompt", lambda *args, **kwargs: "N")
     monkeypatch.setattr(main_module, "show_progress", lambda *args, **kwargs: None)
     monkeypatch.setattr(main_module, "RegexScanner", DummyRegexScanner)
     monkeypatch.setattr(main_module, "AIScanner", DummyAIScanner)
+    monkeypatch.setattr(
+        main_module,
+        "run_ai_scan",
+        lambda *args, **kwargs: (_ for _ in ()).throw(
+            AssertionError("AI scan should not run when no Ollama model is available")
+        ),
+    )
 
     runner = CliRunner()
     result = runner.invoke(main_module.main, ["scan", str(project_dir)])
 
     assert result.exit_code == 0, result.output
     assert "No Ollama models found" in result.output
-    assert "No additional data elements found by AI." in result.output
+    assert "reports/project/truscan_report.txt" in result.output
     assert (tmp_path / "reports" / "project" / "truscan_report.txt").exists()

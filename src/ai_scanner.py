@@ -10,11 +10,29 @@ from typing import List, Dict, Any, Optional, Tuple
 
 import ollama
 from openai import OpenAI
+from dotenv import load_dotenv
+
+from .utils import (
+    get_bedrock_access_key_id,
+    get_bedrock_model_id,
+    get_bedrock_profile,
+    get_bedrock_region,
+    get_bedrock_secret_access_key,
+    get_bedrock_session_token,
+    get_openai_api_key,
+    normalize_ai_provider,
+)
+
+
+load_dotenv()
 
 
 class AIScanner:
-    """Scanner that uses LLMs (Ollama or OpenAI) to identify privacy data elements."""
+    """Scanner that uses LLMs to identify privacy data elements."""
     DEFAULT_AI_MODE = "balanced"
+    DEFAULT_OPENAI_MODEL = "gpt-4o"
+    DEFAULT_OLLAMA_MODEL = "llama3"
+    DEFAULT_BEDROCK_MODEL = "anthropic.claude-3-haiku-20240307-v1:0"
     AI_MODE_PRESETS = {
         "fast": {
             "max_prompt_chars": 3500,
@@ -241,7 +259,36 @@ Code Content:
             print(f"Error listing Ollama models: {e}")
             return []
 
-    def scan_file(self, filepath: str, use_openai: bool = False, model: Optional[str] = None) -> List[Dict[str, Any]]:
+    @staticmethod
+    def _resolve_provider(
+        provider: Optional[str] = None,
+        use_openai: bool = False,
+    ) -> str:
+        """Resolve an explicit provider while preserving backward compatibility."""
+        normalized = normalize_ai_provider(provider)
+        if normalized:
+            return normalized
+        if use_openai:
+            return "openai"
+        return "ollama"
+
+    @classmethod
+    def _get_bedrock_model(cls, model: Optional[str] = None) -> str:
+        """Return the configured Bedrock model id."""
+        return get_bedrock_model_id(model=model, default=cls.DEFAULT_BEDROCK_MODEL) or cls.DEFAULT_BEDROCK_MODEL
+
+    @staticmethod
+    def _get_bedrock_region() -> Optional[str]:
+        """Return the configured AWS region for Bedrock."""
+        return get_bedrock_region()
+
+    def scan_file(
+        self,
+        filepath: str,
+        provider: Optional[str] = None,
+        use_openai: bool = False,
+        model: Optional[str] = None,
+    ) -> List[Dict[str, Any]]:
         """Scan a single file using the selected LLM."""
         try:
             with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
@@ -255,13 +302,28 @@ Code Content:
             if not prompt_content.strip():
                 return []
             prompt = self._get_prompt(prompt_content, filepath)
+            selected_provider = self._resolve_provider(provider=provider, use_openai=use_openai)
 
-            if use_openai and os.environ.get("OPENAI_API_KEY"):
-                self.selected_model = "gpt-4o"
+            if selected_provider == "openai" and get_openai_api_key():
+                self.selected_model = self.DEFAULT_OPENAI_MODEL
                 return self._scan_with_openai(prompt, filepath, file_lines=file_lines)
 
-            self.selected_model = model or "llama3"
-            return self._scan_with_ollama(prompt, filepath, model=self.selected_model, file_lines=file_lines)
+            if selected_provider == "bedrock":
+                self.selected_model = self._get_bedrock_model(model)
+                return self._scan_with_bedrock(
+                    prompt,
+                    filepath,
+                    model=self.selected_model,
+                    file_lines=file_lines,
+                )
+
+            self.selected_model = model or self.DEFAULT_OLLAMA_MODEL
+            return self._scan_with_ollama(
+                prompt,
+                filepath,
+                model=self.selected_model,
+                file_lines=file_lines,
+            )
 
         except Exception as e:
             print(f"Error scanning {filepath} with AI: {e}")
@@ -356,7 +418,7 @@ Code Content:
 
             def chat_thread():
                 try:
-                    client = OpenAI()
+                    client = OpenAI(api_key=get_openai_api_key())
                     response = client.chat.completions.create(
                         model="gpt-4o",
                         messages=[{"role": "user", "content": prompt}],
@@ -390,6 +452,93 @@ Code Content:
             return self._parse_llm_response(response_content, filepath, file_lines=file_lines)
         except Exception as e:
             print(f"OpenAI error: {e}")
+            return []
+
+    def _scan_with_bedrock(
+        self,
+        prompt: str,
+        filepath: str,
+        model: Optional[str] = None,
+        file_lines: Optional[List[str]] = None,
+    ) -> List[Dict[str, Any]]:
+        """Call AWS Bedrock for analysis with a real-time timer."""
+        model_id = self._get_bedrock_model(model)
+        region_name = self._get_bedrock_region()
+
+        if not region_name:
+            print("Bedrock error: TRUSCANNER_REGION is required")
+            return []
+
+        try:
+            result = {"response": None, "error": None}
+
+            def chat_thread():
+                try:
+                    import boto3
+
+                    session_kwargs = {"region_name": region_name}
+                    access_key_id = get_bedrock_access_key_id()
+                    secret_access_key = get_bedrock_secret_access_key()
+                    session_token = get_bedrock_session_token()
+                    profile_name = get_bedrock_profile()
+
+                    if access_key_id and secret_access_key:
+                        session_kwargs["aws_access_key_id"] = access_key_id
+                        session_kwargs["aws_secret_access_key"] = secret_access_key
+                        if session_token:
+                            session_kwargs["aws_session_token"] = session_token
+                    elif profile_name:
+                        session_kwargs["profile_name"] = profile_name
+
+                    session = boto3.session.Session(**session_kwargs)
+                    client = session.client("bedrock-runtime")
+                    response = client.converse(
+                        modelId=model_id,
+                        messages=[
+                            {
+                                "role": "user",
+                                "content": [{"text": prompt}],
+                            }
+                        ],
+                        inferenceConfig={
+                            "temperature": 0,
+                            "maxTokens": self.max_model_output_tokens,
+                        },
+                    )
+                    result["response"] = response
+                except Exception as e:
+                    result["error"] = e
+
+            t = threading.Thread(target=chat_thread)
+            t.start()
+
+            start_time = time.time()
+            while t.is_alive():
+                elapsed = time.time() - start_time
+                sys.stdout.write(f"\rAI Scanning: {filepath}... ({elapsed:.1f}s taken)")
+                sys.stdout.flush()
+                time.sleep(0.1)
+
+            elapsed = time.time() - start_time
+            sys.stdout.write(f"\r\033[K✓ AI Scanned: {filepath} ({elapsed:.1f}s taken)\n")
+            sys.stdout.flush()
+
+            if result["error"]:
+                raise result["error"]
+            if not result["response"]:
+                return []
+
+            output = result["response"].get("output", {}) if isinstance(result["response"], dict) else {}
+            message = output.get("message", {}) if isinstance(output, dict) else {}
+            content_items = message.get("content", []) if isinstance(message, dict) else []
+            response_content = "".join(
+                item.get("text", "")
+                for item in content_items
+                if isinstance(item, dict)
+            )
+            return self._parse_llm_response(response_content, filepath, file_lines=file_lines)
+        except Exception as e:
+            print(f"Bedrock error: {e}")
             return []
 
     @staticmethod
@@ -535,6 +684,7 @@ Code Content:
     def scan_directory(
         self,
         directory: str,
+        provider: Optional[str] = None,
         use_openai: bool = False,
         model: Optional[str] = None,
         extensions: Optional[List[str]] = None
@@ -570,16 +720,43 @@ Code Content:
 
         for file_path in files_to_scan:
             # The scanning message and timer are handled inside scanner methods.
-            file_findings = self.scan_file(file_path, use_openai=use_openai, model=model)
+            try:
+                file_findings = self.scan_file(
+                    file_path,
+                    provider=provider,
+                    use_openai=use_openai,
+                    model=model,
+                )
+            except TypeError as exc:
+                # Preserve compatibility with older tests/callers that monkeypatch
+                # scan_file with the legacy signature.
+                if "provider" not in str(exc):
+                    raise
+                file_findings = self.scan_file(
+                    file_path,
+                    use_openai=use_openai,
+                    model=model,
+                )
             all_findings.extend(file_findings)
 
         return all_findings
 
 
-async def scan_directory_ai(directory: str, ai_mode: Optional[str] = None) -> List[Dict[str, Any]]:
+async def scan_directory_ai(
+    directory: str,
+    ai_mode: Optional[str] = None,
+    provider: Optional[str] = None,
+) -> List[Dict[str, Any]]:
     """Backward compatible wrapper for AIScanner."""
     scanner = AIScanner(ai_mode=ai_mode)
-    use_openai = bool(os.environ.get("OPENAI_API_KEY"))
+    normalized_provider = normalize_ai_provider(provider)
+    use_openai = normalized_provider == "openai" or (
+        normalized_provider is None and bool(get_openai_api_key())
+    )
     # Note: AIScanner.scan_directory is synchronous, but the original was async.
     # We call it in a thread to keep the async interface if needed, or just run it.
-    return scanner.scan_directory(directory, use_openai=use_openai)
+    return scanner.scan_directory(
+        directory,
+        provider=normalized_provider,
+        use_openai=use_openai,
+    )

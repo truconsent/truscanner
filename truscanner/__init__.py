@@ -4,7 +4,7 @@ from typing import Any
 
 from src import __version__
 
-from .api import scan
+from .api import scan, scan_ai, scan_regex
 
 
 class _CallableModule(types.ModuleType):
@@ -19,7 +19,6 @@ def truscanner(path_or_url: str, **kwargs: Any):
     return scan(path_or_url, **kwargs)
 
 
-__all__ = ["scan", "truscanner", "__version__"]
+__all__ = ["scan", "scan_regex", "scan_ai", "truscanner", "__version__"]
 
 sys.modules[__name__].__class__ = _CallableModule
-
