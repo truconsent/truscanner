@@ -2,10 +2,6 @@ import click
 import json
 import os
 import time
-from dotenv import load_dotenv
-
-# Load environment variables from .env file.
-load_dotenv()
 
 from . import __version__
 from .ai_scanner import AIScanner
@@ -24,10 +20,13 @@ from .utils import (
     normalize_ai_provider,
     select_ai_provider,
     select_file_format,
+    load_runtime_env,
     select_ollama_model,
     show_progress,
     upload_to_backend,
 )
+
+load_runtime_env()
 
 
 PERSONAL_CATEGORIES = [

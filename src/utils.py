@@ -1,7 +1,10 @@
 """Utility functions for interactive menu, progress display, and backend integration."""
 import os
 import sys
+from pathlib import Path
 from typing import Optional, Callable, List, Dict, Any
+
+from dotenv import find_dotenv, load_dotenv
 
 
 AI_PROVIDER_CHOICES = [
@@ -10,6 +13,22 @@ AI_PROVIDER_CHOICES = [
     ("OpenAI", "openai"),
     ("AWS Bedrock", "bedrock"),
 ]
+
+
+def load_runtime_env() -> None:
+    """Load environment variables from the current working directory when available."""
+    cwd_env = Path.cwd() / ".env"
+    if cwd_env.is_file():
+        load_dotenv(dotenv_path=cwd_env, override=False)
+        return
+
+    try:
+        discovered_env = find_dotenv(usecwd=True)
+    except Exception:
+        discovered_env = ""
+
+    if discovered_env:
+        load_dotenv(dotenv_path=discovered_env, override=False)
 
 
 def get_openai_api_key() -> Optional[str]:

@@ -1,5 +1,5 @@
 # truScanner from truConsent
-![PyPI version](https://img.shields.io/pypi/v/truscanner.svg?cacheSeconds=300&v=0.2.8)
+![PyPI version](https://img.shields.io/pypi/v/truscanner.svg?cacheSeconds=300&v=0.2.9)
 ![License](https://img.shields.io/pypi/l/truscanner.svg)
 
 **Open-Source Static Analysis for Privacy Data Flows**

@@ -4,8 +4,6 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 from urllib.parse import unquote, urlparse
 
-from dotenv import load_dotenv
-
 from src.ai_scanner import AIScanner
 from src.regex_scanner import RegexScanner
 from src.report_utils import generate_report_id
@@ -14,11 +12,11 @@ from src.utils import (
     get_bedrock_model_id,
     get_openai_api_key,
     has_bedrock_credentials,
+    load_runtime_env,
     normalize_ai_provider,
 )
 
-
-load_dotenv()
+load_runtime_env()
 
 
 PathLike = Union[str, os.PathLike]

@@ -71,3 +71,27 @@ def test_scan_cli_handles_missing_ollama_models_without_crashing(tmp_path, monke
     assert "No Ollama models found" in result.output
     assert "reports/project/truscan_report.txt" in result.output
     assert (tmp_path / "reports" / "project" / "truscan_report.txt").exists()
+
+
+def test_main_module_loads_env_from_current_working_directory(tmp_path, monkeypatch):
+    env_file = tmp_path / ".env"
+    env_file.write_text(
+        "\n".join(
+            [
+                "TRUSCANNER_ACCESS_KEY_ID=test-access-key",
+                "TRUSCANNER_SECRET_ACCESS_KEY=test-secret-key",
+                "TRUSCANNER_REGION=us-east-1",
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.delenv("TRUSCANNER_ACCESS_KEY_ID", raising=False)
+    monkeypatch.delenv("TRUSCANNER_SECRET_ACCESS_KEY", raising=False)
+    monkeypatch.delenv("TRUSCANNER_REGION", raising=False)
+
+    main_module = importlib.reload(importlib.import_module("src.main"))
+
+    assert main_module.get_missing_provider_requirements("bedrock") == []

@@ -10,7 +10,6 @@ from typing import List, Dict, Any, Optional, Tuple
 
 import ollama
 from openai import OpenAI
-from dotenv import load_dotenv
 
 from .utils import (
     get_bedrock_access_key_id,
@@ -20,11 +19,12 @@ from .utils import (
     get_bedrock_secret_access_key,
     get_bedrock_session_token,
     get_openai_api_key,
+    load_runtime_env,
     normalize_ai_provider,
 )
 
 
-load_dotenv()
+load_runtime_env()
 
 
 class AIScanner:
