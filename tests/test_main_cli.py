@@ -197,7 +197,7 @@ def test_version_flag(tmp_path):
     m = importlib.reload(importlib.import_module("src.main"))
     result = CliRunner().invoke(m.main, ["--version"])
     assert result.exit_code == 0
-    assert "truscanner" in result.output.lower() or result.output.strip()
+    assert "truscanner" in result.output.lower()
 
 
 def test_help_flag_shows_scan_command(tmp_path):
