@@ -2,6 +2,8 @@ import os
 from pathlib import Path
 from typing import Callable, Dict, Any, List, Optional
 
+from loguru import logger
+
 from .ai_scanner import AIScanner
 from .regex_scanner import RegexScanner
 from .utils import has_bedrock_credentials, has_openai_credentials, normalize_ai_provider
@@ -28,9 +30,8 @@ def scan_file(filepath: str, regex_scanner: Optional[RegexScanner] = None) -> Li
                     "source": "Regex"
                 })
 
-    except Exception:
-        # Skip files that cannot be read.
-        pass
+    except Exception as e:
+        logger.error("Could not read {}: {}", filepath, e)
     return findings
 
 
@@ -69,7 +70,7 @@ def run_regex_scan(
     if path.is_file():
         files_to_scan = [str(path)]
     else:
-        for root, dirs, files in os.walk(directory):
+        for root, dirs, files in os.walk(directory, followlinks=False):
             dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith('.')]
             for file in files:
                 if file.startswith('.') or file in exclude_files:
@@ -105,21 +106,20 @@ def run_ai_scan(
 
     if provider == "openai":
         if not has_openai_credentials():
-            print("Warning: OpenAI scan requested but OPENAI_KEY is not set")
+            logger.warning("OpenAI scan requested but OPENAI_KEY is not set")
             return []
     elif provider == "bedrock":
         if not has_bedrock_credentials():
-            print(
-                "Warning: AWS Bedrock scan requested but "
-                "TRUSCANNER_ACCESS_KEY_ID, TRUSCANNER_SECRET_ACCESS_KEY, or TRUSCANNER_REGION "
-                "are not fully configured"
+            logger.warning(
+                "AWS Bedrock scan requested but credentials are not fully configured "
+                "(TRUSCANNER_ACCESS_KEY_ID, TRUSCANNER_SECRET_ACCESS_KEY, TRUSCANNER_REGION)"
             )
             return []
     else:
         if model is None:
             available_models = scanner.get_available_ollama_models()
             if not available_models:
-                print("Warning: Ollama scan requested but no Ollama models are available")
+                logger.warning("Ollama scan requested but no Ollama models are available")
                 return []
             model = available_models[0]
 

@@ -110,7 +110,28 @@ def scan_regex(
     personal_only: bool = False,
     extensions: Optional[List[str]] = None,
 ) -> Dict[str, Any]:
-    """Run only the regex scanner and return structured results."""
+    """Run only the regex/static scanner on a local path or ``file://`` URL.
+
+    Args:
+        path_or_url: Filesystem path or ``file://`` URL to a file or directory.
+        personal_only: When ``True``, keep only PII-related findings (Personal
+            Identifiable Information, Contact Information, Government-Issued
+            Identifiers, etc.).
+        extensions: Restrict scanning to files with these extensions, e.g.
+            ``[".py", ".js"]``. Defaults to all supported code extensions.
+
+    Returns:
+        A dict with the following keys:
+
+        - ``scan_report_id`` – unique ID generated from the target path.
+        - ``directory_scanned`` – resolved absolute path that was scanned.
+        - ``configured_data_elements`` – number of pattern definitions loaded.
+        - ``total_findings`` – count of findings (after any personal_only filter).
+        - ``scan_duration_seconds`` – wall-clock seconds the scan took.
+        - ``findings`` – list of finding dicts, each containing ``filename``,
+          ``line_number``, ``element_name``, ``element_category``,
+          ``matched_text``, ``line_content``, ``tags``, and ``source``.
+    """
     target = _resolve_local_path(path_or_url)
     target_str = str(target)
 
@@ -149,7 +170,33 @@ def scan_ai(
     extensions: Optional[List[str]] = None,
     personal_only: bool = False,
 ) -> Dict[str, Any]:
-    """Run only the AI scanner and return structured results."""
+    """Run only the AI/LLM scanner on a local path or ``file://`` URL.
+
+    Args:
+        path_or_url: Filesystem path or ``file://`` URL to a file or directory.
+        ai_provider: LLM provider to use — ``"ollama"``, ``"openai"``, or
+            ``"bedrock"``. Defaults to auto-detection based on available
+            credentials.
+        ai_mode: Scanning depth — ``"fast"``, ``"balanced"`` (default), or
+            ``"full"``. Controls prompt size and token budget.
+        use_openai: Deprecated shorthand for ``ai_provider="openai"``.
+        model: Override the default model for the selected provider (e.g.
+            an Ollama model name or a Bedrock model ID).
+        extensions: Restrict scanning to files with these extensions.
+        personal_only: When ``True``, keep only PII-related findings.
+
+    Returns:
+        A dict with the following keys:
+
+        - ``directory_scanned`` – resolved absolute path that was scanned.
+        - ``ai_provider`` – resolved provider name used for the scan.
+        - ``ai_model`` – model identifier used.
+        - ``ai_total_findings`` – count of AI findings.
+        - ``ai_scan_duration_seconds`` – wall-clock seconds the AI scan took.
+        - ``ai_findings`` – list of finding dicts (same schema as regex findings
+          but with ``source`` set to ``"LLM (<model>)"`` and an extra
+          ``reason`` field).
+    """
     target = _resolve_local_path(path_or_url)
     target_str = str(target)
     provider = _resolve_requested_ai_provider(
@@ -194,7 +241,42 @@ def scan(
     extensions: Optional[List[str]] = None,
     ai_mode: str = "balanced",
 ) -> Dict[str, Any]:
-    """Programmatic scan API for local paths or file:// URLs."""
+    """Run a full scan (regex + optional AI) on a local path or ``file://`` URL.
+
+    This is the primary programmatic entry point. It always runs the regex
+    scanner and optionally follows up with an AI scanner when ``with_ai=True``.
+
+    Args:
+        path_or_url: Filesystem path or ``file://`` URL to a file or directory.
+        with_ai: When ``True``, run the AI/LLM scanner after the regex scan.
+        personal_only: When ``True``, keep only PII-related findings from both
+            scanners.
+        use_openai: Deprecated shorthand for ``ai_provider="openai"``.
+        ai_provider: LLM provider — ``"ollama"``, ``"openai"``, or
+            ``"bedrock"``. Auto-detected when omitted.
+        model: Model identifier override for the selected AI provider.
+        extensions: Restrict scanning to files with these extensions.
+        ai_mode: AI scanning depth — ``"fast"``, ``"balanced"`` (default),
+            or ``"full"``.
+
+    Returns:
+        A merged dict containing all regex result keys plus:
+
+        - ``ai_enabled`` – whether the AI scan was requested.
+        - ``ai_provider`` – provider used (``None`` when AI is disabled).
+        - ``ai_model`` – model used (``None`` when AI is disabled).
+        - ``ai_total_findings`` – count of AI findings (0 when AI is disabled).
+        - ``ai_scan_duration_seconds`` – AI scan duration (``None`` when disabled).
+        - ``ai_findings`` – list of AI finding dicts (empty when AI is disabled).
+
+    Example::
+
+        from truscanner import scan
+
+        result = scan("/path/to/project", with_ai=True, ai_provider="openai")
+        print(result["total_findings"])   # regex findings count
+        print(result["ai_total_findings"])  # AI findings count
+    """
     regex_result = scan_regex(
         path_or_url,
         personal_only=personal_only,

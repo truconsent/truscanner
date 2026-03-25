@@ -1,16 +1,20 @@
+"""AI-based privacy scanner.
+
+Orchestrates LLM providers to detect privacy-sensitive data elements in source
+files. Provider-specific call logic lives in :mod:`src.providers`; response
+parsing lives in :mod:`src.ai_parser`.
+"""
+
 import os
 import json
-import asyncio
-import time
-import sys
-import threading
 import re
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
-import ollama
-from openai import OpenAI
+from loguru import logger
 
+from .ai_parser import parse_llm_response
+from .providers import call_bedrock, call_ollama, call_openai, list_ollama_models
 from .utils import (
     get_bedrock_access_key_id,
     get_bedrock_model_id,
@@ -28,11 +32,14 @@ load_runtime_env()
 
 
 class AIScanner:
-    """Scanner that uses LLMs to identify privacy data elements."""
+    """Scanner that uses LLMs to identify privacy data elements in source code."""
+
     DEFAULT_AI_MODE = "balanced"
     DEFAULT_OPENAI_MODEL = "gpt-4o"
     DEFAULT_OLLAMA_MODEL = "llama3"
     DEFAULT_BEDROCK_MODEL = "anthropic.claude-3-haiku-20240307-v1:0"
+
+    # Preset configurations controlling prompt size and token budgets.
     AI_MODE_PRESETS = {
         "fast": {
             "max_prompt_chars": 3500,
@@ -60,11 +67,13 @@ class AIScanner:
         },
     }
 
+    # Quick-filter keywords and regex signals used to detect relevant lines in
+    # large files before sending them to the LLM.
     KEYWORD_HINTS = (
         "email", "phone", "mobile", "contact", "address", "name", "dob", "birth",
         "ip", "cookie", "token", "password", "username", "upi", "aadhaar", "pan",
         "ssn", "passport", "credit", "card", "account", "bank", "location",
-        "lat", "lng", "gps"
+        "lat", "lng", "gps",
     )
     SIMPLE_SIGNAL_PATTERNS = (
         re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.IGNORECASE),
@@ -73,12 +82,21 @@ class AIScanner:
         re.compile(r"\b(?:aadhaar|pan|passport|upi|ifsc|cvv)\b", re.IGNORECASE),
     )
 
-    def __init__(self, data_elements_dir: Optional[str] = None, ai_mode: Optional[str] = None):
+    # -----------------------------------------------------------------------
+    # Initialisation
+    # -----------------------------------------------------------------------
+
+    def __init__(
+        self,
+        data_elements_dir: Optional[str] = None,
+        ai_mode: Optional[str] = None,
+    ) -> None:
         if data_elements_dir is None:
             data_elements_dir = Path(__file__).parent.parent / "data_elements"
         self.data_elements_dir = Path(data_elements_dir)
         self.data_elements_names = self._load_data_elements_names()
         self.selected_model = "Unknown"
+
         env_mode = os.environ.get("TRUSCANNER_AI_MODE", self.DEFAULT_AI_MODE)
         requested_mode = (ai_mode or env_mode or self.DEFAULT_AI_MODE).strip().lower()
         if requested_mode not in self.AI_MODE_PRESETS:
@@ -86,50 +104,33 @@ class AIScanner:
         self.ai_mode = requested_mode
 
         mode_settings = self.AI_MODE_PRESETS[self.ai_mode]
-        self.max_prompt_chars = int(mode_settings["max_prompt_chars"])
-        self.max_relevant_lines = int(mode_settings["max_relevant_lines"])
-        self.max_model_output_tokens = int(mode_settings["max_model_output_tokens"])
-        self.ollama_num_ctx = int(mode_settings["ollama_num_ctx"])
-        self.strict_large_file_multiplier = float(mode_settings["strict_large_file_multiplier"])
-        self.skip_signal_less_large_files = bool(mode_settings["skip_signal_less_large_files"])
+        self.max_prompt_chars: int = int(mode_settings["max_prompt_chars"])
+        self.max_relevant_lines: int = int(mode_settings["max_relevant_lines"])
+        self.max_model_output_tokens: int = int(mode_settings["max_model_output_tokens"])
+        self.ollama_num_ctx: int = int(mode_settings["ollama_num_ctx"])
+        self.strict_large_file_multiplier: float = float(mode_settings["strict_large_file_multiplier"])
+        self.skip_signal_less_large_files: bool = bool(mode_settings["skip_signal_less_large_files"])
 
-        try:
-            self.max_prompt_chars = max(
-                int(os.environ.get("TRUSCANNER_AI_MAX_PROMPT_CHARS", str(self.max_prompt_chars))),
-                2000,
-            )
-        except ValueError:
-            pass
-        try:
-            self.max_model_output_tokens = max(
-                int(
-                    os.environ.get(
-                        "TRUSCANNER_AI_MAX_MODEL_OUTPUT_TOKENS",
-                        str(self.max_model_output_tokens),
-                    )
-                ),
-                120,
-            )
-        except ValueError:
-            pass
-        try:
-            self.max_relevant_lines = max(
-                int(os.environ.get("TRUSCANNER_AI_MAX_RELEVANT_LINES", str(self.max_relevant_lines))),
-                40,
-            )
-        except ValueError:
-            pass
-        try:
-            self.ollama_num_ctx = max(
-                int(os.environ.get("TRUSCANNER_AI_NUM_CTX", str(self.ollama_num_ctx))),
-                1024,
-            )
-        except ValueError:
-            pass
+        # Allow per-env overrides on top of the preset defaults.
+        for attr, env_key, minimum in [
+            ("max_prompt_chars", "TRUSCANNER_AI_MAX_PROMPT_CHARS", 2000),
+            ("max_model_output_tokens", "TRUSCANNER_AI_MAX_MODEL_OUTPUT_TOKENS", 120),
+            ("max_relevant_lines", "TRUSCANNER_AI_MAX_RELEVANT_LINES", 40),
+            ("ollama_num_ctx", "TRUSCANNER_AI_NUM_CTX", 1024),
+        ]:
+            try:
+                override = int(os.environ.get(env_key, str(getattr(self, attr))))
+                setattr(self, attr, max(override, minimum))
+            except ValueError:
+                pass
+
+    # -----------------------------------------------------------------------
+    # Data element loading
+    # -----------------------------------------------------------------------
 
     def _load_data_elements_names(self) -> List[str]:
-        """Load all data element names from JSON files for context."""
-        names = []
+        """Return a flat list of data element names from all JSON definition files."""
+        names: List[str] = []
         if self.data_elements_dir.exists():
             for json_file in self.data_elements_dir.rglob("*.json"):
                 try:
@@ -138,29 +139,36 @@ class AIScanner:
                     for source in data.get("sources", []):
                         names.append(source["name"])
                 except Exception as e:
-                    print(f"Error loading {json_file} for AI context: {e}")
+                    logger.error("Error loading {} for AI context: {}", json_file, e)
         return names
 
-    def _prepare_content_for_prompt(self, content: str) -> str:
-        """Shrink large files to relevant snippets for faster local inference.
+    # -----------------------------------------------------------------------
+    # Prompt building
+    # -----------------------------------------------------------------------
 
-        In `fast` mode, very large files without signal lines may be skipped.
-        In `balanced`/`full`, it falls back to head+tail excerpts to preserve coverage.
+    def _prepare_content_for_prompt(self, content: str) -> str:
+        """Trim large file content to a signal-dense excerpt for the LLM prompt.
+
+        - Files under ``max_prompt_chars`` are passed through unchanged.
+        - Larger files are filtered to lines containing keywords or pattern
+          signals, with one line of surrounding context.
+        - In ``fast`` mode, very large low-signal files are skipped (returns
+          empty string).
+        - Falls back to head + tail sampling for files with no signal lines.
         """
         if len(content) <= self.max_prompt_chars:
             return content
 
         lines = content.splitlines()
         relevant_lines: List[Tuple[int, str]] = []
-        seen_line_numbers = set()
+        seen_line_numbers: set = set()
         strict_signal_mode = len(content) > (self.max_prompt_chars * self.strict_large_file_multiplier)
 
         for idx, raw_line in enumerate(lines, 1):
             line_lower = raw_line.lower()
-            has_keyword = any(keyword in line_lower for keyword in self.KEYWORD_HINTS)
-            has_signal = any(pattern.search(raw_line) for pattern in self.SIMPLE_SIGNAL_PATTERNS)
+            has_keyword = any(kw in line_lower for kw in self.KEYWORD_HINTS)
+            has_signal = any(p.search(raw_line) for p in self.SIMPLE_SIGNAL_PATTERNS)
 
-            # For very large files, only keep strong signal lines to avoid slow, low-value prompts.
             if strict_signal_mode:
                 if self.ai_mode == "fast":
                     if not has_signal:
@@ -181,7 +189,6 @@ class AIScanner:
                     continue
                 if len(candidate) > 240:
                     candidate = candidate[:237] + "..."
-
                 relevant_lines.append((line_no, candidate))
                 if len(relevant_lines) >= self.max_relevant_lines:
                     break
@@ -190,18 +197,20 @@ class AIScanner:
                 break
 
         if relevant_lines:
-            body = "\n".join(f"L{line_no}: {line}" for line_no, line in relevant_lines[:self.max_relevant_lines])
+            body = "\n".join(
+                f"L{line_no}: {line}"
+                for line_no, line in relevant_lines[: self.max_relevant_lines]
+            )
             return (
                 "The source file was condensed for faster analysis. "
                 "Use the line number prefix (e.g., L42) when returning findings.\n\n"
                 f"{body}"
             )
 
-        # In fast mode, very large low-signal files can be skipped.
         if strict_signal_mode and self.skip_signal_less_large_files:
             return ""
 
-        # Fallback for long files without obvious signals.
+        # Fallback: head + tail sampling.
         half = max(800, self.max_prompt_chars // 2)
         head = content[:half]
         tail = content[-half:]
@@ -217,16 +226,22 @@ class AIScanner:
         )
 
     def _get_prompt(self, file_content: str, filename: str) -> str:
-        """Construct the prompt for the LLM."""
-        # Include every configured element name so AI guidance matches the full catalog.
+        """Build the LLM prompt for a single file.
+
+        Only the base file name is embedded in the prompt (not the full path)
+        to avoid leaking filesystem structure and to prevent path injection.
+        """
         elements_list = ", ".join(
             name.strip()
             for name in self.data_elements_names
             if isinstance(name, str) and name.strip()
         ) or "All configured privacy data elements"
 
-        prompt = f"""
-Analyze the code from '{filename}' and find privacy-sensitive data handling (PII and related identifiers).
+        # Use only the file name to avoid embedding user-controlled path components.
+        safe_filename = Path(filename).name
+
+        return f"""
+Analyze the code from '{safe_filename}' and find privacy-sensitive data handling (PII and related identifiers).
 
 Use these data element types as guidance: {elements_list}
 
@@ -244,27 +259,17 @@ Rules:
 Code Content:
 {file_content}
 """
-        return prompt
 
-    def get_available_ollama_models(self) -> List[str]:
-        """Fetch list of available model names from Ollama."""
-        try:
-            models_info = ollama.list()
-            if hasattr(models_info, "models"):
-                return [m.model for m in models_info.models]
-            if isinstance(models_info, list):
-                return [m.get("name") or m.model for m in models_info]
-            return []
-        except Exception as e:
-            print(f"Error listing Ollama models: {e}")
-            return []
+    # -----------------------------------------------------------------------
+    # Provider helpers
+    # -----------------------------------------------------------------------
 
     @staticmethod
     def _resolve_provider(
         provider: Optional[str] = None,
         use_openai: bool = False,
     ) -> str:
-        """Resolve an explicit provider while preserving backward compatibility."""
+        """Resolve the provider string to a canonical identifier."""
         normalized = normalize_ai_provider(provider)
         if normalized:
             return normalized
@@ -274,13 +279,18 @@ Code Content:
 
     @classmethod
     def _get_bedrock_model(cls, model: Optional[str] = None) -> str:
-        """Return the configured Bedrock model id."""
-        return get_bedrock_model_id(model=model, default=cls.DEFAULT_BEDROCK_MODEL) or cls.DEFAULT_BEDROCK_MODEL
+        return (
+            get_bedrock_model_id(model=model, default=cls.DEFAULT_BEDROCK_MODEL)
+            or cls.DEFAULT_BEDROCK_MODEL
+        )
 
-    @staticmethod
-    def _get_bedrock_region() -> Optional[str]:
-        """Return the configured AWS region for Bedrock."""
-        return get_bedrock_region()
+    def get_available_ollama_models(self) -> List[str]:
+        """Return names of locally available Ollama models."""
+        return list_ollama_models()
+
+    # -----------------------------------------------------------------------
+    # File scanning
+    # -----------------------------------------------------------------------
 
     def scan_file(
         self,
@@ -289,7 +299,11 @@ Code Content:
         use_openai: bool = False,
         model: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
-        """Scan a single file using the selected LLM."""
+        """Scan a single file using the configured LLM provider.
+
+        Returns a list of finding dicts, or an empty list if the file is empty,
+        has no signal, or the provider call fails.
+        """
         try:
             with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
                 content = f.read()
@@ -301,385 +315,67 @@ Code Content:
             prompt_content = self._prepare_content_for_prompt(content)
             if not prompt_content.strip():
                 return []
+
             prompt = self._get_prompt(prompt_content, filepath)
             selected_provider = self._resolve_provider(provider=provider, use_openai=use_openai)
 
-            if selected_provider == "openai" and get_openai_api_key():
-                self.selected_model = self.DEFAULT_OPENAI_MODEL
-                return self._scan_with_openai(prompt, filepath, file_lines=file_lines)
+            raw_text = self._call_provider(selected_provider, prompt, filepath, model)
+            return parse_llm_response(
+                raw_text, filepath, self.selected_model, file_lines=file_lines
+            )
 
-            if selected_provider == "bedrock":
-                self.selected_model = self._get_bedrock_model(model)
-                return self._scan_with_bedrock(
-                    prompt,
-                    filepath,
-                    model=self.selected_model,
-                    file_lines=file_lines,
-                )
+        except Exception as e:
+            logger.error("Error scanning {} with AI: {}", filepath, e)
+            return []
 
-            self.selected_model = model or self.DEFAULT_OLLAMA_MODEL
-            return self._scan_with_ollama(
+    def _call_provider(
+        self,
+        provider: str,
+        prompt: str,
+        filepath: str,
+        model: Optional[str],
+    ) -> str:
+        """Dispatch to the correct provider and return raw LLM response text."""
+        if provider == "openai" and get_openai_api_key():
+            self.selected_model = self.DEFAULT_OPENAI_MODEL
+            return call_openai(
                 prompt,
                 filepath,
+                api_key=get_openai_api_key(),  # type: ignore[arg-type]
                 model=self.selected_model,
-                file_lines=file_lines,
             )
 
-        except Exception as e:
-            print(f"Error scanning {filepath} with AI: {e}")
-            return []
-
-    @staticmethod
-    def _extract_message_content(response: Any) -> str:
-        """Get message.content regardless of response object style."""
-        if isinstance(response, dict):
-            message = response.get("message", {})
-            if isinstance(message, dict):
-                return str(message.get("content", "") or "")
-
-        message = getattr(response, "message", None)
-        if isinstance(message, dict):
-            return str(message.get("content", "") or "")
-        if message is not None:
-            content = getattr(message, "content", None)
-            if content is not None:
-                return str(content)
-
-        return ""
-
-    def _scan_with_ollama(
-        self,
-        prompt: str,
-        filepath: str,
-        model: Optional[str] = None,
-        file_lines: Optional[List[str]] = None,
-    ) -> List[Dict[str, Any]]:
-        """Call Ollama for analysis with a real-time timer."""
-        if not model:
-            model = "llama3"
-
-        try:
-            result = {"response": None, "error": None}
-
-            def chat_thread():
-                try:
-                    request_payload = {
-                        "model": model,
-                        "messages": [{"role": "user", "content": prompt}],
-                        "options": {
-                            "temperature": 0,
-                            "num_ctx": self.ollama_num_ctx,
-                            "num_predict": self.max_model_output_tokens,
-                        },
-                    }
-                    try:
-                        response = ollama.chat(format="json", **request_payload)
-                    except TypeError:
-                        # Older ollama clients may not accept `format` as a keyword arg.
-                        response = ollama.chat(**request_payload)
-                    result["response"] = response
-                except Exception as e:
-                    result["error"] = e
-
-            t = threading.Thread(target=chat_thread)
-            t.start()
-
-            start_time = time.time()
-            while t.is_alive():
-                elapsed = time.time() - start_time
-                sys.stdout.write(f"\rAI Scanning: {filepath}... ({elapsed:.1f}s taken)")
-                sys.stdout.flush()
-                time.sleep(0.1)
-
-            elapsed = time.time() - start_time
-            sys.stdout.write(f"\r\033[K✓ AI Scanned: {filepath} ({elapsed:.1f}s taken)\n")
-            sys.stdout.flush()
-
-            if result["error"]:
-                raise result["error"]
-            if not result["response"]:
-                return []
-
-            response_content = self._extract_message_content(result["response"])
-            return self._parse_llm_response(response_content, filepath, file_lines=file_lines)
-        except Exception as e:
-            print(f"Ollama error: {e}")
-            return []
-
-    def _scan_with_openai(
-        self,
-        prompt: str,
-        filepath: str,
-        file_lines: Optional[List[str]] = None,
-    ) -> List[Dict[str, Any]]:
-        """Call OpenAI for analysis with a real-time timer."""
-        try:
-            result = {"response": None, "error": None}
-
-            def chat_thread():
-                try:
-                    client = OpenAI(api_key=get_openai_api_key())
-                    response = client.chat.completions.create(
-                        model="gpt-4o",
-                        messages=[{"role": "user", "content": prompt}],
-                        response_format={"type": "json_object"},
-                        temperature=0,
-                    )
-                    result["response"] = response
-                except Exception as e:
-                    result["error"] = e
-
-            t = threading.Thread(target=chat_thread)
-            t.start()
-
-            start_time = time.time()
-            while t.is_alive():
-                elapsed = time.time() - start_time
-                sys.stdout.write(f"\rAI Scanning: {filepath}... ({elapsed:.1f}s taken)")
-                sys.stdout.flush()
-                time.sleep(0.1)
-
-            elapsed = time.time() - start_time
-            sys.stdout.write(f"\r\033[K✓ AI Scanned: {filepath} ({elapsed:.1f}s taken)\n")
-            sys.stdout.flush()
-
-            if result["error"]:
-                raise result["error"]
-            if not result["response"]:
-                return []
-
-            response_content = result["response"].choices[0].message.content or ""
-            return self._parse_llm_response(response_content, filepath, file_lines=file_lines)
-        except Exception as e:
-            print(f"OpenAI error: {e}")
-            return []
-
-    def _scan_with_bedrock(
-        self,
-        prompt: str,
-        filepath: str,
-        model: Optional[str] = None,
-        file_lines: Optional[List[str]] = None,
-    ) -> List[Dict[str, Any]]:
-        """Call AWS Bedrock for analysis with a real-time timer."""
-        model_id = self._get_bedrock_model(model)
-        region_name = self._get_bedrock_region()
-
-        if not region_name:
-            print("Bedrock error: TRUSCANNER_REGION is required")
-            return []
-
-        try:
-            result = {"response": None, "error": None}
-
-            def chat_thread():
-                try:
-                    import boto3
-
-                    session_kwargs = {"region_name": region_name}
-                    access_key_id = get_bedrock_access_key_id()
-                    secret_access_key = get_bedrock_secret_access_key()
-                    session_token = get_bedrock_session_token()
-                    profile_name = get_bedrock_profile()
-
-                    if access_key_id and secret_access_key:
-                        session_kwargs["aws_access_key_id"] = access_key_id
-                        session_kwargs["aws_secret_access_key"] = secret_access_key
-                        if session_token:
-                            session_kwargs["aws_session_token"] = session_token
-                    elif profile_name:
-                        session_kwargs["profile_name"] = profile_name
-
-                    session = boto3.session.Session(**session_kwargs)
-                    client = session.client("bedrock-runtime")
-                    response = client.converse(
-                        modelId=model_id,
-                        messages=[
-                            {
-                                "role": "user",
-                                "content": [{"text": prompt}],
-                            }
-                        ],
-                        inferenceConfig={
-                            "temperature": 0,
-                            "maxTokens": self.max_model_output_tokens,
-                        },
-                    )
-                    result["response"] = response
-                except Exception as e:
-                    result["error"] = e
-
-            t = threading.Thread(target=chat_thread)
-            t.start()
-
-            start_time = time.time()
-            while t.is_alive():
-                elapsed = time.time() - start_time
-                sys.stdout.write(f"\rAI Scanning: {filepath}... ({elapsed:.1f}s taken)")
-                sys.stdout.flush()
-                time.sleep(0.1)
-
-            elapsed = time.time() - start_time
-            sys.stdout.write(f"\r\033[K✓ AI Scanned: {filepath} ({elapsed:.1f}s taken)\n")
-            sys.stdout.flush()
-
-            if result["error"]:
-                raise result["error"]
-            if not result["response"]:
-                return []
-
-            output = result["response"].get("output", {}) if isinstance(result["response"], dict) else {}
-            message = output.get("message", {}) if isinstance(output, dict) else {}
-            content_items = message.get("content", []) if isinstance(message, dict) else []
-            response_content = "".join(
-                item.get("text", "")
-                for item in content_items
-                if isinstance(item, dict)
+        if provider == "bedrock":
+            self.selected_model = self._get_bedrock_model(model)
+            region = get_bedrock_region()
+            if not region:
+                logger.error("Bedrock error: TRUSCANNER_REGION is required")
+                return ""
+            return call_bedrock(
+                prompt,
+                filepath,
+                model_id=self.selected_model,
+                region=region,
+                access_key_id=get_bedrock_access_key_id(),
+                secret_access_key=get_bedrock_secret_access_key(),
+                session_token=get_bedrock_session_token(),
+                profile_name=get_bedrock_profile(),
+                max_tokens=self.max_model_output_tokens,
             )
-            return self._parse_llm_response(response_content, filepath, file_lines=file_lines)
-        except Exception as e:
-            print(f"Bedrock error: {e}")
-            return []
 
-    @staticmethod
-    def _coerce_line_number(value: Any) -> int:
-        """Parse a positive integer line number from model output."""
-        if isinstance(value, int):
-            return value if value > 0 else 0
-        if isinstance(value, float):
-            return int(value) if value > 0 else 0
-        if isinstance(value, str):
-            match = re.search(r"\d+", value)
-            if match:
-                return int(match.group(0))
-        return 0
+        # Default: Ollama
+        self.selected_model = model or self.DEFAULT_OLLAMA_MODEL
+        return call_ollama(
+            prompt,
+            filepath,
+            model=self.selected_model,
+            num_ctx=self.ollama_num_ctx,
+            max_tokens=self.max_model_output_tokens,
+        )
 
-    @staticmethod
-    def _line_number_from_prefix(text: str) -> int:
-        """Read line number from leading prefixes like `L42:`."""
-        if not isinstance(text, str):
-            return 0
-        match = re.match(r"^\s*L?(\d+)\s*[:|-]", text)
-        if match:
-            return int(match.group(1))
-        return 0
-
-    @staticmethod
-    def _strip_line_prefix(text: str) -> str:
-        """Drop leading line-number markers like `L42:`."""
-        if not isinstance(text, str):
-            return ""
-        return re.sub(r"^\s*L?\d+\s*[:|-]\s*", "", text).strip()
-
-    @staticmethod
-    def _extract_json_payload(content: str) -> Optional[Any]:
-        """Extract the first JSON payload from text with basic sanitation."""
-        if not content:
-            return None
-
-        cleaned = content.strip()
-        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned, flags=re.IGNORECASE)
-        cleaned = re.sub(r"\s*```$", "", cleaned, flags=re.IGNORECASE).strip()
-
-        decoder = json.JSONDecoder()
-        candidates = [cleaned]
-
-        first_object = cleaned.find("{")
-        first_list = cleaned.find("[")
-        starts = [idx for idx in (first_object, first_list) if idx != -1]
-        if starts:
-            candidates.append(cleaned[min(starts):].strip())
-
-        for candidate in candidates:
-            if not candidate:
-                continue
-            try:
-                return json.loads(candidate)
-            except json.JSONDecodeError:
-                pass
-            try:
-                payload, _ = decoder.raw_decode(candidate)
-                return payload
-            except json.JSONDecodeError:
-                pass
-            sanitized = re.sub(r",(\s*[}\]])", r"\1", candidate)
-            try:
-                return json.loads(sanitized)
-            except json.JSONDecodeError:
-                continue
-
-        return None
-
-    def _parse_llm_response(
-        self,
-        content: str,
-        filepath: str,
-        file_lines: Optional[List[str]] = None,
-    ) -> List[Dict[str, Any]]:
-        """Parse JSON from LLM response with robust handling for malformed outputs."""
-        try:
-            raw_findings = self._extract_json_payload(content)
-            if raw_findings is None:
-                if content.strip():
-                    print(f"⚠️ No JSON found in LLM response for {filepath}")
-                return []
-
-            findings_list: Any = []
-            if isinstance(raw_findings, list):
-                findings_list = raw_findings
-            elif isinstance(raw_findings, dict):
-                findings_list = raw_findings.get(
-                    "findings",
-                    raw_findings.get("data_elements", raw_findings.get("data", [])),
-                )
-                if not findings_list and {"line_number", "element_name"} <= set(raw_findings.keys()):
-                    findings_list = [raw_findings]
-
-            if isinstance(findings_list, dict):
-                findings_list = [findings_list]
-            if not isinstance(findings_list, list):
-                return []
-
-            validated_findings = []
-            for finding in findings_list:
-                if not isinstance(finding, dict):
-                    continue
-
-                raw_line_content = str(finding.get("line_content", finding.get("context", "")) or "")
-
-                line_number = self._coerce_line_number(finding.get("line_number"))
-                if line_number <= 0:
-                    line_number = self._line_number_from_prefix(raw_line_content)
-
-                cleaned_line_content = self._strip_line_prefix(raw_line_content)
-
-                if file_lines and line_number <= 0 and cleaned_line_content:
-                    # Best-effort lookup when model omitted line numbers.
-                    for idx, line in enumerate(file_lines, 1):
-                        if line.strip() == cleaned_line_content:
-                            line_number = idx
-                            break
-
-                if file_lines and 0 < line_number <= len(file_lines):
-                    cleaned_line_content = file_lines[line_number - 1].strip() or cleaned_line_content
-
-                matched_text = finding.get("matched_text") or finding.get("matched") or finding.get("value") or ""
-                valid_finding = {
-                    "line_number": line_number,
-                    "line_content": cleaned_line_content,
-                    "matched_text": matched_text,
-                    "element_name": finding.get("element_name", finding.get("type", "Unknown PII")),
-                    "element_category": finding.get("element_category", finding.get("category", "Privacy")),
-                    "reason": finding.get("reason", ""),
-                    "filename": filepath,
-                    "source": f"LLM ({self.selected_model})",
-                }
-                validated_findings.append(valid_finding)
-
-            return validated_findings
-        except Exception as e:
-            print(f"Error parsing LLM response for {filepath}: {e}")
-            return []
+    # -----------------------------------------------------------------------
+    # Directory scanning
+    # -----------------------------------------------------------------------
 
     def scan_directory(
         self,
@@ -687,13 +383,18 @@ Code Content:
         provider: Optional[str] = None,
         use_openai: bool = False,
         model: Optional[str] = None,
-        extensions: Optional[List[str]] = None
+        extensions: Optional[List[str]] = None,
     ) -> List[Dict[str, Any]]:
-        """Scan all files in a directory using AI."""
-        all_findings = []
+        """Scan all eligible files in *directory* using AI.
+
+        File filtering (extensions, excluded dirs/files) mirrors the regex
+        scanner defaults for consistency.
+        """
+        all_findings: List[Dict[str, Any]] = []
         path = Path(directory)
 
         from .regex_scanner import RegexScanner
+
         exclude_dirs = RegexScanner.DEFAULT_EXCLUDE_DIRS
         exclude_files = RegexScanner.DEFAULT_EXCLUDE_FILES
         exclude_exts = RegexScanner.DEFAULT_EXCLUDE_EXTENSIONS
@@ -702,24 +403,23 @@ Code Content:
             if extensions is not None
             else RegexScanner.DEFAULT_CODE_EXTENSIONS
         )
-        files_to_scan = []
+
+        files_to_scan: List[str] = []
         if path.is_file():
             files_to_scan = [str(path)]
         else:
-            for root, dirs, files in os.walk(path):
-                dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith('.')]
+            # followlinks=False (default) prevents symlink loop traversal.
+            for root, dirs, files in os.walk(path, followlinks=False):
+                dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith(".")]
                 for file in files:
-                    if file.startswith('.') or file in exclude_files:
+                    if file.startswith(".") or file in exclude_files:
                         continue
                     file_ext = Path(file).suffix.lower()
-                    if file_ext in exclude_exts:
-                        continue
-                    if file_ext not in allowed_extensions:
+                    if file_ext in exclude_exts or file_ext not in allowed_extensions:
                         continue
                     files_to_scan.append(os.path.join(root, file))
 
         for file_path in files_to_scan:
-            # The scanning message and timer are handled inside scanner methods.
             try:
                 file_findings = self.scan_file(
                     file_path,
@@ -729,32 +429,30 @@ Code Content:
                 )
             except TypeError as exc:
                 # Preserve compatibility with older tests/callers that monkeypatch
-                # scan_file with the legacy signature.
+                # scan_file with the legacy two-argument signature.
                 if "provider" not in str(exc):
                     raise
-                file_findings = self.scan_file(
-                    file_path,
-                    use_openai=use_openai,
-                    model=model,
-                )
+                file_findings = self.scan_file(file_path, use_openai=use_openai, model=model)
             all_findings.extend(file_findings)
 
         return all_findings
 
+
+# ---------------------------------------------------------------------------
+# Backward-compatible async wrapper
+# ---------------------------------------------------------------------------
 
 async def scan_directory_ai(
     directory: str,
     ai_mode: Optional[str] = None,
     provider: Optional[str] = None,
 ) -> List[Dict[str, Any]]:
-    """Backward compatible wrapper for AIScanner."""
+    """Async wrapper around :class:`AIScanner` kept for backward compatibility."""
     scanner = AIScanner(ai_mode=ai_mode)
     normalized_provider = normalize_ai_provider(provider)
     use_openai = normalized_provider == "openai" or (
         normalized_provider is None and bool(get_openai_api_key())
     )
-    # Note: AIScanner.scan_directory is synchronous, but the original was async.
-    # We call it in a thread to keep the async interface if needed, or just run it.
     return scanner.scan_directory(
         directory,
         provider=normalized_provider,

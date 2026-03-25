@@ -5,6 +5,11 @@ from pathlib import Path
 from typing import Optional, Callable, List, Dict, Any
 
 from dotenv import find_dotenv, load_dotenv
+from loguru import logger
+
+
+# Backend API endpoint — keep as a constant; not user-configurable via env.
+BACKEND_URL = "https://d987tu7rq4.execute-api.ap-south-1.amazonaws.com"
 
 
 AI_PROVIDER_CHOICES = [
@@ -321,13 +326,9 @@ def upload_to_backend(scan_report_id: str, project_name: str, duration: float,
                      metadata: Dict[str, Any]) -> bool:
     """Upload scan results to backend API."""
     import requests
-    
-    # Backend URL hardcoded
-    backend_url = "https://d987tu7rq4.execute-api.ap-south-1.amazonaws.com"
-    
-    # Remove trailing slash
-    backend_url = backend_url.rstrip('/')
-    
+
+    base_url = BACKEND_URL.rstrip('/')
+
     payload = {
         "scan_report_id": scan_report_id,
         "project_name": project_name,
@@ -337,31 +338,31 @@ def upload_to_backend(scan_report_id: str, project_name: str, duration: float,
         "files_scanned": files_scanned,
         "metadata": metadata
     }
-    
+
     try:
         print("\nUploading ...")
         response = requests.post(
-            f"{backend_url}/api/scans/",
+            f"{base_url}/api/scans/",
             json=payload,
-            timeout=30
+            timeout=30,
         )
         response.raise_for_status()
         return True
     except requests.exceptions.ConnectionError:
-        print(f"\n❌ Server is busy, not stored right now!")
-        print(f"   Could not connect to {backend_url}")
-        print(f"   Make sure the backend server is running.")
+        logger.warning("Upload failed: could not connect to {}", base_url)
+        print("\n❌ Server is busy, not stored right now!")
         return False
     except requests.exceptions.Timeout:
-        print(f"\n❌ Server is busy, not stored right now!")
-        print(f"   Request to {backend_url} timed out.")
+        logger.warning("Upload failed: request to {} timed out", base_url)
+        print("\n❌ Server is busy, not stored right now!")
         return False
     except requests.exceptions.HTTPError as e:
-        print(f"\n❌ Server is busy, not stored right now!")
+        status = e.response.status_code if hasattr(e, 'response') and e.response else "Unknown"
         error_text = e.response.text[:100] if hasattr(e, 'response') and e.response else str(e)
-        print(f"   HTTP {e.response.status_code if hasattr(e, 'response') else 'Unknown'}: {error_text}")
+        logger.warning("Upload failed: HTTP {} — {}", status, error_text)
+        print("\n❌ Server is busy, not stored right now!")
         return False
     except requests.exceptions.RequestException as e:
-        print(f"\n❌ Server is busy, not stored right now!")
-        print(f"   Error: {str(e)}")
+        logger.warning("Upload failed: {}", e)
+        print("\n❌ Server is busy, not stored right now!")
         return False
