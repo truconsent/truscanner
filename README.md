@@ -269,14 +269,30 @@ Notes:
 truscanner/
 ├── src/
 │   ├── main.py              # CLI entry point
-│   ├── regex_scanner.py     # Core scanning engine
-│   ├── ai_scanner.py        # AI/LLM scanning engine
-│   ├── report_utils.py      # Report utilities
-│   └── utils.py             # Utilities
-├── data_elements/           # Data element definitions
-├── reports/                 # Generated reports
-├── pyproject.toml           # Project configuration
+│   ├── scanner.py           # Regex + AI scan orchestration
+│   ├── regex_scanner.py     # Regex/static scanning engine (parallel via ThreadPoolExecutor)
+│   ├── ai_scanner.py        # AI scanning orchestration
+│   ├── ai_parser.py         # LLM response parsing and validation
+│   ├── providers/           # AI provider implementations
+│   │   ├── base.py          # Shared progress spinner + response helpers
+│   │   ├── ollama.py        # Ollama provider
+│   │   ├── openai.py        # OpenAI provider
+│   │   └── bedrock.py       # AWS Bedrock provider
+│   ├── report_utils.py      # Report file naming utilities
+│   └── utils.py             # Env loading, credential helpers, progress display
+├── truscanner/              # Public Python API (importable as `import truscanner`)
+├── data_elements/           # Privacy data element pattern definitions (JSON)
+├── tests/                   # Test suite (pytest)
+├── pyproject.toml           # Project configuration and dependencies
 └── README.md
+```
+
+## 🧪 Development
+
+Install dependencies and run the test suite with [uv](https://github.com/astral-sh/uv):
+
+```bash
+uv run --with pytest pytest tests/ -v
 ```
 
 ## 📝 Change Policy
