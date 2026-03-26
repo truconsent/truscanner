@@ -15,6 +15,7 @@ from loguru import logger
 
 from .ai_parser import parse_llm_response
 from .providers import call_bedrock, call_ollama, call_openai, list_ollama_models
+from .regex_scanner import RegexScanner
 from .utils import (
     get_bedrock_access_key_id,
     get_bedrock_model_id,
@@ -392,8 +393,6 @@ Code Content:
         """
         all_findings: List[Dict[str, Any]] = []
         path = Path(directory)
-
-        from .regex_scanner import RegexScanner
 
         exclude_dirs = RegexScanner.DEFAULT_EXCLUDE_DIRS
         exclude_files = RegexScanner.DEFAULT_EXCLUDE_FILES

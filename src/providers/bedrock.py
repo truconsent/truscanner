@@ -2,6 +2,13 @@
 
 from typing import Any, Dict, Optional
 
+try:
+    import boto3
+    _HAS_BOTO3 = True
+except ImportError:
+    boto3 = None  # type: ignore[assignment]
+    _HAS_BOTO3 = False
+
 from .base import run_with_progress
 
 
@@ -42,7 +49,8 @@ def call_bedrock(
         Raw text from the model response, or an empty string on failure.
     """
     def _call() -> Any:
-        import boto3
+        if not _HAS_BOTO3:
+            raise ImportError("boto3 is required for AWS Bedrock. Install it with: pip install boto3")
 
         session_kwargs: Dict[str, Any] = {"region_name": region}
         if access_key_id and secret_access_key:

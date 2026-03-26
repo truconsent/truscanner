@@ -4,8 +4,18 @@ import sys
 from pathlib import Path
 from typing import Optional, Callable, List, Dict, Any
 
+import click
+import requests
 from dotenv import find_dotenv, load_dotenv
 from loguru import logger
+
+try:
+    from inquirer import prompt as _inquirer_prompt, List as _InquirerList
+    _HAS_INQUIRER = True
+except ImportError:
+    _HAS_INQUIRER = False
+    _inquirer_prompt = None  # type: ignore[assignment]
+    _InquirerList = None  # type: ignore[assignment]
 
 
 # Backend API endpoint — keep as a constant; not user-configurable via env.
@@ -192,28 +202,26 @@ def _fallback_select(message: str, options: List[str], default_index: int = 0) -
 def select_file_format() -> str:
     """Interactive arrow-key menu for file format selection."""
     options = ['txt', 'md', 'json', 'All']
-    try:
-        from inquirer import prompt, List
-
-        questions = [
-            List('format',
-                 message="Select output format:",
-                 choices=options,
-                 default='txt')
-        ]
-        answers = prompt(questions)
-        if answers and 'format' in answers:
-            return answers['format'].lower()
-        return 'txt'  # Default fallback
-    except ImportError:
-        # If inquirer is not installed, show helpful message
+    if _HAS_INQUIRER:
+        try:
+            questions = [
+                _InquirerList('format',
+                     message="Select output format:",
+                     choices=options,
+                     default='txt')
+            ]
+            answers = _inquirer_prompt(questions)
+            if answers and 'format' in answers:
+                return answers['format'].lower()
+            return 'txt'  # Default fallback
+        except Exception as e:
+            # If inquirer fails for other reasons, fall back gracefully
+            print(f"\n⚠️  Interactive menu unavailable: {e}")
+            selection = _fallback_select("Select output format:", options)
+            return selection.lower()
+    else:
         print("\n⚠️  Warning: inquirer not installed. Installing interactive menu support...")
         print("   Run: pip install inquirer")
-        selection = _fallback_select("Select output format:", options)
-        return selection.lower()
-    except Exception as e:
-        # If inquirer fails for other reasons, fall back gracefully
-        print(f"\n⚠️  Interactive menu unavailable: {e}")
         selection = _fallback_select("Select output format:", options)
         return selection.lower()
 
@@ -234,27 +242,26 @@ def select_ai_provider(default_provider: Optional[str] = None) -> Optional[str]:
         AI_PROVIDER_CHOICES[0][0],
     )
 
-    try:
-        from inquirer import prompt, List
-
-        questions = [
-            List(
-                'provider',
-                message="Select enhanced AI scan provider:",
-                choices=options,
-                default=default_label,
-            )
-        ]
-        answers = prompt(questions)
-        selected_label = answers.get('provider') if answers else None
-        for label, value in AI_PROVIDER_CHOICES:
-            if label == selected_label:
-                return value
-        return None
-    except ImportError:
+    if _HAS_INQUIRER:
+        try:
+            questions = [
+                _InquirerList(
+                    'provider',
+                    message="Select enhanced AI scan provider:",
+                    choices=options,
+                    default=default_label,
+                )
+            ]
+            answers = _inquirer_prompt(questions)
+            selected_label = answers.get('provider') if answers else None
+            for label, value in AI_PROVIDER_CHOICES:
+                if label == selected_label:
+                    return value
+            return None
+        except Exception as e:
+            print(f"\n⚠️  Interactive menu unavailable: {e}")
+    else:
         print("\n⚠️  Warning: inquirer not installed. Falling back to numeric selection.")
-    except Exception as e:
-        print(f"\n⚠️  Interactive menu unavailable: {e}")
 
     selection = _fallback_select("Select enhanced AI scan provider:", options)
     for label, value in AI_PROVIDER_CHOICES:
@@ -269,32 +276,30 @@ def select_ollama_model(available_models: List[str]) -> str:
         return 'llama3' # Fallback default
     
     if len(available_models) == 1:
-        import click
         click.echo(f"\nUsing only available local model: {available_models[0]}")
         return available_models[0]
 
-    try:
-        from inquirer import prompt, List
-        
-        questions = [
-            List('model',
-                 message="Select Ollama model for enhanced scan:",
-                 choices=available_models,
-                 default=available_models[0])
-        ]
-        answers = prompt(questions)
-        if answers and 'model' in answers:
-            return answers['model']
-        return available_models[0]
-    except ImportError:
+    if _HAS_INQUIRER:
+        try:
+            questions = [
+                _InquirerList('model',
+                     message="Select Ollama model for enhanced scan:",
+                     choices=available_models,
+                     default=available_models[0])
+            ]
+            answers = _inquirer_prompt(questions)
+            if answers and 'model' in answers:
+                return answers['model']
+            return available_models[0]
+        except Exception as e:
+            print(f"\n⚠️  Interactive menu unavailable: {e}")
+            return available_models[0]
+    else:
         selection = _fallback_select(
             "Multiple Ollama models found. Select one for enhanced scan:",
             available_models,
         )
         return selection
-    except Exception as e:
-        print(f"\n⚠️  Interactive menu unavailable: {e}")
-        return available_models[0]
 
 
 def show_progress(current: int, total: int, current_file: str):
@@ -325,8 +330,6 @@ def upload_to_backend(scan_report_id: str, project_name: str, duration: float,
                      total_findings: int, scan_data: List[Dict], files_scanned: int,
                      metadata: Dict[str, Any]) -> bool:
     """Upload scan results to backend API."""
-    import requests
-
     base_url = BACKEND_URL.rstrip('/')
 
     payload = {
