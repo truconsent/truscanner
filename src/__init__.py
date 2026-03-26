@@ -1,13 +1,14 @@
 import os
 import re
+from importlib.metadata import version, PackageNotFoundError
 from pathlib import Path
+
 
 def get_version():
     """Dynamically fetch version from package metadata or pyproject.toml."""
     try:
-        from importlib.metadata import version, PackageNotFoundError
         return version("truscanner")
-    except (ImportError, PackageNotFoundError):
+    except PackageNotFoundError:
         # Fallback to parsing pyproject.toml
         try:
             pyproject_path = Path(__file__).parent.parent / "pyproject.toml"

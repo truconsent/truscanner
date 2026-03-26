@@ -1,6 +1,8 @@
 """Tests for src.regex_scanner — scanning, false positive detection, reports."""
 
 import json
+import os
+import tempfile
 from pathlib import Path
 
 import pytest
@@ -95,7 +97,6 @@ def test_return_statement_variable_is_false_positive(scanner_with_email_pattern)
             }
         ]
     }
-    import tempfile, os
     with tempfile.TemporaryDirectory() as d:
         (Path(d) / "phone.json").write_text(json.dumps(data), encoding="utf-8")
         scanner = RegexScanner(data_elements_dir=d)

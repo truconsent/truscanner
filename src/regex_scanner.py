@@ -2,11 +2,13 @@ import os
 import re
 import json
 import sys
+import time
 import threading
+from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Callable
-from collections import defaultdict
 import bisect
 
 from loguru import logger
@@ -646,8 +648,6 @@ class RegexScanner:
         directory_scanned: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Generate JSON report with metadata."""
-        from datetime import datetime
-
         if not self.data_elements:
             self._load_data_elements()
         configured_elements = len(self.data_elements)
@@ -673,8 +673,6 @@ class RegexScanner:
 
 def main():
     """CLI entry point for standalone usage."""
-    import time
-
     if len(sys.argv) < 2:
         print("Usage: python regex_scanner.py <directory_to_scan>")
         sys.exit(1)
