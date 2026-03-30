@@ -292,7 +292,8 @@ truscanner/
 Install dependencies and run the test suite with [uv](https://github.com/astral-sh/uv):
 
 ```bash
-uv run --with pytest pytest tests/ -v
+uv sync --extra dev
+uv run pytest tests/ -v
 ```
 
 ## 📝 Change Policy
