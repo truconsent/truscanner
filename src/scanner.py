@@ -107,6 +107,7 @@ def run_ai_scan(
     if provider == "openai":
         if not has_openai_credentials():
             logger.warning("OpenAI scan requested but OPENAI_KEY is not set")
+            run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
             return []
     elif provider == "bedrock":
         if not has_bedrock_credentials():
@@ -114,22 +115,26 @@ def run_ai_scan(
                 "AWS Bedrock scan requested but credentials are not fully configured "
                 "(TRUSCANNER_ACCESS_KEY_ID, TRUSCANNER_SECRET_ACCESS_KEY, TRUSCANNER_REGION)"
             )
+            run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
             return []
     else:
         if model is None:
             available_models = scanner.get_available_ollama_models()
             if not available_models:
                 logger.warning("Ollama scan requested but no Ollama models are available")
+                run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
                 return []
             model = available_models[0]
 
-    return scanner.scan_directory(
+    results = scanner.scan_directory(
         directory,
         provider=provider,
         use_openai=use_openai or provider == "openai",
         model=model,
         extensions=extensions,
     )
+    run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
+    return results
 
 
 def scan_directory(

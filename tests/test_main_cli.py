@@ -31,6 +31,13 @@ class DummyRegexScanner:
 
     def __init__(self, *args, **kwargs):
         self.data_elements = [{"name": "Email Address"}]
+        self.last_scan_usage = {
+            "files_scanned": 1,
+            "input_tokens": 10,
+            "output_tokens": 0,
+            "total_tokens": 10,
+            "tokenizer": "tiktoken",
+        }
 
     def scan_directory(self, directory, progress_callback=None, **kwargs):
         file_path = str(Path(directory) / "app.py")
@@ -169,6 +176,17 @@ def test_scan_prints_time_taken(tmp_path, monkeypatch):
     result = CliRunner().invoke(m.main, ["scan", str(project_dir)])
 
     assert "Time Taken:" in result.output
+
+
+def test_scan_prints_token_usage(tmp_path, monkeypatch):
+    m = importlib.reload(importlib.import_module("src.main"))
+    project_dir = _make_project(tmp_path)
+    monkeypatch.chdir(tmp_path)
+    _patch_main(monkeypatch, m)
+
+    result = CliRunner().invoke(m.main, ["scan", str(project_dir)])
+
+    assert "Token Usage:" in result.output
 
 
 def test_scan_no_findings_still_exits_zero(tmp_path, monkeypatch):

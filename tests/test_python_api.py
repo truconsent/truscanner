@@ -24,10 +24,24 @@ def test_scan_accepts_file_url_and_returns_structured_result(tmp_path, monkeypat
     class DummyRegexScanner:
         def __init__(self, *args, **kwargs):
             self.data_elements = [{"name": "Email Address"}]
+            self.last_scan_usage = {
+                "files_scanned": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "tokenizer": "tiktoken",
+            }
 
     def fake_run_regex_scan(directory, extensions=None, regex_scanner=None):
         captured["directory"] = directory
         captured["extensions"] = extensions
+        regex_scanner.last_scan_usage = {
+            "files_scanned": 1,
+            "input_tokens": 10,
+            "output_tokens": 0,
+            "total_tokens": 10,
+            "tokenizer": "tiktoken",
+        }
         return [
             {
                 "filename": str(Path(directory) / "app.py"),
@@ -50,6 +64,7 @@ def test_scan_accepts_file_url_and_returns_structured_result(tmp_path, monkeypat
     assert result["directory_scanned"] == str(project_dir.resolve())
     assert result["total_findings"] == 1
     assert result["ai_total_findings"] == 0
+    assert result["token_usage"]["files_scanned"] == 1
     assert captured["directory"] == str(project_dir.resolve())
     assert captured["extensions"] is None
 
@@ -80,8 +95,6 @@ def test_scan_with_ai_without_models_does_not_crash(tmp_path, monkeypatch):
     monkeypatch.setattr("truscanner.api.generate_report_id", lambda _: "fixed-report-id")
     monkeypatch.delenv("OPENAI_KEY", raising=False)
     monkeypatch.delenv("TRUSCANNER_OPENAI_KEY", raising=False)
-    monkeypatch.delenv("TRUSCANNER_ACCESS_KEY_ID", raising=False)
-    monkeypatch.delenv("TRUSCANNER_SECRET_ACCESS_KEY", raising=False)
     monkeypatch.delenv("TRUSCANNER_REGION", raising=False)
     monkeypatch.delenv("TRUSCANNER_MODEL_ID", raising=False)
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)

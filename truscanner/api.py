@@ -156,6 +156,7 @@ def scan_regex(
         "configured_data_elements": configured_elements,
         "total_findings": len(findings),
         "scan_duration_seconds": duration,
+        "token_usage": getattr(scanner, "last_scan_usage", {}),
         "findings": findings,
     }
 
@@ -226,6 +227,7 @@ def scan_ai(
         "ai_model": selected_model,
         "ai_total_findings": len(findings),
         "ai_scan_duration_seconds": duration,
+        "token_usage": getattr(run_ai_scan, "last_usage", {}),
         "ai_findings": findings,
     }
 
@@ -289,6 +291,7 @@ def scan(
         "ai_model": None,
         "ai_total_findings": 0,
         "ai_scan_duration_seconds": None,
+        "token_usage": {},
         "ai_findings": [],
     }
 
@@ -309,11 +312,13 @@ def scan(
         "configured_data_elements": regex_result["configured_data_elements"],
         "total_findings": regex_result["total_findings"],
         "scan_duration_seconds": regex_result["scan_duration_seconds"],
+        "token_usage": regex_result.get("token_usage", {}),
         "findings": regex_result["findings"],
         "ai_enabled": with_ai,
         "ai_provider": ai_result["ai_provider"],
         "ai_model": ai_result["ai_model"],
         "ai_total_findings": ai_result["ai_total_findings"],
         "ai_scan_duration_seconds": ai_result["ai_scan_duration_seconds"],
+        "ai_token_usage": ai_result.get("token_usage", {}),
         "ai_findings": ai_result["ai_findings"],
     }

@@ -76,6 +76,7 @@ class RegexScanner:
 
         self.data_elements_dir = Path(data_elements_dir)
         self.data_elements = []
+        self.last_scan_usage = {}
         if load_immediately:
             self._load_data_elements()
 
@@ -280,7 +281,9 @@ class RegexScanner:
         """Scan a single file and return findings."""
         try:
             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-                findings = self.scan_text(f.read(), context=filepath)
+                content = f.read()
+
+            findings = self.scan_text(content, context=filepath)
 
             for finding in findings:
                 finding["filename"] = filepath
@@ -298,6 +301,7 @@ class RegexScanner:
         progress_callback: Optional[Callable[[int, int, str], None]] = None,
     ) -> List[Dict[str, Any]]:
         """Recursively scan directory or file for data elements using parallel I/O."""
+        self.last_scan_usage = {}
         path = Path(directory)
 
         if not path.exists():
@@ -378,12 +382,46 @@ class RegexScanner:
             normalized.add(candidate)
         return normalized
 
+    @staticmethod
+    def _token_usage_lines(token_usage: Optional[Dict[str, Any]]) -> List[str]:
+        if not token_usage:
+            return []
+
+        lines = ["Token Usage", "-" * 80]
+        if token_usage.get("tokenizer"):
+            lines.append(f"Tokenizer: {token_usage.get('tokenizer')}")
+        if token_usage.get("files_scanned") is not None:
+            lines.append(f"Files Scanned: {token_usage.get('files_scanned')}")
+        if token_usage.get("input_tokens") is not None:
+            lines.append(f"Input Tokens: {token_usage.get('input_tokens')}")
+        if token_usage.get("output_tokens") is not None:
+            lines.append(f"Output Tokens: {token_usage.get('output_tokens')}")
+        if token_usage.get("total_tokens") is not None:
+            lines.append(f"Total Tokens: {token_usage.get('total_tokens')}")
+        lines.append("")
+        return lines
+
+    @staticmethod
+    def _token_usage_markdown_lines(token_usage: Optional[Dict[str, Any]]) -> List[str]:
+        if not token_usage:
+            return []
+
+        return [
+            "- **Token Usage:**",
+            f"  - **Tokenizer:** {token_usage.get('tokenizer', 'unknown')}",
+            f"  - **Files Scanned:** {token_usage.get('files_scanned', 0)}",
+            f"  - **Input Tokens:** {token_usage.get('input_tokens', 0)}",
+            f"  - **Output Tokens:** {token_usage.get('output_tokens', 0)}",
+            f"  - **Total Tokens:** {token_usage.get('total_tokens', 0)}",
+        ]
+
     def generate_report(
         self,
         findings: List[Dict[str, Any]],
         duration: Optional[float] = None,
         report_id: Optional[str] = None,
         directory_scanned: Optional[str] = None,
+        token_usage: Optional[Dict[str, Any]] = None,
     ) -> str:
         """Generate formatted text report from findings."""
         if not self.data_elements:
@@ -408,9 +446,9 @@ class RegexScanner:
                 f"Configured Data Elements: {configured_elements}",
                 "Distinct Detected Elements: 0",
                 "Total Findings: 0",
-                "",
-                "No data elements found.",
             ]
+            lines.extend(self._token_usage_lines(token_usage))
+            lines.extend(["", "No data elements found."])
             return "\n".join(lines)
 
         lines = []
@@ -434,6 +472,7 @@ class RegexScanner:
         lines.append(f"Total Findings: {len(findings)}")
         if duration is not None:
             lines.append(f"Time Taken: {duration:.2f} seconds")
+        lines.extend(self._token_usage_lines(token_usage))
         lines.append("")
 
         # Summary by Category
@@ -516,6 +555,7 @@ class RegexScanner:
         duration: Optional[float] = None,
         report_id: Optional[str] = None,
         directory_scanned: Optional[str] = None,
+        token_usage: Optional[Dict[str, Any]] = None,
     ) -> str:
         """Generate formatted markdown report from findings."""
         if not self.data_elements:
@@ -540,9 +580,9 @@ class RegexScanner:
                 f"- **Configured Data Elements:** {configured_elements}",
                 "- **Distinct Detected Elements:** 0",
                 "- **Total Findings:** 0",
-                "",
-                "No data elements found.",
             ]
+            lines.extend(self._token_usage_markdown_lines(token_usage))
+            lines.extend(["", "No data elements found."])
             return "\n".join(lines)
 
         lines = []
@@ -566,6 +606,12 @@ class RegexScanner:
             lines.append(f"- **Time Taken:** {duration:.2f} seconds")
         if directory_scanned:
             lines.append(f"- **Directory Scanned:** {directory_scanned}")
+        if token_usage:
+            lines.append(f"- **Tokenizer:** {token_usage.get('tokenizer', 'unknown')}")
+            lines.append(f"- **Files Scanned:** {token_usage.get('files_scanned', 0)}")
+            lines.append(f"- **Input Tokens:** {token_usage.get('input_tokens', 0)}")
+            lines.append(f"- **Output Tokens:** {token_usage.get('output_tokens', 0)}")
+            lines.append(f"- **Total Tokens:** {token_usage.get('total_tokens', 0)}")
         lines.append("")
 
         # Summary by Category
@@ -646,6 +692,7 @@ class RegexScanner:
         duration: Optional[float] = None,
         report_id: Optional[str] = None,
         directory_scanned: Optional[str] = None,
+        token_usage: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Generate JSON report with metadata."""
         if not self.data_elements:
@@ -667,6 +714,7 @@ class RegexScanner:
             "distinct_detected_elements": distinct_detected_elements,
             "total_findings": len(findings),
             "scan_duration_seconds": duration,
+            "token_usage": token_usage or {},
             "findings": findings,
         }
 

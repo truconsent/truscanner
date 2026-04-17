@@ -26,12 +26,12 @@ def call_bedrock(
 ) -> str:
     """Send *prompt* to AWS Bedrock via the Converse API and return the response text.
 
-    Authentication priority:
-    1. Static credentials (``access_key_id`` + ``secret_access_key``), with an
-       optional ``session_token`` for temporary credentials.
-    2. Named AWS profile (``profile_name``).
-    3. Default boto3 credential chain (IAM role, environment, etc.) when neither
-       is provided.
+     Authentication priority:
+     1. Static credentials (``access_key_id`` + ``secret_access_key``), with an
+         optional ``session_token`` for temporary credentials.
+     2. Named AWS profile (``profile_name``).
+     3. Default boto3 credential chain (IAM role, environment, etc.) when neither
+         is provided.
 
     Args:
         prompt: The full prompt string to send to the model.

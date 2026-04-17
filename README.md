@@ -1,5 +1,5 @@
 # truScanner from truConsent
-![PyPI version](https://img.shields.io/pypi/v/truscanner.svg?cacheSeconds=300&v=0.2.9)
+![PyPI version](https://img.shields.io/pypi/v/truscanner.svg?cacheSeconds=300&v=0.2.10)
 ![License](https://img.shields.io/pypi/l/truscanner.svg)
 
 **Open-Source Static Analysis for Privacy Data Flows**
@@ -19,6 +19,7 @@
 - **AI-Powered Enhancement**: Optional integration with Ollama, OpenAI, or AWS Bedrock for deeper context
 - **Backend Integration**: Optional upload to backend API for centralized storage
 - **Auto-incrementing Reports**: Automatically manages report file naming to prevent overwrites
+- **Token Usage Tracking**: Reports include input/output token counts for regex and AI scans using tiktoken
 
 ## truScanner CLI
 
@@ -201,6 +202,7 @@ Reports are saved in: `reports/{sanitized_directory_name}/`
 Each report includes:
 - **Scan Report ID**: Unique 32-bit hash identifier
 - **Summary**: Configured data elements, distinct detected elements, total findings, and time taken
+- **Token Usage**: Input, output, and total token counts for the scan
 - **Findings by File**: Detailed list of data elements found in each file
 - **Summary by Category**: Aggregated statistics by data category
 
