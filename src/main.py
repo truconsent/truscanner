@@ -1,6 +1,7 @@
 import click
 import json
 import os
+import sys
 import time
 
 from . import __version__
@@ -52,7 +53,23 @@ def _file_types_to_generate(file_type: str):
     return ['txt', 'md', 'json'] if file_type == 'all' else [file_type]
 
 
-def _save_reports(scanner, findings, duration, report_id, directory, reports_subdir, file_types, base_name):
+def _show_runtime_info():
+    """Print runtime details so local/global install mismatches are obvious."""
+    click.echo(f"Python executable: {sys.executable}")
+    click.echo(f"CLI module path: {os.path.realpath(__file__)}")
+
+
+def _save_reports(
+    scanner,
+    findings,
+    duration,
+    report_id,
+    directory,
+    reports_subdir,
+    file_types,
+    base_name,
+    token_usage=None,
+):
     saved_files = []
 
     for file_type in file_types:
@@ -65,6 +82,7 @@ def _save_reports(scanner, findings, duration, report_id, directory, reports_sub
                 duration=duration,
                 report_id=report_id,
                 directory_scanned=directory,
+                token_usage=token_usage,
             )
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(report)
@@ -74,6 +92,7 @@ def _save_reports(scanner, findings, duration, report_id, directory, reports_sub
                 duration=duration,
                 report_id=report_id,
                 directory_scanned=directory,
+                token_usage=token_usage,
             )
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(report)
@@ -83,6 +102,7 @@ def _save_reports(scanner, findings, duration, report_id, directory, reports_sub
                 duration=duration,
                 report_id=report_id,
                 directory_scanned=directory,
+                token_usage=token_usage,
             )
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(report, f, indent=2, ensure_ascii=False)
@@ -98,12 +118,19 @@ def _echo_saved_files(title, filepaths):
         click.echo(f"  ✅ {filepath}")
 
 
-def _show_scan_summary(report_id, findings, duration, saved_files):
+def _show_scan_summary(report_id, findings, duration, saved_files, token_usage=None):
     click.echo(f"\n{'='*80}")
     click.echo(f"Scan Report ID: {report_id}")
     click.echo(f"{'='*80}")
     click.echo(f"\nTotal Findings: {len(findings)}")
     click.echo(f"Time Taken: {duration:.2f} seconds")
+    if token_usage:
+        click.echo("Token Usage:")
+        click.echo(f"  Tokenizer: {token_usage.get('tokenizer', 'unknown')}")
+        click.echo(f"  Files Scanned: {token_usage.get('files_scanned', 0)}")
+        click.echo(f"  Input Tokens: {token_usage.get('input_tokens', 0)}")
+        click.echo(f"  Output Tokens: {token_usage.get('output_tokens', 0)}")
+        click.echo(f"  Total Tokens: {token_usage.get('total_tokens', 0)}")
     _echo_saved_files("Reports saved to:", saved_files)
 
 
@@ -173,6 +200,7 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
     file_type = select_file_format()
     ai_mode = (ai_mode or "balanced").lower()
 
+    _show_runtime_info()
     click.echo(f"\nScanning: {directory}...")
 
     report_id = generate_report_id(directory)
@@ -218,8 +246,15 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
         reports_subdir,
         file_types,
         base_name="truscan_report",
+        token_usage=None,
     )
-    _show_scan_summary(report_id, regex_results, regex_duration, saved_files)
+    _show_scan_summary(
+        report_id,
+        regex_results,
+        regex_duration,
+        saved_files,
+        token_usage=None,
+    )
 
     selected_provider = normalize_ai_provider(ai_provider)
     if selected_provider is None:
@@ -251,9 +286,18 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
                     reports_subdir,
                     file_types,
                     base_name="truscan_report_llm",
+                    token_usage=getattr(run_ai_scan, "last_usage", None),
                 )
                 click.echo(f"\nEnhanced findings: {len(ai_results)}")
                 _echo_saved_files("Enhanced reports saved to:", ai_saved_files)
+                ai_token_usage = getattr(run_ai_scan, "last_usage", None)
+                if ai_token_usage:
+                    click.echo("Enhanced Token Usage:")
+                    click.echo(f"  Tokenizer: {ai_token_usage.get('tokenizer', 'unknown')}")
+                    click.echo(f"  Files Scanned: {ai_token_usage.get('files_scanned', 0)}")
+                    click.echo(f"  Input Tokens: {ai_token_usage.get('input_tokens', 0)}")
+                    click.echo(f"  Output Tokens: {ai_token_usage.get('output_tokens', 0)}")
+                    click.echo(f"  Total Tokens: {ai_token_usage.get('total_tokens', 0)}")
             else:
                 click.echo("\nNo additional data elements found by AI.")
 

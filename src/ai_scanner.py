@@ -16,6 +16,7 @@ from loguru import logger
 from .ai_parser import parse_llm_response
 from .providers import call_bedrock, call_ollama, call_openai, list_ollama_models
 from .regex_scanner import RegexScanner
+from .token_utils import count_tokens, tokenizer_source
 from .utils import (
     get_bedrock_access_key_id,
     get_bedrock_model_id,
@@ -97,6 +98,13 @@ class AIScanner:
         self.data_elements_dir = Path(data_elements_dir)
         self.data_elements_names = self._load_data_elements_names()
         self.selected_model = "Unknown"
+        self.last_scan_usage = {
+            "files_scanned": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0,
+            "tokenizer": tokenizer_source(),
+        }
 
         env_mode = os.environ.get("TRUSCANNER_AI_MODE", self.DEFAULT_AI_MODE)
         requested_mode = (ai_mode or env_mode or self.DEFAULT_AI_MODE).strip().lower()
@@ -321,6 +329,12 @@ Code Content:
             selected_provider = self._resolve_provider(provider=provider, use_openai=use_openai)
 
             raw_text = self._call_provider(selected_provider, prompt, filepath, model)
+            prompt_tokens = count_tokens(prompt, model=self.selected_model if self.selected_model != "Unknown" else None)
+            response_tokens = count_tokens(raw_text, model=self.selected_model if self.selected_model != "Unknown" else None)
+            self.last_scan_usage["files_scanned"] += 1
+            self.last_scan_usage["input_tokens"] += prompt_tokens
+            self.last_scan_usage["output_tokens"] += response_tokens
+            self.last_scan_usage["total_tokens"] += prompt_tokens + response_tokens
             return parse_llm_response(
                 raw_text, filepath, self.selected_model, file_lines=file_lines
             )
@@ -391,6 +405,13 @@ Code Content:
         File filtering (extensions, excluded dirs/files) mirrors the regex
         scanner defaults for consistency.
         """
+        self.last_scan_usage = {
+            "files_scanned": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0,
+            "tokenizer": tokenizer_source(),
+        }
         all_findings: List[Dict[str, Any]] = []
         path = Path(directory)
 
