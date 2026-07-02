@@ -4,29 +4,37 @@
             "name": "IP Address",
             "category": "Digital & Online Identifiers",
             "patterns": [
-                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
-                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
-                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
-                "(?i)\\baddress\\b"
-            ]
+                "\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b",
+                "\\b(?:[A-Fa-f0-9]{1,4}:){2,7}[A-Fa-f0-9]{1,4}\\b",
+                "(?i)\\bip[^\\s/(;)#|,=!>]{0,5}address\\b",
+                "(?i)\\bip[-_\\s]{0,2}address\\b"
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Device ID",
             "category": "Digital & Online Identifiers",
             "patterns": [
                 "(?i)\\bdevice\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "MAC Address",
             "category": "Digital & Online Identifiers",
             "patterns": [
-                "(?i)\\b(street|st\\.|road|rd\\.|lane|ln\\.|avenue|ave\\.|house|flat|apt|apartment)\\b",
-                "(?i)\\b(?<!ip\\s)(?<!mac\\s)(?<!email\\s)(?<!server\\s)(?<!logical\\s)(?<!physical\\s)(?<!port\\s)(?<!public\\s)(?<!private\\s)(?<!inet\\s)(?<!inet4\\s)(?<!inet6\\s)(?<!cc\\s)(?<!bcc\\s)(?<!to\\s)(?<!data\\s)(?<!internet\\s)(?<!host\\s)(?<!remote\\s)(?<!ip)(?<!mac)(?<!email)(?<!server)(?<!logical)(?<!physical)(?<!port)(?<!public)(?<!private)(?<!inet)(?<!inet4)(?<!inet6)(?<!cc)(?<!bcc)(?<!to)(?<!data)(?<!internet)(?<!host)(?<!remote)address\\b(?![^\\s/(;)#|,=!>]*?\\.(?:money|com|net|org|io))",
-                "(?i)\\b(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)\\b",
+                "\\b(?:[0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}\\b",
+                "\\b(?:[0-9A-Fa-f]{2}-){5}[0-9A-Fa-f]{2}\\b",
                 "(?i)\\bmac[^\\s/(;)#|,=!>]{0,5}address\\b",
                 "(?i)\\bmac[-_\\s]{0,2}address\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Browser Fingerprint",
@@ -34,14 +42,20 @@
             "patterns": [
                 "(?i)\\bbrowser[^\\s/(;)#|,=!>]{0,5}fingerprint\\b",
                 "(?i)\\bbrowser[-_\\s]{0,2}fingerprint\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Cookies",
             "category": "Digital & Online Identifiers",
             "patterns": [
                 "(?i)\\bcookies\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Tracking Technologies",
@@ -49,28 +63,40 @@
             "patterns": [
                 "(?i)\\btracking[^\\s/(;)#|,=!>]{0,5}technologies\\b",
                 "(?i)\\btracking[-_\\s]{0,2}technologies\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Google ID",
             "category": "Digital & Online Identifiers",
             "patterns": [
                 "(?i)\\bgoogle\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Apple ID",
             "category": "Digital & Online Identifiers",
             "patterns": [
                 "(?i)\\bapple\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Facebook ID",
             "category": "Digital & Online Identifiers",
             "patterns": [
                 "(?i)\\bfacebook\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Session IDs",
@@ -78,7 +104,10 @@
             "patterns": [
                 "(?i)\\bsession[^\\s/(;)#|,=!>]{0,5}ids\\b",
                 "(?i)\\bsession[-_\\s]{0,2}ids\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "API Keys",
@@ -86,7 +115,10 @@
             "patterns": [
                 "(?i)\\bapi[^\\s/(;)#|,=!>]{0,5}keys\\b",
                 "(?i)\\bapi[-_\\s]{0,2}keys\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "OAuth Tokens",
@@ -94,7 +126,10 @@
             "patterns": [
                 "(?i)\\boauth[^\\s/(;)#|,=!>]{0,5}tokens\\b",
                 "(?i)\\boauth[-_\\s]{0,2}tokens\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Device Model",
@@ -102,7 +137,10 @@
             "patterns": [
                 "(?i)\\bdevice[^\\s/(;)#|,=!>]{0,5}model\\b",
                 "(?i)\\bdevice[-_\\s]{0,2}model\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Operating System Version",
@@ -110,7 +148,10 @@
             "patterns": [
                 "(?i)\\boperating[^\\s/(;)#|,=!>]{0,5}system[^\\s/(;)#|,=!>]{0,5}version\\b",
                 "(?i)\\boperating[-_\\s]{0,2}system[-_\\s]{0,2}version\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "App Version",
@@ -118,7 +159,10 @@
             "patterns": [
                 "(?i)\\bapp[^\\s/(;)#|,=!>]{0,5}version\\b",
                 "(?i)\\bapp[-_\\s]{0,2}version\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "User Agent String",
@@ -126,7 +170,10 @@
             "patterns": [
                 "(?i)\\buser[^\\s/(;)#|,=!>]{0,5}agent[^\\s/(;)#|,=!>]{0,5}string\\b",
                 "(?i)\\buser[-_\\s]{0,2}agent[-_\\s]{0,2}string\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         }
     ]
 }

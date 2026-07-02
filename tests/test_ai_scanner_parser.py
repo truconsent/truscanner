@@ -229,17 +229,16 @@ def test_prompt_includes_all_data_element_names(tmp_path):
     scanner = AIScanner(data_elements_dir=tmp_path)
     prompt = scanner._get_prompt("const value = 1;", "src/example.py")
 
-    marker = "Use these data element types as guidance: "
+    marker = "EXACTLY from this taxonomy"
     assert marker in prompt
-    guidance = prompt.split(marker, 1)[1].split("\n\n", 1)[0]
-    assert all(f"Element {idx}" in guidance for idx in range(30))
+    assert all(f"Element {idx}" in prompt for idx in range(30))
 
 
-def test_prepare_content_short_file_returned_unchanged(tmp_path):
+def test_prepare_content_short_file_is_line_numbered(tmp_path):
     scanner = AIScanner(data_elements_dir=tmp_path)
     code = "email = 'a@b.com'\n"
     result = scanner._prepare_content_for_prompt(code)
-    assert result == code
+    assert "L1: email = 'a@b.com'" in result
 
 
 def test_prepare_content_large_file_with_signal_is_condensed(tmp_path):

@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bfamily[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bfamily[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Relationship Status",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\brelationship[^\\s/(;)#|,=!>]{0,5}status\\b",
                 "(?i)\\brelationship[-_\\s]{0,2}status\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Children Information",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bchildren[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bchildren[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Social Connections",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}connections\\b",
                 "(?i)\\bsocial[-_\\s]{0,2}connections\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Friend Lists",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bfriend[^\\s/(;)#|,=!>]{0,5}lists\\b",
                 "(?i)\\bfriend[-_\\s]{0,2}lists\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Professional Network",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bprofessional[^\\s/(;)#|,=!>]{0,5}network\\b",
                 "(?i)\\bprofessional[-_\\s]{0,2}network\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Community Participation",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bcommunity[^\\s/(;)#|,=!>]{0,5}participation\\b",
                 "(?i)\\bcommunity[-_\\s]{0,2}participation\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Social Media Activity",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}media[^\\s/(;)#|,=!>]{0,5}activity\\b",
                 "(?i)\\bsocial[-_\\s]{0,2}media[-_\\s]{0,2}activity\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Shared Content",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bshared[^\\s/(;)#|,=!>]{0,5}content\\b",
                 "(?i)\\bshared[-_\\s]{0,2}content\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Group Memberships",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bgroup[^\\s/(;)#|,=!>]{0,5}memberships\\b",
                 "(?i)\\bgroup[-_\\s]{0,2}memberships\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Social Influence Score",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bsocial[^\\s/(;)#|,=!>]{0,5}influence[^\\s/(;)#|,=!>]{0,5}score\\b",
                 "(?i)\\bsocial[-_\\s]{0,2}influence[-_\\s]{0,2}score\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

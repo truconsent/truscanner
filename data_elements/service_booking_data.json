@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bservice[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Booking Details",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bbooking[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bbooking[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Service Provider Information",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}provider[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bservice[-_\\s]{0,2}provider[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Service Completion Status",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}completion[^\\s/(;)#|,=!>]{0,5}status\\b",
                 "(?i)\\bservice[-_\\s]{0,2}completion[-_\\s]{0,2}status\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Service Ratings",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}ratings\\b",
                 "(?i)\\bservice[-_\\s]{0,2}ratings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Service Reviews",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}reviews\\b",
                 "(?i)\\bservice[-_\\s]{0,2}reviews\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Cancellation History",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bcancellation[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bcancellation[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Rescheduling Patterns",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\brescheduling[^\\s/(;)#|,=!>]{0,5}patterns\\b",
                 "(?i)\\brescheduling[-_\\s]{0,2}patterns\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Service Preferences",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bservice[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Frequency of Service Usage",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bfrequency[^\\s/(;)#|,=!>]{0,5}service[^\\s/(;)#|,=!>]{0,5}usage\\b",
                 "(?i)\\bfrequency[-_\\s]{0,2}service[-_\\s]{0,2}usage\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Service Location History",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bservice[^\\s/(;)#|,=!>]{0,5}location[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bservice[-_\\s]{0,2}location[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Payment for Services",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bpayment[^\\s/(;)#|,=!>]{0,5}for[^\\s/(;)#|,=!>]{0,5}services\\b",
                 "(?i)\\bpayment[-_\\s]{0,2}for[-_\\s]{0,2}services\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Optional, Union
 from urllib.parse import unquote, urlparse
 
 from src.ai_scanner import AIScanner
-from src.regex_scanner import RegexScanner
+from src.regex_scanner import RegexScanner, dedupe_overlapping_findings
 from src.report_utils import generate_report_id
 from src.scanner import run_ai_scan, run_regex_scan
 from src.utils import (
@@ -63,6 +63,30 @@ def _filter_personal_findings(findings: List[Dict[str, Any]]) -> List[Dict[str, 
         finding
         for finding in findings
         if any(cat in finding.get("element_category", "") for cat in PERSONAL_CATEGORIES)
+    ]
+
+
+def _reconcile_regex_and_ai_findings(
+    regex_findings: List[Dict[str, Any]],
+    ai_findings: List[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    """Drop regex findings that duplicate an AI finding on the same file/line.
+
+    The AI scanner only re-examines lines its own keyword filter already
+    flagged as interesting, and it sees surrounding context (file path,
+    nearby labels) the regex scanner doesn't. When both independently flag
+    the same line, the AI's classification is kept and the regex one is
+    dropped instead of reporting the line twice. Regex findings on lines the
+    AI scanner didn't touch are left untouched.
+    """
+    ai_lines = {
+        (finding.get("filename"), finding.get("line_number"))
+        for finding in ai_findings
+    }
+    return [
+        finding
+        for finding in regex_findings
+        if (finding.get("filename"), finding.get("line_number")) not in ai_lines
     ]
 
 
@@ -305,15 +329,24 @@ def scan(
             extensions=extensions,
             personal_only=personal_only,
         )
+        # The LLM can independently emit more than one finding for the same
+        # occurrence (e.g. "User | null" and "User" for one interface field) —
+        # collapse those before reconciling against the regex findings.
+        ai_result["ai_findings"] = dedupe_overlapping_findings(ai_result["ai_findings"])
+        ai_result["ai_total_findings"] = len(ai_result["ai_findings"])
+
+    regex_findings = regex_result["findings"]
+    if with_ai and ai_result["ai_findings"]:
+        regex_findings = _reconcile_regex_and_ai_findings(regex_findings, ai_result["ai_findings"])
 
     return {
         "scan_report_id": regex_result["scan_report_id"],
         "directory_scanned": regex_result["directory_scanned"],
         "configured_data_elements": regex_result["configured_data_elements"],
-        "total_findings": regex_result["total_findings"],
+        "total_findings": len(regex_findings),
         "scan_duration_seconds": regex_result["scan_duration_seconds"],
         "token_usage": regex_result.get("token_usage", {}),
-        "findings": regex_result["findings"],
+        "findings": regex_findings,
         "ai_enabled": with_ai,
         "ai_provider": ai_result["ai_provider"],
         "ai_model": ai_result["ai_model"],

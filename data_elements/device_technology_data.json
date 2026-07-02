@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bdevice[^\\s/(;)#|,=!>]{0,5}model\\b",
                 "(?i)\\bdevice[-_\\s]{0,2}model\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Device Brand",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bdevice[^\\s/(;)#|,=!>]{0,5}brand\\b",
                 "(?i)\\bdevice[-_\\s]{0,2}brand\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Operating System",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\boperating[^\\s/(;)#|,=!>]{0,5}system\\b",
                 "(?i)\\boperating[-_\\s]{0,2}system\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "App Permissions",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bapp[^\\s/(;)#|,=!>]{0,5}permissions\\b",
                 "(?i)\\bapp[-_\\s]{0,2}permissions\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Hardware Specifications",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bhardware[^\\s/(;)#|,=!>]{0,5}specifications\\b",
                 "(?i)\\bhardware[-_\\s]{0,2}specifications\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Network Information",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bnetwork[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bnetwork[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Battery Usage",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bbattery[^\\s/(;)#|,=!>]{0,5}usage\\b",
                 "(?i)\\bbattery[-_\\s]{0,2}usage\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Storage Usage",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bstorage[^\\s/(;)#|,=!>]{0,5}usage\\b",
                 "(?i)\\bstorage[-_\\s]{0,2}usage\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Performance Metrics",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bperformance[^\\s/(;)#|,=!>]{0,5}metrics\\b",
                 "(?i)\\bperformance[-_\\s]{0,2}metrics\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Crash Reports",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bcrash[^\\s/(;)#|,=!>]{0,5}reports\\b",
                 "(?i)\\bcrash[-_\\s]{0,2}reports\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Error Logs",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\berror[^\\s/(;)#|,=!>]{0,5}logs\\b",
                 "(?i)\\berror[-_\\s]{0,2}logs\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Update History",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bupdate[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bupdate[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Security Status",
@@ -102,7 +138,10 @@
             "patterns": [
                 "(?i)\\bsecurity[^\\s/(;)#|,=!>]{0,5}status\\b",
                 "(?i)\\bsecurity[-_\\s]{0,2}status\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

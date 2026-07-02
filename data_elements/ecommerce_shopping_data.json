@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bpurchase[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bpurchase[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Order Details",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\border[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\border[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Shopping Cart Contents",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bshopping[^\\s/(;)#|,=!>]{0,5}cart[^\\s/(;)#|,=!>]{0,5}contents\\b",
                 "(?i)\\bshopping[-_\\s]{0,2}cart[-_\\s]{0,2}contents\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Wishlist Items",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bwishlist[^\\s/(;)#|,=!>]{0,5}items\\b",
                 "(?i)\\bwishlist[-_\\s]{0,2}items\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Product Views",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}views\\b",
                 "(?i)\\bproduct[-_\\s]{0,2}views\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Search Queries",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bsearch[^\\s/(;)#|,=!>]{0,5}queries\\b",
                 "(?i)\\bsearch[-_\\s]{0,2}queries\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Brand Preferences",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bbrand[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bbrand[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Size Preferences",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bsize[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bsize[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Color Preferences",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bcolor[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bcolor[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Price Sensitivity",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bprice[^\\s/(;)#|,=!>]{0,5}sensitivity\\b",
                 "(?i)\\bprice[-_\\s]{0,2}sensitivity\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Discount Usage",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bdiscount[^\\s/(;)#|,=!>]{0,5}usage\\b",
                 "(?i)\\bdiscount[-_\\s]{0,2}usage\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Coupon Codes",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bcoupon[^\\s/(;)#|,=!>]{0,5}codes\\b",
                 "(?i)\\bcoupon[-_\\s]{0,2}codes\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Return History",
@@ -102,7 +138,10 @@
             "patterns": [
                 "(?i)\\breturn[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\breturn[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Refund History",
@@ -110,7 +149,10 @@
             "patterns": [
                 "(?i)\\brefund[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\brefund[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Product Reviews",
@@ -118,7 +160,10 @@
             "patterns": [
                 "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}reviews\\b",
                 "(?i)\\bproduct[-_\\s]{0,2}reviews\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Product Ratings",
@@ -126,7 +171,10 @@
             "patterns": [
                 "(?i)\\bproduct[^\\s/(;)#|,=!>]{0,5}ratings\\b",
                 "(?i)\\bproduct[-_\\s]{0,2}ratings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Seller Ratings",
@@ -134,7 +182,10 @@
             "patterns": [
                 "(?i)\\bseller[^\\s/(;)#|,=!>]{0,5}ratings\\b",
                 "(?i)\\bseller[-_\\s]{0,2}ratings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

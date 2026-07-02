@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bviewing[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bviewing[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Listening History",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\blistening[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\blistening[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Content Ratings",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}ratings\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}ratings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Content Reviews",
@@ -30,21 +39,30 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}reviews\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}reviews\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Watchlist",
             "category": "Content Consumption & Media Data",
             "patterns": [
                 "(?i)\\bwatchlist\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Playlist",
             "category": "Content Consumption & Media Data",
             "patterns": [
                 "(?i)\\bplaylist\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Favorite Genres",
@@ -52,7 +70,10 @@
             "patterns": [
                 "(?i)\\bfavorite[^\\s/(;)#|,=!>]{0,5}genres\\b",
                 "(?i)\\bfavorite[-_\\s]{0,2}genres\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Content Completion Rate",
@@ -60,7 +81,10 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}completion[^\\s/(;)#|,=!>]{0,5}rate\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}completion[-_\\s]{0,2}rate\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Skip Patterns",
@@ -68,7 +92,10 @@
             "patterns": [
                 "(?i)\\bskip[^\\s/(;)#|,=!>]{0,5}patterns\\b",
                 "(?i)\\bskip[-_\\s]{0,2}patterns\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Download History",
@@ -76,7 +103,10 @@
             "patterns": [
                 "(?i)\\bdownload[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bdownload[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Sharing Behavior",
@@ -84,7 +114,10 @@
             "patterns": [
                 "(?i)\\bsharing[^\\s/(;)#|,=!>]{0,5}behavior\\b",
                 "(?i)\\bsharing[-_\\s]{0,2}behavior\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Content Creation Data",
@@ -92,7 +125,10 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}creation[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}creation[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Live Stream Participation",
@@ -100,21 +136,30 @@
             "patterns": [
                 "(?i)\\blive[^\\s/(;)#|,=!>]{0,5}stream[^\\s/(;)#|,=!>]{0,5}participation\\b",
                 "(?i)\\blive[-_\\s]{0,2}stream[-_\\s]{0,2}participation\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Comments",
             "category": "Content Consumption & Media Data",
             "patterns": [
                 "(?i)\\bcomments\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Interactions",
             "category": "Content Consumption & Media Data",
             "patterns": [
                 "(?i)\\binteractions\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

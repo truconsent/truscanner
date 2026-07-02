@@ -8,7 +8,10 @@
                 "(?i)\\b(?:aadhaar|aadhar)[^\\s/(;)#|,=!>]{0,10}(?:number|no|id)\\b",
                 "(?i)\\baadhaar[^\\s/(;)#|,=!>]{0,5}number[^\\s/(;)#|,=!>]{0,5}india\\b",
                 "(?i)\\baadhaar[-_\\s]{0,2}number[-_\\s]{0,2}india\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "PAN (Permanent Account Number) (India)",
@@ -18,7 +21,10 @@
                 "(?i)\\b(?:pan|permanent[^\\s/(;)#|,=!>]{0,5}account[^\\s/(;)#|,=!>]{0,5}(?:number|no))\\b",
                 "(?i)\\bpan[^\\s/(;)#|,=!>]{0,5}permanent[^\\s/(;)#|,=!>]{0,5}account[^\\s/(;)#|,=!>]{0,5}number[^\\s/(;)#|,=!>]{0,5}india\\b",
                 "(?i)\\bpan[-_\\s]{0,2}permanent[-_\\s]{0,2}account[-_\\s]{0,2}number[-_\\s]{0,2}india\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "SSN (Social Security Number) (US)",
@@ -28,7 +34,10 @@
                 "(?i)\\b(?:ssn|social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no))\\b",
                 "(?i)\\bssn[^\\s/(;)#|,=!>]{0,5}social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bssn[-_\\s]{0,2}social[-_\\s]{0,2}security[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Passport Number",
@@ -38,7 +47,10 @@
                 "(?i)\\b(?:passport)[^\\s/(;)#|,=!>]{0,10}(?:number|no|id)\\b",
                 "(?i)\\bpassport[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bpassport[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Driver's License Number",
@@ -46,7 +58,10 @@
             "patterns": [
                 "(?i)\\bdriver[^\\s/(;)#|,=!>]{0,5}license[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bdriver[-_\\s]{0,2}license[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Voter ID Number",
@@ -54,7 +69,10 @@
             "patterns": [
                 "(?i)\\bvoter[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bvoter[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Tax Identification Number",
@@ -62,7 +80,10 @@
             "patterns": [
                 "(?i)\\btax[^\\s/(;)#|,=!>]{0,5}identification[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\btax[-_\\s]{0,2}identification[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "GST Number",
@@ -70,7 +91,10 @@
             "patterns": [
                 "(?i)\\bgst[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bgst[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Business Registration Number",
@@ -78,7 +102,10 @@
             "patterns": [
                 "(?i)\\bbusiness[^\\s/(;)#|,=!>]{0,5}registration[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bbusiness[-_\\s]{0,2}registration[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Professional License Numbers",
@@ -86,7 +113,10 @@
             "patterns": [
                 "(?i)\\bprofessional[^\\s/(;)#|,=!>]{0,5}license[^\\s/(;)#|,=!>]{0,5}numbers\\b",
                 "(?i)\\bprofessional[-_\\s]{0,2}license[-_\\s]{0,2}numbers\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         }
     ]
 }

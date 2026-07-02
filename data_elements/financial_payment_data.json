@@ -6,14 +6,20 @@
             "patterns": [
                 "(?i)\\bbank[^\\s/(;)#|,=!>]{0,5}account[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bbank[-_\\s]{0,2}account[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "IBAN",
             "category": "Financial & Payment Data",
             "patterns": [
                 "(?i)\\biban\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Routing Number",
@@ -21,7 +27,10 @@
             "patterns": [
                 "(?i)\\brouting[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\brouting[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Credit Card Number",
@@ -31,7 +40,10 @@
                 "(?i)\\b(?:credit|debit|card)[^\\s/(;)#|,=!>]{0,10}(?:number|no|nbr|num)\\b",
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}card[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}card[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Debit Card Number",
@@ -41,14 +53,20 @@
                 "(?i)\\b(?:credit|debit|card)[^\\s/(;)#|,=!>]{0,10}(?:number|no|nbr|num)\\b",
                 "(?i)\\bdebit[^\\s/(;)#|,=!>]{0,5}card[^\\s/(;)#|,=!>]{0,5}number\\b",
                 "(?i)\\bdebit[-_\\s]{0,2}card[-_\\s]{0,2}number\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "CVV",
             "category": "Financial & Payment Data",
             "patterns": [
                 "(?i)\\bcvv\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Card Expiry Date",
@@ -56,14 +74,20 @@
             "patterns": [
                 "(?i)\\bcard[^\\s/(;)#|,=!>]{0,5}expiry[^\\s/(;)#|,=!>]{0,5}date\\b",
                 "(?i)\\bcard[-_\\s]{0,2}expiry[-_\\s]{0,2}date\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "UPI ID",
             "category": "Financial & Payment Data",
             "patterns": [
                 "(?i)\\bupi\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Digital Wallet ID",
@@ -71,7 +95,10 @@
             "patterns": [
                 "(?i)\\bdigital[^\\s/(;)#|,=!>]{0,5}wallet\\b",
                 "(?i)\\bdigital[-_\\s]{0,2}wallet\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Transaction History",
@@ -79,7 +106,10 @@
             "patterns": [
                 "(?i)\\btransaction[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\btransaction[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Account Balance",
@@ -87,7 +117,10 @@
             "patterns": [
                 "(?i)\\baccount[^\\s/(;)#|,=!>]{0,5}balance\\b",
                 "(?i)\\baccount[-_\\s]{0,2}balance\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Credit Limit",
@@ -95,7 +128,10 @@
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}limit\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}limit\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Available Credit",
@@ -103,7 +139,10 @@
             "patterns": [
                 "(?i)\\bavailable[^\\s/(;)#|,=!>]{0,5}credit\\b",
                 "(?i)\\bavailable[-_\\s]{0,2}credit\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Loan Details",
@@ -111,7 +150,10 @@
             "patterns": [
                 "(?i)\\bloan[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bloan[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "EMI Information",
@@ -119,7 +161,10 @@
             "patterns": [
                 "(?i)\\bemi[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bemi[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Investment Portfolio",
@@ -127,7 +172,10 @@
             "patterns": [
                 "(?i)\\binvestment[^\\s/(;)#|,=!>]{0,5}portfolio\\b",
                 "(?i)\\binvestment[-_\\s]{0,2}portfolio\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Mutual Fund Holdings",
@@ -135,7 +183,10 @@
             "patterns": [
                 "(?i)\\bmutual[^\\s/(;)#|,=!>]{0,5}fund[^\\s/(;)#|,=!>]{0,5}holdings\\b",
                 "(?i)\\bmutual[-_\\s]{0,2}fund[-_\\s]{0,2}holdings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Insurance Policies",
@@ -143,7 +194,10 @@
             "patterns": [
                 "(?i)\\binsurance[^\\s/(;)#|,=!>]{0,5}policies\\b",
                 "(?i)\\binsurance[-_\\s]{0,2}policies\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Tax Returns",
@@ -151,7 +205,10 @@
             "patterns": [
                 "(?i)\\btax[^\\s/(;)#|,=!>]{0,5}returns\\b",
                 "(?i)\\btax[-_\\s]{0,2}returns\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Income Statements",
@@ -159,7 +216,10 @@
             "patterns": [
                 "(?i)\\bincome[^\\s/(;)#|,=!>]{0,5}statements\\b",
                 "(?i)\\bincome[-_\\s]{0,2}statements\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Expense Categories",
@@ -167,7 +227,10 @@
             "patterns": [
                 "(?i)\\bexpense[^\\s/(;)#|,=!>]{0,5}categories\\b",
                 "(?i)\\bexpense[-_\\s]{0,2}categories\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Recurring Payments",
@@ -175,7 +238,10 @@
             "patterns": [
                 "(?i)\\brecurring[^\\s/(;)#|,=!>]{0,5}payments\\b",
                 "(?i)\\brecurring[-_\\s]{0,2}payments\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Standing Instructions",
@@ -183,7 +249,10 @@
             "patterns": [
                 "(?i)\\bstanding[^\\s/(;)#|,=!>]{0,5}instructions\\b",
                 "(?i)\\bstanding[-_\\s]{0,2}instructions\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         }
     ]
 }

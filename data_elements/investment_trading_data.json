@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bportfolio[^\\s/(;)#|,=!>]{0,5}holdings\\b",
                 "(?i)\\bportfolio[-_\\s]{0,2}holdings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Trading History",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\btrading[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\btrading[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Investment Preferences",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\binvestment[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\binvestment[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Risk Tolerance",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}tolerance\\b",
                 "(?i)\\brisk[-_\\s]{0,2}tolerance\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Market Research",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bmarket[^\\s/(;)#|,=!>]{0,5}research\\b",
                 "(?i)\\bmarket[-_\\s]{0,2}research\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Financial Goals",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bfinancial[^\\s/(;)#|,=!>]{0,5}goals\\b",
                 "(?i)\\bfinancial[-_\\s]{0,2}goals\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Asset Allocation",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\basset[^\\s/(;)#|,=!>]{0,5}allocation\\b",
                 "(?i)\\basset[-_\\s]{0,2}allocation\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Dividend History",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bdividend[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bdividend[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Capital Gains",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bcapital[^\\s/(;)#|,=!>]{0,5}gains\\b",
                 "(?i)\\bcapital[-_\\s]{0,2}gains\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Capital Losses",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bcapital[^\\s/(;)#|,=!>]{0,5}losses\\b",
                 "(?i)\\bcapital[-_\\s]{0,2}losses\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Broker Information",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bbroker[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bbroker[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Investment Advisor Details",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\binvestment[^\\s/(;)#|,=!>]{0,5}advisor[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\binvestment[-_\\s]{0,2}advisor[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         }
     ]
 }

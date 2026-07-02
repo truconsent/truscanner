@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bpartner[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bpartner[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Physical Attributes",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bphysical[^\\s/(;)#|,=!>]{0,5}attributes\\b",
                 "(?i)\\bphysical[-_\\s]{0,2}attributes\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Lifestyle Choices",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\blifestyle[^\\s/(;)#|,=!>]{0,5}choices\\b",
                 "(?i)\\blifestyle[-_\\s]{0,2}choices\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Religious Practices",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\breligious[^\\s/(;)#|,=!>]{0,5}practices\\b",
                 "(?i)\\breligious[-_\\s]{0,2}practices\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Caste Information",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bcaste[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bcaste[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Community Information",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bcommunity[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bcommunity[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Family Background",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bfamily[^\\s/(;)#|,=!>]{0,5}background\\b",
                 "(?i)\\bfamily[-_\\s]{0,2}background\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Horoscope Data",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bhoroscope[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bhoroscope[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Astrological Data",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bastrological[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bastrological[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Dietary Preferences",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bdietary[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bdietary[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Smoking Habits",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bsmoking[^\\s/(;)#|,=!>]{0,5}habits\\b",
                 "(?i)\\bsmoking[-_\\s]{0,2}habits\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Drinking Habits",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bdrinking[^\\s/(;)#|,=!>]{0,5}habits\\b",
                 "(?i)\\bdrinking[-_\\s]{0,2}habits\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Interest in Children",
@@ -102,7 +138,10 @@
             "patterns": [
                 "(?i)\\binterest[^\\s/(;)#|,=!>]{0,5}children\\b",
                 "(?i)\\binterest[-_\\s]{0,2}children\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Communication History with Matches",
@@ -110,7 +149,10 @@
             "patterns": [
                 "(?i)\\bcommunication[^\\s/(;)#|,=!>]{0,5}history[^\\s/(;)#|,=!>]{0,5}with[^\\s/(;)#|,=!>]{0,5}matches\\b",
                 "(?i)\\bcommunication[-_\\s]{0,2}history[-_\\s]{0,2}with[-_\\s]{0,2}matches\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         }
     ]
 }

@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\binsurance[^\\s/(;)#|,=!>]{0,5}policies\\b",
                 "(?i)\\binsurance[-_\\s]{0,2}policies\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Premium Payments",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bpremium[^\\s/(;)#|,=!>]{0,5}payments\\b",
                 "(?i)\\bpremium[-_\\s]{0,2}payments\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Claim History",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bclaim[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bclaim[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Beneficiary Information",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bbeneficiary[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bbeneficiary[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Coverage Details",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bcoverage[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bcoverage[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Risk Assessment",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}assessment\\b",
                 "(?i)\\brisk[-_\\s]{0,2}assessment\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Underwriting Information",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bunderwriting[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bunderwriting[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Policy Modifications",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bpolicy[^\\s/(;)#|,=!>]{0,5}modifications\\b",
                 "(?i)\\bpolicy[-_\\s]{0,2}modifications\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Renewal History",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\brenewal[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\brenewal[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Cancellation Records",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bcancellation[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bcancellation[-_\\s]{0,2}records\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         }
     ]
 }
