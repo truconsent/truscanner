@@ -330,7 +330,7 @@ Do NOT treat the following as personal data about the end user:
 - Generic UI/state cookies or localStorage keys that don't carry an identifier — e.g. a sidebar open/closed
   flag, a theme preference, a feature-flag toggle. Only flag cookies/storage that hold or reference an actual
   user identifier, session token, or personal value. Concrete example of what NOT to report:
-  `const SIDEBAR_COOKIE_NAME = "sidebar_state"; document.cookie = \`${{SIDEBAR_COOKIE_NAME}}=${{openState}}\``
+  const SIDEBAR_COOKIE_NAME = "sidebar_state"; document.cookie = `${{SIDEBAR_COOKIE_NAME}}=${{openState}}`
   — this stores a boolean UI layout flag, not personal data, even though it uses `document.cookie`.
 
 Return ONLY valid JSON in this exact shape:
