@@ -105,6 +105,7 @@ def parse_llm_response(
     filepath: str,
     selected_model: str,
     file_lines: Optional[List[str]] = None,
+    taxonomy_lookup: Optional[Dict[str, Dict[str, Any]]] = None,
 ) -> List[Dict[str, Any]]:
     """Parse the raw JSON text returned by an LLM into a list of finding dicts.
 
@@ -114,6 +115,12 @@ def parse_llm_response(
         selected_model: Model identifier string, embedded in the ``source`` field.
         file_lines: Optional list of source-file lines used to resolve line
             numbers and fill in ``line_content`` from the real file.
+        taxonomy_lookup: Optional case-insensitive map of
+            ``element_name -> {"name", "category", "tags"}`` built from the same
+            JSON taxonomy the regex scanner uses. When the model's
+            ``element_name`` matches an entry, the finding's category and
+            severity tags are overwritten with the canonical values instead of
+            trusting whatever free-text category the model returned.
 
     Returns:
         A (possibly empty) list of validated finding dicts. Findings with a
@@ -173,6 +180,12 @@ def parse_llm_response(
             if file_lines and 0 < line_number <= len(file_lines):
                 cleaned_line_content = file_lines[line_number - 1].strip() or cleaned_line_content
 
+            # Comments/docs never represent real runtime data handling — drop
+            # findings that land on one even if the model ignored that rule.
+            if cleaned_line_content.startswith(("//", "#", "/*", "*/", "*")):
+                logger.debug("Skipping comment-line finding in {}", filepath)
+                continue
+
             matched_text = (
                 finding.get("matched_text")
                 or finding.get("matched")
@@ -180,14 +193,45 @@ def parse_llm_response(
                 or ""
             )
 
+            element_category = str(
+                finding.get("element_category", finding.get("category", "Privacy")) or "Privacy"
+            ).strip()
+            tags: Dict[str, Any] = {}
+
+            taxonomy_entry = (taxonomy_lookup or {}).get(element_name.lower())
+            swapped_entry = (taxonomy_lookup or {}).get(element_category.lower()) if not taxonomy_entry else None
+            if taxonomy_entry:
+                # Trust the shared taxonomy over whatever free-text category
+                # the model produced, so severity/category stay consistent
+                # with the regex scanner's classification of the same element.
+                element_name = taxonomy_entry["name"]
+                element_category = taxonomy_entry["category"]
+                tags = taxonomy_entry.get("tags", {}) or {}
+            elif swapped_entry:
+                # The model put the real element name in the "category" slot
+                # and something else (often the category) in the "name" slot —
+                # recover the real element instead of discarding it.
+                element_name = swapped_entry["name"]
+                element_category = swapped_entry["category"]
+                tags = swapped_entry.get("tags", {}) or {}
+            elif taxonomy_lookup:
+                # We have a taxonomy to check against and this finding matches
+                # nothing in it (directly or swapped) — drop it instead of
+                # inventing a generic "Unclassified" bucket entry. A finding
+                # that can't be tied to a real element is more noise than signal.
+                logger.debug(
+                    "Dropping unmatched AI finding '{}' / '{}' in {}",
+                    element_name, element_category, filepath,
+                )
+                continue
+
             validated.append({
                 "line_number": line_number,
                 "line_content": cleaned_line_content,
                 "matched_text": matched_text,
                 "element_name": element_name,
-                "element_category": str(
-                    finding.get("element_category", finding.get("category", "Privacy")) or "Privacy"
-                ).strip(),
+                "element_category": element_category,
+                "tags": tags,
                 "reason": finding.get("reason", ""),
                 "filename": filepath,
                 "source": f"LLM ({selected_model})",

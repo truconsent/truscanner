@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bfirst[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bfirst[-_\\s]{0,2}name\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Last Name",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\blast[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\blast[-_\\s]{0,2}name\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Middle Name",
@@ -22,14 +28,20 @@
             "patterns": [
                 "(?i)\\bmiddle[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bmiddle[-_\\s]{0,2}name\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Alias",
             "category": "Personal Identifiable Information (PII)",
             "patterns": [
                 "(?i)\\balias\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Date of Birth",
@@ -38,21 +50,30 @@
                 "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)|birth[-_]{0,2}dt)))",
                 "(?i)\\bdate[^\\s/(;)#|,=!>]{0,5}birth\\b",
                 "(?i)\\bdate[-_\\s]{0,2}birth\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Gender",
             "category": "Personal Identifiable Information (PII)",
             "patterns": [
                 "(?i)\\bgender\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Nationality",
             "category": "Personal Identifiable Information (PII)",
             "patterns": [
                 "(?i)\\bnationality\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Marital Status",
@@ -60,14 +81,20 @@
             "patterns": [
                 "(?i)\\bmarital[^\\s/(;)#|,=!>]{0,5}status\\b",
                 "(?i)\\bmarital[-_\\s]{0,2}status\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Age",
             "category": "Personal Identifiable Information (PII)",
             "patterns": [
-                "(?i)\\bage\\b"
-            ]
+                "(?i)(?<!-)\\bage\\b(?!-)"
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Place of Birth",
@@ -75,7 +102,10 @@
             "patterns": [
                 "(?i)\\bplace[^\\s/(;)#|,=!>]{0,5}birth\\b",
                 "(?i)\\bplace[-_\\s]{0,2}birth\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Mother's Maiden Name",
@@ -83,7 +113,10 @@
             "patterns": [
                 "(?i)\\bmother[^\\s/(;)#|,=!>]{0,5}maiden[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bmother[-_\\s]{0,2}maiden[-_\\s]{0,2}name\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Father's Name",
@@ -91,7 +124,10 @@
             "patterns": [
                 "(?i)\\bfather[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bfather[-_\\s]{0,2}name\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Spouse Name",
@@ -99,7 +135,10 @@
             "patterns": [
                 "(?i)\\bspouse[^\\s/(;)#|,=!>]{0,5}name\\b",
                 "(?i)\\bspouse[-_\\s]{0,2}name\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Emergency Contact Details",
@@ -107,7 +146,10 @@
             "patterns": [
                 "(?i)\\bemergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bemergency[-_\\s]{0,2}contact[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Profile Pictures",
@@ -115,7 +157,10 @@
             "patterns": [
                 "(?i)\\bprofile[^\\s/(;)#|,=!>]{0,5}pictures\\b",
                 "(?i)\\bprofile[-_\\s]{0,2}pictures\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         },
         {
             "name": "Physical Appearance Description",
@@ -123,7 +168,10 @@
             "patterns": [
                 "(?i)\\bphysical[^\\s/(;)#|,=!>]{0,5}appearance[^\\s/(;)#|,=!>]{0,5}description\\b",
                 "(?i)\\bphysical[-_\\s]{0,2}appearance[-_\\s]{0,2}description\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "medium"
+            }
         }
     ]
 }

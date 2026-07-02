@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bcall[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bcall[-_\\s]{0,2}records\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Chat Records",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bchat[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bchat[-_\\s]{0,2}records\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Customer Support Interactions",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bcustomer[^\\s/(;)#|,=!>]{0,5}support[^\\s/(;)#|,=!>]{0,5}interactions\\b",
                 "(?i)\\bcustomer[-_\\s]{0,2}support[-_\\s]{0,2}interactions\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Browsing History",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bbrowsing[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bbrowsing[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Search History",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bsearch[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bsearch[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Content Preferences",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Personalization Data",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bpersonalization[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bpersonalization[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "App Usage Patterns",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bapp[^\\s/(;)#|,=!>]{0,5}usage[^\\s/(;)#|,=!>]{0,5}patterns\\b",
                 "(?i)\\bapp[-_\\s]{0,2}usage[-_\\s]{0,2}patterns\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Session Duration",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bsession[^\\s/(;)#|,=!>]{0,5}duration\\b",
                 "(?i)\\bsession[-_\\s]{0,2}duration\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Feature Usage Statistics",
@@ -78,29 +105,30 @@
             "patterns": [
                 "(?i)\\bfeature[^\\s/(;)#|,=!>]{0,5}usage[^\\s/(;)#|,=!>]{0,5}statistics\\b",
                 "(?i)\\bfeature[-_\\s]{0,2}usage[-_\\s]{0,2}statistics\\b"
-            ]
-        },
-        {
-            "name": "Error Logs",
-            "category": "Communication & Behavioral Data",
-            "patterns": [
-                "(?i)\\berror[^\\s/(;)#|,=!>]{0,5}logs\\b",
-                "(?i)\\berror[-_\\s]{0,2}logs\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Feedback",
             "category": "Communication & Behavioral Data",
             "patterns": [
                 "(?i)\\bfeedback\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Reviews",
             "category": "Communication & Behavioral Data",
             "patterns": [
                 "(?i)\\breviews\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Survey Responses",
@@ -108,7 +136,10 @@
             "patterns": [
                 "(?i)\\bsurvey[^\\s/(;)#|,=!>]{0,5}responses\\b",
                 "(?i)\\bsurvey[-_\\s]{0,2}responses\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}score[^\\s/(;)#|,=!>]{0,5}cibil\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}score[-_\\s]{0,2}cibil\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Credit Score (Experian)",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}score[^\\s/(;)#|,=!>]{0,5}experian\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}score[-_\\s]{0,2}experian\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Credit Score (Equifax)",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}score[^\\s/(;)#|,=!>]{0,5}equifax\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}score[-_\\s]{0,2}equifax\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Credit History",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Default Records",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bdefault[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bdefault[-_\\s]{0,2}records\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Bankruptcy Information",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bbankruptcy[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bbankruptcy[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Loan Repayment History",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bloan[^\\s/(;)#|,=!>]{0,5}repayment[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bloan[-_\\s]{0,2}repayment[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Credit Utilization Ratio",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bcredit[^\\s/(;)#|,=!>]{0,5}utilization[^\\s/(;)#|,=!>]{0,5}ratio\\b",
                 "(?i)\\bcredit[-_\\s]{0,2}utilization[-_\\s]{0,2}ratio\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Income Verification Documents",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bincome[^\\s/(;)#|,=!>]{0,5}verification[^\\s/(;)#|,=!>]{0,5}documents\\b",
                 "(?i)\\bincome[-_\\s]{0,2}verification[-_\\s]{0,2}documents\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Employment History",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bemployment[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bemployment[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Asset Valuation",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\basset[^\\s/(;)#|,=!>]{0,5}valuation\\b",
                 "(?i)\\basset[-_\\s]{0,2}valuation\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Collateral Information",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bcollateral[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bcollateral[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Guarantor Details",
@@ -102,7 +138,10 @@
             "patterns": [
                 "(?i)\\bguarantor[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bguarantor[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Risk Rating",
@@ -110,7 +149,10 @@
             "patterns": [
                 "(?i)\\brisk[^\\s/(;)#|,=!>]{0,5}rating\\b",
                 "(?i)\\brisk[-_\\s]{0,2}rating\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         },
         {
             "name": "Fraud Alerts",
@@ -118,7 +160,10 @@
             "patterns": [
                 "(?i)\\bfraud[^\\s/(;)#|,=!>]{0,5}alerts\\b",
                 "(?i)\\bfraud[-_\\s]{0,2}alerts\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "high"
+            }
         }
     ]
 }

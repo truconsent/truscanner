@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bapi[^\\s/(;)#|,=!>]{0,5}usage[^\\s/(;)#|,=!>]{0,5}logs\\b",
                 "(?i)\\bapi[-_\\s]{0,2}usage[-_\\s]{0,2}logs\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Database Queries",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bdatabase[^\\s/(;)#|,=!>]{0,5}queries\\b",
                 "(?i)\\bdatabase[-_\\s]{0,2}queries\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "System Performance Metrics",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bsystem[^\\s/(;)#|,=!>]{0,5}performance[^\\s/(;)#|,=!>]{0,5}metrics\\b",
                 "(?i)\\bsystem[-_\\s]{0,2}performance[-_\\s]{0,2}metrics\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Error Codes",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\berror[^\\s/(;)#|,=!>]{0,5}codes\\b",
                 "(?i)\\berror[-_\\s]{0,2}codes\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Debug Information",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bdebug[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bdebug[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Cache Data",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bcache[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bcache[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Backup Information",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bbackup[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bbackup[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Security Logs",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bsecurity[^\\s/(;)#|,=!>]{0,5}logs\\b",
                 "(?i)\\bsecurity[-_\\s]{0,2}logs\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Access Logs",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\baccess[^\\s/(;)#|,=!>]{0,5}logs\\b",
                 "(?i)\\baccess[-_\\s]{0,2}logs\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Integration Data with Third-party Services",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bintegration[^\\s/(;)#|,=!>]{0,5}data[^\\s/(;)#|,=!>]{0,5}with[^\\s/(;)#|,=!>]{0,5}third[^\\s/(;)#|,=!>]{0,5}party[^\\s/(;)#|,=!>]{0,5}services\\b",
                 "(?i)\\bintegration[-_\\s]{0,2}data[-_\\s]{0,2}with[-_\\s]{0,2}third[-_\\s]{0,2}party[-_\\s]{0,2}services\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

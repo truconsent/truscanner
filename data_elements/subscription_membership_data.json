@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bsubscription[^\\s/(;)#|,=!>]{0,5}plans\\b",
                 "(?i)\\bsubscription[-_\\s]{0,2}plans\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Billing Cycle",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bbilling[^\\s/(;)#|,=!>]{0,5}cycle\\b",
                 "(?i)\\bbilling[-_\\s]{0,2}cycle\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Subscription History",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bsubscription[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bsubscription[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Membership Tier",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bmembership[^\\s/(;)#|,=!>]{0,5}tier\\b",
                 "(?i)\\bmembership[-_\\s]{0,2}tier\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Renewal Dates",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\brenewal[^\\s/(;)#|,=!>]{0,5}dates\\b",
                 "(?i)\\brenewal[-_\\s]{0,2}dates\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Cancellation History",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bcancellation[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bcancellation[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Free Trial Usage",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bfree[^\\s/(;)#|,=!>]{0,5}trial[^\\s/(;)#|,=!>]{0,5}usage\\b",
                 "(?i)\\bfree[-_\\s]{0,2}trial[-_\\s]{0,2}usage\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Upgrade History",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bupgrade[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bupgrade[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Downgrade History",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bdowngrade[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bdowngrade[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Payment Method for Subscriptions",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bpayment[^\\s/(;)#|,=!>]{0,5}method[^\\s/(;)#|,=!>]{0,5}for[^\\s/(;)#|,=!>]{0,5}subscriptions\\b",
                 "(?i)\\bpayment[-_\\s]{0,2}method[-_\\s]{0,2}for[-_\\s]{0,2}subscriptions\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Auto-renewal Settings",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bauto[^\\s/(;)#|,=!>]{0,5}renewal[^\\s/(;)#|,=!>]{0,5}settings\\b",
                 "(?i)\\bauto[-_\\s]{0,2}renewal[-_\\s]{0,2}settings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Promotional Offers Used",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bpromotional[^\\s/(;)#|,=!>]{0,5}offers[^\\s/(;)#|,=!>]{0,5}used\\b",
                 "(?i)\\bpromotional[-_\\s]{0,2}offers[-_\\s]{0,2}used\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

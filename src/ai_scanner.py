@@ -13,7 +13,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from loguru import logger
 
-from .ai_parser import parse_llm_response
+from .ai_parser import extract_json_payload, parse_llm_response
 from .providers import call_bedrock, call_ollama, call_openai, list_ollama_models
 from .regex_scanner import RegexScanner
 from .token_utils import count_tokens, tokenizer_source
@@ -46,7 +46,7 @@ class AIScanner:
         "fast": {
             "max_prompt_chars": 3500,
             "max_relevant_lines": 45,
-            "max_model_output_tokens": 260,
+            "max_model_output_tokens": 500,
             "ollama_num_ctx": 2048,
             "strict_large_file_multiplier": 1.5,
             "skip_signal_less_large_files": True,
@@ -54,7 +54,7 @@ class AIScanner:
         "balanced": {
             "max_prompt_chars": 5000,
             "max_relevant_lines": 70,
-            "max_model_output_tokens": 350,
+            "max_model_output_tokens": 700,
             "ollama_num_ctx": 4096,
             "strict_large_file_multiplier": 2.0,
             "skip_signal_less_large_files": False,
@@ -62,7 +62,7 @@ class AIScanner:
         "full": {
             "max_prompt_chars": 9000,
             "max_relevant_lines": 120,
-            "max_model_output_tokens": 500,
+            "max_model_output_tokens": 900,
             "ollama_num_ctx": 8192,
             "strict_large_file_multiplier": 3.0,
             "skip_signal_less_large_files": False,
@@ -97,6 +97,7 @@ class AIScanner:
             data_elements_dir = Path(__file__).parent.parent / "data_elements"
         self.data_elements_dir = Path(data_elements_dir)
         self.data_elements_names = self._load_data_elements_names()
+        self.taxonomy_lookup = self._load_taxonomy_lookup()
         self.selected_model = "Unknown"
         self.last_scan_usage = {
             "files_scanned": 0,
@@ -151,6 +152,39 @@ class AIScanner:
                     logger.error("Error loading {} for AI context: {}", json_file, e)
         return names
 
+    def _load_taxonomy_lookup(self) -> Dict[str, Dict[str, Any]]:
+        """Build a case-insensitive element-name -> {name, category, tags} map.
+
+        Used to keep the LLM's classification (and severity tagging) anchored
+        to the same taxonomy the regex scanner uses, instead of letting it
+        invent free-text category names or leaving severity unset.
+        """
+        lookup: Dict[str, Dict[str, Any]] = {}
+        if self.data_elements_dir.exists():
+            for json_file in self.data_elements_dir.rglob("*.json"):
+                try:
+                    with open(json_file, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                    for source in data.get("sources", []):
+                        name = source.get("name", "").strip()
+                        category = source.get("category", "").strip()
+                        if name and category:
+                            lookup[name.lower()] = {
+                                "name": name,
+                                "category": category,
+                                "tags": source.get("tags", {}),
+                            }
+                except Exception as e:
+                    logger.error("Error loading {} for AI taxonomy: {}", json_file, e)
+        return lookup
+
+    def _taxonomy_by_category(self) -> Dict[str, List[str]]:
+        """Group the loaded taxonomy as {category: [element names]} for prompting."""
+        grouped: Dict[str, List[str]] = {}
+        for entry in self.taxonomy_lookup.values():
+            grouped.setdefault(entry["category"], []).append(entry["name"])
+        return grouped
+
     # -----------------------------------------------------------------------
     # Prompt building
     # -----------------------------------------------------------------------
@@ -158,7 +192,10 @@ class AIScanner:
     def _prepare_content_for_prompt(self, content: str) -> str:
         """Trim large file content to a signal-dense excerpt for the LLM prompt.
 
-        - Files under ``max_prompt_chars`` are passed through unchanged.
+        - Files under ``max_prompt_chars`` are numbered (``L<n>: ...``) but
+          otherwise passed through in full — LLMs are unreliable at counting
+          raw, unnumbered lines to report an accurate ``line_number``, so every
+          file gets explicit anchors regardless of size.
         - Larger files are filtered to lines containing keywords or pattern
           signals, with one line of surrounding context.
         - In ``fast`` mode, very large low-signal files are skipped (returns
@@ -166,7 +203,14 @@ class AIScanner:
         - Falls back to head + tail sampling for files with no signal lines.
         """
         if len(content) <= self.max_prompt_chars:
-            return content
+            numbered = "\n".join(
+                f"L{idx}: {line}" for idx, line in enumerate(content.splitlines(), 1)
+            )
+            return (
+                "Each line is prefixed with its real line number (e.g. L12). "
+                "Use that exact number for \"line_number\" — do not count lines yourself.\n\n"
+                f"{numbered}"
+            )
 
         lines = content.splitlines()
         relevant_lines: List[Tuple[int, str]] = []
@@ -234,40 +278,96 @@ class AIScanner:
             "[END FILE TAIL]"
         )
 
-    def _get_prompt(self, file_content: str, filename: str) -> str:
+    def _get_prompt(self, file_content: str, filename: str, base_directory: Optional[str] = None) -> str:
         """Build the LLM prompt for a single file.
 
-        Only the base file name is embedded in the prompt (not the full path)
-        to avoid leaking filesystem structure and to prevent path injection.
+        The path is expressed relative to the scanned repository root (not
+        the host's absolute filesystem path) so the model can use the
+        page/component name and directory as context — e.g. a field on
+        ``pages/FormPage.tsx`` is data-collection, one on ``pages/LoginPage.tsx``
+        is auth — without leaking local filesystem structure.
         """
-        elements_list = ", ".join(
-            name.strip()
-            for name in self.data_elements_names
-            if isinstance(name, str) and name.strip()
-        ) or "All configured privacy data elements"
+        taxonomy_by_category = self._taxonomy_by_category()
+        if taxonomy_by_category:
+            taxonomy_text = "\n".join(
+                f"- {category}: {', '.join(names)}"
+                for category, names in sorted(taxonomy_by_category.items())
+            )
+        else:
+            taxonomy_text = "- Personal Identifiable Information (PII): (no taxonomy loaded)"
 
-        # Use only the file name to avoid embedding user-controlled path components.
-        safe_filename = Path(filename).name
+        relative_path = self._relative_path(filename, base_directory)
 
         return f"""
-Analyze the code from '{safe_filename}' and find privacy-sensitive data handling (PII and related identifiers).
+Analyze the code from '{relative_path}' and find privacy-sensitive data handling (PII and related identifiers).
 
-Use these data element types as guidance: {elements_list}
+Use the file's path as context: the directory and page/component name usually indicate its purpose
+(e.g. a file under "pages/FormPage" or "components/*Form*" is a data-collection form; a file under
+"pages/LoginPage" or "auth/*" is authentication, not a home/residential address; a file under
+"pages/RightsCenter*" is account/profile display, not data collection).
+
+You MUST choose "element_name" and "element_category" EXACTLY from this taxonomy (copy the text verbatim,
+do not invent new names or categories):
+{taxonomy_text}
+
+If a genuine privacy-sensitive value truly does not fit any entry above, DO NOT report it — omit that finding
+entirely rather than forcing a mismatch. Only report findings that clearly map to a taxonomy entry above.
+
+When a field is ambiguous within a family (e.g. a single generic "address" or "phone" field), pick the ONE
+most specific element that matches what the surrounding code/labels actually describe for this file — do not
+report the same field under multiple sibling element types (e.g. do not report one address field as both
+"Address" and "Permanent Address"). Only pick a specific sub-type (e.g. "Work Phone Number", "Shipping
+Address") when the variable/label/field name explicitly names that sub-type. A plain `address`/`phone`/`mobile`
+field with no such qualifier is just "Address"/"Phone Number" — never invent a more specific sub-type from
+context alone. A single free-text address field is ALWAYS just "Address", even if it conceptually contains a
+street, city, state, or zip — never decompose one field into separate street/city/state/zip/country findings
+unless the code actually has separate, distinct fields for each of those.
+
+Do NOT treat the following as personal data about the end user:
+- The application's OWN configuration values used to set up a third-party SDK/widget — e.g. `organizationId`,
+  `assetId`, `bannerId`, `apiUrl`, `tenantId` passed as props/config to a consent/analytics/widget component.
+  These identify the tenant's own account/application, not an individual data principal.
+- Generic UI/state cookies or localStorage keys that don't carry an identifier — e.g. a sidebar open/closed
+  flag, a theme preference, a feature-flag toggle. Only flag cookies/storage that hold or reference an actual
+  user identifier, session token, or personal value. Concrete example of what NOT to report:
+  `const SIDEBAR_COOKIE_NAME = "sidebar_state"; document.cookie = \`${{SIDEBAR_COOKIE_NAME}}=${{openState}}\``
+  — this stores a boolean UI layout flag, not personal data, even though it uses `document.cookie`.
 
 Return ONLY valid JSON in this exact shape:
-{{"findings":[{{"line_number":0,"line_content":"","matched_text":"","element_name":"","element_category":"","reason":""}}]}}
+{{"findings":[{{"line_number":0,"matched_text":"","element_name":"","element_category":"","reason":""}}]}}
 
 Rules:
 - No markdown, no prose, no code fences.
 - "line_number" must be an integer line number from the source content.
 - If no findings exist, return: {{"findings":[]}}
-- Keep "matched_text" short and specific.
+- Do NOT include a "line_content" field — the caller re-reads the real source line itself. Leave "matched_text"
+  and "reason" as short plain-English descriptions (e.g. matched_text: "password field", not a copy of the
+  code) so you never need to embed quote characters from the source inside the JSON string.
 - Ignore comments, docs, and generic keyword/enumeration lists that do not represent real data handling.
 - Prefer runtime data collection/storage/transmission paths over configuration constants.
+- One finding per real-world field/value — never emit multiple sibling element types for the same line.
+- For credentials/API keys/secrets: only report a finding if an actual secret VALUE is present (a literal
+  key/token string, or a variable clearly being assigned/sent one). Do NOT report a finding just because a
+  variable or environment-variable NAME contains a word like "key", "secret", or "token" — checking whether
+  such a variable is set/defined (e.g. `if (!API_KEY) {{...}}`) is not a data handling finding.
 
 Code Content:
 {file_content}
 """
+
+    @staticmethod
+    def _relative_path(filename: str, base_directory: Optional[str]) -> str:
+        """Return *filename* relative to *base_directory*, falling back to the basename.
+
+        Keeps directory/page context in the prompt without leaking the host's
+        absolute filesystem layout.
+        """
+        if base_directory:
+            try:
+                return os.path.relpath(filename, base_directory)
+            except ValueError:
+                pass
+        return Path(filename).name
 
     # -----------------------------------------------------------------------
     # Provider helpers
@@ -307,6 +407,7 @@ Code Content:
         provider: Optional[str] = None,
         use_openai: bool = False,
         model: Optional[str] = None,
+        base_directory: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
         """Scan a single file using the configured LLM provider.
 
@@ -325,7 +426,7 @@ Code Content:
             if not prompt_content.strip():
                 return []
 
-            prompt = self._get_prompt(prompt_content, filepath)
+            prompt = self._get_prompt(prompt_content, filepath, base_directory=base_directory)
             selected_provider = self._resolve_provider(provider=provider, use_openai=use_openai)
 
             raw_text = self._call_provider(selected_provider, prompt, filepath, model)
@@ -335,8 +436,27 @@ Code Content:
             self.last_scan_usage["input_tokens"] += prompt_tokens
             self.last_scan_usage["output_tokens"] += response_tokens
             self.last_scan_usage["total_tokens"] += prompt_tokens + response_tokens
+
+            if raw_text.strip() and extract_json_payload(raw_text) is None:
+                # A malformed/truncated response drops this file's findings
+                # entirely — retry once with a stricter brevity nudge instead
+                # of silently reporting zero findings for the whole file.
+                logger.warning("Malformed LLM JSON for {}, retrying once", filepath)
+                retry_prompt = prompt + (
+                    "\n\nIMPORTANT: Your previous response was not valid JSON (likely truncated). "
+                    "Report at most the 5 highest-confidence findings and return only complete, valid JSON."
+                )
+                raw_text = self._call_provider(selected_provider, retry_prompt, filepath, model)
+                retry_tokens = count_tokens(raw_text, model=self.selected_model if self.selected_model != "Unknown" else None)
+                self.last_scan_usage["output_tokens"] += retry_tokens
+                self.last_scan_usage["total_tokens"] += retry_tokens
+
             return parse_llm_response(
-                raw_text, filepath, self.selected_model, file_lines=file_lines
+                raw_text,
+                filepath,
+                self.selected_model,
+                file_lines=file_lines,
+                taxonomy_lookup=self.taxonomy_lookup,
             )
 
         except Exception as e:
@@ -434,11 +554,14 @@ Code Content:
                 for file in files:
                     if file.startswith(".") or file in exclude_files:
                         continue
+                    if RegexScanner._is_type_declaration_file(file):
+                        continue
                     file_ext = Path(file).suffix.lower()
                     if file_ext in exclude_exts or file_ext not in allowed_extensions:
                         continue
                     files_to_scan.append(os.path.join(root, file))
 
+        base_directory = str(path) if path.is_dir() else str(path.parent)
         for file_path in files_to_scan:
             try:
                 file_findings = self.scan_file(
@@ -446,6 +569,7 @@ Code Content:
                     provider=provider,
                     use_openai=use_openai,
                     model=model,
+                    base_directory=base_directory,
                 )
             except TypeError as exc:
                 # Preserve compatibility with older tests/callers that monkeypatch

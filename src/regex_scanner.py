@@ -275,7 +275,21 @@ class RegexScanner:
                         "context": context,
                         "source": "Regex"
                     })
-        return findings
+        return self._dedupe_overlapping_findings(findings)
+
+    @staticmethod
+    def _dedupe_overlapping_findings(findings: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Collapse multiple elements matching the same line into the most specific one.
+
+        Different elements can legitimately share a generic sub-pattern (e.g. a bare
+        "address" match backing a catch-all element alongside a qualified "residential
+        address" match). When that happens on the same line, keep only the finding with
+        the longest (most specific) matched text instead of reporting every element.
+
+        Scoped to a single file's findings (grouped by line number only) — used
+        internally by ``scan_text`` before ``filename`` is attached.
+        """
+        return dedupe_overlapping_findings(findings, key=lambda f: f["line_number"])
 
     def scan_file(self, filepath: str) -> List[Dict[str, Any]]:
         """Scan a single file and return findings."""
@@ -328,6 +342,8 @@ class RegexScanner:
             for file in files:
                 if file.startswith('.') or file in exclude_files:
                     continue
+                if self._is_type_declaration_file(file):
+                    continue
 
                 file_ext = Path(file).suffix.lower()
                 if file_ext in exclude_exts:
@@ -366,6 +382,14 @@ class RegexScanner:
                     logger.error("Error processing {}: {}", fp, e)
 
         return all_findings
+
+    @staticmethod
+    def _is_type_declaration_file(filename: str) -> bool:
+        """TypeScript ambient declaration files (``*.d.ts``) only describe shapes —
+        interface/type field names like ``userId: string`` are never real data
+        values, so scanning them only produces false positives."""
+        lowered = filename.lower()
+        return lowered.endswith((".d.ts", ".d.mts", ".d.cts"))
 
     @staticmethod
     def _normalize_extensions(extensions: List[str]) -> set:
@@ -717,6 +741,46 @@ class RegexScanner:
             "token_usage": token_usage or {},
             "findings": findings,
         }
+
+
+def dedupe_overlapping_findings(
+    findings: List[Dict[str, Any]],
+    key: Optional[Callable[[Dict[str, Any]], Any]] = None,
+) -> List[Dict[str, Any]]:
+    """Collapse findings that overlap on the same (file, line) into the most specific one.
+
+    Applies regardless of detector — two independent regex elements, two
+    independent LLM findings, or one of each can all point at the same
+    underlying occurrence (e.g. an LLM emitting both "User | null" and "User"
+    for one interface field). Keeps the longest/most-specific ``matched_text``
+    per group and drops any other match that is a substring of it.
+
+    Args:
+        findings: Finding dicts, each with ``line_number``, ``matched_text``,
+            and (unless ``key`` overrides grouping) ``filename``.
+        key: Optional custom grouping key. Defaults to ``(filename, line_number)``.
+    """
+    group_key = key or (lambda f: (f.get("filename"), f["line_number"]))
+    grouped: Dict[Any, List[Dict[str, Any]]] = defaultdict(list)
+    for finding in findings:
+        grouped[group_key(finding)].append(finding)
+
+    deduped = []
+    for group in grouped.values():
+        if len(group) == 1:
+            deduped.append(group[0])
+            continue
+
+        group.sort(key=lambda f: len(f.get("matched_text") or ""), reverse=True)
+        kept: List[Dict[str, Any]] = []
+        for finding in group:
+            matched_lower = (finding.get("matched_text") or "").lower()
+            if matched_lower and any(matched_lower in (k.get("matched_text") or "").lower() for k in kept):
+                continue
+            kept.append(finding)
+        deduped.extend(kept)
+
+    return deduped
 
 
 def main():

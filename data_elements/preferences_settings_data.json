@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\blanguage[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\blanguage[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Currency Settings",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bcurrency[^\\s/(;)#|,=!>]{0,5}settings\\b",
                 "(?i)\\bcurrency[-_\\s]{0,2}settings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Notification Preferences",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bnotification[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bnotification[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Privacy Settings",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bprivacy[^\\s/(;)#|,=!>]{0,5}settings\\b",
                 "(?i)\\bprivacy[-_\\s]{0,2}settings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Content Filters",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bcontent[^\\s/(;)#|,=!>]{0,5}filters\\b",
                 "(?i)\\bcontent[-_\\s]{0,2}filters\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Personalization Settings",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bpersonalization[^\\s/(;)#|,=!>]{0,5}settings\\b",
                 "(?i)\\bpersonalization[-_\\s]{0,2}settings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Theme Preferences",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\btheme[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\btheme[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Accessibility Settings",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\baccessibility[^\\s/(;)#|,=!>]{0,5}settings\\b",
                 "(?i)\\baccessibility[-_\\s]{0,2}settings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Time Zone",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\btime[^\\s/(;)#|,=!>]{0,5}zone\\b",
                 "(?i)\\btime[-_\\s]{0,2}zone\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Regional Settings",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bregional[^\\s/(;)#|,=!>]{0,5}settings\\b",
                 "(?i)\\bregional[-_\\s]{0,2}settings\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         },
         {
             "name": "Communication Preferences",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bcommunication[^\\s/(;)#|,=!>]{0,5}preferences\\b",
                 "(?i)\\bcommunication[-_\\s]{0,2}preferences\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "low"
+            }
         }
     ]
 }

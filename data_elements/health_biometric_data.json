@@ -6,7 +6,10 @@
             "patterns": [
                 "(?i)\\bmedical[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bmedical[-_\\s]{0,2}records\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Medical History",
@@ -14,7 +17,10 @@
             "patterns": [
                 "(?i)\\bmedical[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bmedical[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Health Insurance Details",
@@ -22,7 +28,10 @@
             "patterns": [
                 "(?i)\\bhealth[^\\s/(;)#|,=!>]{0,5}insurance[^\\s/(;)#|,=!>]{0,5}details\\b",
                 "(?i)\\bhealth[-_\\s]{0,2}insurance[-_\\s]{0,2}details\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Genetic Data",
@@ -30,7 +39,10 @@
             "patterns": [
                 "(?i)\\bgenetic[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bgenetic[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "DNA Information",
@@ -38,7 +50,10 @@
             "patterns": [
                 "(?i)\\bdna[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bdna[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Mental Health Information",
@@ -46,7 +61,10 @@
             "patterns": [
                 "(?i)\\bmental[^\\s/(;)#|,=!>]{0,5}health[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bmental[-_\\s]{0,2}health[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Heart Rate Data",
@@ -54,7 +72,10 @@
             "patterns": [
                 "(?i)\\bheart[^\\s/(;)#|,=!>]{0,5}rate[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bheart[-_\\s]{0,2}rate[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Sleep Data",
@@ -62,7 +83,10 @@
             "patterns": [
                 "(?i)\\bsleep[^\\s/(;)#|,=!>]{0,5}data\\b",
                 "(?i)\\bsleep[-_\\s]{0,2}data\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Step Count",
@@ -70,7 +94,10 @@
             "patterns": [
                 "(?i)\\bstep[^\\s/(;)#|,=!>]{0,5}count\\b",
                 "(?i)\\bstep[-_\\s]{0,2}count\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Chronic Conditions",
@@ -78,7 +105,10 @@
             "patterns": [
                 "(?i)\\bchronic[^\\s/(;)#|,=!>]{0,5}conditions\\b",
                 "(?i)\\bchronic[-_\\s]{0,2}conditions\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Medication History",
@@ -86,7 +116,10 @@
             "patterns": [
                 "(?i)\\bmedication[^\\s/(;)#|,=!>]{0,5}history\\b",
                 "(?i)\\bmedication[-_\\s]{0,2}history\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Vaccination Records",
@@ -94,7 +127,10 @@
             "patterns": [
                 "(?i)\\bvaccination[^\\s/(;)#|,=!>]{0,5}records\\b",
                 "(?i)\\bvaccination[-_\\s]{0,2}records\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Disability Information",
@@ -102,7 +138,10 @@
             "patterns": [
                 "(?i)\\bdisability[^\\s/(;)#|,=!>]{0,5}information\\b",
                 "(?i)\\bdisability[-_\\s]{0,2}information\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         },
         {
             "name": "Life Insurance Medical Tests",
@@ -110,7 +149,10 @@
             "patterns": [
                 "(?i)\\blife[^\\s/(;)#|,=!>]{0,5}insurance[^\\s/(;)#|,=!>]{0,5}medical[^\\s/(;)#|,=!>]{0,5}tests\\b",
                 "(?i)\\blife[-_\\s]{0,2}insurance[-_\\s]{0,2}medical[-_\\s]{0,2}tests\\b"
-            ]
+            ],
+            "tags": {
+                "sensitivity": "critical"
+            }
         }
     ]
 }
