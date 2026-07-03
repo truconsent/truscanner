@@ -18,6 +18,7 @@ from .utils import (
     get_ai_provider_setup_help,
     get_bedrock_model_id,
     get_missing_provider_requirements,
+    get_vertex_model_id,
     normalize_ai_provider,
     select_ai_provider,
     select_file_format,
@@ -168,6 +169,13 @@ def _prepare_ai_scan(provider: str, ai_mode: str):
         )
         return True, bedrock_model
 
+    if normalized_provider == 'vertex':
+        vertex_model = get_vertex_model_id(default=AIScanner.DEFAULT_VERTEX_MODEL)
+        click.echo(
+            f"\nRunning enhanced AI scan with Google Vertex AI model: {vertex_model} ({ai_mode} mode)..."
+        )
+        return True, vertex_model
+
     return False, None
 
 
@@ -182,7 +190,7 @@ def main():
 @click.option('--with-ai', is_flag=True, help='Enable the separate AI scan after the regex scan')
 @click.option(
     '--ai-provider',
-    type=click.Choice(['ollama', 'openai', 'bedrock'], case_sensitive=False),
+    type=click.Choice(['ollama', 'openai', 'bedrock', 'vertex'], case_sensitive=False),
     help='AI provider to use for the AI-only scan',
 )
 @click.option(

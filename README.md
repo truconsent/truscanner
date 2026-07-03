@@ -1,5 +1,5 @@
 # truScanner from truConsent
-![PyPI version](https://img.shields.io/pypi/v/truscanner.svg?cacheSeconds=300&v=0.2.11)
+![PyPI version](https://img.shields.io/pypi/v/truscanner.svg?cacheSeconds=300&v=0.3.0)
 ![License](https://img.shields.io/pypi/l/truscanner.svg)
 
 **Open-Source Static Analysis for Privacy Data Flows**
@@ -16,7 +16,7 @@
 - **Real-time Progress**: Visual progress indicator during scanning
 - **Multiple Report Formats**: Generate reports in TXT, Markdown, or JSON format
 - **Separate Regex and AI Scans**: Regex/static scanning and AI-enhanced scanning now run as distinct paths
-- **AI-Powered Enhancement**: Optional integration with Ollama, OpenAI, or AWS Bedrock for deeper context
+- **AI-Powered Enhancement**: Optional integration with Ollama, OpenAI, AWS Bedrock, or Google Vertex AI for deeper context
 - **Backend Integration**: Optional upload to backend API for centralized storage
 - **Auto-incrementing Reports**: Automatically manages report file naming to prevent overwrites
 - **Token Usage Tracking**: Reports include input/output token counts for regex and AI scans using tiktoken
@@ -31,7 +31,7 @@
 
 - Python 3.9 or higher
 - [ollama](https://ollama.com/) (optional, for local AI scanning)
-- OpenAI or AWS Bedrock credentials if you want a hosted AI provider
+- OpenAI, AWS Bedrock, or Google Vertex AI credentials if you want a hosted AI provider
 
 ### Quick Install
 
@@ -132,7 +132,7 @@ uv run python scripts/check_truscanner_api.py ./src
 
 3. **AI Enhanced Scan (Optional)**:
    - After the regex scan, you'll get a dropdown for the AI-only scan provider:
-     `Skip AI scan`, `Ollama`, `OpenAI`, or `AWS Bedrock`
+     `Skip AI scan`, `Ollama`, `OpenAI`, `AWS Bedrock`, or `Google Vertex AI`
    - This AI pass is separate from the regex scan and is used to find context that regex may miss.
    - If `Ollama` is selected, you can choose the local model from a second dropdown.
    - Live scanning timer: `AI Scanning: filename.js... (5.2s taken)`
@@ -155,7 +155,7 @@ truscanner scan <directory> [OPTIONS]
 
 Options:
   --with-ai          Enable the separate AI scan after the regex scan
-  --ai-provider      AI provider: ollama, openai, or bedrock
+  --ai-provider      AI provider: ollama, openai, bedrock, or vertex
   --ai-mode          AI scan mode: fast, balanced, or full (default: balanced)
   --personal-only    Only report personal identifiable information (PII)
   --help             Show help message
@@ -167,6 +167,7 @@ Examples:
 truscanner scan ./src --with-ai --ai-provider openai
 truscanner scan ./src --with-ai --ai-provider bedrock
 truscanner scan ./src --with-ai --ai-provider ollama
+truscanner scan ./src --with-ai --ai-provider vertex
 ```
 
 ### AI Speed vs Coverage Modes
@@ -261,9 +262,34 @@ export TRUSCANNER_REGION=us-east-1
 export TRUSCANNER_MODEL_ID=anthropic.claude-3-haiku-20240307-v1:0
 ```
 
+Google Vertex AI:
+
+```env
+TRUSCANNER_VERTEX_PROJECT_ID=your-gcp-project-id
+TRUSCANNER_VERTEX_LOCATION=asia-south1
+TRUSCANNER_VERTEX_MODEL=google/gemini-2.5-flash
+```
+
+Shell export:
+
+```bash
+export TRUSCANNER_VERTEX_PROJECT_ID=your-gcp-project-id
+export TRUSCANNER_VERTEX_LOCATION=asia-south1
+export TRUSCANNER_VERTEX_MODEL=google/gemini-2.5-flash
+```
+
+Then authenticate with Application Default Credentials:
+
+```bash
+gcloud auth application-default login
+```
+
+On Cloud Run, GCE, or Cloud Functions the runtime service account is used automatically — no login step needed there.
+
 Notes:
 - If you do not set `TRUSCANNER_MODEL_ID`, `truScanner` defaults to `anthropic.claude-3-haiku-20240307-v1:0`.
-- Legacy environment variable names such as `TRUSCANNER_OPENAI_KEY`, `OPENAI_API_KEY`, and `AWS_*` are still accepted as fallback.
+- If you do not set `TRUSCANNER_VERTEX_LOCATION`, `truScanner` defaults to `asia-south1`; if you do not set `TRUSCANNER_VERTEX_MODEL`, it defaults to `google/gemini-2.5-flash`.
+- Legacy environment variable names such as `TRUSCANNER_OPENAI_KEY`, `OPENAI_API_KEY`, `AWS_*`, and `VERTEX_AI_LOCATION`/`VERTEX_CHAT_MODEL`/`GCP_PROJECT_ID`/`GOOGLE_CLOUD_PROJECT` are still accepted as fallback.
 
 ## 📁 Project Structure
 
@@ -279,7 +305,8 @@ truscanner/
 │   │   ├── base.py          # Shared progress spinner + response helpers
 │   │   ├── ollama.py        # Ollama provider
 │   │   ├── openai.py        # OpenAI provider
-│   │   └── bedrock.py       # AWS Bedrock provider
+│   │   ├── bedrock.py       # AWS Bedrock provider
+│   │   └── vertex.py        # Google Vertex AI provider
 │   ├── report_utils.py      # Report file naming utilities
 │   └── utils.py             # Env loading, credential helpers, progress display
 ├── truscanner/              # Public Python API (importable as `import truscanner`)

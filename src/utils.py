@@ -27,6 +27,7 @@ AI_PROVIDER_CHOICES = [
     ("Ollama", "ollama"),
     ("OpenAI", "openai"),
     ("AWS Bedrock", "bedrock"),
+    ("Google Vertex AI", "vertex"),
 ]
 
 
@@ -96,6 +97,33 @@ def get_bedrock_model_id(model: Optional[str] = None, default: Optional[str] = N
     )
 
 
+def get_vertex_project_id() -> Optional[str]:
+    """Return the configured Vertex AI (GCP) project id."""
+    return (
+        os.environ.get("TRUSCANNER_VERTEX_PROJECT_ID")
+        or os.environ.get("GCP_PROJECT_ID")
+        or os.environ.get("GOOGLE_CLOUD_PROJECT")
+    )
+
+
+def get_vertex_location() -> Optional[str]:
+    """Return the configured Vertex AI region."""
+    return (
+        os.environ.get("TRUSCANNER_VERTEX_LOCATION")
+        or os.environ.get("VERTEX_AI_LOCATION")
+    )
+
+
+def get_vertex_model_id(model: Optional[str] = None, default: Optional[str] = None) -> Optional[str]:
+    """Return the configured Vertex AI model id."""
+    return (
+        model
+        or os.environ.get("TRUSCANNER_VERTEX_MODEL")
+        or os.environ.get("VERTEX_CHAT_MODEL")
+        or default
+    )
+
+
 def normalize_ai_provider(provider: Optional[str]) -> Optional[str]:
     """Normalize user-facing provider names to internal ids."""
     if provider is None:
@@ -110,6 +138,12 @@ def normalize_ai_provider(provider: Optional[str]) -> Optional[str]:
         "openai": "openai",
         "aws_bedrock": "bedrock",
         "bedrock": "bedrock",
+        "vertex": "vertex",
+        "vertex_ai": "vertex",
+        "gcp_vertex": "vertex",
+        "google_vertex": "vertex",
+        "google_vertex_ai": "vertex",
+        "gemini": "vertex",
     }
     return mapping.get(value)
 
@@ -129,6 +163,28 @@ def has_bedrock_credentials() -> bool:
     return has_region and (has_static_keys or has_profile)
 
 
+def _adc_available() -> bool:
+    """Return True when Application Default Credentials resolve successfully."""
+    try:
+        import google.auth
+
+        credentials, _ = google.auth.default()
+        return credentials is not None
+    except Exception:
+        return False
+
+
+def has_vertex_credentials() -> bool:
+    """Return True when a Vertex AI project id is set and ADC resolves.
+
+    Vertex AI authenticates via Application Default Credentials (ADC) rather
+    than static keys — on Cloud Run/GCE/Cloud Functions this is the runtime
+    service account's own identity, so there is nothing to export beyond the
+    project id itself in those environments.
+    """
+    return bool(get_vertex_project_id()) and _adc_available()
+
+
 def get_missing_provider_requirements(provider: Optional[str]) -> List[str]:
     """List missing environment requirements for the selected AI provider."""
     normalized = normalize_ai_provider(provider)
@@ -143,6 +199,13 @@ def get_missing_provider_requirements(provider: Optional[str]) -> List[str]:
             or get_bedrock_profile()
         ):
             missing.append("TRUSCANNER_ACCESS_KEY_ID and TRUSCANNER_SECRET_ACCESS_KEY")
+        return missing
+    if normalized == "vertex":
+        missing = []
+        if not get_vertex_project_id():
+            missing.append("TRUSCANNER_VERTEX_PROJECT_ID")
+        if not _adc_available():
+            missing.append("Application Default Credentials (run `gcloud auth application-default login`)")
         return missing
     return []
 
@@ -170,6 +233,16 @@ def get_ai_provider_setup_help(provider: Optional[str]) -> List[str]:
             "Ensure Ollama is running locally and at least one model is installed.",
             "Example: ollama pull llama3",
         ]
+    if normalized == "vertex":
+        return [
+            "Set the GCP project id in `.env` or export it in your shell:",
+            "  TRUSCANNER_VERTEX_PROJECT_ID=your-gcp-project-id",
+            "  TRUSCANNER_VERTEX_LOCATION=asia-south1",
+            "  TRUSCANNER_VERTEX_MODEL=google/gemini-2.5-flash",
+            "Then authenticate with Application Default Credentials:",
+            "  gcloud auth application-default login",
+            "On Cloud Run/GCE/Cloud Functions the runtime service account is used automatically — no login needed.",
+        ]
     return []
 
 
@@ -179,6 +252,8 @@ def resolve_default_ai_provider() -> str:
         return "openai"
     if has_bedrock_credentials():
         return "bedrock"
+    if has_vertex_credentials():
+        return "vertex"
     return "ollama"
 
 

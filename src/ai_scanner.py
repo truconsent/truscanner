@@ -14,7 +14,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from loguru import logger
 
 from .ai_parser import extract_json_payload, parse_llm_response
-from .providers import call_bedrock, call_ollama, call_openai, list_ollama_models
+from .providers import call_bedrock, call_ollama, call_openai, call_vertex, list_ollama_models
 from .regex_scanner import RegexScanner
 from .token_utils import count_tokens, tokenizer_source
 from .utils import (
@@ -25,6 +25,9 @@ from .utils import (
     get_bedrock_secret_access_key,
     get_bedrock_session_token,
     get_openai_api_key,
+    get_vertex_location,
+    get_vertex_model_id,
+    get_vertex_project_id,
     load_runtime_env,
     normalize_ai_provider,
 )
@@ -40,6 +43,8 @@ class AIScanner:
     DEFAULT_OPENAI_MODEL = "gpt-4o"
     DEFAULT_OLLAMA_MODEL = "llama3"
     DEFAULT_BEDROCK_MODEL = "anthropic.claude-3-haiku-20240307-v1:0"
+    DEFAULT_VERTEX_MODEL = "google/gemini-2.5-flash"
+    DEFAULT_VERTEX_LOCATION = "asia-south1"
 
     # Preset configurations controlling prompt size and token budgets.
     AI_MODE_PRESETS = {
@@ -393,6 +398,13 @@ Code Content:
             or cls.DEFAULT_BEDROCK_MODEL
         )
 
+    @classmethod
+    def _get_vertex_model(cls, model: Optional[str] = None) -> str:
+        return (
+            get_vertex_model_id(model=model, default=cls.DEFAULT_VERTEX_MODEL)
+            or cls.DEFAULT_VERTEX_MODEL
+        )
+
     def get_available_ollama_models(self) -> List[str]:
         """Return names of locally available Ollama models."""
         return list_ollama_models()
@@ -496,6 +508,21 @@ Code Content:
                 session_token=get_bedrock_session_token(),
                 profile_name=get_bedrock_profile(),
                 max_tokens=self.max_model_output_tokens,
+            )
+
+        if provider == "vertex":
+            self.selected_model = self._get_vertex_model(model)
+            project_id = get_vertex_project_id()
+            if not project_id:
+                logger.error("Vertex AI error: TRUSCANNER_VERTEX_PROJECT_ID is required")
+                return ""
+            location = get_vertex_location() or self.DEFAULT_VERTEX_LOCATION
+            return call_vertex(
+                prompt,
+                filepath,
+                project_id=project_id,
+                location=location,
+                model=self.selected_model,
             )
 
         # Default: Ollama

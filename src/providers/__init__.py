@@ -16,10 +16,12 @@ Adding a new provider
 from .bedrock import call_bedrock
 from .ollama import call_ollama, list_models as list_ollama_models
 from .openai import call_openai
+from .vertex import call_vertex
 
 __all__ = [
     "call_ollama",
     "list_ollama_models",
     "call_openai",
     "call_bedrock",
+    "call_vertex",
 ]

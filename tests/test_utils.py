@@ -7,8 +7,12 @@ from src.utils import (
     get_bedrock_region,
     get_missing_provider_requirements,
     get_openai_api_key,
+    get_vertex_location,
+    get_vertex_model_id,
+    get_vertex_project_id,
     has_bedrock_credentials,
     has_openai_credentials,
+    has_vertex_credentials,
     normalize_ai_provider,
     resolve_default_ai_provider,
 )
@@ -35,6 +39,11 @@ def test_backend_url_is_defined():
     ("bedrock", "bedrock"),
     ("aws_bedrock", "bedrock"),
     ("AWS Bedrock", "bedrock"),
+    ("vertex", "vertex"),
+    ("Vertex", "vertex"),
+    ("vertex_ai", "vertex"),
+    ("Google Vertex AI", "vertex"),
+    ("gemini", "vertex"),
     ("skip", None),
     ("none", None),
     ("Skip AI Scan", None),
@@ -108,6 +117,57 @@ def test_has_bedrock_credentials_with_profile(monkeypatch):
 
 
 # ---------------------------------------------------------------------------
+# Vertex AI credential helpers
+# ---------------------------------------------------------------------------
+
+def test_get_vertex_project_id_reads_env(monkeypatch):
+    monkeypatch.setenv("TRUSCANNER_VERTEX_PROJECT_ID", "my-project")
+    assert get_vertex_project_id() == "my-project"
+
+
+def test_get_vertex_project_id_fallback_order(monkeypatch):
+    monkeypatch.delenv("TRUSCANNER_VERTEX_PROJECT_ID", raising=False)
+    monkeypatch.setenv("GCP_PROJECT_ID", "fallback-project")
+    monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
+    assert get_vertex_project_id() == "fallback-project"
+
+
+def test_get_vertex_location_defaults_to_none(monkeypatch):
+    monkeypatch.delenv("TRUSCANNER_VERTEX_LOCATION", raising=False)
+    monkeypatch.delenv("VERTEX_AI_LOCATION", raising=False)
+    assert get_vertex_location() is None
+
+
+def test_get_vertex_model_id_uses_default_when_unset(monkeypatch):
+    monkeypatch.delenv("TRUSCANNER_VERTEX_MODEL", raising=False)
+    monkeypatch.delenv("VERTEX_CHAT_MODEL", raising=False)
+    assert get_vertex_model_id(default="google/gemini-2.5-flash") == "google/gemini-2.5-flash"
+
+
+def test_has_vertex_credentials_false_without_project_id(monkeypatch):
+    monkeypatch.delenv("TRUSCANNER_VERTEX_PROJECT_ID", raising=False)
+    monkeypatch.delenv("GCP_PROJECT_ID", raising=False)
+    monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
+    assert has_vertex_credentials() is False
+
+
+def test_has_vertex_credentials_true_with_project_id_and_adc(monkeypatch):
+    monkeypatch.setenv("TRUSCANNER_VERTEX_PROJECT_ID", "my-project")
+    monkeypatch.setattr("google.auth.default", lambda *a, **k: (object(), "my-project"))
+    assert has_vertex_credentials() is True
+
+
+def test_has_vertex_credentials_false_when_adc_unavailable(monkeypatch):
+    monkeypatch.setenv("TRUSCANNER_VERTEX_PROJECT_ID", "my-project")
+
+    def _raise(*args, **kwargs):
+        raise Exception("no ADC found")
+
+    monkeypatch.setattr("google.auth.default", _raise)
+    assert has_vertex_credentials() is False
+
+
+# ---------------------------------------------------------------------------
 # get_missing_provider_requirements
 # ---------------------------------------------------------------------------
 
@@ -136,6 +196,43 @@ def test_missing_requirements_bedrock_no_region(monkeypatch):
 
 def test_missing_requirements_ollama_always_empty():
     assert get_missing_provider_requirements("ollama") == []
+
+
+def test_missing_requirements_vertex_no_project_id(monkeypatch):
+    monkeypatch.delenv("TRUSCANNER_VERTEX_PROJECT_ID", raising=False)
+    monkeypatch.delenv("GCP_PROJECT_ID", raising=False)
+    monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
+
+    def _raise(*args, **kwargs):
+        raise Exception("no ADC found")
+
+    monkeypatch.setattr("google.auth.default", _raise)
+    missing = get_missing_provider_requirements("vertex")
+    assert "TRUSCANNER_VERTEX_PROJECT_ID" in missing
+    assert any("Application Default Credentials" in m for m in missing)
+
+
+def test_missing_requirements_vertex_when_configured(monkeypatch):
+    monkeypatch.setenv("TRUSCANNER_VERTEX_PROJECT_ID", "my-project")
+    monkeypatch.setattr("google.auth.default", lambda *a, **k: (object(), "my-project"))
+    assert get_missing_provider_requirements("vertex") == []
+
+
+# ---------------------------------------------------------------------------
+# resolve_default_ai_provider
+# ---------------------------------------------------------------------------
+
+def test_resolve_default_ai_provider_prefers_vertex_over_ollama(monkeypatch):
+    monkeypatch.delenv("OPENAI_KEY", raising=False)
+    monkeypatch.delenv("TRUSCANNER_OPENAI_KEY", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("TRUSCANNER_ACCESS_KEY_ID", raising=False)
+    monkeypatch.delenv("AWS_ACCESS_KEY_ID", raising=False)
+    monkeypatch.delenv("TRUSCANNER_PROFILE", raising=False)
+    monkeypatch.delenv("AWS_PROFILE", raising=False)
+    monkeypatch.setenv("TRUSCANNER_VERTEX_PROJECT_ID", "my-project")
+    monkeypatch.setattr("google.auth.default", lambda *a, **k: (object(), "my-project"))
+    assert resolve_default_ai_provider() == "vertex"
 
 
 def test_missing_requirements_none_provider_always_empty():

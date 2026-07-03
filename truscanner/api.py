@@ -11,7 +11,9 @@ from src.scanner import run_ai_scan, run_regex_scan
 from src.utils import (
     get_bedrock_model_id,
     get_openai_api_key,
+    get_vertex_model_id,
     has_bedrock_credentials,
+    has_vertex_credentials,
     load_runtime_env,
     normalize_ai_provider,
 )
@@ -107,6 +109,8 @@ def _resolve_requested_ai_provider(
         return "openai"
     if has_bedrock_credentials():
         return "bedrock"
+    if has_vertex_credentials():
+        return "vertex"
     return "ollama"
 
 
@@ -118,6 +122,8 @@ def _resolve_ai_model(ai_provider: str, model: Optional[str] = None) -> Optional
         return AIScanner.DEFAULT_OPENAI_MODEL
     if provider == "bedrock":
         return get_bedrock_model_id(model=model, default=AIScanner.DEFAULT_BEDROCK_MODEL)
+    if provider == "vertex":
+        return get_vertex_model_id(model=model, default=AIScanner.DEFAULT_VERTEX_MODEL)
     if provider == "ollama":
         if model:
             return model
@@ -199,9 +205,9 @@ def scan_ai(
 
     Args:
         path_or_url: Filesystem path or ``file://`` URL to a file or directory.
-        ai_provider: LLM provider to use — ``"ollama"``, ``"openai"``, or
-            ``"bedrock"``. Defaults to auto-detection based on available
-            credentials.
+        ai_provider: LLM provider to use — ``"ollama"``, ``"openai"``,
+            ``"bedrock"``, or ``"vertex"`` (Google Vertex AI). Defaults to
+            auto-detection based on available credentials.
         ai_mode: Scanning depth — ``"fast"``, ``"balanced"`` (default), or
             ``"full"``. Controls prompt size and token budget.
         use_openai: Deprecated shorthand for ``ai_provider="openai"``.
@@ -278,8 +284,8 @@ def scan(
         personal_only: When ``True``, keep only PII-related findings from both
             scanners.
         use_openai: Deprecated shorthand for ``ai_provider="openai"``.
-        ai_provider: LLM provider — ``"ollama"``, ``"openai"``, or
-            ``"bedrock"``. Auto-detected when omitted.
+        ai_provider: LLM provider — ``"ollama"``, ``"openai"``, ``"bedrock"``,
+            or ``"vertex"``. Auto-detected when omitted.
         model: Model identifier override for the selected AI provider.
         extensions: Restrict scanning to files with these extensions.
         ai_mode: AI scanning depth — ``"fast"``, ``"balanced"`` (default),
