@@ -245,6 +245,8 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
     reports_subdir = create_reports_subdirectory(reports_dir, directory)
     file_types = _file_types_to_generate(file_type)
 
+    regex_token_usage = getattr(scanner, "last_scan_usage", None)
+
     saved_files = _save_reports(
         scanner,
         regex_results,
@@ -254,14 +256,14 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
         reports_subdir,
         file_types,
         base_name="truscan_report",
-        token_usage=None,
+        token_usage=regex_token_usage,
     )
     _show_scan_summary(
         report_id,
         regex_results,
         regex_duration,
         saved_files,
-        token_usage=None,
+        token_usage=regex_token_usage,
     )
 
     selected_provider = normalize_ai_provider(ai_provider)
