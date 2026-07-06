@@ -18,6 +18,7 @@ from .utils import (
     get_ai_provider_setup_help,
     get_bedrock_model_id,
     get_missing_provider_requirements,
+    get_vertex_model_id,
     normalize_ai_provider,
     select_ai_provider,
     select_file_format,
@@ -168,6 +169,13 @@ def _prepare_ai_scan(provider: str, ai_mode: str):
         )
         return True, bedrock_model
 
+    if normalized_provider == 'vertex':
+        vertex_model = get_vertex_model_id(default=AIScanner.DEFAULT_VERTEX_MODEL)
+        click.echo(
+            f"\nRunning enhanced AI scan with Google Vertex AI model: {vertex_model} ({ai_mode} mode)..."
+        )
+        return True, vertex_model
+
     return False, None
 
 
@@ -182,7 +190,7 @@ def main():
 @click.option('--with-ai', is_flag=True, help='Enable the separate AI scan after the regex scan')
 @click.option(
     '--ai-provider',
-    type=click.Choice(['ollama', 'openai', 'bedrock'], case_sensitive=False),
+    type=click.Choice(['ollama', 'openai', 'bedrock', 'vertex'], case_sensitive=False),
     help='AI provider to use for the AI-only scan',
 )
 @click.option(
@@ -237,6 +245,8 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
     reports_subdir = create_reports_subdirectory(reports_dir, directory)
     file_types = _file_types_to_generate(file_type)
 
+    regex_token_usage = getattr(scanner, "last_scan_usage", None)
+
     saved_files = _save_reports(
         scanner,
         regex_results,
@@ -246,14 +256,14 @@ def scan(directory, with_ai, ai_provider, ai_mode, format, output, personal_only
         reports_subdir,
         file_types,
         base_name="truscan_report",
-        token_usage=None,
+        token_usage=regex_token_usage,
     )
     _show_scan_summary(
         report_id,
         regex_results,
         regex_duration,
         saved_files,
-        token_usage=None,
+        token_usage=regex_token_usage,
     )
 
     selected_provider = normalize_ai_provider(ai_provider)
