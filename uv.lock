@@ -1850,7 +1850,7 @@ wheels = [
 
 [[package]]
 name = "truscanner"
-version = "0.3.0"
+version = "0.2.12"
 source = { editable = "." }
 dependencies = [
     { name = "boto3" },
