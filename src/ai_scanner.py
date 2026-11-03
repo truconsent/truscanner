@@ -14,10 +14,14 @@ from typing import Any, Dict, List, Optional, Tuple
 from loguru import logger
 
 from .ai_parser import extract_json_payload, parse_llm_response
-from .providers import call_bedrock, call_ollama, call_openai, call_vertex, list_ollama_models
+from .providers import call_anthropic, call_bedrock, call_ollama, call_openai, call_vertex, list_ollama_models
 from .regex_scanner import RegexScanner
 from .token_utils import count_tokens, tokenizer_source
 from .utils import (
+    get_anthropic_api_key,
+    get_anthropic_model,
+    get_openai_base_url,
+    get_openai_model,
     get_bedrock_access_key_id,
     get_bedrock_model_id,
     get_bedrock_profile,
@@ -30,6 +34,7 @@ from .utils import (
     get_vertex_project_id,
     load_runtime_env,
     normalize_ai_provider,
+    redact_secrets,
 )
 
 
@@ -41,6 +46,7 @@ class AIScanner:
 
     DEFAULT_AI_MODE = "balanced"
     DEFAULT_OPENAI_MODEL = "gpt-4o"
+    DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5"
     DEFAULT_OLLAMA_MODEL = "llama3"
     DEFAULT_BEDROCK_MODEL = "anthropic.claude-3-haiku-20240307-v1:0"
     DEFAULT_VERTEX_MODEL = "google/gemini-2.5-flash"
@@ -472,7 +478,7 @@ Code Content:
             )
 
         except Exception as e:
-            logger.error("Error scanning {} with AI: {}", filepath, e)
+            logger.error("Error scanning {} with AI: {}", filepath, redact_secrets(e))
             return []
 
     def _call_provider(
@@ -484,12 +490,33 @@ Code Content:
     ) -> str:
         """Dispatch to the correct provider and return raw LLM response text."""
         if provider == "openai" and get_openai_api_key():
-            self.selected_model = self.DEFAULT_OPENAI_MODEL
+            self.selected_model = (
+                get_openai_model(model=model, default=self.DEFAULT_OPENAI_MODEL)
+                or self.DEFAULT_OPENAI_MODEL
+            )
             return call_openai(
                 prompt,
                 filepath,
                 api_key=get_openai_api_key(),  # type: ignore[arg-type]
                 model=self.selected_model,
+                base_url=get_openai_base_url(),
+            )
+
+        if provider == "anthropic":
+            self.selected_model = (
+                get_anthropic_model(model=model, default=self.DEFAULT_ANTHROPIC_MODEL)
+                or self.DEFAULT_ANTHROPIC_MODEL
+            )
+            api_key = get_anthropic_api_key()
+            if not api_key:
+                logger.error("Anthropic error: ANTHROPIC_API_KEY is required")
+                return ""
+            return call_anthropic(
+                prompt,
+                filepath,
+                api_key=api_key,
+                model=self.selected_model,
+                max_tokens=self.max_model_output_tokens,
             )
 
         if provider == "bedrock":

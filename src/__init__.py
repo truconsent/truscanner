@@ -20,7 +20,7 @@ def get_version():
                         return match.group(1)
         except Exception:
             pass
-    return "0.2.12" # Final fallback
+    return "0.3.0" # Final fallback
 
 __version__ = get_version()
 

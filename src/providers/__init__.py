@@ -13,6 +13,7 @@ Adding a new provider
 3. Handle the new provider key in :meth:`src.ai_scanner.AIScanner.scan_file`.
 """
 
+from .anthropic import call_anthropic
 from .bedrock import call_bedrock
 from .ollama import call_ollama, list_models as list_ollama_models
 from .openai import call_openai
@@ -22,6 +23,7 @@ __all__ = [
     "call_ollama",
     "list_ollama_models",
     "call_openai",
+    "call_anthropic",
     "call_bedrock",
     "call_vertex",
 ]

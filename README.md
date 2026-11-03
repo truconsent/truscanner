@@ -16,7 +16,7 @@
 - **Real-time Progress**: Visual progress indicator during scanning
 - **Multiple Report Formats**: Generate reports in TXT, Markdown, or JSON format
 - **Separate Regex and AI Scans**: Regex/static scanning and AI-enhanced scanning now run as distinct paths
-- **AI-Powered Enhancement**: Optional integration with Ollama, OpenAI, AWS Bedrock, or Google Vertex AI for deeper context
+- **AI-Powered Enhancement**: Optional integration with Ollama, OpenAI (or any OpenAI-compatible endpoint), Anthropic, AWS Bedrock, or Google Vertex AI for deeper context
 - **Backend Integration**: Optional upload to backend API for centralized storage
 - **Auto-incrementing Reports**: Automatically manages report file naming to prevent overwrites
 - **Token Usage Tracking**: Reports include input/output token counts for regex and AI scans using tiktoken
@@ -132,7 +132,7 @@ uv run python scripts/check_truscanner_api.py ./src
 
 3. **AI Enhanced Scan (Optional)**:
    - After the regex scan, you'll get a dropdown for the AI-only scan provider:
-     `Skip AI scan`, `Ollama`, `OpenAI`, `AWS Bedrock`, or `Google Vertex AI`
+     `Skip AI scan`, `Ollama`, `OpenAI`, `Anthropic`, `AWS Bedrock`, or `Google Vertex AI`
    - This AI pass is separate from the regex scan and is used to find context that regex may miss.
    - If `Ollama` is selected, you can choose the local model from a second dropdown.
    - Live scanning timer: `AI Scanning: filename.js... (5.2s taken)`
@@ -155,7 +155,7 @@ truscanner scan <directory> [OPTIONS]
 
 Options:
   --with-ai          Enable the separate AI scan after the regex scan
-  --ai-provider      AI provider: ollama, openai, bedrock, or vertex
+  --ai-provider      AI provider: ollama, openai, anthropic, bedrock, or vertex
   --ai-mode          AI scan mode: fast, balanced, or full (default: balanced)
   --personal-only    Only report personal identifiable information (PII)
   --help             Show help message
@@ -165,6 +165,7 @@ Examples:
 
 ```bash
 truscanner scan ./src --with-ai --ai-provider openai
+truscanner scan ./src --with-ai --ai-provider anthropic
 truscanner scan ./src --with-ai --ai-provider bedrock
 truscanner scan ./src --with-ai --ai-provider ollama
 truscanner scan ./src --with-ai --ai-provider vertex
@@ -244,6 +245,23 @@ Shell export:
 export OPENAI_KEY=your-openai-key
 ```
 
+Anthropic (Claude, via the Messages API):
+
+```env
+ANTHROPIC_API_KEY=your-anthropic-key
+TRUSCANNER_ANTHROPIC_MODEL=claude-haiku-4-5
+```
+
+OpenAI-compatible endpoints (Gemini's OpenAI endpoint, Azure v1, Groq, ...):
+
+```env
+OPENAI_KEY=your-provider-key
+TRUSCANNER_OPENAI_BASE_URL=https://api.groq.com/openai/v1
+TRUSCANNER_OPENAI_MODEL=llama-3.3-70b-versatile
+```
+
+If the server rejects `response_format=json_object` (HTTP 4xx), the request is retried once without it.
+
 AWS Bedrock:
 
 ```env
@@ -286,6 +304,24 @@ gcloud auth application-default login
 
 On Cloud Run, GCE, or Cloud Functions the runtime service account is used automatically — no login step needed there.
 
+### Environment variable reference
+
+| Provider | Variable | Purpose |
+|---|---|---|
+| openai | `OPENAI_KEY` / `TRUSCANNER_OPENAI_KEY` / `OPENAI_API_KEY` | API key |
+| openai | `TRUSCANNER_OPENAI_BASE_URL` (or `OPENAI_BASE_URL`) | Custom OpenAI-compatible endpoint |
+| openai | `TRUSCANNER_OPENAI_MODEL` | Model (default `gpt-4o`); an explicit `model=` argument wins |
+| anthropic | `ANTHROPIC_API_KEY` / `TRUSCANNER_ANTHROPIC_KEY` | API key |
+| anthropic | `TRUSCANNER_ANTHROPIC_MODEL` | Model (default `claude-haiku-4-5`) |
+| bedrock | `TRUSCANNER_REGION` (or `AWS_REGION`) | Region |
+| bedrock | `TRUSCANNER_ACCESS_KEY_ID`, `TRUSCANNER_SECRET_ACCESS_KEY`, `TRUSCANNER_SESSION_TOKEN` (or `AWS_*`) | Static / temporary credentials |
+| bedrock | `TRUSCANNER_PROFILE` (or `AWS_PROFILE`) | Named profile |
+| bedrock | `TRUSCANNER_BEDROCK_USE_DEFAULT_CHAIN=1` | Use the default AWS credential chain (e.g. Lambda role) |
+| bedrock | `TRUSCANNER_MODEL_ID` | Model id |
+| vertex | `TRUSCANNER_VERTEX_PROJECT_ID`, `TRUSCANNER_VERTEX_LOCATION`, `TRUSCANNER_VERTEX_MODEL` | Vertex settings |
+
+For server/subprocess use, pass credentials only through environment variables; API keys are never logged or printed.
+
 Notes:
 - If you do not set `TRUSCANNER_MODEL_ID`, `truScanner` defaults to `anthropic.claude-3-haiku-20240307-v1:0`.
 - If you do not set `TRUSCANNER_VERTEX_LOCATION`, `truScanner` defaults to `asia-south1`; if you do not set `TRUSCANNER_VERTEX_MODEL`, it defaults to `google/gemini-2.5-flash`.
@@ -305,6 +341,7 @@ truscanner/
 │   │   ├── base.py          # Shared progress spinner + response helpers
 │   │   ├── ollama.py        # Ollama provider
 │   │   ├── openai.py        # OpenAI provider
+│   │   ├── anthropic.py     # Anthropic provider
 │   │   ├── bedrock.py       # AWS Bedrock provider
 │   │   └── vertex.py        # Google Vertex AI provider
 │   ├── report_utils.py      # Report file naming utilities

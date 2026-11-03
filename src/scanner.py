@@ -6,7 +6,7 @@ from loguru import logger
 
 from .ai_scanner import AIScanner
 from .regex_scanner import RegexScanner
-from .utils import has_bedrock_credentials, has_openai_credentials, normalize_ai_provider
+from .utils import has_anthropic_credentials, has_bedrock_credentials, has_openai_credentials, normalize_ai_provider
 
 
 def scan_file(filepath: str, regex_scanner: Optional[RegexScanner] = None) -> List[Dict[str, Any]]:
@@ -109,6 +109,11 @@ def run_ai_scan(
             logger.warning("OpenAI scan requested but OPENAI_KEY is not set")
             run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
             return []
+    elif provider == "anthropic":
+        if not has_anthropic_credentials():
+            logger.warning("Anthropic scan requested but ANTHROPIC_API_KEY is not set")
+            run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
+            return []
     elif provider == "bedrock":
         if not has_bedrock_credentials():
             logger.warning(
@@ -117,6 +122,8 @@ def run_ai_scan(
             )
             run_ai_scan.last_usage = getattr(scanner, "last_scan_usage", {})
             return []
+    elif provider == "vertex":
+        pass
     else:
         if model is None:
             available_models = scanner.get_available_ollama_models()

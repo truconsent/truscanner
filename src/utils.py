@@ -26,6 +26,7 @@ AI_PROVIDER_CHOICES = [
     ("Skip AI scan", None),
     ("Ollama", "ollama"),
     ("OpenAI", "openai"),
+    ("Anthropic", "anthropic"),
     ("AWS Bedrock", "bedrock"),
     ("Google Vertex AI", "vertex"),
 ]
@@ -53,6 +54,51 @@ def get_openai_api_key() -> Optional[str]:
         os.environ.get("OPENAI_KEY")
         or os.environ.get("TRUSCANNER_OPENAI_KEY")
         or os.environ.get("OPENAI_API_KEY")
+    )
+
+
+_SECRET_ENV_VARS = (
+    "OPENAI_KEY", "TRUSCANNER_OPENAI_KEY", "OPENAI_API_KEY",
+    "ANTHROPIC_API_KEY", "TRUSCANNER_ANTHROPIC_KEY",
+    "TRUSCANNER_SECRET_ACCESS_KEY", "AWS_SECRET_ACCESS_KEY",
+    "TRUSCANNER_SESSION_TOKEN", "AWS_SESSION_TOKEN",
+)
+
+
+def redact_secrets(text: Any) -> str:
+    """Return *text* with any configured API key / secret value masked."""
+    out = str(text)
+    for name in _SECRET_ENV_VARS:
+        value = os.environ.get(name)
+        if value and len(value) >= 8:
+            out = out.replace(value, "***")
+    return out
+
+
+def get_openai_base_url() -> Optional[str]:
+    """Return the configured OpenAI-compatible endpoint, if any."""
+    return os.environ.get("TRUSCANNER_OPENAI_BASE_URL") or os.environ.get("OPENAI_BASE_URL") or None
+
+
+def get_openai_model(model: Optional[str] = None, default: Optional[str] = None) -> Optional[str]:
+    """Return the OpenAI model: explicit argument, then env, then default."""
+    return model or os.environ.get("TRUSCANNER_OPENAI_MODEL") or default
+
+
+def get_anthropic_api_key() -> Optional[str]:
+    """Return the configured Anthropic API key."""
+    return os.environ.get("TRUSCANNER_ANTHROPIC_KEY") or os.environ.get("ANTHROPIC_API_KEY")
+
+
+def get_anthropic_model(model: Optional[str] = None, default: Optional[str] = None) -> Optional[str]:
+    """Return the Anthropic model: explicit argument, then env, then default."""
+    return model or os.environ.get("TRUSCANNER_ANTHROPIC_MODEL") or default
+
+
+def bedrock_use_default_chain() -> bool:
+    """True when TRUSCANNER_BEDROCK_USE_DEFAULT_CHAIN is set to a truthy value."""
+    return os.environ.get("TRUSCANNER_BEDROCK_USE_DEFAULT_CHAIN", "").strip().lower() in (
+        "1", "true", "yes", "on",
     )
 
 
@@ -136,6 +182,8 @@ def normalize_ai_provider(provider: Optional[str]) -> Optional[str]:
         "none": None,
         "ollama": "ollama",
         "openai": "openai",
+        "anthropic": "anthropic",
+        "claude": "anthropic",
         "aws_bedrock": "bedrock",
         "bedrock": "bedrock",
         "vertex": "vertex",
@@ -153,6 +201,11 @@ def has_openai_credentials() -> bool:
     return bool(get_openai_api_key())
 
 
+def has_anthropic_credentials() -> bool:
+    """Return True when an Anthropic API key is available in the environment."""
+    return bool(get_anthropic_api_key())
+
+
 def has_bedrock_credentials() -> bool:
     """Return True when AWS Bedrock credentials and region are configured."""
     has_region = bool(get_bedrock_region())
@@ -160,7 +213,7 @@ def has_bedrock_credentials() -> bool:
         get_bedrock_access_key_id() and get_bedrock_secret_access_key()
     )
     has_profile = bool(get_bedrock_profile())
-    return has_region and (has_static_keys or has_profile)
+    return has_region and (has_static_keys or has_profile or bedrock_use_default_chain())
 
 
 def _adc_available() -> bool:
@@ -190,6 +243,8 @@ def get_missing_provider_requirements(provider: Optional[str]) -> List[str]:
     normalized = normalize_ai_provider(provider)
     if normalized == "openai":
         return [] if has_openai_credentials() else ["OPENAI_KEY"]
+    if normalized == "anthropic":
+        return [] if has_anthropic_credentials() else ["ANTHROPIC_API_KEY"]
     if normalized == "bedrock":
         missing = []
         if not get_bedrock_region():
@@ -197,6 +252,7 @@ def get_missing_provider_requirements(provider: Optional[str]) -> List[str]:
         if not (
             (get_bedrock_access_key_id() and get_bedrock_secret_access_key())
             or get_bedrock_profile()
+            or bedrock_use_default_chain()
         ):
             missing.append("TRUSCANNER_ACCESS_KEY_ID and TRUSCANNER_SECRET_ACCESS_KEY")
         return missing
@@ -218,6 +274,12 @@ def get_ai_provider_setup_help(provider: Optional[str]) -> List[str]:
             "Set credentials in `.env` or export them in your shell:",
             "  OPENAI_KEY=your-openai-key",
             "Shell example: export OPENAI_KEY=your-openai-key",
+        ]
+    if normalized == "anthropic":
+        return [
+            "Set credentials in `.env` or export them in your shell:",
+            "  ANTHROPIC_API_KEY=your-anthropic-key",
+            "  TRUSCANNER_ANTHROPIC_MODEL=claude-haiku-4-5   (optional)",
         ]
     if normalized == "bedrock":
         return [
@@ -250,6 +312,8 @@ def resolve_default_ai_provider() -> str:
     """Choose the most likely provider default based on available configuration."""
     if has_openai_credentials():
         return "openai"
+    if has_anthropic_credentials():
+        return "anthropic"
     if has_bedrock_credentials():
         return "bedrock"
     if has_vertex_credentials():

@@ -16,6 +16,7 @@ from .report_utils import (
 from .scanner import run_ai_scan, run_regex_scan
 from .utils import (
     get_ai_provider_setup_help,
+    get_anthropic_model,
     get_bedrock_model_id,
     get_missing_provider_requirements,
     get_vertex_model_id,
@@ -162,6 +163,13 @@ def _prepare_ai_scan(provider: str, ai_mode: str):
         click.echo(f"\nRunning enhanced AI scan with OpenAI ({ai_mode} mode)...")
         return True, None
 
+    if normalized_provider == 'anthropic':
+        anthropic_model = get_anthropic_model(default=AIScanner.DEFAULT_ANTHROPIC_MODEL)
+        click.echo(
+            f"\nRunning enhanced AI scan with Anthropic model: {anthropic_model} ({ai_mode} mode)..."
+        )
+        return True, anthropic_model
+
     if normalized_provider == 'bedrock':
         bedrock_model = get_bedrock_model_id(default=AIScanner.DEFAULT_BEDROCK_MODEL)
         click.echo(
@@ -190,7 +198,7 @@ def main():
 @click.option('--with-ai', is_flag=True, help='Enable the separate AI scan after the regex scan')
 @click.option(
     '--ai-provider',
-    type=click.Choice(['ollama', 'openai', 'bedrock', 'vertex'], case_sensitive=False),
+    type=click.Choice(['ollama', 'openai', 'anthropic', 'bedrock', 'vertex'], case_sensitive=False),
     help='AI provider to use for the AI-only scan',
 )
 @click.option(
